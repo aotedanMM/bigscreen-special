@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+    <title>核应急救援队</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="14" cy="14" r="14"></circle>
+        <filter x="-10.7%" y="-10.7%" width="121.4%" height="121.4%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.28 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="其他图标" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="应急保障资源" transform="translate(-360.000000, -508.000000)">
+            <g id="核应急救援队" transform="translate(362.000000, 510.000000)">
+                <g id="Oval-Copy-11">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <circle stroke="#FFFFFF" stroke-width="1" stroke-linejoin="square" fill="#38AC83" fill-rule="evenodd" cx="14" cy="14" r="13.5"></circle>
+                </g>
+                <g id="Page-1" transform="translate(5.000000, 5.000000)" fill="#FFFFFF">
+                    <path d="M11.359308,9.15694511 C11.359308,8.07657389 10.4624468,7.19931012 9.35812656,7.19931012 C8.25367659,7.19931012 7.35694511,8.07657389 7.35694511,9.15694511 C7.35694511,10.2374179 8.25367659,11.1146816 9.35812656,11.1146816 C10.4624468,11.1146816 11.359308,10.2374179 11.359308,9.15694511 L11.359308,9.15694511 Z M12.0298196,9.15694511 C12.0298196,10.1297082 11.4817594,10.9827037 10.6658838,11.4315151 L13.9312547,17 C16.7483118,15.4241339 18.7057958,12.5585698 18.7057958,9.15694511 L12.0298196,9.15694511 Z M6.68440947,9.15694511 L0,9.15694511 C0,12.5585698 1.95758781,15.4241339 4.77454113,17 L8.03991208,11.4315151 C7.23236591,10.9827037 6.68440947,10.1297082 6.68440947,9.15694511 L6.68440947,9.15694511 Z M9.35812656,6.54127344 C9.85013783,6.54127344 10.308909,6.6732514 10.6991498,6.89059999 L14.0641374,1.24694929 C12.6774187,0.460996297 11.0790373,0 9.35812656,0 C7.63718992,0 6.02624936,0.458914706 4.63963439,1.24694929 L7.97140779,6.91293902 C8.37410401,6.68345628 8.84330647,6.54127344 9.35812656,6.54127344 L9.35812656,6.54127344 Z" id="Fill-1"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

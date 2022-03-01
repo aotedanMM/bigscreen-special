@@ -1,0 +1,9 @@
+{
+  "data": {
+    "riverStation": 5,
+    "limitOfReservoir": 3,
+    "superRainMeasuringStation": 3,
+    "heavyRainMeasuringStation": 3,
+    "rainMeasuringStation":3
+  }
+}

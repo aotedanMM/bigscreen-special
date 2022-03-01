@@ -1,0 +1,242 @@
+[
+  {
+    "boxName": "changeableBox",
+    "content" : "常用",
+    "id":"2",
+    "data":[
+      {
+        "name":"火点",
+        "tit":"ForestFireRescue_4",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.ForestFireRescue_4}",
+        "icons":"emergencyPlotSymbol/森林火灾救援/火点.png",
+        "base":"Polyline",
+        "type":"Overlay",
+        "overlayOpt":{
+          "source": "./imgs/gisPlot/emergencyPlotSymbol/森林火灾救援/火点.html",
+          "type": "iframe",
+          "width": 60,
+          "height": 60,
+          "base64":"data:image/png;base64,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"
+        },
+        "key":"point",
+        "checked":false
+      },{
+        "name":"隔离保障",
+        "tit":"ForestFireRescue_5",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.ForestFireRescue_5}",
+        "icons":"emergencyPlotSymbol/森林火灾救援/隔离保障.svg",
+        "base":"Polyline",
+        "type":"Point",
+        "key":"point",
+        "height": 55,
+        "width": 55,
+        "scale": 0.4,
+        "symbol":{
+          "type": "SimpleFillSymbol",
+          "//":"options为自定义配置内容",
+          "options": {
+            "borderColor":{"alpha": 170, "r": 250, "g": 30, "b": 30},
+            "fillColor":{"alpha": 90, "r": 250, "g": 30, "b": 30},
+            "borderThickness": 4
+          }
+        }
+      },{
+        "name":"引线文本",
+        "tit":"text_2",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.frequentlyPlot.text_2}",
+        "icons":"eMap-plot/eMap-plot92.png",
+        "base":"Polyline",
+        "type":"TAILEDTEXT",
+        "key":"tailedtext",
+        "symbol":{
+          "type": "SimpleMarkerSymbol",
+          "options": {
+            "borderColor": {
+              "alpha": 200,
+              "r": 0,
+              "g": 0,
+              "b": 0
+            },
+            "fillColor": {
+              "alpha": 153,
+              "r": 65,
+              "g": 105,
+              "b": 225
+            },
+            "borderThickness": 0,
+            "size": 0
+          }
+        },
+        "tailedtext_symbol": {
+          "fontSize": 24,
+          "fontFamilyName": "宋体",
+          "foregroundColor":{ "r": 255, "b": 255, "g": 255, "a": 255 },
+          "backgroundColor":{ "r": 205, "b": 85, "g": 85, "a": 255 },
+          "textBackgroundBorderColor":{ "r": 220, "b": 0, "g": 0, "a": 255 },
+          "textBackgroundBorderThickness": 2,
+          "leadLength": 100,
+          "angle": 45,
+          "lineColor":{"r": 205, "b": 85, "g": 85, "a": 255 },
+          "lineWidth": 1,
+          "size": 6,
+          "textAlign": "center",
+          "padding": [10, 10, 10, 10]
+        }
+      },{
+        "name":"燕尾箭头",
+        "tit":"arrow_2",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.arrow_2}",
+        "icons":"eMap-plot/eMap-plot25.png",
+        "base":"Polyline",
+        "type":"SwallowTailArrow",
+        "key":"polygon",
+        "size":30,
+        "checked":false,
+        "symbol":{
+          "type": "SimpleFillSymbol",
+          "//":"options为自定义配置内容",
+          "options": {
+            "borderColor":{"alpha": 170, "r": 250, "g": 30, "b": 30},
+            "fillColor":{"alpha": 90, "r": 250, "g": 30, "b": 30},
+            "borderThickness": 4
+          }
+        }
+      },{
+        "name":"自由绘面",
+        "tit":"polygon_8",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.frequentlyPlot.polygon_8}",
+        "icons":"eMap-plot/eMap-plot23.png",
+        "base":"Polyline",
+        "type":"FreePolygon",
+        "key":"polygon",
+        "symbol":{
+          "type": "SimpleFillSymbol",
+          "//":"options为自定义配置内容",
+          "options": {
+            "borderColor":{"alpha": 153, "r": 20, "g": 20, "b": 250},
+            "fillColor":{"alpha": 153, "r": 255, "g": 255, "b": 255},
+            "borderThickness": 4
+          }
+        }
+      },{
+        "name":"自由绘线",
+        "tit":"line_4",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.frequentlyPlot.line_4}",
+        "icons":"eMap-plot/eMap-plot16.png",
+        "base":"Polyline",
+        "type":"FreePolyline",
+        "key":"line",
+        "symbol":{
+          "type": "SimpleLineSymbol",
+          "//":"options为自定义配置内容",
+          "options": {
+            "color":{"alpha": 179, "r": 255, "g": 0, "b": 0},
+            "width": 2,
+            "style": 5
+          }
+        }
+      },{
+        "name":"扑火队",
+        "tit":"ForestFireRescue_3",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.ForestFireRescue_3}",
+        "icons":"emergencyPlotSymbol/森林火灾救援/扑火队.svg",
+        "base":"Polyline",
+        "type":"Point",
+        "key":"point",
+        "height": 55,
+        "width": 55,
+        "scale": 0.4,
+        "symbol":{
+          "type": "SimpleFillSymbol",
+          "//":"options为自定义配置内容",
+          "options": {
+            "borderColor":{"alpha": 170, "r": 250, "g": 30, "b": 30},
+            "fillColor":{"alpha": 90, "r": 250, "g": 30, "b": 30},
+            "borderThickness": 4
+          }
+        }
+      },
+      {
+        "name":"旗帜",
+        "tit":"ForestFireRescue_1",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.ForestFireRescue_1}",
+        "icons":"emergencyPlotSymbol/森林火灾救援/旗帜.svg",
+        "base":"Polyline",
+        "type":"Point",
+        "key":"point",
+        "height": 55,
+        "width": 55,
+        "scale": 0.4,
+        "symbol":{
+          "type": "SimpleFillSymbol",
+          "//":"options为自定义配置内容",
+          "options": {
+            "borderColor":{"alpha": 170, "r": 250, "g": 30, "b": 30},
+            "fillColor":{"alpha": 90, "r": 250, "g": 30, "b": 30},
+            "borderThickness": 4
+          }
+        }
+      },{
+        "name":"风向",
+        "tit":"ForestFireRescue_6",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.ForestFireRescue_6}",
+        "icons":"emergencyPlotSymbol/森林火灾救援/风向.svg",
+        "base":"Polyline",
+        "type":"Point",
+        "key":"point",
+        "height": 55,
+        "width": 55,
+        "scale": 0.4,
+        "symbol":{
+          "type": "SimpleFillSymbol",
+          "//":"options为自定义配置内容",
+          "options": {
+            "borderColor":{"alpha": 170, "r": 250, "g": 30, "b": 30},
+            "fillColor":{"alpha": 90, "r": 250, "g": 30, "b": 30},
+            "borderThickness": 4
+          }
+        }
+      },{
+        "name":"现场指挥所",
+        "tit":"ForestFireRescue_11",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.ForestFireRescue_11}",
+        "icons":"emergencyPlotSymbol/森林火灾救援/现场指挥所.svg",
+        "base":"Polyline",
+        "type":"Point",
+        "key":"point",
+        "height": 55,
+        "width": 55,
+        "scale": 0.4,
+        "symbol":{
+          "type": "SimpleFillSymbol",
+          "//":"options为自定义配置内容",
+          "options": {
+            "borderColor":{"alpha": 170, "r": 250, "g": 30, "b": 30},
+            "fillColor":{"alpha": 90, "r": 250, "g": 30, "b": 30},
+            "borderThickness": 4
+          }
+        }
+      },{
+        "name":"救援力量",
+        "tit":"ForestFireRescue_2",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.ForestFireRescue_2}",
+        "icons":"emergencyPlotSymbol/森林火灾救援/救援力量.svg",
+        "base":"Polyline",
+        "type":"Point",
+        "key":"point",
+        "height": 55,
+        "width": 55,
+        "scale": 0.4,
+        "symbol":{
+          "type": "SimpleFillSymbol",
+          "//":"options为自定义配置内容",
+          "options": {
+            "borderColor":{"alpha": 170, "r": 250, "g": 30, "b": 30},
+            "fillColor":{"alpha": 90, "r": 250, "g": 30, "b": 30},
+            "borderThickness": 4
+          }
+        }
+      }
+    ]
+  }
+]

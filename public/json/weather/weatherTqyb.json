@@ -1,0 +1,16 @@
+[
+  {
+    "dayImg": "中雪",
+    "maxTemp": "10",
+    "minTemp": "-7",
+    "direct": "北风",
+    "power": "3级"
+  },
+  {
+    "dayImg": "多云",
+    "maxTemp": "6",
+    "minTemp": "0",
+    "direct": "东北风",
+    "power": "1级"
+  }
+]

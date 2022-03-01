@@ -1,0 +1,6 @@
+diff a/src/views/theme/decisionSupport/module/gisModule/disasterJudge/disasterDistrict/districtList.vue b/src/views/theme/decisionSupport/module/gisModule/disasterJudge/disasterDistrict/districtList.vue	(rejected hunks)
+@@ -104,2 +104,2 @@ export default class DistrictRightDialog extends Vue {
+-      this.sourceTypeCodeObj.sourceData=res.data[0];
+-    console.log(this.sourceTypeCodeObj,'this.sourceTypeCodeObj')
++      this.sourceTypeCodeObj.sourceData = res.data[0];
++      console.log(this.sourceTypeCodeObj, 'this.sourceTypeCodeObj');

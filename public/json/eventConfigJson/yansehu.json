@@ -1,0 +1,1695 @@
+{
+    "//type": "事件类型,为堰塞湖",
+    "type": 19,
+    "//experienceCircle": "设置经验圈初始值",
+    "experienceCircle": "2,5,10",
+    "//defaultExperienceCircle": "默认选中第二个，10",
+    "defaultExperienceCircle": 2,
+    "//funcPanel": "功能性按钮，右侧那部分",
+    "funcPanel": [
+        {
+            "name": "气象预警",
+            "alias": "气象预警",
+            "//key": "唯一关键字",
+            "key": "EarlywarningInfo",
+            "//componetName": "需要引入的组件的名称",
+            "componetName": "EarlywarningInfo",
+            "//checked": "是否显示在小窗(选中)",
+            "checked": true,
+            "//icon": "按钮图标",
+            "icon": "yjxx",
+            "componentParam": {
+                "typeCodes": [
+                    "11B01",
+                    "11B03",
+                    "11B06",
+                    "11B14",
+                    "11B37"
+                ],
+                "districtCode": "370600"
+            }
+        },
+        {
+            "name": "台风监测",
+            "alias": "台风监测",
+            "//key": "唯一关键字",
+            "key": "TyphoonMonitoring",
+            "//componetName": "需要引入的组件的名称",
+            "componetName": "TyphoonMonitoring",
+            "//checked": "是否显示在小窗(选中)",
+            "checked": false,
+            "//icon": "按钮图标",
+            "icon": "sszq",
+            "//enlarge": "判断是否可以放大（放大按钮不存在）",
+            "enlarge": true,
+            "//pushNum": "推送数据是否显示消息提醒",
+            "pushNum": false,
+            "//unreadNum": "未读数量",
+            "unreadNum": "0"
+        },
+        {
+            "name": "进展情况",
+            "alias": "进展情况",
+            "//key": "唯一关键字",
+            "key": "jinzhanqk",
+            "//componetName": "需要引入的组件的名称",
+            "componetName": "Progress",
+            "//checked": "是否显示在小窗(选中)",
+            "checked": false,
+            "//icon": "按钮图标",
+            "icon": "jzqk",
+            "//enlarge": "判断是否可以放大（放大按钮存在）",
+            "enlarge": true
+        }
+    ],
+    "researchPanel": [
+        {
+            "name": "快速评估",
+            "alias": "快速评估",
+            "//key": "唯一关键字",
+            "key": "fastAssessment",
+            "//componetName": "需要引入的组件的名称",
+            "componetName": "FastAssessment",
+            "//checked": "是否显示在小窗(选中)",
+            "checked": false,
+            "//icon": "按钮图标",
+            "icon": "cbyp"
+        },
+        {
+            "name": "初步研判",
+            "alias": "一键研判",
+            "//key": "唯一关键字",
+            "key": "quickStudy",
+            "//componetName": "需要引入的组件的名称",
+            "componetName": "StudyAndJudgmentContainer",
+            "//checked": "是否显示在小窗(选中)",
+            "checked": true,
+            "//icon": "按钮图标",
+            "icon": "cbyp"
+        },
+        {
+            "name": "力量调度",
+            "title": "力量调度",
+            "alias": "力量调度",
+            "//key": "唯一关键字",
+            "key": "RescueTeamsContainer",
+            "//componetName": "需要引入的组件的名称",
+            "componetName": "RescueTeamsContainer",
+            "//checked": "是否显示在小窗(选中)",
+            "checked": false,
+            "//icon": "按钮图标",
+            "icon": "dwdd",
+            "//closed": "是否有关闭按钮",
+            "closed": false
+        },
+        {
+            "name": "物资保障",
+            "title": "物资保障",
+            "alias": "物资保障",
+            "//key": "唯一关键字",
+            "key": "MaterialContainer",
+            "//componetName": "需要引入的组件的名称",
+            "componetName": "MaterialContainer",
+            "//checked": "是否显示在小窗(选中)",
+            "checked": false,
+            "//icon": "按钮图标",
+            "icon": "wzbz",
+            "//closed": "是否有关闭按钮",
+            "closed": false
+        }
+    ],
+    "quickStudy": {
+        "level": "6级",
+        "tabShow": {
+            "countyCount": {
+                "title": "行政区划",
+                "name": "受影响区市",
+                "num": 0,
+                "danwei": "个",
+                "key": "countyCount",
+                "clickKey": "countyCount",
+                "platoon": true,
+                "//platoon": "是否排头",
+                "icon": "qx"
+            },
+            "townCount": {
+                "name": "受影响乡镇",
+                "num": 0,
+                "danwei": "个",
+                "platoon": true,
+                "//platoon": "是否排头",
+                "icon": "xz"
+            },
+            "population": {
+                "title": "人口",
+                "name": "人口",
+                "num": 0,
+                "danwei": "万人",
+                "key": "population",
+                "clickKey": "population",
+                "icon": "rk"
+            },
+            "totalArea": {
+                "name": "面积",
+                "num": 0,
+                "danwei": "km²",
+                "icon": "mj"
+            },
+            "populationDensity": {
+                "name": "人口密度",
+                "num": 0,
+                "danwei": "人/km²",
+                "icon": "rkmd"
+            }
+        },
+        "personnelKey": [
+            "bas_school",
+            "hospital",
+            "airport",
+            "railwaystation",
+            "hazardous",
+            "coal",
+            "tailingpond",
+            "firework",
+            "fireworkhouse",
+            "reservoir",
+            "portwharf",
+            "nuclear",
+            "landslide",
+            "debrisflow",
+            "mountaincollapse",
+            "bottomcollapse",
+            "groundfissure",
+            "landsubsidence",
+            "unstableslopes",
+            "disinfoper",
+            "emergencypart"
+        ],
+        "contList": {
+            "contListAll": [
+                {
+                    "title": "人员密集场所",
+                    "sum": 0,
+                    "list": {
+                        "bas_school": {
+                            "title": "学校",
+                            "name": "学校",
+                            "bg": "schoolbg",
+                            "num": 0,
+                            "danwei": "所",
+                            "key": "bas_school",
+                            "clickKey": "bas_school",
+                            "active": false
+                        },
+                        "hospital": {
+                            "title": "医院",
+                            "name": "医院",
+                            "bg": "hospitalbg",
+                            "num": 0,
+                            "danwei": "家",
+                            "key": "hospital",
+                            "clickKey": "hospital",
+                            "active": false
+                        },
+                        "airport": {
+                            "title": "机场",
+                            "name": "机场",
+                            "bg": "airportbg",
+                            "num": 0,
+                            "danwei": "个",
+                            "key": "airport",
+                            "clickKey": "airport",
+                            "active": false
+                        },
+                        "railwaystation": {
+                            "title": "火车站",
+                            "name": "火车站",
+                            "bg": "railwaystationbg",
+                            "num": 0,
+                            "danwei": "个",
+                            "key": "railwaystation",
+                            "clickKey": "railwaystation",
+                            "active": false
+                        }
+                    }
+                },
+                {
+                    "title": "高危行业企业",
+                    "sum": 0,
+                    "list": {
+                        "hazardous": {
+                            "title": "危化企业",
+                            "name": "危化企业",
+                            "bg": "hazardousbg",
+                            "num": 0,
+                            "danwei": "个",
+                            "key": "hazardous",
+                            "clickKey": "hazardous",
+                            "active": false
+                        },
+                        "coal": {
+                            "title": "煤矿企业",
+                            "name": "煤矿企业",
+                            "bg": "coalMinebg",
+                            "num": 0,
+                            "danwei": "个",
+                            "key": "coal",
+                            "clickKey": "coal",
+                            "active": false
+                        },
+                        "tailingpond": {
+                            "title": "尾矿库企业",
+                            "name": "尾矿库",
+                            "bg": "minebg",
+                            "num": 0,
+                            "danwei": "个",
+                            "key": "tailingpond",
+                            "clickKey": "tailingpond",
+                            "active": false
+                        },
+                        "firework": {
+                            "title": "烟花爆竹企业",
+                            "name": "烟花爆竹企业",
+                            "bg": "explosivebg",
+                            "num": 0,
+                            "danwei": "个",
+                            "key": "firework",
+                            "clickKey": "firework",
+                            "active": false
+                        },
+                        "fireworkhouse": {
+                          "title": "烟花爆竹仓库",
+                          "name": "烟花爆竹仓库",
+                          "bg": "explosivebg",
+                          "num": 0,
+                          "danwei": "个",
+                          "key": "fireworkhouse",
+                          "clickKey": "fireworkhouse",
+                          "active": false
+                        }
+                    }
+                },
+                {
+                    "title": "重要设施",
+                    "sum": 0,
+                    "list": {
+                        "reservoir": {
+                            "title": "水库大坝",
+                            "name": "水库大坝",
+                            "bg": "reservoirbg",
+                            "num": 0,
+                            "danwei": "个",
+                            "key": "reservoir",
+                            "clickKey": "reservoir",
+                            "active": false
+                        },
+                        "portwharf": {
+                            "title": "码头",
+                            "name": "码头",
+                            "bg": "portwharfbg",
+                            "num": 0,
+                            "danwei": "个",
+                            "key": "portwharf",
+                            "clickKey": "portwharf",
+                            "active": false
+                        }
+                    }
+                },
+                {
+                    "title": "地灾隐患点",
+                    "sum": 0,
+                    "list": {
+                        "landslide": {
+                            "title": "滑坡",
+                            "name": "滑坡",
+                            "bg": "landslide",
+                            "num": 0,
+                            "danwei": "处",
+                            "key": "landslide",
+                            "commonKey": "hiddendisastersites",
+                            "clickKey": "hiddendisastersites",
+                            "active": false
+                        },
+                        "debrisflow": {
+                            "title": "泥石流",
+                            "name": "泥石流",
+                            "bg": "mudslide",
+                            "num": 0,
+                            "danwei": "处",
+                            "key": "debrisflow",
+                            "commonKey": "hiddendisastersites",
+                            "clickKey": "hiddendisastersites",
+                            "active": false
+                        },
+                        "mountaincollapse": {
+                            "title": "山体崩塌",
+                            "name": "山体崩塌",
+                            "bg": "mountainCollapsed",
+                            "num": 0,
+                            "danwei": "处",
+                            "key": "mountaincollapse",
+                            "commonKey": "hiddendisastersites",
+                            "clickKey": "hiddendisastersites",
+                            "active": false
+                        },
+                        "bottomcollapse": {
+                            "title": "地面塌陷",
+                            "name": "地面塌陷",
+                            "bg": "groundCollapse",
+                            "num": 0,
+                            "danwei": "处",
+                            "key": "bottomcollapse",
+                            "commonKey": "hiddendisastersites",
+                            "clickKey": "hiddendisastersites",
+                            "active": false
+                        },
+                        "landsubsidence": {
+                            "title": "地面沉降",
+                            "name": "地面沉降",
+                            "bg": "groundSubsidence",
+                            "num": 0,
+                            "danwei": "处",
+                            "key": "landsubsidence",
+                            "commonKey": "hiddendisastersites",
+                            "clickKey": "hiddendisastersites",
+                            "active": false
+                        },
+                        "unstableslopes": {
+                            "title": "不稳定斜坡",
+                            "name": "不稳定斜坡",
+                            "bg": "unstableSlope",
+                            "num": 0,
+                            "danwei": "处",
+                            "key": "unstableslopes",
+                            "commonKey": "hiddendisastersites",
+                            "clickKey": "hiddendisastersites",
+                            "active": false
+                        }
+                    }
+                },
+                {
+                    "title": "监测站点",
+                    "key": "监测站点",
+                    "defaultExpand": true,
+                    "//isSpecialComponent": "是否走自己的组件，不和人员密集场所一样",
+                    "isSpecialComponent": true,
+                    "componentName": "MonitorWarningContainer"
+                },
+                {
+                    "title": "灾情信息员",
+                    "sum": 0,
+                    "danwei": "人",
+                    "key": "disinfoper",
+                    "clickKey": "disinfoper",
+                    "name": "灾情信息员",
+                    "active": false
+                },
+                {
+                    "title": "应急管理机构",
+                    "sum": 0,
+                    "danwei": "个",
+                    "key": "emergencypart",
+                    "clickKey": "emergencypart",
+                    "name": "应急管理机构",
+                    "active": false
+                }
+            ]
+        }
+    },
+    "RescueTeamsContainer": {
+        "title": "力量调度",
+        "notShowTabFlag": true,
+        "statisticsList": [
+            {
+                "title": "队伍分布",
+                "key": "TeamDistribution",
+                "teamnum": 0,
+                "teamUnit": "支",
+                "peoplenum": 0,
+                "personUnit": "人",
+                "showSub": true,
+                "subList": [
+                    {
+                        "name": "消防",
+                        "alias": "消防",
+                        "codeType": "T003",
+                        "sortNum": 7,
+                        "icon_bg": "icon_bg_normal",
+                        "icon": "fire",
+                        "teamnum": 0,
+                        "teamUnit": "支",
+                        "peoplenum": 0,
+                        "personUnit": "人",
+                        "active": false
+                    },
+                    {
+                        "name": "国家森林（草原）消防",
+                        "alias": "森林消防",
+                        "codeType": "T004",
+                        "sortNum": 8,
+                        "icon_bg": "icon_bg_normal",
+                        "icon": "forestFire",
+                        "teamnum": 0,
+                        "teamUnit": "支",
+                        "peoplenum": 0,
+                        "personUnit": "人",
+                        "active": false
+                    },
+                    {
+                        "name": "电力",
+                        "alias": "电力",
+                        "codeType": "T009",
+                        "sortNum": 12,
+                        "icon_bg": "icon_bg_normal",
+                        "icon": "electricPower",
+                        "teamnum": 0,
+                        "teamUnit": "支",
+                        "peoplenum": 0,
+                        "personUnit": "人",
+                        "active": false
+                    },
+                    {
+                        "name": "矿山（隧道）",
+                        "alias": "矿山",
+                        "codeType": "T001",
+                        "sortNum": 1,
+                        "icon_bg": "icon_bg_normal",
+                        "icon": "tailingpond",
+                        "teamnum": 0,
+                        "teamUnit": "支",
+                        "peoplenum": 0,
+                        "personUnit": "人",
+                        "active": false
+                    },
+                    {
+                        "name": "社会组织",
+                        "alias": "社会组织",
+                        "codeType": "T011",
+                        "sortNum": 15,
+                        "icon_bg": "icon_bg_normal",
+                        "icon": "socialOrganization",
+                        "teamnum": 0,
+                        "teamUnit": "支",
+                        "peoplenum": 0,
+                        "personUnit": "人",
+                        "active": false
+                    },
+                    {
+                        "name": "卫生防疫",
+                        "alias": "卫生防疫",
+                        "codeType": "T006",
+                        "sortNum": 14,
+                        "icon_bg": "icon_bg_normal",
+                        "icon": "health",
+                        "teamnum": 0,
+                        "teamUnit": "支",
+                        "peoplenum": 0,
+                        "personUnit": "人",
+                        "active": false
+                    },
+                    {
+                        "name": "医疗",
+                        "alias": "医疗",
+                        "codeType": "T014",
+                        "sortNum": 5,
+                        "icon_bg": "icon_bg_normal",
+                        "icon": "medical",
+                        "teamnum": 0,
+                        "teamUnit": "支",
+                        "peoplenum": 0,
+                        "personUnit": "人",
+                        "active": false
+                    }
+                ]
+            },
+            {
+                "title": "前突队伍",
+                "key": "QiantuTeam",
+                "teamnum": 0,
+                "teamUnit": "支",
+                "peoplenum": 0,
+                "personUnit": "人",
+                "showSub": true,
+                "qiantuFlag": true,
+                "subList": [
+                    {
+                        "name": "消防（前突）",
+                        "alias": "消防",
+                        "codeType": "T003",
+                        "sortNum": 7,
+                        "icon_bg": "icon_bg_qt",
+                        "icon": "fire",
+                        "teamnum": 0,
+                        "teamUnit": "支",
+                        "peoplenum": 0,
+                        "personUnit": "人",
+                        "active": false
+                    },
+                    {
+                        "name": "森林消防（前突）",
+                        "alias": "森林消防",
+                        "codeType": "T004",
+                        "sortNum": 8,
+                        "icon_bg": "icon_bg_qt",
+                        "icon": "forestFire",
+                        "teamnum": 0,
+                        "teamUnit": "支",
+                        "peoplenum": 0,
+                        "personUnit": "人",
+                        "active": false
+                    }
+                ]
+            }
+        ]
+    },
+    "MaterialContainer": {
+        "title": "物资保障",
+        "notShowTabFlag": true,
+        "statisticsList": [
+            {
+                "title": "物资储备库分布",
+                "key": "MaterialDistribution",
+                "count": 0,
+                "unit": "个",
+                "showSub": true,
+                "subList": [
+                    {
+                        "name": "国家物资库",
+                        "alias": "国家",
+                        "codeType": "1",
+                        "icon_bg": "icon_bg_normal",
+                        "icon": "centralMaterial",
+                        "count": 0,
+                        "unit": "个",
+                        "active": false
+                    },
+                    {
+                        "name": "地方物资储备库",
+                        "alias": "地方",
+                        "codeType": "2",
+                        "icon_bg": "icon_bg_normal",
+                        "icon": "localSupplies",
+                        "count": 0,
+                        "unit": "个",
+                        "active": false
+                    },
+                    {
+                        "name": "社会物资储备库",
+                        "alias": "社会",
+                        "codeType": "3",
+                        "icon_bg": "icon_bg_normal",
+                        "icon": "socialGoods",
+                        "count": 0,
+                        "unit": "个",
+                        "active": false
+                    },
+                    {
+                        "name": "消防物资储备库",
+                        "alias": "消防局",
+                        "codeType": "4",
+                        "icon_bg": "icon_bg_normal",
+                        "icon": "fireStationSupplies",
+                        "count": 0,
+                        "unit": "个",
+                        "active": false
+                    },
+                    {
+                        "name": "森防物资储备库",
+                        "alias": "森林消防局",
+                        "codeType": "5",
+                        "icon_bg": "icon_bg_normal",
+                        "icon": "forestDefense",
+                        "count": 0,
+                        "unit": "个",
+                        "active": false
+                    }
+                ]
+            }
+        ]
+    },
+    "halflist": {
+        "DisasterRescueTeams": [
+            {
+                "name": "救援分布统计",
+                "componetName": "DisasterRescueTeams"
+            },
+            {
+                "name": "救援分布列表",
+                "componetName": "DisasterRescueTeamsList"
+            }
+        ],
+        "bas_school": [
+            {
+                "name": "学校分布统计",
+                "componetName": "DisasterSchool"
+            },
+            {
+                "name": "学校分布列表",
+                "componetName": "DisaterSchoolList"
+            }
+        ],
+        "hospital": [
+            {
+                "name": "医院分布统计",
+                "componetName": "DisasterHospital"
+            },
+            {
+                "name": "医院分布列表",
+                "componetName": "DisasterHospitalList"
+            }
+        ],
+        "airport": [
+            {
+                "name": "机场分布统计",
+                "componetName": "DisasterPlane"
+            },
+            {
+                "name": "机场分布列表",
+                "componetName": "DisasterPlaneList"
+            }
+        ],
+        "railwaystation": [
+            {
+                "name": "火车站分布统计",
+                "componetName": "DisasterTrain"
+            },
+            {
+                "name": "火车站分布列表",
+                "componetName": "DisasterTrainList"
+            }
+        ],
+        "hazardous": [
+            {
+                "name": "危化企业分布统计",
+                "componetName": "DisasterCompany"
+            },
+            {
+                "name": "危化企业分布列表",
+                "componetName": "DisasterCompanyList"
+            }
+        ],
+        "coal": [
+            {
+                "name": "煤矿企业分布统计",
+                "componetName": "DisasterCoal"
+            },
+            {
+                "name": "煤矿企业分布列表",
+                "componetName": "DisasterCoalList"
+            }
+        ],
+        "tailingpond": [
+            {
+                "name": "非煤矿山分布统计",
+                "componetName": "DisasterNoCoal"
+            },
+            {
+                "name": "非煤矿山分布列表",
+                "componetName": "DisasterNoCoalList"
+            }
+        ],
+        "firework": [
+            {
+                "name": "烟花爆竹企业分布统计",
+                "componetName": "DisasterFireworks"
+            },
+            {
+                "name": "烟花爆竹企业分布列表",
+                "componetName": "DisasterFireworksList"
+            }
+        ],
+        "fireworkhouse": [{
+          "name": "烟花爆竹仓库分布统计",
+          "componetName": "FIREWORKWAREHOUSE"
+          },
+          {
+              "name": "烟花爆竹仓库分布列表",
+              "componetName": "FIREWORKWAREHOUSEList"
+          }
+        ],
+        "reservoir": [
+            {
+                "name": "水库大坝分布统计",
+                "componetName": "DisasterReservoir"
+            },
+            {
+                "name": "水库大坝分布列表",
+                "componetName": "DisasterReservoirList"
+            }
+        ],
+        "portwharf": [
+            {
+                "name": "码头分布统计",
+                "componetName": "DisasterWharf"
+            },
+            {
+                "name": "码头分布列表",
+                "componetName": "DisasterWharfList"
+            }
+        ],
+        "hiddendisastersites": [
+            {
+                "name": "地灾隐患点分布",
+                "componetName": "HiddenDisasterSites"
+            },
+            {
+                "name": "地灾隐患点统计",
+                "componetName": "HiddenDisasterSitesList"
+            }
+        ],
+        "nuclear": [
+            {
+                "name": "核设施分布统计",
+                "componetName": "DisasterNucleus"
+            },
+            {
+                "name": "核设施分布列表",
+                "componetName": "DisasterNucleusList"
+            }
+        ],
+        "disinfoper": [
+            {
+                "name": "灾情信息员统计",
+                "componetName": "DisasterMessenger"
+            },
+            {
+                "name": "灾情信息员列表",
+                "componetName": "DisasterMessengerList"
+            }
+        ],
+        "emergencypart": [
+            {
+                "name": "应急管理机构统计",
+                "componetName": "DisasterEmergencypart"
+            },
+            {
+                "name": "应急管理机构列表",
+                "componetName": "DisasterEmergencypartList"
+            }
+        ],
+        "population": [
+            {
+                "name": "人口分布统计",
+                "componetName": "PopulationFeverBox"
+            },
+            {
+                "name": "人口分布列表",
+                "componetName": "PopulationFeverList"
+            }
+        ],
+        "countyCount": [
+            {
+                "name": "行政区划",
+                "componetName": "DistrictLeftDialog"
+            },
+            {
+                "name": "行政区划",
+                "componetName": "DistrictRightDialog"
+            }
+        ]
+    },
+    "toolConfig": {
+        "mapToolIconEventOverview": "mapToolIconEventOverview_common.json",
+        "mapToolCompared": "mapToolCompared_common.json",
+        "mapCommonTools": "commonTools_common.json",
+        "disasterDecide": "disasterDecide_common.json",
+        "gisToolList": [
+            {
+                "component": "GisSwitchMap",
+                "options": {
+                    "mapId": "map",
+                    "baseLayers": []
+                }
+            },
+            {
+                "component": "CommonTools"
+            },
+            {
+                "component": "GisVideoSurveillance",
+                "name": "视频监控"
+            },
+            {
+                "component": "GisOnlineTerminal",
+                "name": "在线会商终端"
+            },
+            {
+                "component": "ToolCompared"
+            },
+            {
+                "component": "ToolEventOverview"
+            }
+        ]
+    },
+    "legend": [
+        {
+            "clickFn": "openIntensity",
+            "title": "烈度圈",
+            "checked": false,
+            "iconName": "InfluenceCircle",
+            "isShow": false,
+            "mapCircleQueryType": 1
+        },
+        {
+            "clickFn": "openInfluence",
+            "title": "经验圈",
+            "checked": false,
+            "iconName": "intensityCircle",
+            "isShow": true,
+            "mapCircleQueryType": 0
+        },
+        {
+            "clickFn": "openThermodynamiTc",
+            "title": "人口热力",
+            "checked": false,
+            "iconName": "populationFever",
+            "isShow": true,
+            "mapCircleQueryType": 2,
+            "DayNightShow": true,
+            "DayNightHide": false,
+            "DayBtnclick": true
+        },
+        {
+            "clickFn": "openRiverSystem",
+            "title": "水系",
+            "checked": false,
+            "iconName": "riverSystem",
+            "isShow": false,
+            "mapCircleQueryType": 3
+        },
+        {
+            "clickFn": "openHistoricalEarthquake",
+            "title": "历史地震",
+            "checked": false,
+            "iconName": "historicalEarthquake",
+            "isShow": false,
+            "mapCircleQueryType": 4
+        },
+        {
+            "key": "Rainfall",
+            "title": "降雨量",
+            "iconName": "riverSystem",
+            "isShow": false,
+            "index": 5,
+            "mutex": [
+                {
+                    "key": "RainStation"
+                },
+                {
+                    "key": "WindMonitoring"
+                },
+                {
+                    "key": "Reservoir"
+                },
+                {
+                    "key": "Riverway"
+                },
+                {
+                    "key": "Wind"
+                },
+                {
+                    "key": "WindThwartwise"
+                },
+                {
+                    "key": "LiftMonitoring"
+                }
+            ],
+            "componentName": "Rainfall",
+            "componentParam": {
+                "title": "降雨量(mm)",
+                "content": [
+                    {
+                        "text": "0~10",
+                        "color": "rgba(165,243,142,1)"
+                    },
+                    {
+                        "text": "10~25",
+                        "color": "rgba(56,171,0,1)"
+                    },
+                    {
+                        "text": "25~50",
+                        "color": "rgba(99,186,255,1)"
+                    },
+                    {
+                        "text": "50~100",
+                        "color": "rgba(1,0,251,1)"
+                    }
+                ]
+            }
+        },
+        {
+            "key": "RainStation",
+            "title": "雨量站",
+            "iconName": "riverSystem",
+            "isShow": false,
+            "index": 6,
+            "mutex": [
+                {
+                    "key": "Rainfall"
+                },
+                {
+                    "key": "WindMonitoring"
+                },
+                {
+                    "key": "Reservoir"
+                },
+                {
+                    "key": "Riverway"
+                },
+                {
+                    "key": "Wind"
+                },
+                {
+                    "key": "WindThwartwise"
+                },
+                {
+                    "key": "RainfallThwartwise"
+                },
+                {
+                    "key": "LiftMonitoring"
+                }
+            ],
+            "componentName": "RainStation",
+            "componentParam": {
+                "title": "雨量站",
+                "content": [
+                    {
+                        "text": "无预警",
+                        "iconName": "rainstation"
+                    },
+                    {
+                        "text": "暴雨",
+                        "iconName": "rain"
+                    },
+                    {
+                        "text": "大暴雨",
+                        "iconName": "heavyRain"
+                    },
+                    {
+                        "text": "特大暴雨",
+                        "iconName": "superRain"
+                    }
+                ]
+            }
+        },
+        {
+            "key": "Wind",
+            "title": "风力",
+            "isShow": false,
+            "index": 7,
+            "mutex": [
+                {
+                    "key": "RainStation"
+                },
+                {
+                    "key": "Rainfall"
+                },
+                {
+                    "key": "WindMonitoring"
+                },
+                {
+                    "key": "Reservoir"
+                },
+                {
+                    "key": "Riverway"
+                },
+                {
+                    "key": "WindThwartwise"
+                },
+                {
+                    "key": "RainfallThwartwise"
+                },
+                {
+                    "key": "LiftMonitoring"
+                }
+            ],
+            "componentName": "Wind",
+            "componentParam": {
+                "title": "风力",
+                "content": [
+                    {
+                        "text": "软风",
+                        "iconName": "windField"
+                    },
+                    {
+                        "text": "轻风",
+                        "iconName": "windField"
+                    },
+                    {
+                        "text": "微风",
+                        "iconName": "windField"
+                    },
+                    {
+                        "text": "和风",
+                        "iconName": "windField"
+                    },
+                    {
+                        "text": "清劲风",
+                        "iconName": "windField"
+                    },
+                    {
+                        "text": "强风",
+                        "iconName": "windField"
+                    },
+                    {
+                        "text": "疾风",
+                        "iconName": "windField"
+                    },
+                    {
+                        "text": "大风",
+                        "iconName": "windField"
+                    },
+                    {
+                        "text": "烈风",
+                        "iconName": "windField"
+                    },
+                    {
+                        "text": "狂风",
+                        "iconName": "windField"
+                    },
+                    {
+                        "text": "暴风",
+                        "iconName": "windField"
+                    }
+                ]
+            }
+        },
+        {
+            "key": "WindMonitoring",
+            "title": "风力监测站",
+            "isShow": false,
+            "index": 8,
+            "mutex": [
+                {
+                    "key": "Rainfall"
+                },
+                {
+                    "key": "RainStation"
+                },
+                {
+                    "key": "Reservoir"
+                },
+                {
+                    "key": "Riverway"
+                },
+                {
+                    "key": "Wind"
+                },
+                {
+                    "key": "WindThwartwise"
+                },
+                {
+                    "key": "RainfallThwartwise"
+                },
+                {
+                    "key": "LiftMonitoring"
+                }
+            ],
+            "componentName": "WindMonitoring",
+            "componentParam": {
+                "title": "风力监测站",
+                "content": [
+                    {
+                        "text": "风力监测站",
+                        "iconName": "wind"
+                    },
+                    {
+                        "text": "超阈值监测站",
+                        "iconName": "windOver"
+                    }
+                ]
+            }
+        },
+        {
+            "key": "Reservoir",
+            "title": "水库测站",
+            "isShow": false,
+            "index": 9,
+            "mutex": [
+                {
+                    "key": "Rainfall"
+                },
+                {
+                    "key": "RainStation"
+                },
+                {
+                    "key": "WindMonitoring"
+                },
+                {
+                    "key": "Wind"
+                },
+                {
+                    "key": "WindThwartwise"
+                },
+                {
+                    "key": "RainfallThwartwise"
+                },
+                {
+                    "key": "LiftMonitoring"
+                }
+            ],
+            "componentName": "Reservoir",
+            "componentParam": {
+                "title": "水库测站",
+                "content": [
+                    {
+                        "text": "无预警",
+                        "iconName": "reservoirwyj"
+                    },
+                    {
+                        "text": "超汛限",
+                        "iconName": "reservoircxx"
+                    },
+                    {
+                        "text": "超正常",
+                        "iconName": "reservoirczc"
+                    },
+                    {
+                        "text": "超设计",
+                        "iconName": "reservoircsj"
+                    },
+                    {
+                        "text": "超历史最高",
+                        "iconName": "reservoircls"
+                    }
+                ]
+            }
+        },
+        {
+            "key": "Riverway",
+            "title": "河道站",
+            "isShow": false,
+            "index": 10,
+            "mutex": [
+                {
+                    "key": "Rainfall"
+                },
+                {
+                    "key": "RainStation"
+                },
+                {
+                    "key": "WindMonitoring"
+                },
+                {
+                    "key": "Wind"
+                },
+                {
+                    "key": "WindThwartwise"
+                },
+                {
+                    "key": "RainfallThwartwise"
+                },
+                {
+                    "key": "LiftMonitoring"
+                }
+            ],
+            "componentName": "Riverway",
+            "componentParam": {
+                "title": "河道站",
+                "content": [
+                    {
+                        "text": "无预警",
+                        "iconName": "riverwyj"
+                    },
+                    {
+                        "text": "超警戒",
+                        "iconName": "rivercjj"
+                    },
+                    {
+                        "text": "超保证",
+                        "iconName": "rivercbz"
+                    },
+                    {
+                        "text": "超历史最高",
+                        "iconName": "rivercls"
+                    }
+                ]
+            }
+        },
+        {
+            "key": "LiftMonitoring",
+            "title": "工情监测站",
+            "isShow": false,
+            "index": 11,
+            "mutex": [
+                {
+                    "key": "Rainfall"
+                },
+                {
+                    "key": "RainStation"
+                },
+                {
+                    "key": "WindMonitoring"
+                },
+                {
+                    "key": "Wind"
+                },
+                {
+                    "key": "WindThwartwise"
+                },
+                {
+                    "key": "RainfallThwartwise"
+                },
+                {
+                    "key": "Riverway"
+                }
+            ],
+            "componentName": "LiftMonitoring",
+            "componentParam": {
+                "title": "工情监测站",
+                "content": [
+                    {
+                        "text": "堤防",
+                        "iconName": "bundpitch"
+                    },
+                    {
+                        "text": "电排站",
+                        "iconName": "dianpaizhan"
+                    },
+                    {
+                        "text": "船闸",
+                        "iconName": "chuanzha"
+                    },
+                    {
+                        "text": "水电站",
+                        "iconName": "shuidianzhan"
+                    },
+                    {
+                        "text": "水闸",
+                        "iconName": "shuizha"
+                    }
+                ]
+            }
+        },
+        {
+            "key": "RainfallThwartwise",
+            "horizontal": true,
+            "isShow": false,
+            "index": 12,
+            "mutex": [
+                {
+                    "key": "RainStation"
+                },
+                {
+                    "key": "WindMonitoring"
+                },
+                {
+                    "key": "Reservoir"
+                },
+                {
+                    "key": "Wind"
+                },
+                {
+                    "key": "Riverway"
+                },
+                {
+                    "key": "WindThwartwise"
+                },
+                {
+                    "key": "LiftMonitoring"
+                }
+            ],
+            "componentName": "RainfallThwartwise",
+            "componentParam": {
+                "title": "",
+                "content": [
+                    "小雨",
+                    "中雨",
+                    "大雨",
+                    "暴雨",
+                    "大暴雨",
+                    "特大暴雨"
+                ]
+            }
+        },
+        {
+            "key": "WindThwartwise",
+            "horizontal": true,
+            "isShow": false,
+            "index": 13,
+            "mutex": [
+                {
+                    "key": "Rainfall"
+                },
+                {
+                    "key": "RainStation"
+                },
+                {
+                    "key": "WindMonitoring"
+                },
+                {
+                    "key": "Reservoir"
+                },
+                {
+                    "key": "Wind"
+                },
+                {
+                    "key": "Riverway"
+                },
+                {
+                    "key": "RainfallThwartwise"
+                },
+                {
+                    "key": "LiftMonitoring"
+                }
+            ],
+            "componentName": "WindThwartwise",
+            "componentParam": {
+                "title": "风力",
+                "content": [
+                    "软风",
+                    "轻风",
+                    "微风",
+                    "和风",
+                    "清劲风",
+                    "强风",
+                    "疾风",
+                    "大风",
+                    "烈风",
+                    "狂风",
+                    "暴风"
+                ]
+            }
+        },
+        {
+            "key": "Disaster",
+            "title": "",
+            "iconName": "disaster",
+            "isShow": false,
+            "checked": false,
+            "index": 14,
+            "mutex": [
+                {
+                    "key": "RainStation"
+                },
+                {
+                    "key": "WindMonitoring"
+                },
+                {
+                    "key": "Reservoir"
+                },
+                {
+                    "key": "Riverway"
+                },
+                {
+                    "key": "Wind"
+                },
+                {
+                    "key": "WindThwartwise"
+                },
+                {
+                    "key": "LiftMonitoring"
+                }
+            ],
+            "componentName": "Disaster"
+        }
+    ],
+    "// EmergencyResponse": "应急响应",
+    "EmergencyResponse": {
+        "isShow": true
+    },
+    "LayerPanelConfig": {
+        "title": "图层",
+        "showTitle": true,
+        "newLayerList": [
+            {
+                "id": "WindLayer",
+                "name": "风速风向",
+                "checked": false,
+                "gray": false,
+                "isHasPaly": true,
+                "icon": "fsfx",
+                "legend": {
+                    "component": "WindDirect"
+                }
+            },
+            {
+                "id": "rainForecast",
+                "name": "降水",
+                "checked": false,
+                "gray": false,
+                "isHasPaly": true,
+                "icon": "js",
+                "legend": {
+                    "component": "RainForest"
+                }
+            },
+            {
+                "id": "radarMap",
+                "name": "雷达回波",
+                "checked": false,
+                "gray": false,
+                "isHasPaly": true,
+                "icon": "ldt",
+                "legend": {
+                    "component": "radarMap"
+                }
+            },
+            {
+                "id": "satilliteCloud",
+                "name": "卫星云图",
+                "checked": false,
+                "gray": false,
+                "isHasPaly": true,
+                "icon": "wxyt",
+                "legend": {
+                    "//component": "satilliteCloud",
+                    "component": ""
+                }
+            },
+            {
+                "id": "WatershedLayer",
+                "name": "流域界",
+                "checked": false,
+                "gray": false,
+                "isHasPaly": false,
+                "icon": "lyj",
+                "legend": {
+                    "component": ""
+                }
+            },
+            {
+                "id": "RiverLayer",
+                "name": "河网水系",
+                "checked": false,
+                "gray": false,
+                "isHasPaly": false,
+                "icon": "hwsx",
+                "legend": {
+                    "component": ""
+                }
+            },
+            {
+                "id": "ReservoirLakeLayer",
+                "name": "库湖水面",
+                "checked": false,
+                "gray": false,
+                "isHasPaly": false,
+                "icon": "khsx",
+                "legend": {
+                    "component": ""
+                }
+            },
+            {
+                "id": "populationHeat",
+                "name": "人口热力",
+                "checked": false,
+                "gray": false,
+                "isHasPaly": false,
+                "icon": "rkrl",
+                "legend": {
+                    "component": "Population"
+                }
+            },
+            {
+                "id": "realtimeTraffic",
+                "name": "交通路况",
+                "checked": false,
+                "gray": false,
+                "isHasPaly": false,
+                "icon": "jtlk",
+                "legend": {
+                    "component": "Traffic"
+                }
+            }
+        ],
+        "gisComponentConfig": {
+            "rainForecast": {
+                "module": "commonFactory",
+                "component": "mapserviceIn",
+                "add": {
+                    "method": "addLayer",
+                    "arguments": [
+                        "RainForest"
+                    ]
+                },
+                "remove": {
+                    "method": "removeLayer",
+                    "arguments": [
+                        "RainForest"
+                    ]
+                }
+            },
+            "satilliteCloud": {
+                "module": "commonFactory",
+                "component": "mapserviceIn",
+                "add": {
+                    "method": "addLayer",
+                    "arguments": [
+                        "SatelliteCloud"
+                    ]
+                },
+                "remove": {
+                    "method": "removeLayer",
+                    "arguments": [
+                        "SatelliteCloud"
+                    ]
+                }
+            },
+            "radarMap": {
+                "module": "commonFactory",
+                "component": "mapserviceIn",
+                "add": {
+                    "method": "addLayer",
+                    "arguments": [
+                        "RadarMap"
+                    ]
+                },
+                "remove": {
+                    "method": "removeLayer",
+                    "arguments": [
+                        "RadarMap"
+                    ]
+                }
+            },
+            "WindLayer": {
+                "module": "commonFactory",
+                "component": "mapserviceIn",
+                "add": {
+                    "method": "addLayer",
+                    "arguments": [
+                        "WindDirect"
+                    ]
+                },
+                "remove": {
+                    "method": "removeLayer",
+                    "arguments": [
+                        "WindDirect"
+                    ]
+                }
+            },
+            "WatershedLayer": {
+                "module": "commonFactory",
+                "component": "mapserviceIn",
+                "add": {
+                    "method": "addLayer",
+                    "arguments": [
+                        "WatershedLayer"
+                    ]
+                },
+                "remove": {
+                    "method": "removeLayer",
+                    "arguments": [
+                        "WatershedLayer"
+                    ]
+                }
+            },
+            "RiverLayer": {
+                "module": "commonFactory",
+                "component": "mapserviceIn",
+                "add": {
+                    "method": "addLayer",
+                    "arguments": [
+                        "RiverLayer",
+                        {
+                            "clickEventName": "riverClick"
+                        }
+                    ]
+                },
+                "remove": {
+                    "method": "removeLayer",
+                    "arguments": [
+                        "RiverLayer"
+                    ]
+                }
+            },
+            "ReservoirLakeLayer": {
+                "module": "commonFactory",
+                "component": "mapserviceIn",
+                "add": {
+                    "method": "addLayer",
+                    "arguments": [
+                        "ReservoirLakeLayer"
+                    ]
+                },
+                "remove": {
+                    "method": "removeLayer",
+                    "arguments": [
+                        "ReservoirLakeLayer"
+                    ]
+                }
+            },
+            "realtimeTraffic": {
+                "module": "commonFactory",
+                "component": "gisToolComp",
+                "add": {
+                    "method": "addTafficLayer"
+                },
+                "remove": {
+                    "method": "removeTrfficLayer"
+                }
+            }
+        }
+    },
+    "fastAssessment": {
+        "modelBtnGroup": {
+            "name": "快速评估模型按钮配置",
+            "isShow": true,
+            "btnArr": [
+                {
+                    "id": "FloodForecast",
+                    "name": "洪水径流预测",
+                    "checked": false,
+                    "icon": "hsjlyc",
+                    "index": 1,
+                    "isStartUse": true,
+                    "isHasPaly": true,
+                    "legend": {
+                        "component": "FloodForecast"
+                    }
+                },
+                {
+                    "id": "FallRisk",
+                    "name": "暴雨风险评估",
+                    "checked": false,
+                    "icon": "byfxpg",
+                    "index": 2,
+                    "isStartUse": true,
+                    "isHasPaly": true,
+                    "legend": {
+                        "component": "FallRisk"
+                    }
+                },
+                {
+                    "id": "FallCoast",
+                    "name": "暴雨滑坡预测",
+                    "checked": false,
+                    "icon": "byhpyc",
+                    "index": 3,
+                    "isStartUse": false
+                },
+                {
+                    "id": "Rainstorm",
+                    "name": "山洪风险预警",
+                    "checked": false,
+                    "icon": "flood",
+                    "index": 4,
+                    "isStartUse": true,
+                    "isHasPaly": false,
+                    "legend": {
+                        "component": "Rainstorm"
+                    }
+                }
+            ]
+        }
+    }
+}

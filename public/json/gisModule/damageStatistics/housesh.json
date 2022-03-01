@@ -1,0 +1,71 @@
+{
+  "key": "housesh",
+  "data": {
+    "static":{
+      "total":121
+    },
+    "detail":[
+      {
+        "parentName": "西城区",
+        "damage": 15,
+        "yazhongsunhuai": 8,
+        "yibansunhuai": 2,
+        "x": 116.35581226,
+        "y": 39.87521582,
+        "id": "110102",
+        "child": [
+          {
+            "yibansunhuai": 2,
+            "yazhongsunhuai": 8,
+            "damage": 8,
+            "town": "西城区",
+            "village": "白纸坊街道",
+            "id": "11010201995737",
+            "x": 116.35581226,
+            "y": 39.87521582,
+            "poptotal": 95737
+          },
+          {
+            "yibansunhuai": 0,
+            "yazhongsunhuai": 0,
+            "damage": 7,
+            "town": "西城区",
+            "village": "牛街街道",
+            "id": "11010201851877",
+            "x": 116.35574273,
+            "y": 39.8849606,
+            "poptotal": 51877
+          }
+        ],
+        "death": null,
+        "injured": null,
+        "miss": null,
+        "lost": null,
+        "poptotal": 147614
+      },
+      {
+        "parentName": "丰台区",
+        "damage": 6,
+        "yazhongsunhuai": 2,
+        "yibansunhuai": 6,
+        "x": 116.35984272,
+        "y": 39.86261546,
+        "id": "110106",
+        "child": [
+          {
+            "yibansunhuai": 6,
+            "yazhongsunhuai": 2,
+            "damage": 6,
+            "town": "丰台区",
+            "village": "右安门街道",
+            "id": "11010600183936",
+            "x": 116.35984272,
+            "y": 39.86261546,
+            "poptotal": 83936
+          }
+        ],
+        "poptotal": 231550
+      }
+    ]
+  }
+}

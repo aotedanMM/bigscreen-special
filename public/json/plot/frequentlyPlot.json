@@ -1,0 +1,264 @@
+[
+  {
+    "boxName": "changeableBox",
+    "content" : "常用",
+    "id":"2",
+    "data":[
+      {
+        "name":"文本",
+        "tit":"text_1",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.frequentlyPlot.text_1}",
+        "icons":"eMap-plot/eMap-plot92.png",
+        "base":"Polyline",
+        "type":"Text",
+        "key":"text",
+        "symbol":{
+          "type":"TextSymbol",
+          "//":"options为自定义配置内容",
+          "options": {
+            "fontFamilyName":"黑体",
+            "fontSize":26,
+            "text":"自定义文本",
+            "foreground": {"alpha": 255, "r": 255, "g": 0, "b": 0},
+            "offsetX": 0,
+            "offsetY": 0
+          }
+        }
+      },{
+        "name":"引线文本",
+        "tit":"text_2",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.frequentlyPlot.text_2}",
+        "icons":"eMap-plot/eMap-plot92.png",
+        "base":"Polyline",
+        "type":"TAILEDTEXT",
+        "key":"tailedtext",
+        "symbol":{
+          "type": "SimpleMarkerSymbol",
+          "options": {
+            "borderColor": {
+              "a": 200,
+              "r": 0,
+              "g": 0,
+              "b": 0
+            },
+            "fillColor": {
+              "a": 153,
+              "r": 65,
+              "g": 105,
+              "b": 225
+            },
+            "borderThickness": 0,
+            "size": 0
+          }
+        },
+        "tailedtext_symbol": {
+          "fontSize": 24,
+          "fontFamilyName": "宋体",
+          "foregroundColor":{ "r": 255, "b": 255, "g": 255, "a": 255 },
+          "backgroundColor":{ "r": 205, "b": 85, "g": 85, "a": 255 },
+          "textBackgroundBorderColor":{ "r": 220, "b": 0, "g": 0, "a": 255 },
+          "textBackgroundBorderThickness": 2,
+          "leadLength": 100,
+          "angle": 45,
+          "lineColor":{"r": 205, "b": 85, "g": 85, "a": 255 },
+          "lineWidth": 1,
+          "size": 6,
+          "textAlign": "center",
+          "padding": [10, 10, 10, 10]
+        }
+      },{
+        "name":"折线-实线",
+        "//":"唯一标识ID",
+        "tit":"line_solid",
+        "//":"图标名称",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.frequentlyPlot.line_solid}",
+        "//":"图标路径",
+        "icons":"eMap-plot/eMap-plot14.png",
+        "//":"图片标绘的base64码路径",
+        "base":"Polyline",
+        "//":"标绘的算法名称",
+        "type":"Polyline",
+        "//":"标绘的类别",
+        "key":"line",
+        "//":"标绘的样式",
+        "symbol":{
+          "//":"标绘的样式类型",
+          "type": "SimpleLineSymbol",
+          "//":"options为自定义配置内容",
+          "options": {
+            "color":{"alpha": 179, "r": 255, "g": 0, "b": 0},
+            "width": 2,
+            "style": 5
+          }
+        }
+      },{
+        "name":"折线-虚线",
+        "tit":"line_dash",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.frequentlyPlot.line_dash}",
+        "icons":"eMap-plot/eMap-plot14.png",
+        "base":"Polyline",
+        "type":"Polyline",
+        "key":"line",
+        "symbol":{
+          "type": "SimpleLineSymbol",
+          "options": {
+            "color":{"alpha": 179, "r": 255, "g": 0, "b": 0},
+            "width": 2,
+            "style": 3
+          }
+        }
+      },
+      {
+        "name":"圆-红",
+        "tit":"circular_1",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.frequentlyPlot.circular_1}",
+        "icons":"eMap-plot/eMap-plot18.png",
+        "base":"Polyline",
+        "type":"Circle",
+        "key":"polygon",
+        "symbol":{
+          "type": "SimpleFillSymbol",
+          "//":"options为自定义配置内容",
+          "options": {
+            "borderColor":{"alpha": 153, "r": 255, "g": 0, "b": 0},
+            "fillColor":{"alpha": 153, "r": 255, "g": 0, "b": 0},
+            "borderThickness": 5
+          }
+        }
+      },{
+        "name":"圆-蓝",
+        "tit":"circular_2",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.frequentlyPlot.circular_2}",
+        "icons":"eMap-plot/eMap-plot18.png",
+        "base":"Polyline",
+        "type":"Circle",
+        "key":"polygon",
+        "symbol":{
+          "type": "SimpleFillSymbol",
+          "//":"options为自定义配置内容",
+          "options": {
+            "borderColor":{"alpha": 153, "r": 0, "g": 0, "b": 255},
+            "fillColor":{"alpha": 153, "r": 0, "g": 0, "b": 255},
+            "borderThickness": 7
+          }
+        }
+      },{
+        "name":"圆-绿",
+        "tit":"circular_3",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.frequentlyPlot.circular_3}",
+        "icons":"eMap-plot/eMap-plot18.png",
+        "base":"Polyline",
+        "type":"Circle",
+        "key":"polygon",
+        "symbol":{
+          "type": "SimpleFillSymbol",
+          "//":"options为自定义配置内容",
+          "options": {
+            "borderColor":{"alpha": 153, "r": 0, "g": 255, "b": 0},
+            "fillColor":{"alpha": 153, "r": 0, "g": 255, "b": 0},
+            "borderThickness": 3
+          }
+        }
+      },{
+        "name":"矩形",
+        "tit":"polygon_3",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.polygon_3}",
+        "icons":"eMap-plot/eMap-plot19.png",
+        "base":"Polyline",
+        "type":"Rectangle",
+        "key":"polygon",
+        "checked":false
+      },{
+        "name":"自由绘线",
+        "tit":"line_4",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.frequentlyPlot.line_4}",
+        "icons":"eMap-plot/eMap-plot16.png",
+        "base":"Polyline",
+        "type":"FreePolyline",
+        "key":"line",
+        "symbol":{
+          "type": "SimpleLineSymbol",
+          "//":"options为自定义配置内容",
+          "options": {
+            "color":{"alpha": 179, "r": 255, "g": 0, "b": 0},
+            "width": 2,
+            "style": 5
+          }
+        }
+      },{
+        "name":"自由绘面",
+        "tit":"polygon_8",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.frequentlyPlot.polygon_8}",
+        "icons":"eMap-plot/eMap-plot23.png",
+        "base":"Polyline",
+        "type":"FreePolygon",
+        "key":"polygon",
+        "symbol":{
+          "type": "SimpleFillSymbol",
+          "//":"options为自定义配置内容",
+          "options": {
+            "borderColor":{"alpha": 153, "r": 20, "g": 20, "b": 250},
+            "fillColor":{"alpha": 153, "r": 255, "g": 255, "b": 255},
+            "borderThickness": 4
+          }
+        }
+      },{
+        "name":"细直箭头",
+        "tit":"arrow_4",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.arrow_4}",
+        "icons":"eMap-plot/eMap-plot27.png",
+        "base":"Polyline",
+        "type":"BeelineArrow",
+        "key":"composite",
+        "size":30,
+        "checked":false,
+        "symbol":{
+          "type": "SimpleFillSymbol",
+          "//":"options为自定义配置内容",
+          "options": {
+            "borderColor":{"alpha": 170, "r": 250, "g": 30, "b": 30},
+            "fillColor":{"alpha": 90, "r": 250, "g": 30, "b": 30},
+            "borderThickness": 4
+          }
+        }
+      },{
+        "name":"燕尾箭头",
+        "tit":"arrow_2",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.arrow_2}",
+        "icons":"eMap-plot/eMap-plot25.png",
+        "base":"Polyline",
+        "type":"SwallowTailArrow",
+        "key":"polygon",
+        "size":30,
+        "checked":false,
+        "symbol":{
+          "type": "SimpleFillSymbol",
+          "//":"options为自定义配置内容",
+          "options": {
+            "borderColor":{"alpha": 170, "r": 250, "g": 30, "b": 30},
+            "fillColor":{"alpha": 90, "r": 250, "g": 30, "b": 30},
+            "borderThickness": 4
+          }
+        }
+      },{
+        "name":"双箭头",
+        "tit":"arrow_1",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.frequentlyPlot.arrow_1}",
+        "icons":"eMap-plot/eMap-plot24.png",
+        "base":"Polyline",
+        "type":"DoubleArrow",
+        "key":"polygon",
+        "size":30,
+        "symbol":{
+          "type": "SimpleFillSymbol",
+          "//":"options为自定义配置内容",
+          "options": {
+            "borderColor":{"alpha": 170, "r": 250, "g": 30, "b": 30},
+            "fillColor":{"alpha": 90, "r": 250, "g": 30, "b": 30},
+            "borderThickness": 4
+          }
+        }
+      }
+    ]
+  }
+]

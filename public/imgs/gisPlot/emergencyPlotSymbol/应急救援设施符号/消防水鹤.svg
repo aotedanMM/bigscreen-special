@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+    <title>消防水鹤</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="28" height="28" rx="14"></rect>
+        <filter x="-10.7%" y="-10.7%" width="121.4%" height="121.4%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.26 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="其他图标" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="玉董" transform="translate(-118.000000, -210.000000)">
+            <g id="消防水鹤" transform="translate(120.000000, 212.000000)">
+                <g id="矩形">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <rect stroke="#FFFFFF" stroke-width="1" stroke-linejoin="square" fill="#68AE05" fill-rule="evenodd" x="0.5" y="0.5" width="27" height="27" rx="13.5"></rect>
+                </g>
+                <path d="M13.6426667,8 L9.692,8 L9.692,9.14275862 L10.2306667,9.14275862 L10.2306667,10.8572414 L7,10.8572414 L7,9.14275862 L7.538,9.14275862 L7.538,5.71448276 L14.0273333,5.71448276 C14.2426667,5.48965517 14.51,5.32 14.8073333,5.2262069 L14.8073333,4 L15.8846667,4 L15.8846667,5.2262069 C16.6626667,5.47172414 17.2306667,6.23724138 17.2306667,7.14275862 C17.2313333,7.79586207 16.9306667,8.40896552 16.4226667,8.78482759 L16.4226667,20 L17.2306667,20 L17.2306667,21.1434483 L18.3073333,21.1434483 L18.3073333,20 L19.9226667,20 L19.9226667,21.1434483 L21,21.1434483 L21,24 L12.9226667,24 L12.9226667,21.1434483 L13.4613333,21.1434483 L13.4613333,20 L14.2686667,20 L14.2686667,8.78482759 C13.9993333,8.58482759 13.7833333,8.31448276 13.6426667,8 Z" id="Fill-1" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>

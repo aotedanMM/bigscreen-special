@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+    <title>监测监控台站</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="28" height="28" rx="14"></rect>
+        <filter x="-10.7%" y="-10.7%" width="121.4%" height="121.4%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.26 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="其他图标" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="玉董" transform="translate(-1227.000000, -393.000000)">
+            <g id="监测监控台站" transform="translate(1229.000000, 395.000000)">
+                <g id="分组-4">
+                    <g id="矩形">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <rect stroke="#FFFFFF" stroke-width="1" stroke-linejoin="square" fill="#237FD3" fill-rule="evenodd" x="0.5" y="0.5" width="27" height="27" rx="13.5"></rect>
+                    </g>
+                    <path d="M12.2756511,16.7485279 C9.80240458,16.0077012 8,13.7143377 8,11 C8,7.84997654 10.4274602,5.26691678 13.5137857,5.01941548 L13.5288764,4 L14.5515809,4 L14.5515809,5.02501505 C17.6067454,5.30347243 20,7.87224894 20,11 C20,13.7208927 18.1888794,16.0187756 15.7064186,16.753868 L17.9853376,23 L19,23 L19,24 L9,24 L9,23 L10.0189483,23 L12.2756511,16.7485279 Z M13.3856763,13.6735588 L13.4989028,6.02479668 C10.9727674,6.27616701 9,8.40770125 9,11 C9,13.2812431 10.5277382,15.2056639 12.6159079,15.8059556 L13.3856763,13.6735588 Z M14.5515809,13.5886529 L15.362786,15.8120291 C17.4618617,15.2187381 19,13.2889948 19,11 C19,8.42499531 17.0534667,6.30462783 14.5515809,6.03007822 L14.5515809,13.5886529 Z" id="合并形状" fill="#FFFFFF"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

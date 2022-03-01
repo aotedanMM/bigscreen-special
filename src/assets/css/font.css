@@ -1,0 +1,78 @@
+/*圆润的数字字体1*/
+
+@font-face {
+    font-family: 'sqrfont';
+    src: url('../font/Sqr721n.ttf.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*圆润的数字字体2*/
+
+@font-face {
+    font-family: 'ds_digital';
+    src: url('../font/ds_digital/ds-digii-webfont.ttf') format('truetype'), url('../font/ds_digital/ds-digii-webfont.woff') format('woff'), url('../font/ds_digital/ds-digii-webfont.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*微软雅黑*/
+
+@font-face {
+    font-family: 'myYahei';
+    src: url("../font/msyh.ttf") format('Truetype Collection');
+    font-weight: normal;
+    font-style: initial;
+}
+
+
+/* 黑体 */
+
+@font-face {
+    font-family: 'myHeiti';
+    src: url('../font/arialbi.ttf') format('truetype');
+    font-weight: normal;
+    font-style: initial;
+}
+
+
+/*汉仪刚艺体*/
+
+@font-face {
+    font-family: 'HanYi';
+    src: url('../font/HYGangYiTi-55W.ttf') format('truetype');
+    font-weight: normal;
+    font-style: initial;
+}
+
+
+/*数字*/
+
+@font-face {
+    font-family: 'Impact';
+    src: url('../font/IMPACT.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*数字2*/
+
+@font-face {
+    font-family: 'MySquare';
+    src: url('../font/SQUARE721.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*百度综艺简*/
+
+@font-face {
+    font-family: 'ZongYi';
+    src: url('../font/百度综艺简.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

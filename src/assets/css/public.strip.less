@@ -1,0 +1,154 @@
+
+/* 存放公共样式，如标题大小，颜色；所有面板的关闭按钮。*/ 
+@import './variable.less';
+/*置灰处理*/
+.gray {
+  -webkit-filter: grayscale(.95);
+  pointer-events: none;
+  cursor: default!important;
+}
+/*置灰处理加划过显示*/ 
+.gray .tempRight-itemName{
+  cursor: default!important;
+}
+/*字体大小*/
+.f-tit-h1{
+  font-size: @h6!important;// 30px
+} 
+.f-tit-h2{
+  font-size: @h7!important;// 28px
+}
+.f-txt-com{
+  font-size:@h8!important;//26px
+}
+.f-txt-event{
+  font-size:@h5!important; // 32px
+}
+.f-number{
+  font-size:@h5!important;//32px
+  font-family: 'Impact'!important;
+}
+.f-numberSquare{
+  font-size:@h5!important;//32px
+  font-family: 'MySquare'!important;
+}
+.f-txt-small{
+  font-size:@h10!important;//22px
+}
+.f-txt-little{
+  font-size:@h9!important;//24px
+
+}
+// 编辑标绘工具面板里select的下拉框文字大小
+.f-small{
+  font-size:@h13!important;;
+}
+/*t通用提示框字体大小*/
+.el-message-box{
+  .el-message-box__title{
+    font-size:26px;
+  }
+  .el-message-box__content{
+    font-size:24px;
+  }
+  .el-button--small{
+    font-size:20px
+  }
+}
+
+/*通用一级标题*/
+.title-panel{
+  font-weight: 600;
+  font-family: 'myHeiti';
+  font-size: @h6;
+  color: 00e4ff;
+  background-image: -webkit-linear-gradient(top, #f5f7c3 10%,#00e4ff);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: -1px;
+  padding-right:20px;
+}
+.closeAndback{
+  width: 61px;
+  height: 25px;
+  position: absolute;
+  top: 9px;
+  right: 0px;
+  color: #338af8;
+  cursor: pointer;
+  z-index: 1;
+  background: url('../img/default/panel/toBack.png')
+  no-repeat 0px 70%;
+  background-size: 100% 100%;
+  &:hover {
+    background-image: url('../img/default/panel/toBack_h.png');
+  }
+}
+/* gis弹出框窗口的关闭与最小化 start*/ 
+.panel_btnMinify {
+  display: inline-block;
+  width:45px;
+  height:35px;
+  line-height: 35px;
+  cursor: pointer;
+  text-align:center;
+  vertical-align: middle;
+  font-weight: bold;
+  font-size:20px;
+  color:inherit;
+  &:after{
+    content: '\2014';
+    display: inline-block;
+    width:100%;
+    // display: inline-block;
+    display:none;
+    // outline: 1px solid red;;
+  }
+  &:focus::after,
+  &:hover::after {
+    box-shadow:0 0px 10px inherit;
+  }
+}
+.has.panel_btnMinify:after{
+  display: inline-block;
+}
+.panel_btnClose {
+  display: inline-block;
+  width:45px;
+  height:35px;
+  line-height: 35px;;
+  cursor: pointer;
+  text-align:center;
+  vertical-align: middle;
+  font-size:20px;
+  &:after{
+    content: '\2716';
+    display: inline-block;
+    width: 100%;
+  }
+  &:focus::after,
+  &:hover::after {
+    text-shadow:0 0px 10px inherit;
+  }
+}
+/* gis弹出框窗口的关闭与最小化 end*/ 
+
+/* 没有数据的图片 start*/ 
+.nothingData--bg{
+  background: url(@noDataPicture) no-repeat 50% 50%;
+  width: 100%;
+  height:100%;
+}
+.nothingData--bg1{
+background: url(@noDataPicture2) no-repeat 50% 50%;
+width: 100%;
+height:100%;
+}
+/* 没有数据的图片 end*/ 
+
+/* 左右两侧面板收缩按钮*/
+.shrinkPanel-btn_bg{
+  background:url(@shrinkPanelBtn) no-repeat 50% 50%;
+  width: 100%;
+  height:100%;
+} 

@@ -1,0 +1,2610 @@
+{
+    "success": true,
+    "message": "调用成功",
+    "data": {
+        "Model_Infos": {
+            "GModel_Fire_Forest": {
+                "Error_Info": "",
+                "Model_Name": "GModel_Fire_Forest",
+                "Model_NameAlias": "森林火灾蔓延模型",
+                "Model_Type": "Fire",
+                "Model_Version": "v1.0.0.2006281016",
+                "Parms_Return": {
+                    "ParmsInfo": {
+                        "102079": "山东",
+                        "105600": {
+                            "105602": {
+                                "105041": [
+                                    {
+                                        "103001": "东北风",
+                                        "103003": 0,
+                                        "103004": 6,
+                                        "103007": 0,
+                                        "103009": "2019-10-10 12:30:30.000",
+                                        "103010": 36000
+                                    },
+                                    {
+                                        "103001": "西风",
+                                        "103003": 0,
+                                        "103004": 7,
+                                        "103007": 0,
+                                        "103009": "2019-10-10 15:30:30.000",
+                                        "103010": 3600
+                                    }
+                                ]
+                            }
+                        },
+                        "110022": 36000,
+                        "110322": 3600,
+                        "112120": [
+                            {
+                                "112103": "2019-10-10 14:30:31.000",
+                                "112105": {
+                                    "102201": 0,
+                                    "102204": [
+                                        4326,
+                                        118.08078,
+                                        36.306,
+                                        0
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                },
+                "Result_Info": {
+                    "Fire_Forest_R_10800": "Fire_Forest_20200720150418742_Fire_Forest_R_10800.tif",
+                    "Fire_Forest_R_14400": "Fire_Forest_20200720150418742_Fire_Forest_R_14400.tif",
+                    "Fire_Forest_R_18000": "Fire_Forest_20200720150418742_Fire_Forest_R_18000.tif",
+                    "Fire_Forest_R_21600": "Fire_Forest_20200720150418742_Fire_Forest_R_21600.tif",
+                    "Fire_Forest_R_25200": "Fire_Forest_20200720150418742_Fire_Forest_R_25200.tif",
+                    "Fire_Forest_R_28800": "Fire_Forest_20200720150418742_Fire_Forest_R_28800.tif",
+                    "Fire_Forest_R_32400": "Fire_Forest_20200720150418742_Fire_Forest_R_32400.tif",
+                    "Fire_Forest_R_3600": "Fire_Forest_20200720150418742_Fire_Forest_R_3600.tif",
+                    "Fire_Forest_R_36000": "Fire_Forest_20200720150418742_Fire_Forest_R_36000.tif",
+                    "Fire_Forest_R_7200": "Fire_Forest_20200720150418742_Fire_Forest_R_7200.tif",
+                    "Fire_Strong_R_10800": "Fire_Forest_20200720150418742_Fire_Strong_R_10800.tif",
+                    "Fire_Strong_R_14400": "Fire_Forest_20200720150418742_Fire_Strong_R_14400.tif",
+                    "Fire_Strong_R_18000": "Fire_Forest_20200720150418742_Fire_Strong_R_18000.tif",
+                    "Fire_Strong_R_21600": "Fire_Forest_20200720150418742_Fire_Strong_R_21600.tif",
+                    "Fire_Strong_R_25200": "Fire_Forest_20200720150418742_Fire_Strong_R_25200.tif",
+                    "Fire_Strong_R_28800": "Fire_Forest_20200720150418742_Fire_Strong_R_28800.tif",
+                    "Fire_Strong_R_32400": "Fire_Forest_20200720150418742_Fire_Strong_R_32400.tif",
+                    "Fire_Strong_R_3600": "Fire_Forest_20200720150418742_Fire_Strong_R_3600.tif",
+                    "Fire_Strong_R_36000": "Fire_Forest_20200720150418742_Fire_Strong_R_36000.tif",
+                    "Fire_Strong_R_7200": "Fire_Forest_20200720150418742_Fire_Strong_R_7200.tif",
+                    "Indexes": {
+                        "Dir_Info": {
+                            "Model_Wk_Name": "",
+                            "Path": "/usr/local/model/Program/Services/Fire/GModel_Fire_Forest/202007/20/150418742/",
+                            "Path_GisData": "/usr/local/model/Program/Services/Fire/GModel_Fire_Forest/202007/20/150418742/",
+                            "Path_Route": "202007/20/150418742/"
+                        },
+                        "Raster_Enum": [
+                            "Fire_Forest",
+                            "Fire_Strong"
+                        ],
+                        "Raster_Enum_Alias": [
+                            "森林火灾蔓延栅格",
+                            "森林火灾火强栅格"
+                        ],
+                        "Raster_Infix": "_R_",
+                        "Raster_Perfix": [
+                            "Fire_Forest",
+                            "Fire_Strong"
+                        ],
+                        "Raster_Renderer": [
+                            "Fire_Forest_Raster",
+                            "Fire_Strong_Raster"
+                        ],
+                        "Raster_StepIndexes": [
+                            [
+                                3600,
+                                7200,
+                                10800,
+                                14400,
+                                18000,
+                                21600,
+                                25200,
+                                28800,
+                                32400,
+                                36000
+                            ],
+                            [
+                                3600,
+                                7200,
+                                10800,
+                                14400,
+                                18000,
+                                21600,
+                                25200,
+                                28800,
+                                32400,
+                                36000
+                            ]
+                        ],
+                        "Raster_Suffix": ".tif",
+                        "Vector_Enum": [
+                            "Fire_Line"
+                        ],
+                        "Vector_Enum_Alias": [
+                            "Fire_Line--森林火灾蔓延等值线"
+                        ],
+                        "Vector_Infix": "-",
+                        "Vector_Perfix": [
+                            "Fire_Line"
+                        ],
+                        "Vector_Renderer": [
+                            "Fire_Forest_Raster"
+                        ],
+                        "Vector_StepIndexes": [
+                            []
+                        ],
+                        "Vector_Suffix": ""
+                    }
+                },
+                "Result_Info_All": [],
+                "Result_Info_Step": [
+                    {
+                        "Info": "",
+                        "Raster": {
+                            "Fire_Forest": {
+                                "Attribute": {
+                                    "Average": 0,
+                                    "Colors": [
+                                        {
+                                            "alpha": 255,
+                                            "b": 255,
+                                            "g": 0,
+                                            "r": 0
+                                        },
+                                        {
+                                            "alpha": 255,
+                                            "b": 0,
+                                            "g": 255,
+                                            "r": 255
+                                        },
+                                        {
+                                            "alpha": 255,
+                                            "b": 10,
+                                            "g": 128,
+                                            "r": 250
+                                        },
+                                        {
+                                            "alpha": 255,
+                                            "b": 0,
+                                            "g": 0,
+                                            "r": 255
+                                        }
+                                    ],
+                                    "ImageName": "Fire_Forest_20200720150418742_Fire_Forest_R_3600.png",
+                                    "Max": "0",
+                                    "Min": "0",
+                                    "Path": "/usr/local/model/Program/Services/Fire/GModel_Fire_Forest/202007/20/150418742/",
+                                    "RasterName": "Fire_Forest_20200720150418742_Fire_Forest_R_3600.tif"
+                                },
+                                "Extent": [
+                                    114.304781144545,
+                                    33.522353829843,
+                                    123.627125008924,
+                                    39.225033043584
+                                ]
+                            },
+                            "Fire_Strong": {
+                                "Attribute": {
+                                    "Average": 13.168684440500597,
+                                    "Colors": [
+                                        {
+                                            "alpha": 255,
+                                            "b": 255,
+                                            "g": 0,
+                                            "r": 0
+                                        },
+                                        {
+                                            "alpha": 255,
+                                            "b": 0,
+                                            "g": 255,
+                                            "r": 255
+                                        },
+                                        {
+                                            "alpha": 255,
+                                            "b": 10,
+                                            "g": 128,
+                                            "r": 250
+                                        },
+                                        {
+                                            "alpha": 255,
+                                            "b": 0,
+                                            "g": 0,
+                                            "r": 255
+                                        }
+                                    ],
+                                    "ImageName": "Fire_Forest_20200720150418742_Fire_Strong_R_3600.png",
+                                    "Max": "59.460239410400390625",
+                                    "Min": "2.043148517608642578125",
+                                    "Path": "/usr/local/model/Program/Services/Fire/GModel_Fire_Forest/202007/20/150418742/",
+                                    "RasterName": "Fire_Forest_20200720150418742_Fire_Strong_R_3600.tif"
+                                },
+                                "Extent": [
+                                    114.304781144545,
+                                    33.522353829843,
+                                    123.627125008924,
+                                    39.225033043584
+                                ]
+                            }
+                        },
+                        "Step": "3600",
+                        "WindInfo": {}
+                    },
+                    {
+                        "Info": "",
+                        "Raster": {
+                            "Fire_Forest": {
+                                "Attribute": {
+                                    "Average": 0,
+                                    "Colors": [
+                                        {
+                                            "alpha": 255,
+                                            "b": 255,
+                                            "g": 0,
+                                            "r": 0
+                                        },
+                                        {
+                                            "alpha": 255,
+                                            "b": 0,
+                                            "g": 255,
+                                            "r": 255
+                                        },
+                                        {
+                                            "alpha": 255,
+                                            "b": 10,
+                                            "g": 128,
+                                            "r": 250
+                                        },
+                                        {
+                                            "alpha": 255,
+                                            "b": 0,
+                                            "g": 0,
+                                            "r": 255
+                                        }
+                                    ],
+                                    "ImageName": "Fire_Forest_20200720150418742_Fire_Forest_R_7200.png",
+                                    "Max": "0",
+                                    "Min": "0",
+                                    "Path": "/usr/local/model/Program/Services/Fire/GModel_Fire_Forest/202007/20/150418742/",
+                                    "RasterName": "Fire_Forest_20200720150418742_Fire_Forest_R_7200.tif"
+                                },
+                                "Extent": [
+                                    114.304781144545,
+                                    33.522353829843,
+                                    123.627125008924,
+                                    39.225033043584
+                                ]
+                            },
+                            "Fire_Strong": {
+                                "Attribute": {
+                                    "Average": 13.168684440500597,
+                                    "Colors": [
+                                        {
+                                            "alpha": 255,
+                                            "b": 255,
+                                            "g": 0,
+                                            "r": 0
+                                        },
+                                        {
+                                            "alpha": 255,
+                                            "b": 0,
+                                            "g": 255,
+                                            "r": 255
+                                        },
+                                        {
+                                            "alpha": 255,
+                                            "b": 10,
+                                            "g": 128,
+                                            "r": 250
+                                        },
+                                        {
+                                            "alpha": 255,
+                                            "b": 0,
+                                            "g": 0,
+                                            "r": 255
+                                        }
+                                    ],
+                                    "ImageName": "Fire_Forest_20200720150418742_Fire_Strong_R_7200.png",
+                                    "Max": "59.460239410400390625",
+                                    "Min": "2.043148517608642578125",
+                                    "Path": "/usr/local/model/Program/Services/Fire/GModel_Fire_Forest/202007/20/150418742/",
+                                    "RasterName": "Fire_Forest_20200720150418742_Fire_Strong_R_7200.tif"
+                                },
+                                "Extent": [
+                                    114.304781144545,
+                                    33.522353829843,
+                                    123.627125008924,
+                                    39.225033043584
+                                ]
+                            }
+                        },
+                        "Step": "7200",
+                        "WindInfo": {}
+                    },
+                    {
+                        "Info": "",
+                        "Raster": {
+                            "Fire_Forest": {
+                                "Attribute": {
+                                    "Average": 0,
+                                    "Colors": [
+                                        {
+                                            "alpha": 255,
+                                            "b": 255,
+                                            "g": 0,
+                                            "r": 0
+                                        },
+                                        {
+                                            "alpha": 255,
+                                            "b": 0,
+                                            "g": 255,
+                                            "r": 255
+                                        },
+                                        {
+                                            "alpha": 255,
+                                            "b": 10,
+                                            "g": 128,
+                                            "r": 250
+                                        },
+                                        {
+                                            "alpha": 255,
+                                            "b": 0,
+                                            "g": 0,
+                                            "r": 255
+                                        }
+                                    ],
+                                    "ImageName": "Fire_Forest_20200720150418742_Fire_Forest_R_10800.png",
+                                    "Max": "0",
+                                    "Min": "0",
+                                    "Path": "/usr/local/model/Program/Services/Fire/GModel_Fire_Forest/202007/20/150418742/",
+                                    "RasterName": "Fire_Forest_20200720150418742_Fire_Forest_R_10800.tif"
+                                },
+                                "Extent": [
+                                    114.304781144545,
+                                    33.522353829843,
+                                    123.627125008924,
+                                    39.225033043584
+                                ]
+                            },
+                            "Fire_Strong": {
+                                "Attribute": {
+                                    "Average": 13.168684440500597,
+                                    "Colors": [
+                                        {
+                                            "alpha": 255,
+                                            "b": 255,
+                                            "g": 0,
+                                            "r": 0
+                                        },
+                                        {
+                                            "alpha": 255,
+                                            "b": 0,
+                                            "g": 255,
+                                            "r": 255
+                                        },
+                                        {
+                                            "alpha": 255,
+                                            "b": 10,
+                                            "g": 128,
+                                            "r": 250
+                                        },
+                                        {
+                                            "alpha": 255,
+                                            "b": 0,
+                                            "g": 0,
+                                            "r": 255
+                                        }
+                                    ],
+                                    "ImageName": "Fire_Forest_20200720150418742_Fire_Strong_R_10800.png",
+                                    "Max": "59.460239410400390625",
+                                    "Min": "2.043148517608642578125",
+                                    "Path": "/usr/local/model/Program/Services/Fire/GModel_Fire_Forest/202007/20/150418742/",
+                                    "RasterName": "Fire_Forest_20200720150418742_Fire_Strong_R_10800.tif"
+                                },
+                                "Extent": [
+                                    114.304781144545,
+                                    33.522353829843,
+                                    123.627125008924,
+                                    39.225033043584
+                                ]
+                            }
+                        },
+                        "Step": "10800",
+                        "WindInfo": {}
+                    },
+                    {
+                        "Info": "",
+                        "Raster": {
+                            "Fire_Forest": {
+                                "Attribute": {
+                                    "Average": 0,
+                                    "Colors": [
+                                        {
+                                            "alpha": 255,
+                                            "b": 255,
+                                            "g": 0,
+                                            "r": 0
+                                        },
+                                        {
+                                            "alpha": 255,
+                                            "b": 0,
+                                            "g": 255,
+                                            "r": 255
+                                        },
+                                        {
+                                            "alpha": 255,
+                                            "b": 10,
+                                            "g": 128,
+                                            "r": 250
+                                        },
+                                        {
+                                            "alpha": 255,
+                                            "b": 0,
+                                            "g": 0,
+                                            "r": 255
+                                        }
+                                    ],
+                                    "ImageName": "Fire_Forest_20200720150418742_Fire_Forest_R_14400.png",
+                                    "Max": "0",
+                                    "Min": "0",
+                                    "Path": "/usr/local/model/Program/Services/Fire/GModel_Fire_Forest/202007/20/150418742/",
+                                    "RasterName": "Fire_Forest_20200720150418742_Fire_Forest_R_14400.tif"
+                                },
+                                "Extent": [
+                                    114.304781144545,
+                                    33.522353829843,
+                                    123.627125008924,
+                                    39.225033043584
+                                ]
+                            },
+                            "Fire_Strong": {
+                                "Attribute": {
+                                    "Average": 13.168684440500597,
+                                    "Colors": [
+                                        {
+                                            "alpha": 255,
+                                            "b": 255,
+                                            "g": 0,
+                                            "r": 0
+                                        },
+                                        {
+                                            "alpha": 255,
+                                            "b": 0,
+                                            "g": 255,
+                                            "r": 255
+                                        },
+                                        {
+                                            "alpha": 255,
+                                            "b": 10,
+                                            "g": 128,
+                                            "r": 250
+                                        },
+                                        {
+                                            "alpha": 255,
+                                            "b": 0,
+                                            "g": 0,
+                                            "r": 255
+                                        }
+                                    ],
+                                    "ImageName": "Fire_Forest_20200720150418742_Fire_Strong_R_14400.png",
+                                    "Max": "59.460239410400390625",
+                                    "Min": "2.043148517608642578125",
+                                    "Path": "/usr/local/model/Program/Services/Fire/GModel_Fire_Forest/202007/20/150418742/",
+                                    "RasterName": "Fire_Forest_20200720150418742_Fire_Strong_R_14400.tif"
+                                },
+                                "Extent": [
+                                    114.304781144545,
+                                    33.522353829843,
+                                    123.627125008924,
+                                    39.225033043584
+                                ]
+                            }
+                        },
+                        "Step": "14400",
+                        "WindInfo": {}
+                    },
+                    {
+                        "Info": "",
+                        "Raster": {
+                            "Fire_Forest": {
+                                "Attribute": {
+                                    "Average": 2.4178214073181152,
+                                    "Colors": [
+                                        {
+                                            "alpha": 255,
+                                            "b": 255,
+                                            "g": 0,
+                                            "r": 0
+                                        },
+                                        {
+                                            "alpha": 255,
+                                            "b": 0,
+                                            "g": 255,
+                                            "r": 255
+                                        },
+                                        {
+                                            "alpha": 255,
+                                            "b": 10,
+                                            "g": 128,
+                                            "r": 250
+                                        },
+                                        {
+                                            "alpha": 255,
+                                            "b": 0,
+                                            "g": 0,
+                                            "r": 255
+                                        }
+                                    ],
+                                    "ImageName": "Fire_Forest_20200720150418742_Fire_Forest_R_18000.png",
+                                    "Max": "4.83564281463623046875",
+                                    "Min": "0",
+                                    "Path": "/usr/local/model/Program/Services/Fire/GModel_Fire_Forest/202007/20/150418742/",
+                                    "RasterName": "Fire_Forest_20200720150418742_Fire_Forest_R_18000.tif"
+                                },
+                                "Extent": [
+                                    114.304781144545,
+                                    33.522353829843,
+                                    123.627125008924,
+                                    39.225033043584
+                                ]
+                            },
+                            "Fire_Strong": {
+                                "Attribute": {
+                                    "Average": 17.577349837621053,
+                                    "Colors": [
+                                        {
+                                            "alpha": 255,
+                                            "b": 255,
+                                            "g": 0,
+                                            "r": 0
+                                        },
+                                        {
+                                            "alpha": 255,
+                                            "b": 0,
+                                            "g": 255,
+                                            "r": 255
+                                        },
+                                        {
+                                            "alpha": 255,
+                                            "b": 10,
+                                            "g": 128,
+                                            "r": 250
+                                        },
+                                        {
+                                            "alpha": 255,
+                                            "b": 0,
+                                            "g": 0,
+                                            "r": 255
+                                        }
+                                    ],
+                                    "ImageName": "Fire_Forest_20200720150418742_Fire_Strong_R_18000.png",
+                                    "Max": "108.5185546875",
+                                    "Min": "1.883066654205322265625",
+                                    "Path": "/usr/local/model/Program/Services/Fire/GModel_Fire_Forest/202007/20/150418742/",
+                                    "RasterName": "Fire_Forest_20200720150418742_Fire_Strong_R_18000.tif"
+                                },
+                                "Extent": [
+                                    114.304781144545,
+                                    33.522353829843,
+                                    123.627125008924,
+                                    39.225033043584
+                                ]
+                            }
+                        },
+                        "Step": "18000",
+                        "WindInfo": {}
+                    },
+                    {
+                        "Info": "",
+                        "Raster": {
+                            "Fire_Forest": {
+                                "Attribute": {
+                                    "Average": 2.4178214073181152,
+                                    "Colors": [
+                                        {
+                                            "alpha": 255,
+                                            "b": 255,
+                                            "g": 0,
+                                            "r": 0
+                                        },
+                                        {
+                                            "alpha": 255,
+                                            "b": 0,
+                                            "g": 255,
+                                            "r": 255
+                                        },
+                                        {
+                                            "alpha": 255,
+                                            "b": 10,
+                                            "g": 128,
+                                            "r": 250
+                                        },
+                                        {
+                                            "alpha": 255,
+                                            "b": 0,
+                                            "g": 0,
+                                            "r": 255
+                                        }
+                                    ],
+                                    "ImageName": "Fire_Forest_20200720150418742_Fire_Forest_R_21600.png",
+                                    "Max": "4.83564281463623046875",
+                                    "Min": "0",
+                                    "Path": "/usr/local/model/Program/Services/Fire/GModel_Fire_Forest/202007/20/150418742/",
+                                    "RasterName": "Fire_Forest_20200720150418742_Fire_Forest_R_21600.tif"
+                                },
+                                "Extent": [
+                                    114.304781144545,
+                                    33.522353829843,
+                                    123.627125008924,
+                                    39.225033043584
+                                ]
+                            },
+                            "Fire_Strong": {
+                                "Attribute": {
+                                    "Average": 17.577349837621053,
+                                    "Colors": [
+                                        {
+                                            "alpha": 255,
+                                            "b": 255,
+                                            "g": 0,
+                                            "r": 0
+                                        },
+                                        {
+                                            "alpha": 255,
+                                            "b": 0,
+                                            "g": 255,
+                                            "r": 255
+                                        },
+                                        {
+                                            "alpha": 255,
+                                            "b": 10,
+                                            "g": 128,
+                                            "r": 250
+                                        },
+                                        {
+                                            "alpha": 255,
+                                            "b": 0,
+                                            "g": 0,
+                                            "r": 255
+                                        }
+                                    ],
+                                    "ImageName": "Fire_Forest_20200720150418742_Fire_Strong_R_21600.png",
+                                    "Max": "108.5185546875",
+                                    "Min": "1.883066654205322265625",
+                                    "Path": "/usr/local/model/Program/Services/Fire/GModel_Fire_Forest/202007/20/150418742/",
+                                    "RasterName": "Fire_Forest_20200720150418742_Fire_Strong_R_21600.tif"
+                                },
+                                "Extent": [
+                                    114.304781144545,
+                                    33.522353829843,
+                                    123.627125008924,
+                                    39.225033043584
+                                ]
+                            }
+                        },
+                        "Step": "21600",
+                        "WindInfo": {}
+                    },
+                    {
+                        "Info": "",
+                        "Raster": {
+                            "Fire_Forest": {
+                                "Attribute": {
+                                    "Average": 2.4178214073181152,
+                                    "Colors": [
+                                        {
+                                            "alpha": 255,
+                                            "b": 255,
+                                            "g": 0,
+                                            "r": 0
+                                        },
+                                        {
+                                            "alpha": 255,
+                                            "b": 0,
+                                            "g": 255,
+                                            "r": 255
+                                        },
+                                        {
+                                            "alpha": 255,
+                                            "b": 10,
+                                            "g": 128,
+                                            "r": 250
+                                        },
+                                        {
+                                            "alpha": 255,
+                                            "b": 0,
+                                            "g": 0,
+                                            "r": 255
+                                        }
+                                    ],
+                                    "ImageName": "Fire_Forest_20200720150418742_Fire_Forest_R_25200.png",
+                                    "Max": "4.83564281463623046875",
+                                    "Min": "0",
+                                    "Path": "/usr/local/model/Program/Services/Fire/GModel_Fire_Forest/202007/20/150418742/",
+                                    "RasterName": "Fire_Forest_20200720150418742_Fire_Forest_R_25200.tif"
+                                },
+                                "Extent": [
+                                    114.304781144545,
+                                    33.522353829843,
+                                    123.627125008924,
+                                    39.225033043584
+                                ]
+                            },
+                            "Fire_Strong": {
+                                "Attribute": {
+                                    "Average": 17.577349837621053,
+                                    "Colors": [
+                                        {
+                                            "alpha": 255,
+                                            "b": 255,
+                                            "g": 0,
+                                            "r": 0
+                                        },
+                                        {
+                                            "alpha": 255,
+                                            "b": 0,
+                                            "g": 255,
+                                            "r": 255
+                                        },
+                                        {
+                                            "alpha": 255,
+                                            "b": 10,
+                                            "g": 128,
+                                            "r": 250
+                                        },
+                                        {
+                                            "alpha": 255,
+                                            "b": 0,
+                                            "g": 0,
+                                            "r": 255
+                                        }
+                                    ],
+                                    "ImageName": "Fire_Forest_20200720150418742_Fire_Strong_R_25200.png",
+                                    "Max": "108.5185546875",
+                                    "Min": "1.883066654205322265625",
+                                    "Path": "/usr/local/model/Program/Services/Fire/GModel_Fire_Forest/202007/20/150418742/",
+                                    "RasterName": "Fire_Forest_20200720150418742_Fire_Strong_R_25200.tif"
+                                },
+                                "Extent": [
+                                    114.304781144545,
+                                    33.522353829843,
+                                    123.627125008924,
+                                    39.225033043584
+                                ]
+                            }
+                        },
+                        "Step": "25200",
+                        "WindInfo": {}
+                    },
+                    {
+                        "Info": "",
+                        "Raster": {
+                            "Fire_Forest": {
+                                "Attribute": {
+                                    "Average": 2.4178214073181152,
+                                    "Colors": [
+                                        {
+                                            "alpha": 255,
+                                            "b": 255,
+                                            "g": 0,
+                                            "r": 0
+                                        },
+                                        {
+                                            "alpha": 255,
+                                            "b": 0,
+                                            "g": 255,
+                                            "r": 255
+                                        },
+                                        {
+                                            "alpha": 255,
+                                            "b": 10,
+                                            "g": 128,
+                                            "r": 250
+                                        },
+                                        {
+                                            "alpha": 255,
+                                            "b": 0,
+                                            "g": 0,
+                                            "r": 255
+                                        }
+                                    ],
+                                    "ImageName": "Fire_Forest_20200720150418742_Fire_Forest_R_28800.png",
+                                    "Max": "4.83564281463623046875",
+                                    "Min": "0",
+                                    "Path": "/usr/local/model/Program/Services/Fire/GModel_Fire_Forest/202007/20/150418742/",
+                                    "RasterName": "Fire_Forest_20200720150418742_Fire_Forest_R_28800.tif"
+                                },
+                                "Extent": [
+                                    114.304781144545,
+                                    33.522353829843,
+                                    123.627125008924,
+                                    39.225033043584
+                                ]
+                            },
+                            "Fire_Strong": {
+                                "Attribute": {
+                                    "Average": 17.577349837621053,
+                                    "Colors": [
+                                        {
+                                            "alpha": 255,
+                                            "b": 255,
+                                            "g": 0,
+                                            "r": 0
+                                        },
+                                        {
+                                            "alpha": 255,
+                                            "b": 0,
+                                            "g": 255,
+                                            "r": 255
+                                        },
+                                        {
+                                            "alpha": 255,
+                                            "b": 10,
+                                            "g": 128,
+                                            "r": 250
+                                        },
+                                        {
+                                            "alpha": 255,
+                                            "b": 0,
+                                            "g": 0,
+                                            "r": 255
+                                        }
+                                    ],
+                                    "ImageName": "Fire_Forest_20200720150418742_Fire_Strong_R_28800.png",
+                                    "Max": "108.5185546875",
+                                    "Min": "1.883066654205322265625",
+                                    "Path": "/usr/local/model/Program/Services/Fire/GModel_Fire_Forest/202007/20/150418742/",
+                                    "RasterName": "Fire_Forest_20200720150418742_Fire_Strong_R_28800.tif"
+                                },
+                                "Extent": [
+                                    114.304781144545,
+                                    33.522353829843,
+                                    123.627125008924,
+                                    39.225033043584
+                                ]
+                            }
+                        },
+                        "Step": "28800",
+                        "WindInfo": {}
+                    },
+                    {
+                        "Info": "",
+                        "Raster": {
+                            "Fire_Forest": {
+                                "Attribute": {
+                                    "Average": 2.4178214073181152,
+                                    "Colors": [
+                                        {
+                                            "alpha": 255,
+                                            "b": 255,
+                                            "g": 0,
+                                            "r": 0
+                                        },
+                                        {
+                                            "alpha": 255,
+                                            "b": 0,
+                                            "g": 255,
+                                            "r": 255
+                                        },
+                                        {
+                                            "alpha": 255,
+                                            "b": 10,
+                                            "g": 128,
+                                            "r": 250
+                                        },
+                                        {
+                                            "alpha": 255,
+                                            "b": 0,
+                                            "g": 0,
+                                            "r": 255
+                                        }
+                                    ],
+                                    "ImageName": "Fire_Forest_20200720150418742_Fire_Forest_R_32400.png",
+                                    "Max": "4.83564281463623046875",
+                                    "Min": "0",
+                                    "Path": "/usr/local/model/Program/Services/Fire/GModel_Fire_Forest/202007/20/150418742/",
+                                    "RasterName": "Fire_Forest_20200720150418742_Fire_Forest_R_32400.tif"
+                                },
+                                "Extent": [
+                                    114.304781144545,
+                                    33.522353829843,
+                                    123.627125008924,
+                                    39.225033043584
+                                ]
+                            },
+                            "Fire_Strong": {
+                                "Attribute": {
+                                    "Average": 17.577349837621053,
+                                    "Colors": [
+                                        {
+                                            "alpha": 255,
+                                            "b": 255,
+                                            "g": 0,
+                                            "r": 0
+                                        },
+                                        {
+                                            "alpha": 255,
+                                            "b": 0,
+                                            "g": 255,
+                                            "r": 255
+                                        },
+                                        {
+                                            "alpha": 255,
+                                            "b": 10,
+                                            "g": 128,
+                                            "r": 250
+                                        },
+                                        {
+                                            "alpha": 255,
+                                            "b": 0,
+                                            "g": 0,
+                                            "r": 255
+                                        }
+                                    ],
+                                    "ImageName": "Fire_Forest_20200720150418742_Fire_Strong_R_32400.png",
+                                    "Max": "108.5185546875",
+                                    "Min": "1.883066654205322265625",
+                                    "Path": "/usr/local/model/Program/Services/Fire/GModel_Fire_Forest/202007/20/150418742/",
+                                    "RasterName": "Fire_Forest_20200720150418742_Fire_Strong_R_32400.tif"
+                                },
+                                "Extent": [
+                                    114.304781144545,
+                                    33.522353829843,
+                                    123.627125008924,
+                                    39.225033043584
+                                ]
+                            }
+                        },
+                        "Step": "32400",
+                        "WindInfo": {}
+                    },
+                    {
+                        "Info": "",
+                        "Raster": {
+                            "Fire_Forest": {
+                                "Attribute": {
+                                    "Average": 2.4178214073181152,
+                                    "Colors": [
+                                        {
+                                            "alpha": 255,
+                                            "b": 255,
+                                            "g": 0,
+                                            "r": 0
+                                        },
+                                        {
+                                            "alpha": 255,
+                                            "b": 0,
+                                            "g": 255,
+                                            "r": 255
+                                        },
+                                        {
+                                            "alpha": 255,
+                                            "b": 10,
+                                            "g": 128,
+                                            "r": 250
+                                        },
+                                        {
+                                            "alpha": 255,
+                                            "b": 0,
+                                            "g": 0,
+                                            "r": 255
+                                        }
+                                    ],
+                                    "ImageName": "Fire_Forest_20200720150418742_Fire_Forest_R_36000.png",
+                                    "Max": "4.83564281463623046875",
+                                    "Min": "0",
+                                    "Path": "/usr/local/model/Program/Services/Fire/GModel_Fire_Forest/202007/20/150418742/",
+                                    "RasterName": "Fire_Forest_20200720150418742_Fire_Forest_R_36000.tif"
+                                },
+                                "Extent": [
+                                    114.304781144545,
+                                    33.522353829843,
+                                    123.627125008924,
+                                    39.225033043584
+                                ]
+                            },
+                            "Fire_Strong": {
+                                "Attribute": {
+                                    "Average": 17.577349837621053,
+                                    "Colors": [
+                                        {
+                                            "alpha": 255,
+                                            "b": 255,
+                                            "g": 0,
+                                            "r": 0
+                                        },
+                                        {
+                                            "alpha": 255,
+                                            "b": 0,
+                                            "g": 255,
+                                            "r": 255
+                                        },
+                                        {
+                                            "alpha": 255,
+                                            "b": 10,
+                                            "g": 128,
+                                            "r": 250
+                                        },
+                                        {
+                                            "alpha": 255,
+                                            "b": 0,
+                                            "g": 0,
+                                            "r": 255
+                                        }
+                                    ],
+                                    "ImageName": "Fire_Forest_20200720150418742_Fire_Strong_R_36000.png",
+                                    "Max": "108.5185546875",
+                                    "Min": "1.883066654205322265625",
+                                    "Path": "/usr/local/model/Program/Services/Fire/GModel_Fire_Forest/202007/20/150418742/",
+                                    "RasterName": "Fire_Forest_20200720150418742_Fire_Strong_R_36000.tif"
+                                },
+                                "Extent": [
+                                    114.304781144545,
+                                    33.522353829843,
+                                    123.627125008924,
+                                    39.225033043584
+                                ]
+                            }
+                        },
+                        "Step": "36000",
+                        "WindInfo": {}
+                    }
+                ],
+                "Runned_Info": {
+                    "Create_Time": "2020-07-20 15:04:18.742",
+                    "Explain": "模型运算完毕",
+                    "Result": true,
+                    "Run_UID": "4E665D0B-A6FB-4BCC-90E1-A2143CC85C77",
+                    "Taking_Time": 1.872,
+                    "Taking_Time_str": "耗时:1.872秒"
+                }
+            }
+        },
+        "Renderer_Infos": {
+            "Fire_Forest_Raster": {
+                "File_Type": "jpg",
+                "Geo_Type": "Raster",
+                "Lengend": {
+                    "Title": "损伤范围",
+                    "Url_Route_H": "1820050000_R_Lengend_H.jpg",
+                    "Url_Route_V": "1820050000_R_Lengend_V.jpg"
+                },
+                "Precision": 4,
+                "Renderer_Type": "栅格已分类",
+                "Renenders": [
+                    {
+                        "Sybmol_Info": {
+                            "Code": 0,
+                            "Fill_Color": [
+                                255,
+                                0,
+                                0,
+                                255
+                            ],
+                            "LineWidth": 1,
+                            "OutLine_Color": [
+                                255,
+                                82,
+                                82,
+                                82
+                            ],
+                            "Transparecy": 45
+                        },
+                        "Value": -1.0,
+                        "Value_Range": "[-1,0)",
+                        "Value_Tags": "Fire_Forest_Lv0",
+                        "Value_Tags_Alias": "-1hr"
+                    },
+                    {
+                        "Sybmol_Info": {
+                            "Code": 0,
+                            "Fill_Color": [
+                                255,
+                                255,
+                                255,
+                                0
+                            ],
+                            "LineWidth": 1,
+                            "OutLine_Color": [
+                                255,
+                                51,
+                                0,
+                                0
+                            ],
+                            "Transparecy": 45
+                        },
+                        "Value": 1.0,
+                        "Value_Range": "[0,1]",
+                        "Value_Tags": "Fire_Forest_Lv1",
+                        "Value_Tags_Alias": "1hr"
+                    },
+                    {
+                        "Sybmol_Info": {
+                            "Code": 0,
+                            "Fill_Color": [
+                                255,
+                                250,
+                                128,
+                                10
+                            ],
+                            "LineWidth": 1,
+                            "OutLine_Color": [
+                                255,
+                                102,
+                                0,
+                                0
+                            ],
+                            "Transparecy": 40
+                        },
+                        "Value": 2.0,
+                        "Value_Range": "(1,2]",
+                        "Value_Tags": "Fire_Forest_Lv2",
+                        "Value_Tags_Alias": "2hr"
+                    },
+                    {
+                        "Sybmol_Info": {
+                            "Code": 0,
+                            "Fill_Color": [
+                                255,
+                                255,
+                                0,
+                                0
+                            ],
+                            "LineWidth": 1,
+                            "OutLine_Color": [
+                                255,
+                                153,
+                                0,
+                                0
+                            ],
+                            "Transparecy": 30
+                        },
+                        "Value": 3.0,
+                        "Value_Range": "(2,3]",
+                        "Value_Tags": "Fire_Forest_Lv3",
+                        "Value_Tags_Alias": "3hr"
+                    },
+                    {
+                        "Sybmol_Info": {
+                            "Code": 0,
+                            "Fill_Color": [
+                                255,
+                                204,
+                                0,
+                                0
+                            ],
+                            "LineWidth": 1,
+                            "OutLine_Color": [
+                                255,
+                                204,
+                                0,
+                                0
+                            ],
+                            "Transparecy": 30
+                        },
+                        "Value": 4.0,
+                        "Value_Range": "(3,4]",
+                        "Value_Tags": "Fire_Forest_Lv4",
+                        "Value_Tags_Alias": "4hr"
+                    },
+                    {
+                        "Sybmol_Info": {
+                            "Code": 0,
+                            "Fill_Color": [
+                                255,
+                                255,
+                                0,
+                                0
+                            ],
+                            "LineWidth": 1,
+                            "OutLine_Color": [
+                                255,
+                                255,
+                                0,
+                                0
+                            ],
+                            "Transparecy": 30
+                        },
+                        "Value": 5.0,
+                        "Value_Range": "(4,5]",
+                        "Value_Tags": "Fire_Forest_Lv5",
+                        "Value_Tags_Alias": "5hr"
+                    },
+                    {
+                        "Sybmol_Info": {
+                            "Code": 0,
+                            "Fill_Color": [
+                                255,
+                                255,
+                                0,
+                                51
+                            ],
+                            "LineWidth": 1,
+                            "OutLine_Color": [
+                                255,
+                                255,
+                                0,
+                                51
+                            ],
+                            "Transparecy": 30
+                        },
+                        "Value": 6.0,
+                        "Value_Range": "(5,6]",
+                        "Value_Tags": "Fire_Forest_Lv6",
+                        "Value_Tags_Alias": "6hr"
+                    },
+                    {
+                        "Sybmol_Info": {
+                            "Code": 0,
+                            "Fill_Color": [
+                                255,
+                                255,
+                                0,
+                                102
+                            ],
+                            "LineWidth": 1,
+                            "OutLine_Color": [
+                                255,
+                                255,
+                                0,
+                                102
+                            ],
+                            "Transparecy": 30
+                        },
+                        "Value": 7.0,
+                        "Value_Range": "(6,7]",
+                        "Value_Tags": "Fire_Forest_Lv7",
+                        "Value_Tags_Alias": "7hr"
+                    },
+                    {
+                        "Sybmol_Info": {
+                            "Code": 0,
+                            "Fill_Color": [
+                                255,
+                                255,
+                                0,
+                                153
+                            ],
+                            "LineWidth": 1,
+                            "OutLine_Color": [
+                                255,
+                                255,
+                                0,
+                                153
+                            ],
+                            "Transparecy": 30
+                        },
+                        "Value": 8.0,
+                        "Value_Range": "(7,8]",
+                        "Value_Tags": "Fire_Forest_Lv8",
+                        "Value_Tags_Alias": "8hr"
+                    },
+                    {
+                        "Sybmol_Info": {
+                            "Code": 0,
+                            "Fill_Color": [
+                                255,
+                                255,
+                                0,
+                                204
+                            ],
+                            "LineWidth": 1,
+                            "OutLine_Color": [
+                                255,
+                                255,
+                                0,
+                                204
+                            ],
+                            "Transparecy": 30
+                        },
+                        "Value": 9.0,
+                        "Value_Range": "(8,9]",
+                        "Value_Tags": "Fire_Forest_Lv9",
+                        "Value_Tags_Alias": "9hr"
+                    },
+                    {
+                        "Sybmol_Info": {
+                            "Code": 0,
+                            "Fill_Color": [
+                                255,
+                                255,
+                                0,
+                                255
+                            ],
+                            "LineWidth": 1,
+                            "OutLine_Color": [
+                                255,
+                                255,
+                                0,
+                                255
+                            ],
+                            "Transparecy": 30
+                        },
+                        "Value": 10.0,
+                        "Value_Range": "(9,10]",
+                        "Value_Tags": "Fire_Forest_Lv10",
+                        "Value_Tags_Alias": "10hr"
+                    },
+                    {
+                        "Sybmol_Info": {
+                            "Code": 0,
+                            "Fill_Color": [
+                                255,
+                                255,
+                                51,
+                                0
+                            ],
+                            "LineWidth": 1,
+                            "OutLine_Color": [
+                                255,
+                                255,
+                                51,
+                                0
+                            ],
+                            "Transparecy": 30
+                        },
+                        "Value": 11.0,
+                        "Value_Range": "(10,11]",
+                        "Value_Tags": "Fire_Forest_Lv11",
+                        "Value_Tags_Alias": "11hr"
+                    },
+                    {
+                        "Sybmol_Info": {
+                            "Code": 0,
+                            "Fill_Color": [
+                                255,
+                                255,
+                                102,
+                                0
+                            ],
+                            "LineWidth": 1,
+                            "OutLine_Color": [
+                                255,
+                                255,
+                                102,
+                                0
+                            ],
+                            "Transparecy": 30
+                        },
+                        "Value": 12.0,
+                        "Value_Range": "(11,12]",
+                        "Value_Tags": "Fire_Forest_Lv12",
+                        "Value_Tags_Alias": "12hr"
+                    },
+                    {
+                        "Sybmol_Info": {
+                            "Code": 0,
+                            "Fill_Color": [
+                                255,
+                                255,
+                                153,
+                                0
+                            ],
+                            "LineWidth": 1,
+                            "OutLine_Color": [
+                                255,
+                                255,
+                                153,
+                                0
+                            ],
+                            "Transparecy": 30
+                        },
+                        "Value": 13.0,
+                        "Value_Range": "(12,13]",
+                        "Value_Tags": "Fire_Forest_Lv13",
+                        "Value_Tags_Alias": "13hr"
+                    },
+                    {
+                        "Sybmol_Info": {
+                            "Code": 0,
+                            "Fill_Color": [
+                                255,
+                                255,
+                                204,
+                                0
+                            ],
+                            "LineWidth": 1,
+                            "OutLine_Color": [
+                                255,
+                                255,
+                                204,
+                                0
+                            ],
+                            "Transparecy": 30
+                        },
+                        "Value": 14.0,
+                        "Value_Range": "(13,14]",
+                        "Value_Tags": "Fire_Forest_Lv14",
+                        "Value_Tags_Alias": "14hr"
+                    },
+                    {
+                        "Sybmol_Info": {
+                            "Code": 0,
+                            "Fill_Color": [
+                                255,
+                                255,
+                                255,
+                                0
+                            ],
+                            "LineWidth": 1,
+                            "OutLine_Color": [
+                                255,
+                                255,
+                                255,
+                                0
+                            ],
+                            "Transparecy": 30
+                        },
+                        "Value": 15.0,
+                        "Value_Range": "(14,15]",
+                        "Value_Tags": "Fire_Forest_Lv15",
+                        "Value_Tags_Alias": "15hr"
+                    },
+                    {
+                        "Sybmol_Info": {
+                            "Code": 0,
+                            "Fill_Color": [
+                                255,
+                                204,
+                                255,
+                                0
+                            ],
+                            "LineWidth": 1,
+                            "OutLine_Color": [
+                                255,
+                                204,
+                                255,
+                                0
+                            ],
+                            "Transparecy": 30
+                        },
+                        "Value": 16.0,
+                        "Value_Range": "(15,16]",
+                        "Value_Tags": "Fire_Forest_Lv16",
+                        "Value_Tags_Alias": "16hr"
+                    },
+                    {
+                        "Sybmol_Info": {
+                            "Code": 0,
+                            "Fill_Color": [
+                                255,
+                                153,
+                                255,
+                                0
+                            ],
+                            "LineWidth": 1,
+                            "OutLine_Color": [
+                                255,
+                                153,
+                                255,
+                                0
+                            ],
+                            "Transparecy": 30
+                        },
+                        "Value": 17.0,
+                        "Value_Range": "(16,17]",
+                        "Value_Tags": "Fire_Forest_Lv17",
+                        "Value_Tags_Alias": "17hr"
+                    },
+                    {
+                        "Sybmol_Info": {
+                            "Code": 0,
+                            "Fill_Color": [
+                                255,
+                                102,
+                                255,
+                                0
+                            ],
+                            "LineWidth": 1,
+                            "OutLine_Color": [
+                                255,
+                                102,
+                                255,
+                                0
+                            ],
+                            "Transparecy": 30
+                        },
+                        "Value": 18.0,
+                        "Value_Range": "(17,18]",
+                        "Value_Tags": "Fire_Forest_Lv18",
+                        "Value_Tags_Alias": "18hr"
+                    },
+                    {
+                        "Sybmol_Info": {
+                            "Code": 0,
+                            "Fill_Color": [
+                                255,
+                                51,
+                                255,
+                                0
+                            ],
+                            "LineWidth": 1,
+                            "OutLine_Color": [
+                                255,
+                                51,
+                                255,
+                                0
+                            ],
+                            "Transparecy": 30
+                        },
+                        "Value": 19.0,
+                        "Value_Range": "(18,19]",
+                        "Value_Tags": "Fire_Forest_Lv19",
+                        "Value_Tags_Alias": "19hr"
+                    },
+                    {
+                        "Sybmol_Info": {
+                            "Code": 0,
+                            "Fill_Color": [
+                                255,
+                                51,
+                                255,
+                                51
+                            ],
+                            "LineWidth": 1,
+                            "OutLine_Color": [
+                                255,
+                                51,
+                                255,
+                                51
+                            ],
+                            "Transparecy": 30
+                        },
+                        "Value": 20.0,
+                        "Value_Range": "(19,20]",
+                        "Value_Tags": "Fire_Forest_Lv20",
+                        "Value_Tags_Alias": "20hr"
+                    },
+                    {
+                        "Sybmol_Info": {
+                            "Code": 0,
+                            "Fill_Color": [
+                                255,
+                                51,
+                                255,
+                                102
+                            ],
+                            "LineWidth": 1,
+                            "OutLine_Color": [
+                                255,
+                                51,
+                                255,
+                                102
+                            ],
+                            "Transparecy": 30
+                        },
+                        "Value": 21.0,
+                        "Value_Range": "(20,21]",
+                        "Value_Tags": "Fire_Forest_Lv21",
+                        "Value_Tags_Alias": "21hr"
+                    },
+                    {
+                        "Sybmol_Info": {
+                            "Code": 0,
+                            "Fill_Color": [
+                                255,
+                                51,
+                                255,
+                                153
+                            ],
+                            "LineWidth": 1,
+                            "OutLine_Color": [
+                                255,
+                                51,
+                                255,
+                                153
+                            ],
+                            "Transparecy": 30
+                        },
+                        "Value": 22.0,
+                        "Value_Range": "(21,22]",
+                        "Value_Tags": "Fire_Forest_Lv22",
+                        "Value_Tags_Alias": "22hr"
+                    },
+                    {
+                        "Sybmol_Info": {
+                            "Code": 0,
+                            "Fill_Color": [
+                                255,
+                                51,
+                                255,
+                                204
+                            ],
+                            "LineWidth": 1,
+                            "OutLine_Color": [
+                                255,
+                                51,
+                                255,
+                                204
+                            ],
+                            "Transparecy": 30
+                        },
+                        "Value": 23.0,
+                        "Value_Range": "(22,23]",
+                        "Value_Tags": "Fire_Forest_Lv23",
+                        "Value_Tags_Alias": "23hr"
+                    },
+                    {
+                        "Sybmol_Info": {
+                            "Code": 0,
+                            "Fill_Color": [
+                                255,
+                                51,
+                                255,
+                                255
+                            ],
+                            "LineWidth": 1,
+                            "OutLine_Color": [
+                                255,
+                                51,
+                                255,
+                                255
+                            ],
+                            "Transparecy": 30
+                        },
+                        "Value": 24.0,
+                        "Value_Range": "(23,24]",
+                        "Value_Tags": "Fire_Forest_Lv24",
+                        "Value_Tags_Alias": "24hr"
+                    },
+                    {
+                        "Sybmol_Info": {
+                            "Code": 0,
+                            "Fill_Color": [
+                                255,
+                                51,
+                                204,
+                                255
+                            ],
+                            "LineWidth": 1,
+                            "OutLine_Color": [
+                                255,
+                                51,
+                                204,
+                                255
+                            ],
+                            "Transparecy": 30
+                        },
+                        "Value": 26.0,
+                        "Value_Range": "(24,26]",
+                        "Value_Tags": "Fire_Forest_Lv26",
+                        "Value_Tags_Alias": "26hr"
+                    },
+                    {
+                        "Sybmol_Info": {
+                            "Code": 0,
+                            "Fill_Color": [
+                                255,
+                                51,
+                                153,
+                                255
+                            ],
+                            "LineWidth": 1,
+                            "OutLine_Color": [
+                                255,
+                                51,
+                                153,
+                                255
+                            ],
+                            "Transparecy": 30
+                        },
+                        "Value": 28.0,
+                        "Value_Range": "(26,28]",
+                        "Value_Tags": "Fire_Forest_Lv28",
+                        "Value_Tags_Alias": "28hr"
+                    },
+                    {
+                        "Sybmol_Info": {
+                            "Code": 0,
+                            "Fill_Color": [
+                                255,
+                                51,
+                                102,
+                                255
+                            ],
+                            "LineWidth": 1,
+                            "OutLine_Color": [
+                                255,
+                                51,
+                                102,
+                                255
+                            ],
+                            "Transparecy": 30
+                        },
+                        "Value": 30.0,
+                        "Value_Range": "(28,30]",
+                        "Value_Tags": "Fire_Forest_Lv30",
+                        "Value_Tags_Alias": "30hr"
+                    },
+                    {
+                        "Sybmol_Info": {
+                            "Code": 0,
+                            "Fill_Color": [
+                                255,
+                                51,
+                                51,
+                                255
+                            ],
+                            "LineWidth": 1,
+                            "OutLine_Color": [
+                                255,
+                                51,
+                                51,
+                                255
+                            ],
+                            "Transparecy": 30
+                        },
+                        "Value": 32.0,
+                        "Value_Range": "(30,32]",
+                        "Value_Tags": "Fire_Forest_Lv32",
+                        "Value_Tags_Alias": "32hr"
+                    },
+                    {
+                        "Sybmol_Info": {
+                            "Code": 0,
+                            "Fill_Color": [
+                                255,
+                                51,
+                                0,
+                                255
+                            ],
+                            "LineWidth": 1,
+                            "OutLine_Color": [
+                                255,
+                                51,
+                                0,
+                                255
+                            ],
+                            "Transparecy": 30
+                        },
+                        "Value": 34.0,
+                        "Value_Range": "(32,34]",
+                        "Value_Tags": "Fire_Forest_Lv34",
+                        "Value_Tags_Alias": "34hr"
+                    },
+                    {
+                        "Sybmol_Info": {
+                            "Code": 0,
+                            "Fill_Color": [
+                                255,
+                                0,
+                                0,
+                                255
+                            ],
+                            "LineWidth": 1,
+                            "OutLine_Color": [
+                                255,
+                                0,
+                                0,
+                                255
+                            ],
+                            "Transparecy": 30
+                        },
+                        "Value": 36.0,
+                        "Value_Range": "(34,36]",
+                        "Value_Tags": "Fire_Forest_Lv36",
+                        "Value_Tags_Alias": "36hr"
+                    },
+                    {
+                        "Sybmol_Info": {
+                            "Code": 0,
+                            "Fill_Color": [
+                                255,
+                                0,
+                                51,
+                                255
+                            ],
+                            "LineWidth": 1,
+                            "OutLine_Color": [
+                                255,
+                                0,
+                                51,
+                                255
+                            ],
+                            "Transparecy": 30
+                        },
+                        "Value": 40.0,
+                        "Value_Range": "(36,40]",
+                        "Value_Tags": "Fire_Forest_Lv40",
+                        "Value_Tags_Alias": "40hr"
+                    },
+                    {
+                        "Sybmol_Info": {
+                            "Code": 0,
+                            "Fill_Color": [
+                                255,
+                                0,
+                                102,
+                                255
+                            ],
+                            "LineWidth": 1,
+                            "OutLine_Color": [
+                                255,
+                                0,
+                                102,
+                                255
+                            ],
+                            "Transparecy": 30
+                        },
+                        "Value": 44.0,
+                        "Value_Range": "(40,44]",
+                        "Value_Tags": "Fire_Forest_Lv44",
+                        "Value_Tags_Alias": "44hr"
+                    },
+                    {
+                        "Sybmol_Info": {
+                            "Code": 0,
+                            "Fill_Color": [
+                                255,
+                                0,
+                                153,
+                                255
+                            ],
+                            "LineWidth": 1,
+                            "OutLine_Color": [
+                                255,
+                                0,
+                                153,
+                                255
+                            ],
+                            "Transparecy": 30
+                        },
+                        "Value": 48.0,
+                        "Value_Range": "(44,48]",
+                        "Value_Tags": "Fire_Forest_Lv48",
+                        "Value_Tags_Alias": "48hr"
+                    },
+                    {
+                        "Sybmol_Info": {
+                            "Code": 0,
+                            "Fill_Color": [
+                                255,
+                                255,
+                                102,
+                                51
+                            ],
+                            "LineWidth": 1,
+                            "OutLine_Color": [
+                                255,
+                                255,
+                                102,
+                                51
+                            ],
+                            "Transparecy": 30
+                        },
+                        "Value": 52.0,
+                        "Value_Range": "(48,52]",
+                        "Value_Tags": "Fire_Forest_Lv52",
+                        "Value_Tags_Alias": "52hr"
+                    },
+                    {
+                        "Sybmol_Info": {
+                            "Code": 0,
+                            "Fill_Color": [
+                                255,
+                                255,
+                                153,
+                                51
+                            ],
+                            "LineWidth": 1,
+                            "OutLine_Color": [
+                                255,
+                                255,
+                                153,
+                                51
+                            ],
+                            "Transparecy": 30
+                        },
+                        "Value": 56.0,
+                        "Value_Range": "(48,56]",
+                        "Value_Tags": "Fire_Forest_Lv56",
+                        "Value_Tags_Alias": "56hr"
+                    },
+                    {
+                        "Sybmol_Info": {
+                            "Code": 0,
+                            "Fill_Color": [
+                                255,
+                                255,
+                                153,
+                                102
+                            ],
+                            "LineWidth": 1,
+                            "OutLine_Color": [
+                                255,
+                                255,
+                                153,
+                                102
+                            ],
+                            "Transparecy": 30
+                        },
+                        "Value": 60.0,
+                        "Value_Range": "(56,60]",
+                        "Value_Tags": "Fire_Forest_Lv60",
+                        "Value_Tags_Alias": "60hr"
+                    },
+                    {
+                        "Sybmol_Info": {
+                            "Code": 0,
+                            "Fill_Color": [
+                                255,
+                                255,
+                                204,
+                                51
+                            ],
+                            "LineWidth": 1,
+                            "OutLine_Color": [
+                                255,
+                                255,
+                                204,
+                                51
+                            ],
+                            "Transparecy": 30
+                        },
+                        "Value": 64.0,
+                        "Value_Range": "(60,64]",
+                        "Value_Tags": "Fire_Forest_Lv64",
+                        "Value_Tags_Alias": "64hr"
+                    },
+                    {
+                        "Sybmol_Info": {
+                            "Code": 0,
+                            "Fill_Color": [
+                                255,
+                                255,
+                                204,
+                                102
+                            ],
+                            "LineWidth": 1,
+                            "OutLine_Color": [
+                                255,
+                                255,
+                                204,
+                                102
+                            ],
+                            "Transparecy": 30
+                        },
+                        "Value": 68.0,
+                        "Value_Range": "(64,68]",
+                        "Value_Tags": "Fire_Forest_Lv68",
+                        "Value_Tags_Alias": "68hr"
+                    },
+                    {
+                        "Sybmol_Info": {
+                            "Code": 0,
+                            "Fill_Color": [
+                                255,
+                                255,
+                                204,
+                                153
+                            ],
+                            "LineWidth": 1,
+                            "OutLine_Color": [
+                                255,
+                                255,
+                                204,
+                                153
+                            ],
+                            "Transparecy": 30
+                        },
+                        "Value": 72.0,
+                        "Value_Range": "(68,72]",
+                        "Value_Tags": "Fire_Forest_Lv72",
+                        "Value_Tags_Alias": "72hr"
+                    },
+                    {
+                        "Sybmol_Info": {
+                            "Code": 0,
+                            "Fill_Color": [
+                                255,
+                                255,
+                                204,
+                                204
+                            ],
+                            "LineWidth": 1,
+                            "OutLine_Color": [
+                                255,
+                                255,
+                                204,
+                                204
+                            ],
+                            "Transparecy": 30
+                        },
+                        "Value": 78.0,
+                        "Value_Range": "(72,78]",
+                        "Value_Tags": "Fire_Forest_Lv78",
+                        "Value_Tags_Alias": "78hr"
+                    },
+                    {
+                        "Sybmol_Info": {
+                            "Code": 0,
+                            "Fill_Color": [
+                                255,
+                                255,
+                                153,
+                                204
+                            ],
+                            "LineWidth": 1,
+                            "OutLine_Color": [
+                                255,
+                                255,
+                                153,
+                                204
+                            ],
+                            "Transparecy": 30
+                        },
+                        "Value": 84.0,
+                        "Value_Range": "(78,84]",
+                        "Value_Tags": "Fire_Forest_Lv84",
+                        "Value_Tags_Alias": "84hr"
+                    },
+                    {
+                        "Sybmol_Info": {
+                            "Code": 0,
+                            "Fill_Color": [
+                                255,
+                                255,
+                                102,
+                                204
+                            ],
+                            "LineWidth": 1,
+                            "OutLine_Color": [
+                                255,
+                                255,
+                                102,
+                                204
+                            ],
+                            "Transparecy": 30
+                        },
+                        "Value": 90.0,
+                        "Value_Range": "(84,90]",
+                        "Value_Tags": "Fire_Forest_Lv90",
+                        "Value_Tags_Alias": "90hr"
+                    },
+                    {
+                        "Sybmol_Info": {
+                            "Code": 0,
+                            "Fill_Color": [
+                                255,
+                                255,
+                                0,
+                                204
+                            ],
+                            "LineWidth": 1,
+                            "OutLine_Color": [
+                                255,
+                                255,
+                                0,
+                                204
+                            ],
+                            "Transparecy": 30
+                        },
+                        "Value": 96.0,
+                        "Value_Range": "(90,96]",
+                        "Value_Tags": "Fire_Forest_Lv96",
+                        "Value_Tags_Alias": "96hr"
+                    },
+                    {
+                        "Sybmol_Info": {
+                            "Code": 0,
+                            "Fill_Color": [
+                                255,
+                                255,
+                                0,
+                                255
+                            ],
+                            "LineWidth": 1,
+                            "OutLine_Color": [
+                                255,
+                                255,
+                                0,
+                                255
+                            ],
+                            "Transparecy": 30
+                        },
+                        "Value": 102.0,
+                        "Value_Range": "(96,102]",
+                        "Value_Tags": "Fire_Forest_Lv102",
+                        "Value_Tags_Alias": "102hr"
+                    },
+                    {
+                        "Sybmol_Info": {
+                            "Code": 0,
+                            "Fill_Color": [
+                                255,
+                                51,
+                                0,
+                                0
+                            ],
+                            "LineWidth": 1,
+                            "OutLine_Color": [
+                                255,
+                                51,
+                                0,
+                                0
+                            ],
+                            "Transparecy": 45
+                        },
+                        "Value": 112.0,
+                        "Value_Range": "(102,112]",
+                        "Value_Tags": "Fire_Forest_Lv112",
+                        "Value_Tags_Alias": "112hr"
+                    },
+                    {
+                        "Sybmol_Info": {
+                            "Code": 0,
+                            "Fill_Color": [
+                                255,
+                                102,
+                                0,
+                                0
+                            ],
+                            "LineWidth": 1,
+                            "OutLine_Color": [
+                                255,
+                                102,
+                                0,
+                                0
+                            ],
+                            "Transparecy": 40
+                        },
+                        "Value": 122.0,
+                        "Value_Range": "(112,122]",
+                        "Value_Tags": "Fire_Forest_Lv122",
+                        "Value_Tags_Alias": "122hr"
+                    },
+                    {
+                        "Sybmol_Info": {
+                            "Code": 0,
+                            "Fill_Color": [
+                                255,
+                                153,
+                                0,
+                                0
+                            ],
+                            "LineWidth": 1,
+                            "OutLine_Color": [
+                                255,
+                                153,
+                                0,
+                                0
+                            ],
+                            "Transparecy": 30
+                        },
+                        "Value": 132.0,
+                        "Value_Range": "(122,132]",
+                        "Value_Tags": "Fire_Forest_Lv132",
+                        "Value_Tags_Alias": "132hr"
+                    },
+                    {
+                        "Sybmol_Info": {
+                            "Code": 0,
+                            "Fill_Color": [
+                                255,
+                                204,
+                                0,
+                                0
+                            ],
+                            "LineWidth": 1,
+                            "OutLine_Color": [
+                                255,
+                                204,
+                                0,
+                                0
+                            ],
+                            "Transparecy": 30
+                        },
+                        "Value": 142.0,
+                        "Value_Range": "(132,142]",
+                        "Value_Tags": "Fire_Forest_Lv142",
+                        "Value_Tags_Alias": "142hr"
+                    },
+                    {
+                        "Sybmol_Info": {
+                            "Code": 0,
+                            "Fill_Color": [
+                                255,
+                                255,
+                                0,
+                                0
+                            ],
+                            "LineWidth": 1,
+                            "OutLine_Color": [
+                                255,
+                                255,
+                                0,
+                                0
+                            ],
+                            "Transparecy": 30
+                        },
+                        "Value": 152.0,
+                        "Value_Range": "(142,152]",
+                        "Value_Tags": "Fire_Forest_Lv152",
+                        "Value_Tags_Alias": "152hr"
+                    },
+                    {
+                        "Sybmol_Info": {
+                            "Code": 0,
+                            "Fill_Color": [
+                                255,
+                                255,
+                                0,
+                                51
+                            ],
+                            "LineWidth": 1,
+                            "OutLine_Color": [
+                                255,
+                                255,
+                                0,
+                                51
+                            ],
+                            "Transparecy": 30
+                        },
+                        "Value": 172.0,
+                        "Value_Range": "(152,172]",
+                        "Value_Tags": "Fire_Forest_Lv172",
+                        "Value_Tags_Alias": "172hr"
+                    },
+                    {
+                        "Sybmol_Info": {
+                            "Code": 0,
+                            "Fill_Color": [
+                                255,
+                                255,
+                                0,
+                                102
+                            ],
+                            "LineWidth": 1,
+                            "OutLine_Color": [
+                                255,
+                                255,
+                                0,
+                                102
+                            ],
+                            "Transparecy": 30
+                        },
+                        "Value": 192.0,
+                        "Value_Range": "(172,192]",
+                        "Value_Tags": "Fire_Forest_Lv192",
+                        "Value_Tags_Alias": "192hr"
+                    },
+                    {
+                        "Sybmol_Info": {
+                            "Code": 0,
+                            "Fill_Color": [
+                                255,
+                                255,
+                                0,
+                                153
+                            ],
+                            "LineWidth": 1,
+                            "OutLine_Color": [
+                                255,
+                                255,
+                                0,
+                                153
+                            ],
+                            "Transparecy": 30
+                        },
+                        "Value": 212.0,
+                        "Value_Range": "(192,212]",
+                        "Value_Tags": "Fire_Forest_Lv212",
+                        "Value_Tags_Alias": "212hr"
+                    },
+                    {
+                        "Sybmol_Info": {
+                            "Code": 0,
+                            "Fill_Color": [
+                                255,
+                                255,
+                                0,
+                                204
+                            ],
+                            "LineWidth": 1,
+                            "OutLine_Color": [
+                                255,
+                                255,
+                                0,
+                                204
+                            ],
+                            "Transparecy": 30
+                        },
+                        "Value": 232.0,
+                        "Value_Range": "(212,232]",
+                        "Value_Tags": "Fire_Forest_Lv232",
+                        "Value_Tags_Alias": "232hr"
+                    },
+                    {
+                        "Sybmol_Info": {
+                            "Code": 0,
+                            "Fill_Color": [
+                                255,
+                                255,
+                                0,
+                                255
+                            ],
+                            "LineWidth": 1,
+                            "OutLine_Color": [
+                                255,
+                                255,
+                                0,
+                                255
+                            ],
+                            "Transparecy": 30
+                        },
+                        "Value": 252.0,
+                        "Value_Range": "(232,252]",
+                        "Value_Tags": "Fire_Forest_Lv252",
+                        "Value_Tags_Alias": "252hr"
+                    },
+                    {
+                        "Sybmol_Info": {
+                            "Code": 0,
+                            "Fill_Color": [
+                                255,
+                                255,
+                                51,
+                                0
+                            ],
+                            "LineWidth": 1,
+                            "OutLine_Color": [
+                                255,
+                                255,
+                                51,
+                                0
+                            ],
+                            "Transparecy": 30
+                        },
+                        "Value": 272.0,
+                        "Value_Range": "(252,272]",
+                        "Value_Tags": "Fire_Forest_Lv272",
+                        "Value_Tags_Alias": "272hr"
+                    },
+                    {
+                        "Sybmol_Info": {
+                            "Code": 0,
+                            "Fill_Color": [
+                                255,
+                                255,
+                                102,
+                                0
+                            ],
+                            "LineWidth": 1,
+                            "OutLine_Color": [
+                                255,
+                                255,
+                                102,
+                                0
+                            ],
+                            "Transparecy": 30
+                        },
+                        "Value": 292.0,
+                        "Value_Range": "(272,292]",
+                        "Value_Tags": "Fire_Forest_Lv292",
+                        "Value_Tags_Alias": "292hr"
+                    },
+                    {
+                        "Sybmol_Info": {
+                            "Code": 0,
+                            "Fill_Color": [
+                                255,
+                                255,
+                                153,
+                                0
+                            ],
+                            "LineWidth": 1,
+                            "OutLine_Color": [
+                                255,
+                                255,
+                                153,
+                                0
+                            ],
+                            "Transparecy": 30
+                        },
+                        "Value": 312.0,
+                        "Value_Range": "(292,312]",
+                        "Value_Tags": "Fire_Forest_Lv312",
+                        "Value_Tags_Alias": "312hr"
+                    },
+                    {
+                        "Sybmol_Info": {
+                            "Code": 0,
+                            "Fill_Color": [
+                                255,
+                                255,
+                                204,
+                                0
+                            ],
+                            "LineWidth": 1,
+                            "OutLine_Color": [
+                                255,
+                                255,
+                                204,
+                                0
+                            ],
+                            "Transparecy": 30
+                        },
+                        "Value": 332.0,
+                        "Value_Range": "(312,332]",
+                        "Value_Tags": "Fire_Forest_Lv332",
+                        "Value_Tags_Alias": "332hr"
+                    }
+                ],
+                "Reverse": false,
+                "Source_Type": "栅格图片",
+                "Unit": "小时",
+                "Url_Host": "/usr/local/model/Program/Services/Fire/GModel_Fire_Forest/202007/20/150418742/",
+                "Url_Referer": "",
+                "Url_Route": "Fire/GModel_Fire_Forest/202007/20/150418742/"
+            },
+            "Fire_Strong_Raster": {
+                "File_Type": "jpg",
+                "Geo_Type": "Raster",
+                "Lengend": {
+                    "Title": "损伤范围",
+                    "Url_Route_H": "1820050000_R_Lengend_H.jpg",
+                    "Url_Route_V": "1820050000_R_Lengend_V.jpg"
+                },
+                "Precision": 4,
+                "Renderer_Type": "栅格已分类",
+                "Renenders": [
+                    {
+                        "Sybmol_Info": {
+                            "Code": 0,
+                            "Fill_Color": [
+                                255,
+                                0,
+                                0,
+                                255
+                            ],
+                            "LineWidth": 1,
+                            "OutLine_Color": [
+                                255,
+                                0,
+                                200,
+                                0
+                            ],
+                            "Transparecy": 45
+                        },
+                        "Value": 0,
+                        "Value_Range": "[0,350)",
+                        "Value_Tags": "Fire_Strong_Lv0",
+                        "Value_Tags_Alias": "微强度火"
+                    },
+                    {
+                        "Sybmol_Info": {
+                            "Code": 0,
+                            "Fill_Color": [
+                                255,
+                                255,
+                                255,
+                                0
+                            ],
+                            "LineWidth": 1,
+                            "OutLine_Color": [
+                                255,
+                                0,
+                                0,
+                                255
+                            ],
+                            "Transparecy": 45
+                        },
+                        "Value": 0,
+                        "Value_Range": "[350,750)",
+                        "Value_Tags": "Fire_Strong_Lv1",
+                        "Value_Tags_Alias": "低强度火"
+                    },
+                    {
+                        "Sybmol_Info": {
+                            "Code": 0,
+                            "Fill_Color": [
+                                255,
+                                250,
+                                128,
+                                10
+                            ],
+                            "LineWidth": 1,
+                            "OutLine_Color": [
+                                255,
+                                255,
+                                255,
+                                0
+                            ],
+                            "Transparecy": 45
+                        },
+                        "Value": 0,
+                        "Value_Range": "[750,3500)",
+                        "Value_Tags": "Fire_Strong_Lv2",
+                        "Value_Tags_Alias": "中强度火"
+                    },
+                    {
+                        "Sybmol_Info": {
+                            "Code": 0,
+                            "Fill_Color": [
+                                255,
+                                255,
+                                0,
+                                0
+                            ],
+                            "LineWidth": 1,
+                            "OutLine_Color": [
+                                255,
+                                255,
+                                0,
+                                0
+                            ],
+                            "Transparecy": 40
+                        },
+                        "Value": 0,
+                        "Value_Range": "[3500,∞)",
+                        "Value_Tags": "Fire_Strong_Lv3",
+                        "Value_Tags_Alias": "高强度火"
+                    }
+                ],
+                "Reverse": false,
+                "Source_Type": "栅格图片",
+                "Unit": "小时",
+                "Url_Host": "/usr/local/model/Program/Services/Fire/GModel_Fire_Forest/202007/20/150418742/",
+                "Url_Referer": "",
+                "Url_Route": "Fire/GModel_Fire_Forest/202007/20/150418742/"
+            }
+        },
+        "Service_Info": {
+            "Error_Info": "",
+            "Model_Indexes": [
+                "GModel_Fire_Forest"
+            ],
+            "Parms_Return": {
+                "基准时间": "2019-10-10 14:30:31.000",
+                "过火栅格数目": [
+                    1,
+                    1,
+                    1,
+                    1,
+                    2,
+                    2,
+                    2,
+                    2,
+                    2,
+                    2
+                ],
+                "过火面积": [
+                    1.5963510073544145,
+                    1.5963510073544145,
+                    1.5963510073544145,
+                    1.5963510073544145,
+                    3.192702014708829,
+                    3.192702014708829,
+                    3.192702014708829,
+                    3.192702014708829,
+                    3.192702014708829,
+                    3.192702014708829
+                ]
+            },
+            "Runned_Info": {
+                "Create_Time": "",
+                "Explain": "服务运算完毕",
+                "Result": true,
+                "Result_Path": {
+                    "Url": "http://127.0.0.1:80/**/Fire/GModel_Fire_Forest/202007/20/150418742/Fire_Forest_20200720150418742.json",
+                    "Url_FileName": "Fire_Forest_20200720150418742.json",
+                    "Url_Host": "http://127.0.0.1:80/**/",
+                    "Url_Route": "Fire/GModel_Fire_Forest/202007/20/150418742/"
+                },
+                "Run_UID": "",
+                "Taking_Time": "",
+                "Taking_Time_str": ""
+            },
+            "Service_Name": "",
+            "Service_NameAlias": "",
+            "Service_Type": ""
+        },
+        "id": "ba2ca3f7a6e143849147ce0694f334d2"
+    }
+}

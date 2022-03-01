@@ -1,0 +1,17 @@
+[
+  {
+    "leftName": "人员死亡",
+    "num": 1,
+    "numName": "人"
+  },
+  {
+    "leftName": "房屋倒塌",
+    "num": 2,
+    "numName": "万间"
+  },
+  {
+    "leftName": "经济损失",
+    "num": 3,
+    "numName": "万元"
+  }
+]

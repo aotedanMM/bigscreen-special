@@ -1,0 +1,150 @@
+{
+  "code": 0,
+  "data": {
+      "leader": {
+          "postion": "部领导",
+          "staffInfo": [
+              {
+                  "name": "王浩水",
+                  "job": null,
+                  "tel": null
+              }
+          ]
+      },
+      "staff": [
+          {
+              "orgName": "预案管理局",
+              "orgCode": null,
+              "staffs": [
+                  {
+                      "postion": "管理局",
+                      "staffInfo": [
+                          {
+                              "name": "陈胜",
+                              "job": "应急指挥专员",
+                              "tel": "18901025588"
+                          },
+                          {
+                              "name": "徐向阳",
+                              "job": null,
+                              "tel": "13366789939"
+                          }
+                      ]
+                  }
+              ]
+          },
+          {
+              "orgName": "林火预警中心",
+              "orgCode": null,
+              "staffs": [
+                  {
+                      "postion": "火情处置",
+                      "staffInfo": [
+                          {
+                              "name": "王月平",
+                              "job": "二级调研员",
+                              "tel": "18610324576"
+                          },
+                          {
+                              "name": "杜建华",
+                              "job": "副处长",
+                              "tel": "13901084714"
+                          }
+                      ]
+                  },
+                  {
+                      "postion": "林火监测",
+                      "staffInfo": [
+                          {
+                              "name": "鲍赫",
+                              "job": "科员",
+                              "tel": "13522716407"
+                          }
+                      ]
+                  }
+              ]
+          },
+          {
+              "orgName": "应急指挥中心",
+              "orgCode": null,
+              "staffs": [
+                  {
+                      "postion": "值班主任",
+                      "staffInfo": [
+                          {
+                              "name": "蒋铸",
+                              "job": "消防救援局指挥中心高工",
+                              "tel": "18612298103"
+                          }
+                      ]
+                  },
+                  {
+                      "postion": "值班长",
+                      "staffInfo": [
+                          {
+                              "name": "王自强",
+                              "job": null,
+                              "tel": null
+                          }
+                      ]
+                  },
+                  {
+                      "postion": "信息岗",
+                      "staffInfo": [
+                          {
+                              "name": "杨子",
+                              "job": null,
+                              "tel": null
+                          },
+                          {
+                              "name": "周南平",
+                              "job": null,
+                              "tel": null
+                          }
+                      ]
+                  },
+                  {
+                      "postion": "调度岗",
+                      "staffInfo": [
+                          {
+                              "name": "宋晓东",
+                              "job": null,
+                              "tel": null
+                          },
+                          {
+                              "name": "齐少华",
+                              "job": null,
+                              "tel": null
+                          }
+                      ]
+                  },
+                  {
+                      "postion": "消防岗",
+                      "staffInfo": [
+                          {
+                              "name": "胡宝林",
+                              "job": null,
+                              "tel": null
+                          },
+                          {
+                              "name": "王言",
+                              "job": null,
+                              "tel": null
+                          }
+                      ]
+                  },
+                  {
+                      "postion": "综合岗",
+                      "staffInfo": [
+                          {
+                              "name": "王帅华",
+                              "job": null,
+                              "tel": null
+                          }
+                      ]
+                  }
+              ]
+          }
+      ]
+  }
+}

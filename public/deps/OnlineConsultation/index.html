@@ -1,0 +1,729 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=10"> -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>AnyChat 云会议</title>
+    <link rel="shortcut icon" href="./images/meeting.ico" type="image/x-icon" sizes="32x32">
+    <!--加载AnyChat for Web SDK库-->
+    <script type="text/javascript" src="./js/sdk/anychatobject.js" charset="GB2312"></script>
+    <script type="text/javascript" src="./js/sdk/anychatsdk.js" charset="GB2312"></script>
+    <script type="text/javascript" src="./js/sdk/anychatwebsdk_v1_1_5.js"></script>
+    <!-- 加载业务逻辑控制脚本  -->
+    <script type="text/javascript" src="./js/plugin/aes.js"></script>
+    <script type="text/javascript" src="./js/plugin/mode-ecb.js"></script>
+    <script type="text/javascript" src="./js/plugin/pad-nopadding.js"></script>
+    <script type="text/javascript" src="./js/plugin/polyfill.min.js"></script>
+    <script type="text/javascript" src="./js/plugin/jquery-1.12.4.js"></script>
+    <script type="text/javascript" src="./js/plugin/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./js/plugin/bootstrap-jquery-plugin_v1_1_1.js"></script>
+    <script type="text/javascript" src="./js/plugin/bootstrap-table.min.js"></script>
+    <script type="text/javascript" src="./js/plugin/bootstrap-table-jumpto.js"></script>
+    <script type="text/javascript" src="./js/plugin/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="./js/plugin/bootstrap-datetimepicker.zh-CN.js"></script>
+    <script type="text/javascript" src="./js/plugin/clipboard.js"></script>
+    <script type="text/javascript" src="./js/business/main_v1_1_3.js"></script>
+    <!--视频会议组件sdk-->
+    <script type="text/javascript" src="./js/sdkMeetting/AnyChatMeeting_v1_1_3.js"></script>
+    <script type="text/javascript" src="./js/detachableServer/AnyChatDetachableService_v1_1.3.js"></script>
+    <!--组件调用视频会议组件sdk逻辑-->
+    <script type="text/javascript" src="./js/appMeeting/meetingBusiness_v1_1_3.js"></script>
+    <!--组件回调事件-->
+    <script type="text/javascript" src="./js/business/anychatcallback.js"></script>
+    <!-- html动态设置font-size -->
+    <script type="text/javascript" src="./js/plugin/fixible.js"></script>
+    <!--css-->
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap-table-jumpto.css" >
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap-datetimepicker.min.css" >
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap-table.min.css">
+    <!--视频会议插件的css-->
+    <link rel="stylesheet" type="text/css" href="./css/AnyChatMeeting_v1_1_3.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/demo_v1_1_3.css"/>
+
+</head>
+
+<body>
+
+
+<!--登录层 -->
+<!--先默认显示大厅层style="display:block; -->
+<!-- <div id="login_div" class="flexHorVerCenter" >
+    <div class="login_left flexHorVerCenter">
+        <div class="centerBox">
+            <img src="./images/login_logo.png" alt="TechLogo" class="login_logo"><br/>
+            <img src="./images/login_logo_small.png" alt="TechLogo" class="login_logo_small">
+            <div class="wordage">
+                <span >手机号</span><br/>
+                <input type="text" maxlength='11' id="phone" class="form-control"  name="phone" autocomplete="off"
+                       placeholder="请输入手机号码" oninput="value=value.replace(/[^\d]/g,'')"/>
+            </div>
+            <div class="wordage">
+                <span >用户名</span><br/>
+                <input type="text" maxlength='11' id="userName" class="form-control"  name="userName" autocomplete="off"
+                       placeholder="请输入用户名" />
+            </div>
+            <div class="wordage">
+                <span >应用ID：</span><br/>
+                <input type="text" id="AppGuid" class="form-control" value="DD5BBAE2-ED79-F74E-B882-CE0A6A6C607C" autocomplete="off"
+                       placeholder="请输入应用Id"/>
+            </div>
+
+            <a id="loginbtn" class="btn">启动组件</a>
+        </div>
+
+    </div>
+    <div class="login_footer">佰锐科技AnyChat提供计算服务</div>
+</div> -->
+
+<div id="MAIN_DIV">
+    <div id="AnyChatMeetingComponent">
+        <!--安装插件提示层 -->
+        <div id="prompt_div">
+            <div class="close_div">
+                <div id="prompt_div_headline1">插件安装提示</div>
+                <div id="prompt_div_headline2">刷新</div>
+            </div>
+            <div>
+                <div id="prompt_div_line1"></div>
+                <div id="prompt_div_line2">控件安装完成后，请重启浏览器</div>
+                <div id="prompt_div_btn_load" onclick="window.open('http://anychat.oss-cn-hangzhou.aliyuncs.com/AnyChatWebSetup.exe')">下载安装</div>
+            </div>
+            <!-- <div style="height: 85px;">
+                <div id="prompt_div_BR">
+                    <a href="http://www.anychat.cn/">AnyChat</a>&nbsp|&nbsp<a href="http://www.bairuitech.com/">佰锐科技</a>
+                </div>
+            </div> -->
+        </div>
+        <!--操作等待层 -->
+        <div id="LOADING_DIV">
+            <img src="./images/LoadImg.gif" alt="请等待..." style=" height:50px;" />
+            <div></div>
+        </div>
+        <!--灰色背景透明层 -->
+        <div id="LOADING_GREY_DIV"></div>
+        <!--会议大厅层 -->
+        <div id="hall_div" style="display: none">
+            <!-- <div class="hall_top flexVerCenter flexBetween">
+                <div class="hall_top_left "></div>
+                <div class="hall_top_right flexVerCenter">
+                    <div class="username_box "><span id="hall_div_username"></span></div>
+                    <div class="exit_box" id="exit_box"><i></i><span id="ExitSystemBtn">退出</span></div>
+                </div>
+            </div> -->
+            <!-- <div class="hall_banner">
+            </div> -->
+            <div class="hall_content">
+                <div class="content_top">
+                    <div class="content_top_left">
+                        会议列表
+                        <button id="icon_refreshTable">
+                            <i class="icon-refresh"></i>
+                            <span>刷新</span>
+                        </button>
+                    </div>
+                    <div class="content_top_right">
+                        <button class="" id="startMeeting" data-toggle="modal" data-target="#meetingModal">创建会议</button>
+                        <!--<a href="#" class="" id="createMeeting" data-toggle="modal" data-target="#meetingModal"></a>-->
+                        <button class="" id="enterMeeting" data-toggle="modal" data-target="#enterMeetingModal">加入会议</button>
+
+                    </div>
+                </div>
+                <table id="hall_table" style="table-layout: fixed;">
+
+                </table>
+            </div>
+            <!--bootstrap模态框-->
+            <!-- Modal -->
+            <!--开始会议 改为创建会议-->
+            <div class="modal fade" id="meetingModal" tabindex="-1" role="dialog" aria-labelledby="meetingModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="meetingModalLabel">创建会议</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div>
+                                <div class="form-group col-sm-6">
+                                    <label for="meetingName"><span>*</span>会议名称：</label>
+                                    <input type="text" class="form-control" id="meetingName" placeholder="请输入会议名称"
+                                           maxlength="15" autocomplete="off">
+                                </div>
+                                <div class="form-group col-sm-6">
+                                    <label for="meetingId"><span>*</span>会议ID：</label>
+                                    <input type="text" class="form-control" id="meetingId" placeholder="请输入会议ID"
+                                           oninput="value=value.replace(/[^\d]/g,'')" maxlength="12" autocomplete="off">
+                                </div>
+                                <div class="form-group col-sm-6">
+                                    <label for="hostName"><span>*</span>主持人昵称：</label>
+                                    <input type="text" class="form-control" id="hostName" placeholder="请输入姓名"
+                                           maxlength="10" autocomplete="off">
+                                </div>
+                                <div class="form-group col-sm-6">
+                                    <label for="meetingPassword">会议密码：</label>
+                                    <input type="text" class="form-control" id="meetingPassword" placeholder="请输入会议密码"
+                                           maxlength="10" autocomplete="off">
+                                </div>
+                                <div class="form-group col-sm-6">
+                                    <label for="beginDate"><span>*</span>开始时间：</label>
+                                    <input type="text" class="form-control" id="beginDate" disabled placeholder="请输入开始时间">
+                                </div>
+                                <div class="form-group col-sm-6">
+                                    <label for="endDate"><span>*</span>结束时间：</label>
+                                    <input type="text" class="form-control" id="endDate" placeholder="请输入结束时间">
+                                </div>
+                                <div class="form-group radio-group col-sm-6" >
+                                    <label style="min-width: 120px">会议类型：</label><br/>
+                                    <label class="radio-inline" >
+                                        <i class="radioTrue"></i>
+                                        <input type="radio" name="typeRadios" id="typeRadios1" value="video" checked>
+                                        视频会议
+                                    </label>
+                                    <label class="radio-inline" >
+                                        <i class="radioFalse"></i>
+                                        <input type="radio" name="typeRadios" id="typeRadios2" value="audio">
+                                        语音会议
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <!--data-dismiss="modal"不要点击按钮就自动隐藏-->
+                            <button type="button" class="btn btn-primary" id="startOrCreateMeetingBtn" >确定</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--参会人信息设置-->
+            <div class="modal fade " id="userInfoModal" tabindex="-1" role="dialog" aria-labelledby="userInfoModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="userInfoModalLabel">加入会议</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div>
+                                <div class="form-group">
+                                    <label for="meetingJoinName">参会人名称：</label>
+                                    <input type="text" class="form-control" id="meetingJoinName" placeholder="请输入姓名"
+                                           maxlength="10" autocomplete="off">
+                                </div>
+                                <div class="form-group" id="userInfoPasswordBox">
+                                    <label for="passwordForUserInfo">会议密码：</label>
+                                    <div class="passwordBox">
+                                        <!--<input type="password" class="form-control" id="newPassword" />-->
+                                        <input type="password" class="form-control" id="passwordForUserInfo"
+                                               placeholder="请输入会议密码" maxlength="10" autocomplete="off">
+                                        <span class="icon_eye eyeClose" ></span>
+                                    </div>
+                                    <!--<input type="password" class="form-control" id="passwordForUserInfo" />-->
+                                </div>
+                                <div class="form-group radio-group" >
+                                    <label style="min-width: 120px">是否开启麦克风：</label>
+                                    <label class="radio-inline" >
+                                        <i class="radioFalse"></i>
+                                        <input type="radio" name="audioRadios" id="audioRadios1" value="true" >
+                                        开启
+                                    </label>
+                                    <label class="radio-inline" >
+                                        <i class="radioTrue"></i>
+                                        <input type="radio" name="audioRadios" id="audioRadios2" value="false" checked>
+                                        关闭
+                                    </label>
+                                </div>
+                                <div class="form-group radio-group" id="radiosBoxForCamera">
+                                    <label style="min-width: 120px">是否开启摄像头：</label>
+                                    <label class="radio-inline" >
+                                        <i class="radioTrue"></i>
+                                        <input type="radio" name="cameraRadios" id="cameraRadios1" value="true" checked>
+                                        开启
+                                    </label>
+                                    <label class="radio-inline" >
+                                        <i class="radioFalse"></i>
+                                        <input type="radio" name="cameraRadios" id="cameraRadios2" value="false">
+                                        关闭
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" id="userInfoModalBtn">加入会议</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--加入会议-->
+            <div class="modal fade " id="enterMeetingModal" tabindex="-1" role="dialog" aria-labelledby="enterMeetingModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="enterMeetingModalLabel">加入会议</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div>
+                                <div class="form-group ">
+                                    <label for="meetingIdForEnterModal">会议ID：</label>
+                                    <input type="text" class="form-control" id="meetingIdForEnterModal" placeholder="请输入会议ID"
+                                           oninput="value=value.replace(/[^\d]/g,'')" maxlength="12" autocomplete="off">
+                                </div>
+                                <div class="form-group">
+                                    <label for="userNameForEnterModal">参会人名称：</label>
+                                    <input type="text" class="form-control" id="userNameForEnterModal" placeholder="请输入姓名"
+                                           maxlength="10" autocomplete="off">
+                                </div>
+                                <div class="form-group radio-group" >
+                                    <label style="min-width: 120px">是否开启麦克风：</label>
+                                    <label class="radio-inline" >
+                                        <i class="radioFalse"></i>
+                                        <input type="radio" name="audioRadiosForEnterModal" value="true" >
+                                        开启
+                                    </label>
+                                    <label class="radio-inline" >
+                                        <i class="radioTrue"></i>
+                                        <input type="radio" name="audioRadiosForEnterModal" value="false" checked>
+                                        关闭
+                                    </label>
+                                </div>
+                                <div class="form-group radio-group" id="radiosBoxForCameraForEnterModal">
+                                    <label style="min-width: 120px">是否开启摄像头：</label>
+                                    <label class="radio-inline" >
+                                        <i class="radioTrue"></i>
+                                        <input type="radio" name="cameraRadiosForEnterModal"  value="true" checked>
+                                        开启
+                                    </label>
+                                    <label class="radio-inline" >
+                                        <i class="radioFalse"></i>
+                                        <input type="radio" name="cameraRadiosForEnterModal"  value="false">
+                                        关闭
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" id="enterMeetingBtn" >加入会议</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--校验密码-->
+            <div class="modal fade " id="passwordModal" tabindex="-1" role="dialog" aria-labelledby="passwordModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="passwordModalLabel">加入会议</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div>
+                                <div class="form-group">
+                                    <label>会议密码：</label>
+                                    <div class="passwordBox">
+                                        <!--<input type="password" class="form-control" id="newPassword" />-->
+                                        <input type="password" class="form-control" id="meetingPasswordForCheck" placeholder="请输入会议密码" maxlength="10" autocomplete="off">
+                                        <span class="icon_eye eyeClose" ></span>
+                                    </div>
+                                    <!--<input type="password" class="form-control" id="meetingPasswordForCheck" >-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" id="checkPasswordBtnForModal" >确定</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!--会议界面-->
+        <div id="AnyChatMeeting_box" style="display: none">
+            <div class="AnyChatMeeting_box_header AnyChatMeeting_flexVerCenter AnyChatMeeting_flexBetween">
+                <div>
+                    <span class="AnyChatMeeting_span_name">会议主题：</span>
+                    <span id="AnyChatMeeting_title" class="AnyChatMeeting_span_infor">B2B项目探讨会议</span>
+                    <span class="AnyChatMeeting_span_name">主持人：</span>
+                    <span id="AnyChatMeeting_hostName" class="AnyChatMeeting_span_infor">李媛媛</span>
+                    <span class="AnyChatMeeting_span_name">ID：</span>
+                    <span id="AnyChatMeeting_meetingId" class="AnyChatMeeting_span_infor">3483984033</span>
+
+                    <span class="AnyChatMeeting_span_bites">
+                        <span id="upBytes"></span>
+                        <span id="downBytes"></span>
+                    </span>
+                </div>
+                <!--<div class="">上交所技术提供计算服务</div>-->
+                <!--anychat-->
+                <!-- <div class="">佰锐科技AnyChat提供技术支持</div> -->
+            </div>
+            <div class="AnyChatMeeting_box_middle" >
+                <!--视频区域-->
+                <div id="videoSite"></div>
+
+                <!--参会人区域 右侧-->
+                <div  id="userListSite"  class="AnyChatMeeting_userListSite" style="display: none">
+                    <h5 class="AnyChatMeeting_flexVerCenter AnyChatMeeting_horCenter" id="userListSite_userCount">参会人</h5>
+                    <!--参会人列表-->
+                    <div class="userList" id="userList">
+                        <div class="userItem AnyChatMeeting_flexVerCenter AnyChatMeeting_flexBetween">
+                            <div>
+                                <img src="./img/icon_faceTag.png"  alt="头像" class="icon_faceTag">
+                                <div class="userNameSpan">
+                                    <span>userName</span>
+                                </div>
+                                <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">简单的折叠</button>
+                            </div>
+                            <div id="demo" class="collapse">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                            </div>
+                            <!--<img src="./img/icon_faceTag.png"  alt="-331467头像" id="-331467_faceTag" class="icon_faceTag">-->
+                            <!--<span class="userNameSpan" id="-331467_userName">用户-张浩轩</span>-->
+
+                            <!--&lt;!&ndash;<img src="" alt="-331467麦克风" id="-331467_MicrophoneTag">&ndash;&gt;-->
+                            <!--&lt;!&ndash;<img src="" alt="-331467摄像头" id="-331467_CameraTag">&ndash;&gt;-->
+                            <!--<input type="image" src="./img/icon_audioFalse.png"  name="audio" id="-331467_AudioTag" class="btn_icon"/>-->
+                            <!--<input type="image" src="./img/icon_carmarTrue.png"  name="carmar" id="-331467_CameraTag" class="btn_icon"/>-->
+                            <!--<input type="image" src="./img/icon_isHostTrue.png"  name="turnHost" id="-331467_turnHost" class="btn_icon"/>-->
+                        </div>
+                    </div>
+                    <div class="AnyChatMeeting_flexVerCenter AnyChatMeeting_horCenter">
+                        <input type="button" value="全体静音" id="allNoVoice" onclick="allNoVoice()" class="allNoVoice0">
+                    </div>
+                </div>
+                <!--消息区域 右侧-->
+                <div id="messageSite" class="messageSite AnyChatMeeting_messageSite" style="display: none">
+                    <h5 class="AnyChatMeeting_flexVerCenter AnyChatMeeting_horCenter">对话聊天</h5>
+                    <!--消息显示区-->
+                    <!--可滚动区域-->
+                    <div id="messageList" class="messageList">
+                        <!--<div class="messageItem">-->
+                        <!--<span class="AnyChatMeeting_messageTime">14:00:00 </span>-->
+                        <!--<p class="AnyChatMeeting_message"> 李媛媛：你好，我们一起探讨一下吧！</p>-->
+                        <!--</div>-->
+                        <!--<div class="messageItem">-->
+                        <!--<span class="AnyChatMeeting_messageTime">14:00:00 </span>-->
+                        <!--<p class="AnyChatMeeting_message"> 方芳芳：你好，我们一起探讨一下吧！</p>-->
+                        <!--</div>-->
+                    </div>
+                    <input type="button" name="" id="autoCopy" style="display: none"/>
+                    <input type="file" name="" id="chose_videoInput"  onChange="recordFilePlay()"/>
+                    <!--视频界面，用来点击录像路径时显示-->
+                    <video id="record_video"controls="controls" style="visibility: hidden">
+                        <!--<source src="./img/test.mp4" type="video/mp4" />-->
+
+                    </video>
+                    <!--消息发送区-->
+                    <div class="AnyChatMeeting_flexVerCenter AnyChatMeeting_flexBetween">
+                        <input type="text" id="messageText" class="messageText"><input type="button" value="发送" id="sendMessage" class="sendMessage">
+
+                    </div>
+                </div>
+                <!--设置区域 右侧-->
+                <div id="settingSite" class="AnyChatMeeting_settingSite" style="display: none">
+                    <h5 class="AnyChatMeeting_flexVerCenter AnyChatMeeting_horCenter">设置</h5>
+                    <div id="settingList">
+                        <div class="deviceSetting AnyChatMeeting_flexVerCenter AnyChatMeeting_horCenter">
+                            <div class="centerBox">
+                                <div class="AnyChatMeeting_flexVerCenter">
+                                    <span class="icon_device"></span>设备
+                                </div>
+                                <div class="row">
+                                    <label for="videoCapture_dropdown">视频设备</label><br/>
+                                    <div class="dropdown">
+                                        <button  class="dropdown_btn" id="videoCapture_dropdown"  type="button" data-val = '' data-toggle="dropdown"
+                                                 aria-haspopup="true" aria-expanded="false">
+                                            <span class="button_content"></span>
+                                            <span class="icon_after icon_hide"></span>
+                                        </button >
+                                        <ul class="dropdown-menu my_dropdown-menu" aria-labelledby="videoCapture_dropdown" id="videoCapture_dropdown_ul">
+                                            <!--<li id="videoCapture1" data-val = '1'><a href="#" class="select">摄像头1</a></li>-->
+                                            <!--<li id="videoCapture2" data-val = '2'><a href="#" >摄像头2</a></li>-->
+                                        </ul>
+                                    </div>
+                                    <!--<label for="DeviceType_VideoCapture">视频设备</label><br/>-->
+                                    <!--<select id="DeviceType_VideoCapture"  class="form-control" onchange="GetTheValue('DeviceType_VideoCapture')" style=" width:250px;"></select>-->
+                                </div>
+                                <div class="row">
+                                    <!--<label for="DeviceType_AudioCapture">录音设备</label><br/>-->
+                                    <!--<select id="DeviceType_AudioCapture"  class="form-control" onchange="GetTheValue('DeviceType_AudioCapture')" style=" width:250px;"></select>-->
+                                    <label for="audioCapture_dropdown">录音设备</label><br/>
+                                    <div class="dropdown">
+                                        <button  class="dropdown_btn" id="audioCapture_dropdown"  type="button" data-val = '' data-toggle="dropdown"
+                                                 aria-haspopup="true" aria-expanded="false">
+                                            <span class="button_content"></span>
+                                            <span class="icon_after icon_hide"></span>
+                                        </button >
+                                        <ul class="dropdown-menu my_dropdown-menu" aria-labelledby="audioCapture_dropdown" id="audioCapture_dropdown_ul">
+
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <!--<label for="DeviceType_AudioPlayBack" >放音设备</label><br/>-->
+                                    <!--<select id="DeviceType_AudioPlayBack"  class="form-control" onchange="GetTheValue('DeviceType_AudioPlayBack')" style=" width:250px;"></select>-->
+                                    <label for="audioPlayBack_dropdown">放音设备</label><br/>
+                                    <div class="dropdown">
+                                        <button  class="dropdown_btn" id="audioPlayBack_dropdown"  type="button" data-val = '' data-toggle="dropdown"
+                                                 aria-haspopup="true" aria-expanded="false">
+                                            <span class="button_content"></span>
+                                            <span class="icon_after icon_hide"></span>
+                                        </button >
+                                        <ul class="dropdown-menu my_dropdown-menu" aria-labelledby="audioPlayBack_dropdown" id="audioPlayBack_dropdown_ul">
+
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <!--<label for="DeviceType_AudioPlayBack" >放音设备</label><br/>-->
+                                    <!--<select id="DeviceType_AudioPlayBack"  class="form-control" onchange="GetTheValue('DeviceType_AudioPlayBack')" style=" width:250px;"></select>-->
+                                    <label for="recordSetting_dropdown">录制配置</label><br/>
+                                    <div class="dropdown">
+                                        <button  class="dropdown_btn" id="recordSetting_dropdown"  type="button" data-val = '0' data-toggle="dropdown"
+                                                 aria-haspopup="true" aria-expanded="false">
+                                            <span class="button_content">音视频录制</span>
+                                            <span class="icon_after icon_hide"></span>
+                                        </button >
+                                        <ul class="dropdown-menu my_dropdown-menu" aria-labelledby="recordSetting_dropdown" id="recordSetting_dropdown_ul">
+                                            <li id = 'recordVideo' data-val = '0'><a href="#">音视频录制</a></li>
+                                            <li id = 'recordScreen' data-val = '1'><a href="#" >屏幕录制</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div id="passwordSetting" style="visibility: hidden" class="AnyChatMeeting_flexVerCenter AnyChatMeeting_horCenter">
+                            <div class="centerBox">
+                                <div class="AnyChatMeeting_flexVerCenter"> <span class="icon_password"></span>密码</div>
+                                <!--                            <label>请输入新密码</label>-->
+                                <div class="newPasswordBox">
+                                    <input type="password" class="form-control" id="newPassword" placeholder="请输入新密码" maxlength="10"/>
+                                    <span class="icon_eye eyeClose" id="icon_eye"></span>
+                                </div>
+
+                                <input type="button" id="updatePasswordBtn" value="修改密码">
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+                </div>
+                <div id="remoteShareScreenBox2" style="visibility: hidden"></div>
+            </div>
+            <!--视频会议页脚-->
+            <div class="AnyChatMeeting_box_bottom AnyChatMeeting_flexVerCenter AnyChatMeeting_flexBetween" id="AnyChatMeetingFooter">
+            </div>
+
+            <!--白板区域-->
+            <div id="whiteBoardSite" class="AnyChatMeeting_whiteBoardSite" style="visibility: hidden">
+                <div class="scrollBox">
+                    <div class="AnyChatMeeting_whiteBoard_top  AnyChatMeeting_flexVerCenter AnyChatMeeting_flexAround" id="AnyChatMeeting_whiteBoard_top">
+                        <!--<div class="AnyChatMeeting_flexAround">-->
+                        <div class="dropdown ">
+                            <button  class="wb_btn" id="addWB_dropdown" data-val = 'addWB' type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="icon_before icon_add"></span>
+                                <span class="button_content">添加白板</span>
+                                <span class="icon_after icon_hide"></span>
+                            </button >
+                            <ul class="dropdown-menu my_dropdown-menu" aria-labelledby="addWB_dropdown" id="addWB_dropdown_ul">
+                                <li id="addWB" data-val = 'addWB'><a href="#"  class="select" >添加白板</a></li>
+                                <li id="addPPTWB" data-val = 'addPPTWB'><a href="#">添加文档白板</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown">
+                            <button  class="wb_btn" id="drawMode_dropdown"  type="button" data-val = '1' data-toggle="dropdown"
+                                     aria-haspopup="true" aria-expanded="false">
+                                <span class="icon_before icon_drawMode"></span>
+                                <span class="button_content">自由绘图</span>
+                                <span class="icon_after icon_hide"></span>
+                            </button >
+                            <ul class="dropdown-menu my_dropdown-menu" aria-labelledby="drawMode_dropdown" id="drawMode_dropdown_ul">
+                                <li id="free" data-val = '1'><a href="#" class="select">自由绘图</a></li>
+                                <li id="rect" data-val = '2'><a href="#" >矩形模式</a></li>
+                                <li id="circle" data-val = '3'><a href="#" >画圈模式</a></li>
+                                <li id="arrow" data-val = '4'><a href="#" >箭头模式</a></li>
+                                <li id="linear" data-val = '5'><a href="#" >直线模式</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown">
+                            <button  class="wb_btn" id="lineMode_dropdown" type="button"  data-val = '4' data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="button_content"><img src="./images/icon_small@2x.png" alt="小笔刷"></span>
+                                <span class="icon_after icon_hide"></span>
+                            </button >
+                            <ul class="dropdown-menu my_dropdown-menu" aria-labelledby="lineMode_dropdown" id="lineMode_dropdown_ul">
+                                <li id="lineMode_small" data-val = '1'><a href="#" class="select flexHorVerCenter noPadding"><img src="./images/icon_small@2x.png" alt="小笔刷"></a></li>
+                                <li id="lineMode_middle" data-val = '4'><a href="#" class="flexHorVerCenter noPadding" ><img src="./images/icon_middle@2x.png" alt="中笔刷"></a></li>
+                                <li id="lineMode_big" data-val = '8'><a href="#" class="flexHorVerCenter noPadding"><img src="./images/icon_big@2x.png" alt="大笔刷"></a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown">
+                            <button  class="wb_btn AnyChatMeeting_flexVerCenter" id="colorMode_dropdown" data-val = '#000000' type="button"
+                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="button_content AnyChatMeeting_flexVerCenter"><i class="i_black"></i></span>
+                                <span class="icon_after icon_hide"></span>
+                            </button >
+                            <ul class="dropdown-menu my_dropdown-menu" aria-labelledby="colorMode_dropdown" id="colorMode_dropdown_ul">
+                                <li id="colorMode_red" data-val = '#FF0000'><a href="#" class="noPadding"><i class="i_red"></i></a></li>
+                                <li id="colorMode_black" data-val = '#000000'><a href="#" class="noPadding select"><i class="i_black"></i></a></li>
+                                <li id="colorMode_blue" data-val = '#0090FF'><a href="#" class="noPadding"><i class="i_blue"></i></a></li>
+                                <li id="colorMode_white" data-val = '#FFFFFF'><a href="#" class="noPadding"><i class="i_white"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown">
+                            <button  class="wb_btn AnyChatMeeting_flexVerCenter" id="bgcolor_dropdown" data-val = '#FFFFFF' type="button"
+                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="icon_before icon_bgcolor"></span>
+                                <span class="button_content AnyChatMeeting_flexVerCenter" ><span>背景色</span><i class="i_white"></i></span>
+                                <span class="icon_after icon_hide"></span>
+                            </button >
+                            <ul class="dropdown-menu my_dropdown-menu" aria-labelledby="bgcolor_dropdown" id="bgcolor_dropdown_ul">
+                                <li id="bgcolor_red" data-val = '#FF0000'><a href="#" class="flexHorVerCenter"><span>背景色</span><i class="i_red"></i></a></li>
+                                <li id="bgcolor_black" data-val = '#000000'><a href="#" class="flexHorVerCenter"><span>背景色</span><i class="i_black"></i></a></li>
+                                <li id="bgcolor_blue" data-val = '#0090FF'><a href="#" class="flexHorVerCenter"><span>背景色</span><i class="i_blue"></i></a></li>
+                                <li id="bgcolor_white" data-val = '#FFFFFF'><a href="#" class="flexHorVerCenter select"><span>背景色</span><i class="i_white"></i></a></li>
+                            </ul>
+                        </div>
+                        <!--<div class="dropdown">-->
+                        <!--<button  class="wb_btn" id="wbSize_dropdown"data-val = 'third' type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
+                        <!--<span class="icon_before icon_wbSize"></span>-->
+                        <!--<span class="button_content"><span>16:9</span></span>-->
+                        <!--<span class="icon_after icon_hide"></span>-->
+                        <!--</button >-->
+                        <!--<ul class="dropdown-menu my_dropdown-menu" aria-labelledby="wbSize_dropdown" id="wbSize_dropdown_ul">-->
+                        <!--<li id="wbSize_first"  data-val = 'first'><a href="#" ><span>1:1</span></a></li>-->
+                        <!--<li id="wbSize_second" data-val = 'second'><a href="#" class="select"><span>4:3</span></a></li>-->
+                        <!--<li id="wbSize_third" data-val = 'third'><a href="#" ><span>16:9</span></a></li>-->
+                        <!--</ul>-->
+                        <!--</div>-->
+                        <span class="wb_btn AnyChatMeeting_flexVerCenter" id="bgChange"><span class="icon_before icon_bgChange"></span><span>图片分享</span></span>
+                        <span class="wb_btn AnyChatMeeting_flexVerCenter" id="canvasDownload"><span class="icon_before icon_canvasDownload"></span>下载</span>
+                        <span class="wb_btn AnyChatMeeting_flexVerCenter" id="deleteWB"><span class="icon_before icon_delete"></span>删除白板</span>
+                        <span class="wb_btn AnyChatMeeting_flexVerCenter" id="undo"><span class="icon_before icon_undo"></span>撤销笔迹</span>
+                        <span class="wb_btn AnyChatMeeting_flexVerCenter" id="clear"><span class="icon_before icon_clear"></span>清除笔迹</span>
+                        <span class="wb_btn AnyChatMeeting_flexVerCenter" id="showWBInfo"><span class="icon_before icon_inform"></span>白板信息</span>
+                        <span class="wb_btn AnyChatMeeting_flexVerCenter closeWB" id="closeWB" onclick="showWhiteBoardUI()">
+                        <span class="icon_before icon_closeWB"></span><span>返回会议</span>
+                    </span>
+
+                        <!--</div>-->
+                    </div>
+                    <div class="AnyChatMeeting_whiteBoard_left" id="AnyChatMeeting_whiteBoard_left">
+                        <div class="wb_thumb AnyChatMeeting_verCenterAround">
+                            <div class="changeWB preWb" id="changeWBPre"></div>
+                            <div class="wb_thumb_box AnyChatMeeting_flexVerCenter AnyChatMeeting_horCenter" id="wb_thumb_box">
+                                <ul class="" id="wb_thumb_list">
+                                    <li class="wb_thumb_item">
+                                        <div class="item_content">
+                                            <span class='wbName'>无</span>
+                                            <span class='wbPage'>0/0</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="changeWB nextWb" id="changeWBNext"></div>
+                        </div>
+                    </div>
+                    <div class="AnyChatMeeting_whiteBoard_right" id="AnyChatMeeting_whiteBoard_right">
+
+                        <div id="room_canvas"></div>
+
+                        <div class="AnyChatMeeting_whiteBoard_right_bottom AnyChatMeeting_flexBetween">
+                            <!-- 主持人/管理员 功能 -->
+                            <div  class="hostPerson pageOperate AnyChatMeeting_flexVerCenter AnyChatMeeting_flexBetween">
+                                <span class="wb_btn" id="changeWBPagePre">上一页</span>
+                                <label><span id="pageIndex" >0</span>/<span id="pageNum" >0</span></label>
+                                <span class="wb_btn" id="changeWBPageNext">下一页</span>
+                            </div>
+                            <div class="hostPerson wbMediaOperate AnyChatMeeting_flexVerCenter AnyChatMeeting_flexAround">
+                            <span class="wb_btn AnyChatMeeting_flexVerCenter" onclick="operateCamera()" id="wbMediaOperate_camera">
+                               摄像头
+                            </span>
+                                <span class="wb_btn AnyChatMeeting_flexVerCenter" onclick="operateMicrophone()" id="wbMediaOperate_microphone">
+                               麦克风
+                            </span>
+                                <span class="wb_btn AnyChatMeeting_flexVerCenter" onclick="isOpenVoice()" id="wbMediaOperate_voice">
+                               静音
+                            </span>
+                            </div>
+                            <!--  普通观众功能   -->
+                            <div class="normalPerson AnyChatMeeting_flexVerCenter AnyChatMeeting_flexBetween">
+                             <span class="wb_btn AnyChatMeeting_flexVerCenter" onclick="isOpenVoice()" id="wbMediaOperate_voice_normalPerson">
+                                 静音
+                            </span>
+                            </div>
+                            <div class="normalPerson AnyChatMeeting_flexVerCenter AnyChatMeeting_flexBetween">
+                             <span class="wb_btn AnyChatMeeting_flexVerCenter closeWB"  onclick="showWhiteBoardUI()">
+                                <span class="icon_before icon_closeWB"></span><span>返回会议</span>
+                            </span>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <!--透明层遮罩，防止非主持人点击 -->
+                    <!--                <div id=AnyChatMeeting_whiteBoard_Mask></div>-->
+                </div>
+
+            </div>
+            <!--白板的右侧消息面板-->
+            <div id="whiteBoardMessageBoard" style="display: none">
+                <!--视频会议显示顶上视频-->
+                <div id="whiteBoard_hostVideo" style="display: none">
+                    <div class="hostVideoArea" >
+                        <div class="videoSite" id="hostVideoSite"></div>
+                        <div class="nameSite AnyChatMeeting_flexVerCenter AnyChatMeeting_horCenter">
+                            <img src="./img/icon_isHost1.png" alt="" class="icon_host">
+                            <span class="hostName">无</span>
+                            <img src="./img/icon_isSpeak.png" alt="" class="icon_speak">
+                        </div>
+                        <div id="hostVideoImgMask"></div>
+                    </div>
+
+
+                </div>
+                <!--语音会议不显示顶上块-->
+                <div id="whiteBoard_message">
+                    <div class="messageSite" id="clone_message">
+                        <h5 class="AnyChatMeeting_flexVerCenter AnyChatMeeting_horCenter">对话聊天</h5>
+                        <!--消息显示区-->
+                        <!--可滚动区域-->
+                        <div class="messageList">
+
+                        </div>
+                        <!--消息发送区-->
+                        <div class="AnyChatMeeting_flexVerCenter AnyChatMeeting_flexBetween">
+                            <input type="text" class="messageText">
+                            <input type="button" value="发送" class="sendMessage">
+
+                        </div>
+                    </div>
+                </div>
+                <div id = 'messageBoard'>
+                    <i id="messageDot"></i>
+                    消息面板
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+</div>
+<script>
+    // window.onload = function() {
+    //     dispatchData()
+    // }
+</script>
+</body>
+<script>
+
+</script>
+</html>

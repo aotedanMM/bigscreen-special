@@ -1,0 +1,39 @@
+[
+    {
+        "id": 3,
+        "pId": 0,
+        "name": "救援保障",
+        "icon": "imgs/resources/baozhang.png",
+        "nocheck": true
+    },
+    {
+        "id": 3001,
+        "pId": 3,
+        "name": "储备库",
+        "code": "ANJIAN_REPERTORY※01"
+    },
+    {
+        "id": 3002,
+        "pId": 3,
+        "name": "战保基地",
+        "code": "JC_WARBASE※01"
+    },
+    {
+        "id": 3003,
+        "pId": 3,
+        "name": "避难场所",
+        "code": "shelter"
+    },
+    {
+        "id": 3004,
+        "pId": 3,
+        "name": "灾情信息员",
+        "code": "DisasterPer※01"
+    },
+    {
+        "id": 3005,
+        "pId": 3,
+        "name": "专家",
+        "code": "Expert※01"
+    }
+]

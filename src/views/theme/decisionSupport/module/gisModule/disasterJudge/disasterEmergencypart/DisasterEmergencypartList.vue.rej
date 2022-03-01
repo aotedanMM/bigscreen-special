@@ -1,0 +1,17 @@
+diff a/src/views/theme/decisionSupport/module/gisModule/disasterJudge/disasterEmergencypart/DisasterEmergencypartList.vue b/src/views/theme/decisionSupport/module/gisModule/disasterJudge/disasterEmergencypart/DisasterEmergencypartList.vue	(rejected hunks)
+@@ -71 +71 @@ export default class DisasterRescueTeamsList extends Vue {
+-  private sourceTypeCodeObj:any;
++  private sourceTypeCodeObj: any;
+@@ -81,2 +81,2 @@ export default class DisasterRescueTeamsList extends Vue {
+-    this.sourceTypeCodeObj= dataSourceConfig('DisasterRescueTeamsList');
+-    dataSourcesServer.getDataSourceServer({typeCode:this.sourceTypeCodeObj.typeCode}).then((data: any) => {
++    this.sourceTypeCodeObj = dataSourceConfig('DisasterRescueTeamsList');
++    dataSourcesServer.getDataSourceServer({typeCode: this.sourceTypeCodeObj.typeCode}).then((data: any) => {
+@@ -84,2 +84,2 @@ export default class DisasterRescueTeamsList extends Vue {
+-      this.sourceTypeCodeObj.sourceData=res.data[0];
+-      console.log(this.sourceTypeCodeObj,'this.sourceTypeCodeObj')
++      this.sourceTypeCodeObj.sourceData = res.data[0];
++      console.log(this.sourceTypeCodeObj, 'this.sourceTypeCodeObj');
+@@ -185 +185 @@ export default class DisasterRescueTeamsList extends Vue {
+-    this.FnSourceTypeCode()
++    this.FnSourceTypeCode();

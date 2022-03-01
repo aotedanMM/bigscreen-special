@@ -1,0 +1,201 @@
+
+@path: '../../img/gisModule/districtDialog'; // 定义路径
+@head_bg:'../../img/halfScreen/firePoint/list_title_bg.png';
+@icon_echart: '../../img/monitorWarning/echart.png';
+* {
+  margin: 0;
+  padding: 0;
+}
+i {
+  font-style: normal;
+}
+
+ /* 统计列表样式 start */ 
+ .statisticCount+ .statisticList{
+  padding-top:0;
+}
+ .statisticList {
+   padding-top:5px;
+   &_li {
+     display:flex;
+     justify-content: space-between;
+     color:#ffffff;
+     background:url('../../img/halfScreen/halflist/listbg.png') no-repeat -5px 50%;
+     background-size:100% 100%;
+     padding:10px;
+     box-sizing:border-box;
+     margin:5px 0;
+     cursor:pointer;
+     
+     &.checkSty,
+     &:hover{
+       background-image:url('../../img/halfScreen/halflist/listbghover.png');
+     }
+     & + & {
+       margin-top:5px;
+     }
+     &_textWarning{
+       color:yellow;
+       padding-right:5px;
+     }
+   }
+ }
+.statisticListNohover{
+  .statisticList_li{
+    &:nth-child(2){
+      cursor: auto;
+    }
+    &:nth-child(2):hover{
+      background:url('../../img/halfScreen/halflist/listbg.png') no-repeat -5px 50%;
+      background-size:100% 100%;
+    }
+  }
+}
+/* 统计列表样式 end */ 
+
+/* 带背景+echart图标的标题 start*/  
+.statisticList-title{
+  background:url('@{head_bg}') no-repeat left 30px;
+  padding-bottom:20px;
+  color:#67e1fb;
+  .echartIcon {
+    float:right;
+    width: 32px;
+    height: 32px;
+    background: url('@{icon_echart}') no-repeat 0 0;
+    background-size: 100% 100%;
+    margin-left: 10px;
+    cursor: pointer;
+    margin-top:3px;
+    position: absolute;
+    top: 0px;
+    right: 150px;
+    &:hover{
+      width: 40px;
+      height: 36px;
+      background: url('../../img/monitorWarning/echart_hover.png') no-repeat 0 0;
+      background-size: 100% 100%;
+      margin-left: 10px;
+      position: absolute;
+      top: -2px;
+      right: 146px;
+    }
+  }
+  .reportIcon {
+    float:right;
+    width: 38px;
+    height: 38px;
+    background: url('../../img/monitorWarning/reportIcon.png') no-repeat 0 0;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 1px;
+    cursor: pointer;
+    &:hover{
+      background: url('../../img/monitorWarning/reportIcon_hover.png') no-repeat 0 0;
+      background-size: 100% 100%;
+    }
+  }
+}
+/* 带背景+echart图标的标题 end*/  
+
+.showModule {
+  position: absolute;
+  // top: 25px;
+  // left: 15px;
+  background: url('@{path}/zhankaibutton.png') center top no-repeat;
+  width: 44px;
+  height: 54px;
+  display: inline-block;
+  position: absolute;
+  cursor: pointer;
+}
+.closeModule {
+  // background: url('@{path}/iconClose.png') center top no-repeat;
+  // width: 37px;
+  // height: 33px;
+  // display: inline-block;
+  // position: absolute;
+  // cursor: pointer;
+  // right:17px;
+  // top: -12px;
+  display: none;
+}
+.detail {
+  width: 100%;
+  .half-title{
+    margin-top:-8px;
+    font-style: italic;
+  }
+  .title {
+    width: 100%;
+    height: 100px;
+    z-index: 4;
+    cursor: pointer;
+    color: #91f5ff;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    position: relative;
+    width: 344px; 
+    height: 75px;
+    line-height: 75px;
+    margin:25px auto 15px;
+    &::before{
+      content: '';
+      position: absolute;
+      top:-12px;
+      right:-25px;
+      bottom:-10px;
+      left:-25px;
+      background: url('@{path}/tankuangtitlebg.png') center top no-repeat;
+      background-size: 100% 100%;
+      z-index: -1;
+      pointer-events: none;
+    }
+    
+  }
+  .city-list {
+    box-sizing: border-box;
+    margin: auto;
+    width: 100%;
+    border-radius: 5px;
+    height:56px;
+    line-height:56px;
+    background:transparent;
+    &:hover,
+    &.click {
+      p{
+        background:url('../../.././assets/img/halfScreen/halflist/listbghover.png') no-repeat;
+        box-shadow:none;
+      }
+    }
+    p {
+      display: flex;
+      justify-content: space-between;
+      list-style: none;
+      height: 100px;
+      color: #fff;
+      overflow: hidden;  
+      padding: 0 10px;
+      margin: 0;
+      background:url('../../../assets/img/halfScreen/halflist/listbg.png') no-repeat;
+      margin-top: 10px;
+      height: 100%;
+      line-height:56px;
+      border-radius:5px;
+      cursor: pointer;
+      .distance_txt{
+        color:yellow;
+      }
+
+      .city-list-number{
+        color:yellow;
+        // font-size: 48px;
+        font-style: normal;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+

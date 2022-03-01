@@ -1,0 +1,1996 @@
+[
+  {
+    "label": "行政区划",
+    "children": [
+      {
+        "label": "行政区",
+        "children": [
+          {
+            "label": "省界",
+            "children": [
+              {
+                "key": "sheng",
+                "ids": []
+              },
+              {
+                "key": "sheng_Copy",
+                "ids": []
+              }
+            ],
+            "isShow": false,
+            "state": true,
+            "isColorShow": false
+          },
+          {
+            "label": "市界",
+            "children": [
+              {
+                "key": "shi",
+                "ids": []
+              },
+              {
+                "key": "shi_Copy",
+                "ids": []
+              }
+            ],
+            "isShow": false,
+            "state": true,
+            "isColorShow": false
+          },
+          {
+            "label": "县界",
+            "children": [
+              {
+                "key": "xian",
+                "ids": []
+              },
+              {
+                "key": "xian_Copy",
+                "ids": []
+              }
+            ],
+            "isShow": false,
+            "state": true,
+            "isColorShow": false
+          },
+          {
+            "label": "乡界",
+            "children": [
+              {
+                "key": "xiang",
+                "ids": []
+              }
+            ],
+            "isShow": false,
+            "state": true,
+            "isColorShow": false
+          }
+        ],
+        "isShow": false,
+        "state": true,
+        "showChild": true,
+        "isColorShow": false,
+        "isFather": true
+      },
+      {
+        "label": "政区名",
+        "children": [
+          {
+            "label": "省名",
+            "children": [
+              {
+                "key": "sheng_zhuji",
+                "ids": []
+              }
+            ],
+            "isShow": false,
+            "state": true,
+            "isColorShow": false
+          },
+          {
+            "label": "市名",
+            "children": [
+              {
+                "key": "shi_zhuji",
+                "ids": []
+              }
+            ],
+            "isShow": false,
+            "state": true,
+            "isColorShow": false
+          },
+          {
+            "label": "县名",
+            "children": [
+              {
+                "key": "xian_zhuji",
+                "ids": []
+              }
+            ],
+            "isShow": false,
+            "state": true,
+            "isColorShow": false
+          },
+          {
+            "label": "乡名",
+            "children": [
+              {
+                "key": "xiang_zhuji",
+                "ids": []
+              }
+            ],
+            "isShow": false,
+            "state": true,
+            "isColorShow": false
+          }
+        ],
+        "showChild": true,
+        "isShow": false,
+        "state": true,
+        "isColorShow": false,
+        "isFather": true
+      }
+    ],
+    "showChild": true,
+    "isShow": false,
+    "state": true,
+    "isColorShow": false,
+    "isFather": true,
+    "//":"人工添加，业务图层不在基础树上展示",
+    "isNotBase":true
+  },
+  {
+    "label": "境界与政区",
+    "children": [
+      {
+        "label": "境界",
+        "children": [
+          {
+            "label": "国界",
+            "children": [
+              {
+                "key": "ABOULN_1-2级",
+                "ids": []
+              },
+              {
+                "key": "ABOULN_5级",
+                "ids": []
+              },
+              {
+                "key": "ABOULN",
+                "ids": []
+              },
+              {
+                "key": "T4_6ji",
+                "ids": []
+              },
+              {
+                "key": "T7ji",
+                "ids": []
+              },
+              {
+                "key": "T8ji",
+                "ids": []
+              },
+              {
+                "key": "T9ji",
+                "ids": []
+              },
+              {
+                "key": "T10ji",
+                "ids": []
+              }
+            ],
+            "isShow": true,
+            "state": true,
+            "isColorShow": false
+          },
+	  {
+            "label": "中国国界",
+            "children": [
+              {
+                "key": "中国国界",
+                "ids": []
+              },
+              {
+                "key": "色带6级",
+                "ids": []
+              }
+            ],
+            "isShow": true,
+            "state": true,
+            "isColorShow": false
+          },
+          {
+            "label": "省界",
+            "children": [
+              {
+                "key": "ABOULN_SJ",
+                "ids": []
+              },
+              {
+                "key": "ABOULN_SJ_68",
+                "ids": []
+              },
+              {
+                "key": "ABOULN_SJ7_9",
+                "ids": []
+              },
+              {
+                "key": "ABOULN_SJ10",
+                "ids": []
+              },
+              {
+                "key": "ABOULN_SJ4_6",
+                "ids": []
+              }
+            ],
+            "isShow": true,
+            "state": true,
+            "isColorShow": false
+          }
+        ],
+        "isShow": true,
+        "state": true,
+        "showChild": true,
+        "isColorShow": false,
+        "isFather": true
+      },
+      {
+        "label": "政区名",
+        "children": [
+          {
+            "label": "国家名",
+            "children": [
+              {
+                "key": "country_3ji_c",
+                "ids": []
+              },
+              {
+                "key": "country_4ji_c",
+                "ids": []
+              },
+              {
+                "key": "country_5ji_c",
+                "ids": []
+              },
+              {
+                "key": "country_6ji_c",
+                "ids": []
+              },
+              {
+                "key": "country_7ji_w",
+                "ids": []
+              },
+              {
+                "key": "Country",
+                "ids": []
+              }
+            ],
+            "isShow": true,
+            "state": true,
+            "isColorShow": false
+          },
+          {
+            "label": "首都名",
+            "children": [
+              {
+                "key": "zhongguodiming北京",
+                "ids": []
+              },
+              {
+                "key": "guowaidiming_4ji",
+                "ids": []
+              },
+              {
+                "key": "guowaidiming_5ji",
+                "ids": []
+              },
+              {
+                "key": "guowaidiming_6ji",
+                "ids": []
+              },
+              {
+                "key": "guowaidiming_7ji",
+                "ids": []
+              },
+              {
+                "key": "guowaidiming",
+                "ids": []
+              }
+            ],
+            "isShow": true,
+            "state": true,
+            "isColorShow": false
+          },
+          {
+            "label": "省名",
+            "children": [
+              {
+                "key": "shengji2_point_4ji_w",
+                "ids": []
+              },
+	      {
+                "key": "shengji2_point_5ji_w",
+                "ids": []
+              },
+              {
+                "key": "guowaishengming_5ji",
+                "ids": []
+              },
+              {
+                "key": "guowaishengming_6ji",
+                "ids": []
+              },
+              {
+                "key": "guowaishengming_7ji",
+                "ids": []
+              },
+              {
+                "key": "biaozhuxian",
+                "ids": []
+              },
+              {
+                "key": "biaozhuxian_5级",
+                "ids": []
+              }
+            ],
+            "isShow": true,
+            "state": true,
+            "isColorShow": false
+          },
+          {
+            "label": "省会名",
+            "children": [
+              {
+                "key": "zhongguodiming_澳门",
+                "ids": []
+              },
+              {
+                "key": "zhongguodiming省会",
+                "ids": []
+              }
+            ],
+            "isShow": true,
+            "state": true,
+            "isColorShow": false
+          },
+          {
+            "label": "地市名",
+            "children": [
+              {
+                "key": "zhongguodiming地级",
+                "ids": []
+              }
+            ],
+            "isShow": true,
+            "state": true,
+            "isColorShow": false
+          },
+          {
+            "label": "县名",
+            "children": [
+              {
+                "key": "zhongguodiming县级",
+                "ids": []
+              },
+              {
+                "key": "zhongguodiming_县名",
+                "ids": []
+              }
+            ],
+            "isShow": true,
+            "state": true,
+            "isColorShow": false
+          },
+          {
+            "label": "乡名",
+            "children": [
+              {
+                "key": "zhongguodiming乡镇",
+                "ids": []
+              },
+              {
+                "key": "26地名地址_乡镇",
+                "ids": []
+              },
+              {
+                "key": "jiedao",
+                "ids": []
+              }
+            ],
+            "isShow": true,
+            "state": true,
+            "isColorShow": false
+          },
+          {
+            "label": "村名",
+            "children": [
+              {
+                "key": "26地名地址_村",
+                "ids": []
+              }
+            ],
+            "isShow": true,
+            "state": true,
+            "isColorShow": false
+          }
+        ],
+        "showChild": true,
+        "isShow": true,
+        "state": true,
+        "isColorShow": false,
+        "isFather": true
+      }
+    ],
+    "showChild": true,
+    "isShow": true,
+    "state": true,
+    "isColorShow": false,
+    "isFather": true
+  },
+  {
+    "label": "水系",
+    "children": [
+      {
+        "label": "水系名",
+        "children": [
+          {
+            "label": "水系名",
+            "children": [
+              {
+                "key": "Sea_2级",
+                "ids": []
+              },
+              {
+                "key": "Sea",
+                "ids": []
+              },
+              {
+                "key": "water_zjpt",
+                "ids": []
+              },
+              {
+                "key": "water_zjpl",
+                "ids": []
+              },
+              {
+                "key": "HCTL注记",
+                "ids": []
+              },
+              {
+                "key": "ChineseIsland1",
+                "ids": []
+              },
+              {
+                "key": "ChineseIsland2",
+                "ids": []
+              },
+              {
+                "key": "dao_P_8级",
+                "ids": []
+              },
+              {
+                "key": "dao_P",
+                "ids": []
+              }
+            ],
+            "isShow": true,
+            "state": true,
+            "isColorShow": false
+          }
+        ],
+        "isShow": true,
+        "state": true,
+        "showChild": true,
+        "isColorShow": false,
+        "isFather": true,
+        "isTwo": true
+      },
+      {
+        "label": "海洋",
+        "children": [
+          {
+            "label": "海洋",
+            "children": [
+              {
+                "key": "背景",
+                "ids": []
+              },
+              {
+                "key": "nanhaihaitan_3级",
+                "ids": []
+              },
+              {
+                "key": "nanhaihaitan",
+                "ids": []
+              }
+            ],
+            "isShow": true,
+            "state": true,
+            "isColorShow": false
+          }
+        ],
+        "showChild": true,
+        "isShow": true,
+        "state": true,
+        "isColorShow": false,
+        "isFather": true,
+        "isTwo": true
+      },
+      {
+        "label": "河流",
+        "children": [
+          {
+            "label": "河流",
+            "children": [
+              {
+                "key": "AHYDL",
+                "ids": []
+              },
+              {
+                "key": "Jiehe_LN",
+                "ids": []
+              },
+              {
+                "key": "Jiehe_PL",
+                "ids": []
+              },
+              {
+                "key": "AHYDA",
+                "ids": []
+              },
+              {
+                "key": "HYDL",
+                "ids": []
+              },
+              {
+                "key": "HYDA",
+                "ids": []
+              },
+              {
+                "key": "AHYDPL_dao",
+                "ids": []
+              }
+            ],
+            "isShow": true,
+            "state": true,
+            "isColorShow": false
+          }
+        ],
+        "isShow": true,
+        "state": true,
+        "showChild": true,
+        "isColorShow": false,
+        "isFather": true,
+        "isTwo": true
+      },
+      {
+        "label": "湖泊",
+        "children": [
+          {
+            "label": "湖泊",
+            "children": [
+              {
+                "key": "AHYDA湖泊",
+                "ids": []
+              },
+              {
+                "key": "HYDA湖泊",
+                "ids": []
+              }
+            ],
+            "isShow": true,
+            "state": true,
+            "isColorShow": false
+          }
+        ],
+        "showChild": true,
+        "isShow": true,
+        "state": true,
+        "isColorShow": false,
+        "isFather": true,
+        "isTwo": true
+      },
+      {
+        "label": "水库",
+        "children": [
+          {
+            "label": "水库",
+            "children": [
+              {
+                "key": "AHYDA水库",
+                "ids": []
+              },
+              {
+                "key": "HYDA水库",
+                "ids": []
+              }
+            ],
+            "isShow": true,
+            "state": true,
+            "isColorShow": false
+          }
+        ],
+        "isShow": true,
+        "state": true,
+        "showChild": true,
+        "isColorShow": false,
+        "isFather": true,
+        "isTwo": true
+      },
+      {
+        "label": "池塘",
+        "children": [
+          {
+            "label": "池塘",
+            "children": [
+              {
+                "key": "AHYDA池塘",
+                "ids": []
+              },
+              {
+                "key": "HYDA池塘",
+                "ids": []
+              }
+            ],
+            "isShow": true,
+            "state": true,
+            "isColorShow": false
+          }
+        ],
+        "showChild": true,
+        "isShow": true,
+        "state": true,
+        "isColorShow": false,
+        "isFather": true,
+        "isTwo": true
+      }
+    ],
+    "showChild": true,
+    "isShow": true,
+    "state": true,
+    "isColorShow": false,
+    "isFather": true
+  },
+  {
+    "label": "居民地",
+    "children": [
+      {
+        "label": "居民地面",
+        "children": [
+          {
+            "label": "居民地面",
+            "children": [
+              {
+                "key": "ARESPL",
+                "ids": []
+              },
+              {
+                "key": "BUIA15级",
+                "ids": []
+              },
+              {
+                "key": "BUIA",
+                "ids": []
+              }
+            ],
+            "isShow": true,
+            "state": true,
+            "isColorShow": false
+          }
+        ],
+        "isTwo": true,
+        "showChild": true,
+        "isShow": true,
+        "state": true,
+        "isColorShow": false,
+        "isFather": true
+      },
+      {
+        "label": "功能面",
+        "children": [
+          {
+            "label": "功能面",
+            "children": [
+              {
+                "key": "BLOA",
+                "ids": []
+              }
+            ],
+            "isShow": true,
+            "state": true,
+            "isColorShow": false
+          }
+        ],
+        "isTwo": true,
+        "showChild": true,
+        "isShow": true,
+        "state": true,
+        "isColorShow": false,
+        "isFather": true
+      }
+    ],
+    "showChild": true,
+    "isShow": true,
+    "state": true,
+    "isColorShow": false,
+    "isFather": true
+  },
+  {
+    "label": "绿地",
+    "children": [
+      {
+        "label": "绿地",
+        "children": [
+          {
+            "label": "绿地",
+            "children": [
+              {
+                "key": "VEGA",
+                "ids": []
+              }
+            ],
+            "isShow": true,
+            "state": true,
+            "isColorShow": false
+          }
+        ],
+        "isTwo": true,
+        "isShow": true,
+        "state": true,
+        "showChild": true,
+        "isColorShow": false,
+        "isFather": true
+      }
+    ],
+    "showChild": true,
+    "isShow": true,
+    "state": true,
+    "isColorShow": false,
+    "isFather": true
+  },
+  {
+    "label": "交通",
+    "children": [
+      {
+        "label": "公路",
+        "children": [
+          {
+            "label": "高速",
+            "children": [
+              {
+                "key": "ALRDL_C高速名称",
+                "ids": []
+              },
+              {
+                "key": "ALRDL_C高速4-8级",
+                "ids": []
+              },
+              {
+                "key": "ALRDL_C高速9-10级",
+                "ids": []
+              },
+              {
+                "key": "LRDL高速公路",
+                "ids": []
+              },
+              {
+                "key": "LRDL高速名称",
+                "ids": []
+              }
+            ],
+            "isShow": true,
+            "state": true,
+            "isColorShow": false
+          },
+          {
+            "label": "国道",
+            "children": [
+              {
+                "key": "ALRDL_C国道名称",
+                "ids": []
+              },
+              {
+                "key": "ALRDL_C国道4-8级",
+                "ids": []
+              },
+              {
+                "key": "ALRDL_C国道9-10级",
+                "ids": []
+              },
+              {
+                "key": "LRDL国道快速路",
+                "ids": []
+              }
+            ],
+            "isShow": true,
+            "state": true,
+            "isColorShow": false
+          },
+          {
+            "label": "省道",
+            "children": [
+              {
+                "key": "ALRDL_C省道名称",
+                "ids": []
+              },
+              {
+                "key": "ALRDL_C省道6-8级",
+                "ids": []
+              },
+              {
+                "key": "ALRDL_C省道9-10级",
+                "ids": []
+              },
+              {
+                "key": "LRDL省道",
+                "ids": []
+              }
+            ],
+            "isShow": true,
+            "state": true,
+            "isColorShow": false
+          },
+          {
+            "label": "其它公路",
+            "children": [
+              {
+                "key": "ALRDL_C",
+                "ids": []
+              },
+              {
+                "key": "AROALN_W",
+                "ids": []
+              },
+              {
+                "key": "LRDL县道",
+                "ids": []
+              },
+              {
+                "key": "LRDL_县乡道420400",
+                "ids": []
+              },
+              {
+                "key": "LRDL_县乡道420500",
+                "ids": []
+              },
+              {
+                "key": "LRDL_县乡道420402",
+                "ids": []
+              },
+              {
+                "key": "LRDL_乡镇村道12级",
+                "ids": []
+              },
+              {
+                "key": "LRDL其它道路",
+                "ids": []
+              }
+            ],
+            "isShow": true,
+            "state": true,
+            "isColorShow": false
+          }
+        ],
+        "isShow": true,
+        "state": true,
+        "showChild": true,
+        "isColorShow": false,
+        "isFather": true
+      },
+      {
+        "label": "铁路",
+        "children": [
+          {
+            "label": "铁路",
+            "children": [
+              {
+                "key": "ALRRL",
+                "ids": []
+              },
+              {
+                "key": "LRRL",
+                "ids": []
+              }
+            ],
+            "isShow": true,
+            "state": true,
+            "isColorShow": false
+          }
+        ],
+        "isTwo": true,
+        "isShow": true,
+        "state": true,
+        "showChild": true,
+        "isColorShow": false,
+        "isFather": true
+      },
+      {
+        "label": "地铁",
+        "children": [
+          {
+            "label": "地铁",
+            "children": [
+              {
+                "key": "SUBL乌鲁木齐",
+                "ids": []
+              },
+              {
+                "key": "SUBL贵阳",
+                "ids": []
+              },
+              {
+                "key": "SUBL东莞",
+                "ids": []
+              },
+              {
+                "key": "SUBL石家庄",
+                "ids": []
+              },
+              {
+                "key": "SUBL厦门",
+                "ids": []
+              },
+              {
+                "key": "SUBL福州",
+                "ids": []
+              },
+              {
+                "key": "SUBL南昌",
+                "ids": []
+              },
+              {
+                "key": "SUBL南宁",
+                "ids": []
+              },
+              {
+                "key": "SUBL青岛",
+                "ids": []
+              },
+              {
+                "key": "SUBL合肥",
+                "ids": []
+              },
+              {
+                "key": "SUBL台北高雄",
+                "ids": []
+              },
+              {
+                "key": "SUBL无锡",
+                "ids": []
+              },
+              {
+                "key": "SUBL宁波",
+                "ids": []
+              },
+              {
+                "key": "SUBL长沙",
+                "ids": []
+              },
+              {
+                "key": "SUBL郑州",
+                "ids": []
+              },
+              {
+                "key": "SUBL哈尔滨",
+                "ids": []
+              },
+              {
+                "key": "SUBL昆明",
+                "ids": []
+              },
+              {
+                "key": "SUBL香港",
+                "ids": []
+              },
+              {
+                "key": "SUBL深圳",
+                "ids": []
+              },
+              {
+                "key": "SUBL杭州",
+                "ids": []
+              },
+              {
+                "key": "SUBL苏州",
+                "ids": []
+              },
+              {
+                "key": "SUBL长春",
+                "ids": []
+              },
+              {
+                "key": "SUBL大连",
+                "ids": []
+              },
+              {
+                "key": "SUBL西安",
+                "ids": []
+              },
+              {
+                "key": "SUBL成都",
+                "ids": []
+              },
+              {
+                "key": "SUBL武汉",
+                "ids": []
+              },
+              {
+                "key": "SUBL南京",
+                "ids": []
+              },
+              {
+                "key": "SUBL沈阳",
+                "ids": []
+              },
+              {
+                "key": "SUBL重庆",
+                "ids": []
+              },
+              {
+                "key": "SUBL天津",
+                "ids": []
+              },
+              {
+                "key": "SUBL上海",
+                "ids": []
+              },
+              {
+                "key": "SUBL广州",
+                "ids": []
+              },
+              {
+                "key": "SUBL北京",
+                "ids": []
+              },
+              {
+                "key": "SUBA",
+                "ids": []
+              }
+            ],
+            "isShow": true,
+            "state": true,
+            "isColorShow": false
+          }
+        ],
+        "isTwo": true,
+        "isShow": true,
+        "state": true,
+        "showChild": true,
+        "isColorShow": false,
+        "isFather": true
+      }
+    ],
+    "showChild": true,
+    "isShow": true,
+    "state": true,
+    "isColorShow": false,
+    "isFather": true
+  },
+  {
+    "label": "兴趣点",
+    "children": [
+      {
+        "label": "公共设施",
+        "children": [
+          {
+            "label": "政府及管理机构",
+            "children": [
+              {
+                "key": "19国家级政府机关",
+                "ids": []
+              },
+              {
+                "key": "19国家级政府机关14ji",
+                "ids": []
+              },
+              {
+                "key": "19政府机关简称",
+                "ids": []
+              },
+              {
+                "key": "19政府机关简称14ji",
+                "ids": []
+              },
+              {
+                "key": "19政府机关",
+                "ids": []
+              },
+              {
+                "key": "19政府机关14ji",
+                "ids": []
+              },
+              {
+                "key": "19政府机关-市政府",
+                "ids": []
+              },
+              {
+                "key": "19政府机关黑点",
+                "ids": []
+              },
+              {
+                "key": "19政府管理机构",
+                "ids": []
+              }
+            ],
+            "isShow": true,
+            "state": true,
+            "isColorShow": false
+          },
+          {
+            "label": "公检法机构",
+            "children": [
+              {
+                "key": "19公检法机构",
+                "ids": []
+              }
+            ],
+            "isShow": true,
+            "state": true,
+            "isColorShow": false
+          },
+          {
+            "label": "社会团体",
+            "children": [
+              {
+                "key": "19社会组织",
+                "ids": []
+              }
+            ],
+            "isShow": true,
+            "state": true,
+            "isColorShow": false
+          },
+          {
+            "label": "宗教场所",
+            "children": [
+              {
+                "key": "19宗教场所",
+                "ids": []
+              }
+            ],
+            "isShow": true,
+            "state": true,
+            "isColorShow": false
+          },
+          {
+            "label": "国际办事处",
+            "children": [
+              {
+                "key": "19国际办事处",
+                "ids": []
+              }
+            ],
+            "isShow": true,
+            "state": true,
+            "isColorShow": false
+          }
+        ],
+        "showChild": true,
+        "isShow": true,
+        "state": true,
+        "isColorShow": false,
+        "isFather": true
+      },
+      {
+        "label": "公司企业",
+        "children": [
+          {
+            "label": "公司",
+            "children": [
+              {
+                "key": "22公司",
+                "ids": []
+              }
+            ],
+            "isShow": true,
+            "state": true,
+            "isColorShow": false
+          },
+          {
+            "label": "工矿企业",
+            "children": [
+              {
+                "key": "22厂矿企业",
+                "ids": []
+              }
+            ],
+            "isShow": true,
+            "state": true,
+            "isColorShow": false
+          },
+          {
+            "label": "工业园",
+            "children": [
+              {
+                "key": "22工业园",
+                "ids": []
+              }
+            ],
+            "isShow": true,
+            "state": true,
+            "isColorShow": false
+          },
+          {
+            "label": "其他单位",
+            "children": [
+              {
+                "key": "22其他单位",
+                "ids": []
+              }
+            ],
+            "isShow": true,
+            "state": true,
+            "isColorShow": false
+          }
+        ],
+        "showChild": true,
+        "isShow": true,
+        "state": true,
+        "isColorShow": false,
+        "isFather": true
+      },
+      {
+        "label": "医疗卫生",
+        "children": [
+          {
+            "label": "综合医院",
+            "children": [
+              {
+                "key": "BLOA_P医院",
+                "ids": []
+              },
+              {
+                "key": "BLOA_P医院14级",
+                "ids": []
+              },
+              {
+                "key": "17综合医院",
+                "ids": []
+              }
+            ],
+            "isShow": true,
+            "state": true,
+            "isColorShow": false
+          },
+          {
+            "label": "专科医院",
+            "children": [
+              {
+                "key": "17专科医院",
+                "ids": []
+              }
+            ],
+            "isShow": true,
+            "state": true,
+            "isColorShow": false
+          },
+          {
+            "label": "急诊",
+            "children": [
+              {
+                "key": "17急诊",
+                "ids": []
+              }
+            ],
+            "isShow": true,
+            "state": true,
+            "isColorShow": false
+          },
+          {
+            "label": "防疫站",
+            "children": [
+              {
+                "key": "17防疫站",
+                "ids": []
+              }
+            ],
+            "isShow": true,
+            "state": true,
+            "isColorShow": false
+          },
+          {
+            "label": "献血站",
+            "children": [
+              {
+                "key": "17献血站",
+                "ids": []
+              }
+            ],
+            "isShow": true,
+            "state": true,
+            "isColorShow": false
+          },
+          {
+            "label": "其他医疗机构",
+            "children": [
+              {
+                "key": "17其他医疗机构",
+                "ids": []
+              }
+            ],
+            "isShow": true,
+            "state": true,
+            "isColorShow": false
+          }
+        ],
+        "showChild": true,
+        "isShow": true,
+        "state": true,
+        "isColorShow": false,
+        "isFather": true
+      },
+      {
+        "label": "交通设施",
+        "children": [
+          {
+            "label": "汽车站",
+            "children": [
+              {
+                "key": "23汽车站",
+                "ids": []
+              }
+            ],
+            "isShow": true,
+            "state": true,
+            "isColorShow": false
+          },
+          {
+            "label": "火车站",
+            "children": [
+              {
+                "key": "23火车站",
+                "ids": []
+              }
+            ],
+            "isShow": true,
+            "state": true,
+            "isColorShow": false
+          },
+          {
+            "label": "地铁站",
+            "children": [
+              {
+                "key": "SUBP地铁换乘站",
+                "ids": []
+              },
+              {
+                "key": "SUBP地铁站",
+                "ids": []
+              },
+              {
+                "key": "SUBP站点出入口",
+                "ids": []
+              },
+              {
+                "key": "SUBP站点出入口lv",
+                "ids": []
+              },
+              {
+                "key": "SUBP站点出入口hong",
+                "ids": []
+              }
+            ],
+            "isShow": true,
+            "state": true,
+            "isColorShow": false
+          },
+          {
+            "label": "机场",
+            "children": [
+              {
+                "key": "23飞机场",
+                "ids": []
+              }
+            ],
+            "isShow": true,
+            "state": true,
+            "isColorShow": false
+          },
+          {
+            "label": "港口码头",
+            "children": [
+              {
+                "key": "23港口码头",
+                "ids": []
+              }
+            ],
+            "isShow": true,
+            "state": true,
+            "isColorShow": false
+          },
+          {
+            "label": "物流快运",
+            "children": [
+              {
+                "key": "23物流快运",
+                "ids": []
+              }
+            ],
+            "isShow": true,
+            "state": true,
+            "isColorShow": false
+          },
+          {
+            "label": "服务区",
+            "children": [
+              {
+                "key": "23服务区",
+                "ids": []
+              }
+            ],
+            "isShow": true,
+            "state": true,
+            "isColorShow": false
+          },
+          {
+            "label": "停车场",
+            "children": [
+              {
+                "key": "23停车场",
+                "ids": []
+              }
+            ],
+            "isShow": true,
+            "state": true,
+            "isColorShow": false
+          },
+          {
+            "label": "能源站",
+            "children": [
+              {
+                "key": "23能源站",
+                "ids": []
+              }
+            ],
+            "isShow": true,
+            "state": true,
+            "isColorShow": false
+          },
+          {
+            "label": "收费站",
+            "children": [
+              {
+                "key": "23收费站",
+                "ids": []
+              }
+            ],
+            "isShow": true,
+            "state": true,
+            "isColorShow": false
+          },
+          {
+            "label": "其他交通设施",
+            "children": [
+              {
+                "key": "23其他交通设施",
+                "ids": []
+              }
+            ],
+            "isShow": true,
+            "state": true,
+            "isColorShow": false
+          }
+        ],
+        "showChild": true,
+        "isShow": true,
+        "state": true,
+        "isColorShow": false,
+        "isFather": true
+      },
+      {
+        "label": "教育文化",
+        "children": [
+          {
+            "label": "学校",
+            "children": [
+              {
+                "key": "BLOA_P学校",
+                "ids": []
+              },
+              {
+                "key": "BLOA_P学校14级",
+                "ids": []
+              },
+              {
+                "key": "16学校",
+                "ids": []
+              }
+            ],
+            "isShow": true,
+            "state": true,
+            "isColorShow": false
+          },
+          {
+            "label": "媒体",
+            "children": [
+              {
+                "key": "16媒体",
+                "ids": []
+              }
+            ],
+            "isShow": true,
+            "state": true,
+            "isColorShow": false
+          },
+          {
+            "label": "文化场馆",
+            "children": [
+              {
+                "key": "BLOA_P文化场馆",
+                "ids": []
+              },
+              {
+                "key": "BLOA_P文化场馆14级",
+                "ids": []
+              },
+              {
+                "key": "16文化场馆",
+                "ids": []
+              }
+            ],
+            "isShow": true,
+            "state": true,
+            "isColorShow": false
+          }
+        ],
+        "showChild": true,
+        "isShow": true,
+        "state": true,
+        "isColorShow": false,
+        "isFather": true
+      },
+      {
+        "label": "科研机构",
+        "children": [
+          {
+            "label": "科研机构",
+            "children": [
+              {
+                "key": "24科研机构",
+                "ids": []
+              }
+            ],
+            "isShow": true,
+            "state": true,
+            "isColorShow": false
+          }
+        ],
+        "isTwo": true,
+        "showChild": true,
+        "isShow": true,
+        "state": true,
+        "isColorShow": false,
+        "isFather": true
+      },
+      {
+        "label": "农林牧渔业",
+        "children": [
+          {
+            "label": "农林牧渔业",
+            "children": [
+              {
+                "key": "25农林牧渔业",
+                "ids": []
+              }
+            ],
+            "isShow": true,
+            "state": true,
+            "isColorShow": false
+          }
+        ],
+        "isTwo": true,
+        "showChild": true,
+        "isShow": true,
+        "state": true,
+        "isColorShow": false,
+        "isFather": true
+      },
+      {
+        "label": "商业服务",
+        "children": [
+          {
+            "label": "商业大厦",
+            "children": [
+              {
+                "key": "20商业大厦",
+                "ids": []
+              }
+            ],
+            "isShow": true,
+            "state": true,
+            "isColorShow": false
+          },
+          {
+            "label": "商务中心",
+            "children": [
+              {
+                "key": "20商务中心",
+                "ids": []
+              }
+            ],
+            "isShow": true,
+            "state": true,
+            "isColorShow": false
+          },
+          {
+            "label": "商务服务",
+            "children": [
+              {
+                "key": "20商务服务",
+                "ids": []
+              }
+            ],
+            "isShow": true,
+            "state": true,
+            "isColorShow": false
+          }
+        ],
+        "showChild": true,
+        "isShow": true,
+        "state": true,
+        "isColorShow": false,
+        "isFather": true
+      },
+      {
+        "label": "居民服务",
+        "children": [
+          {
+            "label": "居民服务",
+            "children": [
+              {
+                "key": "21居民服务",
+                "ids": []
+              }
+            ],
+            "isShow": true,
+            "state": true,
+            "isColorShow": false
+          }
+        ],
+        "isTwo": true,
+        "showChild": true,
+        "isShow": true,
+        "state": true,
+        "isColorShow": false,
+        "isFather": true
+      },
+      {
+        "label": "购物",
+        "children": [
+          {
+            "label": "超市",
+            "children": [
+              {
+                "key": "13超市",
+                "ids": []
+              }
+            ],
+            "isShow": true,
+            "state": true,
+            "isColorShow": false
+          },
+          {
+            "label": "百货商场",
+            "children": [
+              {
+                "key": "13百货商场",
+                "ids": []
+              }
+            ],
+            "isShow": true,
+            "state": true,
+            "isColorShow": false
+          },
+          {
+            "label": "农贸市场",
+            "children": [
+              {
+                "key": "13农贸市场",
+                "ids": []
+              }
+            ],
+            "isShow": true,
+            "state": true,
+            "isColorShow": false
+          },
+          {
+            "label": "医药商店",
+            "children": [
+              {
+                "key": "13医药商店",
+                "ids": []
+              }
+            ],
+            "isShow": true,
+            "state": true,
+            "isColorShow": false
+          },
+          {
+            "label": "电器商场",
+            "children": [
+              {
+                "key": "13电器商场",
+                "ids": []
+              }
+            ],
+            "isShow": true,
+            "state": true,
+            "isColorShow": false
+          },
+          {
+            "label": "家居建材市场",
+            "children": [
+              {
+                "key": "13家居建材市场",
+                "ids": []
+              }
+            ],
+            "isShow": true,
+            "state": true,
+            "isColorShow": false
+          },
+          {
+            "label": "其他购物场所",
+            "children": [
+              {
+                "key": "13其他购物场所",
+                "ids": []
+              }
+            ],
+            "isShow": true,
+            "state": true,
+            "isColorShow": false
+          }
+        ],
+        "showChild": true,
+        "isShow": true,
+        "state": true,
+        "isColorShow": false,
+        "isFather": true
+      },
+      {
+        "label": "运动休闲",
+        "children": [
+          {
+            "label": "运动场馆",
+            "children": [
+              {
+                "key": "18运动场馆",
+                "ids": []
+              }
+            ],
+            "isShow": true,
+            "state": true,
+            "isColorShow": false
+          },
+          {
+            "label": "娱乐场所",
+            "children": [
+              {
+                "key": "18娱乐场所",
+                "ids": []
+              }
+            ],
+            "isShow": true,
+            "state": true,
+            "isColorShow": false
+          },
+          {
+            "label": "休闲度假",
+            "children": [
+              {
+                "key": "18公园",
+                "ids": []
+              },
+              {
+                "key": "18公园14ji",
+                "ids": []
+              },
+              {
+                "key": "18休闲度假",
+                "ids": []
+              }
+            ],
+            "isShow": true,
+            "state": true,
+            "isColorShow": false
+          },
+          {
+            "label": "旅游景点",
+            "children": [
+              {
+                "key": "18旅游景点",
+                "ids": []
+              }
+            ],
+            "isShow": true,
+            "state": true,
+            "isColorShow": false
+          }
+        ],
+        "showChild": true,
+        "isShow": true,
+        "state": true,
+        "isColorShow": false,
+        "isFather": true
+      },
+      {
+        "label": "汽车销售及服务",
+        "children": [
+          {
+            "label": "汽车销售及服务",
+            "children": [
+              {
+                "key": "14汽车销售及服务",
+                "ids": []
+              }
+            ],
+            "isShow": true,
+            "state": true,
+            "isColorShow": false
+          }
+        ],
+        "showChild": true,
+        "isShow": true,
+        "state": true,
+        "isColorShow": false,
+        "isFather": true
+      },
+      {
+        "label": "金融保险",
+        "children": [
+          {
+            "label": "金融保险",
+            "children": [
+              {
+                "key": "15金融保险",
+                "ids": []
+              }
+            ],
+            "isShow": true,
+            "state": true,
+            "isColorShow": false
+          }
+        ],
+        "showChild": true,
+        "isShow": true,
+        "state": true,
+        "isColorShow": false,
+        "isFather": true
+      },
+      {
+        "label": "餐饮美食",
+        "children": [
+          {
+            "label": "餐饮美食",
+            "children": [
+              {
+                "key": "11餐饮美食_麦当劳",
+                "ids": []
+              },
+              {
+                "key": "11餐饮美食_KFC",
+                "ids": []
+              },
+              {
+                "key": "11餐饮美食",
+                "ids": []
+              }
+            ],
+            "isShow": true,
+            "state": true,
+            "isColorShow": false
+          }
+        ],
+        "showChild": true,
+        "isShow": true,
+        "state": true,
+        "isColorShow": false,
+        "isFather": true
+      },
+      {
+        "label": "住宿",
+        "children": [
+          {
+            "label": "宾馆酒店",
+            "children": [
+              {
+                "key": "12宾馆酒店",
+                "ids": []
+              },
+              {
+                "key": "12旅馆",
+                "ids": []
+              }
+            ],
+            "isShow": true,
+            "state": true,
+            "isColorShow": false
+          },
+          {
+            "label": "居民住宅",
+            "children": [
+              {
+                "key": "12居民住宅",
+                "ids": []
+              }
+            ],
+            "isShow": true,
+            "state": true,
+            "isColorShow": false
+          }
+        ],
+        "showChild": true,
+        "isShow": true,
+        "state": true,
+        "isColorShow": false,
+        "isFather": true
+      },
+      {
+        "label": "地名地址",
+        "children": [
+          {
+            "label": "地名地址",
+            "children": [
+              {
+                "key": "26地名地址",
+                "ids": []
+              }
+            ],
+            "isShow": true,
+            "state": true,
+            "isColorShow": false
+          }
+        ],
+        "isTwo": true,
+        "showChild": true,
+        "isShow": true,
+        "state": true,
+        "isColorShow": false,
+        "isFather": true
+      },
+      {
+        "label": "其他兴趣点",
+        "children": [
+          {
+            "label": "其他兴趣点",
+            "children": [
+              {
+                "key": "tiananmen",
+                "ids": []
+              },
+              {
+                "key": "23立交桥",
+                "ids": []
+              },
+              {
+                "key": "16其他教育文化",
+                "ids": []
+              },
+              {
+                "key": "LFCP",
+                "ids": []
+              }
+            ],
+            "isShow": true,
+            "state": true,
+            "isColorShow": false
+          }
+        ],
+        "isTwo": true,
+        "showChild": true,
+        "isShow": true,
+        "state": true,
+        "isColorShow": false,
+        "isFather": true
+      }
+    ],
+    "showChild": true,
+    "isShow": true,
+    "state": true,
+    "isColorShow": false,
+    "isFather": true
+  }
+]

@@ -1,0 +1,91 @@
+<!--房屋损毁-->
+<template>
+    <div class='ca-echart-loop-wrap'>
+        <personal-intensive :id='id' :option='personalOption'></personal-intensive>
+    </div>
+</template>
+<script lang='ts'>
+    import { Component, Prop, Vue } from 'vue-property-decorator';
+    import PersonalIntensive from '@/components/feature/personalIntensive/PersonalIntensive.vue';
+    @Component({
+        name: 'PersonalDemo',
+        components: {
+            PersonalIntensive,
+        },
+    })
+    export default class PersonalIntensiveDemo extends Vue {
+
+        public id = 'personalIntensive-echart';
+        public originData = [{ name: '学校', value: 1072 },
+        { name: '居民区', value: 618 },
+        { name: '商场', value: 600 },
+        { name: '医院', value: 12 }];
+        public personalOption = {
+            color: ['#0187d9', '#15b873', '#cd910d', '#06c2d8'],
+            dataset: {
+                source: [{ name: '医院', value: 12 }],
+            },
+            series: [
+                {
+                    type: 'pie',
+                    radius: ['47%', '57%'],
+                    label: {
+                        padding: [5, -55],
+                        formatter(params: any) {
+                            const name = params.data.name;
+                            const value = params.data.value;
+                            return '{aa|' + value + '家' + name + '}';
+                        },
+                        rich: {
+                            aa: {
+                                fontSize: 22,
+                                padding: [7, 10],
+                            },
+                        },
+                    },
+                    labelLine: {
+                        length: 25,
+                        length2: 20,
+                    },
+                },
+                {
+                    z: 0,
+                    type: 'pie',
+                    center: ['50%', '50%'],
+                    radius: ['37%', '57%'],
+                    data: [1],
+                    itemStyle: {
+                        color: '#071c44',
+                    },
+                    hoverAnimation: false,
+                    label: {
+                        formatter: 0 + '',
+                        position: 'center',
+                        color: '#00d2ff',
+                        fontSize: 30,
+                        padding: 10,
+                        borderRadius: 100,
+                        backgroundColor: '#1c2a3e',
+                    },
+                }],
+        };
+        public sum1 = this.originData.reduce((pre: any, cur: any) => {
+            return pre + cur.value;
+        }, 0);
+
+
+        public created() {
+            this.personalOption.dataset.source = this.originData;
+            this.personalOption.series[1].label.formatter = this.sum1 + '';
+        }
+    }
+</script>
+<style lang='less'  scoped>
+    // @import url(); 引入公共css类
+    .ca-echart-loop-wrap {
+        padding: 10px;
+        height: 430px;
+        margin-left: -20px;
+        margin-top: -35px;
+    }
+</style>

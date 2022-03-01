@@ -1,0 +1,369 @@
+{
+  "data": [
+    {
+      "title": "港口码头",
+      "tabTitle": "港口码头",
+      "codeKey": "portwharf",
+      "//specialType": "// 标明codeKey为数组，这样就避免在写额外的代码判断了。 codeStr: 代表codeKey 为]字符串",
+      "specialType": "codeStr", 
+      "tabNumber": 0,
+      "unit": "个",
+      "icon": "Database-icon-portwharf",
+      "numChecked":false,
+      "checked": false
+    },
+    {
+      "title": "机场",
+      "tabTitle": "机场",
+      "specialType": "codeStr",
+      "codeKey": "airport",
+      "tabNumber": 0,
+      "unit": "个",
+      "icon": "Database-icon-airport",
+      "numChecked":false,
+      "checked": false
+    },
+    {
+      "title": "火车站",
+      "tabTitle": "火车站",
+      "specialType": "codeStr",
+      "codeKey": "railwaystation",
+      "tabNumber": 0,
+      "unit": "个",
+      "icon": "Database-icon-station",
+      "numChecked":false,
+      "checked": false
+    },
+    {
+      "title": "汽车站",
+      "tabTitle": "汽车站",
+      "specialType": "codeStr",
+      "codeKey": "coachstation",
+      "tabNumber": 0,
+      "unit": "个",
+      "icon": "Database-icon-qichezhan",
+      "numChecked":false,
+      "checked": false
+    },
+    {
+      "title": "学校",
+      "specialType": "codeStr",
+      "tabTitle": "学校",
+      "codeKey": "bas_school",
+      "tabNumber": 0,
+      "unit": "个",
+      "icon": "ResourceTrouble-icon-school",
+      "numChecked":false,
+      "checked": false
+    },
+    {
+      "title": "地震监测台站",
+      "specialType": "codeStr",
+      "tabTitle": "地震监测台站",
+      "codeKey": "monitorstation",
+      "tabNumber": 0,
+      "unit": "处",
+      "icon": "dizhenjiancetai",
+      "numChecked":false,
+      "checked": false
+    },
+    {
+      "title": "医院",
+      "specialType": "codeStr",
+      "codeKey": "hospital",
+      "tabNumber": 0,
+      "unit": "家",
+      "checked": false,
+      "numChecked":false,
+      "tabTitle": "医院",
+      "icon": "Database-icon-hospital"
+    },
+    {
+      "title": "文物保护单位",
+      "specialType": "codeStr",
+      "codeKey": "culturalrelicunit",
+      "tabNumber": 0,
+      "unit": "个",
+      "checked": false,
+      "numChecked":false,
+      "tabTitle": "文物保护单位",
+      "icon": "Database-icon-wenwubaohu"
+    },
+    {
+      "title": "政府机构",
+      "tabTitle": "政府机构",
+      "specialType": "codeArr",
+      "codeKey": ["government","archives"],
+      "tabNumber": 0,
+      "unit": "个",
+      "icon": "Database-icon-danzhenjiguan",
+      "checked": false,
+      "numChecked":false,
+      "fatherId": 1,
+      "list": [
+        {
+          "title": "党政机关",
+          "specialType": "codeStr",
+          "tabTitle": "党政机关",
+          "codeKey": "government",
+          "tabNumber": 0,
+          "unit": "个",
+          "icon": "Database-icon-zhengfujiguan",
+          "numChecked":false,
+          "checked": false
+        },
+        {
+          "title": "档案馆",
+          "specialType": "codeStr",
+          "tabTitle": "档案馆",
+          "codeKey": "archives",
+          "tabNumber": 0,
+          "unit": "个",
+          "icon": "Database-icon-danganguan",
+          "numChecked":false,
+          "checked": false
+        }
+      ]
+    },
+    {
+      "title": "新闻广播机构",
+      "tabTitle": "新闻广播机构",
+      "specialType": "codeArr",
+      "codeKey": ["tvcast","newscast"],
+      "tabNumber": 0,
+      "unit": "个",
+      "icon": "Database-icon-xingwenguanbo",
+      "numChecked":false,
+      "checked": false,
+      "fatherId": 1,
+      "list": [
+        {
+          "codeKey": "tvcast",
+          "specialType": "codeStr",
+          "tabNumber": 0,
+          "title": "电视台",
+          "unit": "个",
+          "numChecked":false,
+          "checked": false,
+          "tabTitle": "电视台",
+          "icon": "Database-icon-dianshitai"
+        },
+        {
+          "codeKey": "newscast",
+          "specialType": "codeStr",
+          "tabNumber": 0,
+          "title": "广播电台",
+          "unit": "个",
+          "checked": false,
+          "numChecked":false,
+          "tabTitle": "广播电台",
+          "icon": "Database-icon-guanbodiantai"
+        }
+      ]
+    },
+    {
+      "title": "科研机构",
+      "tabTitle": "科研机构",
+      "specialType": "codeStr",
+      "codeKey": "researchinstitution",
+      "tabNumber": 0,
+      "unit": "个",
+      "icon": "Database-icon-keyanjigou",
+      "numChecked":false,
+      "checked": false
+    },
+    {
+      "title": "金融机构",
+      "tabTitle": "金融机构",
+      "specialType": "codeStr",
+      "codeKey": "financialins",
+      "tabNumber": 0,
+      "unit": "个",
+      "icon": "Database-icon-yinhangjinrong",
+      "numChecked":false,
+      "checked": false
+    },
+    {
+      "title": "公众聚集场所",
+      "tabTitle": "公众聚集场所",
+      "specialType": "codeArr",
+      "codeKey": ["hotel","market","bazaar","Gymnasium","tourist","culturalvenues"],
+      "tabNumber": 0,
+      "unit": "个",
+      "icon": "Database-icon-gongzhongjuji",
+      "numChecked":false,
+      "checked": false,
+      "fatherId": 1,
+      "list": [
+        {
+          "codeKey": "hotel",
+          "tabNumber": 0,
+          "specialType": "codeStr",
+          "title": "宾馆饭店",
+          "unit": "个",
+          "checked": false,
+          "numChecked":false,
+          "tabTitle": "宾馆饭店",
+          "icon": "Database-icon-binguanfandian"
+        },
+        {
+          "codeKey": "market",
+          "tabNumber": 0,
+          "specialType": "codeStr",
+          "title": "大型商贸",
+          "unit": "个",
+          "checked": false,
+          "numChecked":false,
+          "tabTitle": "大型商贸",
+          "icon": "Database-icon-daxingshangmao"
+        },
+        {
+          "codeKey": "bazaar",
+          "tabNumber": 0,
+          "specialType": "codeStr",
+          "title": "集贸市场",
+          "unit": "个",
+          "checked": false,
+          "numChecked":false,
+          "tabTitle": "集贸市场",
+          "icon": "Database-icon-jimaoshichang"
+        },
+        {
+          "codeKey": "Gymnasium",
+          "tabNumber": 0,
+          "specialType": "codeStr",
+          "title": "大型文化体育场所",
+          "unit": "个",
+          "checked": false,
+          "numChecked":false,
+          "tabTitle": "大型文化体育场所",
+          "icon": "Database-icon-daxinwenhua"
+        },
+        {
+          "codeKey": "tourist",
+          "tabNumber": 0,
+          "specialType": "codeStr",
+          "title": "旅游景区",
+          "unit": "个",
+          "checked": false,
+          "numChecked":false,
+          "tabTitle": "旅游景区",
+          "icon": "Database-icon-lvyoujingqu"
+        },
+        {
+          "codeKey": "culturalvenues",
+          "tabNumber": 0,
+          "specialType": "codeStr",
+          "title": "文化场馆",
+          "unit": "个",
+          "checked": false,
+          "numChecked":false,
+          "tabTitle": "文化场馆",
+          "icon": "Database-icon-wenhuachangguan"
+        }
+      ]
+    },
+    {
+      "title": "生命线设施",
+      "tabTitle": "生命线设施",
+      "specialType": "codeArr",
+      "codeKey": ["powerfacilities","supwatfacil","gasfacil","powerfacil"],
+      "tabNumber": 0,
+      "unit": "个",
+      "icon": "Database-icon-smxsheshi",
+      "checked": false,
+      "numChecked":false,
+      "fatherId": 1,
+      "list": [
+        {
+          "codeKey": "powerfacilities",
+          "tabNumber": 0,
+          "specialType": "codeStr",
+          "title": "供电设施",
+          "unit": "个",
+          "checked": false,
+          "numChecked":false,
+          "tabTitle": "供电设施",
+          "icon": "Database-icon-gongdianshebei"
+        },
+        {
+          "codeKey": "supwatfacil",
+          "tabNumber": 0,
+          "specialType": "codeStr",
+          "title": "供水设施",
+          "unit": "个",
+          "checked": false,
+          "numChecked":false,
+          "tabTitle": "供水设施",
+          "icon": "Database-icon-gongshuishebei"
+        },
+        {
+          "codeKey": "gasfacil",
+          "tabNumber": 0,
+          "specialType": "codeStr",
+          "title": "燃气供应设施",
+          "unit": "个",
+          "checked": false,
+          "numChecked":false,
+          "tabTitle": "燃气供应设施",
+          "icon": "Database-icon-ranqishebei"
+        },
+        {
+          "codeKey": "powerfacil",
+          "tabNumber": 0,
+          "specialType": "codeStr",
+          "title": "大型能源动力设施",
+          "unit": "个",
+          "checked": false,
+          "numChecked":false,
+          "tabTitle": "大型能源动力设施",
+          "icon": "Database-icon-daxingnengyuan"
+        }
+      ]
+    },
+    {
+      "title": "水闸工程",
+      "tabTitle": "水闸工程",
+      "specialType": "codeStr",
+      "codeKey": "sluice",
+      "tabNumber": 0,
+      "unit": "个",
+      "icon": "Database-icon-shuizhagongcheng",
+      "numChecked":false,
+      "checked": false
+    },
+    {
+      "title": "海洋牧场",
+      "tabTitle": "海洋牧场",
+      "specialType": "codeStr",
+      "codeKey": "ocepasture",
+      "tabNumber": 0,
+      "unit": "个",
+      "icon": "Database-icon-haiyangmuchang",
+      "numChecked":false,
+      "checked": false
+    },
+    {
+      "title": "畜牧养殖场",
+      "tabTitle": "畜牧养殖场",
+      "specialType": "codeStr",
+      "codeKey": "farm",
+      "tabNumber": 0,
+      "unit": "个",
+      "icon": "Database-icon-yangzhichang",
+      "numChecked":false,
+      "checked": false
+    },
+    {
+      "title": "加油站",
+      "tabTitle": "加油站",
+      "specialType": "codeStr",
+      "codeKey": "gasstation",
+      "tabNumber": 0,
+      "unit": "个",
+      "icon": "Database-icon-jiayouzhan",
+      "numChecked":false,
+      "checked": false
+    }
+  ]
+}

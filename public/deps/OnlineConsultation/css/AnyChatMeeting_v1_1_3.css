@@ -1,0 +1,1730 @@
+#AnyChatMeetingComponent{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+#AnyChatMeeting_box{
+    width: 100%;
+    height: 100%;
+    /*min-width: 1280px;*/
+    /*min-height: 560px;*/
+    color: white;
+    font-size:12px ;
+    /*position: absolute;*/
+    /*z-index: 999;*/
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    overflow: auto;
+}
+#AnyChatMeeting_box input{
+    border: none;
+    outline: none;
+}
+#AnyChatMeeting_box .AnyChatMeeting_box_header{
+    height: 5%;
+    /*min-height: 38px;*/
+    background-color: #000000;
+    padding: 0 12px;
+}
+.AnyChatMeeting_box_header .AnyChatMeeting_span_name{
+    font-size: 14px;
+    font-weight: bold;
+    /*padding-left: 12px;*/
+}
+.AnyChatMeeting_box_header .AnyChatMeeting_span_bites span{
+    font-size: 9px;
+    padding-left:10px ;
+    background-size: 5px 6px;
+    background-position: center left;
+    background-repeat: no-repeat;
+}
+.AnyChatMeeting_box_header .AnyChatMeeting_span_bites span:nth-of-type(1){
+    margin-right: 10px;
+    background-image: url("../img/icon_bitesUp.png");
+}
+.AnyChatMeeting_box_header .AnyChatMeeting_span_bites span:nth-of-type(2){
+    background-image: url("../img/icon_bitesDown.png");
+}
+.AnyChatMeeting_box_header .AnyChatMeeting_span_infor{
+    padding-right: 36px;
+}
+.AnyChatMeeting_box_header #updatePassword{
+    float: right;
+    border: 1px solid;
+    height: 26px;
+    line-height: 14px;
+    padding: 5px 10px;
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 3px;
+    background-color: #2B79FF;
+    color: white;
+}
+.AnyChatMeeting_box_header #updatePassword:active{
+    top:4px;
+}
+#AnyChatMeeting_box .AnyChatMeeting_box_middle{
+    height: 85%;
+    /*min-height: 470px;*/
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-color: #555555;
+}
+/*视频区域*/
+.AnyChatMeeting_box_middle #videoSite{
+    height: 100%;
+    width: 100%;
+    float: left;
+    background-image: url(../img/videoSite_bk.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /*展开消息时宽变成75*/
+    transition: width 1s;
+    -moz-transition: width 1s; /* Firefox 4 */
+    -webkit-transition: width 1s; /* Safari 和 Chrome */
+    -o-transition: width 1s; /* Opera */
+    position: relative;
+}
+.AnyChatMeeting_box_middle .AnyChatMeeting_videoSite{
+
+
+
+}
+.AnyChatMeeting_box_middle #remoteShareScreenBox{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.AnyChatMeeting_box_middle #remoteShareScreenBox2{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.AnyChatMeeting_videoSite>div.videoArea{
+
+    border: solid 2px #555555 ;
+    /*单人100%,到时提供一个函数检测当前宽度适合放多大的视频区域(f放得下就放，放不下就另起一行)，使视频保存1:2比例*/
+    /*注意不能用固定数值，要用百分比，否则导致父元素撑大，原因尚未知*/
+    /*height: 90%;*/
+    /*width: 50%;*/
+    /*双人*/
+    /*height: 90%;*/
+    /*width: 50%;*/
+    /*3-4*/
+    /*height: 49%;*/
+    /*width: 35%;*/
+    /*5-6*/
+    /*height: 49%;*/
+    /*width: 33%;*/
+    /*7-9*/
+    /*height: 33%;*/
+    /*width: 33%;*/
+    position: relative;
+}
+/*防止自己的画面关闭摄像头时白屏*/
+.AnyChatMeeting_videoSite .videoArea .videoSite.myVideoSite{
+    /*background-image: url("../img/ssebk.jpg");*/
+    /*anychat*/
+    background-image: url("../img/anychatbk.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /*background-color: white;*/
+}
+.nameSite{
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    background-color: #303132;
+
+}
+.nameSite img.icon_speak,.nameSite img.icon_host{
+    width: 18px;
+    height: 18px;
+    visibility: hidden;
+    vertical-align: text-top;
+    margin: 0 5px;
+}
+/*.nameSite img.icon_host{*/
+/*width: 16px;*/
+/*height: 21px;*/
+/*visibility: hidden;*/
+/*}*/
+.AnyChatMeeting_box_middle .AnyChatMeeting_audio{
+    display: -webkit-box; /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+    display: -moz-box; /* 老版本语法: Firefox (buggy) */
+    display: -ms-flexbox; /* 混合版本语法: IE 10 */
+    display: -webkit-flex; /* 新版本语法: Chrome 21+ */
+    display: flex; /* 新版本语法: Opera 12.1, Firefox 22+ */
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    transition: width 2s;
+    -moz-transition: width 2s; /* Firefox 4 */
+    -webkit-transition: width 2s; /* Safari 和 Chrome */
+    -o-transition: width 2s; /* Opera */
+}
+.AnyChatMeeting_audio .audio_top{
+    width: 120vh;
+    min-height: 38vh;
+    /* width: 850px; */
+    margin: 0 auto;
+    margin-top: 19vh;
+    /* padding: 0 6%;*/
+}
+.AnyChatMeeting_audio .audio_top .userItem{
+    /*width:120px;*/
+    /*height:120px;*/
+    background:rgba(16,48,101,0.45);
+    border:1px solid rgba(255,255,255,1);
+    border-radius:18px;
+    margin:3px 5px;
+    position: relative;
+    font-size: 2.09vh;
+    width: 17.75vh;
+    height: 17.75vh;
+}
+.AnyChatMeeting_audio .audio_top .userItem .icon_hostFlag{
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    height: 3.9vh;
+    width:4.3vh ;
+    /*background-image: url("../img/icon_hostFlag1.png");*/
+    background-size: contain;
+    background-repeat: no-repeat;
+    visibility: hidden;
+}
+.AnyChatMeeting_audio .audio_top .userItem .icon_hostFlag1{
+    background-image: url("../img/icon_hostFlag1.png");
+    visibility: visible;
+}
+.AnyChatMeeting_audio .audio_top .userItem .icon_hostFlag2{
+    background-image: url("../img/icon_hostFlag2.png");
+    visibility: visible;
+}
+.AnyChatMeeting_audio .audio_top .userItem img:nth-of-type(1){
+    /* height: 33px; */
+    /* width: 28px; */
+    width: 26.5%;
+    margin-top: 23%;
+    margin-bottom: 6.6%;
+}
+.AnyChatMeeting_audio .audio_top .userItem img.icon_speak{
+    /* width: 21px; */
+    /* height: 21px; */
+    width: 15.44%;
+    margin: 3.6%;
+    visibility: hidden;
+}
+
+
+/*}*/
+.AnyChatMeeting_audio .audio_middle{
+    width: 50px;
+    text-align: center;
+    margin-top: 6vh;
+    margin-bottom: 2vh;
+}
+.AnyChatMeeting_audio .audio_bottom{
+    width: 30vh;
+    height: 9.13vh;
+}
+.AnyChatMeeting_audio .audio_bottom input{
+    height: 9.13vh;
+    width: 9.13vh;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: center;
+    background-color: transparent;
+}
+@keyframes scaleDraw {
+    /*定义关键帧、scaleDrew是需要绑定到选择器的关键帧名称*/
+    0% {
+        transform:scale(1);
+        /*开始为原始大小*/
+    }
+    25% {
+        transform:scale(1.1);
+        /*放大1.1倍*/
+    }
+    50% {
+        transform:scale(1);
+    }
+    75% {
+        transform:scale(1.1);
+    }
+}
+.AnyChatMeeting_audio .audio_bottom #icon_audio,
+.AnyChatMeeting_audio .audio_bottom #icon_audio2{
+    background-image: url("../img/icon_microphoneFalse.png");
+}
+.AnyChatMeeting_audio .audio_bottom #icon_audio.active{
+
+    background-image: url("../img/icon_microphoneTrue.png");
+    animation-name: scaleDraw;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    /* Safari 和 Chrome: */
+    -webkit-animation-name:scaleDraw;
+    /*关键帧名称*/
+    -webkit-animation-timing-function:ease-in-out;
+    /*动画的速度曲线*/
+    -webkit-animation-iteration-count:infinite;
+    /*动画播放的次数*/
+    -webkit-animation-duration:5s;
+    /*动画所花费的时间*/
+}
+.AnyChatMeeting_audio .audio_bottom #AnyChatMeeting_exit{
+    background-image: url("../img/icon_hangup.png");
+}
+.AnyChatMeeting_audio .audio_bottom #icon_voice{
+    background-image: url("../img/icon_voiceTrue.png");
+}
+.AnyChatMeeting_audio .audio_bottom #icon_voice.active{
+    background-image: url("../img/icon_voiceFalse.png");
+}
+
+/*参会者界面*/
+.AnyChatMeeting_box_middle .AnyChatMeeting_userListSite{
+    height: 100%;
+    width: 25%;
+    background-color: #1B1B1B;
+    display: none;
+    float: left;
+    border-top:1px solid rgba(88,88,88,1);
+    border-bottom:1px solid rgba(88,88,88,1);
+    /*显示时加过渡*/
+    transition: opacity 2s;
+    -moz-transition: opacity 2s; /* Firefox 4 */
+    -webkit-transition: opacity 2s; /* Safari 和 Chrome */
+    -o-transition: opacity 2s; /* Opera */
+}
+.AnyChatMeeting_userListSite h5{
+    height: 6%;
+    margin: 0;
+}
+.AnyChatMeeting_userListSite .userList{
+    height: 83%;
+    border-top:1px solid rgba(88,88,88,1);
+    border-bottom:1px solid rgba(88,88,88,1);
+    /*padding-top:10px;*/
+    /*padding-left: 10px;*/
+    /*padding-right: 10px;*/
+    overflow: auto;
+}
+.AnyChatMeeting_userListSite .userList .userItem{
+    /*margin-bottom: 10px;*/
+    padding: 10px 3.2%;
+    /*background-color: rgba(53,53,53,1);*/
+}
+.AnyChatMeeting_userListSite .userItem .userNameSpan{
+    display: block;
+    text-align: left;
+    width: 76%;
+    padding-left: 10px;
+    font-size: 13px;
+}
+.AnyChatMeeting_userListSite .userItem .userNameSpan span:nth-of-type(2),
+.AnyChatMeeting_userListSite .userItem .userNameSpan span:nth-of-type(3){
+    margin-left: 8px;
+    padding: 2px 6px;
+    background: rgba(41,122,255,1);
+    border-radius: 10px;
+    line-height: 20px;
+    font-size: 8px;
+}
+.AnyChatMeeting_userListSite .userItem .icon_faceTag{
+    /*height: 25px;*/
+    /*width: 25px;*/
+    height: 1.5em;
+    width: 1.4em;
+}
+.AnyChatMeeting_userListSite .userItem .collapseBtn{
+    height: 16px;
+    width: 22px;
+    /* height: 1.4em;
+    width: 1.4em; */
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: center;
+    background-color: transparent;
+    background-image: url(../img/collapseBtn0.png);
+    margin: 0 4px ;
+}
+.AnyChatMeeting_userListSite .userItem .collapseBtn:hover,
+.AnyChatMeeting_userListSite .userItem .collapseBtn:active,
+.AnyChatMeeting_userListSite .userItem .collapseBtn.active{
+    background-image: url(../img/collapseBtn1.png);
+}
+#userList .userItem .btn_icon{
+    width: 22px;
+    height: 17px;
+    margin: 0 4px ;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: center;
+    background-color: transparent;
+}
+#userList .btn_icon.icon_audio0,
+#userList .btn_icon.icon_audio2{
+    background-image: url(../img/icon_audio_show0.png);
+}
+#userList .btn_icon.icon_audio1{
+    background-image: url(../img/icon_audio_show1.png);
+}
+#userList .btn_icon.icon_carmar0,
+#userList .btn_icon.icon_carmar2{
+    background-image: url(../img/icon_carmar_show0.png);
+}
+#userList .btn_icon.icon_carmar1{
+    background-image: url(../img/icon_carmar_show1.png);
+}
+
+.AnyChatMeeting_userListSite .userItem ul.collapseArea {
+    background-color: rgba(53,53,53,1);
+    margin: 0;
+    padding-top: 10px;
+    overflow: hidden;
+}
+.AnyChatMeeting_userListSite .userItem ul.collapseArea li{
+    width: 32%;
+}
+#userList .collapseArea .operateBtn{
+    font-size: 10px;
+    line-height: 17px;
+    padding: 4px 14px 4px 20px;
+    height: 27px;
+    /* background-color: rgba(53,53,53,1); */
+    background-repeat: no-repeat;
+    background-size: auto 55%;
+    background-position: 6px center;
+    /* padding-left: 20px; */
+    background-color: transparent;
+    color: rgba(127,127,127,1);
+    border: 1px solid rgba(127,127,127,1);
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+    display: inline-block;
+    margin: 5px 0;
+    width: 100%;
+}
+#userList .collapseArea .operateBtn:active{
+    /*box-shadow: inset 0 3px 5px rgba(0,0,0,0.725);*/
+    position: relative;
+    top:2px;
+}
+#userList .collapseArea .operateBtn:hover{
+    background-color: #297AFF;
+    border-color: #297AFF;
+    color: #ffffff;
+}
+/*.AnyChatMeeting_userListSite .userItem .collapseArea li.operateBtn.active{*/
+/*    background-color: #297AFF;*/
+/*}*/
+#userList .collapseArea .icon_audio0,
+#userList .collapseArea .icon_audio2{
+    background-image: url(../img/icon_audio0.png);
+    background-color: #297AFF;
+    border-color: #297AFF;
+    color: #ffffff;
+}
+#userList .collapseArea .icon_audio1{
+    background-image: url(../img/icon_audio1.png);
+
+}
+#userList .collapseArea .icon_audio0:hover,
+#userList .collapseArea .icon_audio1:hover,
+#userList .collapseArea .icon_audio2:hover{
+    background-image: url(../img/icon_audio0.png);
+    background-color: #297AFF;
+    border-color: #297AFF;
+    color: #ffffff;
+}
+#userList .collapseArea .icon_carmar0,
+#userList .collapseArea .icon_carmar2{
+    background-image: url(../img/icon_carmar0.png);
+    background-color: #297AFF;
+    border-color: #297AFF;
+    color: #ffffff;
+}
+#userList .collapseArea .icon_carmar1{
+    background-image: url(../img/icon_carmar1.png);
+
+}
+#userList .collapseArea .icon_carmar0:hover,
+#userList .collapseArea .icon_carmar1:hover,
+#userList .collapseArea .icon_carmar2:hover{
+    background-image: url(../img/icon_carmar0.png);
+    background-color: #297AFF;
+    border-color: #297AFF;
+    color: #ffffff;
+}
+#userList .collapseArea .icon_hostState0{
+    background-image: url(../img/icon_setMnager0.png);
+}
+#userList .collapseArea .icon_hostState1{
+    /*background-image: url(../img/icon_setMnager1.png);*/
+    background-color: #297AFF;
+    border-color: #297AFF;
+    color: #ffffff;
+}
+
+#userList .collapseArea .icon_hostState2{
+    /*2代表被授权的管理员，后面可能用其他颜色*/
+    background-image: url(../img/icon_setMnager2.png);
+    background-color: #297AFF;
+    border-color: #297AFF;
+    color: #ffffff;
+}
+#userList .collapseArea .icon_hostState0:hover,
+#userList .collapseArea .icon_hostState2:hover{
+    background-image: url(../img/icon_setMnager2.png);
+    background-color: #297AFF;
+    border-color: #297AFF;
+    color: #ffffff;
+}
+#userList .collapseArea .icon_kickUser{
+    background-image: url(../img/icon_kickUser0.png);
+}
+#userList .collapseArea .icon_kickUser:hover{
+    background-image: url(../img/icon_kickUser1.png);
+}
+
+.AnyChatMeeting_userListSite>div:last-child{
+    height: 11%;
+}
+.AnyChatMeeting_userListSite #allNoVoice{
+    border-radius: 7px;
+    margin: 0 5px;
+    font-size: 13px;
+    line-height: 24px;
+    padding: 4px 10px;
+    height: 34px;
+    cursor: pointer;
+    /* background-color: #3991FE; */
+    outline: none;
+    border:none;
+}
+.AnyChatMeeting_userListSite .allNoVoice0{
+    background-color:#3991FE;
+}
+.AnyChatMeeting_userListSite .allNoVoice1{
+    background-color:#FF4A4A;
+}
+/*聊天信息界面*/
+.AnyChatMeeting_messageSite.messageSite{
+    height: 100%;
+    width: 25%;
+    background-color: #1B1B1B;
+    display: none;
+    float: left;
+    border-top:1px solid rgba(88,88,88,1);
+    border-bottom:1px solid rgba(88,88,88,1);
+}
+.messageSite h5{
+    height: 8%;
+    margin: 0;
+}
+.messageSite .messageList{
+    height: 79%;
+    border-top:1px solid rgba(88,88,88,1);
+    border-bottom:1px solid rgba(88,88,88,1);
+    padding-top:10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow: auto;
+}
+.messageSite .messageList .messageItem{
+    margin-bottom: 10px;
+    text-align: left;
+    word-break: break-all;
+}
+.messageSite .messageList .messageItem .AnyChatMeeting_messageTime{
+    color: #FFF000;
+}
+.messageSite .messageList .messageItem.sys{
+    color: red;
+}
+.messageSite>div:last-child{
+    height: 13%;
+    padding: 0 5px;
+}
+.messageSite input{
+    border-radius: 7px;
+    font-size: 13px;
+    line-height: 24px;
+    padding: 4px 10px;
+    margin: 5px;
+    height: 34px;
+    cursor: pointer;
+    outline: none;
+    border:none;
+}
+.messageSite input:first-child{
+    /*background-color: white;*/
+    color: black;
+    width: 79%;
+}
+.messageSite input:last-child{
+    background-color: #3991FE;
+    min-width: 55px;
+}
+.messageSite .messageText {
+    cursor: initial;
+}
+.messageSite .recordFileUrl{
+    cursor: pointer;
+    width: 96%;
+    margin: 0;
+    color: black;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-break: break-all;
+    height: 24px;
+    line-height: 16px;
+}
+.messageSite #chose_videoInput{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    visibility: hidden;
+}
+input#sendMessage:active{
+    margin-bottom: 2px;
+}
+/*录制视频回放*/
+.messageSite #record_video{
+    position: fixed;
+    z-index: 20;
+    width: 640px;
+    height: 480px;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    visibility: hidden;
+}
+
+/*设置界面*/
+.AnyChatMeeting_box_middle .AnyChatMeeting_settingSite{
+    height: 100%;
+    width: 25%;
+    background-color: #1B1B1B;
+    display: none;
+    float: left;
+    border-top:1px solid rgba(88,88,88,1);
+    border-bottom:1px solid rgba(88,88,88,1);
+}
+.AnyChatMeeting_settingSite #settingList{
+    height: 94%;
+    border-top:1px solid rgba(88,88,88,1);
+    overflow: auto;
+    line-height: 25px;
+}
+
+#settingList .deviceSetting{
+    text-align: left;
+    /*padding: 40px;*/
+    /*padding-top: 25px;*/
+    height: 65%;
+}
+.deviceSetting .centerBox{
+    width: 76%;
+    padding-bottom: 7%;
+}
+.deviceSetting .centerBox .icon_device{
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background-image: url("../img/icon_device.png");
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+#settingList .deviceSetting .row{
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 2%;
+}
+#settingList .deviceSetting .row label{
+    margin: 0;
+    font-weight: normal;
+}
+#settingList .deviceSetting .row select{
+    /*background-color: #6A6A6A;*/
+
+}
+#settingList .deviceSetting .row .dropdown{
+    line-height: 0;
+}
+#settingList .deviceSetting .row .dropdown_btn{
+    width: 100%;
+    font-size: 13px;
+    /*line-height: 4.55vh;*/
+    line-height: 2.5vw;
+    padding: 0 10px;
+    /*height: 4.55vh;*/
+    height: 2.5vw;
+    background-color: #6A6A6A;
+    color: #ffffff;
+    border: 1px solid #B0B0B0;
+    /*border-color: #DDDDDD;*/
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+    /*display: inline-block;*/
+    text-align: left;
+}
+#settingList .dropdown_btn .button_content{
+    display: inline-block;
+    height: 100%;
+    width: 90%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#settingList .icon_after{
+    display: inline-block;
+    /*margin-left: 4px;*/
+    height: 4.55vh;
+    width: 13px;
+    float: right;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#settingList .icon_hide{
+    background-image: url("../images/icon_after_hide@2x.png");
+
+}
+#settingList .icon_show{
+    background-image: url("../images/icon_after_show@2x.png");
+
+}
+#settingList .dropdown .my_dropdown-menu {
+    /*margin-top: 10px;*/
+}
+#settingList .my_dropdown-menu {
+    /* min-width: unset; */
+    min-width: auto;
+    padding: 10px;
+    text-align: left;
+    background-color: #6A6A6A;
+}
+#settingList .my_dropdown-menu li{
+    height: 25px;
+    cursor: pointer;
+}
+#settingList .my_dropdown-menu li a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #ffffff;
+}
+#settingList .my_dropdown-menu>li>a:hover, #settingList .dropdown-menu>li>a:focus{
+    background-color: #66afe9;
+}
+#settingList #passwordSetting{
+    text-align: left;
+    /*padding: 40px;*/
+    /*padding-top: 25px;*/
+    border-top: solid 1px rgba(88,88,88,1);
+    /*初始隐藏，是主持人才显示，转移主持人时时相应更改，进出会议相应修改*/
+    /*visibility: hidden;*/
+    height: 35%;
+}
+#passwordSetting .centerBox{
+    width: 76%;
+    padding-bottom: 10%;
+}
+#passwordSetting .centerBox .icon_password{
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background-image: url("../img/icon_password.png");
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+#settingList #passwordSetting label{
+    font-weight: normal;
+
+}
+#passwordSetting .newPasswordBox{
+    position: relative;
+    margin-bottom: 10px;
+}
+#passwordSetting .newPasswordBox #newPassword{
+    background-color: #B0B0B0;
+    padding-right: 28px;
+    height: 2.5vw;
+}
+#passwordSetting .newPasswordBox .icon_eye{
+    display: block;
+    height: 100%;
+    width: 28px;
+    /*background-image: url("../img/icon_eyeClose.png");*/
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+#passwordSetting .newPasswordBox .eyeOpen{
+    background-image: url("../img/icon_eyeOpen.png");
+}
+#passwordSetting .newPasswordBox .eyeClose{
+    background-image: url("../img/icon_eyeClose.png");
+}
+#passwordSetting #updatePasswordBtn{
+    width:92px;
+    height:29px;
+    background:rgba(41,122,255,1);
+    border-radius:7px;
+    display: block;
+    margin: 0 auto;
+}
+#passwordSetting #updatePasswordBtn:active{
+    top:4px;
+}
+
+/*页脚*/
+#AnyChatMeeting_box .AnyChatMeeting_box_bottom{
+    height: 10%;
+    min-height: 54px;
+    width: 100%;
+    background-color: #000000;
+    overflow: hidden;
+}
+.AnyChatMeeting_box_bottom_left{
+    /*padding:0 15px ;*/
+    padding-left: 15px;
+    height: 32px;
+    width: 260px;
+    /*position: relative;*/
+}
+.AnyChatMeeting_box_bottom_left #recordBtn{
+    background-color: #136CFF;
+    /*background-color: #FF0000;*/
+    border: none;
+}
+.AnyChatMeeting_box_bottom_left #recordTimeBox{
+    color: #FCFF00;
+    font-size: 13px;
+    line-height: 20px;
+    padding: 5px 0;
+    height: 32px;
+    width: 120px;
+    white-space: nowrap;
+     display: none;
+    margin: 0 10px;
+}
+.AnyChatMeeting_box_bottom_left #recordTime{
+    margin-left: 5px;
+}
+.AnyChatMeeting_box_bottom .AnyChatMeeting_box_bottom_middle{
+    height: 70%;
+    width:50%;
+}
+.AnyChatMeeting_box_bottom .AnyChatMeeting_box_bottom_middle .cameraBox,
+.AnyChatMeeting_box_bottom .AnyChatMeeting_box_bottom_middle .microphoneBox{
+    position: relative;
+}
+
+.cameraBox #cameraList, .microphoneBox #microphoneList{
+    position: absolute;
+    left: -80px;
+    bottom: 100%;
+    /* height: 100px; */
+    width: 200px;
+    background-color: #dddddd;
+    margin: 0 auto;
+    text-align: left;
+    visibility: hidden;
+}
+.cameraBox:hover #cameraList, .microphoneBox:hover #microphoneList{
+    visibility: visible;
+}
+.cameraBox #cameraList li,.microphoneBox #microphoneList li{
+    height: 20px;
+    line-height: 14px;
+    padding: 3px 10px;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    cursor: pointer;
+    color: #333;
+}
+.cameraBox #cameraList li:hover,.microphoneBox #microphoneList li:hover{
+    background-color: #1c90f6;
+}
+.AnyChatMeeting_box_bottom_middle>div{
+    height: 100%;
+}
+.AnyChatMeeting_box_bottom_middle>div input{
+    height: 31px;
+    width: 31px;
+    /*height: 100%;*/
+    /*width: 100%;*/
+    outline: none;
+    /*background-image: ;*/
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: center;
+    background-color: transparent;
+}
+.AnyChatMeeting_box_bottom_middle>div input#icon_users{
+    background-image: url(../img/icon_users.png);
+}
+.AnyChatMeeting_box_bottom_middle>div input#icon_users:hover,
+.AnyChatMeeting_box_bottom_middle>div input#icon_users.active{
+    background-image: url(../img/icon_users_blue.png);
+}
+.AnyChatMeeting_box_bottom_middle>div input#icon_invite{
+    background-image: url(../img/icon_invite.png);
+}
+.AnyChatMeeting_box_bottom_middle>div input#icon_invite:hover,
+.AnyChatMeeting_box_bottom_middle>div input#icon_invite.active{
+    background-image: url(../img/icon_invite_blue.png);
+}
+.AnyChatMeeting_box_bottom_middle>div input#icon_talk{
+    background-image: url(../img/icon_talk.png);
+}
+.AnyChatMeeting_box_bottom_middle>div input#icon_talk:hover,
+.AnyChatMeeting_box_bottom_middle>div input#icon_talk.active{
+    background-image: url(../img/icon_talk_blue.png);
+}
+.AnyChatMeeting_box_bottom_middle>div input#icon_shareScreen{
+    background-image: url(../img/icon_shareScreen.png);
+}
+.AnyChatMeeting_box_bottom_middle>div input#icon_shareScreen:hover,
+.AnyChatMeeting_box_bottom_middle>div input#icon_shareScreen.active{
+    background-image: url(../img/icon_shareScreen_blue.png);
+}
+.AnyChatMeeting_box_bottom_middle>div input#icon_shareWhiteBoard{
+    background-image: url(../img/icon_shareWhiteBoard.png);
+}
+.AnyChatMeeting_box_bottom_middle>div input#icon_shareWhiteBoard:hover,
+.AnyChatMeeting_box_bottom_middle>div input#icon_shareWhiteBoard.active{
+    background-image: url(../img/icon_shareWhiteBoard_blue.png);
+}
+.AnyChatMeeting_box_bottom_middle>div input#icon_audio,
+.AnyChatMeeting_box_bottom_middle>div input#icon_audio2{
+    /*2代表禁止*/
+    background-image: url(../img/icon_audio_blue.png);
+}
+.AnyChatMeeting_box_bottom_middle>div input#icon_audio:hover{
+    background-image: url(../img/icon_audio_blue.png);
+}
+.AnyChatMeeting_box_bottom_middle>div input#icon_audio.active{
+    background-image: url(../img/icon_audio.png);
+}
+
+.AnyChatMeeting_box_bottom_middle>div input#icon_carmar{
+    background-image: url(../img/icon_carmar.png);
+}
+.AnyChatMeeting_box_bottom_middle>div input#icon_carmar:hover,
+.AnyChatMeeting_box_bottom_middle>div input#icon_carmar.active,
+.AnyChatMeeting_box_bottom_middle>div input#icon_carmar2{
+    background-image: url(../img/icon_carmar_blue.png);
+}
+.AnyChatMeeting_box_bottom_middle>div input#icon_voice{
+    background-image: url(../img/icon_voice.png);
+}
+.AnyChatMeeting_box_bottom_middle>div input#icon_voice:hover,
+.AnyChatMeeting_box_bottom_middle>div input#icon_voice.active{
+    background-image: url(../img/icon_voice_blue.png);
+}
+.AnyChatMeeting_box_bottom_middle>div input#icon_setting{
+    background-image: url(../img/icon_setting.png);
+}
+.AnyChatMeeting_box_bottom_middle>div input#icon_setting:hover,
+.AnyChatMeeting_box_bottom_middle>div input#icon_setting.active{
+    background-image: url(../img/icon_setting_blue.png);
+}
+
+.AnyChatMeeting_box_bottom_right{
+    /*padding:0 15px ;*/
+    padding-right: 15px;
+    height: 32px;
+    width: 260px;
+}
+.AnyChatMeeting_box_bottom_right #AnyChatMeeting_end{
+    border:1px solid #FF0000;
+    color: #FF0000;
+    background-color: transparent;
+    /*width: 90px;*/
+    background-image: url("../img/icon_end.png");
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+    background-position:8px center ;
+    padding-left: 28px;
+    padding-right: 8px;
+    visibility: hidden;
+}
+.AnyChatMeeting_box_bottom_btn{
+    /*height: 50%;*/
+    display: block;
+    border: solid 1px white;
+    border-radius:3px;
+    margin: 0 5px;
+    font-size: 13px;
+    line-height: 20px;
+    padding: 5px 10px;
+    height: 32px;
+    cursor: pointer;
+
+}
+.AnyChatMeeting_box_bottom_btn i{
+    display: inline-block;
+    margin-right: 4px;
+    height: 16px;
+    width: 16px;
+    /* background-size: auto 16px; */
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+i.AnyChatMeeting_icon_record{
+    background-image: url("../img/icon_record.png");
+    border: none;
+
+}
+i.AnyChatMeeting_icon_recordEnd{
+    background-image: url("../img/icon_record.png");
+    border: none;
+
+}
+/*i.AnyChatMeeting_icon_end{*/
+
+/*}*/
+i.AnyChatMeeting_icon_exit{
+    background-image: url("../img/icon_exit.png");
+}
+.AnyChatMeeting_userListSite #allNotVoice:active, .AnyChatMeeting_box_bottom_btn:active,
+.AnyChatMeeting_box_bottom_mid_btn input:active{
+    margin-top: 2px;
+}
+
+
+/*白板界面*/
+
+.AnyChatMeeting_whiteBoardSite{
+    height: 95%;
+    width: 100%;
+    overflow: auto;
+    position: absolute;
+    left: 0;
+    top: 5%;
+}
+.AnyChatMeeting_whiteBoardSite .scrollBox{
+    height: 100%;
+    width: 100%;
+    min-width: 1240px;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #F5F5F5;
+    /*padding: 10px;*/
+    /*box-sizing: content-box;*/
+    color: #333333;
+    overflow: hidden;
+}
+.AnyChatMeeting_whiteBoard_top{
+    /*background-color: #575757;*/
+    background-color:rgba(0,0,0,0.75);
+    height: 10%;
+    /*padding: 2%;*/
+    border-bottom: 1px solid #6C6C6C;
+    /*overflow: auto;*/
+    /*position: absolute;*/
+}
+/*.AnyChatMeeting_whiteBoard_top>div{*/
+/*min-width: 1240px;*/
+/*width: 100%;*/
+/*}*/
+
+.AnyChatMeeting_whiteBoardSite .wb_btn{
+    font-size: 13px;
+    line-height: 22px;
+    padding: 4px 10px;
+    height: 32px;
+    background-color: white;
+    color: #333333;
+    /*border: 1px solid #DDDDDD;*/
+    border: none;
+    /*border-color: #DDDDDD;*/
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+    /*display: inline-block;*/
+}
+
+.AnyChatMeeting_whiteBoardSite .wb_btn.closeWB{
+    background-color: #F26666;
+    color: white;
+    border: none;
+    position: relative;
+}
+.wb_btn#closeWB span:nth-of-type(3){
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 3;
+}
+.AnyChatMeeting_whiteBoardSite .wb_btn:active{
+    outline: 0;
+    background-image: none;
+    -webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,0.125);
+    box-shadow: inset 0 3px 5px rgba(0,0,0,0.125);
+}
+
+#AnyChatMeeting_whiteBoard_Mask{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    /*ie盖不住顶上按钮，加背景则可盖住*/
+    background-color: rgba(255,255,255,0);
+}
+.AnyChatMeeting_whiteBoard_top .icon_before{
+    display: inline-block;
+    margin-right: 4px;
+    height: 16px;
+    width: 16px;
+    /*background-size: auto 16px;*/
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    vertical-align:  text-bottom;
+}
+.AnyChatMeeting_whiteBoard_top .icon_after{
+    display: inline-block;
+    margin-left: 4px;
+    height: 9px;
+    width: 13px;
+    background-repeat: no-repeat;
+}
+.AnyChatMeeting_whiteBoard_top .icon_hide{
+    background-image: url("../images/icon_after_hide@2x.png");
+
+}
+.AnyChatMeeting_whiteBoard_top .icon_show{
+    background-image: url("../images/icon_after_show@2x.png");
+
+}
+.AnyChatMeeting_whiteBoard_top .icon_add{
+    background-image: url("../images/icon_add@2x.png");
+}
+.AnyChatMeeting_whiteBoard_top .icon_delete{
+    background-image: url("../images/icon_delete@2x.png");
+}
+.AnyChatMeeting_whiteBoard_top .icon_inform{
+    background-image: url("../images/icon_inform@2x.png");
+}
+.AnyChatMeeting_whiteBoard_top .icon_undo{
+    background-image: url("../images/icon_undo@2x.png");
+}
+.AnyChatMeeting_whiteBoard_top .icon_clear{
+    background-image: url("../images/icon_clear@2x.png");
+}
+.AnyChatMeeting_whiteBoard_top .icon_drawMode{
+    background-image: url("../images/icon_drawMode@2x.png");
+}
+.AnyChatMeeting_whiteBoard_top .icon_bgcolor{
+    background-image: url("../images/icon_bgcolor@2x.png");
+}
+.AnyChatMeeting_whiteBoard_top .icon_wbSize{
+    background-image: url("../images/icon_wbSize@2x.png");
+}
+.AnyChatMeeting_whiteBoard_top .icon_bgChange{
+    background-image: url("../images/icon_bgChange@2x.png");
+}
+.AnyChatMeeting_whiteBoard_top .icon_bgDelete{
+    background-image: url("../images/icon_bgDelete@2x.png");
+}
+.AnyChatMeeting_whiteBoard_top .icon_canvasDownload{
+    background-image: url("../images/icon_canvasDownload@2x.png");
+}
+.AnyChatMeeting_whiteBoard_top .icon_startRecord{
+    background-image: url("../images/icon_startRecord@2x.png");
+}
+.AnyChatMeeting_whiteBoard_top .icon_stopRecord{
+    background-image: url("../images/icon_stopRecord@2x.png");
+}
+.AnyChatMeeting_whiteBoard_top .icon_closeWB{
+    background-image: url("../images/icon_closeWB@2x.png");
+}
+.AnyChatMeeting_whiteBoard_top .i_red,.AnyChatMeeting_whiteBoard_top .i_blue,
+.AnyChatMeeting_whiteBoard_top .i_black,.AnyChatMeeting_whiteBoard_top .i_white{
+    display: inline-block;
+    /*vertical-align: middle;*/
+    height: 14px;
+    width: 14px;
+    border: 1px dotted #B8B8B8;
+}
+.AnyChatMeeting_whiteBoard_top .i_red{
+    background-color: #FF0000;
+}
+.AnyChatMeeting_whiteBoard_top .i_blue{
+    background-color: #0090FF;
+}
+.AnyChatMeeting_whiteBoard_top .i_black{
+    background-color: #000000;
+}
+.AnyChatMeeting_whiteBoard_top .i_white{
+    background-color: #FFFFFF;
+}
+.AnyChatMeeting_whiteBoard_top .dropdown .my_dropdown-menu {
+    margin-top: 10px;
+}
+.AnyChatMeeting_whiteBoard_top .my_dropdown-menu {
+    /* min-width: unset; */
+    min-width: auto;
+    text-align: center;
+    padding: 10px;
+}
+.AnyChatMeeting_whiteBoard_top .dropdown .my_dropdown-menu:before{
+    content: "";
+    display: block;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    margin: 0 auto;
+    border: 1px solid rgba(0,0,0,0.15);
+    /*transform: rotate(45deg);*/
+    background-color: white;
+    border-bottom: none;
+    border-right: none;
+    transform: translateX(-50%) rotate(45deg);
+}
+
+
+.AnyChatMeeting_whiteBoard_left{
+    /*background-color: #C8C8C8;*/
+    /*background-color: #575757;*/
+    background-color:rgba(0,0,0,0.66);
+    height: 90%;
+    width:15.1%;
+    float: left;
+    /*position: absolute;*/
+}
+/*白板缩略图*/
+.AnyChatMeeting_whiteBoard_left .wb_thumb{
+    position: relative;
+    width:100%;
+    height: 100%;
+}
+.wb_thumb .changeWB{
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    /*left: 0;*/
+    /*right: 0;*/
+    width:36px;
+    height: 16px;
+    background-repeat:no-repeat ;
+    background-position: center;
+    background-size: 100% auto;
+    cursor: pointer;
+}
+
+.wb_thumb .preWb{
+    top:4%;
+    background-image: url(../img/icon_pre@2x.png);
+}
+.wb_thumb .preWb:active{
+    margin-top: -2px;
+}
+.wb_thumb .preWb:focus,.wb_thumb .preWb:hover{
+    background-image: url(../img/icon_pre_blue@2x.png);
+}
+.wb_thumb .nextWb{
+    bottom: 4%;
+    background-image: url(../img/icon_next@2x.png);
+}
+.wb_thumb .nextWb:active{
+    margin-bottom: -2px;
+}
+.wb_thumb .nextWb:focus,.wb_thumb .nextWb:hover{
+    background-image: url(../img/icon_next_blue@2x.png);
+}
+.wb_thumb .wb_thumb_box{
+    /*width: 74%;*/
+    width: 160px;
+    height: 80%;
+    /* padding: 2px; */
+    /*position: relative;*/
+    overflow: hidden;
+}
+.wb_thumb #wb_thumb_list{
+    /*position: absolute;*/
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* background-color: #0065a8; */
+    /*height: 100%;*/
+    margin-bottom: 0;
+    /*overflow-x: hidden;*/
+    /*overflow-y: auto;*/
+    /* 去除默认焦点样式 */
+    outline:none;
+}
+.wb_thumb .wb_thumb_item{
+    display: block;
+    /*height: 23%;*/
+    height: 90px;
+    width: 160px;
+    box-sizing: border-box;
+    /*padding: 1%;*/
+    background-color: white;
+    margin: 0 auto;
+    margin-bottom: 10px;
+
+}
+.wb_thumb .wb_thumb_item:last-of-type{
+    margin-bottom: 0;
+}
+
+.wb_thumb .wb_thumb_item.setAbs{
+    /* position: absolute; */
+    top: 0;
+    bottom: 0;
+}
+.wb_thumb .item_content{
+    width: 100%;
+    height: 100%;
+    /* background-color: #008000; */
+    /* margin: 1.5%; */
+    /* background-image: url(../images/thumb0.jpg); */
+    background-repeat: no-repeat;
+    background-color: #FDFEFF;
+    background-size: cover;
+    background-position: center;
+    background-clip: content-box;
+    /* padding: 2px; */
+    /*font-size: 12px;*/
+    font-size: 0.7vw;
+    position: relative;
+    color: #333333;
+    box-shadow:0 1px 4px 0 rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.thumb_choise{
+    border: 1px solid #297AFF;
+}
+
+.item_content .wbName{
+    /*width: 80%; *!*/
+    /*font-size: 12px;*/
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    word-break: break-all;
+    /* padding-top: 16%; */
+    position: absolute;
+    max-width: 82%;
+    left: 9%;
+    top: 10%;
+}
+.thumb_choise .wbName{
+    color:#297AFF;
+    font-weight: Bold;
+
+}
+.item_content .wbPage{
+    position: absolute;
+    right: 5%;
+    bottom: 8%;
+    color: #999999;
+}
+.thumb_choise .wbPage{
+    color:#333333;
+    font-weight: Bold;
+}
+.item_content img{
+    width: 100%;
+    height: auto;
+}
+.AnyChatMeeting_whiteBoard_right{
+    height: 90%;
+    width:84.9%;
+    float:right;
+    position: relative;
+    padding: 0 10px;
+}
+.AnyChatMeeting_whiteBoard_right .canvas_box{
+    /*background-color: white;*/
+
+}
+.AnyChatMeeting_whiteBoard_right #room_canvas{
+    height: 85%;
+    background-image: url(../images/whiteBoard_nullbg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 35%;
+    background-color: #F5F5F5;
+    border: solid 1px #DDDDDD;
+    position: absolute;
+    top: 4%;
+    left: 3.5%;
+    overflow: auto;
+    width: 93%;
+    /* margin: 0 auto; */
+    /* overflow: auto; */
+    /* position: absolute; */
+    /* top: 0; */
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
+    z-index: 3;
+    font-size: 0;
+}
+.AnyChatMeeting_whiteBoard_right .AnyChatMeeting_whiteBoard_right_bottom{
+    /*text-align: right;*/
+    height: 8%;
+    width: 94%;
+    position: absolute;
+    left: 3%;
+    bottom: 1%;
+}
+.AnyChatMeeting_whiteBoard_right_bottom .wb_btn{
+    background-color: #fff;
+    border:1px solid rgba(208,208,208,1);
+}
+.AnyChatMeeting_whiteBoard_right_bottom .pageOperate{
+    width: 170px;
+}
+.pageOperate label{
+    margin: 0;
+}
+.AnyChatMeeting_whiteBoard_right_bottom .wbMediaOperate{
+    width: 250px;
+}
+.AnyChatMeeting_whiteBoard_right_bottom .normalPerson{
+
+}
+#wbMediaOperate_camera,#wbMediaOperate_microphone,
+#wbMediaOperate_voice,#wbMediaOperate_voice_normalPerson{
+    /*padding: 10px;*/
+    padding-left: 30px;
+    background-repeat: no-repeat;
+    background-size: auto 55%;
+    background-position: 10px center;
+}
+#wbMediaOperate_camera{
+    background-image: url(../img/icon_carmarForWb1.png);
+}
+#wbMediaOperate_microphone{
+    background-image: url(../img/icon_audioForWb1.png);
+}
+#wbMediaOperate_voice,#wbMediaOperate_voice_normalPerson{
+    background-image: url(../img/icon_voiceForWb1.png);
+}
+#wbMediaOperate_camera.active,#wbMediaOperate_camera:hover{
+    background-image: url(../img/icon_carmarForWb0.png);
+}
+#wbMediaOperate_microphone.active,#wbMediaOperate_microphone:hover{
+    background-image: url(../img/icon_audioForWb0.png);
+}
+#wbMediaOperate_voice.active,#wbMediaOperate_voice_normalPerson.active,
+#wbMediaOperate_voice:hover,#wbMediaOperate_voice_normalPerson:hover{
+    background-image: url("../img/icon_voiceForWb0.png");
+}
+.AnyChatMeeting_whiteBoard_right_bottom .icon_before{
+    display: inline-block;
+    margin-right: 4px;
+    height: 16px;
+    width: 16px;
+    /*background-size: auto 16px;*/
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    vertical-align:  text-bottom;
+}
+.AnyChatMeeting_whiteBoard_right_bottom .icon_closeWB{
+    background-image: url("../images/icon_closeWB@2x.png");
+}
+.AnyChatMeeting_whiteBoard_right_bottom .wb_btn:active,
+.AnyChatMeeting_whiteBoard_right_bottom .wb_btn.active,
+.AnyChatMeeting_whiteBoard_right_bottom .wb_btn:hover{
+    background-color: #297AFF;
+    border-color: #297AFF;
+    color: white;
+}
+.AnyChatMeeting_whiteBoard_right_bottom .closeWB:active,
+.AnyChatMeeting_whiteBoard_right_bottom .closeWB:hover{
+    background-color: #F26666;
+    color: white;
+    border: none;
+}
+
+
+/*白板消息面板*/
+#whiteBoardMessageBoard{
+    width: 24%;
+    height: 85.5%;
+    position: fixed;
+    z-index: 4;
+    right: 0;
+    top: 14.5%;
+    background-color:rgba(0,0,0,0.75);
+    opacity: 0.75;
+    color: white;
+}
+#whiteBoardMessageBoard:hover{
+    opacity: 1;
+}
+
+#whiteBoardMessageBoard #whiteBoard_hostVideo{
+    height: 31.5%;
+    border-bottom:1px solid rgba(221,221,221,.34);
+    /*padding: 20px 10px;*/
+    position: relative;
+    overflow: hidden;
+}
+#whiteBoard_hostVideo .hostVideoArea{
+    /*height: 22.2vh;*/
+    width: 36vh;
+    margin: 0 auto;
+    margin-top: 2vh;
+    position: relative;
+}
+#whiteBoard_hostVideo .hostVideoArea .videoSite{
+    height: 20.35vh;
+    width: 36vh;
+}
+
+#whiteBoard_hostVideo .hostVideoArea .videoSite.audioBk{
+
+}
+#whiteBoard_hostVideo .hostVideoArea .nameSite img.icon_host{
+     visibility: visible;
+}
+#whiteBoard_hostVideo #hostVideoImgMask{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../img/anychatbk.jpg);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 5;
+}
+/*白板消息列表*/
+#whiteBoardMessageBoard #whiteBoard_message{
+    height: 68.5%;
+}
+#whiteBoardMessageBoard #whiteBoard_message .messageSite{
+    height: 100%;
+}
+.messageSite h5{
+    background:rgba(0,0,0,0.38);
+}
+.messageSite .messageList{
+    border-bottom:1px solid rgba(221,221,221,.34);
+    border-top:1px solid rgba(221,221,221,.34);
+}
+#whiteBoardMessageBoard #messageBoard{
+    width: 9.3%;
+    height: 96px;
+    position: absolute;
+    top: 50%;
+    left: -9.3%;
+    transform: translateY(-50%);
+    background-color: #575757;
+    /* letter-spacing: 5px; */
+    color: white;
+    padding: 18px 6% 26px 3%;
+    border-right: 1px solid #666;
+    text-align: center;
+    border-radius: 15px 0 0 15px;
+    cursor: pointer;
+    line-height: 13px;
+    background-repeat: no-repeat;
+    background-size: 15px 15px;
+    background-image: url(../img/icon_showMessage0.png);
+    background-position: 65% 90%;
+    /*background-image: url(../img/icon_showMessage1.png);*/
+}
+#whiteBoardMessageBoard #messageBoard.active{
+    background-image: url(../img/icon_showMessage1.png);
+}
+#messageBoard #messageDot{
+    display: block;
+    background: transparent;
+    border-radius: 50%;
+    width: 9px;
+    height: 9px;
+    top: 5px;
+    right: 10px;
+    position: absolute;
+}
+#messageBoard #messageDot.active{
+    background: #F24D4D;
+    animation: flash 1s ease-out infinite;
+    /* Safari 和 Chrome: */
+    -webkit-animation-name:flash;
+    /*关键帧名称*/
+    -webkit-animation-timing-function:ease-out;
+    /*动画的速度曲线*/
+    -webkit-animation-iteration-count:infinite;
+    /*动画播放的次数*/
+    -webkit-animation-duration:1s;
+}
+
+/*垂直居中*/
+.AnyChatMeeting_flexVerCenter{
+    display: -webkit-box; /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+    display: -moz-box; /* 老版本语法: Firefox (buggy) */
+    display: -ms-flexbox; /* 混合版本语法: IE 10 */
+    display: -webkit-flex; /* 新版本语法: Chrome 21+ */
+    display: flex; /* 新版本语法: Opera 12.1, Firefox 22+ */
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+/*水平居中*/
+.AnyChatMeeting_horCenter{
+    display: -webkit-box; /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+    display: -moz-box; /* 老版本语法: Firefox (buggy) */
+    display: -ms-flexbox; /* 混合版本语法: IE 10 */
+    display: -webkit-flex; /* 新版本语法: Chrome 21+ */
+    display: flex; /* 新版本语法: Opera 12.1, Firefox 22+ */
+    -webkit-box-pack:center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+/*允许换行*/
+.AnyChatMeeting_wrap{
+    display: -webkit-box; /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+    display: -moz-box; /* 老版本语法: Firefox (buggy) */
+    display: -ms-flexbox; /* 混合版本语法: IE 10 */
+    display: -webkit-flex; /* 新版本语法: Chrome 21+ */
+    display: flex; /* 新版本语法: Opera 12.1, Firefox 22+ */
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap:wrap;
+}
+/*正序排序*/
+.AnyChatMeeting_start{
+    display: -webkit-box; /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+    display: -moz-box; /* 老版本语法: Firefox (buggy) */
+    display: -ms-flexbox; /* 混合版本语法: IE 10 */
+    display: -webkit-flex; /* 新版本语法: Chrome 21+ */
+    display: flex; /* 新版本语法: Opera 12.1, Firefox 22+ */
+    -webkit-box-pack:start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+/*末端排序*/
+.AnyChatMeeting_end{
+    display: -webkit-box; /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+    display: -moz-box; /* 老版本语法: Firefox (buggy) */
+    display: -ms-flexbox; /* 混合版本语法: IE 10 */
+    display: -webkit-flex; /* 新版本语法: Chrome 21+ */
+    display: flex; /* 新版本语法: Opera 12.1, Firefox 22+ */
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+/*两端对齐*/
+.AnyChatMeeting_flexBetween{
+    display: -webkit-box; /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+    display: -moz-box; /* 老版本语法: Firefox (buggy) */
+    display: -ms-flexbox; /* 混合版本语法: IE 10 */
+    display: -webkit-flex; /* 新版本语法: Chrome 21+ */
+    display: flex; /* 新版本语法: Opera 12.1, Firefox 22+ */
+    -webkit-box-pack:justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+/*平均分布*/
+.AnyChatMeeting_flexAround{
+    display: -webkit-box; /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+    display: -moz-box; /* 老版本语法: Firefox (buggy) */
+    display: -ms-flexbox; /* 混合版本语法: IE 10 */
+    display: -webkit-flex; /* 新版本语法: Chrome 21+ */
+    display: flex; /* 新版本语法: Opera 12.1, Firefox 22+ */
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: justify;
+    justify-content: space-around;
+}
+/*竖直方向平均分布 居中*/
+.AnyChatMeeting_verCenterAround{
+    display: -webkit-box; /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+    display: -moz-box; /* 老版本语法: Firefox (buggy) */
+    display: -ms-flexbox; /* 混合版本语法: IE 10 */
+    display: -webkit-flex; /* 新版本语法: Chrome 21+ */
+    display: flex; /* 新版本语法: Opera 12.1, Firefox 22+ */
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: justify;
+    justify-content: space-around;
+}
+#messageModal .modal-footer{
+    text-align: center;
+}
+#messageModal.modal{
+    z-index: 99999;
+}
+@keyframes flash{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

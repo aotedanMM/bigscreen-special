@@ -1,0 +1,651 @@
+{
+  "defenceobj":
+  {
+    "emergencypart※01":
+    {
+      "table": "JC_HUAW_VDT",
+      "//": "应急部门",
+      "districtField":"DISTRICTCODE",
+      "fieldMap": {
+        "name": "UNITNAME",
+        "address": "UNITADDRESS"
+      }
+    },
+    "bas_school": {
+      "table": "BAS_SCHOOL",
+      "//": "学校",
+      "districtField":"DISTRICTCODE",
+      "query": {
+        "tag.DEFOBJTYPECODE":{
+          "$regex": "31B01|31B05"
+        }
+      },
+      "fieldMap": {
+        "name": "SCHOOLNAME",
+        "phone": "RESPOTEL",
+        "address": "ADDRESS",
+        "respper": "RESPPER"
+      }
+    },
+    "hospital": {
+      "table": "BAS_HEALTHORG",
+      "//": "医院",
+      "districtField":"DISTRICTCODE",
+      "query": {
+        "tag.ORGTYPECODE":{"$regex":"46A00101|46A00102|46A00103"}
+      },      
+      "fieldMap": {
+        "name": "ORGNAME",
+        "phone": "RESPOTEL",
+        "address": "ADDRESS",
+        "respper": "RESPPER"
+      }
+    },
+    "government": {
+      "//": "政府机关",
+      "districtField":"DISTRICTCODE",
+      "table": "BAS_PARTYGOVT",
+      "query": {
+        "tag.PARTYGOVTNAME": {
+          "$regex": ".*人民政府.*$"
+        }
+      },
+      "fieldMap": {
+        "name": "PARTYGOVTNAME",
+        "phone": "DUTYTEL",
+        "address": "ADDRESS",
+        "respper": "CONTACTPER"
+      }
+    },
+    "development※01": {
+      "//": "住宅区",
+      "districtField":"DISTRICTCODE",
+      "table": "BAS_DEVELOPMENT",
+      "query": {
+        "tag.DEFOBJNAME": {
+          "$regex": ".*园.*$"
+        }
+      },
+      "fieldMap": {
+        "name": "DEFOBJNAME",
+        "phone": "DUTYTEL",
+        "address": "ADDRESS",
+        "respper": "CONTACTPER"
+      }
+    }
+  },
+  "importset":
+  {
+    "tunnel※01": {
+      "//": "重点桥梁",
+      "districtField":"DISTRICTCODE",
+      "table": "BAS_BRIDGE",
+      "fieldMap": {
+        "name": "BRIDGENAME",
+        "phone": "DUTYTEL",
+        "address": "ADDRESS",
+        "respper": "CONTACTPER"
+      }
+    },
+    "airport": {
+      "table": "BAS_AIRPORT",
+      "districtField":"DISTRICTCODE",
+      "//": "飞机场",
+      "fieldMap": {
+        "name": "AIRPORTNAME",
+        "phone": "RESPOTEL",
+        "address": "ADDRESS",
+        "respper": "RESPPER"
+      }
+    },
+    "portwharf": {
+      "table": "BAS_PORTWHARF",
+      "districtField":"DISTRICTCODE",
+      "//": "港口码头",
+      "fieldMap": {
+        "name": "PORTWHARFNAME",
+        "phone": "RESPOTEL",
+        "address": "ADDRESS",
+        "respper": "RESPPER"
+      }
+    },
+    "railwaystation": {
+      "table": "BAS_RAILWAYSTATION",
+      "districtField":"DISTRICTCODE",
+      "//": "火车站",
+      "fieldMap": {
+        "name": "STATIONNAME",
+        "phone": "RESPOTEL",
+        "address": "ADDRESS",
+        "respper": "RESPPER"
+      }
+    },
+    "Resrrvoir※01": {
+      "table": "BAS_RESERVOIR",
+      "//": "水库大坝",
+      "districtField":"CODE",
+      "fieldMap": {
+        "name": "NAME",
+        "phone": "TELEPHONE",
+        "address": "ADDRESS",
+        "respper": "TELEPHONE"
+      }
+    },
+    "Nuclearinfo※01": {
+      "table": "BAS_NUCLEARINFO",
+      "districtField":"DISTRICTCODE",
+      "//": "核电站",
+      "fieldMap": {
+        "name": "NUCLEARNAME",
+        "phone": "RESPOTEL",
+        "address": "DISTRICTNAME",
+        "respper": "RESPPER"
+      }
+    },
+    "powerplant※01": {
+      "//": "发电站",
+      "districtField":"DISTRICTCODE",
+      "table": "BAS_HYDSTATION",
+      "fieldMap": {
+        "name": "HYDSTATIONNAME",
+        "phone": "DUTYTEL",
+        "address": "ADDRESS",
+        "respper": "CONTACTPER"
+      }
+    }
+  },
+  "enterprise": {
+    "productionindustry": {
+      "table": "ANJIAN_DAGCHEMENT",
+      "districtField":"COUNTY",
+      "//": "危化品企业",
+      "fieldMap": {
+        "name": "DAGCHEMENTNAME",
+        "phone": "PRINCIPALTEL",
+        "address": "ADDRESS",
+        "longitude": "LONGITUDE",
+        "latitude": "LATITUDE",
+        "level": "HAZARDLEVELCODE",
+        "respper": "PRINCIPAL"
+      }
+    },
+    "coal": {
+      "table": "ANJIAN_COAL",
+      "//": "煤矿企业",
+      "districtField":"COUNTY",
+      "fieldMap": {
+        "name": "COALNAME",
+        "phone": "CONTROLCENTERTEL",
+        "address": "ADDRESS",
+        "longitude": "LONGITUDE",
+        "latitude": "LATITUDE",
+        "respper": "LEGAL_NAME"
+      }
+    },
+    "tailingpond": {
+      "table": "ANJIAN_TAILINGPOND",
+      "//": "非煤矿山企业",
+      "districtField":"COUNTY",
+      "fieldMap": {
+        "name": "WKKMC",
+        "phone": "WKKFZRYDDH",
+        "address": "WKKDZMC",
+        "longitude": "LONGITUDE",
+        "latitude": "LATITUDE",
+        "respper": "WKKFZR"
+      }
+    },
+    "ANJIAN_FIREWORKENT※01": {
+      "table": "ANJIAN_FIREWORKENT",
+      "//": "烟花爆竹企业",
+      "districtField":"COUNTY",
+      "fieldMap": {
+        "name": "FIREWORKENTNAME",
+        "phone": "TEL",
+        "address": "ADDRESS",
+        "longitude": "LONGITUDE",
+        "latitude": "LATITUDE",
+        "respper": "ARTIFICIALPER"
+      }
+    },
+    "ANJIAN_ENT_WHSMYHBZ※01": {
+      "table": "ANJIAN_ENT_WHSMYHBZ",
+      "//": "工贸企业",
+      "districtField":"COUNTY",
+      "fieldMap": {
+        "name": "WHSMYHBZNAME",
+        "phone": "CONTACTPERTEL",
+        "address": "ADDRESS",
+        "longitude": "LONGITUDE",
+        "latitude": "LATITUDE",
+        "respper": "CONTACTPER"
+      }
+    },
+    "majordanger": {
+      "//": "重大危险源",
+      "districtField":"COUNTY",
+      "table": "ANJIAN_DANGER",
+      "fieldMap": {
+        "name": "DANGERNAME",
+        "phone": "DUTYTEL",
+        "address": "ADDRESS",
+        "firmname": "FIRMNAME",
+        "district": "COUNTY",
+        "respper": "CONTACTPER"
+      }
+    },
+    "BAS_GEOLOGICHAZARD※01": {
+      "table": "BAS_GEOLOGICHAZARD",
+      "query":{"tag.GEOHAZARDTYPECODE":"20104.0100"},
+      "//": "地灾隐患点",
+      "districtField":"DISTRICTCODE",
+      "fieldMap": {
+        "id":"HAZARDID",
+        "name": "HAZARDNAME",
+        "type":"GEOHAZARDTYPECODE",
+        "address":"ADDRESS",
+        "org":"CHARGEDEPT",
+        "influence":"DISASTERSCALE",
+        "conncter":"MONRESPPER",
+        "phone":"MONRESPPEROTEL",
+        "hazardlevelcode":"HAZARDLEVELCODE",
+        "maxperson":"MAXPERSONNUM",
+        "paicha":"CHARGEDEPT",
+        "result":"MSTAMP",
+        "time":"FIRSTOCCTIME",
+        "question":"WEALTHDMG",
+        "send":"WEALTHDMG"
+      }
+    },
+    "metalnonmetal": {
+      "//": "hyj 金属非金属矿山",
+      "title": "金属非金属矿山",
+      "table": "ANJIAN_METALNONMETAL",
+      "fieldMap": {
+        "KSMC": "NAME",
+        "KSDZMC": "ADDRESS",
+        "CITY": "DISTRICT"
+      },
+      "districtField": "COUNTY"
+    },
+    "ANJIAN_OILGASFIELD※01": {
+      "//": "hyj 油气田",
+      "title": "油气田",
+      "table": "ANJIAN_OILGASFIELD",
+      "fieldMap": {
+        "SYDWMC": "NAME"
+      },
+      "districtField": "COUNTY",
+      "query": {
+        "tag.SYFL": {
+          "$regex": "01"
+        }
+      }
+    },
+    "ANJIAN_OILGASFIELD※02": {
+      "//": "hyj 油气田",
+      "title": "油气田",
+      "districtField": "COUNTY",
+      "query": {
+        "tag.SYFL": {
+          "$regex": "02"
+        }
+      },
+      "table": "ANJIAN_OILGASFIELD",
+      "fieldMap": {
+        "SYDWMC": "NAME"
+      }
+    }    
+  },
+  "RescueTeam":
+  {
+    "floodteam": {
+      "table": "JYXX_TEA_RESCUE",
+      "//": "救援队伍",
+      "districtField":"RESCOUNTY",
+      "query": {
+        "tag.RESCUETYPECODE": {
+          "$regex": "T001"
+        }
+      },
+      "fieldMap": {
+        "RESCUENAME": "NAME",
+        "ADDRESS": "ADDRESS",
+        "RESCOUNTY":"DISTRICT",
+        "RESCUETYPECODE":"RESCUECODE",
+        "ISHAVAIRPORT":"ISHAVAIRPORT",
+        "LEADER":"LEADER",
+        "LEADERMTEL":"LEADERMTEL",
+        "LEADERTEL":"LEADERTEL",
+        "TOTALPERNUM":"TOTALPERNUM",
+        "TEAMSTATYPECODE":"TEAMSTATYPECODE"
+      }
+    },
+    "fireteam": {
+      "table": "JYXX_TEA_RESCUE",
+      "//": "救援队伍",
+      "districtField":"RESCOUNTY",
+      "query": {
+        "tag.RESCUETYPECODE": {
+          "$regex": "T002"
+        }
+      },
+      "fieldMap": {
+        "RESCUENAME": "NAME",
+        "ADDRESS": "ADDRESS",
+        "RESCOUNTY":"DISTRICT",
+        "RESCUETYPECODE":"RESCUECODE",
+        "ISHAVAIRPORT":"ISHAVAIRPORT",
+        "LEADER":"LEADER",
+        "LEADERMTEL":"LEADERMTEL",
+        "LEADERTEL":"LEADERTEL",
+        "TOTALPERNUM":"TOTALPERNUM",
+        "TEAMSTATYPECODE":"TEAMSTATYPECODE"
+      }
+    },
+    "transportationteam": {
+      "table": "JYXX_TEA_RESCUE",
+      "//": "救援队伍",
+      "districtField":"RESCOUNTY",
+      "query": {
+        "tag.RESCUETYPECODE": {
+          "$regex": "T003"
+        }
+      },
+      "fieldMap": {
+        "RESCUENAME": "NAME",
+        "ADDRESS": "ADDRESS",
+        "RESCOUNTY":"DISTRICT",
+        "RESCUETYPECODE":"RESCUECODE",
+        "ISHAVAIRPORT":"ISHAVAIRPORT",
+        "LEADER":"LEADER",
+        "LEADERMTEL":"LEADERMTEL",
+        "LEADERTEL":"LEADERTEL",
+        "TOTALPERNUM":"TOTALPERNUM",
+        "TEAMSTATYPECODE":"TEAMSTATYPECODE"
+      }
+    },
+    "forestfireteam": {
+      "table": "JYXX_TEA_RESCUE",
+      "//": "救援队伍",
+      "districtField":"RESCOUNTY",
+      "query": {
+        "tag.RESCUETYPECODE": {
+          "$regex": "T004|T016"
+        }
+      },
+      "fieldMap": {
+        "RESCUENAME": "NAME",
+        "ADDRESS": "ADDRESS",
+        "RESCOUNTY":"DISTRICT",
+        "RESCUETYPECODE":"RESCUECODE",
+        "ISHAVAIRPORT":"ISHAVAIRPORT",
+        "LEADER":"LEADER",
+        "LEADERMTEL":"LEADERMTEL",
+        "LEADERTEL":"LEADERTEL",
+        "TOTALPERNUM":"TOTALPERNUM",
+        "TEAMSTATYPECODE":"TEAMSTATYPECODE"
+      }
+    },
+    "hazardousteam": {
+      "table": "JYXX_TEA_RESCUE",
+      "//": "救援队伍",
+      "districtField":"RESCOUNTY",
+      "query": {
+        "tag.RESCUETYPECODE": {
+          "$regex": "T005"
+        }
+      },
+      "fieldMap": {
+        "RESCUENAME": "NAME",
+        "ADDRESS": "ADDRESS",
+        "RESCOUNTY":"DISTRICT",
+        "RESCUETYPECODE":"RESCUECODE",
+        "ISHAVAIRPORT":"ISHAVAIRPORT",
+        "LEADER":"LEADER",
+        "LEADERMTEL":"LEADERMTEL",
+        "LEADERTEL":"LEADERTEL",
+        "TOTALPERNUM":"TOTALPERNUM",
+        "TEAMSTATYPECODE":"TEAMSTATYPECODE"
+      }
+    },
+    "mineteam": {
+      "table": "JYXX_TEA_RESCUE",
+      "//": "救援队伍",
+      "districtField":"RESCOUNTY",
+      "query": {
+        "tag.RESCUETYPECODE": {
+          "$regex": "T006|T014"
+        }
+      },
+      "fieldMap": {
+        "RESCUENAME": "NAME",
+        "ADDRESS": "ADDRESS",
+        "RESCOUNTY":"DISTRICT",
+        "RESCUETYPECODE":"RESCUECODE",
+        "ISHAVAIRPORT":"ISHAVAIRPORT",
+        "LEADER":"LEADER",
+        "LEADERMTEL":"LEADERMTEL",
+        "LEADERTEL":"LEADERTEL",
+        "TOTALPERNUM":"TOTALPERNUM",
+        "TEAMSTATYPECODE":"TEAMSTATYPECODE"
+      }
+    },
+    "nonmineteam": {
+      "table": "JYXX_TEA_RESCUE",
+      "//": "救援队伍",
+      "districtField":"RESCOUNTY",
+      "query": {
+        "tag.RESCUETYPECODE": {
+          "$regex": "T007|T008|T009|T010|T022"
+        }
+      },
+      "fieldMap": {
+        "RESCUENAME": "NAME",
+        "ADDRESS": "ADDRESS",
+        "RESCOUNTY":"DISTRICT",
+        "RESCUETYPECODE":"RESCUECODE",
+        "ISHAVAIRPORT":"ISHAVAIRPORT",
+        "LEADER":"LEADER",
+        "LEADERMTEL":"LEADERMTEL",
+        "LEADERTEL":"LEADERTEL",
+        "TOTALPERNUM":"TOTALPERNUM",
+        "TEAMSTATYPECODE":"TEAMSTATYPECODE"
+      }
+    },
+    "corecompetenceteam": {
+      "table": "JYXX_TEA_RESCUE",
+      "//": "救援队伍",
+      "districtField":"RESCOUNTY",
+      "query": {
+        "tag.RESCUETYPECODE": {
+          "$regex": "T011|T018|T020|T021"
+        }
+      },
+      "fieldMap": {
+        "RESCUENAME": "NAME",
+        "ADDRESS": "ADDRESS",
+        "RESCOUNTY":"DISTRICT",
+        "RESCUETYPECODE":"RESCUECODE",
+        "ISHAVAIRPORT":"ISHAVAIRPORT",
+        "LEADER":"LEADER",
+        "LEADERMTEL":"LEADERMTEL",
+        "LEADERTEL":"LEADERTEL",
+        "TOTALPERNUM":"TOTALPERNUM",
+        "TEAMSTATYPECODE":"TEAMSTATYPECODE"
+      }
+    }
+  },
+  "v_equipment":
+  {
+    "equipment": {
+      "//": "装备",
+      "table": "V_EQUIPMENT",
+      "districtField":"RESCOUNTY",
+      "query": {
+        "tag.EQUTYPEPARENTCODE":"1002"
+      }
+    },
+    "1001001": {
+      "//": "装备",
+      "table": "V_EQUIPMENT",
+"districtField":"RESCOUNTY",
+      "query": {
+        "tag.EQUTYPEPARENTCODE":"1003"
+      }
+    },
+    "1001002": {
+      "//": "装备",
+      "table": "V_EQUIPMENT",
+"districtField":"RESCOUNTY",
+      "query": {
+        "tag.EQUTYPEPARENTCODE":"1004"
+      }
+    },
+    "1002": {
+      "//": "装备",
+      "table": "V_EQUIPMENT",
+"districtField":"RESCOUNTY",
+      "query": {
+        "tag.EQUTYPEPARENTCODE":"1005"
+      }
+    },
+    "1002001": {
+      "//": "装备",
+      "table": "V_EQUIPMENT",
+"districtField":"RESCOUNTY",
+      "query": {
+        "tag.EQUTYPEPARENTCODE":"1006"
+      }
+    },
+    "1002002": {
+      "//": "装备",
+      "table": "V_EQUIPMENT",
+"districtField":"RESCOUNTY",
+      "query": {
+        "tag.EQUTYPEPARENTCODE":"1007"
+      }
+    },
+    "1002003": {
+      "//": "装备",
+      "table": "V_EQUIPMENT",
+"districtField":"RESCOUNTY",
+      "query": {
+        "tag.EQUTYPEPARENTCODE":"1008"
+      }
+    },
+    "1002004": {
+      "//": "装备",
+      "table": "V_EQUIPMENT",
+"districtField":"RESCOUNTY",
+      "query": {
+        "tag.EQUTYPEPARENTCODE":"1009"
+      }
+    },
+    "1002005": {
+      "//": "装备",
+      "table": "V_EQUIPMENT",
+"districtField":"RESCOUNTY",
+      "query": {
+        "tag.EQUTYPEPARENTCODE":"1010"
+      }
+    },
+    "1002006": {
+      "//": "装备",
+      "table": "V_EQUIPMENT",
+"districtField":"RESCOUNTY",
+      "query": {
+        "tag.EQUTYPEPARENTCODE":"1011"
+      }
+    },
+    "1002009": {
+      "//": "装备",
+      "table": "V_EQUIPMENT",
+"districtField":"RESCOUNTY",
+      "query": {
+        "tag.EQUTYPEPARENTCODE":"1014"
+      }
+    },
+    "1002010": {
+      "//": "装备",
+      "table": "V_EQUIPMENT",
+"districtField":"RESCOUNTY",
+      "query": {
+        "tag.EQUTYPEPARENTCODE":"1015"
+      }
+    },
+    "v_equipment※16": {
+      "//": "装备",
+      "table": "V_EQUIPMENT",
+"districtField":"RESCOUNTY",
+      "query": {
+        "tag.EQUTYPEPARENTCODE":"1016"
+      }
+    },
+    "v_equipment※17": {
+      "//": "装备",
+      "table": "V_EQUIPMENT",
+"districtField":"RESCOUNTY",
+      "query": {
+        "tag.EQUTYPEPARENTCODE":"1017"
+      }
+    },
+    "v_equipment※18": {
+      "//": "装备",
+      "table": "V_EQUIPMENT",
+"districtField":"RESCOUNTY",
+      "query": {
+        "tag.EQUTYPEPARENTCODE":"1018"
+      }
+    },
+    "v_equipment※19": {
+      "//": "装备",
+      "table": "V_EQUIPMENT",
+"districtField":"RESCOUNTY",
+      "query": {
+        "tag.EQUTYPEPARENTCODE":"1019"
+      }
+    },
+    "v_equipment※20": {
+      "//": "装备",
+      "table": "V_EQUIPMENT",
+"districtField":"RESCOUNTY",
+      "query": {
+        "tag.EQUTYPEPARENTCODE":"1020"
+      }
+    }
+  },
+  "rescuesupport":
+  {
+    "ANJIAN_REPERTORY※01": {
+      "//": "储备库",
+      "districtField":"DISTRICTCODE",
+      "table": "JC_REPERTORY"
+    },
+    "JC_WARBASE※01": {
+      "//": "战保基地",
+      "districtField":"DISTRICTCODE",
+      "table": "JC_WARBASE"
+    },
+    "shelter": {
+      "//": "避难场所",
+      "districtField":"DISTRICTCODE",
+      "table": "BAS_SHELTER"
+    },
+    "DisasterPer※01": {
+      "//": "灾情信息员",
+      "districtField":"DISTRICTCODE",
+      "table": "JC_DISINFOPER",
+      "query": {
+        "tag.POST": {
+          "$regex": ".*乡.*|.*镇.*$"
+        }
+      }
+    },
+    "Expert※01": {
+      "//": "专家",
+      "districtField":"DISTRICT",
+      "table": "JC_EXPERT"
+    }
+  }
+}

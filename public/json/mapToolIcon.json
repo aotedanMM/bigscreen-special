@@ -1,0 +1,48 @@
+{
+    "tool": [{
+            "iconName": "gisMapTool-toolbox",
+            "title": "工具箱",
+            "key": "toolBox"
+        },
+        {
+            "iconName": "gisMapTool-zhoubiantianqi",
+            "title": "周边天气",
+            "key": "surroundingWeather"
+        },
+        {
+            "iconName": "gisMapTool-yuqingxitong",
+            "title": "舆情监控",
+            "key": "publicOpinionMonitor"
+        },
+        {
+            "iconName": "gisMapTool-headZQYP",
+            "title": "互联网情报",
+            "key": "internetIntelligence"
+        },
+        {
+            "iconName": "gisMapTool-celiang",
+            "title": "测量工具",
+            "key": "measuringTools"
+        },
+        {
+            "iconName": "gisMapTool-jiaotongguanzhi",
+            "title": "交通管制",
+            "key": "trafficControl"
+        },
+        {
+            "iconName": "gisMapTool-daolusunhui",
+            "title": "道路损毁",
+            "key": "roadDamage"
+        },
+        {
+            "iconName": "gisMapTool-huichuanimg",
+            "title": "回传图像",
+            "key": "returnImage"
+        },
+        {
+            "iconName": "gisMapTool-shortCut",
+            "title": "绿色通道",
+            "key": "greenChannel"
+        }
+    ]
+}

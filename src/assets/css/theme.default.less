@@ -1,0 +1,165 @@
+@url: '../img/default/';
+@url16 : '../img/halfScreen';
+.skin-default{
+
+  /* panel背景 start;*/
+  .cmp-panel-cnt--bg {
+    background: url('@{url}/panel/panelbg.png') no-repeat 0 0;
+    background-size: 100% 100%;
+    
+    // background: url('@{url}/panel/panelbg.png') no-repeat -39px -15px;
+    // outline: 1px solid red;
+    // /deep/.cmp-panel-shrink{
+    //   background:url('@{url}/panel/panel_shrink.png') no-repeat 50% 50%; 
+    // }
+  }
+  .cmp-panel-cnt--longBg {
+    background: url('@{url}/panel/panelbg_B.png') no-repeat -39px -15px;
+    // outline: 1px solid green;
+    .flicker-cube-box{
+      left:172px;
+    }
+  }
+
+  /*head部分的gif动画*/ 
+  .layout-header_bg{
+    &:before{
+      position:absolute;
+      top:0;
+      left:0;
+      right:0;
+      height:80px;
+      content:'';
+      background:url('@{url}/layout/head_bg_new.png') no-repeat center 0;
+      pointer-events:none;
+      // width: 1280px;
+      background-size: 100% 110%;
+    }
+  }
+
+
+  /* 风险隐患排查*/ 
+  .RiskHazardHome-box{
+    background: url('@{url}/panel/panelbg-big.png') no-repeat -37px -15px;
+    // outline: 1px solid yellow;
+    }
+    /* 常态——应急资源 */ 
+  .emergency_panel_bg {
+    background: url('@{url}/panel/panelbg_yjzr.png') no-repeat 0 0;
+    background-size: 100% 100%;
+    // outline: 1px solid purple;
+    // overflow: hidden;
+  }
+  /*视频回传、无人机*/ 
+  .module-item-bg {
+    background: url('@{url}/panel/panelbg.png') -39px -15px no-repeat;
+    // outline:1px solid pink;
+  } 
+  /*非常态——右侧统计默认页*/ 
+  .unNormalRight-default{
+    background: url('@{url}/panel/bg.png') -55px -80px no-repeat;
+
+  }
+  /* panel背景 end;*/
+//---------------------------------
+/* 弹出框的panel start*/
+// 右侧弹出窗口 start
+.minimize-position{
+  position:absolute;
+  // top:960px;
+  // left:890px;
+  z-index:9999;  
+  width: 110px;
+  height: 36px;
+  background: url('@{url}/panel/toMinifyBtn.png') no-repeat 0 0;
+  cursor:pointer;
+  &:hover {
+    background: url('@{url}/panel/toMinifyBtnHover.png') no-repeat 0 0;
+  }
+}
+.popupPanelRight_bg {
+  // background: url('@{url}/panel/popupPanelRight_bg.png') no-repeat 0 -10px;
+  background:transparent;
+  background-size: 100% 100%;  
+  .closed-container{
+    // background: url('@{url}/panel/popupPanelRightClose_bg.png') no-repeat 0 0;
+    color: #00e4ff;
+  }
+}
+// 右侧弹出窗口 end
+
+// 中间弹出窗口start
+.popupPanelCenter_bg{
+  background: url('@{url}/panel/popupPanelCenter_bg.png') no-repeat  50% 50%;
+  background-size:100% 100%;
+  .closed-container{
+    background: url('@{url}/panel/popupPanelRightClose_bg.png') no-repeat 0 0;
+    background-size: 100% 100%;
+    color: #00e4ff; 
+  }
+}
+// 中间弹出窗口end
+
+// 中间底部弹出窗口 start
+.popupPanelBottom_bg{  
+  background: url('@{url}/panel/popupPanelBottom_bg.png') no-repeat 50% 0;
+  background-size: 100% 100%;
+  .closed-container{
+    background: url('@{url}/panel/popupPanelRightClose_bg.png') no-repeat 0 0;
+    background-size: 100% 100%;
+    color: #00e4ff; 
+  }
+}
+// 中间底部弹出窗口 end
+
+/* 弹出框的panel end*/
+
+  /*******layoutHome.vue*****************************/ 
+  .decPage-layout-bg {
+    background: url('@{url}/layout/bg.png') no-repeat 50%  0;
+    background-size: cover;
+  }
+  .main-map-box-bg {
+    background: url('@{url}/layout/gisbg.png') no-repeat;
+    background-size: 100% 100%;
+  }
+  // .main-map-box-bg2{
+  //   background:url('@{url}/layout/gisdemo.png') no-repeat 5% 50px;
+  //   background-size: 100% 100%;
+  // }
+
+  /*  head部分 start */ 
+  
+  .layout-header_left_bg {
+    background: url('@{url}/layout/lefttitlebgNew.png') no-repeat 0 0;
+    /*background-size: 100% 100%;*/
+  }
+  /* 动画 start*/ 
+  .animate-map-door1 {
+    top: 50%;
+    left: 22px;
+  }
+  .animate-map-door2 {
+      top: 50.2%;
+      right: 17px;
+  }
+  /* 动画 end*/
+  /* 16:9 */
+  .gisScreen-2rd{
+    .decPage-layout-bg{
+      // background: url('@{url16}/layout/bg.jpg') no-repeat 50% 0;
+    }
+    .main-map-box-bg {
+      background: url('@{url16}/layout/map_bg.png') no-repeat 50% -50px;
+    }
+    .main-map-box-bg2{
+      // background: url('@{url16}/layout/gisdemo.png') no-repeat 50% 0px;
+      // background-size: 100% 100%;
+      z-index:2;
+    }
+    .layout-header_logo-img{
+      transform: scale(.95) translateX(-40px);
+    }
+  }
+  /*  head部分 end */ 
+}

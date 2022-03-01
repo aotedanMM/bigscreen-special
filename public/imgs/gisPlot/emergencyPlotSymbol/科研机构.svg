@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+    <title>科研机构</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="28" height="28" rx="14"></rect>
+        <filter x="-10.7%" y="-10.7%" width="121.4%" height="121.4%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.26 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="其他图标" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="玉董" transform="translate(-1228.000000, -435.000000)">
+            <g id="科研机构" transform="translate(1230.000000, 437.000000)">
+                <g id="矩形">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <rect stroke="#FFFFFF" stroke-width="1" stroke-linejoin="square" fill="#237FD3" fill-rule="evenodd" x="0.5" y="0.5" width="27" height="27" rx="13.5"></rect>
+                </g>
+                <g id="分组" transform="translate(2.000000, 4.000000)">
+                    <path d="M12.0917921,0 C13.788996,0 17.1788784,2.48501721 17.1788784,9.67496186 C17.1788784,16.8649065 13.788996,20.1428571 12.0917921,20.1428571 C10.3945882,20.1428571 7.11111111,15.2468475 7.11111111,9.67496186 C7.11111111,4.1030762 10.3945882,4.15846244e-16 12.0917921,0 Z" id="路径" stroke="#FFFFFF"></path>
+                    <path d="M12.0917921,0 C13.788996,0 17.1788784,2.48501721 17.1788784,9.67496186 C17.1788784,16.8649065 13.788996,20.1428571 12.0917921,20.1428571 C10.3945882,20.1428571 7.11111111,15.2468475 7.11111111,9.67496186 C7.11111111,4.1030762 10.3945882,4.15846244e-16 12.0917921,0 Z" id="路径-copy-3" stroke="#FFFFFF" transform="translate(12.144995, 10.071429) rotate(114.000000) translate(-12.144995, -10.071429) "></path>
+                    <path d="M12.0917921,0 C13.788996,0 17.1788784,2.48501721 17.1788784,9.67496186 C17.1788784,16.8649065 13.788996,20.1428571 12.0917921,20.1428571 C10.3945882,20.1428571 7.11111111,15.2468475 7.11111111,9.67496186 C7.11111111,4.1030762 10.3945882,4.15846244e-16 12.0917921,0 Z" id="路径-copy-4" stroke="#FFFFFF" transform="translate(12.144995, 10.071429) rotate(67.000000) translate(-12.144995, -10.071429) "></path>
+                    <ellipse id="椭圆形" fill="#FFFFFF" cx="12.0112182" cy="9.85714286" rx="1.77777778" ry="1.71428571"></ellipse>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

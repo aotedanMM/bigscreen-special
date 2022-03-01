@@ -1,0 +1,111 @@
+@gisMapToolMore: '../../../../assets/img/gisUI/gisMapToolMore';
+@imgUrl: '../../../../assets/img/areaSelect';
+
+.GisAreaSelection {
+  width: 60px;
+  height: 60px;
+  top: 58px !important;
+  right: -10px;
+  z-index: 0;
+  color: white;
+}
+
+//区域选择-头
+.as-title {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  background: url("@{imgUrl}/areaselection.png") no-repeat;
+  background-size: 100% 100%;
+}
+
+.as-title:hover {
+  background: url("@{imgUrl}/areaselection_hover.png") no-repeat;
+  background-size: 100% 100%;
+}
+
+//内容-下面子框
+.as-content {
+  //子框-每个条目
+  & .bd_item {
+    position: relative;
+    height: 60px;
+    width: 60px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-size: 100% 100%;
+
+    //每个子框的背景图
+    &:nth-child(1) {
+      background: url("@{imgUrl}/as_watershed.png") no-repeat;
+    }
+    &:nth-child(2) {
+      background: url("@{imgUrl}/as_rivernetwork.png") no-repeat;
+    }
+    &:nth-child(3) {
+      background: url("@{imgUrl}/as_rainstormarea.png") no-repeat;
+    }
+
+    // 提示框隐藏
+    & .text {
+      display: none;
+      background: rgba(1, 235, 245, 0.5);
+      border: 1px #01ebf5 solid;
+      border-radius: 2px;
+      position: absolute;
+      top: -16px;
+      right: 54px;
+      height: 42px;
+      line-height: 42px;
+      min-width: 130px;
+      text-align: center;
+      font-size: 24px;
+      color: #fff;
+      z-index: 1;
+    }
+
+    //每个子框的背景图-悬浮
+    &:hover {
+      // 背景图片切换
+      &:nth-child(1) {
+        background: url("@{imgUrl}/as_watershed_hover.png") no-repeat;
+      }
+      &:nth-child(2) {
+        background: url("@{imgUrl}/as_rivernetwork_hover.png") no-repeat;
+      }
+      &:nth-child(3) {
+        background: url("@{imgUrl}/as_rainstormarea_hover.png") no-repeat;
+      }
+
+      // 显示提示框
+      & .text {
+        display: block;
+        background: url('@{gisMapToolMore}/dituhoverbg.png') no-repeat 0 0;
+        background-size: 100% 100%;
+        border: none;
+        width: 218px;
+        & > ul {
+          display: block;
+          background: url('@{gisMapToolMore}/fhmbzhabf.png') no-repeat 0 0;
+          background-size: 100% 100%;
+        }
+      }
+    }
+  }
+
+  & .bd_item.item_1{
+    background: url("@{imgUrl}/as_watershed_hover.png") no-repeat;
+  }
+  & .bd_item.item_2{
+    background: url("@{imgUrl}/as_rivernetwork_hover.png") no-repeat;
+  }
+  & .bd_item.item_3{
+    background: url("@{imgUrl}/as_rainstormarea_hover.png") no-repeat;
+  }
+}
+
+.as-prop{
+  position: absolute;
+  right: 20px;
+  width: 470px;
+}

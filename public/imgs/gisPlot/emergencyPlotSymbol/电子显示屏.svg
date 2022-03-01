@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+    <title>电子显示屏</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="28" height="28" rx="14"></rect>
+        <filter x="-10.7%" y="-10.7%" width="121.4%" height="121.4%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.26 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="其他图标" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="玉董" transform="translate(-382.000000, -78.000000)">
+            <g id="电子显示屏" transform="translate(384.000000, 80.000000)">
+                <g id="矩形">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <rect stroke="#FFFFFF" stroke-width="1" stroke-linejoin="square" fill="#68AE05" fill-rule="evenodd" x="0.5" y="0.5" width="27" height="27" rx="13.5"></rect>
+                </g>
+                <path d="M9.25025153,23 C9.25080026,22.2185106 9.88433375,21.5851253 10.6660059,21.5845767 L12.084745,21.5845767 L12.084745,20.167164 L7.12512763,20.167164 C6.56081953,20.167165 6.01968198,19.9427749 5.62102935,19.5434691 C5.22237671,19.1441634 4.99894697,18.6027335 5.00000373,18.0385583 L5.00000373,8.124627 C4.99973978,7.56123237 5.22341478,7.02082261 5.62179485,6.62234914 C6.02017492,6.22387566 6.56060626,5.99999994 7.12413272,6 L19.8748761,6 C21.0485496,6 22,6.95122791 22,8.124627 L22,18.0385583 C22,19.2119574 21.0485496,20.1631853 19.8748761,20.1631853 L14.9162537,20.1631853 L14.9162537,21.580598 L16.3339978,21.580598 C17.11567,21.5811466 17.7492035,22.2145319 17.7497522,22.9960213 L9.25025153,23 Z M13,19.5 C13,19.7761424 13.2238576,20 13.5,20 C13.7761424,20 14,19.7761424 14,19.5 C14,19.2238576 13.7761424,19 13.5,19 C13.2238576,19 13,19.2238576 13,19.5 L13,19.5 Z M6,16.8225321 C6.00055188,17.4730081 6.47851829,18.0000003 7.0679288,18 L19.9320712,18 C20.5212537,17.9993929 20.998898,17.472756 21,16.8225321 L21,8.17857143 C20.9994487,7.52791657 20.5216435,7.00060837 19.9320712,7 L7.0679288,7 C6.78469644,7.00029254 6.51316985,7.12474374 6.31308184,7.34597574 C6.11299384,7.56720774 6.00073461,7.86709834 6.00099993,8.17967496 L6,16.8225321 Z" id="联合_7" fill="#FFFFFF" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>

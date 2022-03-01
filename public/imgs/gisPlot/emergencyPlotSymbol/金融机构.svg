@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+    <title>金融机构</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="28" height="28" rx="14"></rect>
+        <filter x="-10.7%" y="-10.7%" width="121.4%" height="121.4%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.26 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="其他图标" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="玉董" transform="translate(-1227.000000, -79.000000)">
+            <g id="金融机构" transform="translate(1229.000000, 81.000000)">
+                <g id="矩形">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <rect stroke="#FFFFFF" stroke-width="1" stroke-linejoin="square" fill="#237FD3" fill-rule="evenodd" x="0.5" y="0.5" width="27" height="27" rx="13.5"></rect>
+                </g>
+                <path d="M21.625,5.33818563 C21.625,5.15227068 21.4678778,5 21.2758275,5 C20.487542,5 19.8963278,5 19.5021851,5 C19.3170781,5 19.0394177,5 18.6692038,5 C18.5383323,5 18.4204498,5.07204204 18.3592163,5.18612621 L14.4078582,12.7535512 L14.2727299,12.7535512 L10.3213172,5.18612621 C10.2646135,5.07204204 10.142474,5 10.0113843,5 L7.34805691,5 C7.29135321,5 7.23464951,5.01695418 7.18220269,5.04230621 C7.01187329,5.13103835 6.95085815,5.33385465 7.04254459,5.49869572 L11.9018713,14.1816632 L9.23854398,14.1816632 C9.04649363,14.1816632 8.88937145,14.3339339 8.88937145,14.5198488 L8.88937145,15.8466583 C8.88937145,16.0325204 9.04649363,16.1845799 9.23854398,16.1845799 L12.7880644,16.1845799 L12.7880644,17.912691 L9.23854398,17.912691 C9.04649363,17.912691 8.88937145,18.0649617 8.88937145,18.2508238 L8.88937145,19.577422 C8.88937145,19.7635482 9.04649363,19.9156076 9.23854398,19.9156076 L12.7880644,19.9156076 L12.7880644,22.6620785 C12.7880644,22.8479406 12.9454049,23 13.1375098,23 L15.5213027,23 C15.7134076,23 15.8705298,22.8479406 15.8705298,22.6620785 L15.8705298,19.9156076 L19.4332575,19.9156076 C19.6253624,19.9156076 19.7824846,19.7635482 19.773698,19.577422 L19.773698,18.2464928 C19.773698,18.0606307 19.6166304,17.9085713 19.4245254,17.9085713 L15.8617978,17.9085713 L15.8617978,16.1802489 L19.4245254,16.1802489 C19.6166304,16.1802489 19.773698,16.0281895 19.773698,15.8423273 L19.773698,14.5155179 C19.773698,14.3296029 19.6166304,14.1775435 19.4245254,14.1775435 L16.735002,14.1775435 L21.5813398,5.49869572 C21.6117928,5.44793883 21.625,5.39306223 21.625,5.33818563 Z" id="Fill-3" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,137 @@
+{
+  "//mark": "true有与vuex相关,false则没有",
+  "mark": true,
+  "//vuexList": "与vuex相关的字段",
+  "vuexList": "total",
+  "list": [
+    {
+      "title": "力量部署",
+      "key": "ForceDeployment",
+      "iconName": "YJ-navIcon-rowB8",
+      "isMutex": false,
+      "total": 0,
+      "leftComponentName": "",
+      "rightComponentName": "",
+      "is2d": "2d",
+      "circleFlagd": false,
+      "//isOpen": "是否打开同时是高亮的字段",
+      "isOpen": false,
+      "mutexkey": [
+        "ToolIconEventOverview.greenChannel,trafficControl,roadDamage",
+        "rescueHelp.RescueNeeds,MaterialDemand,ShleterLeft,Deployment,_MaterialAllot,DispatchAdvice"
+      ]
+    },
+    {
+      "title": "救援需求",
+      "key": "RescueNeeds",
+      "iconName": "YJ-navIcon-rowB9",
+      "isMutex": false,
+      "total": 0,
+      "leftComponentName": "RescueDemand",
+      "rightComponentName": "RescueDemandRight",
+      "is2d": "2d",
+      "circleFlagd": false,
+      "vuexModuelName": "eventPushStore",
+      "pushLocationKeyArr": [
+        "SEND_RESCUEDEMAND"
+      ],
+      "isOpen": false,
+      "mutexkey": [
+        "ToolIconEventOverview.greenChannel,trafficControl,roadDamage",
+        "rescueHelp.ForceDeployment,MaterialDemand,ShleterLeft,Deployment,_MaterialAllot,DispatchAdvice"
+      ]
+    },
+    {
+      "title": "物资需求",
+      "key": "MaterialDemand",
+      "iconName": "YJ-navIcon-rowB10",
+      "isMutex": false,
+      "total": 0,
+      "leftComponentName": "",
+      "rightComponentName": "",
+      "is2d": "2d",
+      "circleFlagd": false,
+      "isOpen": false,
+      "mutexkey": [
+        "ToolIconEventOverview.greenChannel,trafficControl,roadDamage",
+        "rescueHelp.ForceDeployment,RescueNeeds,ShleterLeft,Deployment,_MaterialAllot,DispatchAdvice"
+      ]
+    },
+    {
+      "title": "安置点",
+      "key": "ShleterLeft",
+      "iconName": "YJ-navIcon-rowB11",
+      "isMutex": false,
+      "total": 0,
+      "leftComponentName": "ShleterLeft",
+      "rightComponentName": "ShelterRight",
+      "is2d": "2d",
+      "circleFlagd": false,
+      "vuexModuelName": "eventPushStore",
+      "pushLocationKeyArr": [
+        "SEND_PERSONNELPLACEMENT"
+      ],
+      "isOpen": false,
+      "mutexkey": [
+        "ToolIconEventOverview.greenChannel,trafficControl,roadDamage",
+        "rescueHelp.ForceDeployment,RescueNeeds,MaterialDemand,Deployment,_MaterialAllot,DispatchAdvice"
+      ]
+    },
+    {
+      "title": "调度部署",
+      "key": "Deployment",
+      "iconName": "YJ-navIcon-rowB12",
+      "isMutex": false,
+      "total": 0,
+      "leftComponentName": "Deployment",
+      "rightComponentName": "DeploymentRight",
+      "is2d": "2d",
+      "circleFlagd": false,
+      "vuexModuelName": "eventPushStore",
+      "pushLocationKeyArr": [
+        "SEND_HURRYTEAM"
+      ],
+      "isOpen": false,
+      "mutexkey": [
+        "ToolIconEventOverview.greenChannel,trafficControl,roadDamage",
+        "rescueHelp.ForceDeployment,RescueNeeds,MaterialDemand,ShleterLeft,_MaterialAllot,DispatchAdvice"
+      ]
+    },
+    {
+      "title": "物资调拨",
+      "key": "_MaterialAllot",
+      "iconName": "YJ-navIcon-rowB13",
+      "isMutex": false,
+      "total": 0,
+      "leftComponentName": "",
+      "rightComponentName": "",
+      "is2d": "2d",
+      "circleFlagd": false,
+      "vuexModuelName": "eventPushStore",
+      "pushLocationKeyArr": [
+        "equipment_dispatch"
+      ],
+      "isOpen": false,
+      "mutexkey": [
+        "ToolIconEventOverview.greenChannel,trafficControl,roadDamage",
+        "rescueHelp.ForceDeployment,RescueNeeds,MaterialDemand,ShleterLeft,Deployment,DispatchAdvice"
+      ]
+    },
+    {
+      "title": "调拨建议",
+      "key": "DispatchAdvice",
+      "iconName": "YJ-navIcon-dbjy",
+      "isMutex": false,
+      "total": 0,
+      "leftComponentName": "DispatchAdvice",
+      "rightComponentName": "DispatchAdviceRightBox",
+      "is2d": "2d",
+      "circleFlagd": false,
+      "isOpen": false,
+      "mutexkey": [
+        "ToolIconEventOverview.greenChannel,trafficControl,roadDamage",
+        "rescueHelp.ForceDeployment,RescueNeeds,MaterialDemand,ShleterLeft,Deployment,_MaterialAllot"
+      ]
+    }
+  ]
+}

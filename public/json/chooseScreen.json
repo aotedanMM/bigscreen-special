@@ -1,0 +1,12 @@
+[
+    {
+        "title": "操作屏",
+        "url" : "http://172.17.38.79/dashboard/NewOperate.html",
+        "type" : "1"
+    },
+    {
+        "title" : "显示屏",
+        "url" : "http://localhost:8888/#/main",
+        "type" : "2"
+    }
+]

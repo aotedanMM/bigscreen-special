@@ -1,0 +1,545 @@
+#treeDetails {
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    overflow: hidden;
+    right: 0px;
+    top: 76px;
+}
+
+.New_Tree_Details {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url("../../img/decisionSupport/treeDetail/treeline.gif") no-repeat;
+    background-size: 100% 100%;
+    overflow: hidden;
+    margin-top: -10px;
+}
+
+.treeline1 {
+    background: url("../../img/decisionSupport/treeDetail/treeline1.gif") no-repeat;
+    background-size: 100% 100%;
+}
+
+.treeline2 {
+    background: url("../../img/decisionSupport/treeDetail/treeline2.gif") no-repeat;
+    background-size: 100% 100%;
+}
+
+.treeline3 {
+    background: url("../../img/decisionSupport/treeDetail/treeline3.gif") no-repeat;
+    background-size: 100% 100%;
+}
+
+.treeline4 {
+    background: url("../../img/decisionSupport/treeDetail/treeline4.gif") no-repeat;
+    background-size: 100% 100%;
+}
+
+
+/*新样式*/
+
+.New_Tree_Details_tree {
+    position: absolute;
+    float: left;
+    top: 200px;
+    left: 405px;
+}
+
+.New_Tree_Details_tree>ul {
+    position: absolute;
+    margin: 0;
+    list-style: none;
+    padding: 0
+}
+
+.New_Tree_Details_tree .list_btn_mapsC {
+    position: absolute;
+    font-size: 32px;
+    font-weight: 600;
+    color: rgb(1, 246, 246);
+    width: 200px;
+    height: 200px;
+    background: url(../../img/decisionSupport/treeDetail/circle.png) no-repeat center top;
+    text-align: center;
+    line-height: 237px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.list_btn_mapsC.treeDotAct {
+    color: yellow;
+    background: url(../../img/decisionSupport/treeDetail/ciclehover.png) no-repeat center top;
+}
+
+.New_Tree_Details_tree .list_btn_mapsC:first-child {
+    top: 74px;
+    left: 176px;
+}
+
+.New_Tree_Details_tree .list_btn_mapsC:nth-child(2) {
+    top: -114px;
+    left: -51px;
+    text-align: center;
+}
+
+.New_Tree_Details_tree .list_btn_mapsC:nth-child(3) {
+    top: -92px;
+    /*left: 305px;*/
+    left: 288px;
+}
+
+.New_Tree_Details_tree .list_btn_mapsC:nth-child(4) {
+    top: 43px;
+    left: -196px;
+}
+
+.list_btn_mapsC span {
+    position: absolute;
+    top: 27px;
+    left: 46%;
+    transform: translateX(-50%);
+    color: rgb(1, 246, 246);
+    font-size: 28px;
+    height: 30px;
+    line-height: 25px;
+    background: url(../../img/decisionSupport/treeDetail/arrow2.png) no-repeat left center, url(../../img/decisionSupport/treeDetail/arrow1.png) no-repeat right center;
+    min-width: 73px;
+}
+
+.list_btn_mapsC.treeDotAct span {
+    color: yellow;
+    background: url(../../img/decisionSupport/treeDetail/arrowhover2.png) no-repeat left center, url(../../img/decisionSupport/treeDetail/arrowhover1.png) no-repeat right center;
+}
+
+.start-wrap {
+    position: absolute;
+    width: 500px;
+    height: 200px;
+    top: 40px;
+    left: 409px;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.start-wrap>div {
+    position: relative;
+}
+
+.start-wrap>div>div {
+    position: absolute;
+    border-radius: 100%;
+    background: #07e4f4;
+    box-shadow: rgba(7, 228, 244, 0.8)0px 0px 28px 3px;
+}
+
+.start1 {
+    top: 50px;
+    left: 50px;
+    width: 4px;
+    height: 4px;
+}
+
+.start2 {
+    top: 330px;
+    left: 348px;
+    width: 4px;
+    height: 4px;
+}
+
+.start3 {
+    top: 447px;
+    left: 151px;
+    width: 4px;
+    height: 4px;
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+}
+
+.start4 {
+    top: 235px;
+    left: -70px;
+    width: 4px;
+    height: 4px;
+    -webkit-animation-delay: 1.5s;
+    animation-delay: 1.5s;
+}
+
+.start5 {
+    top: 349px;
+    left: 465px;
+    width: 4px;
+    height: 4px;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+.start {
+    animation: star 1.5s ease-in-out infinite;
+    -webkit-animation: star 1.5s ease-in-out infinite;
+}
+
+@keyframes star {
+    0% {
+        opacity: 0.3;
+        transform: scale(0.8);
+        /* box-shadow: #07e4f4 0px 0px 16px 3px; */
+    }
+    50% {
+        opacity: 1;
+        transform: scale(0.9);
+        /* box-shadow: #07e4f4 0px 0px 16px 3px; */
+    }
+    100% {
+        opacity: 0.3;
+        transform: scale(0.8);
+        /* box-shadow: #07e4f4 0px 0px 16px 3px; */
+    }
+}
+
+@-webkit-keyframes star {
+    0% {
+        opacity: 0.3;
+        transform: scale(0.8);
+        /* box-shadow: #07e4f4 0px 0px 16px 3px; */
+    }
+    50% {
+        opacity: 1;
+        transform: scale(0.9);
+        /* box-shadow: #07e4f4 0px 0px 16px 3px; */
+    }
+    100% {
+        opacity: 0.3;
+        transform: scale(0.8);
+        /* box-shadow: #07e4f4 0px 0px 16px 3px; */
+    }
+}
+
+.New_Tree_Details .list_dialong_new {
+    width: 375px;
+    height: 100%;
+    background: url(../../img/decisionSupport/treeDetail/table_tankuang1.png) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    left: -600px;
+    float: left;
+    overflow: hidden;
+    display: none;
+}
+
+.close_list_dialong_new {
+    width: 15px;
+    height: 60px;
+    position: absolute;
+    top: 414px;
+    right: 4px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 40px;
+}
+
+.map_ck_Btn {
+    cursor: pointer;
+    width: 100%;
+    height: 50px;
+    text-align: left;
+    line-height: 50px;
+}
+
+.close_list_dialong_new_ad {
+    width: 97%;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    color: #00d5ea;
+    font-size: 28px;
+}
+
+.map_ulList {
+    width: 95%;
+    overflow-y: auto;
+    height: 98%;
+}
+
+.map_ulList li span:nth-child(1) {
+    float: left;
+    margin-left: 20px;
+}
+
+.map_ulList li span:nth-child(1):before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(../../img/decisionSupport/treeDetail/tubiaoxuanzhong.png) no-repeat;
+    background-size: 100%;
+    margin-right: 5px;
+}
+
+.map_ulList li span:nth-child(2) {
+    float: right;
+    margin-right: 10px;
+}
+
+.map_ulList li:nth-child(1) {
+    margin-top: 15px;
+}
+
+.map_ulList li:nth-child(even) {
+    height: 50px;
+    line-height: 50px;
+    background: url("../../img/decisionSupport/treeDetail/tiaotiaotiao.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+.map_ulList li {
+    cursor: pointer;
+    width: 82%;
+    height: 58px;
+    text-align: left;
+    line-height: 58px;
+    margin-left: 12%;
+}
+
+.map_ck_Btn span {
+    color: #00d5ea;
+    font-size: 24px;
+}
+
+.New_Tree_Details .map_ulList .MakeNot_active {
+    background: url("../../img/decisionSupport/treeDetail/wenziData.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+.New_Tree_Details .map_ulList .MakeNot_active span {
+    color: #fff;
+}
+
+.map_ulList .MakeNot_active span:nth-child(1):before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(../../img/decisionSupport/treeDetail/tubiaoweixuanzhong.png) no-repeat;
+    background-size: 100%;
+    margin-right: 5px;
+}
+
+
+/*发光柱*/
+
+@keyframes linebar1 {
+    0% {
+        transform: translateY(500px);
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    80% {
+        transform: translateY(0px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(500px);
+        opacity: 0;
+    }
+}
+
+@keyframes linebar2 {
+    0% {
+        transform: translateY(500px);
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    80% {
+        transform: translateY(0px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(500px);
+        opacity: 0;
+    }
+}
+
+@keyframes linebar3 {
+    0% {
+        height: 0;
+        opacity: 1;
+    }
+    50% {
+        height: 430px;
+        opacity: 1;
+    }
+    80% {
+        height: 430px;
+        opacity: 0;
+    }
+    100% {
+        height: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes linebar4 {
+    0% {
+        height: 0;
+        opacity: 1;
+    }
+    50% {
+        height: 300px;
+        opacity: 1;
+    }
+    80% {
+        height: 300px;
+        opacity: 0;
+    }
+    100% {
+        height: 0;
+        opacity: 0;
+    }
+}
+
+.linebar {
+    background: url(../../img/decisionSupport/treeDetail/linebar.png) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    pointer-events: none;
+}
+
+.linebar1 {
+    bottom: 0;
+    left: 330px;
+    width: 37px;
+    height: 435px;
+    animation: linebar1 5s ease infinite;
+}
+
+.linebar2 {
+    bottom: 0;
+    right: 160px;
+    width: 27px;
+    height: 435px;
+    animation: linebar2 4s 2s ease infinite;
+}
+
+.linebar3 {
+    bottom: 170px;
+    right: 210px;
+    width: 37px;
+    height: 0px;
+    animation: linebar3 5.5s 1s ease infinite;
+}
+
+.linebar4 {
+    bottom: 213px;
+    left: 382px;
+    width: 25px;
+    height: 0px;
+    animation: linebar4 3.5s 1.5s ease infinite;
+}
+
+
+/*时间筛选*/
+
+.lunbo_date {
+    width: 400px;
+    position: absolute;
+    left: 60px;
+    top: 10px;
+    height: 102px;
+    background: url(../../img/decisionSupport/treeDetail/normal.png) no-repeat center center;
+}
+
+.lunbo_date span {
+    padding-right: 6px;
+    display: inline-block;
+    color: rgb(1, 246, 246);
+    height: 102px;
+    line-height: 102px;
+    text-align: center;
+    width: 85px;
+    font-style: italic;
+    position: absolute;
+    top: 0px;
+}
+
+.lunbo_date span:nth-child(1) {
+    left: 25px;
+}
+
+.lunbo_date span:nth-child(2) {
+    left: 110px
+}
+
+.lunbo_date span:nth-child(3) {
+    left: 198px
+}
+
+.lunbo_date span:nth-child(4) {
+    left: 286px;
+}
+
+.lunbo_date span:hover {
+    cursor: pointer;
+    color: yellow;
+    background: url(../../img/decisionSupport/treeDetail/normalhover.png) no-repeat center center;
+}
+
+.lunbo_date span.dateAct {
+    color: yellow;
+    background: url(../../img/decisionSupport/treeDetail/normalhover.png) no-repeat center center;
+}
+
+.lunbo_date span:nth-child(1) {
+    margin-left: 0;
+}
+
+.lunbo_date span:nth-child(1)::before {
+    content: '';
+    position: absolute;
+    right: 72px;
+    top: 44px;
+    background: url(../../img/decisionSupport/treeDetail/fnormal.png) no-repeat right center;
+    width: 105px;
+    height: 15px;
+}
+
+.lunbo_date span:nth-child(1):hover::before {
+    right: 76px;
+    top: 45px;
+    background: url(../../img/decisionSupport/treeDetail/fhover.png) no-repeat right center;
+}
+
+.lunbo_date span:nth-child(1).dateAct::before {
+    right: 78px;
+    top: 46px;
+    background: url(../../img/decisionSupport/treeDetail/fhover.png) no-repeat right center;
+}
+
+.lunbo_date span:last-child::after {
+    content: '';
+    position: absolute;
+    left: 75px;
+    top: 44px;
+    background: url(../../img/decisionSupport/treeDetail/lnormal.png) no-repeat left center;
+    width: 105px;
+    height: 15px;
+}
+
+.lunbo_date span:last-child:hover::after {
+    right: 82px;
+    top: 45px;
+    background: url(../../img/decisionSupport/treeDetail/lhover.png) no-repeat left center;
+}
+
+.lunbo_date span:last-child.dateAct::after {
+    right: 82px;
+    top: 45px;
+    background: url(../../img/decisionSupport/treeDetail/lhover.png) no-repeat left center;
+}

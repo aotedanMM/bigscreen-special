@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+    <title>基础设施@4x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="28" height="28" rx="14"></rect>
+        <filter x="-10.7%" y="-10.7%" width="121.4%" height="121.4%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.26 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="其他图标" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="突发事件" transform="translate(-247.000000, -630.000000)">
+            <g id="基础设施" transform="translate(249.000000, 626.000000)">
+                <g id="分组-8" transform="translate(0.000000, 6.000000)">
+                    <g id="矩形-copy-5" transform="translate(14.000000, 14.000000) scale(-1, 1) translate(-14.000000, -14.000000) ">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <rect stroke="#FFFFFF" stroke-width="1" stroke-linejoin="square" fill="#D90C0C" fill-rule="evenodd" x="0.5" y="0.5" width="27" height="27" rx="13.5"></rect>
+                    </g>
+                    <path d="M18.5312703,11.8769666 C19.7854947,12.2150097 21.1763224,11.8400052 22.09851,10.7856805 C22.9771139,9.78140773 23.2062747,8.41753109 22.8175637,7.22629511 L20.9212885,9.39392877 L19.2284552,9.25101126 L18.8954943,7.55340374 L20.7917695,5.38592408 C19.586211,5.12858014 18.2828587,5.51636711 17.4042548,6.52063987 C16.5204147,7.53076486 16.2938719,8.9048059 16.6921313,10.1009701 L14.8659288,12.1883666 C14.6178252,12.12122 14.3828121,11.9930871 14.1846065,11.8013497 L14.1782923,11.8078179 L11.2461731,8.82903497 C10.2540668,7.56587822 13.2631889,6.34491909 14.9324594,6.60010694 L15.1640843,6.30564758 L13.9278786,5.73305348 L15.4278965,5.96976061 L15.6182478,5.72750926 C11.5957666,3.3966293 8.15296369,7.41218028 8.15296369,7.41218028 L7.5883779,7.98569842 C7.61810105,8.43262367 7.4664052,8.89017533 7.1297482,9.23176052 C6.79339922,9.57365371 6.34323984,9.72781366 5.90339887,9.6976285 L5,10.6155039 L6.92461228,12.5704554 L7.85480819,11.6254749 C7.84140967,11.1968764 7.99402956,10.7641197 8.31605599,10.437011 C8.62437589,10.1239169 9.05620856,9.99563 9.46016615,9.99470596 L9.46032015,9.99455196 L12.6043515,13.1886352 C12.6325346,13.2134302 12.6610257,13.2379171 12.6876687,13.2651762 C12.902815,13.4834026 13.0412664,13.7495249 13.1067189,14.0296617 L13.1820278,14.1132869 L11.5754378,15.9498078 C10.363873,15.6832235 9.05035633,16.0697784 8.16636221,17.0799034 C7.28791231,18.0840222 7.05890547,19.4478988 7.44746246,20.6392888 L9.34389166,18.4718092 L11.036725,18.6147267 L11.3696859,20.3121802 L9.47325665,22.4796598 C10.6789692,22.7368498 11.9823215,22.3490628 12.8607714,21.344944 C13.783421,20.2904653 13.989635,18.8394213 13.5169907,17.6082978 L14.9015042,16.0258867 L20.310963,22.042129 L22.7855305,19.5285979 L16.7429532,13.9210875 L18.5312703,11.8769666 Z" id="Fill-1" fill="#FFFFFF"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

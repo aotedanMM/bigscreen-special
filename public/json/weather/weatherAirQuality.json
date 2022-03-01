@@ -1,0 +1,24 @@
+[{
+        "title": "PM2.5",
+        "value": "7"
+    },
+    {
+        "title": "PM10",
+        "value": "16"
+    },
+    {
+        "title": "SO2",
+        "value": "2"
+    },
+    {
+        "title": "NO2",
+        "value": "8"
+    }, {
+        "title": "O3",
+        "value": "21"
+    },
+    {
+        "title": "CO",
+        "value": "8"
+    }
+]

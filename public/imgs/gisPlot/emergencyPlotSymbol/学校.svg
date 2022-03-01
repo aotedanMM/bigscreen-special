@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+    <title>学校</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="28" height="28" rx="14"></rect>
+        <filter x="-10.7%" y="-10.7%" width="121.4%" height="121.4%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.26 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="其他图标" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="玉董" transform="translate(-1227.000000, -120.000000)">
+            <g id="学校" transform="translate(1229.000000, 122.000000)">
+                <g id="矩形">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <rect stroke="#FFFFFF" stroke-width="1" stroke-linejoin="square" fill="#237FD3" fill-rule="evenodd" x="0.5" y="0.5" width="27" height="27" rx="13.5"></rect>
+                </g>
+                <path d="M6.189,8.507 L12.863,8.507 C12.6983333,7.96433333 12.4746667,7.29366667 12.192,6.495 L14.635,6 C15.035,7.05933333 15.3383333,7.895 15.545,8.507 L21.624,8.507 L21.624,10.663 L19.253,10.663 C18.5373434,12.9248857 17.3540786,15.0110161 15.78,16.786 C17.6287559,18.0107904 19.6843731,18.8900266 21.847,19.381 C21.2092675,20.1227249 20.6225873,20.9068584 20.091,21.728 C17.8541196,21.017859 15.756645,19.926834 13.891,18.503 C11.9647641,19.9070073 9.8459058,21.0255463 7.6,21.824 C7.11066918,21.0228303 6.57648544,20.2499332 6,19.509 C8.12429997,18.886683 10.1458203,17.9561098 12,16.747 C10.4491933,15.0049894 9.33305951,12.9204202 8.743,10.664 L6.172,10.664 L6.189,8.507 Z M16.544,10.663 L11.224,10.663 C11.743984,12.3610188 12.6578077,13.9121549 13.891,15.19 C15.1286748,13.9177268 16.0387678,12.3638425 16.543,10.662 L16.544,10.663 Z" id="路径_70" fill="#FFFFFF" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>

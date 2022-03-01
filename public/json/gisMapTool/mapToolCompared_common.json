@@ -1,0 +1,57 @@
+[
+  {
+    "iconName": "gisMapTool-zaiqingdongtai",
+    "title": "灾情动态",
+    "key": "toolBox"
+  },
+  {
+    "iconName": "gisMapTool-huichuanimg",
+    "title": "回传图像",
+    "key": "returnImage",
+    "mutexkey": [
+      "ToolCompared.aftershock,imageContrast,latestImages,tianyan,publicOpinionMonitor",
+      "commonTools.mapPrint,realTimePlotting,updateExperienceCircle"
+    ],
+    "isOpen": false
+  },
+  {
+    "iconName": "gisMapTool-yingxiangduibi",
+    "title": "影像对比",
+    "key": "imageContrast",
+    "mutexkey": [
+      "ToolCompared.aftershock,returnImage,latestImages,tianyan,publicOpinionMonitor",
+      "commonTools.mapPrint,realTimePlotting,updateExperienceCircle"
+    ],
+    "isOpen": false
+  },
+  {
+    "iconName": "gisMapTool-latestImages",
+    "title": "最新影像",
+    "key": "latestImages",
+    "mutexkey": [
+      "ToolCompared.aftershock,returnImage,imageContrast,tianyan,publicOpinionMonitor",
+      "commonTools.mapPrint,realTimePlotting,updateExperienceCircle"
+    ],
+    "isOpen": false
+  },
+  {
+    "iconName": "gisMapTool-tianyanshiwei",
+    "title": "天眼卫星",
+    "key": "tianyan",
+    "mutexkey": [
+      "ToolCompared.aftershock,returnImage,imageContrast,latestImages,publicOpinionMonitor",
+      "commonTools.mapPrint,realTimePlotting,updateExperienceCircle"
+    ],
+    "isOpen": false
+  },
+  {
+    "iconName": "gisMapTool-yuqingxitong",
+    "title": "舆情监控",
+    "key": "publicOpinionMonitor",
+    "mutexkey": [
+      "ToolCompared.aftershock,returnImage,imageContrast,latestImages,tianyan",
+      "commonTools.mapPrint,realTimePlotting,updateExperienceCircle"
+    ],
+    "isOpen": false
+  }
+]

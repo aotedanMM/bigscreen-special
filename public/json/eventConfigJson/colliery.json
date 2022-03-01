@@ -1,0 +1,636 @@
+{
+    "//type": "事件类型,为煤矿,属于安全生产事故",
+    "type": 2,
+    "//experienceCircle": "设置经验圈初始值",
+    "experienceCircle": "1,5",
+    "//defaultExperienceCircle": "默认选中第2个，5",
+    "defaultExperienceCircle": 1,
+    "//funcPanel": "功能性按钮，右侧那部分",
+    "funcPanel": [{
+            "name": "进展情况",
+            "alias": "进展情况",
+            "//key": "唯一关键字",
+            "key": "jinzhanqk",
+            "//componetName": "需要引入的组件的名称",
+            "componetName": "Progress",
+            "//checked": "是否显示在小窗(选中)",
+            "checked": true,
+            "//icon": "按钮图标",
+            "icon": "jzqk",
+            "//enlarge": "判断是否可以放大（放大按钮存在）",
+            "enlarge": true
+        },
+        {
+            "name": "情报辅助",
+            "alias": "情报辅助",
+            "//key": "唯一关键字",
+            "key": "IntelligenceAssistance",
+            "//componetName": "需要引入的组件的名称",
+            "componetName": "IntelligenceAssistance",
+            "//checked": "是否显示在小窗(选中)",
+            "checked": true,
+            "//icon": "按钮图标",
+            "icon": "ljwb",
+            "//enlarge": "判断是否可以放大（放大按钮存在）",
+            "enlarge": true
+        }
+    ],
+    "researchPanel": [{
+            "name": "初步研判",
+            "alias": "一键研判",
+            "//key": "唯一关键字",
+            "key": "quickStudy",
+            "//componetName": "需要引入的组件的名称",
+            "componetName": "StudyAndJudgmentContainer",
+            "//checked": "是否显示在小窗(选中)",
+            "checked": true,
+            "//icon": "按钮图标",
+            "icon": "cbyp"
+        },
+        {
+            "name": "力量调度",
+            "title": "力量调度",
+            "alias": "力量调度",
+            "//key": "唯一关键字",
+            "key": "RescueTeamsContainer",
+            "//componetName": "需要引入的组件的名称",
+            "componetName": "RescueTeamsContainer",
+            "//checked": "是否显示在小窗(选中)",
+            "checked": false,
+            "//icon": "按钮图标",
+            "icon": "dwdd",
+            "//closed": "是否有关闭按钮",
+            "closed": false
+        },
+        {
+            "name": "物资保障",
+            "title": "物资保障",
+            "alias": "物资保障",
+            "//key": "唯一关键字",
+            "key": "MaterialContainer",
+            "//componetName": "需要引入的组件的名称",
+            "componetName": "MaterialContainer",
+            "//checked": "是否显示在小窗(选中)",
+            "checked": false,
+            "//icon": "按钮图标",
+            "icon": "wzbz",
+            "//closed": "是否有关闭按钮",
+            "closed": false
+        }
+    ],
+    "// EmergencyResponse": "应急响应",
+    "EmergencyResponse": {
+        "isShow": true
+    },
+    "quickStudy": {
+        "level": "6级",
+        "tabShow": {
+            "population": {
+                "title": "人口",
+                "name": "人口",
+                "num": 0,
+                "danwei": "万人",
+                "key": "population",
+                "clickKey": "population",
+                "icon": "rk"
+            },
+            "populationDensity": {
+                "name": "人口密度",
+                "num": 0,
+                "danwei": "人/km²",
+                "icon": "rkmd"
+            }
+        },
+        "personnelKey": [
+            "majorDanger",
+            "hazardous",
+            "firework",
+            "fireworkhouse",
+            "bas_school",
+            "hospital",
+            "airport",
+            "railwaystation",
+            "reservoir",
+            "portwharf",
+            "nuclear"
+        ],
+        "contList": {
+            "contListAll": [{
+                    "title": "高危行业企业",
+                    "sum": 0,
+                    "list": {
+                        "majorDanger": {
+                            "title": "重大危险源",
+                            "name": "重大危险源",
+                            "bg": "majorDangerbg",
+                            "num": 0,
+                            "danwei": "个",
+                            "key": "majorDanger",
+                            "clickKey": "majorDanger",
+                            "active": false
+                        },
+                        "hazardous": {
+                            "title": "危化企业",
+                            "name": "危化企业",
+                            "bg": "hazardousbg",
+                            "num": 0,
+                            "danwei": "个",
+                            "key": "hazardous",
+                            "clickKey": "hazardous",
+                            "active": false
+                        },
+                        "firework": {
+                            "title": "烟花爆竹企业",
+                            "name": "烟花爆竹企业",
+                            "bg": "explosivebg",
+                            "num": 0,
+                            "danwei": "个",
+                            "key": "firework",
+                            "clickKey": "firework",
+                            "active": false
+                        },
+                        "fireworkhouse": {
+                            "title": "烟花爆竹仓库",
+                            "name": "烟花爆竹仓库",
+                            "bg": "explosivebg",
+                            "num": 0,
+                            "danwei": "个",
+                            "key": "fireworkhouse",
+                            "clickKey": "fireworkhouse",
+                            "active": false
+                        }
+                    }
+                },
+                {
+                    "title": "人员密集场所",
+                    "sum": 0,
+                    "list": {
+                        "bas_school": {
+                            "title": "学校",
+                            "name": "学校",
+                            "bg": "schoolbg",
+                            "num": 0,
+                            "danwei": "所",
+                            "key": "bas_school",
+                            "clickKey": "bas_school",
+                            "active": false
+                        },
+                        "hospital": {
+                            "title": "医院",
+                            "name": "医院",
+                            "bg": "hospitalbg",
+                            "num": 0,
+                            "danwei": "家",
+                            "key": "hospital",
+                            "clickKey": "hospital",
+                            "active": false
+                        },
+                        "airport": {
+                            "title": "机场",
+                            "name": "机场",
+                            "bg": "airportbg",
+                            "num": 0,
+                            "danwei": "个",
+                            "key": "airport",
+                            "clickKey": "airport",
+                            "active": false
+                        },
+                        "railwaystation": {
+                            "title": "火车站",
+                            "name": "火车站",
+                            "bg": "railwaystationbg",
+                            "num": 0,
+                            "danwei": "个",
+                            "key": "railwaystation",
+                            "clickKey": "railwaystation",
+                            "active": false
+                        }
+                    }
+                },
+                {
+                    "title": "重要设施",
+                    "sum": 0,
+                    "list": {
+                        "reservoir": {
+                            "title": "水库大坝",
+                            "name": "水库大坝",
+                            "bg": "reservoirbg",
+                            "num": 0,
+                            "danwei": "个",
+                            "key": "reservoir",
+                            "clickKey": "reservoir",
+                            "active": false
+                        },
+                        "portwharf": {
+                            "title": "码头",
+                            "name": "码头",
+                            "bg": "portwharfbg",
+                            "num": 0,
+                            "danwei": "个",
+                            "key": "portwharf",
+                            "clickKey": "portwharf",
+                            "active": false
+                        }
+                    }
+                }
+            ]
+        }
+    },
+    "RescueTeamsContainer": {
+        "title": "力量调度",
+        "statisticsList": [{
+                "title": "队伍分布",
+                "key": "TeamDistribution",
+                "teamnum": 0,
+                "teamUnit": "支",
+                "peoplenum": 0,
+                "personUnit": "人",
+                "showSub": true,
+                "subList": [{
+                        "name": "危险化学品（油气管道、油气田）",
+                        "alias": "危化",
+                        "codeType": "T002",
+                        "sortNum": 2,
+                        "icon_bg": "icon_bg_normal",
+                        "icon": "dangerChemicalsbg",
+                        "teamnum": 0,
+                        "teamUnit": "支",
+                        "peoplenum": 0,
+                        "personUnit": "人",
+                        "active": false
+                    },
+                    {
+                        "name": "卫生防疫",
+                        "alias": "卫生防疫",
+                        "codeType": "T006",
+                        "sortNum": 14,
+                        "icon_bg": "icon_bg_normal",
+                        "icon": "health",
+                        "teamnum": 0,
+                        "teamUnit": "支",
+                        "peoplenum": 0,
+                        "personUnit": "人",
+                        "active": false
+                    },
+                    {
+                        "name": "消防",
+                        "alias": "消防",
+                        "codeType": "T003",
+                        "sortNum": 7,
+                        "icon_bg": "icon_bg_normal",
+                        "icon": "fire",
+                        "teamnum": 0,
+                        "teamUnit": "支",
+                        "peoplenum": 0,
+                        "personUnit": "人",
+                        "active": false
+                    },
+                    {
+                        "name": "国家森林（草原）消防",
+                        "alias": "森林消防",
+                        "codeType": "T004",
+                        "sortNum": 8,
+                        "icon_bg": "icon_bg_normal",
+                        "icon": "forestFire",
+                        "teamnum": 0,
+                        "teamUnit": "支",
+                        "peoplenum": 0,
+                        "personUnit": "人",
+                        "active": false
+                    },
+                    {
+                        "name": "技术指导中心",
+                        "alias": "技指中心",
+                        "codeType": "T015",
+                        "sortNum": 6,
+                        "icon_bg": "icon_bg_normal",
+                        "icon": "technicalCenter",
+                        "teamnum": 0,
+                        "teamUnit": "支",
+                        "peoplenum": 0,
+                        "personUnit": "人",
+                        "active": false
+                    }
+                ]
+            },
+            {
+                "title": "前突队伍",
+                "key": "QiantuTeam",
+                "teamnum": 0,
+                "teamUnit": "支",
+                "peoplenum": 0,
+                "personUnit": "人",
+                "showSub": true,
+                "qiantuFlag": true,
+                "subList": [{
+                        "name": "消防（前突）",
+                        "alias": "消防",
+                        "codeType": "T003",
+                        "sortNum": 7,
+                        "icon_bg": "icon_bg_qt",
+                        "icon": "fire",
+                        "teamnum": 0,
+                        "teamUnit": "支",
+                        "peoplenum": 0,
+                        "personUnit": "人",
+                        "active": false
+                    },
+                    {
+                        "name": "森林消防（前突）",
+                        "alias": "森林消防",
+                        "codeType": "T004",
+                        "sortNum": 8,
+                        "icon_bg": "icon_bg_qt",
+                        "icon": "forestProtrusion",
+                        "teamnum": 0,
+                        "teamUnit": "支",
+                        "peoplenum": 0,
+                        "personUnit": "人",
+                        "active": false
+                    }
+                ]
+            }
+        ]
+    },
+    "MaterialContainer": {
+        "title": "物资保障",
+        "statisticsList": [{
+            "title": "物资库",
+            "key": "MaterialDistribution",
+            "count": 0,
+            "unit": "个",
+            "showSub": true,
+            "subList": [{
+                    "name": "中央物资库",
+                    "alias": "中央",
+                    "codeType": "1",
+                    "icon_bg": "icon_bg_normal",
+                    "icon": "centralMaterial",
+                    "count": 0,
+                    "unit": "个",
+                    "active": false
+                },
+                {
+                    "name": "地方物资库",
+                    "alias": "地方",
+                    "codeType": "2",
+                    "icon_bg": "icon_bg_normal",
+                    "icon": "localSupplies",
+                    "count": 0,
+                    "unit": "个",
+                    "active": false
+                },
+                {
+                    "name": "社会物资库",
+                    "alias": "社会",
+                    "codeType": "3",
+                    "icon_bg": "icon_bg_normal",
+                    "icon": "socialGoods",
+                    "count": 0,
+                    "unit": "个",
+                    "active": false
+                },
+                {
+                    "name": "消防局物资库",
+                    "alias": "消防局",
+                    "codeType": "4",
+                    "icon_bg": "icon_bg_normal",
+                    "icon": "fireStationSupplies",
+                    "count": 0,
+                    "unit": "个",
+                    "active": false
+                },
+                {
+                    "name": "森防局物资库",
+                    "alias": "森林消防局",
+                    "codeType": "5",
+                    "icon_bg": "icon_bg_normal",
+                    "icon": "forestDefense",
+                    "count": 0,
+                    "unit": "个",
+                    "active": false
+                }
+            ]
+        }]
+    },
+    "halflist": {
+        "DisasterRescueTeams": [{
+                "name": "救援分布统计",
+                "componetName": "DisasterRescueTeams"
+            },
+            {
+                "name": "救援分布列表",
+                "componetName": "DisasterRescueTeamsList"
+            }
+        ],
+        "bas_school": [{
+                "name": "学校分布统计",
+                "componetName": "DisasterSchool"
+            },
+            {
+                "name": "学校分布列表",
+                "componetName": "DisaterSchoolList"
+            }
+        ],
+        "hospital": [{
+                "name": "医院分布统计",
+                "componetName": "DisasterHospital"
+            },
+            {
+                "name": "医院分布列表",
+                "componetName": "DisasterHospitalList"
+            }
+        ],
+        "airport": [{
+                "name": "机场分布统计",
+                "componetName": "DisasterPlane"
+            },
+            {
+                "name": "机场分布列表",
+                "componetName": "DisasterPlaneList"
+            }
+        ],
+        "railwaystation": [{
+                "name": "火车站分布统计",
+                "componetName": "DisasterTrain"
+            },
+            {
+                "name": "火车站分布列表",
+                "componetName": "DisasterTrainList"
+            }
+        ],
+        "hazardous": [{
+                "name": "危化企业分布统计",
+                "componetName": "DisasterCompany"
+            },
+            {
+                "name": "危化企业分布列表",
+                "componetName": "DisasterCompanyList"
+            }
+        ],
+        "coal": [{
+                "name": "煤矿企业分布统计",
+                "componetName": "DisasterCoal"
+            },
+            {
+                "name": "煤矿企业分布列表",
+                "componetName": "DisasterCoalList"
+            }
+        ],
+        "tailingpond": [{
+                "name": "非煤矿山分布统计",
+                "componetName": "DisasterNoCoal"
+            },
+            {
+                "name": "非煤矿山分布列表",
+                "componetName": "DisasterNoCoalList"
+            }
+        ],
+        "firework": [{
+                "name": "烟花爆竹企业分布统计",
+                "componetName": "DisasterFireworks"
+            },
+            {
+                "name": "烟花爆竹企业分布列表",
+                "componetName": "DisasterFireworksList"
+            }
+        ],
+        "fireworkhouse": [{
+          "name": "烟花爆竹仓库分布统计",
+          "componetName": "FIREWORKWAREHOUSE"
+          },
+          {
+              "name": "烟花爆竹仓库分布列表",
+              "componetName": "FIREWORKWAREHOUSEList"
+          }
+        ],
+        "reservoir": [{
+                "name": "水库大坝分布统计",
+                "componetName": "DisasterReservoir"
+            },
+            {
+                "name": "水库大坝分布列表",
+                "componetName": "DisasterReservoirList"
+            }
+        ],
+        "portwharf": [{
+                "name": "码头分布统计",
+                "componetName": "DisasterWharf"
+            },
+            {
+                "name": "码头分布列表",
+                "componetName": "DisasterWharfList"
+            }
+        ],
+        "nuclear": [{
+                "name": "核设施分布统计",
+                "componetName": "DisasterNucleus"
+            },
+            {
+                "name": "核设施分布列表",
+                "componetName": "DisasterNucleusList"
+            }
+        ],
+        "disinfoper": [{
+                "name": "灾情信息员统计",
+                "componetName": "DisasterMessenger"
+            },
+            {
+                "name": "灾情信息员列表",
+                "componetName": "DisasterMessengerList"
+            }
+        ],
+        "emergencypart": [{
+                "name": "应急管理机构统计",
+                "componetName": "DisasterEmergencypart"
+            },
+            {
+                "name": "应急管理机构列表",
+                "componetName": "DisasterEmergencypartList"
+            }
+        ],
+        "population": [{
+                "name": "人口分布统计",
+                "componetName": "PopulationFeverBox"
+            },
+            {
+                "name": "人口分布列表",
+                "componetName": "PopulationFeverList"
+            }
+        ],
+        "majorDanger": [{
+                "name": "重大危险源分布统计",
+                "componetName": "DisasterMajorDanger"
+            },
+            {
+                "name": "重大危险源分布列表",
+                "componetName": "DisasterMajorDangerList"
+            }
+        ],
+        "countyCount": [{
+                "name": "行政区划",
+                "componetName": "DistrictLeftDialog"
+            },
+            {
+                "name": "行政区划",
+                "componetName": "DistrictRightDialog"
+            }
+        ]
+    },
+    "toolConfig": {
+        "mapToolIconEventOverview": "mapToolIconEventOverview_common.json",
+        "mapToolCompared": "mapToolCompared_common.json",
+        "mapCommonTools": "commonTools_common.json",
+        "disasterDecide": "disasterDecide_common.json",
+        "gisToolList": [
+            { "component": "GisSwitchMap", "options": { "mapId": "map", "baseLayers": [] } },
+            { "component": "CommonTools" },
+            { "component": "ToolCompared" },
+            { "component": "ToolEventOverview" }
+        ]
+    },
+    "legend": [{
+            "clickFn": "openIntensity",
+            "title": "烈度圈",
+            "checked": false,
+            "iconName": "InfluenceCircle",
+            "isShow": false,
+            "mapCircleQueryType": 1
+        },
+        {
+            "clickFn": "openInfluence",
+            "title": "经验圈",
+            "checked": false,
+            "iconName": "intensityCircle",
+            "isShow": true,
+            "mapCircleQueryType": 0
+        },
+        {
+            "clickFn": "openThermodynamiTc",
+            "title": "人口热力",
+            "checked": false,
+            "iconName": "populationFever",
+            "isShow": true,
+            "mapCircleQueryType": 2,
+            "DayNightShow": true,
+            "DayNightHide": false,
+            "DayBtnclick": true
+        },
+        {
+            "clickFn": "openRiverSystem",
+            "title": "水系",
+            "checked": false,
+            "iconName": "riverSystem",
+            "isShow": true,
+            "mapCircleQueryType": 3
+        },
+        {
+            "clickFn": "openHistoricalEarthquake",
+            "title": "历史地震",
+            "checked": false,
+            "iconName": "historicalEarthquake",
+            "isShow": false,
+            "mapCircleQueryType": 4
+        }
+    ]
+}

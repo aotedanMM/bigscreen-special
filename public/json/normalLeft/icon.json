@@ -1,0 +1,28 @@
+{
+	"iconData": [
+		{
+			"codeKey": "JC_WARBASE※01",
+			"iconName": "ResourceTrouble-icon-jidi"
+		},
+		{
+			"codeKey": "qitazhian",
+			"iconName": "Database-icon-qitazhian"
+		},
+		{
+			"codeKey": "Nuclearinfo※01",
+			"iconName": "Database-icon-nuclearinfo"
+		},
+		{
+			"codeKey": "BAS_GEOLOGICHAZARD※01",
+			"iconName": "Trouble-icon-dizhi"
+		},
+		{
+			"codeKey": "ANJIAN_OILGASFIELD※01",
+			"iconName": "Trouble-icon-luyou"
+		},
+		{
+			"codeKey": "ANJIAN_OILGASFIELD※02",
+			"iconName": "Trouble-icon-haiyou"
+		}
+	]
+}

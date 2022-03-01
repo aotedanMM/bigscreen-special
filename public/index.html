@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html id="father" lang="en" style="height: 100%">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <!-- <link rel="stylesheet" href="../src/assets/css/font.css" /> -->
+    <title>应急指挥一张图系统</title>
+    <!----GIS-----start----->
+    <!-- ts-gis & tsemap css -->
+    <link rel="stylesheet" href="deps/gis-lib/ol/ol.css" />
+    <!-- <link rel="stylesheet" href="deps/ts-emap/tsemap.css" /> -->
+    <link rel="stylesheet" href="deps/egis/style/egis.css" />
+    <!--解决ie下的egis 问题--->
+    <script src="./deps/fetch.js"></script>
+    <!-- ts-gis & tsemap  js-->
+    <script src="deps/jquery-1.11.2.js"></script>
+    <!-- <script src="deps/gis-lib/base64.min.js"></script>
+    <script src="deps/gis-lib/ol/ol.js"></script>
+    <script src="deps/gis-lib/ol/olms.js"></script>
+    <script src="deps/gis-lib/proj4.js"></script>
+    <script src="deps/gis-lib/turf/turf.min.js"></script>
+    <script src="deps/gis-lib/mapbox/mapbox-gl.js"></script> -->
+    <script src="deps/gis-lib/turf/turf.min.js"></script>
+    <script src="deps/echarts.js"></script>
+    <!------>
+    <script src="deps/html2canvas.min.js"></script>
+    <script src="deps/gis-lib/javascript.util.js"></script>
+    <script src="deps/gis-lib/jsts.min.js"></script>
+    <!---ts-gis-->
+    <!-- <script src="deps/ts-gis/g2-2d.umd.js"></script> -->
+    <!---egis-->
+    <!-- <script src="deps/egis/egis-2d.umd.js"></script> -->
+    <!-- 百度全景的要在egis前面 -->
+    <script type="text/javascript">
+        window.BMAP_AUTHENTIC_KEY = "2GfltuZLtOEwVF8LwD54KQa6wZ6DLPV6";
+        window.TMAP_AUTHENTIC_KEY = "d84d6d83e0e51e481e50454ccbe8986b";
+    </script>
+    <script src="deps/egis/egis.js"></script>
+
+    <!---gv-->
+    <script src="deps/gv/gv.js"></script>
+    <!---tsemap-->
+    <script src="deps/ts-emap/tsemap.js"></script>
+    <!----GIS-----end----->
+    <!----复用的第一条线的服务类-->
+    <script src="json/oldserver/oldserver.js"></script>
+    <!-- 海康视频插件 基于jq  -->
+    <script src="deps/jsencrypt.min.js"></script>
+    <!-- 用于RSA加密 -->
+    <script src="deps/jsWebControl-1.0.0.min.js"></script>
+    <!-- 用于前端与插件交互 -->
+    <!-------SOCKET-->
+    <script src="deps/websocket-heartbeat.js"></script>
+    <script src="deps/icpsdkall.js"></script>
+
+    <!-- <script src="deps/reconnecting-websocket.min.js"></script> -->
+</head>
+
+<body style="height: 100%;" class="constom-select skin-default">
+    <noscript>
+        <strong>We're sorry but comp-engines doesn't work properly without JavaScript enabled. Please enable it to
+            continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+</body>
+
+</html>
+<style lang="less">
+    html,
+    body {
+        margin: 0;
+        height: 100%;
+        width: 100%;
+        box-sizing: border-box;
+        background: #010d1c;
+    }
+    
+    .el-scrollbar__bar.is-vertical>div {
+        background-image: linear-gradient(0deg, #0a7ccc 0%, #06b4d1 52%, #02ebd5 100%);
+    }
+    /* @import url('../src/assets/css/theme.default.less'); */
+</style>

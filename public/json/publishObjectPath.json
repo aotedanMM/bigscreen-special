@@ -1,0 +1,369 @@
+{
+    "district": {
+        "//root": "系统默认行政区划",
+        "root": "130400"
+    },
+    "sdkconfig": {
+        "user": "40001",
+        "password": "40001",
+        "serverWSPort": "8002",
+        "serverAddress": "sdkserver.cloudicp.huawei.com",
+        "serverHttpPort": "8002",
+        "to": "013522517175"
+    },
+    "videoService": "http://127.0.0.1:52619/playvideo.html",
+    "serverPath": "http://111.62.17.223:8990/dss/",
+    "//ESserverPath": "elasticsearch资源查询服务",
+    "ESserverPath": "http://111.62.17.223:8990/es",
+    "// floodServerPath": "防汛服务",
+    "//floodServerPath": "http://111.62.17.223:8990/flood/",
+    "floodServerPath": "http://192.168.228.45:8190/",
+    "//emapService": "一张图服务",
+    "emapService": "http://172.17.10.133:3002",
+    "//fireSatelliteUrl": "火点卫星监测图片",
+    "fireSatelliteUrl": "http://web.ehaohai.com:2018",
+    "//misServerPath": "力量调度mis服务",
+    "misServerPath": "http://10.236.46.225:8990/gapi/",
+    "//在线会商": "更改在线会商请求地址 毕东方 2021.11.12",
+    "//onlineTerminalServerPath": "在线服务终端服务",
+    "onlineTerminalServerPath": "http://10.236.46.225:8990/gapi/",
+    "//pushServerPath": "推送屏接地址地",
+    "pushServerPath": "http://111.62.17.223:8990/eads",
+    "//UploadUrl": "辅助决策上传文件地址",
+    "UploadUrl": "http://111.62.17.223:8990/file",
+    "//wsServerPath": "前端服务器nginx代理：ws://172.17.38.202:8080/ws",
+    "wsServerPath": "ws://111.62.17.223:8990/ws",
+    "//dataServer": "中台数据服务",
+    "dataServer": "http://111.62.17.223:8990/dataserver",
+    "//arcgisToken": "arcgis底图服务 token 获取",
+    "// industyMonitorInfo": "企业监测信息",
+    "industyMonitorInfo": "http://10.236.46.214:8080/hdyj/index",
+    "arcgisToken": {
+        "url": "https://116.132.27.130:10003/arcgis/tokens/generateToken",
+        "username": "User-路网 ",
+        "password": "HEBEIGAOXIANGgis12",
+        "referer": "http://192.168.231.186:8888/#/DecLayoutHome"
+    },
+    "//typhoonServer": "台风",
+    "typhoonServer": {
+        "currentUrl": "http://typhoon.zjwater.gov.cn/Api/TyhoonActivity",
+        "yearUrl": "http://typhoon.zjwater.gov.cn/Api/TyphoonList/{year}",
+        "infoUrl": "http://typhoon.zjwater.gov.cn/Api/TyphoonInfo/{typhoonid}",
+        "source": "zjwater",
+        "crossOrigin": true
+    },
+    "//egis": "egis 服务总线",
+    "egis": {
+        "server": "http://120.52.31.39/cloudapi/service/api/",
+        "tokenServer": "http://120.52.31.31:590/oauth/token",
+        "clientId": "28524d8c65844630a3427270c9a16323",
+        "clientSecret": "84bc17650bb04491aa8475b9cbe3d1c4"
+    },
+    "//": "洪水径流和风险隐患",
+    "floodServer": "http://172.17.38.58:8868/natural-display",
+    "//mapPrint": "地图打印",
+    "mapPrint": "http://106.37.227.20:48080/mapdown/print-servlet-3.20.1/egis/base/v1",
+    "mapservice": {
+        "//weatherServiceUrl": "风场",
+        "weatherServiceUrl": "http://10.18.18.198:8088/api/egis-qx/egis/qx/v1",
+        "//terrainLayer3d": "地形服务",
+        "terrainLayer3d": [{
+                "id": "terrainlayer1",
+                "name": "terrainlayer1",
+                "description": "EGIS30米三维地形服务",
+                "layerType": 30,
+                "opacity": 1,
+                "crossOrigin": "anonymous",
+                "url": "http://120.52.31.31:590/service/api/egis/base/v1/wtts/china-12",
+                "clientId": "28524d8c65844630a3427270c9a16323",
+                "clientSecret": "84bc17650bb04491aa8475b9cbe3d1c4"
+            },
+            {
+                "id": "terrain2",
+                "name": "terrainlayer2",
+                "description": "EGIS10米三维地形服务",
+                "layerType": 30,
+                "opacity": 1,
+                "crossOrigin": "anonymous",
+                "url": "http://120.52.31.31:590/service/api/egis/3d/v1/terrain1",
+                "clientId": "28524d8c65844630a3427270c9a16323",
+                "clientSecret": "84bc17650bb04491aa8475b9cbe3d1c4"
+            }
+        ],
+        "watershedLayer": {
+            "tileLayer": {
+                "featureType": "WatershedLayer",
+                "geometryType": "polygon",
+                "id": "watershed",
+                "url": "http://10.3.10.182:8080/geoserver/fxkh/wms",
+                "opacity": 0.75,
+                "tileType": 101,
+                "layers": "liuyu1levelpt,fxkh:liuyu1level,liuyu3levelpt,fxkh:liuyu3level",
+                "tiled": false,
+                "version": "1.1.0"
+            },
+            "wfs": {
+                "url": "http://10.3.10.182:8080/geoserver/fxkh/wfs",
+                "typename": "fxkh:liuyu1level,fxkh:liuyu3level"
+            }
+
+        },
+        "riverLayer": {
+            "tileLayer": {
+                "featureType": "RiverLayer",
+                "geometryType": "polyline",
+                "id": "river",
+                "url": "http://172.17.10.24:8080/geoserver/yantaishuixi/wms",
+                "opacity": 0.75,
+                "tileType": 101,
+                "layers": "yantaishuixi:bas_river_line",
+                "tiled": false,
+                "version": "1.1.0"
+            },
+            "wfs": {
+                "url": "http://172.17.10.24:8080/geoserver/wfs",
+                "typename": "yantaishuixi:bas_river_line"
+            }
+        },
+        "//earthQuakeZoneLayer": "地震带",
+        "earthQuakeZoneLayer": {
+            "tileLayer": {
+                "featureType": "EarthQuakeZoneLayer",
+                "geometryType": "polygon",
+                "id": "earthQuakeZone",
+                "url": "http://172.17.10.24:8080/geoserver/yantaidizhen/wms",
+                "opacity": 0.75,
+                "tileType": 101,
+                "layers": "yantaidizhen:earthquake_zone",
+                "tiled": false,
+                "version": "1.1.0"
+            }
+        },
+        "earthQuakeZoneLayerHB": {
+            "tileLayer": {
+                "featureType": "earthQuakeZoneLayerHB",
+                "geometryType": "polygon",
+                "id": "earthQuakeZoneLayerHB",
+                "url": "http://172.17.10.24:8080/geoserver/yantaidizhen/wms",
+                "opacity": 0.75,
+                "tileType": 101,
+                "layers": "yantaidizhen:earthquake_zone_q",
+                "tiled": true,
+                "version": "1.1.0"
+            }
+        },
+        "//earthquakeRuptureBeltLayer": "地震断裂带",
+        "earthquakeRuptureBeltLayer": {
+            "tileLayer": {
+                "featureType": "EarthquakeRuptureBeltLayer",
+                "geometryType": "polygon",
+                "id": "earthquakeRuptureBelt",
+                "url": "http://172.17.10.24:8080/geoserver/yantaidizhen/wms",
+                "opacity": 0.75,
+                "tileType": 101,
+                "layers": "yantaidizhen:earthquake_line",
+                "tiled": false,
+                "version": "1.1.0"
+            }
+        },
+        "forestTreeStructureLayer": {
+            "tileLayer": {
+                "featureType": "ForestTreeStructureLayer",
+                "geometryType": "polygon",
+                "id": "forestTreeStructure",
+                "url": "http://111.62.17.223:8990/geoserver/handan/wms",
+                "opacity": 0.75,
+                "tileType": 101,
+                "layers": "handan:forest_cover_szjg",
+                "tiled": true,
+                "version": "1.1.0"
+            }
+        },
+        "forestFireAreaLayer": {
+            "tileLayer": {
+                "featureType": "ForestFireAreaLayer",
+                "geometryType": "polygon",
+                "id": "forestFireArea",
+                "url": "http://111.62.17.223:8990/geoserver/handan/wms",
+                "opacity": 0.75,
+                "tileType": 101,
+                "layers": "handan:for_firepreventarea_city,handan:for_firepreventarea_cou,handan:for_firepreventarea_coukey",
+                "tiled": true,
+                "version": "1.1.0"
+            }
+        },
+        "forestResourceLayer": {
+            "tileLayer": {
+                "featureType": "ForestResourceLayer",
+                "geometryType": "polygon",
+                "id": "forestResource",
+                "url": "http://111.62.17.223:8990/geoserver/handan/wms",
+                "opacity": 0.75,
+                "tileType": 101,
+                "layers": "handan:forest_cover_dilei",
+                "tiled": true,
+                "version": "1.1.0"
+            }
+        }
+    },
+    "DistrictLayerBorder": {
+        "tileLayer": {
+            "featureType": "districtLayerBorder",
+            "geometryType": "polyline",
+            "id": "districtLayerBorder",
+            "url": "http://111.62.17.223:8990/geoserver/handan/wms",
+            "opacity": 0.75,
+            "tileType": 101,
+            "layers": "handan:1304_qu_line,handan:1304_xian_line,handan:1304_xiang_line",
+            "tiled": true,
+            "version": "1.1.0"
+        }
+    },
+    "DistrictLayerPolygon": {
+        "tileLayer": {
+            "featureType": "DistrictLayerPolygon",
+            "geometryType": "polygon",
+            "id": "DistrictLayerPolygon",
+            "url": "http://111.62.17.223:8990/geoserver/handan/wms",
+            "opacity": 0.75,
+            "tileType": 101,
+            "layers": "handan:1304_xian",
+            "tiled": true,
+            "version": "1.1.0"
+        }
+    },
+    "DEMLayer": {
+        "tileLayer": {
+            "featureType": "DEMLayer",
+            "geometryType": "polygon",
+            "id": "dem",
+            "url": "http://106.37.227.20:58080/geoserver/jiyongxx/wms",
+            "opacity": 0.75,
+            "tileType": 101,
+            "layers": "jiyongxx:geotiff_coverage",
+            "tiled": true,
+            "version": "1.1.1"
+        }
+    },
+    "MajorTownLayer": {
+        "tileLayer": {
+            "featureType": "MajorTownLayer",
+            "geometryType": "polygon",
+            "id": "MajorTown",
+            "url": "http://111.62.17.223:8990/geoserver/handan/wms",
+            "opacity": 0.75,
+            "tileType": 101,
+            "layers": "handan:v_for_keytown",
+            "tiled": true,
+            "version": "1.1.0"
+        }
+    },
+    "//": "防御准备事件Id",
+    "defensiveEventId": "54fc7c6e34a34395bbfe92979ced441d",
+
+    "//============================================================": "外接第三方服务，不考虑部署",
+
+    "//videoMonitorPath": "视频监控地址配置",
+    "videoMonitorPath": {
+        "videoIp": "http://10.148.133.214:8096/",
+        "userName": "admin",
+        "password": "admin"
+    },
+    "//jieruisiPath": "捷思锐语音通话服务",
+    "jieruisiPath": {
+        "url": "http://127.0.0.1:8097/",
+        "user": "8007",
+        "pwd": "293557"
+    },
+    "//bairuiPath": "佰锐视频通话服务",
+    "bairuiPath": {
+        "//mDefaultServerAddr": "120.76.74.249",
+        "//mDefaultServerPort": "8906",
+        "//mDefaultAppGuid": "DD5BBAE2-ED79-F74E-B882-CE0A6A6C607C",
+        "mDefaultServerAddr": "111.62.17.223",
+        "mDefaultServerPort": "18906",
+        "mDefaultAppGuid": "DBC8A841-DDC8-2641-B11A-14C67EABCD49",
+        "mDefaultRequestIp": "http://111.62.17.223:10040"
+    },
+    "//amap": "高德",
+    "amap": {
+        "server": "http://restapi.amap.com/v3/",
+        "key": "b424a067db4b351fdd7ab4fba0c0f50a"
+    },
+    "//weatherServer": "天气",
+    "weatherServer": "http://172.17.38.56:8888",
+    "//newWeatherServer": "新的气象信息",
+    "newWeatherServer": "http://120.52.31.17:8091",
+    "//yuqingServer": "舆情监控",
+    "yuqingServer": "http://bjtopcom.xicp.cn:8030/yuqing/tempDialog?11%C2%B724%E6%BC%94%E4%B9%A0",
+    "//tianyanServer": "天眼",
+    "tianyanServer": "http://120.52.31.21:180/EmergencyBase?tk=e071947d96c8b1f30ac459366bf576ee&height=5000",
+    "//weatherWMS": "气象要素图",
+    "weatherMms": "http://120.52.31.33:8083/wmsf",
+    "//countryWhiteService": "白色全国气象用图",
+    "countryWhiteService": "http://172.17.10.57:8080/geoserver/guojiexian/wms",
+    "//buildingWMS": "房屋结构WMS",
+    "buildingWMS": "http://218.205.198.56:18080/geoserver/five/wms",
+    "//buildingStructure": "获取房屋结构",
+    "buildingStructure": "http://172.17.38.79:8081/api/houseDesign/v1/queryhousedesignBydiscode",
+    "//lastedImageServer": "最新影像",
+    "lastedImageServer": "https://service.siweiearth.com/seis/v3/wmts_rest/image_tile/${id}/1/all/GoogleCRS84Quad/{z}/{y}/{x}.png",
+    "accidentServer": "http://192.168.0.233:8081/api/event/accident/express/list/v1",
+    "tempurl": "http://172.17.10.132:9090/",
+    "//traffic": "实时路况",
+    "shishilukuang": "http://120.52.31.31:590/service/api/egis/base/v1/wrts/getTile",
+    "//street": "街景",
+    "street": "",
+    "//urlWeb": "在灾情研判指挥调度中有用,数据来源访问地址",
+    "urlWeb": "http://172.17.10.132:8999",
+    "baidulabel": "http://yuqing.baidu.com/show/main/chenantmp1",
+    "//Schedulurl": "调拨建议",
+    "Schedulurl": "http://120.52.31.86:8888/anjian/analysisrescue/analysis-rescue!queryDataForProgrammeAllOut.do",
+    "//video": "灾情研判指挥调度视频",
+    "video": " http://172.17.10.132",
+    "//ipifyUrl": "获取ip地址",
+    "ipifyUrl": "https://api.ipify.org?format=json",
+    "latestimage": "http://120.52.31.21:8081/getLastestImage",
+    "//socketRestUrl": "消息推送,冯茹意理解的这里应该是为了适配二线回显给一线操作屏",
+    "socketRestUrl": "http://172.17.38.79:8081",
+    "//taijiQyhqUrl": "太极企业画像",
+    "taijiQyhqUrl": "http://10.18.0.135:8080/info/WebContent/src/index.html",
+    "//baiduQyhxUrl": "百度企业画像服务",
+    "baiduQyhxUrl": "http://yuqing.baidu.com/show/main/chenantmp1",
+    "//weihuawulianIframe": "危化系统访问地址",
+    "weihuawulianIframe": "http://10.18.2.84:8888/",
+    "//downloadWordfile": "下载word路径",
+    "downloadWordfile": "http://172.17.38.79:8086",
+    "//loginServer": "登录服务地址",
+    "loginserver": "http://61.183.117.29:18202/gempapp/gemp-user/",
+    "//loginUrl": "登录服务地址",
+    "loginUrl": "http://172.17.10.17:8088/eadsweb/#/login",
+    "//tokenServer": "登录服务地址",
+    "tokenServer": "http://120.52.31.108:8090/gemp/gemp-user/",
+    "//TrafficNavigationMap": "交通导航图",
+    "TrafficNavigationMap": "http://web.cc.eleking.cn:8777/#/login",
+    "//internetIntelligence": "互联网情报",
+    "internetIntelligence": "http://123.56.208.59/main?token=6a93deef604a62a8c130fa7e84a623f0",
+    "//mapservice": "接入地图服务",
+
+    "//practice": "是否为演练",
+    "practice": false,
+    "//modelService": "地震模型服务地址",
+    "modelService": "http://106.37.227.26:30072/model/gsafety/model",
+    "//substanceModelServer": "物资模型服务地址",
+    "substanceModelServer": "http://10.3.9.33:3005/gsafety/model",
+    "//": "林火模型服务地址",
+    "ForestFireModuleServer": "http://10.3.10.174:3015",
+    "///ForestFireModuleServer": "http://120.220.248.250:39090/fireforest",
+    "//": "林火模型气象接口服务",
+    "ForestFireServer": "http://10.3.10.174:9092",
+    "///ForestFireServer": "http://120.220.248.250:39090/gapi/natural-display",
+    "//chemicalfire": "大型储罐火灾损分析",
+    "chemicalfire": "http://10.3.9.33:3002",
+    "//chemicaloutfire": "储罐火消防灭火",
+    "chemicaloutfire": "http://10.3.9.33:3008",
+    "//chemicalexplode": "压力容器爆炸",
+    "chemicalexplode": "http://10.3.9.33:3012",
+    "//DangerSpread": "危化品大气扩散",
+    "DangerSpread": "http://10.3.9.33:3000"
+}

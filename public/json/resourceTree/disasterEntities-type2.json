@@ -1,0 +1,30 @@
+[
+    {
+        "id": 7,
+        "pId": 0,
+        "name": "人口分布",
+        "open": false,
+        "icon": "imgs/resources/ren.png",
+        "nocheck": true
+    },
+    {
+        "id": 8,
+        "pId": 0,
+        "name": "房屋情况",
+        "open": false,
+        "icon": "imgs/resources/fangwu.png",
+        "nocheck": true
+    },
+    {
+        "id": 8001,
+        "pId": 8,
+        "name": "房屋分布",
+        "code": "HousingDist"
+    },
+    {
+        "id": 8002,
+        "pId": 8,
+        "name": "房屋结构",
+        "code": "HousingStruct"
+    }
+]

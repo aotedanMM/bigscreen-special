@@ -1,0 +1,714 @@
+:global {
+  ul,
+  li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .el-input-color > .el-input__inner {
+    color: #c9e2ff;
+  }
+  .el-input-color > .el-textarea__inner {
+    color: #c9e2ff;
+  }
+  .el-input-color > .el-input > .el-input__inner {
+    color: #c9e2ff;
+  }
+  .el-input-color > .minicolors > .el-input__inner.minicolors-input {
+    color: #c9e2ff;
+  }
+  .treeInput .el-input__inner {
+    color: #c9e2ff;
+  }
+  @plotCtrlRightHeight: 615px;
+  @listWrapHeight: 420px;
+  @url: '../../../../assets/img/gisPlot';
+  @urls: '../../../../assets/img/gisModule/PopulationFeverBox';
+  @btn: '../../../../assets/img/gisPlot';
+  .emap_control_plotCtrl {
+    font-size: 16px;
+    // position: absolute;
+    // left: 0;
+    // top: 0;
+    .plotCtrlMainWrap {
+      width: 407px;
+      // position: absolute;
+      /*left:calc(100vw - 560px);
+      top: 120px;*/
+      //  left: calc(3840px - 615px);
+      //  top: calc(1028px - 630px);
+      position: relative;
+      z-index: 10;
+      /* border-top-left-radius: 5px;
+       border-top-right-radius: 5px;*/
+      // border: 1px solid #338af8;
+      // background-color: rgba(13,24,28,.79);
+      // background: url('@{url}/plot_bg.png') no-repeat 0 0;
+      // background-size: 100% 100%;
+      .bottom {
+        width: 100%;
+        height: 49px;
+        background: url('@{urls}/botBg-.png') no-repeat;
+        background-size: 100% 100%;
+      }
+      .plotCtrlMain {
+        // outline: 1px solid red;;
+        display: flex;
+        background: url('@{urls}/centerBg.png') no-repeat 0 0;
+        background-size: 100% 100%;
+        // flex-direction: column;
+        // background: rgba(0,0,0,.36) ;
+        // outline:2px solid red;
+        .plotCtrlLeft {
+          // display: flex;
+          box-sizing: border-box;
+          width: 49px;
+          margin-left: 15px;
+          // padding-left: 10px;
+          // outline:2px solid red;
+          li {
+            box-sizing: border-box;
+            // width: 30px;
+            padding: 12px 6px 6px 0;
+            // margin-top: 5px;
+            color: #c9e2ff;
+            font-size: 22px;
+            line-height: 1.25;
+            // background:rgba(0,0,0,.5);
+            // border-top-left-radius: 8px;
+            // border-bottom-left-radius: 8px;
+            cursor: pointer;
+            background: url('@{url}/plot_tab_bg_l.png') no-repeat 0 0;
+            background-size: 100% 100%;
+            // outline:1px solid red;
+            text-align: center;
+          }
+
+          li:hover,
+          .leftTabActive {
+            color: #f0bc54;
+            background-image: url('@{url}/plot_tab_bg_l_h.png');
+            /* background: white;*/
+          }
+        }
+        .plotCtrlRight {
+          box-sizing: border-box;
+          // padding: 0 8px;
+          // width: calc(100% - 48px);
+          /* background:white;*/
+          height: @plotCtrlRightHeight;
+          overflow-y: auto;
+          // outline:1px solid red;
+          width: 80%;
+          background: rgba(33, 82, 128, 0.51);
+          border-radius: 5px;
+          box-shadow: inset 0 0 1px rgba(109, 236, 233, 0.26),
+            0 0 5px rgba(71, 154, 213, 0.35);
+          margin-bottom: 60px;
+          margin-top: 5px;
+          padding-top: 2px;
+          padding-bottom: 2px;
+          .hotTab {
+            width: calc(100% - 9px);
+            overflow: hidden;
+            margin: 0;
+            padding: 0 3px;
+            & > li {
+              list-style: none;
+              color: #c9e2ff;
+              float: left;
+              box-sizing: border-box;
+              width: 90px;
+              height: 100px;
+              text-align: center;
+              margin-left: 10px;
+              margin-top: 10px;
+              border: 1px solid transparent;
+              position: relative;
+              cursor: pointer;
+              img {
+                width: 40px;
+                height: 40px;
+                background: white;
+                margin-top: 8px;
+              }
+              & > div {
+                height: 30px;
+                line-height: 1;
+                // display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 3px;
+                font-size: 14px;
+              }
+            }
+
+            & > li:hover,
+            .iconLiActive {
+              box-sizing: border-box;
+              color: #bbd0dc;
+              border-radius: 3px;
+              // background: rgba(215, 185, 64, 0.15);
+            }
+            & > li:hover
+            .toolbox-add-btn{
+              width: 97px;
+              height: 58px;
+              border: 1px solid #fef551;
+            }
+          }
+
+          .commonTab {
+            display: none;
+            // background-color: rgba(4,168,227,.1);
+            // border-bottom: 1px solid rgba(13, 24, 28, 0.79);
+            // box-shadow: inset 0 0 20px rgba(19,250,226,.5);
+            // border-radius: 5px;
+            .el-icon-close {
+              font-size: 14px;
+              background: rgb(219, 95, 17);
+              right: 0px;
+              float: right;
+              position: absolute;
+            }
+            .toolbox-onlyAdd {
+              width: 100px;
+              height: 110px;
+              position: relative;
+              .toolbox-add-btn {
+                width: 100px;
+                height: 60px;
+                display: block;
+                background: #ccc;
+                border-radius: 2px;
+                margin-bottom: 10px;
+                line-height: 60px;
+                .el-icon-plus {
+                  font-size: 24px;
+                  color: #999;
+                  vertical-align: middle;
+                }
+              }
+              .file-self {
+                width: 100px;
+                height: 110px;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                opacity: 0;
+                z-index: 100;
+                cursor: pointer;
+              }
+            }
+            .local-pic-name {
+              max-width: 100px;
+              display: inline-block;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+          }
+          .cur {
+            .commonTabTitle {
+              border: 1px solid #fef551;
+              background-color: rgba(215, 185, 64, 0.18);
+              &:after {
+                background-image: url('@{url}/plot_arrow_h.png');
+                // margin-top:-10px;s
+              }
+            }
+          }
+          .commonTabTitle {
+            box-sizing: border-box;
+            // width: 100%;
+            height: 42px;
+            line-height: 42px;
+            padding-left: 20px;
+            color: #c9e2ff;
+            cursor: pointer;
+            // border-bottom: 1px solid rgba(0, 0, 0, 0.79);
+            // border:2px solid transparent;
+            background-color: rgba(118, 242, 251, 0.17);
+            margin: 1px 3px;
+            border-radius: 3px;
+            border: 1px solid transparent;
+            &:after {
+              content: '';
+              float: right;
+              margin-right: 15px;
+              margin-top: 15px;
+              background: url('@{url}/plot_arrow.png') no-repeat 50% 50%;
+              width: 16px;
+              height: 16px;
+            }
+            &:hover {
+              border: 1px solid #fef551;
+              background-color: rgba(215, 185, 64, 0.18);
+            }
+          }
+          .manageItemWrap {
+            box-sizing: border-box;
+            /*padding-top:10px;*/
+            .el-input {
+              margin-bottom: 5px;
+              margin-top: 5px;
+            }
+            .el-input__inner {
+              background-color: transparent;
+              border-color: #46d7f6;
+            }
+            // .listWrap >.el-scrollbar >.el-scrollbar__wrap > .el-scrollbar__view{
+            //   .listWrap {
+            //   height:@listWrapHeight;
+            //   overflow-y: auto;
+            //   &>ul{
+            //     box-sizing: border-box;
+            //     width: 100%;
+            //     height: 45px;
+            //     line-height: 45px;
+            //     margin: 0;
+            //     border: 1px solid transparent;
+            //     border-bottom: 1px solid transparent;
+            //      box-shadow: inset 0 0 20px rgba(19,250,226,.5);
+            //     &:nth-child(2n){
+            //       background:transparent;
+            //     }
+            //     display: flex;
+            //     justify-content: space-between;
+            //     align-items: center;
+            //     &>li{
+            //       box-sizing: border-box;
+            //       padding: 0 15px;
+            //       color: #f0bc54;
+            //       max-width: 150px;
+            //       cursor: pointer;
+            //       &:nth-child(1){
+            //         white-space: nowrap;
+            //       }
+            //       &:nth-child(2){
+            //         color: #c9e2ff;
+            //         white-space: nowrap;
+            //         text-overflow: ellipsis;
+            //         overflow: hidden;
+            //       }
+            //       &:nth-child(3){
+            //         white-space: nowrap;
+            //       }
+            //     }
+            //   }
+            //   &>ul:hover{
+            //     box-sizing: border-box;
+            //     color: #f0bc54;
+            //     border: 1px solid transparent;
+            //     border-radius: 0;
+            //     background:transparent;
+            //     -webkit-box-shadow: inset 0 0px 10px rgba(240,188,84,.5s);
+            //     -moz-box-shadow: inset 0 0px 10px rgba(240,188,84,.5s);
+            //     box-shadow: inset 0 0px 10px rgba(240,188,84,.5s);
+            //   }
+            // }
+
+            .listWrap {
+              height: @listWrapHeight;
+              overflow-y: auto;
+            }
+            .listWrapUl {
+              box-sizing: border-box;
+              width: calc(100%);
+              height: 45px;
+              line-height: 45px;
+              margin: 0;
+              border: 1px solid transparent;
+              box-shadow: inset 0 0 20px rgba(19, 250, 226, 0.5);
+              border-radius: 3px;
+              &:nth-child(2n) {
+                background: transparent;
+              }
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              & > li {
+                box-sizing: border-box;
+                padding: 0 15px;
+                color: #f0bc54;
+                max-width: 150px;
+                cursor: pointer;
+                &:nth-child(1) {
+                  white-space: nowrap;
+                }
+                &:nth-child(2) {
+                  color: #c9e2ff;
+                  white-space: nowrap;
+                  text-overflow: ellipsis;
+                  overflow: hidden;
+                }
+                &:nth-child(3) {
+                  white-space: nowrap;
+                }
+              }
+            }
+            .listWrapUl:hover,
+            .listWrapUl.active {
+              box-sizing: border-box;
+              color: #f0bc54;
+              border: 1px solid #fef551;
+              background: rgba(215, 185, 64, 0.15);
+              // -webkit-box-shadow: inset 0 0px 10px rgba(240,188,84,.5s);
+              // -moz-box-shadow: inset 0 0px 10px rgba(240,188,84,.5s);
+              // box-shadow: inset 0 0px 10px rgba(240,188,84,.5s);
+            }
+
+            .paginationClass {
+              background: transparent;
+              padding: 5px 0;
+            }
+            // 标会 分页样式修改
+            .paginationClass .el-pagination .el-pagination__jump{
+              margin-left: 0px !important;
+            }
+            .paginationClass .el-pagination  .el-input{
+              width: 30px !important;
+            }
+            .paginationClass .el-pagination span:not([class*=suffix]){
+              max-width: 30px;
+           }
+           .paginationClass .el-pagination__editor.el-input .el-input__inner{
+             height: 20px !important;
+             font-size:14px !important;
+             line-height: 20px !important;
+           }
+           .paginationClass .el-pager li{
+             min-width: 22.5px !important;
+           }
+           .paginationClass .el-pagination button{
+              min-width: 25.5px;
+           }
+           .paginationClass .el-pager li.btn-quicknext, .el-pager li.btn-quickprev{
+             color: #f8f8ff !important;
+           }
+           .paginationClass .el-pagination .btn-prev {
+            padding-right: 0px !important;
+            padding-left: 5px !important;
+            }
+            .paginationClass .el-pagination .btn-next {
+              padding-left: 0px  !important;
+           }
+          }
+          .nodataLi {
+            display: none;
+            text-align: center;
+            width: 100%;
+            height: 500px;
+            font-size: 0;
+            // padding: 30px 0;
+            /* background-color: #fbfdfe;
+             border-bottom: 1px solid #dfe6ec;*/
+            //   box-shadow: inset 0 0 20px rgba(19,250,226,.5);
+            //   border-radius: 5px;
+          }
+        }
+      }
+    }
+
+    // .plotCtrlTop-highlight {
+    //   background: url('@{urls}/topbg-.png') no-repeat 0 0 !important;
+    //   background-size: 100% 100% !important;
+    // }
+    .plotCtrlTop {
+      position: relative;
+      box-sizing: border-box;
+      height: 70px;
+      cursor: pointer;
+      color: #a0f4fd;
+      background: url('@{urls}/topbg-.png') no-repeat 0 0;
+      background-size: 100% 100%;
+      // &:hover{
+      //   background-image: url('../../../../assets/img/gisPlot/eventAndTopics_title_bg.png');
+      // }
+      // &:active{
+      //   background-image: url('../../../../assets/img/gisPlot/eventAndTopics_title_bg.png');
+      // }
+      .topTitle {
+        float: left;
+        line-height: 51px;
+        margin: 15px 10px 0 30px;
+      }
+      .topVisible {
+        float: right;
+        width: 68px;
+        height: 48px;
+        margin-top: 10px;
+        cursor: pointer;
+        z-index: 55;
+      }
+      .topVisible-expand {
+        background: url('@{url}/eventAndTopics_down_normal.png') no-repeat 0 0;
+        background-size: 100% 100%;
+        visibility: visible;
+        margin-right: -68px;
+        &:hover {
+          background-image: url('@{url}/eventAndTopics_down_highlight.png');
+        }
+        &:active {
+          background-image: url('@{url}/eventAndTopics_down_highlight.png');
+        }
+      }
+      .topVisible-collapse {
+        background: url('@{btn}/eventAndTopics_up_normal.png') no-repeat center /
+          100% 100%;
+        visibility: hidden;
+        margin-right: 0px;
+        &:hover {
+          top: 1px;
+          background: url('@{btn}/eventAndTopics_up_highlight.png') no-repeat
+            center / 100% 100%;
+        }
+        &:active {
+          top: 1px;
+          background: url('@{btn}/eventAndTopics_up_highlight.png') no-repeat
+            center / 100% 100%;
+        }
+      }
+      .topClose-edit {
+        float: right;
+        width: 80px;
+        height: 40px;
+        margin-top: -5px;
+        margin-right: -6px;
+        cursor: pointer;
+        z-index: 55;
+        background: url('@{url}/eventAndTopics_close.png') no-repeat 0 0;
+        background-size: 100% 100%;
+        &:hover {
+          background-image: url('@{url}/eventAndTopics_close_h.png');
+        }
+      }
+      .topClose {
+        float: right;
+        margin-top: 10px;
+        margin-right: 4px;
+        cursor: pointer;
+        z-index: 55;
+        width: 68px;
+        height: 48px;
+        cursor: pointer;
+        background: url('@{btn}/eventAndTopics_close_normal.png') no-repeat
+          center / 100% 100%;
+        &:hover {
+          background: url('@{btn}/eventAndTopics_close_highlight.png') no-repeat
+            center / 100% 100%;
+        }
+      }
+    }
+
+    .plotButton-box {
+      position: absolute;
+      bottom: 35px;
+      // outline:1px solid red;
+      left: 0;
+      width: 100%;
+      height: 60px;
+      text-align: right;
+      pointer-events: none;
+
+      .topButton {
+        pointer-events: auto;
+        box-sizing: border-box;
+        float: right;
+        margin-top: 7px;
+        margin-right: 10px;
+        border-radius: 5px;
+        border: 1px solid #3bfedf;
+        padding: 3px 8px;
+        cursor: pointer;
+        color: #a0f4fd;
+        background: linear-gradient(
+          to top,
+          transparent,
+          rgba(91, 199, 214, 0.55)
+        );
+        font-size: 24px;
+        &:nth-child(1) {
+          margin-right: 16px;
+        }
+      }
+      .topButton:hover {
+        // background: #3bfedf;
+        color: #fcf280;
+        background: linear-gradient(
+          to top,
+          rgba(246, 208, 24, 0.4),
+          rgba(246, 177, 20, 0.55)
+        );
+        border-color: #ffe643;
+      }
+    }
+
+    .savePlotName {
+      display: none;
+      width: 230px;
+
+      position: fixed;
+      left: calc(100vw - 800px);
+      top: 120px;
+      /*
+      position: absolute;
+      left: calc(3840px - 855px);
+      top: calc(1080px - 681px); */
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      // border: 2px solid rgba(22, 34, 61, 0.8);
+      // background-color: rgba(13, 24, 28, 0.79);
+      background: url('@{url}/plot_bg.png') no-repeat 0 0;
+      background-size: 100% 100%;
+      z-index: 51;
+      .savePlotInput {
+        background: rgba(33, 82, 128, 0.51);
+        border-radius: 5px;
+        box-shadow: inset 0 0 1px rgba(109, 236, 233, 0.26),
+          0 0 5px rgba(71, 154, 213, 0.35);
+        padding: 30px 20px;
+        margin: 5px 8px 10px 5px;
+
+        .el-input__inner {
+          background-color: transparent;
+          border-color: #46d7f6;
+          color: #fff;
+        }
+      }
+      .savePlotButton {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        // background: rgba(0,0,0,.5);
+        padding-bottom: 10px;
+      }
+    }
+  }
+  /***从vue中迁移过来**/
+  .savePlotInput {
+    .el-form-item__content {
+      margin-left: 0px !important;
+    }
+  }
+  .plotSymbolTreeBox {
+    // padding: 10px;
+    // .treeInput {
+    //   // position: ;
+    // }
+    .treeFilter-box {
+      position: absolute;
+      top: 0px;
+      right: 0;
+      left: 0;
+      z-index: 22;
+      padding-top: 5px;
+      background: #041125;
+      /deep/.el-input__inner {
+        background-color: transparent;
+        border-color: #3bfedf;
+        color: #fff;
+        font-size: 16px;
+      }
+    }
+    .treeBox {
+      // height: 410px;
+      // overflow-y: scroll;
+
+      .treeNodeImg {
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        background-size: 100% 100%;
+        border-radius: 50%;
+        vertical-align: middle;
+        margin-right: 5px;
+        margin-left: -5px;
+      }
+    }
+  }
+  /***从RestElementUI.css中迁移过来***/
+  .cu-filter-tree.el-tree {
+    background-color: transparent;
+    color: #fff;
+    .el-tree-node {
+      background-color: transparent;
+      .el-tree-node__content {
+        background-color: transparent !important;
+        height: 42px;
+        line-height: 42px;
+        &:link,
+        &:hover,
+        &:active,
+        &:visited {
+          background-color: transparent !important;
+          user-select: none;
+        }
+        .el-tree-node__label {
+          height: 18px;
+          line-height: 18px;
+          font-size: 18px;
+          letter-spacing: 1px;
+          color: #fff;
+          // color: #ffe92c;
+        }
+      }
+      .el-tree-node__children {
+        .el-tree-node__content {
+          .is-leaf {
+            color: #fff;
+            &::before {
+              content: none;
+              width: 10px;
+              height: 10px;
+              background-color: #16e5f6;
+              border-radius: 10px;
+              display: inline-block;
+              margin-right: 15px;
+              position: relative;
+              top: 1px;
+            }
+          }
+        }
+        .el-tree-node {
+          &.is-current {
+            background-color: transparent;
+            .el-tree-node__content {
+              // background-color: transparent !important;
+              // box-shadow: inset 0px 0px 8px 2px rgba(0, 227, 255, 0.7),
+              //     0 0 7px 0 rgba(0, 255, 255, 0.5);
+
+              background: linear-gradient(
+                to top,
+                rgba(246, 208, 24, 0.18),
+                rgba(246, 177, 20, 0.18)
+              );
+              border: 1px solid #ffe643;
+              border-radius: 3px;
+              opacity: 0.8;
+              .el-tree-node__label {
+                color: #ffe92c;
+              }
+              & + [role='group'] {
+                .el-tree-node__content {
+                  background:none; // 去除联动选中效果
+                  border:none;
+                  box-shadow: none;
+                  .el-tree-node__label {
+                    color: #c2e7f2;
+                    &:after {
+                      display: none;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .el-icon-caret-right:before {
+        content: '\e6e1';
+      }
+    }
+  }
+}

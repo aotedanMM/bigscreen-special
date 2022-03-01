@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+    <title>疾病预防控制中心</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="28" height="28" rx="14"></rect>
+        <filter x="-10.7%" y="-10.7%" width="121.4%" height="121.4%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.26 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="其他图标" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="应急保障资源" transform="translate(-977.000000, -188.000000)">
+            <g id="疾病预防控制中心" transform="translate(979.000000, 190.000000)">
+                <g id="矩形">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <rect stroke="#FFFFFF" stroke-width="1" stroke-linejoin="square" fill="#9D0A0A" fill-rule="evenodd" x="0.5" y="0.5" width="27" height="27" rx="13.5"></rect>
+                </g>
+                <path d="M22.605059,14.5710983 C22.469019,15.8722179 22.0040387,16.5369204 21.210118,16.5635737 C20.202572,16.4558724 19.679137,15.46589 19.6408758,13.5952586 C19.698799,11.7518245 20.222234,10.7895834 21.210118,10.7079915 C21.9078542,10.7623861 22.3531725,11.2508499 22.5471357,12.1717511 L23.9420767,11.7246272 C23.5153576,9.96278501 22.605059,9.05493858 21.210118,9 C19.2338187,9.16263995 18.1970454,10.6943928 18.1003295,13.5952586 C18.1970454,16.550519 19.2338187,18.0947826 21.210118,18.2307692 C22.7405675,18.2307692 23.6705282,17.2141335 24,15.1808622 L22.605059,14.5710983 Z M13.3171432,16.4825257 L12.8229355,16.4825257 L12.8229355,10.7895834 L13.3171432,10.7895834 C14.6148369,10.8167807 15.2833457,11.7387698 15.3221384,13.5544626 C15.3221384,15.506686 14.6536295,16.4825257 13.3171432,16.4825257 L13.3171432,16.4825257 Z M13.3458391,9.12184398 L11.3408439,9.12184398 L11.3408439,18.0681293 L13.4335211,18.0681293 C15.796684,18.1763746 16.9397385,16.6587643 16.8626847,13.5136667 C16.8233606,10.6133448 15.6516102,9.14958524 13.3458391,9.12184398 L13.3458391,9.12184398 Z M7.1097885,16.5635737 C6.10171113,16.4558724 5.57880752,15.46589 5.54001488,13.5952586 C5.59846955,11.7518245 6.12137315,10.7895834 7.1097885,10.7079915 C7.8069933,10.7623861 8.25231162,11.2508499 8.44627484,12.1717511 L9.84121586,11.7246272 C9.41502816,9.96278501 8.50472951,9.05493858 7.1097885,9 C5.13348921,9.16263995 4.09671591,10.6943928 4,13.5952586 C4.09671591,16.550519 5.13348921,18.0947826 7.1097885,18.2307692 C8.63970666,18.2307692 9.56966734,17.2141335 9.89967053,15.1808622 L8.50472951,14.5710983 C8.36868955,15.8722179 7.90370921,16.5369204 7.1097885,16.5635737 L7.1097885,16.5635737 Z" id="Fill-1" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,42 @@
+.halflist{
+  // width: 365px;
+  height: 840px;
+  padding: 5px 15px;
+  border-radius: 5px;
+  background:url('../../img/default/panel/half_bg.png') no-repeat;
+  background-size:100% 100%;
+  overflow:hidden;
+  .halfhide{
+    visibility:hidden;
+  }
+  .loading{
+    color: #fff;
+    // font-size: 36px;
+    background: url(../../img/halfScreen/halflist/loading.gif) no-repeat 33px 255px;
+    color: #d2e1ec;
+    height: 100%;
+    p{
+        padding-left: 5px;
+        margin:0;
+        transform: translateY(-8px);
+    }
+    center{
+      margin-top:120%;
+    }
+  }
+  .halflist-back{
+    width: 61px;
+    height: 25px;
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    color: #338af8;
+    cursor: pointer;
+    z-index: 1;
+    background:url('../../img/default/panel/toBack.png') no-repeat 0px 70%;
+    background-size: 100% 100%;
+    &:hover {
+      background-image: url('../../img/default/panel/toBack_h.png');
+    }
+  }
+}

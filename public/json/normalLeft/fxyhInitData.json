@@ -1,0 +1,286 @@
+{
+    "data": [{
+            "title": "地质灾害隐患点",
+            "//specialType": "specialType标明codeKey为数组，这样就避免在写额外的代码判断了。 codeStr: 代表codeKey 为]字符串",
+            "specialType": "codeArr",
+            "tabTitle": "地质灾害隐患点",
+            "codeKey": ["mountaincollapse","landslide","debrisflow","miningcollapse","bottomcollapse","groundfissure"],
+            "tabNumber": 0,
+            "unit": "个",
+            "icon": "Trouble-icon-dizhi",
+            "checked": false,
+            "numChecked": false,
+            "//fatherId": "fatherId为1的时候代码有下级父级元素点击不高亮",
+            "fatherId": 1,
+            "list": [{
+                    "codeKey": "mountaincollapse",
+                    "specialType": "codeStr",
+                    "tabNumber": 0,
+                    "title": "崩塌",
+                    "unit": "个",
+                    "checked": false,
+                    "numChecked": false,
+                    "tabTitle": "崩塌",
+                    "icon": "Trouble-icon-bengta"
+                },
+                {
+                    "codeKey": "landslide",
+                    "tabNumber": 0,
+                    "specialType": "codeStr",
+                    "title": "滑坡",
+                    "unit": "个",
+                    "checked": false,
+                    "numChecked": false,
+                    "tabTitle": "滑坡",
+                    "icon": "Trouble-icon-huapo"
+                },
+                {
+                    "codeKey": "debrisflow",
+                    "tabNumber": 0,
+                    "specialType": "codeStr",
+                    "title": "泥石流",
+                    "unit": "个",
+                    "checked": false,
+                    "numChecked": false,
+                    "tabTitle": "泥石流",
+                    "icon": "Trouble-icon-nishiliu"
+                },
+                {
+                    "codeKey": "miningcollapse",
+                    "tabNumber": 0,
+                    "specialType": "codeStr",
+                    "title": "采空塌陷",
+                    "unit": "个",
+                    "checked": false,
+                    "numChecked": false,
+                    "tabTitle": "采空塌陷",
+                    "icon": "Trouble-icon-caikongtaxian"
+                },
+                {
+                    "title": "地裂缝",
+                    "name": "地裂缝",
+                    "specialType": "codeStr",
+                    "bg": "miningcollapse",
+                    "num": 0,
+                    "tabNumber": 0,
+                    "unit": "个",
+                    "key": "groundfissure",
+                    "codeKey": "groundfissure",
+                    "commonKey": "hiddendisastersites",
+                    "clickKey": "hiddendisastersites",
+                    "checked": false,
+                    "active": false,
+                    "checkedNum": false,
+                    "icon": "Trouble-icon-caikongtaxian"
+                },
+                {
+                    "codeKey": "bottomcollapse",
+                    "tabNumber": 0,
+                    "specialType": "codeStr",
+                    "title": "地面塌陷",
+                    "unit": "个",
+                    "checked": false,
+                    "numChecked": false,
+                    "tabTitle": "地面塌陷",
+                    "icon": "Trouble-icon-dimiantaxian"
+                }
+            ]
+        },
+        {
+            "title": "危化企业",
+            "specialType": "codeArr",
+            "codeKey": [
+                "productionindustry",
+                "runeddustry",
+                "useddustry",
+                "otherdustry"
+            ],
+            "tabNumber": 0,
+            "unit": "个",
+            "checked": false,
+            "numChecked": false,
+            "tabTitle": "危化企业",
+            "icon": "Trouble-icon-weihua",
+            "fatherId": 1,
+            "list": [{
+                    "codeKey": "productionindustry",
+                    "tabNumber": 0,
+                    "specialType": "codeStr",
+                    "title": "生产企业",
+                    "unit": "个",
+                    "checked": false,
+                    "numChecked": false,
+                    "tabTitle": "生产企业",
+                    "icon": "Trouble-icon-shengchanqiye"
+                },
+                {
+                    "codeKey": "runeddustry",
+                    "tabNumber": 0,
+                    "specialType": "codeStr",
+                    "title": "经营企业",
+                    "unit": "个",
+                    "checked": false,
+                    "numChecked": false,
+                    "tabTitle": "经营企业",
+                    "icon": "Trouble-icon-jingyingqiye"
+                },
+                {
+                    "codeKey": "useddustry",
+                    "tabNumber": 0,
+                    "specialType": "codeStr",
+                    "title": "使用企业",
+                    "unit": "个",
+                    "checked": false,
+                    "numChecked": false,
+                    "tabTitle": "使用企业",
+                    "icon": "Trouble-icon-shiyongqiye"
+                },
+                {
+                    "codeKey": "otherdustry",
+                    "tabNumber": 0,
+                    "specialType": "codeStr",
+                    "title": "其它危化企业",
+                    "unit": "个",
+                    "checked": false,
+                    "numChecked": false,
+                    "tabTitle": "其它危化企业",
+                    "icon": "Trouble-icon-qitaqiye"
+                }
+            ]
+        },
+        {
+            "title": "重大危险源",
+            "tabTitle": "重大危险源",
+            "specialType": "codeStr",
+            "codeKey": "majordanger",
+            "tabNumber": 0,
+            "unit": "个",
+            "icon": "Trouble-icon-zhongda",
+            "checked": false,
+            "numChecked": false
+        },
+        {
+            "title": "尾矿库",
+            "tabTitle": "尾矿库",
+            "specialType": "codeStr",
+            "codeKey": "tailingpond",
+            "tabNumber": 0,
+            "unit": "个",
+            "icon": "Trouble-icon-weikuang",
+            "numChecked": false,
+            "checked": false
+        },
+        {
+            "title": "烟花爆竹企业",
+            "tabTitle": "烟花爆竹企业",
+            "specialType": "codeStr",
+            "codeKey": "firework",
+            "tabNumber": 0,
+            "unit": "个",
+            "icon": "Trouble-icon-yanhua",
+            "numChecked": false,
+            "checked": false
+        },
+        {
+            "title": "烟花爆竹仓库",
+            "tabTitle": "烟花爆竹仓库",
+            "specialType": "codeStr",
+            "codeKey": "fireworkhouse",
+            "tabNumber": 0,
+            "unit": "个",
+            "icon": "Trouble-icon-yanhua",
+            "numChecked": false,
+            "checked": false
+        },
+        {
+            "title": "非煤矿山",
+            "tabTitle": "非煤矿山",
+            "specialType": "codeStr",
+            "codeKey": "metalnonmetal",
+            "tabNumber": 0,
+            "unit": "个",
+            "icon": "Trouble-icon-feijinshu",
+            "numChecked": false,
+            "checked": false
+        },
+        {
+            "title": "煤矿企业",
+            "tabTitle": "煤矿企业",
+            "specialType": "codeStr",
+            "codeKey": "coal",
+            "tabNumber": 0,
+            "unit": "个",
+            "icon": "Trouble-icon-meikuang",
+            "numChecked": false,
+            "checked": false
+        },
+        {
+            "title": "工贸企业",
+            "specialType": "codeArr",
+            "codeKey": ["metallurgical","nonferrous","mechanical","dust","refrigeration"],
+            "tabNumber": 0,
+            "unit": "个",
+            "icon": "Trouble-icon-gongmao",
+            "tabTitle": "工贸企业",
+            "checked": false,
+            "numChecked": false,
+            "fatherId": 1,
+            "list": [{
+                    "codeKey": "metallurgical",
+                    "tabNumber": 0,
+                    "specialType": "codeStr",
+                    "title": "冶金行业",
+                    "unit": "个",
+                    "checked": false,
+                    "numChecked": false,
+                    "tabTitle": "冶金行业",
+                    "icon": "Trouble-icon-yejin"
+                },
+                {
+                    "codeKey": "nonferrous",
+                    "specialType": "codeStr",
+                    "tabNumber": 0,
+                    "title": "有色行业",
+                    "unit": "个",
+                    "checked": false,
+                    "numChecked": false,
+                    "tabTitle": "有色行业",
+                    "icon": "Trouble-icon-youse"
+                },
+                {
+                    "codeKey": "mechanical",
+                    "specialType": "codeStr",
+                    "tabNumber": 0,
+                    "title": "机械铸造",
+                    "unit": "个",
+                    "checked": false,
+                    "numChecked": false,
+                    "tabTitle": "机械铸造",
+                    "icon": "Trouble-icon-jixiezz"
+                },
+                {
+                    "codeKey": "dust",
+                    "specialType": "codeStr",
+                    "tabNumber": 0,
+                    "title": "粉尘涉爆",
+                    "unit": "个",
+                    "checked": false,
+                    "numChecked": false,
+                    "tabTitle": "粉尘涉爆",
+                    "icon": "Trouble-icon-fenchen"
+                },
+                {
+                    "codeKey": "refrigeration",
+                    "specialType": "codeStr",
+                    "tabNumber": 0,
+                    "title": "涉氨制冷",
+                    "unit": "个",
+                    "checked": false,
+                    "numChecked": false,
+                    "tabTitle": "涉氨制冷",
+                    "icon": "Trouble-icon-sheanzl"
+                }
+            ]
+        }
+    ]
+}

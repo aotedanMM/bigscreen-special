@@ -1,0 +1,3793 @@
+{
+    "//type": "事件类型, 林火专题常态",
+    "type": "floodDefault",
+    "//isFores": "是否为林火专题",
+    "isFores": true,
+    "//funcPanel": "功能性按钮，右侧那部分",
+    "funcPanel": [{
+            "name": "监测预警",
+            "alias": "监测预警",
+            "//key": "唯一关键字",
+            "key": "MonitorWarningForestFire",
+            "//componetName": "需要引入的组件的名称",
+            "componetName": "MonitorWarningForestFire",
+            "//checked": "是否显示在小窗(选中)",
+            "checked": false,
+            "//icon": "按钮图标",
+            "icon": "jcyj"
+        },
+        {
+            "name": "应急资源",
+            "alias": "应急资源",
+            "//key": "唯一关键字",
+            "key": "NewEmergencyResource",
+            "//componetName": "需要引入的组件的名称",
+            "componetName": "NewEmergencyResource",
+            "//checked": "是否显示在小窗(选中)",
+            "checked": false,
+            "//icon": "按钮图标",
+            "icon": "yjzz",
+            "//enlarge": "判断是否可以放大（放大按钮不存在）",
+            "enlarge": false,
+            "//pushNum": "推送数据是否显示消息提醒",
+            "pushNum": false,
+            "//unreadNum": "未读数量",
+            "unreadNum": "0"
+        },
+        {
+            "name": "安全生产",
+            "alias": "安全生产",
+            "//key": "唯一关键字",
+            "key": "RiskHiddenView",
+            "//componetName": "需要引入的组件的名称",
+            "componetName": "RiskHiddenView",
+            "//checked": "是否显示在小窗(选中)",
+            "checked": false,
+            "//icon": "按钮图标",
+            "icon": "fxyh",
+            "//enlarge": "判断是否可以放大（放大按钮不存在）",
+            "enlarge": false,
+            "//pushNum": "推送数据是否显示消息提醒",
+            "pushNum": false,
+            "//unreadNum": "未读数量",
+            "unreadNum": "0"
+        },
+        {
+            "name": "森林防火",
+            "alias": "森林防火",
+            "//key": "唯一关键字",
+            "key": "senResistantLayer",
+            "//componetName": "需要引入的组件的名称",
+            "componetName": "SenResistantLayer",
+            "//checked": "是否显示在小窗(选中)",
+            "checked": false,
+            "//icon": "按钮图标",
+            "icon": "slfh"
+        },
+        {
+            "name": "防汛抗旱",
+            "alias": "防汛抗旱",
+            "//key": "唯一关键字",
+            "key": "floodcontroldrought",
+            "//componetName": "需要引入的组件的名称",
+            "componetName": "floodcontroldrought",
+            "//checked": "是否显示在小窗(选中)",
+            "checked": false,
+            "//icon": "按钮图标",
+            "icon": "fxkh"
+        },
+        {
+            "name": "地质地震",
+            "alias": "地质地震",
+            "//key": "唯一关键字",
+            "key": "geologicalearthquake",
+            "//componetName": "需要引入的组件的名称",
+            "componetName": "geologicalearthquake",
+            "//checked": "是否显示在小窗(选中)",
+            "checked": false,
+            "//icon": "按钮图标",
+            "icon": "dzdz"
+        },
+        {
+            "name": "防护目标",
+            "alias": "防护目标",
+            "//key": "唯一关键字",
+            "key": "EntrenchTarget",
+            "//componetName": "需要引入的组件的名称",
+            "componetName": "EntrenchTarget",
+            "//checked": "是否显示在小窗(选中)",
+            "checked": false,
+            "//icon": "按钮图标",
+            "// 更改防护目标自己的图标": "毕东方 2021.12.6",
+            "icon": "fhmb"
+        }
+    ],
+    "//": "结果按钮，左侧那部分,大屏左侧配置面板",
+    "//zhushi": [{
+        "//name": "蔓延分析",
+        "//alias": "蔓延分析",
+        "//key": "唯一关键字",
+        "/key": "SpreadAnalysis",
+        "//componetName": "需要引入的组件的名称",
+        "/componetName": "SpreadAnalysis",
+        "//checked": "是否显示在小窗(选中)",
+        "/checked": false,
+        "//disabled": "是否置灰",
+        "/disabled": false,
+        "//icon": "按钮图标",
+        "/icon": "kspg"
+
+    }],
+    "researchPanel": [{
+            "name": "综合研判",
+            "alias": "综合研判",
+            "//key": "唯一关键字",
+            "key": "quickStudy",
+            "//componetName": "需要引入的组件的名称",
+            "componetName": "StudyAndJudgmentContainer",
+            "//checked": "是否显示在小窗(选中)",
+            "checked": false,
+            "//icon": "按钮图标",
+            "icon": "cbyp"
+        },
+        {
+            "name": "力量调度",
+            "alias": "力量调度",
+            "//key": "唯一关键字",
+            "key": "RescueTeamContainer",
+            "//componetName": "需要引入的组件的名称",
+            "componetName": "RescueTeamContainer",
+            "//checked": "是否显示在小窗(选中)",
+            "checked": false,
+            "//icon": "按钮图标",
+            "icon": "dwdd"
+        },
+        {
+            "name": "物资保障",
+            "alias": "物资保障",
+            "//key": "唯一关键字",
+            "key": "MaterialSupportContainer",
+            "//componetName": "需要引入的组件的名称",
+            "componetName": "MaterialSupportContainer",
+            "//checked": "是否显示在小窗(选中)",
+            "checked": false,
+            "//icon": "按钮图标",
+            "icon": "wzbz"
+        },
+        {
+
+            "name": "作战部署",
+            "alias": "作战部署",
+            "//key": "唯一关键字",
+            "key": "OperationalDeploymentContainer",
+            "//componetName": "需要引入的组件的名称",
+            "componetName": "OperationalDeploymentContainer",
+            "//checked": "是否显示在小窗(选中)",
+            "checked": false,
+            "//icon": "按钮图标",
+            "icon": "zzbs"
+        }
+    ],
+    "quickStudy": {
+        "level": "6级",
+        "notShowTabFlag": true,
+        "ControlBtnContainer": {
+            "name": "控制按钮的组件，河流研判、缓冲区研判、行政区划研判",
+            "isShow": true,
+            "//componetName": "需要引入的组件的名称",
+            "componetName": "ControlBtnContainer",
+            "componentParam": {
+                "btnList": [{
+                        "name": "行政区划研判",
+                        "key": "xzqhyp",
+                        "isUseNameSlot": true,
+                        "isChecked": false,
+                        "nameLayout": {
+                            "arr": [{
+                                    "textVal": "行政区划"
+                                },
+                                {
+                                    "textVal": "研判"
+                                }
+                            ]
+                        },
+                        "componetName": "XzqhypBtnContainer",
+                        "componentParam": {}
+                    },
+                    {
+                        "name": "缓冲区研判",
+                        "key": "hcqyp",
+                        "isUseNameSlot": true,
+                        "isChecked": false,
+                        "nameLayout": {
+                            "arr": [{
+                                    "textVal": "缓冲区"
+                                },
+                                {
+                                    "textVal": "研判"
+                                }
+                            ]
+                        },
+                        "componetName": "HcqypBtnContainer",
+                        "componentParam": {}
+                    }
+                ]
+            }
+        },
+        "defaultRadius": 20,
+        "//defaultRadius": "周边分析默认半径",
+        "tabShowTitle": {
+            "title": "行政区划与人口"
+        },
+        "tabShow": {
+            "countyCount": {
+                "title": "影响区市",
+                "name": "受影响区市",
+                "num": 0,
+                "danwei": "个",
+                "key": "countyCount",
+                "icon": "qx",
+                "//commonKey": "表明使用commonKey的值作为下钻页的组件关键字。这里之所有这个东西，是因为学校那些都是用key作为下钻页的组件关键字",
+                "commonKey": "population",
+                "clickKey": "population"
+            },
+            "townCount": {
+                "title": "影响乡镇",
+                "name": "受影响乡镇",
+                "num": 0,
+                "danwei": "个",
+                "key": "townCount",
+                "icon": "xz",
+                "//commonKey": "表明使用commonKey的值作为下钻页的组件关键字。这里之所有这个东西，是因为学校那些都是用key作为下钻页的组件关键字",
+                "commonKey": "population",
+                "clickKey": "population"
+            },
+            "population": {
+                "title": "人口",
+                "name": "人口",
+                "num": 0,
+                "danwei": "万人",
+                "key": "population",
+                "icon": "rk"
+            },
+            "populationDensity": {
+                "title": "人口密度",
+                "name": "人口密度",
+                "num": 0,
+                "danwei": "人/km²",
+                "key": "populationDensity",
+                "icon": "rkmd"
+            }
+        },
+        "personnelKey": [
+            "bas_school",
+            "hospital",
+            "airport",
+            "railwaystation",
+            "hazardous",
+            "coal",
+            "noncoal",
+            "firework",
+            "fireworkhouse",
+            "reservoir",
+            "portwharf",
+            "nuclear",
+            "landslide",
+            "miningcollapse",
+            "debrisflow",
+            "mountaincollapse",
+            "bottomcollapse",
+            "groundfissure",
+            "landsubsidence",
+            "unstableslopes",
+            "disinfoper",
+            "emergencypart",
+            "for_waterport",
+            "for_heliport",
+            "for_watersource",
+            "for_watersourceport",
+            "majordanger"
+        ],
+        "contList": {
+            "contListAll": [{
+                    "title": "人员密集场所",
+                    "sum": 0,
+                    "defaultExpand": true,
+                    "list": {
+                        "bas_school": {
+                            "title": "学校",
+                            "name": "学校",
+                            "bg": "schoolbg",
+                            "num": 0,
+                            "danwei": "所",
+                            "key": "bas_school",
+                            "clickKey": "bas_school",
+                            "active": false
+                        },
+                        "hospital": {
+                            "title": "医院",
+                            "name": "医院",
+                            "bg": "hospitalbg",
+                            "num": 0,
+                            "danwei": "家",
+                            "key": "hospital",
+                            "clickKey": "hospital",
+                            "active": false
+                        },
+                        "airport": {
+                            "title": "机场",
+                            "name": "机场",
+                            "bg": "airportbg",
+                            "num": 0,
+                            "danwei": "个",
+                            "key": "airport",
+                            "clickKey": "airport",
+                            "active": false
+                        },
+                        "railwaystation": {
+                            "title": "火车站",
+                            "name": "火车站",
+                            "bg": "railwaystationbg",
+                            "num": 0,
+                            "danwei": "个",
+                            "key": "railwaystation",
+                            "clickKey": "railwaystation",
+                            "active": false
+                        }
+                    }
+                },
+                {
+                    "title": "高危行业企业",
+                    "sum": 0,
+                    "defaultExpand": true,
+                    "list": {
+                        "hazardous": {
+                            "title": "危化企业",
+                            "name": "危化企业",
+                            "bg": "hazardousbg",
+                            "num": 0,
+                            "danwei": "个",
+                            "key": "hazardous",
+                            "clickKey": "hazardous",
+                            "active": false
+                        },
+                        "noncoal": {
+                            "title": "非煤企业",
+                            "name": "非煤企业",
+                            "bg": "fmks",
+                            "num": 0,
+                            "danwei": "个",
+                            "key": "noncoal",
+                            "clickKey": "noncoal",
+                            "commonKey": "noncoal",
+                            "codeKey": "noncoal",
+                            "active": false,
+                            "tabTitle": "非煤企业",
+                            "specialType": "codeStr",
+                            "tabNumber": 0,
+                            "icon": "Trouble-icon-feijinshu",
+                            "numChecked": false,
+                            "checked": false,
+                            "checkedNum": false,
+                            "stag": "meikuang"
+                        }
+                    }
+                },
+                {
+                    "title": "重大危险源",
+                    "name": "重大危险源",
+                    "bg": "majorDangerbg",
+                    "key": "majordanger",
+                    "specialType": "codeStr",
+                    "codeKey": "majordanger",
+                    "tabNumber": 0,
+                    "clickKey": "majordanger",
+                    "commonKey": "majordanger",
+                    "sum": 0,
+                    "danwei": "个",
+                    "active": false,
+                    "checked": false,
+                    "checkedNum": false,
+                    "sign": "copy",
+                    "numChecked": false
+                },
+                {
+                    "title": "重要设施",
+                    "sum": 0,
+                    "defaultExpand": true,
+                    "list": {
+                        "reservoir": {
+                            "title": "水库大坝",
+                            "name": "水库大坝",
+                            "bg": "reservoirIcon",
+                            "num": 0,
+                            "danwei": "个",
+                            "key": "reservoir",
+                            "clickKey": "reservoir",
+                            "active": false
+                        },
+                        "for_watersource": {
+                            "title": "直升机取水点",
+                            "name": "直升机取水点",
+                            "bg": "watersourceAirbg",
+                            "num": 0,
+                            "danwei": "个",
+                            "key": "for_watersource",
+                            "clickKey": "for_watersource",
+                            "active": false
+                        },
+                        "for_heliport": {
+                            "title": "直升机起降点/停机坪",
+                            "name": "直升机起降点/停机坪",
+                            "bg": "heliportbg",
+                            "num": 0,
+                            "danwei": "处",
+                            "key": "for_heliport",
+                            "clickKey": "for_heliport",
+                            "active": false
+                        }
+                    }
+                },
+                {
+                    "title": "地质灾害隐患点",
+                    "sum": 0,
+                    "defaultExpand": true,
+                    "list": {
+                        "mountaincollapse": {
+                            "title": "崩塌",
+                            "name": "崩塌",
+                            "bg": "mountainCollapsed",
+                            "num": 0,
+                            "danwei": "个",
+                            "key": "mountaincollapse",
+                            "commonKey": "hiddendisastersites",
+                            "clickKey": "hiddendisastersites",
+                            "active": false
+                        },
+                        "landslide": {
+                            "title": "滑坡",
+                            "name": "滑坡",
+                            "bg": "landslide",
+                            "num": 0,
+                            "danwei": "个",
+                            "key": "landslide",
+                            "commonKey": "hiddendisastersites",
+                            "clickKey": "hiddendisastersites",
+                            "active": false
+                        },
+                        "debrisflow": {
+                            "title": "泥石流",
+                            "name": "泥石流",
+                            "bg": "mudslide",
+                            "num": 0,
+                            "danwei": "个",
+                            "key": "debrisflow",
+                            "commonKey": "hiddendisastersites",
+                            "clickKey": "hiddendisastersites",
+                            "active": false
+                        },
+                        "miningcollapse": {
+                            "title": "踩空塌陷",
+                            "name": "踩空塌陷",
+                            "bg": "miningcollapse",
+                            "num": 0,
+                            "danwei": "个",
+                            "key": "miningcollapse",
+                            "commonKey": "hiddendisastersites",
+                            "clickKey": "hiddendisastersites",
+                            "active": false
+                        },
+                        "bottomcollapse": {
+                            "title": "地面塌陷",
+                            "name": "地面塌陷",
+                            "bg": "groundCollapse",
+                            "num": 0,
+                            "danwei": "个",
+                            "key": "bottomcollapse",
+                            "commonKey": "hiddendisastersites",
+                            "clickKey": "hiddendisastersites",
+                            "active": false
+                        }
+                    }
+                },
+                {
+                    "title": "监测站点",
+                    "key": "监测站点",
+                    "defaultExpand": true,
+                    "//isSpecialComponent": "是否走自己的组件，不和人员密集场所一样",
+                    "isSpecialComponent": true,
+                    "componentName": "MonitorWarningContainer"
+                },
+                {
+                    "title": "周边视频",
+                    "key": "周边视频",
+                    "defaultExpand": false,
+                    "//isSpecialComponent": "是否走自己的组件，不和人员密集场所一样",
+                    "isSpecialComponent": true,
+                    "componentName": "SurroundVideo"
+                }
+            ]
+        },
+        "//waterk": {
+            "//list": [{
+                    "//name": "大型水库",
+                    "//title": "大型水库",
+                    "//num": 0,
+                    "//unit": "个",
+                    "//specialType": "codeStr",
+                    "//key": "bigReservoirNum",
+                    "//codeKey": "bigReservoirNum",
+                    "//type": "bigReservoir",
+                    "//icon": "reservoir",
+                    "/checked": false,
+                    "/tabNumber": 0,
+                    "/checkedNum": false
+                },
+                {
+                    "/name": "中型水库",
+                    "/title": "中型水库",
+                    "/num": 0,
+                    "/unit": "个",
+                    "/specialType": "codeStr",
+                    "/key": "middleReservoirNum",
+                    "/codeKey": "middleReservoirNum",
+                    "/type": "middleReservoir",
+                    "/icon": "reservoir",
+                    "/checked": false,
+                    "/tabNumber": 0,
+                    "/checkedNum": false
+                },
+                {
+                    "//name": "小（1）型头顶库",
+                    "//title": "小（1）型头顶库",
+                    "//num": 0,
+                    "//unit": "个",
+                    "//tabNumber": 0,
+                    "//specialType": "codeStr",
+                    "//icon": "reservoir",
+                    "//codeKey": "smallOneTopReservoirYesNum",
+                    "//key": "smallOneTopReservoirYesNum",
+                    "//type": "smallOneTopReservoir",
+                    "//checked": false,
+                    "//checkedNum": false
+                },
+                {
+                    "//name": "小（1）型非头顶库",
+                    "//title": "小（1）型非头顶库",
+                    "//num": "",
+                    "//unit": "个",
+                    "//tabNumber": 0,
+                    "//specialType": "codeStr",
+                    "//icon": "reservoir",
+                    "//codeKey": "smallOneTopReservoirNoNum",
+                    "//key": "smallOneTopReservoirNoNum",
+                    "//type": "smallOneReservoir",
+                    "//checked": false,
+                    "//checkedNum": false
+                },
+                {
+                    "//name": "小（2）型头顶库",
+                    "//title": "小（2）型头顶库",
+                    "//num": "",
+                    "//unit": "个",
+                    "//specialType": "codeStr",
+                    "//tabNumber": 0,
+                    "//icon": "reservoir",
+                    "//codeKey": "smallTwoTopReservoirYesNum",
+                    "//key": "smallTwoTopReservoirYesNum",
+                    "//type": "smallTwoTopReservoir",
+                    "//checked": false,
+                    "//checkedNum": false
+                },
+                {
+                    "//name": "小（2）型非头顶库",
+                    "//title": "小（2）型非头顶库",
+                    "//num": "",
+                    "//unit": "个",
+                    "//specialType": "codeStr",
+                    "//tabNumber": 0,
+                    "//icon": "reservoir",
+                    "//codeKey": "smallTwoTopReservoirNoNum",
+                    "//key": "smallTwoTopReservoirNoNum",
+                    "//type": "smallTwoReservoir",
+                    "//checked": false,
+                    "//checkedNum": false
+                },
+                {
+                    "//title": "易涝点",
+                    "//name": "易涝点",
+                    "//bg": "mountainCollapsed",
+                    "//num": 0,
+                    "//unit": "处",
+                    "//specialType": "codeStr",
+                    "//commonKey": "hiddendisastersites",
+                    "//clickKey": "hiddendisastersites",
+                    "//active": false,
+                    "//checked": false,
+                    "//tabNumber": 0,
+                    "//checkedNum": false
+                }
+            ]
+        },
+        "floodcontroldrought": {
+            "list": [{
+                    "name": "雨情监测站",
+                    "title": "雨情监测站",
+                    "num": 0,
+                    "unit": "处",
+                    "specialType": "codeStr",
+                    "component": "RainMonitor",
+                    "key": "rainNum",
+                    "codeKey": "rainNum",
+                    "isChecked": false,
+                    "checked": false,
+                    "type": "rain",
+                    "icon_bg": "icon_bg",
+                    "icon": "teamIcon",
+                    "tabNumber": 0,
+                    "gray": false,
+                    "checkedNum": false
+                },
+                {
+                    "name": "河流监测站",
+                    "title": "河流监测站",
+                    "num": 0,
+                    "unit": "处",
+                    "specialType": "codeStr",
+                    "component": "RiverMonitor",
+                    "key": "riverNum",
+                    "codeKey": "riverNum",
+                    "isChecked": false,
+                    "checked": false,
+                    "type": "river",
+                    "icon_bg": "icon_bg",
+                    "icon": "riverIcon",
+                    "tabNumber": 0,
+                    "gray": false,
+                    "checkedNum": false
+                },
+                {
+                    "name": "堰闸监测站",
+                    "title": "堰闸监测站",
+                    "num": 0,
+                    "unit": "处",
+                    "specialType": "codeStr",
+                    "component": "gateWaterMonitor",
+                    "key": "countweirGateWater",
+                    "codeKey": "countweirGateWater",
+                    "isChecked": false,
+                    "checked": false,
+                    "icon_bg": "icon_bg",
+                    "icon": "countweirGateWaterIcon",
+                    "tabNumber": 0,
+                    "gray": false,
+                    "checkedNum": false
+                },
+                {
+                    "name": "水库",
+                    "title": "水库",
+                    "num": 0,
+                    "unit": "处",
+                    "specialType": "codeArr",
+                    "component": "reservoirMonitor",
+                    "key": "reservoirNum",
+                    "codeKey": ["reservoirCountdx", "reservoirCountzx", "reservoirCountxx"],
+                    "isChecked": false,
+                    "checked": false,
+                    "numChecked": false,
+                    "tabTitle": "水库",
+                    "icon_bg": "icon_bg",
+                    "icon": "reservoirIcon",
+                    "tabNumber": 0,
+                    "gray": false,
+                    "checkedNum": false,
+                    "defaultExpand": true,
+                    "fatherId": 1,
+                    "list": [{
+                        "name": "大型水库",
+                        "title": "大型水库",
+                        "tabTitle": "大型水库",
+                        "component": "reservoirMonitor",
+                        "num": 0,
+                        "unit": "个",
+                        "specialType": "codeStr",
+                        "key": "reservoirCountdx",
+                        "codeKey": "reservoirCountdx",
+                        "type": "bigReservoir",
+                        "icon_bg": "icon_bg",
+                        "icon": "reservoirCountdxIcon",
+                        "checked": false,
+                        "numChecked": false,
+                        "tabNumber": 0,
+                        "checkedNum": false
+                    },
+                    {
+                        "name": "中型水库",
+                        "title": "中型水库",
+                        "num": 0,
+                        "unit": "个",
+                        "specialType": "codeStr",
+                        "component": "reservoirMonitor",
+                        "key": "reservoirCountzx",
+                        "codeKey": "reservoirCountzx",
+                        "type": "middleReservoir",
+                        "icon_bg": "icon_bg",
+                        "icon": "reservoirCountzxIcon",
+                        "checked": false,
+                        "tabNumber": 0,
+                        "checkedNum": false
+                    },
+                    {
+                        "name": "小型水库",
+                        "title": "小型水库",
+                        "num": 0,
+                        "unit": "个",
+                        "specialType": "codeStr",
+                        "component": "reservoirMonitor",
+                        "key": "reservoirCountxx",
+                        "codeKey": "reservoirCountxx",
+                        "type": "smallReservoir",
+                        "icon_bg": "icon_bg",
+                        "icon": "reservoirCountxxIcon",
+                        "checked": false,
+                        "tabNumber": 0,
+                        "checkedNum": false
+                    }
+                ]
+                },
+                {
+                    "name": "山洪灾害村",
+                    "title": "山洪灾害村",
+                    "num": 0,
+                    "unit": "个",
+                    "specialType": "codeStr",
+                    "component": "floodvillageMonitor",
+                    "key": "floodvillage",
+                    "codeKey": "floodvillage",
+                    "isChecked": false,
+                    "checked": false,
+                    "icon_bg": "icon_bg",
+                    "icon": "floodvillageIcon",
+                    "tabNumber": 0,
+                    "gray": false,
+                    "checkedNum": false
+                }
+            ]
+        },
+        "geologicalearthquake": {
+            "qurek": [{
+                    "id": "earthQuakeZone",
+                    "name": "地震风险区",
+                    "title": "地震风险区",
+                    "checked": true,
+                    "gray": false,
+                    "isHasPaly": false,
+                    "checkedNum": false,
+                    "icon": "dzfxq",
+                    "legend": {
+                        "component": ""
+                    }
+                }
+            ],
+            "//notes ": "刘云梦2022/02/25地质地震去掉地震断裂带和地震带",
+            "// {": "{",
+            "// id": "EarthquakeRuptureBeltLayer",
+            "// name": "地震断裂带",
+            "// title": "地震断裂带",
+            "// checked": false,
+            "// gray": false,
+            "// isHasPaly": false,
+            "// checkedNum": false,
+            "// icon": "dzdld",
+            "//  }": "}",
+            "//{": "{",
+            "//id": "EarthquakeRuptureBeltLayerTwo",
+            "//name": "地震带",
+            "//title": "地震带",
+            "//checked": false,
+            "//gray": false,
+            "//isHasPaly": false,
+            "//checkedNum": false,
+            "//icon": "dzd",
+            "// }": "}",
+            "list": [{
+                    "id": "SeismicSonitoringStationLayer",
+                    "title": "地震监测台站",
+                    "name": "地震监测台站",
+                    "checked": false,
+                    "bg": "monitorstation",
+                    "num": 0,
+                    "specialType": "codeStr",
+                    "danwei": "家",
+                    "key": "monitorstation",
+                    "codeKey": "monitorstation",
+                    "commonKey": "hiddendisastersites",
+                    "clickKey": "hiddendisastersites",
+                    "icon": "dizhenjiancetai",
+                    "unit": "处",
+                    "tabNumber": 0,
+                    "active": false,
+                    "checkedNum": false
+                },
+                {
+                    "id": "ShelterLayer",
+                    "title": "避难场所",
+                    "name": "避难场所",
+                    "specialType": "codeStr",
+                    "bg": "hospitalbg",
+                    "num": 0,
+                    "tabNumber": 0,
+                    "danwei": "家",
+                    "key": "shelter",
+                    "codeKey": "shelter",
+                    "commonKey": "hiddendisastersites",
+                    "clickKey": "hiddendisastersites",
+                    "active": false,
+                    "unit": "个",
+                    "icon": "binanchangsuo",
+                    "checked": false,
+                    "checkedNum": false
+                },
+                {
+                    "title": "崩塌",
+                    "name": "崩塌",
+                    "specialType": "codeStr",
+                    "bg": "mountainCollapsed",
+                    "num": 0,
+                    "tabNumber": 0,
+                    "unit": "个",
+                    "key": "mountaincollapse",
+                    "codeKey": "mountaincollapse",
+                    "commonKey": "hiddendisastersites",
+                    "clickKey": "hiddendisastersites",
+                    "checked": false,
+                    "active": false,
+                    "checkedNum": false,
+                    "icon": "Trouble-icon-bengta"
+                },
+                {
+                    "title": "滑坡",
+                    "name": "滑坡",
+                    "specialType": "codeStr",
+                    "bg": "landslide",
+                    "num": 0,
+                    "tabNumber": 0,
+                    "unit": "个",
+                    "key": "landslide",
+                    "codeKey": "landslide",
+                    "commonKey": "hiddendisastersites",
+                    "clickKey": "hiddendisastersites",
+                    "checked": false,
+                    "active": false,
+                    "checkedNum": false,
+                    "icon": "Trouble-icon-huapo"
+                },
+                {
+                    "title": "泥石流",
+                    "name": "泥石流",
+                    "specialType": "codeStr",
+                    "bg": "mudslide",
+                    "num": 0,
+                    "tabNumber": 0,
+                    "unit": "个",
+                    "key": "debrisflow",
+                    "codeKey": "debrisflow",
+                    "commonKey": "hiddendisastersites",
+                    "clickKey": "hiddendisastersites",
+                    "checked": false,
+                    "active": false,
+                    "checkedNum": false,
+                    "icon": "Trouble-icon-nishiliu"
+                },
+                {
+                    "title": "踩空塌陷",
+                    "name": "踩空塌陷",
+                    "specialType": "codeStr",
+                    "bg": "miningcollapse",
+                    "num": 0,
+                    "tabNumber": 0,
+                    "unit": "个",
+                    "key": "miningcollapse",
+                    "codeKey": "miningcollapse",
+                    "commonKey": "hiddendisastersites",
+                    "clickKey": "hiddendisastersites",
+                    "checked": false,
+                    "active": false,
+                    "checkedNum": false,
+                    "icon": "Trouble-icon-caikongtaxian"
+                },
+                {
+                    "title": "地裂缝",
+                    "name": "地裂缝",
+                    "specialType": "codeStr",
+                    "bg": "miningcollapse",
+                    "num": 0,
+                    "tabNumber": 0,
+                    "unit": "个",
+                    "key": "groundfissure",
+                    "codeKey": "groundfissure",
+                    "commonKey": "hiddendisastersites",
+                    "clickKey": "hiddendisastersites",
+                    "checked": false,
+                    "active": false,
+                    "checkedNum": false,
+                    "icon": "Trouble-icon-caikongtaxian"
+                },
+                {
+                    "title": "地面塌陷",
+                    "name": "地面塌陷",
+                    "specialType": "codeStr",
+                    "bg": "groundCollapse",
+                    "num": 0,
+                    "tabNumber": 0,
+                    "unit": "个",
+                    "key": "bottomcollapse",
+                    "codeKey": "bottomcollapse",
+                    "commonKey": "hiddendisastersites",
+                    "clickKey": "hiddendisastersites",
+                    "checked": false,
+                    "active": false,
+                    "checkedNum": false,
+                    "icon": "Trouble-icon-dimiantaxian"
+                }
+            ]
+        }
+    },
+    "halflist": {
+        "DisasterRescueTeams": [{
+                "name": "救援分布统计",
+                "componetName": "DisasterRescueTeams"
+            },
+            {
+                "name": "救援分布列表",
+                "componetName": "DisasterRescueTeamsList"
+            }
+        ],
+        "bas_school": [{
+                "name": "学校分布统计",
+                "componetName": "DisasterSchool"
+            },
+            {
+                "name": "学校分布列表",
+                "componetName": "DisaterSchoolList"
+            }
+        ],
+        "hospital": [{
+                "name": "医院分布统计",
+                "componetName": "DisasterHospital"
+            },
+            {
+                "name": "医院分布列表",
+                "componetName": "DisasterHospitalList"
+            }
+        ],
+        "airport": [{
+                "name": "机场分布统计",
+                "componetName": "DisasterPlane"
+            },
+            {
+                "name": "机场分布列表",
+                "componetName": "DisasterPlaneList"
+            }
+        ],
+        "for_watersource": [{
+                "name": "直升机取水点统计",
+                "componetName": "watersourceAirPlane"
+            },
+            {
+                "name": "直升机取水点列表",
+                "componetName": "watersourceAirPlaneList"
+            }
+        ],
+        "for_waterport": [{
+                "name": "取水码头统计",
+                "componetName": "watersourcePlane"
+            },
+            {
+                "name": "取水码头列表",
+                "componetName": "watersourcePlaneList"
+            }
+        ],
+        "for_watersourceport": [{
+                "name": "取水点加取水码头统计",
+                "componetName": "watersourcePufPlane"
+            },
+            {
+                "name": "取水点加取水码头列表",
+                "componetName": "watersourcePufPlaneList"
+            }
+        ],
+        "for_heliport": [{
+                "name": "直升机起降点统计",
+                "componetName": "heliportPlane"
+            },
+            {
+                "name": "直升机起降点列表",
+                "componetName": "heliportPlaneList"
+            }
+        ],
+        "railwaystation": [{
+                "name": "火车站分布统计",
+                "componetName": "DisasterTrain"
+            },
+            {
+                "name": "火车站分布列表",
+                "componetName": "DisasterTrainList"
+            }
+        ],
+        "hazardous": [{
+                "name": "危化企业分布统计",
+                "componetName": "DisasterCompany"
+            },
+            {
+                "name": "危化企业分布列表",
+                "componetName": "DisasterCompanyList"
+            }
+        ],
+        "majordanger":[{
+                "name": "重大危险源分布统计",
+                "componetName": "DisasterMajorDanger"
+            },
+            {
+                "name": "重大危险源分布列表",
+                "componetName": "DisasterMajorDangerList"
+            }
+        ],
+        "coal": [{
+                "name": "煤矿企业分布统计",
+                "componetName": "DisasterCoal"
+            },
+            {
+                "name": "煤矿企业分布列表",
+                "componetName": "DisasterCoalList"
+            }
+        ],
+        "metalnonmetal": [{
+                "name": "金属与非金属分布统计",
+                "componetName": "DisasteMetalnonmetalCoal"
+            },
+            {
+                "name": "非煤矿山列表",
+                "componetName": "DisasteMetalnonmetalList"
+            }
+        ],
+        "//tailingpond": [{
+                "//name": "非煤矿山分布统计",
+                "//componetName": "DisasterNoCoal"
+            },
+            {
+                "//name": "非煤矿山分布列表",
+                "//componetName": "DisasterNoCoalList"
+            }
+        ],
+        "firework": [{
+                "name": "烟花爆竹企业分布统计",
+                "componetName": "DisasterFireworks"
+            },
+            {
+                "name": "烟花爆竹企业分布列表",
+                "componetName": "DisasterFireworksList"
+            }
+        ],
+        "fireworkhouse": [{
+                "name": "烟花爆竹仓库分布统计",
+                "componetName": "FIREWORKWAREHOUSE"
+            },
+            {
+                "name": "烟花爆竹仓库分布列表",
+                "componetName": "FIREWORKWAREHOUSEList"
+            }
+        ],
+        "reservoir": [{
+                "name": "水库大坝分布统计",
+                "componetName": "DisasterReservoir"
+            },
+            {
+                "name": "水库大坝分布列表",
+                "componetName": "DisasterReservoirList"
+            }
+        ],
+        "portwharf": [{
+                "name": "码头分布统计",
+                "componetName": "DisasterWharf"
+            },
+            {
+                "name": "码头分布列表",
+                "componetName": "DisasterWharfList"
+            }
+        ],
+        "hiddendisastersites": [{
+                "name": "地灾隐患点分布",
+                "componetName": "HiddenDisasterSites"
+            },
+            {
+                "name": "地灾隐患点统计",
+                "componetName": "HiddenDisasterSitesList"
+            }
+        ],
+        "nuclear": [{
+                "name": "核设施分布统计",
+                "componetName": "DisasterNucleus"
+            },
+            {
+                "name": "核设施分布列表",
+                "componetName": "DisasterNucleusList"
+            }
+        ],
+        "//disinfoper": [{
+                "//name": "灾情信息员统计",
+                "//componetName": "DisasterMessenger"
+            },
+            {
+                "//name": "灾情信息员列表",
+                "//componetName": "DisasterMessengerList"
+            }
+        ],
+        "emergencypart": [{
+                "name": "应急管理机构统计",
+                "componetName": "DisasterEmergencypart"
+            },
+            {
+                "name": "应急管理机构列表",
+                "componetName": "DisasterEmergencypartList"
+            }
+        ],
+        "population": [{
+                "name": "人口分布统计",
+                "componetName": "PopulationFeverBox"
+            },
+            {
+                "name": "人口分布列表",
+                "componetName": "PopulationFeverList"
+            }
+        ],
+        "countyCount": [{
+                "name": "行政区划",
+                "componetName": "DistrictLeftDialog"
+            },
+            {
+                "name": "行政区划",
+                "componetName": "DistrictRightDialog"
+            }
+        ]
+    },
+    "toolConfig": {
+        "mapToolIconEventOverview": "mapToolIconEventOverview_common.json",
+        "mapToolCompared": "mapToolCompared_common.json",
+        "mapCommonTools": "commonTools_common.json",
+        "disasterDecide": "disasterDecide_common.json",
+        "gisToolList": [{
+                "component": "GisSwitchMap",
+                "options": {
+                    "mapId": "map",
+                    "baseLayers": [],
+                    "//defaultLayerIndex": "默认展示底图",
+                    "defaultLayerIndex": 0
+                }
+            },
+            {
+                "component": "CommonTools"
+            },
+            {
+                "component": "GisVideoSurveillance",
+                "name": "视频监控"
+            },
+            {
+                "component": "GisOnlineTerminal",
+                "name": "在线会商终端"
+            },
+            {
+                "component": "GisOnlinePawn",
+                "name": "在线单兵"
+            },
+            {
+                "component": "GisPlotControlBtn",
+                "name": "标绘"
+            },
+            {
+                "component": "GisPlotAroundBtn",
+                "name": "周边查询"
+            }
+        ]
+    },
+    "legend": [{
+            "clickFn": "openIntensity",
+            "title": "烈度圈",
+            "checked": false,
+            "iconName": "InfluenceCircle",
+            "isShow": false,
+            "mapCircleQueryType": 1
+        },
+        {
+            "clickFn": "openInfluence",
+            "title": "经验圈",
+            "checked": false,
+            "iconName": "intensityCircle",
+            "isShow": false,
+            "mapCircleQueryType": 0
+        },
+        {
+            "clickFn": "openThermodynamiTc",
+            "title": "人口热力",
+            "checked": false,
+            "iconName": "populationFever",
+            "isShow": false,
+            "mapCircleQueryType": 2,
+            "DayNightShow": true,
+            "DayNightHide": false,
+            "DayBtnclick": true
+        },
+        {
+            "clickFn": "openRiverSystem",
+            "title": "水系",
+            "checked": false,
+            "iconName": "riverSystem",
+            "isShow": false,
+            "mapCircleQueryType": 3
+        },
+        {
+            "clickFn": "openHistoricalEarthquake",
+            "title": "历史地震",
+            "checked": false,
+            "iconName": "historicalEarthquake",
+            "isShow": false,
+            "mapCircleQueryType": 4
+        },
+        {
+            "key": "Rainfall",
+            "title": "降雨量",
+            "iconName": "riverSystem",
+            "isShow": false,
+            "index": 5,
+            "mutex": [{
+                    "key": "RainStation"
+                },
+                {
+                    "key": "WindMonitoring"
+                },
+                {
+                    "key": "Reservoir"
+                },
+                {
+                    "key": "Riverway"
+                },
+                {
+                    "key": "Wind"
+                },
+                {
+                    "key": "WindThwartwise"
+                },
+                {
+                    "key": "LiftMonitoring"
+                }
+            ],
+            "componentName": "Rainfall",
+            "componentParam": {
+                "title": "降雨量(mm)",
+                "content": [{
+                        "text": "0~10",
+                        "color": "rgba(165,243,142,1)"
+                    },
+                    {
+                        "text": "10~25",
+                        "color": "rgba(56,171,0,1)"
+                    },
+                    {
+                        "text": "25~50",
+                        "color": "rgba(99,186,255,1)"
+                    },
+                    {
+                        "text": "50~100",
+                        "color": "rgba(1,0,251,1)"
+                    }
+                ]
+            }
+        },
+        {
+            "key": "RainStation",
+            "title": "雨量站",
+            "iconName": "riverSystem",
+            "isShow": false,
+            "index": 6,
+            "mutex": [{
+                    "key": "Rainfall"
+                },
+                {
+                    "key": "WindMonitoring"
+                },
+                {
+                    "key": "Reservoir"
+                },
+                {
+                    "key": "Riverway"
+                },
+                {
+                    "key": "Wind"
+                },
+                {
+                    "key": "WindThwartwise"
+                },
+                {
+                    "key": "RainfallThwartwise"
+                },
+                {
+                    "key": "LiftMonitoring"
+                }
+            ],
+            "componentName": "RainStation",
+            "componentParam": {
+                "title": "雨量站",
+                "content": [{
+                        "text": "无预警",
+                        "iconName": "rainstation"
+                    },
+                    {
+                        "text": "暴雨",
+                        "iconName": "rain"
+                    },
+                    {
+                        "text": "大暴雨",
+                        "iconName": "heavyRain"
+                    },
+                    {
+                        "text": "特大暴雨",
+                        "iconName": "superRain"
+                    }
+                ]
+            }
+        },
+        {
+            "key": "Wind",
+            "title": "风力",
+            "isShow": false,
+            "index": 7,
+            "mutex": [{
+                    "key": "RainStation"
+                },
+                {
+                    "key": "Rainfall"
+                },
+                {
+                    "key": "WindMonitoring"
+                },
+                {
+                    "key": "Reservoir"
+                },
+                {
+                    "key": "Riverway"
+                },
+                {
+                    "key": "WindThwartwise"
+                },
+                {
+                    "key": "RainfallThwartwise"
+                },
+                {
+                    "key": "LiftMonitoring"
+                }
+            ],
+            "componentName": "Wind",
+            "componentParam": {
+                "title": "风力",
+                "content": [{
+                        "text": "软风",
+                        "iconName": "windField"
+                    },
+                    {
+                        "text": "轻风",
+                        "iconName": "windField"
+                    },
+                    {
+                        "text": "微风",
+                        "iconName": "windField"
+                    },
+                    {
+                        "text": "和风",
+                        "iconName": "windField"
+                    },
+                    {
+                        "text": "清劲风",
+                        "iconName": "windField"
+                    },
+                    {
+                        "text": "强风",
+                        "iconName": "windField"
+                    },
+                    {
+                        "text": "疾风",
+                        "iconName": "windField"
+                    },
+                    {
+                        "text": "大风",
+                        "iconName": "windField"
+                    },
+                    {
+                        "text": "烈风",
+                        "iconName": "windField"
+                    },
+                    {
+                        "text": "狂风",
+                        "iconName": "windField"
+                    },
+                    {
+                        "text": "暴风",
+                        "iconName": "windField"
+                    }
+                ]
+            }
+        },
+        {
+            "key": "WindMonitoring",
+            "title": "风力监测站",
+            "isShow": false,
+            "index": 8,
+            "mutex": [{
+                    "key": "Rainfall"
+                },
+                {
+                    "key": "RainStation"
+                },
+                {
+                    "key": "Reservoir"
+                },
+                {
+                    "key": "Riverway"
+                },
+                {
+                    "key": "Wind"
+                },
+                {
+                    "key": "WindThwartwise"
+                },
+                {
+                    "key": "RainfallThwartwise"
+                },
+                {
+                    "key": "LiftMonitoring"
+                }
+            ],
+            "componentName": "WindMonitoring",
+            "componentParam": {
+                "title": "风力监测站",
+                "content": [{
+                        "text": "风力监测站",
+                        "iconName": "wind"
+                    },
+                    {
+                        "text": "超阈值监测站",
+                        "iconName": "windOver"
+                    }
+                ]
+            }
+        },
+        {
+            "key": "Reservoir",
+            "title": "水库测站",
+            "isShow": false,
+            "index": 9,
+            "mutex": [{
+                    "key": "Rainfall"
+                },
+                {
+                    "key": "RainStation"
+                },
+                {
+                    "key": "WindMonitoring"
+                },
+                {
+                    "key": "Wind"
+                },
+                {
+                    "key": "WindThwartwise"
+                },
+                {
+                    "key": "RainfallThwartwise"
+                },
+                {
+                    "key": "LiftMonitoring"
+                }
+            ],
+            "componentName": "Reservoir",
+            "componentParam": {
+                "title": "水库测站",
+                "content": [{
+                        "text": "无预警",
+                        "iconName": "reservoirwyj"
+                    },
+                    {
+                        "text": "超汛限",
+                        "iconName": "reservoircxx"
+                    },
+                    {
+                        "text": "超正常",
+                        "iconName": "reservoirczc"
+                    },
+                    {
+                        "text": "超设计",
+                        "iconName": "reservoircsj"
+                    },
+                    {
+                        "text": "超历史最高",
+                        "iconName": "reservoircls"
+                    }
+                ]
+            }
+        },
+        {
+            "key": "Riverway",
+            "title": "河道站",
+            "isShow": false,
+            "index": 10,
+            "mutex": [{
+                    "key": "Rainfall"
+                },
+                {
+                    "key": "RainStation"
+                },
+                {
+                    "key": "WindMonitoring"
+                },
+                {
+                    "key": "Wind"
+                },
+                {
+                    "key": "WindThwartwise"
+                },
+                {
+                    "key": "RainfallThwartwise"
+                },
+                {
+                    "key": "LiftMonitoring"
+                }
+            ],
+            "componentName": "Riverway",
+            "componentParam": {
+                "title": "河道站",
+                "content": [{
+                        "text": "正常",
+                        "iconName": "riverwyj"
+                    },
+                    {
+                        "text": "超警戒",
+                        "iconName": "rivercjj"
+                    },
+                    {
+                        "text": "超保证",
+                        "iconName": "rivercbz"
+                    },
+                    {
+                        "text": "超历史最高",
+                        "iconName": "rivercls"
+                    }
+                ]
+            }
+        },
+        {
+            "key": "LiftMonitoring",
+            "title": "工情监测站",
+            "isShow": false,
+            "index": 11,
+            "mutex": [{
+                    "key": "Rainfall"
+                },
+                {
+                    "key": "RainStation"
+                },
+                {
+                    "key": "WindMonitoring"
+                },
+                {
+                    "key": "Wind"
+                },
+                {
+                    "key": "WindThwartwise"
+                },
+                {
+                    "key": "RainfallThwartwise"
+                },
+                {
+                    "key": "Riverway"
+                }
+            ],
+            "componentName": "LiftMonitoring",
+            "componentParam": {
+                "title": "工情监测站",
+                "content": [{
+                        "text": "堤防",
+                        "iconName": "bundpitch"
+                    },
+                    {
+                        "text": "电排站",
+                        "iconName": "dianpaizhan"
+                    },
+                    {
+                        "text": "船闸",
+                        "iconName": "chuanzha"
+                    },
+                    {
+                        "text": "水电站",
+                        "iconName": "shuidianzhan"
+                    },
+                    {
+                        "text": "水闸",
+                        "iconName": "shuizha"
+                    }
+                ]
+            }
+        },
+        {
+            "key": "RainfallThwartwise",
+            "horizontal": true,
+            "isShow": false,
+            "index": 12,
+            "mutex": [{
+                    "key": "RainStation"
+                },
+                {
+                    "key": "WindMonitoring"
+                },
+                {
+                    "key": "Reservoir"
+                },
+                {
+                    "key": "Wind"
+                },
+                {
+                    "key": "Riverway"
+                },
+                {
+                    "key": "WindThwartwise"
+                },
+                {
+                    "key": "LiftMonitoring"
+                }
+            ],
+            "componentName": "RainfallThwartwise",
+            "componentParam": {
+                "title": "",
+                "content": ["小雨", "中雨", "大雨", "暴雨", "大暴雨", "特大暴雨"]
+            }
+        },
+        {
+            "key": "WindThwartwise",
+            "horizontal": true,
+            "isShow": false,
+            "index": 13,
+            "mutex": [{
+                    "key": "Rainfall"
+                },
+                {
+                    "key": "RainStation"
+                },
+                {
+                    "key": "WindMonitoring"
+                },
+                {
+                    "key": "Reservoir"
+                },
+                {
+                    "key": "Wind"
+                },
+                {
+                    "key": "Riverway"
+                },
+                {
+                    "key": "RainfallThwartwise"
+                },
+                {
+                    "key": "LiftMonitoring"
+                }
+            ],
+            "componentName": "WindThwartwise",
+            "componentParam": {
+                "title": "风力",
+                "content": [
+                    "软风",
+                    "轻风",
+                    "微风",
+                    "和风",
+                    "清劲风",
+                    "强风",
+                    "疾风",
+                    "大风",
+                    "烈风",
+                    "狂风",
+                    "暴风"
+                ]
+            }
+        }
+    ],
+    "legendConfig": {
+        "RainStation": {
+            "title": "雨量站",
+            "content": [{
+                    "text": "无预警",
+                    "iconName": "rainstation"
+                },
+                {
+                    "text": "暴雨",
+                    "iconName": "rain"
+                },
+                {
+                    "text": "大暴雨",
+                    "iconName": "heavyRain"
+                },
+                {
+                    "text": "特大暴雨",
+                    "iconName": "superRain"
+                }
+            ]
+        },
+        "Reservoir": {
+            "title": "水库测站",
+            "content": [{
+                    "text": "无预警",
+                    "iconName": "reservoirwyj"
+                },
+                {
+                    "text": "超汛限",
+                    "iconName": "reservoircxx"
+                },
+                {
+                    "text": "超正常",
+                    "iconName": "reservoirczc"
+                },
+                {
+                    "text": "超设计",
+                    "iconName": "reservoircsj"
+                },
+                {
+                    "text": "超历史最高",
+                    "iconName": "reservoircls"
+                }
+            ]
+        },
+        "normalReservoir": {
+            "title": "水库测站",
+            "content": [{
+                    "text": "暂无水位",
+                    "iconName": "reservoirgray"
+                },
+                {
+                    "text": "无预警",
+                    "iconName": "reservoirwyj"
+                },
+                {
+                    "text": "超历史最高",
+                    "iconName": "reservoircls"
+                }
+            ]
+        },
+        "bigReservoir": {
+            "title": "大型水库",
+            "content": [{
+                    "text": "无预警",
+                    "iconName": "reservoirwyj"
+                },
+                {
+                    "text": "超汛限",
+                    "iconName": "reservoircxx"
+                },
+                {
+                    "text": "超正常",
+                    "iconName": "reservoirczc"
+                },
+                {
+                    "text": "超设计",
+                    "iconName": "reservoircsj"
+                },
+                {
+                    "text": "超历史最高",
+                    "iconName": "reservoircls"
+                }
+            ]
+        },
+        "middleReservoir": {
+            "title": "中型水库",
+            "content": [{
+                    "text": "无预警",
+                    "iconName": "reservoirwyj"
+                },
+                {
+                    "text": "超汛限",
+                    "iconName": "reservoircxx"
+                },
+                {
+                    "text": "超正常",
+                    "iconName": "reservoirczc"
+                },
+                {
+                    "text": "超设计",
+                    "iconName": "reservoircsj"
+                },
+                {
+                    "text": "超历史最高",
+                    "iconName": "reservoircls"
+                }
+            ]
+        },
+        "smallOneTopReservoir": {
+            "title": "头顶库",
+            "content": [{
+                    "text": "无预警",
+                    "iconName": "reservoirwyj"
+                },
+                {
+                    "text": "超汛限",
+                    "iconName": "reservoircxx"
+                },
+                {
+                    "text": "超正常",
+                    "iconName": "reservoirczc"
+                },
+                {
+                    "text": "超设计",
+                    "iconName": "reservoircsj"
+                },
+                {
+                    "text": "超历史最高",
+                    "iconName": "reservoircls"
+                }
+            ]
+        },
+        "smallOneReservoir": {
+            "title": "非头顶库",
+            "content": [{
+                    "text": "无预警",
+                    "iconName": "reservoirwyj"
+                },
+                {
+                    "text": "超汛限",
+                    "iconName": "reservoircxx"
+                },
+                {
+                    "text": "超正常",
+                    "iconName": "reservoirczc"
+                },
+                {
+                    "text": "超设计",
+                    "iconName": "reservoircsj"
+                },
+                {
+                    "text": "超历史最高",
+                    "iconName": "reservoircls"
+                }
+            ]
+        },
+        "allReservoir": {
+            "title": "水库监测站",
+            "content": [{
+                    "text": "暂无水位",
+                    "iconName": "reservoirgray"
+                },
+                {
+                    "text": "无预警",
+                    "iconName": "reservoirwyj"
+                },
+                {
+                    "text": "超汛限",
+                    "iconName": "reservoircxx"
+                },
+                {
+                    "text": "超正常",
+                    "iconName": "reservoirczc"
+                },
+                {
+                    "text": "超设计",
+                    "iconName": "reservoircsj"
+                },
+                {
+                    "text": "超历史最高",
+                    "iconName": "reservoircls"
+                },
+                {
+                    "text": "暂无水位",
+                    "iconName": "reservoirgray1"
+                },
+                {
+                    "text": "无预警",
+                    "iconName": "reservoirwyj1"
+                },
+                {
+                    "text": "超汛限",
+                    "iconName": "reservoircxx1"
+                },
+                {
+                    "text": "超正常",
+                    "iconName": "reservoirczc1"
+                },
+                {
+                    "text": "超设计",
+                    "iconName": "reservoircsj1"
+                },
+                {
+                    "text": "超历史最高",
+                    "iconName": "reservoircls1"
+                },
+                {
+                    "text": "暂无水位",
+                    "iconName": "reservoirgray2"
+                },
+                {
+                    "text": "无预警",
+                    "iconName": "reservoirwyj2"
+                },
+                {
+                    "text": "超汛限",
+                    "iconName": "reservoircxx2"
+                },
+                {
+                    "text": "超正常",
+                    "iconName": "reservoirczc2"
+                },
+                {
+                    "text": "超设计",
+                    "iconName": "reservoircsj2"
+                },
+                {
+                    "text": "超历史最高",
+                    "iconName": "reservoircls2"
+                },
+                {
+                    "text": "暂无水位",
+                    "iconName": "reservoirgray3"
+                },
+                {
+                    "text": "无预警",
+                    "iconName": "reservoirwyj3"
+                },
+                {
+                    "text": "超汛限",
+                    "iconName": "reservoircxx3"
+                },
+                {
+                    "text": "超正常",
+                    "iconName": "reservoirczc3"
+                },
+                {
+                    "text": "超设计",
+                    "iconName": "reservoircsj3"
+                },
+                {
+                    "text": "超历史最高",
+                    "iconName": "reservoircls3"
+                }
+            ]
+        },
+        "warning": {
+            "title": "告警水库",
+            "content": [{
+                    "text": "超汛限",
+                    "iconName": "reservoircxx"
+                },
+                {
+                    "text": "超正常",
+                    "iconName": "reservoirczc"
+                },
+                {
+                    "text": "超设计",
+                    "iconName": "reservoircsj"
+                },
+                {
+                    "text": "超历史最高",
+                    "iconName": "reservoircls"
+                },
+                {
+                    "text": "超汛限",
+                    "iconName": "reservoircxx1"
+                },
+                {
+                    "text": "超正常",
+                    "iconName": "reservoirczc1"
+                },
+                {
+                    "text": "超设计",
+                    "iconName": "reservoircsj1"
+                },
+                {
+                    "text": "超历史最高",
+                    "iconName": "reservoircls1"
+                },
+                {
+                    "text": "超汛限",
+                    "iconName": "reservoircxx2"
+                },
+                {
+                    "text": "超正常",
+                    "iconName": "reservoirczc2"
+                },
+                {
+                    "text": "超设计",
+                    "iconName": "reservoircsj2"
+                },
+                {
+                    "text": "超历史最高",
+                    "iconName": "reservoircls2"
+                },
+                {
+                    "text": "超汛限",
+                    "iconName": "reservoircxx3"
+                },
+                {
+                    "text": "超正常",
+                    "iconName": "reservoirczc3"
+                },
+                {
+                    "text": "超设计",
+                    "iconName": "reservoircsj3"
+                },
+                {
+                    "text": "超历史最高",
+                    "iconName": "reservoircls3"
+                }
+            ]
+        },
+        "Riverway": {
+            "title": "河道监测站",
+            "content": [{
+                    "text": "正常",
+                    "iconName": "riverwyj"
+                },
+                {
+                    "text": "超警戒",
+                    "iconName": "rivercjj"
+                },
+                {
+                    "text": "超保证",
+                    "iconName": "rivercbz"
+                },
+                {
+                    "text": "超历史最高",
+                    "iconName": "rivercls"
+                }
+            ]
+        },
+        "LiftMonitoring": {
+            "title": "工情监测站",
+            "content": [{
+                    "text": "堤防",
+                    "iconName": "bundpitch"
+                },
+                {
+                    "text": "电排站",
+                    "iconName": "dianpaizhan"
+                },
+                {
+                    "text": "船闸",
+                    "iconName": "chuanzha"
+                },
+                {
+                    "text": "水电站",
+                    "iconName": "shuidianzhan"
+                },
+                {
+                    "text": "水闸",
+                    "iconName": "shuizha"
+                }
+            ]
+        },
+        "WindMonitoring": {
+            "title": "风力监测站",
+            "content": [{
+                    "text": "风力监测站",
+                    "iconName": "wind"
+                },
+                {
+                    "text": "超阈值监测站",
+                    "iconName": "windOver"
+                }
+            ]
+        }
+    },
+    "LayerPanelConfig": {
+        "title": "图层",
+        "//isShow": "要图层的时候将isShow改为true",
+        "isShow": true,
+        "showTitle": false,
+        "newLayerList": [{
+            "id": "populationHeat",
+            "name": "人口热力",
+            "checked": false,
+            "gray": false,
+            "isHasPaly": false,
+            "icon": "rkrl",
+            "legend": {
+                "component": "Population"
+            }
+        }],
+        "gisComponentConfig": {
+            "rainForecast": {
+                "module": "commonFactory",
+                "component": "mapserviceIn",
+                "add": {
+                    "method": "addLayer",
+                    "arguments": ["RainForest"]
+                },
+                "remove": {
+                    "method": "removeLayer",
+                    "arguments": ["RainForest"]
+                }
+            },
+            "satilliteCloud": {
+                "module": "commonFactory",
+                "component": "mapserviceIn",
+                "add": {
+                    "method": "addLayer",
+                    "arguments": ["SatelliteCloud"]
+                },
+                "remove": {
+                    "method": "removeLayer",
+                    "arguments": ["SatelliteCloud"]
+                }
+            },
+            "radarMap": {
+                "module": "commonFactory",
+                "component": "mapserviceIn",
+                "add": {
+                    "method": "addLayer",
+                    "arguments": ["RadarMap"]
+                },
+                "remove": {
+                    "method": "removeLayer",
+                    "arguments": ["RadarMap"]
+                }
+            },
+            "WindField": {
+                "module": "commonFactory",
+                "component": "mapserviceIn",
+                "add": {
+                    "method": "addLayer",
+                    "arguments": ["WindField"]
+                },
+                "remove": {
+                    "method": "removeLayer",
+                    "arguments": ["WindField"]
+                }
+            },
+            "WindLayer": {
+                "module": "commonFactory",
+                "component": "mapserviceIn",
+                "add": {
+                    "method": "addLayer",
+                    "arguments": ["WindDirect"]
+                },
+                "remove": {
+                    "method": "removeLayer",
+                    "arguments": ["WindDirect"]
+                }
+            },
+            "WatershedLayer": {
+                "module": "commonFactory",
+                "component": "mapserviceIn",
+                "add": {
+                    "method": "addLayer",
+                    "arguments": ["WatershedLayer"]
+                },
+                "remove": {
+                    "method": "removeLayer",
+                    "arguments": ["WatershedLayer"]
+                }
+            },
+            "RiverLayer": {
+                "module": "commonFactory",
+                "component": "mapserviceIn",
+                "add": {
+                    "method": "addLayer",
+                    "arguments": [
+                        "RiverLayer",
+                        {
+                            "clickEventName": "riverClick"
+                        }
+                    ]
+                },
+                "remove": {
+                    "method": "removeLayer",
+                    "arguments": ["RiverLayer"]
+                }
+            },
+            "ReservoirLakeLayer": {
+                "module": "commonFactory",
+                "component": "mapserviceIn",
+                "add": {
+                    "method": "addLayer",
+                    "arguments": ["ReservoirLakeLayer"]
+                },
+                "remove": {
+                    "method": "removeLayer",
+                    "arguments": ["ReservoirLakeLayer"]
+                }
+            },
+            "realtimeTraffic": {
+                "module": "commonFactory",
+                "component": "gisToolComp",
+                "add": {
+                    "method": "addTafficLayer"
+                },
+                "remove": {
+                    "method": "removeTrfficLayer"
+                }
+            },
+            "populationHeat": {
+                "module": "commonFactory",
+                "component": "popHeatComponent",
+                "add": {
+                    "method": "load",
+                    "arguments": [""]
+                },
+                "remove": {
+                    "method": "unload",
+                    "arguments": ["popHeatComponent"]
+                }
+            }
+        }
+    },
+    "fastAssessment": {
+        "modelBtnGroup": {
+            "name": "快速评估模型按钮配置",
+            "isShow": true,
+            "btnArr": [{
+                    "id": "FloodForecast",
+                    "name": "洪水径流预测",
+                    "checked": false,
+                    "icon": "hsjlyc",
+                    "index": 1,
+                    "isStartUse": true,
+                    "isHasPaly": true,
+                    "legend": {
+                        "component": "FloodForecast"
+                    }
+                },
+                {
+                    "id": "FallRisk",
+                    "name": "暴雨风险评估",
+                    "checked": false,
+                    "icon": "byfxpg",
+                    "index": 2,
+                    "isStartUse": true,
+                    "isHasPaly": true,
+                    "legend": {
+                        "component": "FallRisk"
+                    }
+                },
+                {
+                    "id": "FallCoast",
+                    "name": "暴雨滑坡预测",
+                    "checked": false,
+                    "icon": "byhpyc",
+                    "index": 3,
+                    "isStartUse": false
+                },
+                {
+                    "id": "Rainstorm",
+                    "name": "山洪风险预警",
+                    "checked": false,
+                    "icon": "flood",
+                    "index": 4,
+                    "isStartUse": true,
+                    "isHasPaly": false,
+                    "legend": {
+                        "component": "Rainstorm"
+                    }
+                }
+            ]
+        }
+    },
+    "rescueTeam": {
+        "name": "力量调度-队伍类型配置",
+        "RescueteamTypeList": [
+            {
+                "RESCUETYPECODE": "120301010000",
+                "RESCUETYPENAME": "消防救援队"
+            },
+            {
+                "RESCUETYPECODE": "120301030000",
+                "RESCUETYPENAME": "森林消防队"
+            },
+            {
+                "RESCUETYPECODE": "120301210000",
+                "RESCUETYPENAME": "医疗救护队伍"
+            },
+            {
+                "RESCUETYPECODE": "120301170000",
+                "RESCUETYPENAME": "通讯保障队伍"
+            },
+            {
+                "RESCUETYPECODE": "120301180000",
+                "RESCUETYPENAME": "电力抢修"
+            },
+            {
+                "RESCUETYPECODE": "120301050000",
+                "RESCUETYPENAME": "危化救援队伍"
+            },
+            {
+                "RESCUETYPECODE": "120301130000",
+                "RESCUETYPENAME": "防汛救援队伍"
+            },
+            {
+                "RESCUETYPECODE": "120301010000",
+                "RESCUETYPENAME": "企业消防综合救援队伍"
+            },
+            {
+                "RESCUETYPECODE": "120301040000",
+                "RESCUETYPENAME": "矿山救援队"
+            },
+            {
+                "RESCUETYPECODE": "120301990000",
+                "RESCUETYPENAME": "其他救援"
+            },
+            {
+                "RESCUETYPECODE": "120303000000",
+                "RESCUETYPENAME": "政府队伍"
+            },
+            {
+                "RESCUETYPECODE": "120301000000",
+                "RESCUETYPENAME": "应急救援队伍"
+            }
+        ]
+    },
+    "MaterialLibrary": {
+        "name": "物资保障-物资库类型配置",
+        "MaterialLibraryTypeList": [
+            {
+                "REPERTORYTYPECODE": "1",
+                "REPERTORYTYPENAME": "通用防护物资库"
+            },
+            {
+                "REPERTORYTYPECODE": "2",
+                "REPERTORYTYPENAME": "防汛抗旱物资库"
+            },
+            {
+                "REPERTORYTYPECODE": "3",
+                "REPERTORYTYPENAME": "城市防汛物资库"
+            },
+            {
+                "REPERTORYTYPECODE": "4",
+                "REPERTORYTYPENAME": "消防设施物资库"
+            },
+            {
+                "REPERTORYTYPECODE": "5",
+                "REPERTORYTYPENAME": "森林消防物资库"
+            },
+            {
+                "REPERTORYTYPECODE": "6",
+                "REPERTORYTYPENAME": "电力设施物资库"
+            },
+            {
+                "REPERTORYTYPECODE": "7",
+                "REPERTORYTYPENAME": "通讯物资库"
+            },
+            {
+                "REPERTORYTYPECODE": "8",
+                "REPERTORYTYPENAME": "生物防疫物资库"
+            },
+            {
+                "REPERTORYTYPECODE": "9",
+                "REPERTORYTYPENAME": "机场消防物资库"
+            },
+            {
+                "REPERTORYTYPECODE": "10",
+                "REPERTORYTYPENAME": "溢油防治物资库"
+            },
+            {
+                "REPERTORYTYPECODE": "11",
+                "REPERTORYTYPENAME": "防震物资库"
+            },
+            {
+                "REPERTORYTYPECODE": "12",
+                "REPERTORYTYPENAME": "港口救援物资库"
+            },
+            {
+                "REPERTORYTYPECODE": "13",
+                "REPERTORYTYPENAME": "本地救援物资库"
+            },
+            {
+                "REPERTORYTYPECODE": "14",
+                "REPERTORYTYPENAME": "委托救援物资库"
+            }
+        ]
+    },
+    "// EmergencyResponse": "应急响应",
+    "EmergencyResponse": {
+        "isShow": false
+    },
+    "// RightSideBarList": "右侧Bar默认配置项，没有走默认配置",
+    "RightSideBarList": {
+        "// RiskHiddenView": "安全生产",
+        "RiskHiddenView": [{
+                "title": "危化企业",
+                "specialType": "codeArr",
+                "codeKey": ["productionindustry", "runeddustry", "useddustry", "otherdustry", "gasstation"],
+                "tabNumber": 0,
+                "unit": "个",
+                "checked": false,
+                "numChecked": false,
+                "tabTitle": "危化企业",
+                "icon": "Trouble-icon-weihua",
+                "fatherId": 1,
+                "list": [{
+                        "codeKey": "productionindustry",
+                        "tabNumber": 0,
+                        "specialType": "codeStr",
+                        "title": "生产企业",
+                        "unit": "个",
+                        "checked": false,
+                        "numChecked": false,
+                        "tabTitle": "生产企业",
+                        "icon": "Trouble-icon-shengchanqiye"
+                    },
+                    {
+                        "codeKey": "runeddustry",
+                        "tabNumber": 0,
+                        "specialType": "codeStr",
+                        "title": "经营企业",
+                        "unit": "个",
+                        "checked": false,
+                        "numChecked": false,
+                        "tabTitle": "经营企业",
+                        "icon": "Trouble-icon-jingyingqiye"
+                    },
+                    {
+                        "codeKey": "useddustry",
+                        "tabNumber": 0,
+                        "specialType": "codeStr",
+                        "title": "使用企业",
+                        "unit": "个",
+                        "checked": false,
+                        "numChecked": false,
+                        "tabTitle": "使用企业",
+                        "icon": "Trouble-icon-shiyongqiye"
+                    },
+                    {
+                        "codeKey": "otherdustry",
+                        "tabNumber": 0,
+                        "specialType": "codeStr",
+                        "title": "其它危化企业",
+                        "unit": "个",
+                        "checked": false,
+                        "numChecked": false,
+                        "tabTitle": "其它危化企业",
+                        "icon": "Trouble-icon-qitaqiye"
+                    },
+                    {
+                        "title": "加油站",
+                        "tabTitle": "加油站",
+                        "specialType": "codeStr",
+                        "codeKey": "gasstation",
+                        "tabNumber": 0,
+                        "unit": "个",
+                        "icon": "Database-icon-jiayouzhan",
+                        "numChecked": false,
+                        "checked": false
+                    }
+                ]
+            },
+            {
+                "title": "重大危险源",
+                "name": "重大危险源",
+                "specialType": "codeStr",
+                "tabNumber": 0,
+                "num": 0,
+                "unit": "个",
+                "key": "majordanger",
+                "codeKey": "majordanger",
+                "clickKey": "majordanger",
+                "commonKey": "majordanger",
+                "icon": "Trouble-icon-zhongda",
+                "checked": false,
+                "active": false,
+                "checkedNum": false
+            },
+            {
+                "title": "煤矿企业",
+                "tabTitle": "煤矿企业",
+                "specialType": "codeStr",
+                "codeKey": "coal",
+                "tabNumber": 0,
+                "unit": "个",
+                "icon": "Trouble-icon-weikuang",
+                "numChecked": false,
+                "checked": false
+            },
+            {
+                "title": "非煤企业",
+                "tabTitle": "非煤企业",
+                "specialType": "codeStr",
+                "codeKey": "noncoal",
+                "tabNumber": 0,
+                "unit": "个",
+                "icon": "Trouble-icon-feijinshu",
+                "numChecked": false,
+                "checked": false
+            },
+             {
+              "title": "尾矿库企业",
+              "tabTitle": "尾矿库企业",
+              "icon": "Trouble-icon-feijinshu",
+              "tabNumber": 0,
+              "unit": "个",
+              "specialType": "codeStr",
+              "codeKey": "tailingpond",
+              "numChecked": false,
+              "checked": false
+            },
+            {
+                "specialType": "codeStr",
+                "codeKey": "t_tailings_pond_and_government",
+                "tabNumber": 0,
+                "title": "尾矿库基本信息及包保信息",
+                "unit": "条",
+                "checked": false,
+                "numChecked": false,
+                "tabTitle": "尾矿库基本信息及包保信息",
+                "icon": "Rescue-icon-wkkxx"
+            },
+            {
+                "title": "工贸企业",
+                "specialType": "codeArr",
+                "codeKey": ["metallurgical", "nonferrous", "mechanical", "buildingmaterial", "lightindustry", "spin", "tobacco", "commerce"],
+                "tabNumber": 0,
+                "unit": "个",
+                "icon": "Trouble-icon-gongmao",
+                "tabTitle": "工贸企业",
+                "checked": false,
+                "numChecked": false,
+                "fatherId": 1,
+                "list": [{
+                        "codeKey": "metallurgical",
+                        "tabNumber": 0,
+                        "specialType": "codeStr",
+                        "title": "冶金行业",
+                        "unit": "个",
+                        "checked": false,
+                        "numChecked": false,
+                        "tabTitle": "冶金行业",
+                        "icon": "Trouble-icon-yejin"
+                    },
+                    {
+                        "codeKey": "nonferrous",
+                        "specialType": "codeStr",
+                        "tabNumber": 0,
+                        "title": "有色行业",
+                        "unit": "个",
+                        "checked": false,
+                        "numChecked": false,
+                        "tabTitle": "有色行业",
+                        "icon": "Trouble-icon-youse"
+                    },
+                    {
+                        "codeKey": "mechanical",
+                        "specialType": "codeStr",
+                        "tabNumber": 0,
+                        "title": "机械铸造",
+                        "unit": "个",
+                        "checked": false,
+                        "numChecked": false,
+                        "tabTitle": "机械铸造",
+                        "icon": "Trouble-icon-jixiezz"
+                    },
+                    {
+                        "codeKey": "buildingmaterial",
+                        "specialType": "codeStr",
+                        "tabNumber": 0,
+                        "title": "建材行业",
+                        "unit": "个",
+                        "checked": false,
+                        "numChecked": false,
+                        "tabTitle": "建材行业",
+                        "icon": "Trouble-icon-buildingmaterial"
+                    },
+                    {
+                        "codeKey": "lightindustry",
+                        "specialType": "codeStr",
+                        "tabNumber": 0,
+                        "title": "轻工行业",
+                        "unit": "个",
+                        "checked": false,
+                        "numChecked": false,
+                        "tabTitle": "轻工行业",
+                        "icon": "Trouble-icon-lightindustry"
+                    },
+                    {
+                        "codeKey": "spin",
+                        "specialType": "codeStr",
+                        "tabNumber": 0,
+                        "title": "纺织行业",
+                        "unit": "个",
+                        "checked": false,
+                        "numChecked": false,
+                        "tabTitle": "纺织行业",
+                        "icon": "Trouble-icon-spin"
+                    },
+                    {
+                        "codeKey": "tobacco",
+                        "specialType": "codeStr",
+                        "tabNumber": 0,
+                        "title": "烟草行业",
+                        "unit": "个",
+                        "checked": false,
+                        "numChecked": false,
+                        "tabTitle": "烟草行业",
+                        "icon": "Trouble-icon-tobacco"
+                    },
+                    {
+                        "codeKey": "commerce",
+                        "specialType": "codeStr",
+                        "tabNumber": 0,
+                        "title": "商贸行业",
+                        "unit": "个",
+                        "checked": false,
+                        "numChecked": false,
+                        "tabTitle": "商贸行业",
+                        "icon": "Trouble-icon-commerce"
+                    }
+                ]
+            }
+        ],
+        "// EmergencyResource": "应急资源",
+        "EmergencyResource": [{
+                "title": "救援队伍",
+                "tabTitle": "救援队伍",
+                "//specialType": "标明codeKey为数组，这样就避免在写额外的代码判断了。 codeStr: 代表codeKey 为]字符串",
+                "specialType": "codeArr",
+                "codeKey": ["floodteam", "fireteam", "fireteamgovernment", "fireteamcompany", "forestfireteamcity", "forestfireteamcounty", "hazardousteam", "hazardousteamgovernment", "hazardousteamcompany", "mineteam", "mineteamgovernment", "mineteamcompany", "nonmineteam", "corecompetenceteam", "transportationteam", "powerteam", "powerteamgovernment", "powerteamcompany", "mobileteam", "mobileteamgovernment", "mobileteamcompany", "gasteam", "environmentteam", "salvageteam", "searescueteam", "shipspillteam", "healthyteam", "healthyteamgovernment", "healthyteamcompany", "portrescueteam", "portpassengerteam", "portconstructionteam", "buildingemergencyteam", "passengeremergencyteam", "emergencytransportteam", "equipteam", "civilianteam", "civilianteamgovernment", "civilianteamcompany"],
+                "tabNumber": 0,
+                "unit": "支",
+                "icon": "ResourceTrouble-icon-jiuyuandui",
+                "checked": false,
+                "numChecked": false,
+                "//fatherId": "fatherId为1的时候代码有下级父级元素点击不高亮",
+                "fatherId": 1,
+                "list": [{
+                        "specialType": "codeStr",
+                        "codeKey": "nonmineteam",
+                        "tabNumber": 0,
+                        "title": "政府救援队伍",
+                        "unit": "支",
+                        "checked": false,
+                        "numChecked": false,
+                        "tabTitle": "政府救援队伍",
+                        "icon": "GovernmentRescueTeam"
+                    },
+                    {
+                        "specialType": "codeStr",
+                        "codeKey": "floodteam",
+                        "tabNumber": 0,
+                        "title": "防汛抗旱队伍",
+                        "unit": "支",
+                        "checked": false,
+                        "numChecked": false,
+                        "tabTitle": "防汛抗旱队伍",
+                        "icon": "floodTeam"
+                    },
+                    {
+                        "specialType": "codeArr",
+                        "codeKey": ["fireteamgovernment", "fireteamcompany"],
+                        "tabNumber": 0,
+                        "title": "消防救援队",
+                        "unit": "支",
+                        "checked": false,
+                        "numChecked": false,
+                        "tabTitle": "消防救援队",
+                        "icon": "ResourceTrouble-icon-xiaofangjiuyuan",
+                        "//fatherId": "fatherId为1的时候代码有下级父级元素点击不高亮",
+                        "fatherId": 1,
+                        "list": [{
+                            "specialType": "codeStr",
+                            "codeKey": "fireteamgovernment",
+                            "tabNumber": 0,
+                            "title": "政府消防救援队",
+                            "unit": "支",
+                            "checked": false,
+                            "numChecked": false,
+                            "tabTitle": "政府消防救援队",
+                            "icon": "ResourceTrouble-icon-xiaofangjiuyuan"
+                        }, {
+                            "specialType": "codeStr",
+                            "codeKey": "fireteamcompany",
+                            "tabNumber": 0,
+                            "title": "企业消防救援队",
+                            "unit": "支",
+                            "checked": false,
+                            "numChecked": false,
+                            "tabTitle": "企业消防救援队",
+                            "icon": "ResourceTrouble-icon-xiaofangjiuyuan"
+                        }]
+                    },
+                    {
+                        "specialType": "codeArr",
+                        "codeKey": ["forestfireteamcity", "forestfireteamcounty"],
+                        "tabNumber": 0,
+                        "title": "森林消防救援队",
+                        "unit": "支",
+                        "checked": false,
+                        "numChecked": false,
+                        "tabTitle": "森林消防救援队",
+                        "icon": "ResourceTrouble-icon-senlinjiuyuandui",
+                        "//fatherId": "fatherId为1的时候代码有下级父级元素点击不高亮",
+                        "fatherId": 1,
+                        "list": [{
+                            "specialType": "codeStr",
+                            "codeKey": "forestfireteamcity",
+                            "tabNumber": 0,
+                            "title": "市级森林消防救援队",
+                            "unit": "支",
+                            "checked": false,
+                            "numChecked": false,
+                            "tabTitle": "市级森林消防救援队",
+                            "icon": "ResourceTrouble-icon-senlinjiuyuandui"
+                        }, {
+                            "specialType": "codeStr",
+                            "codeKey": "forestfireteamcounty",
+                            "tabNumber": 0,
+                            "title": "区县级森林消防救援队",
+                            "unit": "支",
+                            "checked": false,
+                            "numChecked": false,
+                            "tabTitle": "区县级森林消防救援队",
+                            "icon": "ResourceTrouble-icon-senlinjiuyuandui"
+                        }]
+                    },
+                    {
+                        "specialType": "codeArr",
+                        "codeKey": ["hazardousteamgovernment", "hazardousteamcompany"],
+                        "tabNumber": 0,
+                        "title": "危化品救援队",
+                        "unit": "支",
+                        "checked": false,
+                        "numChecked": false,
+                        "tabTitle": "危化品救援队",
+                        "icon": "ResourceTrouble-icon-whbjiuyuandui",
+                        "//fatherId": "fatherId为1的时候代码有下级父级元素点击不高亮",
+                        "fatherId": 1,
+                        "list": [{
+                            "specialType": "codeStr",
+                            "codeKey": "hazardousteamgovernment",
+                            "tabNumber": 0,
+                            "title": "政府危化品救援队",
+                            "unit": "支",
+                            "checked": false,
+                            "numChecked": false,
+                            "tabTitle": "政府危化品救援队",
+                            "icon": "ResourceTrouble-icon-whbjiuyuandui"
+                        }, {
+                            "specialType": "codeStr",
+                            "codeKey": "hazardousteamcompany",
+                            "tabNumber": 0,
+                            "title": "企业危化品救援队",
+                            "unit": "支",
+                            "checked": false,
+                            "numChecked": false,
+                            "tabTitle": "企业危化品救援队",
+                            "icon": "ResourceTrouble-icon-whbjiuyuandui"
+                        }]
+                    },
+                    {
+                        "specialType": "codeArr",
+                        "codeKey": ["mineteamgovernment", "mineteamcompany"],
+                        "tabNumber": 0,
+                        "title": "煤矿救援队",
+                        "unit": "支",
+                        "checked": false,
+                        "numChecked": false,
+                        "tabTitle": "煤矿救援队",
+                        "icon": "ResourceTrouble-icon-ksjiuyuandui",
+                        "//fatherId": "fatherId为1的时候代码有下级父级元素点击不高亮",
+                        "fatherId": 1,
+                        "list": [{
+                            "specialType": "codeStr",
+                            "codeKey": "mineteamgovernment",
+                            "tabNumber": 0,
+                            "title": "政府煤矿救援队",
+                            "unit": "支",
+                            "checked": false,
+                            "numChecked": false,
+                            "tabTitle": "政府煤矿救援队",
+                            "icon": "ResourceTrouble-icon-ksjiuyuandui"
+                        }, {
+                            "specialType": "codeStr",
+                            "codeKey": "mineteamcompany",
+                            "tabNumber": 0,
+                            "title": "企业煤矿救援队",
+                            "unit": "支",
+                            "checked": false,
+                            "numChecked": false,
+                            "tabTitle": "企业煤矿救援队",
+                            "icon": "ResourceTrouble-icon-ksjiuyuandui"
+                        }]
+                    },
+                    {
+                        "specialType": "codeArr",
+                        "codeKey": ["powerteamgovernment", "powerteamcompany"],
+                        "tabNumber": 0,
+                        "title": "应急供电救援队",
+                        "unit": "支",
+                        "checked": false,
+                        "numChecked": false,
+                        "tabTitle": "应急供电救援队",
+                        "icon": "ResourceTrouble-icon-yjgdjiuyuandui",
+                        "//fatherId": "fatherId为1的时候代码有下级父级元素点击不高亮",
+                        "fatherId": 1,
+                        "list": [{
+                            "specialType": "codeStr",
+                            "codeKey": "powerteamgovernment",
+                            "tabNumber": 0,
+                            "title": "政府应急供电救援队",
+                            "unit": "支",
+                            "checked": false,
+                            "numChecked": false,
+                            "tabTitle": "政府应急供电救援队",
+                            "icon": "ResourceTrouble-icon-yjgdjiuyuandui"
+                        }, {
+                            "specialType": "codeStr",
+                            "codeKey": "powerteamcompany",
+                            "tabNumber": 0,
+                            "title": "企业应急供电救援队",
+                            "unit": "支",
+                            "checked": false,
+                            "numChecked": false,
+                            "tabTitle": "企业应急供电救援队",
+                            "icon": "ResourceTrouble-icon-yjgdjiuyuandui"
+                        }]
+                    },
+                    {
+                        "specialType": "codeArr",
+                        "codeKey": ["mobileteamgovernment", "mobileteamcompany"],
+                        "tabNumber": 0,
+                        "title": "移动通讯救援队",
+                        "unit": "支",
+                        "checked": false,
+                        "numChecked": false,
+                        "tabTitle": "移动通讯救援队",
+                        "icon": "ResourceTrouble-icon-ydtxjiuyuandui",
+                        "//fatherId": "fatherId为1的时候代码有下级父级元素点击不高亮",
+                        "fatherId": 1,
+                        "list": [{
+                            "specialType": "codeStr",
+                            "codeKey": "mobileteamgovernment",
+                            "tabNumber": 0,
+                            "title": "政府移动通讯救援队",
+                            "unit": "支",
+                            "checked": false,
+                            "numChecked": false,
+                            "tabTitle": "政府移动通讯救援队",
+                            "icon": "ResourceTrouble-icon-ydtxjiuyuandui"
+                        }, {
+                            "specialType": "codeStr",
+                            "codeKey": "mobileteamcompany",
+                            "tabNumber": 0,
+                            "title": "企业移动通讯救援队",
+                            "unit": "支",
+                            "checked": false,
+                            "numChecked": false,
+                            "tabTitle": "企业移动通讯救援队",
+                            "icon": "ResourceTrouble-icon-ydtxjiuyuandui"
+                        }]
+                    },
+                    {
+                        "specialType": "codeArr",
+                        "codeKey": ["healthyteamgovernment", "healthyteamcompany"],
+                        "tabNumber": 0,
+                        "title": "医疗卫生队",
+                        "unit": "支",
+                        "checked": false,
+                        "numChecked": false,
+                        "tabTitle": "医疗卫生队",
+                        "icon": "ResourceTrouble-icon-yiliaoweishen",
+                        "//fatherId": "fatherId为1的时候代码有下级父级元素点击不高亮",
+                        "fatherId": 1,
+                        "list": [{
+                            "specialType": "codeStr",
+                            "codeKey": "healthyteamgovernment",
+                            "tabNumber": 0,
+                            "title": "政府医疗卫生队",
+                            "unit": "支",
+                            "checked": false,
+                            "numChecked": false,
+                            "tabTitle": "政府医疗卫生队",
+                            "icon": "ResourceTrouble-icon-yiliaoweishen"
+                        }, {
+                            "specialType": "codeStr",
+                            "codeKey": "healthyteamcompany",
+                            "tabNumber": 0,
+                            "title": "企业医疗卫生队",
+                            "unit": "支",
+                            "checked": false,
+                            "numChecked": false,
+                            "tabTitle": "企业医疗卫生队",
+                            "icon": "ResourceTrouble-icon-yiliaoweishen"
+                        }]
+                    },
+                    {
+                        "specialType": "codeArr",
+                        "codeKey": ["civilianteamgovernment", "civilianteamcompany"],
+                        "tabNumber": 0,
+                        "title": "其他救援队伍",
+                        "unit": "支",
+                        "checked": false,
+                        "numChecked": false,
+                        "tabTitle": "其他救援队伍",
+                        "icon": "OtherRescueTeams",
+                        "//fatherId": "fatherId为1的时候代码有下级父级元素点击不高亮",
+                        "fatherId": 1,
+                        "list": [{
+                            "specialType": "codeStr",
+                            "codeKey": "civilianteamgovernment",
+                            "tabNumber": 0,
+                            "title": "政府其他救援队伍",
+                            "unit": "支",
+                            "checked": false,
+                            "numChecked": false,
+                            "tabTitle": "政府其他救援队伍",
+                            "icon": "OtherRescueTeams"
+                        }, {
+                            "specialType": "codeStr",
+                            "codeKey": "civilianteamcompany",
+                            "tabNumber": 0,
+                            "title": "企业其他救援队伍",
+                            "unit": "支",
+                            "checked": false,
+                            "numChecked": false,
+                            "tabTitle": "企业其他救援队伍",
+                            "icon": "OtherRescueTeams"
+                        }]
+                    }
+                ]
+            },
+            {   "// zhushi": "应急资源--救援装备数据面板配置 毕东方 2021.11.23",
+                "title": "救援装备",
+                "specialType": "codeArr",
+                "codeKey": ["t_electricity_safeguard_equipme", "t_lifting_equipment", "t_fire_fighting_equipment", "t_monitor_equipment", "t_forcible_entry_equipment", "t_person_protective_equipment", "t_spray_water_equiment", "t_pumping_equiment", "emergency_department_equipment", "code_detector_type", "enterprise_detector", "enterprise_facility"],
+                "tabNumber": 0,
+                "select": "jyzb",
+                "unit": "台",
+                "checked": false,
+                "numChecked": false,
+                "tabTitle": "救援装备",
+                "icon": "Rescue-icon-jiuyuanzhuangbei",
+                "//fatherId": "fatherId为1的时候代码有下级父级元素点击不高亮",
+                "fatherId": 1,
+                "list": [{
+                        "specialType": "codeStr",
+                        "codeKey": "t_electricity_safeguard_equipme",
+                        "tabNumber": 0,
+                        "title": "应急电力保障设备",
+                        "unit": "台",
+                        "checked": false,
+                        "numChecked": false,
+                        "tabTitle": "应急电力保障设备",
+                        "icon": "Rescue-icon-dlbz",
+                        "fatherId": 0
+                    },
+                    {
+                        "specialType": "codeStr",
+                        "codeKey": "t_lifting_equipment",
+                        "tabNumber": 0,
+                        "title": "应急救援吊装设备",
+                        "unit": "台",
+                        "checked": false,
+                        "numChecked": false,
+                        "tabTitle": "应急救援吊装设备",
+                        "icon": "Rescue-icon-jydz",
+                        "fatherId": 0
+                    },
+                    {
+                        "specialType": "codeStr",
+                        "codeKey": "t_fire_fighting_equipment",
+                        "tabNumber": 0,
+                        "title": "防火设备",
+                        "unit": "台",
+                        "checked": false,
+                        "numChecked": false,
+                        "tabTitle": "防火设备",
+                        "icon": "Rescue-icon-fhsb",
+                        "fatherId": 0
+                    },
+                    {
+                        "specialType": "codeStr",
+                        "codeKey": "t_monitor_equipment",
+                        "tabNumber": 0,
+                        "title": "应急救援监测设备",
+                        "unit": "台",
+                        "checked": false,
+                        "numChecked": false,
+                        "tabTitle": "应急救援监测设备",
+                        "icon": "Rescue-icon-jyjc",
+                        "fatherId": 0
+                    },
+                    {
+                        "specialType": "codeStr",
+                        "codeKey": "t_forcible_entry_equipment",
+                        "tabNumber": 0,
+                        "title": "应急救援破拆设备",
+                        "unit": "台",
+                        "checked": false,
+                        "numChecked": false,
+                        "tabTitle": "应急救援破拆设备",
+                        "icon": "Rescue-icon-jypc",
+                        "fatherId": 0
+                    },
+                    {
+                        "specialType": "codeStr",
+                        "codeKey": "t_person_protective_equipment",
+                        "tabNumber": 0,
+                        "title": "应急救援人身防护设备",
+                        "unit": "台",
+                        "checked": false,
+                        "numChecked": false,
+                        "tabTitle": "应急救援人身防护设备",
+                        "icon": "Rescue-icon-rsfh",
+                        "fatherId": 0
+                    },{
+                        "specialType": "codeStr",
+                        "codeKey": "t_spray_water_equiment",
+                        "tabNumber": 0,
+                        "title": "应急救援喷水设备",
+                        "unit": "台",
+                        "checked": false,
+                        "numChecked": false,
+                        "tabTitle": "应急救援喷水设备",
+                        "icon": "Rescue-icon-jyps",
+                        "fatherId": 0
+                    },
+                    {
+                        "specialType": "codeStr",
+                        "codeKey": "t_pumping_equiment",
+                        "tabNumber": 0,
+                        "title": "排水设备",
+                        "unit": "台",
+                        "checked": false,
+                        "numChecked": false,
+                        "tabTitle": "排水设备",
+                        "icon": "Rescue-icon-pssb",
+                        "fatherId": 0
+                    },
+                    {
+                        "specialType": "codeStr",
+                        "codeKey": "emergency_department_equipment",
+                        "tabNumber": 0,
+                        "title": "应急局救援装备",
+                        "unit": "台",
+                        "checked": false,
+                        "numChecked": false,
+                        "tabTitle": "应急局救援装备",
+                        "icon": "Rescue-icon-jjyzb",
+                        "fatherId": 0
+                    },
+                    {
+                        "specialType": "codeStr",
+                        "codeKey": "code_detector_type",
+                        "tabNumber": 0,
+                        "title": "传感器类型代码表",
+                        "unit": "台",
+                        "checked": false,
+                        "numChecked": false,
+                        "tabTitle": "传感器类型代码表",
+                        "icon": "Rescue-icon-dmb",
+                        "fatherId": 0
+                    },
+                    {
+                        "specialType": "codeStr",
+                        "codeKey": "enterprise_detector",
+                        "tabNumber": 0,
+                        "title": "传感器",
+                        "unit": "台",
+                        "checked": false,
+                        "numChecked": false,
+                        "tabTitle": "传感器",
+                        "icon": "Rescue-icon-cgq",
+                        "fatherId": 0
+                    },
+                    {
+                        "specialType": "codeStr",
+                        "codeKey": "enterprise_facility",
+                        "tabNumber": 0,
+                        "title": "网关设备",
+                        "unit": "台",
+                        "checked": false,
+                        "numChecked": false,
+                        "tabTitle": "网关设备",
+                        "icon": "Rescue-icon-wgsb",
+                        "fatherId": 0
+                    }
+                ]
+            },
+            {
+                "title": "物资储备库",
+                "tabTitle": "物资储备库",
+                "codeKey": ["generalrepository", "firepreventionrepository", "localrepository", "entrustrepository"],
+                "specialType": "codeArr",
+                "tabNumber": 0,
+                "unit": "个",
+                "icon": "ResourceTrouble-icon-chubeiku",
+                "checked": false,
+                "numChecked": false,
+                "//fatherId": "fatherId为1的时候代码有下级父级元素点击不高亮",
+                "fatherId": 1,
+                "list": [{
+                        "codeKey": "generalrepository",
+                        "specialType": "codeStr",
+                        "tabNumber": 0,
+                        "title": "通用防护物资库",
+                        "unit": "个",
+                        "checked": false,
+                        "numChecked": false,
+                        "tabTitle": "通用防护物资库",
+                        "icon": "ResourceTrouble-icon-tyfjhchubeiku"
+                    },
+                    {
+                        "codeKey": "firepreventionrepository",
+                        "specialType": "codeStr",
+                        "tabNumber": 0,
+                        "title": "防火物资库",
+                        "unit": "个",
+                        "checked": false,
+                        "numChecked": false,
+                        "tabTitle": "防火物资库",
+                        "icon": "ResourceTrouble-icon-fhwzk"
+                    },
+                    {
+                        "codeKey": "localrepository",
+                        "specialType": "codeStr",
+                        "tabNumber": 0,
+                        "title": "本地物资库",
+                        "unit": "个",
+                        "checked": false,
+                        "numChecked": false,
+                        "tabTitle": "本地物资库",
+                        "icon": "ResourceTrouble-icon-bdwzk"
+                    },
+                    {
+                        "codeKey": "entrustrepository",
+                        "specialType": "codeStr",
+                        "tabNumber": 0,
+                        "title": "委托物资库",
+                        "unit": "个",
+                        "checked": false,
+                        "numChecked": false,
+                        "tabTitle": "委托物资库",
+                        "icon": "ResourceTrouble-icon-wtwzk"
+                    }
+                ]
+            },
+            {
+                "title": "专家",
+                "tabTitle": "专家",
+                "specialType": "codeArr",
+                "codeKey": ["chemicalexpertg", "tradexpertg", "provincesafetycultureexpert", "provincetradexpert", "provincecoalexpert", "provincenonmineexpert", "provincechemicalexpert", "provinceemergenceexpert", "provincefireexpert", "provincefireworkexpert", "provincelawexpert", "provinceinfomationexpert", "provincemitigationexpert", "provincecomprehensiveexpert", "provinceearthquakeexpert", "provincefloodexpert", "earthquakeexpert", "floodexpert", "tradexpert", "coalexpert", "nonmineexpert", "chemicalexpert", "emergenceexpert", "fireexpert", "fireworkexpert", "lawexpert", "infomationexpert", "mitigationexpert", "investigationexpert", "comprehensiveexpert", "safetycultureexpert", "invitedxpert", "professional"],
+                "tabNumber": 0,
+                "unit": "人",
+                "icon": "ResourceTrouble-icon-zhuanjia",
+                "checked": false,
+                "numChecked": false,
+                "//fatherId": "fatherId为1的时候代码有下级父级元素点击不高亮",
+                "fatherId": 1,
+                "list": [{
+                        "title": "国家级专家",
+                        "tabTitle": "国家级专家",
+                        "specialType": "codeArr",
+                        "codeKey": ["chemicalexpertg", "tradexpertg"],
+                        "tabNumber": 0,
+                        "unit": "人",
+                        "icon": "ResourceTrouble-icon-zhuanjiag",
+                        "checked": false,
+                        "numChecked": false,
+                        "//fatherId": "fatherId为1的时候代码有下级父级元素点击不高亮",
+                        "fatherId": 1,
+                        "list": [{
+                            "title": "危化品专家",
+                            "tabTitle": "危化品专家",
+                            "codeKey": "chemicalexpertg",
+                            "specialType": "codeStr",
+                            "key": "yjzjfz",
+                            "tabNumber": 0,
+                            "unit": "人",
+                            "numChecked": false,
+                            "icon": "Specialist-icon-hx",
+                            "checked": false,
+                            "expert": "expert"
+                        }, {
+                            "title": "冶金专家",
+                            "tabTitle": "冶金专家",
+                            "codeKey": "tradexpertg",
+                            "specialType": "codeStr",
+                            "key": "yjzjfz",
+                            "tabNumber": 0,
+                            "unit": "人",
+                            "numChecked": false,
+                            "icon": "Specialist-icon-gs",
+                            "checked": false,
+                            "expert": "expert"
+                        }]
+                    },
+                    {
+                        "title": "省级专家",
+                        "tabTitle": "省级专家",
+                        "specialType": "codeArr",
+                        "codeKey": ["investigationexpert", "provincesafetycultureexpert", "provincetradexpert", "provincecoalexpert", "provincenonmineexpert", "provincechemicalexpert", "provinceemergenceexpert", "provincefireexpert", "provincefireworkexpert", "provincelawexpert", "provinceinfomationexpert", "provincemitigationexpert", "provincecomprehensiveexpert", "provinceearthquakeexpert", "provincefloodexpert"],
+                        "tabNumber": 0,
+                        "unit": "人",
+                        "icon": "ResourceTrouble-icon-zhuanjiaprovince",
+                        "checked": false,
+                        "numChecked": false,
+                        "//fatherId": "fatherId为1的时候代码有下级父级元素点击不高亮",
+                        "fatherId": 1,
+                        "list": [{
+                                "title": "安全培训专家",
+                                "tabTitle": "安全培训专家",
+                                "codeKey": "provincesafetycultureexpert",
+                                "specialType": "codeStr",
+                                "key": "yjzjfz",
+                                "tabNumber": 0,
+                                "unit": "人",
+                                "numChecked": false,
+                                "icon": "Specialist-icon-aq",
+                                "checked": false,
+                                "expert": "expert"
+                            },
+                            {
+                                "title": "工商贸专家",
+                                "tabTitle": "工商贸专家",
+                                "codeKey": "provincetradexpert",
+                                "specialType": "codeStr",
+                                "key": "yjzjfz",
+                                "tabNumber": 0,
+                                "unit": "人",
+                                "numChecked": false,
+                                "icon": "Specialist-icon-gs",
+                                "checked": false,
+                                "expert": "expert"
+                            },
+                            {
+                                "title": "煤矿专家",
+                                "tabTitle": "煤矿专家",
+                                "codeKey": "provincecoalexpert",
+                                "specialType": "codeStr",
+                                "key": "yjzjfz",
+                                "tabNumber": 0,
+                                "unit": "人",
+                                "numChecked": false,
+                                "icon": "Specialist-icon-mk",
+                                "checked": false,
+                                "expert": "expert"
+                            },
+                            {
+                                "title": "非煤矿山专家",
+                                "tabTitle": "非煤矿山专家",
+                                "codeKey": "provincenonmineexpert",
+                                "specialType": "codeStr",
+                                "key": "yjzjfz",
+                                "tabNumber": 0,
+                                "unit": "人",
+                                "numChecked": false,
+                                "icon": "Specialist-icon-fmks",
+                                "checked": false,
+                                "expert": "expert"
+                            },
+                            {
+                                "title": "石油化工专家",
+                                "tabTitle": "石油化工专家",
+                                "codeKey": "provincechemicalexpert",
+                                "specialType": "codeStr",
+                                "key": "yjzjfz",
+                                "tabNumber": 0,
+                                "unit": "人",
+                                "numChecked": false,
+                                "icon": "Specialist-icon-hx",
+                                "checked": false,
+                                "expert": "expert"
+                            },
+                            {
+                                "title": "应急救援专家",
+                                "tabTitle": "应急救援专家",
+                                "codeKey": "provinceemergenceexpert",
+                                "specialType": "codeStr",
+                                "key": "yjzjfz",
+                                "tabNumber": 0,
+                                "unit": "人",
+                                "icon": "Specialist-icon-yjjy",
+                                "numChecked": false,
+                                "checked": false,
+                                "expert": "expert"
+                            },
+                            {
+                                "title": "应急救援指挥专家",
+                                "tabTitle": "应急救援指挥专家",
+                                "codeKey": "investigationexpert",
+                                "specialType": "codeStr",
+                                "key": "yjzjfz",
+                                "tabNumber": 0,
+                                "unit": "人",
+                                "icon": "Specialist-icon-jypg",
+                                "numChecked": false,
+                                "checked": false,
+                                "expert": "expert"
+                            },
+                            {
+                                "title": "消防专家",
+                                "tabTitle": "消防专家",
+                                "codeKey": "provincefireexpert",
+                                "specialType": "codeStr",
+                                "key": "yjzjfz",
+                                "tabNumber": 0,
+                                "unit": "人",
+                                "icon": "Specialist-icon-hz",
+                                "numChecked": false,
+                                "checked": false,
+                                "expert": "expert"
+                            },
+                            {
+                                "title": "烟花爆竹专家",
+                                "tabTitle": "烟花爆竹专家",
+                                "codeKey": "provincefireworkexpert",
+                                "specialType": "codeStr",
+                                "key": "yjzjfz",
+                                "tabNumber": 0,
+                                "unit": "人",
+                                "icon": "Specialist-icon-yhbz",
+                                "numChecked": false,
+                                "checked": false
+                            },
+                            {
+                                "title": "政策法规专家",
+                                "tabTitle": "政策法规专家",
+                                "codeKey": "provincelawexpert",
+                                "specialType": "codeStr",
+                                "key": "yjzjfz",
+                                "tabNumber": 0,
+                                "unit": "人",
+                                "icon": "Specialist-icon-zcfg",
+                                "numChecked": false,
+                                "checked": false,
+                                "expert": "expert"
+                            },
+                            {
+                                "title": "科技和信息化专家",
+                                "tabTitle": "科技和信息化专家",
+                                "codeKey": "provinceinfomationexpert",
+                                "specialType": "codeStr",
+                                "key": "yjzjfz",
+                                "tabNumber": 0,
+                                "unit": "人",
+                                "icon": "Specialist-icon-xjyxxh",
+                                "numChecked": false,
+                                "checked": false,
+                                "expert": "expert"
+                            },
+                            {
+                                "title": "救灾减灾专家",
+                                "tabTitle": "救灾减灾专家",
+                                "codeKey": "provincemitigationexpert",
+                                "specialType": "codeStr",
+                                "key": "yjzjfz",
+                                "tabNumber": 0,
+                                "unit": "人",
+                                "icon": "Specialist-icon-jz",
+                                "numChecked": false,
+                                "checked": false,
+                                "expert": "expert"
+                            },
+                            {
+                                "title": "综合安全专家",
+                                "tabTitle": "综合安全专家",
+                                "codeKey": "provincecomprehensiveexpert",
+                                "specialType": "codeStr",
+                                "key": "yjzjfz",
+                                "tabNumber": 0,
+                                "unit": "人",
+                                "icon": "Specialist-icon-zhaq",
+                                "numChecked": false,
+                                "checked": false,
+                                "expert": "expert"
+                            },
+                            {
+                                "title": "地震地质灾害专家",
+                                "tabTitle": "地震地质灾害专家",
+                                "codeKey": "provinceearthquakeexpert",
+                                "specialType": "codeStr",
+                                "key": "yjzjfz",
+                                "tabNumber": 0,
+                                "unit": "人",
+                                "numChecked": false,
+                                "icon": "Specialist-icon-dz",
+                                "checked": false,
+                                "expert": "expert"
+                            },
+                            {
+                                "title": "防汛抗旱专家",
+                                "tabTitle": "防汛抗旱专家",
+                                "codeKey": "provincefloodexpert",
+                                "specialType": "codeStr",
+                                "key": "yjzjfz",
+                                "tabNumber": 0,
+                                "unit": "人",
+                                "numChecked": false,
+                                "icon": "Specialist-icon-fx",
+                                "checked": false,
+                                "expert": "expert"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "市级专家",
+                        "tabTitle": "市级专家",
+                        "specialType": "codeArr",
+                        "codeKey": ["earthquakeexpert", "floodexpert", "tradexpert", "coalexpert", "nonmineexpert", "chemicalexpert", "emergenceexpert", "fireexpert", "fireworkexpert", "lawexpert", "infomationexpert", "mitigationexpert", "comprehensiveexpert", "safetycultureexpert", "invitedxpert"],
+                        "tabNumber": 0,
+                        "unit": "人",
+                        "icon": "ResourceTrouble-icon-zhuanjias",
+                        "checked": false,
+                        "numChecked": false,
+                        "//fatherId": "fatherId为1的时候代码有下级父级元素点击不高亮",
+                        "fatherId": 1,
+                        "list": [{
+                                "title": "地震地质灾害专家",
+                                "tabTitle": "地震地质灾害专家",
+                                "codeKey": "earthquakeexpert",
+                                "specialType": "codeStr",
+                                "key": "yjzjfz",
+                                "tabNumber": 0,
+                                "unit": "人",
+                                "numChecked": false,
+                                "icon": "Specialist-icon-dz",
+                                "checked": false,
+                                "expert": "expert"
+                            },
+                            {
+                                "title": "防汛抗旱专家",
+                                "tabTitle": "防汛抗旱专家",
+                                "codeKey": "floodexpert",
+                                "specialType": "codeStr",
+                                "key": "yjzjfz",
+                                "tabNumber": 0,
+                                "unit": "人",
+                                "numChecked": false,
+                                "icon": "Specialist-icon-fx",
+                                "checked": false,
+                                "expert": "expert"
+                            },
+                            {
+                                "title": "工商贸专家",
+                                "tabTitle": "工商贸专家",
+                                "codeKey": "tradexpert",
+                                "specialType": "codeStr",
+                                "key": "yjzjfz",
+                                "tabNumber": 0,
+                                "unit": "人",
+                                "numChecked": false,
+                                "icon": "Specialist-icon-gs",
+                                "checked": false,
+                                "expert": "expert"
+                            },
+                            {
+                                "title": "煤矿专家",
+                                "tabTitle": "煤矿专家",
+                                "codeKey": "coalexpert",
+                                "specialType": "codeStr",
+                                "key": "yjzjfz",
+                                "tabNumber": 0,
+                                "unit": "人",
+                                "numChecked": false,
+                                "icon": "Specialist-icon-mk",
+                                "checked": false,
+                                "expert": "expert"
+                            },
+                            {
+                                "title": "非煤矿山专家",
+                                "tabTitle": "非煤矿山专家",
+                                "codeKey": "nonmineexpert",
+                                "specialType": "codeStr",
+                                "key": "yjzjfz",
+                                "tabNumber": 0,
+                                "unit": "人",
+                                "numChecked": false,
+                                "icon": "Specialist-icon-fmks",
+                                "checked": false,
+                                "expert": "expert"
+                            },
+                            {
+                                "title": "危险化学品专家",
+                                "tabTitle": "危险化学品专家",
+                                "codeKey": "chemicalexpert",
+                                "specialType": "codeStr",
+                                "key": "yjzjfz",
+                                "tabNumber": 0,
+                                "unit": "人",
+                                "numChecked": false,
+                                "icon": "Specialist-icon-hx",
+                                "checked": false,
+                                "expert": "expert"
+                            },
+                            {
+                                "title": "应急救援专家",
+                                "tabTitle": "应急救援专家",
+                                "codeKey": "emergenceexpert",
+                                "specialType": "codeStr",
+                                "key": "yjzjfz",
+                                "tabNumber": 0,
+                                "unit": "人",
+                                "icon": "Specialist-icon-yjjy",
+                                "numChecked": false,
+                                "checked": false,
+                                "expert": "expert"
+                            },
+                            {
+                                "title": "火灾防治专家",
+                                "tabTitle": "火灾防治专家",
+                                "codeKey": "fireexpert",
+                                "specialType": "codeStr",
+                                "key": "yjzjfz",
+                                "tabNumber": 0,
+                                "unit": "人",
+                                "icon": "Specialist-icon-hz",
+                                "numChecked": false,
+                                "checked": false,
+                                "expert": "expert"
+                            },
+                            {
+                                "title": "烟花爆竹专家",
+                                "tabTitle": "烟花爆竹专家",
+                                "codeKey": "fireworkexpert",
+                                "specialType": "codeStr",
+                                "key": "yjzjfz",
+                                "tabNumber": 0,
+                                "unit": "人",
+                                "icon": "Specialist-icon-yhbz",
+                                "numChecked": false,
+                                "checked": false
+                            },
+                            {
+                                "title": "政策法规专家",
+                                "tabTitle": "政策法规专家",
+                                "codeKey": "lawexpert",
+                                "specialType": "codeStr",
+                                "key": "yjzjfz",
+                                "tabNumber": 0,
+                                "unit": "人",
+                                "icon": "Specialist-icon-zcfg",
+                                "numChecked": false,
+                                "checked": false,
+                                "expert": "expert"
+                            },
+                            {
+                                "title": "宣教与信息化专家",
+                                "tabTitle": "宣教与信息化专家",
+                                "codeKey": "infomationexpert",
+                                "specialType": "codeStr",
+                                "key": "yjzjfz",
+                                "tabNumber": 0,
+                                "unit": "人",
+                                "icon": "Specialist-icon-xx",
+                                "numChecked": false,
+                                "checked": false,
+                                "expert": "expert"
+                            },
+                            {
+                                "title": "救灾减灾专家",
+                                "tabTitle": "救灾减灾专家",
+                                "codeKey": "mitigationexpert",
+                                "specialType": "codeStr",
+                                "key": "yjzjfz",
+                                "tabNumber": 0,
+                                "unit": "人",
+                                "icon": "Specialist-icon-jz",
+                                "numChecked": false,
+                                "checked": false,
+                                "expert": "expert"
+                            },
+                            {
+                                "title": "综合安全专家",
+                                "tabTitle": "综合安全专家",
+                                "codeKey": "comprehensiveexpert",
+                                "specialType": "codeStr",
+                                "key": "yjzjfz",
+                                "tabNumber": 0,
+                                "unit": "人",
+                                "icon": "Specialist-icon-zhaq",
+                                "numChecked": false,
+                                "checked": false,
+                                "expert": "expert"
+                            },
+                            {
+                                "title": "安全文化专家",
+                                "tabTitle": "安全文化专家",
+                                "codeKey": "safetycultureexpert",
+                                "specialType": "codeStr",
+                                "key": "yjzjfz",
+                                "tabNumber": 0,
+                                "unit": "人",
+                                "icon": "Specialist-icon-aq",
+                                "numChecked": false,
+                                "checked": false,
+                                "expert": "expert"
+                            },
+                            {
+                                "title": "特邀专家",
+                                "tabTitle": "特邀专家",
+                                "codeKey": "invitedxpert",
+                                "specialType": "codeStr",
+                                "key": "yjzjfz",
+                                "tabNumber": 0,
+                                "unit": "人",
+                                "icon": "Specialist-icon-ty",
+                                "numChecked": false,
+                                "checked": false,
+                                "expert": "expert"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "专业人员",
+                        "tabTitle": "专业人员",
+                        "specialType": "codeStr",
+                        "codeKey": "professional",
+                        "tabNumber": 0,
+                        "unit": "人",
+                        "icon": "ResourceTrouble-icon-professionalzhuanjia",
+                        "numChecked": false,
+                        "checked": false,
+                        "expert": "expert"
+                    }
+                ]
+            },
+            {
+                "title": "机场",
+                "tabTitle": "机场",
+                "specialType": "codeStr",
+                "codeKey": "airport",
+                "tabNumber": 0,
+                "unit": "个",
+                "icon": "yjzy-icon-airport",
+                "numChecked": false,
+                "checked": false
+            }
+        ],
+        "//zhushi": [{
+                "codeKey": "firerepository",
+                "specialType": "codeStr",
+                "tabNumber": 0,
+                "title": "消防设施物资库",
+                "unit": "个",
+                "checked": false,
+                "numChecked": false,
+                "tabTitle": "消防设施物资库",
+                "icon": "ResourceTrouble-icon-xiaofangchubeiku"
+            },
+            {
+                "codeKey": "powerrepository",
+                "specialType": "codeStr",
+                "tabNumber": 0,
+                "title": "电力设施物资库",
+                "unit": "个",
+                "checked": false,
+                "numChecked": false,
+                "tabTitle": "电力设施物资库",
+                "icon": "ResourceTrouble-icon-dlsswzk"
+            },
+            {
+                "codeKey": "communicationrepository",
+                "specialType": "codeStr",
+                "tabNumber": 0,
+                "title": "通讯物资库",
+                "unit": "个",
+                "checked": false,
+                "numChecked": false,
+                "tabTitle": "通讯物资库",
+                "icon": "ResourceTrouble-icon-txwzk"
+            }
+        ],
+        "// EntrenchTarget": "防护目标",
+        "EntrenchTarget": [{
+                "title": "学校",
+                "specialType": "codeStr",
+                "tabTitle": "学校",
+                "codeKey": "bas_school",
+                "tabNumber": 0,
+                "unit": "个",
+                "icon": "ResourceTrouble-icon-school",
+                "numChecked": false,
+                "checked": false
+            },
+            {
+                "title": "医院",
+                "specialType": "codeStr",
+                "codeKey": "hospital",
+                "tabNumber": 0,
+                "unit": "家",
+                "checked": false,
+                "numChecked": false,
+                "tabTitle": "医院",
+                "icon": "Database-icon-hospital"
+            },
+            {
+                "title": "文物保护单位",
+                "specialType": "codeStr",
+                "codeKey": "culturalrelicunit",
+                "tabNumber": 0,
+                "unit": "个",
+                "checked": false,
+                "numChecked": false,
+                "tabTitle": "文物保护单位",
+                "icon": "Database-icon-wenwubaohu"
+            },
+            {
+                "title": "公众聚集场所",
+                "tabTitle": "公众聚集场所",
+                "specialType": "codeArr",
+                "codeKey": ["hotel", "market", "bazaar", "Gymnasium", "tourist", "culturalvenues"],
+                "tabNumber": 0,
+                "unit": "个",
+                "icon": "Database-icon-gongzhongjuji",
+                "numChecked": false,
+                "checked": false,
+                "fatherId": 1,
+                "list": [{
+                        "codeKey": "hotel",
+                        "tabNumber": 0,
+                        "specialType": "codeStr",
+                        "title": "宾馆饭店",
+                        "unit": "个",
+                        "checked": false,
+                        "numChecked": false,
+                        "tabTitle": "宾馆饭店",
+                        "icon": "Database-icon-binguanfandian"
+                    },
+                    {
+                        "codeKey": "tourist",
+                        "tabNumber": 0,
+                        "specialType": "codeStr",
+                        "title": "旅游景区",
+                        "unit": "个",
+                        "checked": false,
+                        "numChecked": false,
+                        "tabTitle": "旅游景区",
+                        "icon": "Database-icon-lvyoujingqu"
+                    },
+                    {
+                        "codeKey": "market",
+                        "tabNumber": 0,
+                        "specialType": "codeStr",
+                        "title": "大型商贸",
+                        "unit": "个",
+                        "checked": false,
+                        "numChecked": false,
+                        "tabTitle": "大型商贸",
+                        "icon": "Database-icon-daxingshangmao"
+                    },
+                    {
+                        "codeKey": "bazaar",
+                        "tabNumber": 0,
+                        "specialType": "codeStr",
+                        "title": "集贸市场",
+                        "unit": "个",
+                        "checked": false,
+                        "numChecked": false,
+                        "tabTitle": "集贸市场",
+                        "icon": "Database-icon-jimaoshichang"
+                    },
+                    {
+                        "codeKey": "Gymnasium",
+                        "tabNumber": 0,
+                        "specialType": "codeStr",
+                        "title": "大型文化体育场所",
+                        "unit": "个",
+                        "checked": false,
+                        "numChecked": false,
+                        "tabTitle": "大型文化体育场所",
+                        "icon": "Database-icon-daxinwenhua"
+                    },
+                    {
+                        "codeKey": "culturalvenues",
+                        "tabNumber": 0,
+                        "specialType": "codeStr",
+                        "title": "文化场馆",
+                        "unit": "个",
+                        "checked": false,
+                        "numChecked": false,
+                        "tabTitle": "文化场馆",
+                        "icon": "Database-icon-wenhuachangguan"
+                    }
+                ]
+            }
+        ]
+    }
+}

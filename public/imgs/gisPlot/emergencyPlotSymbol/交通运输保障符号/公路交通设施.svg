@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+    <title>公路交通设施</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="28" height="28" rx="14"></rect>
+        <filter x="-10.7%" y="-10.7%" width="121.4%" height="121.4%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.26 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="其他图标" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="应急保障资源" transform="translate(-662.000000, -65.000000)">
+            <g id="公路交通设施" transform="translate(664.000000, 67.000000)">
+                <g id="分组-4">
+                    <g id="矩形">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <rect stroke="#FFFFFF" stroke-width="1" stroke-linejoin="square" fill="#0E9D99" fill-rule="evenodd" x="0.5" y="0.5" width="27" height="27" rx="13.5"></rect>
+                    </g>
+                    <path d="M12.4319881,10.438 L12.4319881,9.48 C12.4319881,9.192 12.6749881,8.959 12.9744881,8.959 L13.8559881,8.959 C14.1554881,8.959 14.3984881,9.192 14.3984881,9.48 L14.3984881,10.438 C14.3984881,10.7255 14.1554881,10.959 13.8559881,10.959 L12.9744881,10.959 C12.6749881,10.959 12.4319881,10.7255 12.4319881,10.438 L12.4319881,10.438 Z M13.8984881,16.042 L13.0169881,16.042 C12.7174881,16.042 12.4744881,15.8085 12.4744881,15.521 L12.4744881,13.521 C12.4744881,13.233 12.7174881,13 13.0169881,13 L13.8984881,13 C14.1979881,13 14.4409881,13.233 14.4409881,13.521 L14.4409881,15.521 C14.4409881,15.8085 14.1979881,16.042 13.8984881,16.042 L13.8984881,16.042 Z M13.8984881,21 L13.0169881,21 C12.7174881,21 12.4744881,20.767 12.4744881,20.479 L12.4744881,18.521 C12.4744881,18.2335 12.7174881,18 13.0169881,18 L13.8984881,18 C14.1979881,18 14.4409881,18.2335 14.4409881,18.521 L14.4409881,20.479 C14.4409881,20.767 14.1979881,21 13.8984881,21 L13.8984881,21 Z M19.1139881,6 L15.0164881,6 C14.7164881,6 14.4734881,6.233 14.4734881,6.521 C14.4734881,6.8085 14.2309881,7.042 13.9314881,7.042 L12.9744881,7.042 C12.6749881,7.042 12.4319881,6.8085 12.4319881,6.521 C12.4319881,6.233 12.1889881,6 11.8894881,6 L8.44048814,6 C8.16598814,6 7.93498814,6.1965 7.90198814,6.458 L6.00398814,21.416 C5.96498814,21.7265 6.21698814,22 6.54248814,22 L20.4649881,22 C20.7899881,22 21.0419881,21.728 21.0039881,21.418 L19.1139881,6 Z" id="Fill-1" fill="#FFFFFF"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

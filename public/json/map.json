@@ -1,0 +1,334 @@
+{
+    "map": {
+        "defaultExtent": {
+            "zoom": 9.085202036808074,
+            "maxZoom": 20,
+            "minZoom": 0,
+            "center": [114.500123, 36.551683],
+            "projection": "EPSG:4326"
+        },
+        "fullExtent": {
+            "zoom": 10.085202036808074,
+            "center": [114.500123, 36.551683],
+            "projection": "EPSG:4326"
+        }
+    },
+    "map_difang": {
+        "defaultExtent": {
+            "center": [
+                114.47342767821263, 36.08911432979125
+            ],
+            "maxZoom": 22,
+            "minZoom": 5,
+            "level": 10,
+            "extent": [
+                113.46092550740627,
+                36.05754818170328,
+                115.48128880483455,
+                37.01696831743394
+            ],
+            "projection": "EPSG:4490"
+        }
+    },
+    "map3d": {
+        "defaultExtent": [
+            115.25,
+            39.26,
+            117.30,
+            41.03
+        ],
+        "fullExtent": [115.25,
+            39.26,
+            117.30,
+            41.03
+        ],
+        "srid": "4490"
+    },
+    "baseLayers": [{
+            "id": "emap_ter",
+            "icon": "./imgs/gisSwitchMap/dixing.png",
+            "title": "地形",
+            "type": "group",
+            "layers": [{
+                    "layers": "ter",
+                    "matrixSet": "c",
+                    "format": "tiles",
+                    "tileType": 102,
+                    "url": "http://120.52.31.31:590/service/api/egis/base/v1/wmts",
+                    "clientId": "b8e7fc4f5d2b4b4aa7c1c7dc3ed3e63c",
+                    "clientSecret": "29a25246671a460d900d57c6d83cd37f",
+                    "projection": "EPSG:4326",
+                    "wrapX": true
+                },
+                {
+                    "layers": "cta",
+                    "matrixSet": "c",
+                    "format": "tiles",
+                    "tileType": 102,
+                    "url": "http://120.52.31.31:590/service/api/egis/base/v1/wmts",
+                    "clientId": "b8e7fc4f5d2b4b4aa7c1c7dc3ed3e63c",
+                    "clientSecret": "29a25246671a460d900d57c6d83cd37f",
+                    "projection": "EPSG:4326",
+                    "wrapX": true
+                },
+                {
+                    "id": "guojiexian_ter",
+                    "name": "省界",
+                    "wrapX": true,
+                    "layers": "ibo",
+                    "matrix": 22,
+                    "matrixSet": "c",
+                    "matrixPrefix": "",
+                    "levelShift": 0,
+                    "minZoom": 0,
+                    "maxZoom": 10,
+                    "format": "tiles",
+                    "projection": "EPSG:4326",
+                    "layerType": 1,
+                    "tileType": 102,
+                    "opacity": 1.0,
+                    "visible": true,
+                    "//": "TianDiTuLayer",
+                    "crossOrigin": "anonymous",
+                    "url": "http://120.52.31.31:590/service/api/egis/base/v1/wmts",
+                    "clientId": "b8e7fc4f5d2b4b4aa7c1c7dc3ed3e63c",
+                    "clientSecret": "29a25246671a460d900d57c6d83cd37f",
+                    "layerClass": "TianDiTuLayer",
+                    "newUrl": "http://10.18.17.72:18108/egis/business/v1/wmts"
+                }
+            ]
+        },
+        {
+            "id": "image_kd",
+            "icon": "./imgs/gisSwitchMap/gaoqing.png",
+            "title": "高清",
+            "type": "group",
+            "layers": [{
+                    "layers": "kd",
+                    "matrixSet": "c",
+                    "format": "tiles",
+                    "tileType": 102,
+                    "url": "http://120.52.31.31:590/service/api/egis/base/v1/wmts",
+                    "clientId": "b8e7fc4f5d2b4b4aa7c1c7dc3ed3e63c",
+                    "clientSecret": "29a25246671a460d900d57c6d83cd37f",
+                    "projection": "EPSG:4326",
+                    "wrapX": true
+                },
+                {
+                    "layers": "cia",
+                    "matrixSet": "c",
+                    "format": "tiles",
+                    "tileType": 102,
+                    "url": "http://120.52.31.31:590/service/api/egis/base/v1/wmts",
+                    "clientId": "b8e7fc4f5d2b4b4aa7c1c7dc3ed3e63c",
+                    "clientSecret": "29a25246671a460d900d57c6d83cd37f",
+                    "projection": "EPSG:4326",
+                    "wrapX": true
+                },
+                {
+                    "id": "guojiexian",
+                    "name": "省界",
+                    "wrapX": true,
+                    "layers": "ibo",
+                    "matrix": 22,
+                    "matrixSet": "c",
+                    "matrixPrefix": "",
+                    "levelShift": 0,
+                    "minZoom": 0,
+                    "maxZoom": 10,
+                    "format": "tiles",
+                    "projection": "EPSG:4326",
+                    "layerType": 1,
+                    "tileType": 102,
+                    "opacity": 1.0,
+                    "visible": true,
+                    "//": "TianDiTuLayer",
+                    "crossOrigin": "anonymous",
+                    "url": "http://120.52.31.31:590/service/api/egis/base/v1/wmts",
+                    "clientId": "b8e7fc4f5d2b4b4aa7c1c7dc3ed3e63c",
+                    "clientSecret": "29a25246671a460d900d57c6d83cd37f",
+                    "layerClass": "TianDiTuLayer",
+                    "newUrl": "http://10.18.17.72:18108/egis/business/v1/wmts"
+                }
+            ]
+        },
+        {
+            "id": "emap_vec",
+            "icon": "./imgs/gisSwitchMap/ditu.png",
+            "title": "地图",
+            "type": "group",
+            "layers": [{
+                    "layers": "vec",
+                    "matrixSet": "c",
+                    "format": "tiles",
+                    "tileType": 102,
+                    "url": "http://120.52.31.31:590/service/api/egis/base/v1/wmts",
+                    "clientId": "b8e7fc4f5d2b4b4aa7c1c7dc3ed3e63c",
+                    "clientSecret": "29a25246671a460d900d57c6d83cd37f",
+                    "projection": "EPSG:4326",
+                    "wrapX": true
+                },
+                {
+                    "layers": "cva",
+                    "matrixSet": "c",
+                    "format": "tiles",
+                    "tileType": 102,
+                    "url": "http://120.52.31.31:590/service/api/egis/base/v1/wmts",
+                    "clientId": "b8e7fc4f5d2b4b4aa7c1c7dc3ed3e63c",
+                    "clientSecret": "29a25246671a460d900d57c6d83cd37f",
+                    "projection": "EPSG:4326",
+                    "wrapX": true
+                },
+                {
+                    "id": "guojiexian_vec",
+                    "name": "省界",
+                    "wrapX": true,
+                    "layers": "ibo",
+                    "matrix": 22,
+                    "matrixSet": "c",
+                    "matrixPrefix": "",
+                    "levelShift": 0,
+                    "minZoom": 0,
+                    "maxZoom": 10,
+                    "format": "tiles",
+                    "projection": "EPSG:4326",
+                    "layerType": 1,
+                    "tileType": 102,
+                    "opacity": 1.0,
+                    "visible": true,
+                    "//": "TianDiTuLayer",
+                    "crossOrigin": "anonymous",
+                    "url": "http://120.52.31.31:590/service/api/egis/base/v1/wmts",
+                    "clientId": "b8e7fc4f5d2b4b4aa7c1c7dc3ed3e63c",
+                    "clientSecret": "29a25246671a460d900d57c6d83cd37f",
+                    "layerClass": "TianDiTuLayer",
+                    "newUrl": "http://10.18.17.72:18108/egis/business/v1/wmts"
+                }
+            ]
+        },
+        {
+            "id": "emap_img",
+            "icon": "./imgs/gisSwitchMap/yingxiang.png",
+            "title": "影像",
+            "type": "group",
+            "layers": [{
+                    "layers": "img",
+                    "matrixSet": "c",
+                    "format": "tiles",
+                    "tileType": 102,
+                    "url": "http://120.52.31.31:590/service/api/egis/base/v1/wmts",
+                    "clientId": "b8e7fc4f5d2b4b4aa7c1c7dc3ed3e63c",
+                    "clientSecret": "29a25246671a460d900d57c6d83cd37f",
+                    "projection": "EPSG:4326",
+                    "wrapX": true
+                },
+                {
+                    "layers": "cia",
+                    "matrixSet": "c",
+                    "format": "tiles",
+                    "tileType": 102,
+                    "url": "http://120.52.31.31:590/service/api/egis/base/v1/wmts",
+                    "clientId": "b8e7fc4f5d2b4b4aa7c1c7dc3ed3e63c",
+                    "clientSecret": "29a25246671a460d900d57c6d83cd37f",
+                    "projection": "EPSG:4326",
+                    "wrapX": true
+                },
+                {
+                    "id": "guojiexian",
+                    "name": "省界",
+                    "wrapX": true,
+                    "layers": "ibo",
+                    "matrix": 22,
+                    "matrixSet": "c",
+                    "matrixPrefix": "",
+                    "levelShift": 0,
+                    "minZoom": 0,
+                    "maxZoom": 10,
+                    "format": "tiles",
+                    "projection": "EPSG:4326",
+                    "layerType": 1,
+                    "tileType": 102,
+                    "opacity": 1.0,
+                    "visible": true,
+                    "//": "TianDiTuLayer",
+                    "crossOrigin": "anonymous",
+                    "url": "http://120.52.31.31:590/service/api/egis/base/v1/wmts",
+                    "clientId": "b8e7fc4f5d2b4b4aa7c1c7dc3ed3e63c",
+                    "clientSecret": "29a25246671a460d900d57c6d83cd37f",
+                    "layerClass": "TianDiTuLayer",
+                    "newUrl": "http://10.18.17.72:18108/egis/business/v1/wmts"
+                }
+            ]
+        }
+    ],
+    "baseLayers_difang": [{
+        "id": "yingx",
+        "layerType": 1,
+        "wrapX": true,
+        "title": "11",
+        "tileType": 104,
+        "crossOrigin": "anonymous",
+        "projection": "EPSG:4490",
+        "url": "https://116.132.27.130:10003/arcgis/rest/services/邯郸应急局测试数据/邯郸应急基础地理数据/MapServer/tile"
+    }, {
+        "id": "yingx",
+        "layerType": 1,
+        "wrapX": true,
+        "title": "11",
+        "tileType": 104,
+        "crossOrigin": "anonymous",
+        "projection": "EPSG:4490",
+        "url": "https://116.132.27.130:10003/arcgis/rest/services/邯郸应急局测试数据/130400DOM"
+    }],
+    "baseLayers3d-tianditu": [{
+        "id": "egis_img",
+        "title": "影像",
+        "name": "影像",
+        "icon": "./imgs/gisSwitchMap/earth.png",
+        "type": "group",
+        "attr": "basics",
+        "visible": true,
+        "//": "是否显示",
+        "style": "default",
+        "layers": [{
+                "layers": "img",
+                "matrix": 18,
+                "matrixSet": "c",
+                "matrixPrefix": "",
+                "format": "tiles",
+                "tileType": 102,
+                "crossOrigin": "*",
+                "opacity": 1,
+                "url": "http://120.52.31.31:590/service/api/egis/base/v1/wmts",
+                "projection": "EPSG:4326",
+                "clientId": "b8e7fc4f5d2b4b4aa7c1c7dc3ed3e63c",
+                "clientSecret": "29a25246671a460d900d57c6d83cd37f",
+                "levelShift": 0,
+                "imageType": "0",
+                "style": "default",
+                "level": 10,
+                "newUrl": "http://120.52.31.31:590/service/api/egis/base/v1/wmts",
+                "matrixIds": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+            },
+            {
+                "layers": "cia",
+                "matrix": 18,
+                "matrixSet": "c",
+                "matrixPrefix": "",
+                "format": "tiles",
+                "tileType": 102,
+                "crossOrigin": "*",
+                "url": "http://120.52.31.31:590/service/api/egis/base/v1/wmts",
+                "projection": "EPSG:4326",
+                "clientId": "b8e7fc4f5d2b4b4aa7c1c7dc3ed3e63c",
+                "clientSecret": "29a25246671a460d900d57c6d83cd37f",
+                "levelShift": 0,
+                "imageType": "0",
+                "style": "default",
+                "level": 10,
+                "newUrl": "http://120.52.31.31:590/service/api/egis/base/v1/wmts",
+                "matrixIds": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+            }
+        ]
+    }]
+}

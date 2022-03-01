@@ -1,0 +1,1268 @@
+{
+  "//": "符号分类树",
+  "symbols": [
+    {
+      "name": "历史案例符号",
+      "code": "A1",
+      "children": [
+        {
+          "name": "自然灾害",
+          "code": "A11",
+          "children": [
+            {
+              "code": "PT110101",
+              "name": "水旱灾害",
+              "symbol": "emergencyPlotSymbol/自然灾害/水旱灾害.svg",
+              "desc": "洪水、内涝、水库险情、堤防险情、凌汛灾害、山洪、农业干旱、城镇缺水、生态干旱、饮水困难等"
+            },
+            {
+              "code": "PT110102",
+              "name": "气象灾害",
+              "symbol": "emergencyPlotSymbol/自然灾害/气象灾害.svg",
+              "desc": "台风、龙卷风、暴雨、雪灾、寒潮、大风、沙尘暴、低温冻害、冻雨、高温天气、热浪、干热风、下击暴流、雪崩、雷电、冰雹、霜冻、大雾、霾、风切变等"
+            },
+            {
+              "code": "PT110103",
+              "name": "地震灾害",
+              "symbol": "emergencyPlotSymbol/自然灾害/地震灾害.svg",
+              "desc": "人工地震、天然地震等"
+            },
+            {
+              "code": "PT110104",
+              "name": "地质灾害",
+              "symbol": "emergencyPlotSymbol/自然灾害/地质灾害.svg",
+              "desc": "滑坡、泥石流、崩塌、塌陷、地裂、地面沉降、火山喷发、海(咸)水入侵等"
+            },
+            {
+              "code": "PT110105",
+              "name": "海洋灾害",
+              "symbol": "emergencyPlotSymbol/自然灾害/海洋灾害.svg",
+              "desc": "海啸、风暴潮、海冰、巨浪、赤潮、绿潮等"
+            },
+            {
+              "code": "PT110106",
+              "name": "森林火灾",
+              "symbol": "emergencyPlotSymbol/自然灾害/森林火灾.svg",
+              "desc": "境内火灾、跨境火灾、境外威胁等"
+            },
+            {
+              "code": "PT110107",
+              "name": "草原火灾",
+              "symbol": "emergencyPlotSymbol/自然灾害/草原火灾.svg",
+              "desc": "境内火灾、跨境火灾、境外威胁等"
+            },
+            {
+              "code": "PT110108",
+              "name": "生物灾害事件",
+              "symbol": "emergencyPlotSymbol/自然灾害/生物灾害.svg",
+              "desc": "农业病害、农业虫害、农业草害、农业鼠害、森林病害、森林虫害、森林鼠害等"
+            }
+          ]
+        },
+        {
+          "name": "事故灾难",
+          "code": "A12",
+          "children": [
+            {
+              "code": "PT110201",
+              "name": "煤矿事故",
+              "symbol": "emergencyPlotSymbol/事故灾难类/煤矿事故.svg",
+              "desc": "瓦斯、顶板、运输、水害、机电、放炮、火灾事故等"
+            },
+            {
+              "code": "PT110202",
+              "name": "金属与非金属矿山事故",
+              "symbol": "emergencyPlotSymbol/事故灾难类/金属矿山.svg",
+              "desc": "顶板、运输、水害、中毒窒息、尾矿垮坝、火灾、机电、火药爆炸等"
+            },
+            {
+              "code": "PT110203",
+              "name": "建筑业事故",
+              "symbol": "emergencyPlotSymbol/事故灾难类/施工安全.svg",
+              "desc": "施工安全等"
+            },
+            {
+              "code": "PT110204",
+              "name": "危险化学品事故",
+              "symbol": "emergencyPlotSymbol/事故灾难类/危化品.svg",
+              "desc": "爆炸、泄漏、火灾、中毒窒息、灼烫等"
+            },
+            {
+              "code": "PT110205",
+              "name": "烟花爆竹和民用爆炸物事故",
+              "symbol": "emergencyPlotSymbol/事故灾难类/烟花爆竹.svg",
+              "desc": "生产爆炸、运输爆炸、民用爆炸等"
+            },
+            {
+              "code": "PT110206",
+              "name": "火灾事故",
+              "symbol": "emergencyPlotSymbol/事故灾难类/火灾事故.svg",
+              "desc": "一般工业、特种工业、一般民用、高层民用、地下建筑、公用建筑、隧道等"
+            },
+            {
+              "code": "PT110207",
+              "name": "道路交通事故",
+              "symbol": "emergencyPlotSymbol/事故灾难类/道路交通.svg",
+              "desc": "撞车、翻车、坠水坠沟、车辆起火、校车等"
+            },
+            {
+              "code": "PT110208",
+              "name": "水上交通事故",
+              "symbol": "emergencyPlotSymbol/事故灾难类/水上事故.svg",
+              "desc": "碰撞、触礁、搁浅、风灾、火灾、船舶失踪、海上遇险、渔业设施等"
+            },
+            {
+              "code": "PT110209",
+              "name": "铁路交通事故",
+              "symbol": "emergencyPlotSymbol/事故灾难类/铁路事故.svg",
+              "desc": "脱轨、追尾、撞车、撞人、火灾、爆炸等"
+            },
+            {
+              "code": "PT110210",
+              "name": "城市轨道事故",
+              "symbol": "emergencyPlotSymbol/事故灾难类/城市轨道.svg",
+              "desc": "脱轨、追尾、撞车、撞人、火灾、爆炸等"
+            },
+            {
+              "code": "PT110211",
+              "name": "民用航空器飞行事故",
+              "symbol": "emergencyPlotSymbol/事故灾难类/飞行事故.svg",
+              "desc": "坠机、撞机、刮蹭、航班延误等"
+            },
+            {
+              "code": "PT110212",
+              "name": "特种设备事故",
+              "symbol": "emergencyPlotSymbol/事故灾难类/特种设备.svg",
+              "desc": "锅炉、压力容器、压力管道、电梯、起重机械、客运索道、游乐设施等"
+            },
+            {
+              "code": "PT110213",
+              "name": "基础设施和公用设施事故",
+              "symbol": "emergencyPlotSymbol/事故灾难类/基础设施.svg",
+              "desc": "公路设施、铁路设施、城轨设施、桥梁隧道、水运交通、民航设施、水利设施、电力设施、油气设施、通讯设施、金融设施、生命线、建筑垮塌等"
+            },
+            {
+              "code": "PT110214",
+              "name": "环境污染和生态破坏事故",
+              "symbol": "emergencyPlotSymbol/事故灾难类/环境污染.svg",
+              "desc": "水域污染、空气污染、土壤污染、海上溢油、供水中断、种群死亡、生态破坏、危险废物等"
+            },
+            {
+              "code": "PT110215",
+              "name": "农业机械事故",
+              "symbol": "emergencyPlotSymbol/事故灾难类/农业机械.svg",
+              "desc": "行驶事故、作业事故、碾压事件、碰撞事件、翻车事件、落车事件、火灾事件、机械事故等"
+            },
+            {
+              "code": "PT110216",
+              "name": "踩踏事件",
+              "symbol": "emergencyPlotSymbol/事故灾难类/踩踏.svg",
+              "desc": "活动踩踏、校园踩踏等"
+            },
+            {
+              "code": "PT110217",
+              "name": "核与辐射事故",
+              "symbol": "emergencyPlotSymbol/事故灾难类/辐射事件.svg",
+              "desc": ""
+            }
+          ]
+        },
+        {
+          "name": "公共卫生事件",
+          "code": "A13",
+          "children": [
+            {
+              "code": "PT110301",
+              "name": "传染病事件",
+              "symbol": "emergencyPlotSymbol/公共卫生类/传染病.svg",
+              "desc": "鼠疫、霍乱、肺炭疽、非典、禽流感等"
+            },
+            {
+              "code": "PT110302",
+              "name": "食品药品安全事件",
+              "symbol": "emergencyPlotSymbol/公共卫生类/食药安全.svg",
+              "desc": "药品安全、食品安全等"
+            },
+            {
+              "code": "PT110303",
+              "name": "群体性中毒、感染事件",
+              "symbol": "emergencyPlotSymbol/公共卫生类/感染事件.svg",
+              "desc": "职业中毒、重金属等"
+            },
+            {
+              "code": "PT110304",
+              "name": "病原微生物、菌毒株事件",
+              "symbol": "emergencyPlotSymbol/公共卫生类/病原微生物毒菌珠事件.svg",
+              "desc": "菌株、毒株、致病因子丢失事件，隐匿运输、邮寄病原体、生物毒素等"
+            },
+            {
+              "code": "PT110305",
+              "name": "动物疫情事件",
+              "symbol": "emergencyPlotSymbol/公共卫生类/动物疫情.svg",
+              "desc": "禽流感、口蹄疫、疯牛病、狂犬病、动物炭疽等"
+            }
+          ]
+        },
+        {
+          "name": "社会安全事件",
+          "code": "A14",
+          "children": [
+            {
+              "code": "PT110401",
+              "name": "群体性事件",
+              "symbol": "emergencyPlotSymbol/社会安全事件类/集会事件.svg",
+              "desc": "鼠疫、霍乱、肺炭疽、非典、禽流感等"
+            },
+            {
+              "code": "PT110402",
+              "name": "重大刑事案件",
+              "symbol": "emergencyPlotSymbol/社会安全事件类/重大刑事案件.svg",
+              "desc": ""
+            },
+            {
+              "code": "PT110403",
+              "name": "恐怖袭击事件",
+              "symbol": "emergencyPlotSymbol/社会安全事件类/恐怖袭击.svg",
+              "desc": "药品安全、食品安全等"
+            },
+            {
+              "code": "PT110404",
+              "name": "民族和宗教事件",
+              "symbol": "emergencyPlotSymbol/社会安全事件类/民族和宗教事件.svg",
+              "desc": "民族和宗教事件"
+            },
+            {
+              "code": "PT110405",
+              "name": "涉外突发事件",
+              "symbol": "emergencyPlotSymbol/社会安全事件类/涉外突发事件.svg",
+              "desc": "涉外突发事件"
+            },
+            {
+              "code": "PT110406",
+              "name": "网络安全事件",
+              "symbol": "emergencyPlotSymbol/社会安全事件类/网络安全事件.svg",
+              "desc": "网络安全事件"
+            },
+            {
+              "code": "PT110407",
+              "name": "信息安全事件",
+              "symbol": "emergencyPlotSymbol/社会安全事件类/信息安全.svg",
+              "desc": "病毒传播、网络攻击等"
+            },
+            {
+              "code": "PT110408",
+              "name": "金融突发事件",
+              "symbol": "emergencyPlotSymbol/社会安全事件类/金融事件.svg",
+              "desc": "银行业、证券业、保险业等"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "应急组织机构符号",
+      "code": "A2",
+      "children": [
+        {
+          "code": "PT120100",
+          "name": "应急管理机构",
+          "symbol": "emergencyPlotSymbol/应急组织机构/应急管理部.svg",
+          "desc": "应急管理部门、地震局、煤矿安全监察机构、消防救援局、森林消防局"
+        },
+        {
+          "code": "PT120200",
+          "name": "专项指挥部",
+          "symbol": "emergencyPlotSymbol/应急组织机构/专项指挥部.svg",
+          "desc": "防汛抗旱应急指挥部,抗震救灾指挥部,地质灾害应急防治指挥部,森林草原防灭火指挥部,生产安全事故应急指挥部,核事故应急指挥部,空气重污染应急指挥部,消防安全应急指挥部,电力事故应急指挥部,建筑工程事故应急指挥部,城市公共设施事故应急指挥部,交通安全应急指挥部,人防工程事故应急指挥部,通信保障和信息安全应急指挥部,突发公共卫生事件应急指挥部,重大动植物疫情应急指挥部,反恐和刑事案件应急指挥部"
+        },
+        {
+          "code": "PT120300",
+          "name": "现场指挥",
+          "symbol": "emergencyPlotSymbol/应急组织机构/现场指挥部.svg",
+          "desc": ""
+        },
+        {
+          "code": "PT120400",
+          "name": "专业应急救援中心",
+          "symbol": "emergencyPlotSymbol/应急组织机构/专业应急救援中心.svg",
+          "desc": "海上搜救中心、海上救助打捞局、核应急响应中心"
+        }
+      ]
+    },
+    {
+      "name": "人力资源保障符号",
+      "code": "A3",
+      "children": [
+        {
+          "name": "应急救援队伍符号",
+          "code": "A31",
+          "children": [
+            {
+              "code": "PT130100",
+              "name": "应急救援队伍",
+              "symbol": "emergencyPlotSymbol/应急救援队伍/应急救援队伍.svg",
+              "desc": ""
+            },
+            {
+              "code": "PT130101",
+              "name": "消防救援队",
+              "symbol": "emergencyPlotSymbol/应急救援队伍/消防救援队.svg",
+              "desc": ""
+            },
+            {
+              "code": "PT130102",
+              "name": "地震救援队",
+              "symbol": "emergencyPlotSymbol/应急救援队伍/地震救援队.svg",
+              "desc": ""
+            },
+            {
+              "code": "PT130103",
+              "name": "森林草原消防队",
+              "symbol": "emergencyPlotSymbol/应急救援队伍/森林草原消防队.svg",
+              "desc": ""
+            },
+            {
+              "code": "PT130104",
+              "name": "矿山应急救援队",
+              "symbol": "emergencyPlotSymbol/应急救援队伍/矿山应急救援队.svg",
+              "desc": ""
+            },
+            {
+              "code": "PT130105",
+              "name": "危险化学品应急救援队",
+              "symbol": "emergencyPlotSymbol/应急救援队伍/危险化学品应急救援队.svg",
+              "desc": ""
+            },
+            {
+              "code": "PT130106",
+              "name": "核应急救援队",
+              "symbol": "emergencyPlotSymbol/应急救援队伍/核应急救援队.svg",
+              "desc": ""
+            },
+            {
+              "code": "PT130107",
+              "name": "油气管道应急救援队",
+              "symbol": "emergencyPlotSymbol/应急救援队伍/油气管道应急救援队.svg",
+              "desc": ""
+            },
+            {
+              "code": "PT130108",
+              "name": "隧道应急救援队",
+              "symbol": "emergencyPlotSymbol/应急救援队伍/隧道应急救援队.svg",
+              "desc": ""
+            },
+            {
+              "code": "PT130109",
+              "name": "水（海）上应急救援队",
+              "symbol": "emergencyPlotSymbol/应急救援队伍/水海上应急救援队.svg",
+              "desc": ""
+            },
+            {
+              "code": "PT130110",
+              "name": "金属冶炼事故救援队",
+              "symbol": "emergencyPlotSymbol/应急救援队伍/金属冶炼事故救援队.svg",
+              "desc": ""
+            },
+            {
+              "code": "PT130111",
+              "name": "城市轨道交通运营保障队",
+              "symbol": "emergencyPlotSymbol/应急救援队伍/城市轨道交通运营保障队.svg",
+              "desc": ""
+            },
+            {
+              "code": "PT130112",
+              "name": "建筑施工救援队",
+              "symbol": "emergencyPlotSymbol/应急救援队伍/建筑施工救援队.svg",
+              "desc": ""
+            },
+            {
+              "code": "PT130113",
+              "name": "防汛抢险队",
+              "symbol": "emergencyPlotSymbol/应急救援队伍/防汛抢险队.svg",
+              "desc": ""
+            },
+            {
+              "code": "PT130114",
+              "name": "抗旱服务队",
+              "symbol": "emergencyPlotSymbol/应急救援队伍/抗旱服务队.svg",
+              "desc": ""
+            },
+            {
+              "code": "PT130115",
+              "name": "交通运输保障队",
+              "symbol": "emergencyPlotSymbol/应急救援队伍/交通运输保障队.svg",
+              "desc": ""
+            },
+            {
+              "code": "PT130116",
+              "name": "航空护林队",
+              "symbol": "emergencyPlotSymbol/应急救援队伍/航空护林队.svg",
+              "desc": ""
+            },
+            {
+              "code": "PT130117",
+              "name": "路桥抢修队",
+              "symbol": "emergencyPlotSymbol/应急救援队伍/路桥抢修队.svg",
+              "desc": ""
+            },
+            {
+              "code": "PT130118",
+              "name": "通信保障队",
+              "symbol": "emergencyPlotSymbol/应急救援队伍/通信保障队.svg",
+              "desc": ""
+            },
+            {
+              "code": "PT130119",
+              "name": "电力抢修队",
+              "symbol": "emergencyPlotSymbol/应急救援队伍/电力抢修队.svg",
+              "desc": ""
+            },
+            {
+              "code": "PT130120",
+              "name": "供水抢修队",
+              "symbol": "emergencyPlotSymbol/应急救援队伍/供水抢修队.svg",
+              "desc": ""
+            },
+            {
+              "code": "PT130121",
+              "name": "环境应急救援队",
+              "symbol": "emergencyPlotSymbol/应急救援队伍/环境应急救援队.svg",
+              "desc": ""
+            },
+            {
+              "code": "PT130122",
+              "name": "医疗救援队",
+              "symbol": "emergencyPlotSymbol/应急救援队伍/医疗救援队.svg",
+              "desc": ""
+            },
+            {
+              "code": "PT130123",
+              "name": "卫生防疫队",
+              "symbol": "emergencyPlotSymbol/应急救援队伍/卫生防疫队.svg",
+              "desc": ""
+            },
+            {
+              "code": "PT130124",
+              "name": "社会救援队",
+              "symbol": "emergencyPlotSymbol/应急救援队伍/社会救援队.svg",
+              "desc": ""
+            },
+            {
+              "code": "PT130125",
+              "name": "国际救援队",
+              "symbol": "emergencyPlotSymbol/应急救援队伍/国际救援队.svg",
+              "desc": ""
+            }
+          ]
+        },
+        {
+          "name": "专家符号",
+          "code": "A32",
+          "children": [
+            {
+              "code": "PT130200",
+              "name": "专家",
+              "symbol": "emergencyPlotSymbol/专家.svg",
+              "desc": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "物资保障符号",
+      "code": "A4",
+      "children": [
+        {
+          "code": "PT140100",
+          "name": "应急物资储备库",
+          "symbol": "emergencyPlotSymbol/应急物资储备库.svg",
+          "desc": ""
+        },
+        {
+          "code": "PT140200",
+          "name": "应急物资装备生产经营企业",
+          "symbol": "emergencyPlotSymbol/应急物资装备生产经营企业.svg",
+          "desc": ""
+        }
+      ]
+    },
+    {
+      "name": "交通运输保障符号",
+      "code": "A5",
+      "children": [
+        {
+          "name": "公路交通设施符号",
+          "code": "A51",
+          "children": [
+            {
+              "code": "PT150102",
+              "name": "公路桥梁",
+              "symbol": "emergencyPlotSymbol/交通运输保障符号/公路桥梁.svg",
+              "desc": ""
+            },
+            {
+              "code": "PT150103",
+              "name": "公路隧道",
+              "symbol": "emergencyPlotSymbol/交通运输保障符号/公路隧道.svg",
+              "desc": ""
+            },
+            {
+              "code": "PT150104",
+              "name": "汽车站",
+              "symbol": "emergencyPlotSymbol/交通运输保障符号/汽车站.svg",
+              "desc": ""
+            },
+            {
+              "code": "PT150105",
+              "name": "服务区",
+              "symbol": "emergencyPlotSymbol/交通运输保障符号/服务区.svg",
+              "desc": ""
+            },
+            {
+              "code": "PT150107",
+              "name": "收费站",
+              "symbol": "emergencyPlotSymbol/交通运输保障符号/收费站.svg",
+              "desc": ""
+            },
+            {
+              "code": "PT150108",
+              "name": "停车场",
+              "symbol": "emergencyPlotSymbol/交通运输保障符号/停车场.svg",
+              "desc": ""
+            }
+          ]
+        },
+        {
+          "name": "城市轨道交通设施符号",
+          "code": "A52",
+          "children": [
+            {
+              "code": "PT150202",
+              "name": "地铁站",
+              "symbol": "emergencyPlotSymbol/交通运输保障符号/地铁站.svg",
+              "desc": ""
+            }
+          ]
+        },
+        {
+          "name": "铁路设施符号",
+          "code": "A53",
+          "children": [
+            {
+              "code": "PT150302",
+              "name": "铁路桥梁",
+              "symbol": "emergencyPlotSymbol/交通运输保障符号/铁路桥梁.svg",
+              "desc": ""
+            },
+            {
+              "code": "PT150303",
+              "name": "铁路隧道",
+              "symbol": "emergencyPlotSymbol/交通运输保障符号/铁路隧道.svg",
+              "desc": ""
+            },
+            {
+              "code": "PT150304",
+              "name": "火车站",
+              "symbol": "emergencyPlotSymbol/交通运输保障符号/火车站.svg",
+              "desc": ""
+            }
+          ]
+        },
+        {
+          "name": "水运交通设施符号",
+          "code": "A54",
+          "children": [
+            {
+              "code": "PT150400",
+              "name": "水运交通设施",
+              "symbol": "emergencyPlotSymbol/交通运输保障符号/水运交通设施.svg",
+              "desc": "港口码头、渡口"
+            }
+          ]
+        },
+        {
+          "name": "民航交通设施符号",
+          "code": "A55",
+          "children": [
+            {
+              "code": "PT150501",
+              "name": "机场",
+              "symbol": "emergencyPlotSymbol/交通运输保障符号/机场.svg",
+              "desc": ""
+            },
+            {
+              "code": "PT150502",
+              "name": "直升机停机坪",
+              "symbol": "emergencyPlotSymbol/交通运输保障符号/直升停机坪.svg",
+              "desc": ""
+            }
+          ]
+        },
+        {
+          "name": "运输管理机构符号",
+          "code": "A56",
+          "children": [
+            {
+              "code": "PT150600",
+              "name": "运输管理机构",
+              "symbol": "emergencyPlotSymbol/交通运输保障符号/运输管理机构.svg",
+              "desc": ""
+            }
+          ]
+        },
+        {
+          "name": "运输企业符号",
+          "code": "A57",
+          "children": [
+            {
+              "code": "PT150700",
+              "name": "运输企业",
+              "symbol": "emergencyPlotSymbol/交通运输保障符号/运输企业.svg",
+              "desc": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "医疗卫生保障符号",
+      "code": "A6",
+      "children": [
+        {
+          "code": "PT160100",
+          "name": "医院",
+          "symbol": "emergencyPlotSymbol/医疗卫生保障符号/医院.svg",
+          "desc": "综合医院、专科医院、社区卫生服务中心"
+        },
+        {
+          "code": "PT160200",
+          "name": "急救中心（站）",
+          "symbol": "emergencyPlotSymbol/医疗卫生保障符号/急救中心（站）.svg",
+          "desc": ""
+        },
+        {
+          "code": "PT160300",
+          "name": "采供血机构",
+          "symbol": "emergencyPlotSymbol/医疗卫生保障符号/采血供血机构.svg",
+          "desc": ""
+        },
+        {
+          "code": "PT160400",
+          "name": "疾病预防控制中心",
+          "symbol": "emergencyPlotSymbol/医疗卫生保障符号/疾病预防控制中心.svg",
+          "desc": ""
+        }
+      ]
+    },
+    {
+      "name": "通信保障符号",
+      "code": "A7",
+      "children": [
+        {
+          "code": "PT170100",
+          "name": "通信管理机构",
+          "symbol": "emergencyPlotSymbol/通信保障符号/通信管理机构.svg",
+          "desc": ""
+        },
+        {
+          "code": "PT170200",
+          "name": "通信企业",
+          "symbol": "emergencyPlotSymbol/通信保障符号/通信企业.svg",
+          "desc": ""
+        },
+        {
+          "code": "PT170300",
+          "name": "通信中心",
+          "symbol": "emergencyPlotSymbol/通信保障符号/通信中心.svg",
+          "desc": ""
+        },
+        {
+          "code": "PT170400",
+          "name": "通信基站",
+          "symbol": "emergencyPlotSymbol/通信保障符号/通信基站.svg",
+          "desc": ""
+        }
+      ]
+    },
+    {
+      "name": "公共设施符号",
+      "code": "A8",
+      "children": [
+        {
+          "code": "PT180100",
+          "name": "水利设施",
+          "symbol": "emergencyPlotSymbol/公共设施符号/水利设施.svg",
+          "desc": "水库、堤坝、拦河水闸工程、排灌泵站工程、堤防工程、引调水工程"
+        },
+        {
+          "code": "PT180200",
+          "name": "电力设施",
+          "symbol": "emergencyPlotSymbol/公共设施符号/电力设施.svg",
+          "desc": "火力发电厂、水电站、核电厂、风力发电厂、变电站"
+        },
+        {
+          "code": "PT180300",
+          "name": "石油天然气设施",
+          "symbol": "emergencyPlotSymbol/公共设施符号/石油天然气设施.svg",
+          "desc": "油气田集输处理设施、石油平台"
+        },
+        {
+          "code": "PT180401",
+          "name": "供水设施",
+          "symbol": "emergencyPlotSymbol/公共设施符号/供水设施.svg",
+          "desc": ""
+        },
+        {
+          "code": "PT180402",
+          "name": "供电设施",
+          "symbol": "emergencyPlotSymbol/公共设施符号/供电设施.svg",
+          "desc": ""
+        },
+        {
+          "code": "PT180403",
+          "name": "燃气设施",
+          "symbol": "emergencyPlotSymbol/公共设施符号/燃气设施.svg",
+          "desc": ""
+        },
+        {
+          "code": "PT180404",
+          "name": "供热设施",
+          "symbol": "emergencyPlotSymbol/公共设施符号/供热设施.svg",
+          "desc": ""
+        },
+        {
+          "code": "PT180405",
+          "name": "排水设施",
+          "symbol": "emergencyPlotSymbol/公共设施符号/排水设施.svg",
+          "desc": ""
+        },
+        {
+          "code": "PT180406",
+          "name": "综合管廊",
+          "symbol": "emergencyPlotSymbol/公共设施符号/综合管廊.svg",
+          "desc": ""
+        }
+      ]
+    },
+    {
+      "name": "应急救援设施符号",
+      "code": "A9",
+      "children": [
+        {
+          "code": "A91",
+          "name": "消防设施符号",
+          "children": [
+            {
+              "code": "PT190100",
+              "name": "消防设施",
+              "symbol": "emergencyPlotSymbol/应急救援设施符号/消防设施.svg",
+              "desc": ""
+            },
+            {
+              "code": "PT190101",
+              "name": "消防站",
+              "symbol": "emergencyPlotSymbol/应急救援设施符号/消防站.svg",
+              "desc": ""
+            },
+            {
+              "code": "PT190102",
+              "name": "消防栓",
+              "symbol": "emergencyPlotSymbol/应急救援设施符号/消防栓.svg",
+              "desc": ""
+            },
+            {
+              "code": "PT190103",
+              "name": "消防水源",
+              "symbol": "emergencyPlotSymbol/应急救援设施符号/消防水源.svg",
+              "desc": ""
+            },
+            {
+              "code": "PT190104",
+              "name": "消防水鹤",
+              "symbol": "emergencyPlotSymbol/应急救援设施符号/消防水鹤.svg",
+              "desc": ""
+            },
+            {
+              "code": "PT190105",
+              "name": "消防取水码头",
+              "symbol": "emergencyPlotSymbol/应急救援设施符号/消防取水码头.svg",
+              "desc": ""
+            },
+            {
+              "code": "PT190106",
+              "name": "消防水池",
+              "symbol": "emergencyPlotSymbol/应急救援设施符号/消防水池.svg",
+              "desc": ""
+            },
+            {
+              "code": "PT190107",
+              "name": "消防通道",
+              "symbol": "emergencyPlotSymbol/应急救援设施符号/消防通道.svg",
+              "desc": ""
+            }
+          ]
+        },
+        {
+          "code": "A92",
+          "name": "森林防火设施",
+          "children": [
+            {
+              "code": "PT190200",
+              "name": "森林防火设施",
+              "symbol": "emergencyPlotSymbol/应急救援设施符号/森林防火设施.svg",
+              "desc": "瞭望台、取水点、防火工具站、防火检查站"
+            }
+          ]
+        },
+        {
+          "code": "A93",
+          "name": "草原防火设施",
+          "children": [
+            {
+              "code": "PT190300",
+              "name": "草原防火设施",
+              "symbol": "emergencyPlotSymbol/应急救援设施符号/草原防火设施.svg",
+              "desc": "草原防火站、草原火情监控站"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "预警预报设施符号",
+      "code": "A10",
+      "children": [
+        {
+          "code": "PT200100",
+          "name": "电子显示屏",
+          "symbol": "emergencyPlotSymbol/电子显示屏.svg",
+          "desc": ""
+        },
+        {
+          "code": "PT200200",
+          "name": "交通诱导屏",
+          "symbol": "emergencyPlotSymbol/交通诱导屏.svg",
+          "desc": ""
+        },
+        {
+          "code": "PT200300",
+          "name": "应急广播系统",
+          "symbol": "emergencyPlotSymbol/应急广播系统.svg",
+          "desc": ""
+        }
+      ]
+    },
+    {
+      "name": "应急避难场区符号",
+      "code": "A11",
+      "children": [
+        {
+          "code": "PT210100",
+          "name": "避难场所",
+          "symbol": "emergencyPlotSymbol/避难场所.svg",
+          "desc": ""
+        },
+        {
+          "code": "PT210200",
+          "name": "人防工事",
+          "symbol": "emergencyPlotSymbol/人防工事.svg",
+          "desc": ""
+        }
+      ]
+    },
+    {
+      "name": "自然灾害风险隐患区（点）符号",
+      "code": "A12",
+      "children": [
+        {
+          "code": "PT220100",
+          "name": "水旱灾害风险区",
+          "symbol": "emergencyPlotSymbol/水旱灾害区.svg",
+          "desc": ""
+        },
+        {
+          "code": "PT220200",
+          "name": "气象灾害风险区",
+          "symbol": "emergencyPlotSymbol/气象灾害风险区.svg",
+          "desc": ""
+        },
+        {
+          "code": "PT220300",
+          "name": "地质灾害风险区",
+          "symbol": "emergencyPlotSymbol/地质灾害风险区.svg",
+          "desc": ""
+        },
+        {
+          "code": "PT220400",
+          "name": "地震灾害风险区",
+          "symbol": "emergencyPlotSymbol/地震灾害风险区.svg",
+          "desc": ""
+        },
+        {
+          "code": "PT220500",
+          "name": "森林火灾风险区",
+          "symbol": "emergencyPlotSymbol/森林火灾风险区.svg",
+          "desc": ""
+        },
+        {
+          "code": "PT220600",
+          "name": "草原火灾风险区",
+          "symbol": "emergencyPlotSymbol/草原火灾风险区.svg",
+          "desc": ""
+        },
+        {
+          "code": "PT220700",
+          "name": "海洋灾害风险区",
+          "symbol": "emergencyPlotSymbol/海洋灾害风险区.svg",
+          "desc": ""
+        },
+        {
+          "code": "PT220800",
+          "name": "生物灾害风险区",
+          "symbol": "emergencyPlotSymbol/生物灾害风险区.svg",
+          "desc": ""
+        }
+      ]
+    },
+    {
+      "name": "安全生产风险隐患符号",
+      "code": "A13",
+      "children": [
+        {
+          "name": "高危企业符号",
+          "code": "A131",
+          "children": [
+            {
+              "code": "PT230101",
+              "name": "煤矿企业",
+              "symbol": "emergencyPlotSymbol/煤矿企业.svg",
+              "desc": ""
+            },
+            {
+              "code": "PT230102",
+              "name": "非煤矿山企业",
+              "symbol": "emergencyPlotSymbol/非煤矿山企业.svg",
+              "desc": ""
+            },
+            {
+              "code": "PT230103",
+              "name": "危险化学品企业",
+              "symbol": "emergencyPlotSymbol/危险化学品企业.svg",
+              "desc": ""
+            },
+            {
+              "code": "PT230104",
+              "name": "烟花爆竹企业",
+              "symbol": "emergencyPlotSymbol/烟花爆竹企业.svg",
+              "desc": ""
+            },
+            {
+              "code": "PT230105",
+              "name": "石油天然气企业",
+              "symbol": "emergencyPlotSymbol/石油和天然气企业.svg",
+              "desc": ""
+            },
+            {
+              "code": "PT230106",
+              "name": "民用爆炸物品企业",
+              "symbol": "emergencyPlotSymbol/民用爆炸物品企业.svg",
+              "desc": ""
+            },
+            {
+              "code": "PT230107",
+              "name": "非药易制毒化学品企业",
+              "symbol": "emergencyPlotSymbol/非药易制毒化学品企业.svg",
+              "desc": ""
+            }
+          ]
+        },
+        {
+          "name": "生产安全危险源符号",
+          "code": "A132",
+          "children": [
+            {
+              "code": "PT230201",
+              "name": "贮罐区（贮罐）",
+              "symbol": "emergencyPlotSymbol/贮罐区（贮罐）.svg",
+              "desc": ""
+            },
+            {
+              "code": "PT230202",
+              "name": "库区（库）",
+              "symbol": "emergencyPlotSymbol/库区（库）.svg",
+              "desc": ""
+            },
+            {
+              "code": "PT230203",
+              "name": "生产（经营）场所",
+              "symbol": "emergencyPlotSymbol/生产（经营）场所.svg",
+              "desc": ""
+            },
+            {
+              "code": "PT230204",
+              "name": "压力管道",
+              "symbol": "emergencyPlotSymbol/压力管道.svg",
+              "desc": ""
+            },
+            {
+              "code": "PT230205",
+              "name": "锅炉",
+              "symbol": "emergencyPlotSymbol/锅炉.svg",
+              "desc": ""
+            },
+            {
+              "code": "PT230206",
+              "name": "压力容器",
+              "symbol": "emergencyPlotSymbol/压力容器.svg",
+              "desc": ""
+            },
+            {
+              "code": "PT230207",
+              "name": "煤矿",
+              "symbol": "emergencyPlotSymbol/煤矿煤矿.svg",
+              "desc": ""
+            },
+            {
+              "code": "PT230208",
+              "name": "金属非金属矿山",
+              "symbol": "emergencyPlotSymbol/金属非金属矿山.svg",
+              "desc": ""
+            },
+            {
+              "code": "PT230209",
+              "name": "尾矿库",
+              "symbol": "emergencyPlotSymbol/尾矿库.svg",
+              "desc": ""
+            },
+            {
+              "code": "PT230210",
+              "name": "采空区",
+              "symbol": "emergencyPlotSymbol/采空区.svg",
+              "desc": ""
+            },
+            {
+              "code": "PT230211",
+              "name": "油气田",
+              "symbol": "emergencyPlotSymbol/油气田.svg",
+              "desc": ""
+            },
+            {
+              "code": "PT230212",
+              "name": "气瓶充装站",
+              "symbol": "emergencyPlotSymbol/气瓶充装站.svg",
+              "desc": ""
+            },
+            {
+              "code": "PT230213",
+              "name": "加油（气）站",
+              "symbol": "emergencyPlotSymbol/加油（气）站.svg",
+              "desc": ""
+            },
+            {
+              "code": "PT230214",
+              "name": "渣土场",
+              "symbol": "emergencyPlotSymbol/渣土场.svg",
+              "desc": ""
+            },
+            {
+              "code": "PT230215",
+              "name": "货物堆场",
+              "symbol": "emergencyPlotSymbol/货物堆场.svg",
+              "desc": ""
+            },
+            {
+              "code": "PT230216",
+              "name": "施工作业场所",
+              "symbol": "emergencyPlotSymbol/施工作业场所.svg",
+              "desc": ""
+            },
+            {
+              "code": "PT230217",
+              "name": "污染源",
+              "symbol": "emergencyPlotSymbol/污染源.svg",
+              "desc": ""
+            },
+            {
+              "code": "PT230218",
+              "name": "放射源",
+              "symbol": "emergencyPlotSymbol/放射源.svg",
+              "desc": ""
+            },
+            {
+              "code": "PT230219",
+              "name": "危险废物集中处置单位",
+              "symbol": "emergencyPlotSymbol/危险废物集中处置单位.svg",
+              "desc": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "公共卫生危险源符号",
+      "code": "A14",
+      "children": [
+        {
+          "code": "PT240100",
+          "name": "自然疫源地类危险源",
+          "symbol": "emergencyPlotSymbol/自然疫源地类危险源.svg",
+          "desc": ""
+        },
+        {
+          "code": "PT240200",
+          "name": "医疗机构类危险源",
+          "symbol": "emergencyPlotSymbol/医疗机构类危险源.svg",
+          "desc": ""
+        },
+        {
+          "code": "PT240300",
+          "name": "病原微生物实验室类危险源",
+          "symbol": "emergencyPlotSymbol/病原微生物实验室类危险源.svg",
+          "desc": ""
+        },
+        {
+          "code": "PT240400",
+          "name": "菌毒株保藏类危险源",
+          "symbol": "emergencyPlotSymbol/菌毒株保藏类危险源.svg",
+          "desc": ""
+        }
+      ]
+    },
+    {
+      "name": "党政机关符号",
+      "code": "A15",
+      "children": [
+        {
+          "code": "PT250000",
+          "name": "党政机关",
+          "symbol": "emergencyPlotSymbol/党政机关.svg",
+          "desc": "党委、人民政府、人大、政协、检察院、法院、政府部门、基层组织"
+        }
+      ]
+    },
+    {
+      "name": "科研机构符号",
+      "code": "A16",
+      "children": [
+        {
+          "code": "PT260000",
+          "name": "科研机构",
+          "symbol": "emergencyPlotSymbol/科研机构.svg",
+          "desc": ""
+        }
+      ]
+    },
+    {
+      "name": "金融机构符号",
+      "code": "A17",
+      "children": [
+        {
+          "code": "PT270000",
+          "name": "金融机构",
+          "symbol": "emergencyPlotSymbol/金融机构.svg",
+          "desc": "银行、金库、造币厂、证券交易、保险"
+        }
+      ]
+    },
+    {
+      "name": "学校符号",
+      "code": "A18",
+      "children": [
+        {
+          "code": "PT280000",
+          "name": "学校",
+          "symbol": "emergencyPlotSymbol/学校.svg",
+          "desc": "高等学校、中等职业教育学校、中学、小学、幼儿园、特殊教育学校"
+        }
+      ]
+    },
+    {
+      "name": "新闻广播机构符号",
+      "code": "A19",
+      "children": [
+        {
+          "code": "PT290000",
+          "name": "新闻广播机构",
+          "symbol": "emergencyPlotSymbol/新闻广播机构.svg",
+          "desc": "电视台、电台、报社"
+        }
+      ]
+    },
+    {
+      "name": "重点文物保护单位",
+      "code": "A20",
+      "children": [
+        {
+          "code": "PT300000",
+          "name": "重点文物保护单位",
+          "symbol": "emergencyPlotSymbol/重点文物保护单位监测监控台站.svg",
+          "desc": ""
+        }
+      ]
+    },
+    {
+      "name": "外交场所符号",
+      "code": "A21",
+      "children": [
+        {
+          "code": "PT310000",
+          "name": "外交场所",
+          "symbol": "emergencyPlotSymbol/外交场所.svg",
+          "desc": ""
+        }
+      ]
+    },
+    {
+      "name": "公众聚集场所符号",
+      "code": "A22",
+      "children": [
+        {
+          "code": "PT320000",
+          "name": "公众聚集场所",
+          "symbol": "emergencyPlotSymbol/公共聚集场所.svg",
+          "desc": "宾馆饭店、商场超市、集贸市场、车站候车、码头候船、航站楼、体育场馆、会堂、宗教场所、福利机构、公共娱乐"
+        }
+      ]
+    },
+    {
+      "name": "监测监控台站符号",
+      "code": "A23",
+      "children": [
+        {
+          "code": "PT330000",
+          "name": "监测台站",
+          "symbol": "emergencyPlotSymbol/监测监控台站.svg",
+          "desc": "地震监测、气象监测、森火监测、水文监测、地质环境、水质监测"
+        }
+      ]
+    },
+    {
+      "name": "重要生态安全区符号",
+      "code": "A24",
+      "children": [
+        {
+          "code": "PT340000",
+          "name": "重要生态安全区",
+          "symbol": "emergencyPlotSymbol/重要生态安全区.svg",
+          "desc": "自然保护区、湿地保护区、森林公园、地质公园、动物园、植物园、饮用水源地"
+        }
+      ]
+    }
+  ],
+  "//": "符号尺寸",
+  "symbolSize": {
+    "*": {
+      "width": 30,
+      "height": 30
+    },
+    "1-5": {
+      "width": 10,
+      "height": 10
+    },
+    "6-20": {
+      "width": 20,
+      "height": 20
+    }
+  }
+}

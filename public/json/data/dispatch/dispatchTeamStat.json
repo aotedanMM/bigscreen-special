@@ -1,0 +1,39 @@
+{
+    "$type": "Result,http://www.dv.com",
+    "status": 200,
+    "data": [
+        {
+            "eventId": "ff80808170ab44680170ad963afd0002",
+            "teamId": "ff808081720df0e601721170861e0001",
+            "teamName": "烟台市防汛抢险应急救援大队",
+            "taskNum": 1,
+            "address": "烟台市芝罘区",
+            "longitude": 121.45,
+            "latitude": 37.45,
+            "teamtypecode": "T003",
+            "teamtypename": null
+        },
+        {
+            "eventId": "ff80808170ab44680170ad963afd0002",
+            "teamId": "ff808081720df0e601721170861e0002",
+            "teamName": "蓬莱市救援队",
+            "taskNum": 1,
+            "address": "烟台市蓬莱市",
+            "longitude": 120.586,
+            "latitude": 37.744,
+            "teamtypecode": "T003",
+            "teamtypename": null
+        },
+        {
+            "eventId": "ff80808170ab44680170ad963afd0002",
+            "teamId": "ff808081720df0e601721170861e0003",
+            "teamName": "烟台市防汛抢险应急救援大队",
+            "taskNum": 1,
+            "address": "烟台市招远市",
+            "longitude": 120.3896,
+            "latitude": 37.4206,
+            "teamtypecode": "T003",
+            "teamtypename": null
+        }                
+    ]
+}

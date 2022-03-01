@@ -1,0 +1,77 @@
+{
+    "key": "outofcontact",
+    "data": {
+      "static":{
+        "loss": 3,
+        "good": 2
+      },
+      "detail":[
+        {
+          "parentName": "西城区",
+          "teamname": 0,
+          "poptotal": 147614,
+          "teamid": "T000",
+          "x": 116.35581226,
+          "y": 39.87521582,
+          "id": "110102",
+          "child": [
+            {
+              "town": "西城区",
+              "village": "白纸坊街道",
+              "id": "11010201995737",
+              "x": 116.35581226,
+              "y": 39.87521582,
+              "poptotal": 95737,
+              "loss": 0,
+              "good": 0,
+              "teamid": "T000",
+              "teamname": 0,
+              "dealStatus": 1
+            },
+            {
+              "town": "西城区",
+              "village": "牛街街道",
+              "id": "11010201851877",
+              "x": 116.35574273,
+              "y": 39.8849606,
+              "poptotal": 51877,
+              "loss": 1,
+              "good": 1,
+              "teamid": "T000",
+              "teamname": 0,
+              "dealStatus": 0
+            }
+          ],
+          "death": null,
+          "injured": null,
+          "miss": null,
+          "damage": null,
+          "lost": null
+        },
+        {
+          "parentName": "丰台区",
+          "teamname": 0,
+          "poptotal": 231550,
+          "teamid": "T000",
+          "x": 116.35984272,
+          "y": 39.86261546,
+          "id": "110106",
+          "child": [
+            {
+              "town": "丰台区",
+              "village": "右安门街道",
+              "id": "11010600183936",
+              "x": 116.35984272,
+              "y": 39.86261546,
+              "poptotal": 83936,
+              "loss": 1,
+              "good": 1,
+              "teamid": "T000",
+              "teamname": 0,
+              "dealStatus": 0
+            }
+          ]
+        }
+      ]
+    }
+  }

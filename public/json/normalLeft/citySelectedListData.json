@@ -1,0 +1,183 @@
+{
+    "data": [{
+            "gbCode": "130402",
+            "level": "3",
+            "name": "邯山区",
+            "pinyin": "HSQ",
+            "longitude": 114.4827,
+            "latitude": 36.6006,
+            "parentCode": "130400"
+        },
+        {
+            "gbCode": "130403",
+            "level": "3",
+            "name": "丛台区",
+            "pinyin": "LSQ",
+            "longitude": "114.4934",
+            "latitude": "36.6193",
+            "parentCode": "130400"
+        },
+        {
+            "gbCode": "130404",
+            "level": "3",
+            "name": "复兴区",
+            "pinyin": "FXQ",
+            "longitude": "114.4592",
+            "latitude": "36.612",
+            "parentCode": "130400"
+        },
+        {
+            "gbCode": "130406",
+            "level": "3",
+            "name": "峰峰矿区",
+            "pinyin": "FFKQ",
+            "longitude": "114.2031",
+            "latitude": "36.4535",
+            "parentCode": "130400"
+        },
+        {
+            "gbCode": "130407",
+            "level": "3",
+            "name": "肥乡区",
+            "pinyin": "FXQ",
+            "longitude": "114.8369",
+            "latitude": "36.57726",
+            "parentCode": "130400"
+        },
+        {
+            "gbCode": "130408",
+            "level": "3",
+            "name": "永年区",
+            "pinyin": "YNQ",
+            "longitude": "114.6416",
+            "latitude": "36.7702",
+            "parentCode": "130400"
+        },
+        {
+            "gbCode": "130423",
+            "level": "3",
+            "name": "临漳县",
+            "pinyin": "LZX",
+            "longitude": "114.6079",
+            "latitude": "36.3443",
+            "parentCode": "130400"
+        },
+        {
+            "gbCode": "130424",
+            "level": "3",
+            "name": "成安县",
+            "pinyin": "CAX",
+            "longitude": "114.6927",
+            "latitude": "36.4406",
+            "parentCode": "130400"
+        },
+        {
+            "gbCode": "130425",
+            "level": "3",
+            "name": "大名县",
+            "pinyin": "DMX",
+            "longitude": "115.1455",
+            "latitude": "36.2781",
+            "parentCode": "130400"
+        },
+        {
+            "gbCode": "130426",
+            "level": "3",
+            "name": "涉县",
+            "pinyin": "SX",
+            "longitude": "113.6676",
+            "latitude": "36.5617",
+            "parentCode": "130400"
+        },
+        {
+            "gbCode": "130427",
+            "level": "3",
+            "name": "磁县",
+            "pinyin": "CX",
+            "longitude": "114.3745",
+            "latitude": "36.3585",
+            "parentCode": "130400"
+        },
+        {
+            "gbCode": "130430",
+            "level": "3",
+            "name": "邱县",
+            "pinyin": "QX",
+            "longitude": "115.1711",
+            "latitude": "36.8258",
+            "parentCode": "130400"
+        },
+        {
+            "gbCode": "130431",
+            "level": "3",
+            "name": "鸡泽县",
+            "pinyin": "JZX",
+            "longitude": "114.8688",
+            "latitude": "36.9196",
+            "parentCode": "130400"
+        },
+        {
+            "gbCode": "130432",
+            "level": "3",
+            "name": "广平县",
+            "pinyin": "GPX",
+            "longitude": "114.9444",
+            "latitude": "36.4841",
+            "parentCode": "130400"
+        },
+        {
+            "gbCode": "130433",
+            "level": "3",
+            "name": "馆陶县",
+            "pinyin": "GTX",
+            "longitude": "115.2938",
+            "latitude": "36.5355",
+            "parentCode": "130400"
+        },
+        {
+            "gbCode": "130434",
+            "level": "3",
+            "name": "魏县",
+            "pinyin": "WX",
+            "longitude": "114.9326",
+            "latitude": "36.3592",
+            "parentCode": "130400"
+        },
+        {
+            "gbCode": "130435",
+            "level": "3",
+            "name": "曲周县",
+            "pinyin": "QZX",
+            "longitude": "114.9456",
+            "latitude": "36.7799",
+            "parentCode": "130400"
+        },
+        {
+            "gbCode": "130481",
+            "level": "3",
+            "name": "武安市",
+            "pinyin": "WAS",
+            "longitude": "114.1826",
+            "latitude": "36.6919",
+            "parentCode": "130400"
+        },
+        {
+            "gbCode": "130471",
+            "level": "3",
+            "name": "邯郸经济技术开发区",
+            "pinyin": "HDJJJSKFQ",
+            "longitude": "114.8688",
+            "latitude": "36.9196",
+            "parentCode": "130400"
+        },
+        {
+            "gbCode": "130473",
+            "level": "3",
+            "name": "邯郸冀南新区",
+            "pinyin": "HDJNXQ",
+            "longitude": "114.389",
+            "latitude": "36.4783",
+            "parentCode": "130400"
+        }
+    ]
+}

@@ -1,0 +1,78 @@
+[{
+        "iconName": "gisMapTool-toolbox",
+        "title": "工具箱",
+        "key": "toolBox"
+    },
+    {
+        "iconName": "gisMapTool-realTimePlotting",
+        "title": "实时标绘",
+        "key": "realTimePlotting",
+        "isOpen": false,
+        "mutexkey": [
+            "ToolCompared.returnImage,internetIntelligence,imageContrast,latestImages,tianyan,publicOpinionMonitor,aftershock",
+            "commonTools.mapPrint"
+        ]
+    },
+    {
+        "iconName": "gisMapTool-celiang",
+        "title": "测量工具",
+        "key": "measuringTools",
+        "list": [{
+                "iconName": "gisMapTool-celiang-area",
+                "title": "测量面积",
+                "key": "measureArea",
+                "mutexkey": [
+                    "ToolCompared.returnImage,internetIntelligence,imageContrast,latestImages,tianyan,publicOpinionMonitor,aftershock",
+                    "commonTools.realTimePlotting,mapPrint"
+                ]
+            },
+            {
+                "iconName": "gisMapTool-celiang-dis",
+                "title": "测量距离",
+                "key": "measureline",
+                "mutexkey": [
+                    "ToolCompared.returnImage,internetIntelligence,imageContrast,latestImages,tianyan,publicOpinionMonitor,aftershock",
+                    "commonTools.realTimePlotting,mapPrint"
+                ]
+            },
+            {
+                "iconName": "gisMapTool-celiang-height",
+                "title": "测量高度",
+                "key": "measureHeight",
+                "mutexkey": [
+                    "ToolCompared.returnImage,internetIntelligence,imageContrast,latestImages,tianyan,publicOpinionMonitor,aftershock",
+                    "commonTools.realTimePlotting,mapPrint,updateExperienceCircle"
+                ]
+            },
+            {
+                "iconName": "gisMapTool-celiang-slope",
+                "title": "测量坡度",
+                "key": "measureSlope",
+                "mutexkey": [
+                    "ToolCompared.returnImage,internetIntelligence,imageContrast,latestImages,tianyan,publicOpinionMonitor,aftershock",
+                    "commonTools.realTimePlotting,mapPrint,updateExperienceCircle"
+                ]
+            }
+        ]
+    },
+    {
+        "iconName": "gisMapTool-mapdownLoad",
+        "title": "地图下载",
+        "key": "mapPrint",
+        "isOpen": false,
+        "mutexkey": [
+            "ToolCompared.returnImage,internetIntelligence,imageContrast,latestImages,tianyan,publicOpinionMonitor,aftershock",
+            "commonTools.realTimePlotting"
+        ]
+    },
+    {
+        "iconName": "gisMapTool-qingpin",
+        "title": "清屏",
+        "key": "qingpin"
+    },
+    {
+        "iconName": "gisMapTool-mappicture",
+        "title": "一键截图",
+        "key": "printscreen"
+    }
+]

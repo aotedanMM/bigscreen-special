@@ -1,0 +1,88 @@
+{
+  "//mark": "true有与vuex相关,false则没有",
+  "mark": true,
+  "//vuexList": "与vuex相关的字段",
+  "vuexList": "total",
+  "list": [
+    {
+      "title": "人员伤亡",
+      "key": "_casualties",
+      "iconName": "YJ-navIcon-rowB4",
+      "isMutex": true,
+      "total": 0,
+      "leftComponentName": "CasualtiesGIS",
+      "rightComponentName": "CasualtiesRight",
+      "is2d": "2d",
+      "circleFlag": false,
+      "vuexModuelName": "eventPushStore",
+      "pushLocationKeyArr": [
+        "casualties"
+      ],
+      "isOpen": false,
+      "mutexkey": [
+        "ToolIconEventOverview.greenChannel,trafficControl,roadDamage",
+        "disasterStatistics._housedamage,_lostarea,_electricdamage"
+      ]
+    },
+    {
+      "title": "房屋损毁",
+      "key": "_housedamage",
+      "iconName": "YJ-navIcon-rowB6",
+      "isMutex": true,
+      "total": 0,
+      "leftComponentName": "HousesDamagedGis",
+      "rightComponentName": "HousesDamagedRight",
+      "is2d": "2d",
+      "circleFlag": false,
+      "vuexModuelName": "eventPushStore",
+      "pushLocationKeyArr": [
+        "housesh"
+      ],
+      "isOpen": false,
+      "mutexkey": [
+        "ToolIconEventOverview.greenChannel,trafficControl,roadDamage",
+        "disasterStatistics._casualties,_lostarea,_electricdamage"
+      ]
+    },
+    {
+      "title": "失联区域",
+      "key": "_lostarea",
+      "iconName": "YJ-navIcon-rowB5",
+      "isMutex": true,
+      "total": 0,
+      "leftComponentName": "MissingFlight",
+      "rightComponentName": "MissingFlightRight",
+      "is2d": "2d",
+      "circleFlag": false,
+      "vuexModuelName": "eventPushStore",
+      "pushLocationKeyArr": [
+        "outofcontact"
+      ],
+      "isOpen": false,
+      "mutexkey": [
+        "ToolIconEventOverview.greenChannel,trafficControl,roadDamage",
+        "disasterStatistics._casualties,_housedamage,_electricdamage"
+      ]
+    },
+    {
+      "title": "电力受损",
+      "key": "_electricdamage",
+      "iconName": "YJ-navIcon-rowB7",
+      "isMutex": true,
+      "total": 0,
+      "leftComponentName": "ElectricDamagedGis",
+      "rightComponentName": "ElectricDamagedRight",
+      "is2d": "2d",
+      "circleFlag": false,
+      "vuexModuelName": "eventPushStore",
+      "pushLocationKeyArr": [
+        "power"
+      ],
+      "isOpen": false,
+      "mutexkey": [
+        "ToolIconEventOverview.greenChannel,trafficControl,roadDamage",
+        "disasterStatistics._casualties,_housedamage,_lostarea"
+      ]
+    }
+  ]
+}

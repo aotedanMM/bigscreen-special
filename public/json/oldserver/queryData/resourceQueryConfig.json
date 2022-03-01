@@ -1,0 +1,2401 @@
+{
+  "resources": [
+    {
+      "name": "队伍",
+      "tables": [
+        {
+          "name": "EQUIP_TEA_RESCUE",
+          "label": "救援队伍",
+          "//": "详情关联表",
+          "list": [
+            {
+              "//": "是否进行关键字过滤",
+              "name": "RESCUENAME",
+              "mapName": "NAME",
+              "match": true
+            },
+            {
+              "name": "ADDRESS",
+              "match": true
+            },
+            {
+              "name": "LEADER",
+              "match": true
+            },
+            {
+              "name": "RESCUETYPECODE",
+              "relShowField": "RESCUETYPENAME",
+              "label":"救援队伍类型",
+              "match": true
+            },
+            {
+              "name": "NOWPERNUM"
+            }
+          ],
+          "detail": [
+            {
+              "//": "显示的中文，可不配，自动读取数据库字段描述",
+              "name": "RESCUENAME",
+              "label": "名称",
+              "mapName": "NAME"
+            },
+            {
+              "name": "ADDRESS"
+            },
+            {
+              "name": "RESCUETYPECODE",
+              "//": "关联展示的字段",
+              "label":"救援队伍类型",
+              "relShowField": "RESCUETYPENAME"
+            },
+            {
+              "name": "LEADER"
+            },
+            {
+              "name": "LEADERMTEL"
+            },
+            {
+              "name":"TOTALPERNUM"
+            },
+            {
+              "name": "DUTYTEL"
+            },
+            {
+              "name": "FAX"
+            },
+            {
+              "name": "RESCUEORGNAME"
+            }
+          ],
+          "relateTables": [
+            {
+              "//": "结果中返回时的属性名",
+              "table": "EQUIP_EQU_TANKS",
+              "relField": "RESCUEID",
+              "fields": [
+                {
+                  "name": "ADDRESS",
+                  "label": "地址11"
+                },
+                {
+                  "name": "BATREADYCODE",
+                  "//": "关联展示的字段",
+                  "relShowField": "FIELDCOMMENT"
+                }
+              ],
+              "as": "装备信息"
+            }
+          ],
+          "//": "分类配置",
+          "classification": {
+            "//": "分类规则;dict=按照字典项分类;default=不分子类；默认值为default",
+            "type": "dict",
+            "//": "救援队分类的字段名",
+            "localField": "RESCUETYPECODE",
+            "//": "类型字典表名",
+            "dictTable": "EQUIP_RESCUETYPE",
+            "//": "字典表里展示的字段名",
+            "showField": "RESCUETYPENAME",
+            "//": "字典表查询的排序字段，可选",
+            "sortField": "ORDERNUM",
+            "//": "排序方式",
+            "sortDirection": "ASC",
+            "//": "过滤条件",
+            "query": {}
+          }
+        },
+        {
+          "name": "JC_FIRETEAMSTA",
+          "label": "消防队站",
+          "//": "详情关联表",
+          "list": [
+            {
+              "//": "是否进行关键字过滤",
+              "name": "TEAMSTANAME",
+              "mapName": "NAME",
+              "match": true
+            },
+            {
+              "name": "ADDRESS",
+              "match": true
+            },
+            {
+              "name": "TEAMSTATYPECODE",
+              "//": "关联展示的字段",
+              "relShowField": "NAME",
+              "match": true
+            },
+            {
+              "name": "CONCATE",
+              "match": true
+            }
+          ],
+          "detail": [
+            {
+              "//": "显示的中文，可不配，自动读取数据库字段描述",
+              "name": "TEAMSTANAME"
+            },
+            {
+              "name": "ADDRESS"
+            },
+            {
+              "name": "TEAMSTATYPECODE",
+              "//": "关联展示的字段",
+              "relShowField": "NAME"
+            },
+            {
+              "name": "DISTRICTCODE",
+              "//": "关联展示的字段",
+              "relShowField": "DISTRICTNAME",
+              "//": "行政区划"
+            },
+            {
+              "name": "PERNUM"
+            },
+            {
+              "name": "CARNUM"
+            },
+            {
+              "name": "CONCATE"
+            },
+            {
+              "name": "CONCATETEL"
+            },
+            {
+              "name": "DUTYTEL"
+            }
+          ],
+          "relateTables": [
+            {
+              "//": "结果中返回时的属性名",
+              "table": "JC_EQUIPMENT",
+              "relField": "TEAMSTAID",
+              "fields": [
+                {
+                  "name": "EQUIPMENTNAME",
+                  "label": "类型"
+                },
+                {
+                  "name": "INFORMANTTEL",
+                  "label": "联系电话"
+                },
+                {
+                  "name": "INFORMANT",
+                  "label": "联系人"
+                },
+                {
+                  "name": "NOTES",
+                  "label": "备注"
+                }
+              ],
+              "as": "装备信息"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "装备",
+      "classification": {
+        "//": "分类规则;dict=按照字典项分类;default=不分子类；默认值为default",
+        "type": "dict",
+        "//": "装备名称",
+        "label": "EQUIPTYPENAME",
+        "//": "装备简称",
+        "value": "SHORTNAME",
+        "//": "装备code",
+        "id": "EQUIPTYPECODE",
+        "//": "父节点code",
+        "pId": "PARENTCODE",
+        "//": "排序字段",
+
+        "//": "救援队分类的字段名",
+        "localField": "EQUIPTYPECODE",
+        "//": "类型字典表名",
+        "dictTable": "EQUIP_EQU_TYPE",
+        "//": "字典表里展示的字段名",
+        "showField": "SHORTNAME",
+
+        "sortField": "ORDERBY",
+        "//": "排序方式",
+        "sortDirection": "ASC",
+        "//": "过滤条件",
+        "query": {}
+      },
+      "tables": [
+        {
+          "name": "EQUIP_KEY_PRODUCT",
+          "label": "装备",
+          "list": [
+            {
+              "name": "ENTID",
+              "relShowField": {
+                "//": "第四联系人电话",
+                "CHAIRMAN": "C1",
+                "CHAIRMANMTEL": "T1",
+                "MANAGER": "C2",
+                "MANAGERMTEL": "T2",
+                "INSTRUCTOR": "C3",
+                "INSTRUCTORMTEL": "T3",
+                "DUTYTEL": "T4"
+              },
+              "match": true
+            },
+            {
+              "//": "显示的中文，可不配，自动读取数据库字段描述",
+              "name": "SPMODEL",
+              "label": "品牌型号",
+              "match": true
+            },
+            {
+              "name": "PRODUNCNAME",
+              "label": "装备名称",
+              "match": true
+            },
+            {
+              "name": "ADDRESS",
+              "match": true
+            }
+          ],
+          "detail": [
+            {
+              "//": "显示的中文，可不配，自动读取数据库字段描述",
+              "name": "SPMODEL",
+              "label": "品牌型号"
+            },
+            {
+              "name": "PRODUNCNAME",
+              "label": "装备名称"
+            },
+            {
+              "name": "DAILYSTOCK",
+              "label": "数量(日常库存)"
+            },
+            {
+              "name": "UNITCODE",
+              "label": "计量单位"
+            },
+            {
+              "name": "ENTID",
+              "relShowField": {
+                "CHARGER": "C1",
+                "CHARGERMTEL": "T1"
+              }
+            }
+          ]
+        },
+        {
+          "name": "EQUIP_EQU_BELTOPENMACHINE",
+          "label": "装备",
+          "list": [
+            {
+              "name": "RESCUEID",
+              "relShowField": {
+                "//": "救援队伍名称",
+                "RESCUENAME": "RESCUENAME",
+                "//": "第一联系人",
+                "LEADER": "C1",
+                "//": "第一联系人电话",
+                "LEADERMTEL": "T1",
+                "//": "第二联系人",
+                "COMMISSAR": "C2",
+                "//": "第二联系人电话",
+                "COMMISSARMTEL": "T2",
+                "//": "第三联系人",
+                "ENGINEER": "C3",
+                "//": "第三联系人电话",
+                "ENGINEERMTEL": "T3",
+                "//": "第四联系人电话",
+                "DUTYTEL": "T4",
+                "match": true
+              }
+            },
+            {
+              "//": "显示的中文，可不配，自动读取数据库字段描述",
+              "name": "SPMODEL",
+              "label": "品牌型号",
+              "match": true
+            },
+            {
+              "name": "XTYPE",
+              "label": "类型",
+              "match": true
+            },
+            {
+              "name": "ADDRESS",
+              "match": true
+            }
+          ],
+          "detail": [
+            {
+              "//": "显示的中文，可不配，自动读取数据库字段描述",
+              "name": "SPMODEL",
+              "label": "品牌型号"
+            },
+            {
+              "name": "XTYPE",
+              "label": "类型"
+            },
+            {
+              "name": "EQUIPNUM",
+              "label": "数量"
+            },
+            {
+              "name": "UNITCODE",
+              "//": "关联展示的字段",
+              "relShowField": "PARAMETERNAME",
+              "label": "计量单位"
+            },
+            {
+              "name": "BATREADYCODE",
+              "relShowField": "PARAMETERNAME",
+              "label": "战备状态"
+            },
+            {
+              "name": "RESCUEID",
+              "relShowField": {
+                "//": "第一联系人",
+                "LEADER": "C1",
+                "//": "第一联系人电话",
+                "LEADERMTEL": "T1"
+              }
+            }
+          ]
+        },
+        {
+          "name": "EQUIP_EQU_CHEMICALWASHCAR",
+          "label": "装备",
+          "list": [
+            {
+              "name": "RESCUEID",
+              "relShowField": {
+                "//": "救援队伍名称",
+                "RESCUENAME": "RESCUENAME",
+                "//": "第一联系人",
+                "LEADER": "C1",
+                "//": "第一联系人电话",
+                "LEADERMTEL": "T1",
+                "//": "第二联系人",
+                "COMMISSAR": "C2",
+                "//": "第二联系人电话",
+                "COMMISSARMTEL": "T2",
+                "//": "第三联系人",
+                "ENGINEER": "C3",
+                "//": "第三联系人电话",
+                "ENGINEERMTEL": "T3",
+                "//": "第四联系人电话",
+                "DUTYTEL": "T4",
+                "match": true
+              }
+            },
+            {
+              "name": "ADDRESS",
+              "match": true
+            },
+            {
+              "name": "CHASSIS",
+              "match": true
+            }
+          ],
+          "detail": [
+            {
+              "name": "UNITCODE",
+              "//": "关联展示的字段",
+              "relShowField": "PARAMETERNAME",
+              "label": "计量单位"
+            },
+            {
+              "name": "BATREADYCODE",
+              "relShowField": "PARAMETERNAME",
+              "label": "战备状态"
+            },
+            {
+              "name": "EQUIPNUM"
+            },
+            {
+              "name": "CHASSIS"
+            },
+            {
+              "name": "RESCUEID",
+              "relShowField": {
+                "//": "第一联系人",
+                "LEADER": "C1",
+                "//": "第一联系人电话",
+                "LEADERMTEL": "T1"
+              }
+            }
+          ]
+        },
+        {
+          "name": "EQUIP_EQU_DETECTION",
+          "label": "装备",
+          "list": [
+            {
+              "name": "RESCUEID",
+              "relShowField": {
+                "//": "救援队伍名称",
+                "RESCUENAME": "RESCUENAME",
+                "//": "第一联系人",
+                "LEADER": "C1",
+                "//": "第一联系人电话",
+                "LEADERMTEL": "T1",
+                "//": "第二联系人",
+                "COMMISSAR": "C2",
+                "//": "第二联系人电话",
+                "COMMISSARMTEL": "T2",
+                "//": "第三联系人",
+                "ENGINEER": "C3",
+                "//": "第三联系人电话",
+                "ENGINEERMTEL": "T3",
+                "//": "第四联系人电话",
+                "DUTYTEL": "T4",
+                "match": true
+              }
+            },
+            {
+              "//": "显示的中文，可不配，自动读取数据库字段描述",
+              "name": "SPMODEL",
+              "label": "品牌型号",
+              "match": true
+            },
+            {
+              "name": "ADDRESS",
+              "match": true
+            }
+          ],
+          "detail": [
+            {
+              "//": "显示的中文，可不配，自动读取数据库字段描述",
+              "name": "SPMODEL",
+              "label": "品牌型号"
+            },
+            {
+              "name": "EQUIPNUM",
+              "label": "数量"
+            },
+            {
+              "name": "UNITCODE",
+              "//": "关联展示的字段",
+              "relShowField": "PARAMETERNAME",
+              "label": "计量单位"
+            },
+            {
+              "name": "BATREADYCODE",
+              "relShowField": "PARAMETERNAME",
+              "label": "战备状态"
+            },
+            {
+              "name": "RESCUEID",
+              "relShowField": {
+                "//": "第一联系人电话",
+                "LEADER": "C1",
+                "LEADERMTEL": "T1"
+              }
+            }
+          ]
+        },
+        {
+          "name": "EQUIP_EQU_DRAIN",
+          "label": "装备",
+          "list": [
+            {
+              "name": "RESCUEID",
+              "relShowField": {
+                "//": "救援队伍名称",
+                "RESCUENAME": "RESCUENAME",
+                "//": "第一联系人",
+                "LEADER": "C1",
+                "//": "第一联系人电话",
+                "LEADERMTEL": "T1",
+                "//": "第二联系人",
+                "COMMISSAR": "C2",
+                "//": "第二联系人电话",
+                "COMMISSARMTEL": "T2",
+                "//": "第三联系人",
+                "ENGINEER": "C3",
+                "//": "第三联系人电话",
+                "ENGINEERMTEL": "T3",
+                "//": "第四联系人电话",
+                "DUTYTEL": "T4",
+                "match": true
+              }
+            },
+            {
+              "//": "显示的中文，可不配，自动读取数据库字段描述",
+              "name": "SPMODEL",
+              "label": "品牌型号",
+              "match": true
+            },
+            {
+              "name": "ADDRESS",
+              "match": true
+            }
+          ],
+          "detail": [
+            {
+              "//": "显示的中文，可不配，自动读取数据库字段描述",
+              "name": "SPMODEL",
+              "label": "品牌型号",
+              "match": true
+            },
+            {
+              "name": "EQUIPNUM",
+              "label": "数量"
+            },
+            {
+              "name": "UNITCODE",
+              "//": "关联展示的字段",
+              "relShowField": "PARAMETERNAME",
+              "label": "计量单位"
+            },
+            {
+              "name": "BATREADYCODE",
+              "relShowField": "PARAMETERNAME",
+              "label": "战备状态"
+            },
+            {
+              "name": "RESCUEID",
+              "relShowField": {
+                "//": "第一联系人",
+                "LEADER": "C1",
+                "//": "第一联系人电话",
+                "LEADERMTEL": "T1"
+              }
+            }
+          ]
+        },
+        {
+          "name": "EQUIP_EQU_DRILL",
+          "label": "装备",
+          "list": [
+            {
+              "name": "RESCUEID",
+              "relShowField": {
+                "//": "救援队伍名称",
+                "RESCUENAME": "RESCUENAME",
+                "//": "第一联系人",
+                "LEADER": "C1",
+                "//": "第一联系人电话",
+                "LEADERMTEL": "T1",
+                "//": "第二联系人",
+                "COMMISSAR": "C2",
+                "//": "第二联系人电话",
+                "COMMISSARMTEL": "T2",
+                "//": "第三联系人",
+                "ENGINEER": "C3",
+                "//": "第三联系人电话",
+                "ENGINEERMTEL": "T3",
+                "//": "第四联系人电话",
+                "DUTYTEL": "T4",
+                "match": true
+              }
+            },
+            {
+              "//": "显示的中文，可不配，自动读取数据库字段描述",
+              "name": "SPMODEL",
+              "match": true
+            },
+            {
+              "name": "ADDRESS",
+              "match": true
+            }
+          ],
+          "detail": [
+            {
+              "//": "显示的中文，可不配，自动读取数据库字段描述",
+              "name": "SPMODEL",
+              "match": true
+            },
+            {
+              "name": "EQUIPNUM"
+            },
+            {
+              "name": "UNITCODE",
+              "//": "关联展示的字段",
+              "relShowField": "PARAMETERNAME"
+            },
+            {
+              "name": "BATREADYCODE",
+              "relShowField": "PARAMETERNAME"
+            },
+            {
+              "name": "RESCUEID",
+              "relShowField": {
+                "//": "第一联系人",
+                "LEADER": "C1",
+                "//": "第一联系人电话",
+                "LEADERMTEL": "T1"
+              }
+            }
+          ]
+        },
+        {
+          "name": "EQUIP_EQU_DRYPOWDERFIRECAR",
+          "label": "装备",
+          "list": [
+            {
+              "name": "RESCUEID",
+              "relShowField": {
+                "//": "救援队伍名称",
+                "RESCUENAME": "RESCUENAME",
+                "//": "第一联系人",
+                "LEADER": "C1",
+                "//": "第一联系人电话",
+                "LEADERMTEL": "T1",
+                "//": "第二联系人",
+                "COMMISSAR": "C2",
+                "//": "第二联系人电话",
+                "COMMISSARMTEL": "T2",
+                "//": "第三联系人",
+                "ENGINEER": "C3",
+                "//": "第三联系人电话",
+                "ENGINEERMTEL": "T3",
+                "//": "第四联系人电话",
+                "DUTYTEL": "T4",
+                "match": true
+              }
+            },
+            {
+              "//": "显示的中文，可不配，自动读取数据库字段描述",
+              "name": "SPMODEL",
+              "label": "品牌型号",
+              "match": true
+            },
+            {
+              "//": "显示的中文，可不配，自动读取数据库字段描述",
+              "name": "CHASSIS",
+              "match": true
+            },
+            {
+              "name": "ADDRESS",
+              "match": true
+            }
+          ],
+          "detail": [
+            {
+              "//": "显示的中文，可不配，自动读取数据库字段描述",
+              "name": "SPMODEL",
+              "label": "品牌型号",
+              "match": true
+            },
+            {
+              "//": "显示的中文，可不配，自动读取数据库字段描述",
+              "name": "CHASSIS",
+              "match": true
+            },
+            {
+              "name": "EQUIPNUM"
+            },
+            {
+              "name": "UNITCODE",
+              "//": "关联展示的字段",
+              "relShowField": "PARAMETERNAME"
+            },
+            {
+              "name": "BATREADYCODE",
+              "relShowField": "PARAMETERNAME"
+            },
+            {
+              "name": "RESCUEID",
+              "relShowField": {
+                "//": "第一联系人",
+                "LEADER": "C1",
+                "//": "第一联系人电话",
+                "LEADERMTEL": "T1"
+              }
+            }
+          ]
+        },
+        {
+          "name": "EQUIP_EQU_ENGINEEREMER",
+          "label": "装备",
+          "list": [
+            {
+              "name": "RESCUEID",
+              "relShowField": {
+                "//": "救援队伍名称",
+                "RESCUENAME": "RESCUENAME",
+                "//": "第一联系人",
+                "LEADER": "C1",
+                "//": "第一联系人电话",
+                "LEADERMTEL": "T1",
+                "//": "第二联系人",
+                "COMMISSAR": "C2",
+                "//": "第二联系人电话",
+                "COMMISSARMTEL": "T2",
+                "//": "第三联系人",
+                "ENGINEER": "C3",
+                "//": "第三联系人电话",
+                "ENGINEERMTEL": "T3",
+                "//": "第四联系人电话",
+                "DUTYTEL": "T4",
+                "match": true
+              }
+            },
+            {
+              "//": "品牌型号",
+              "name": "SPMODEL",
+              "match": true
+            },
+            {
+              "name": "ADDRESS",
+              "match": true
+            }
+          ],
+          "detail": [
+            {
+              "//": "品牌型号",
+              "name": "SPMODEL",
+              "match": true
+            },
+            {
+              "name": "EQUIPNUM",
+              "//": "数量"
+            },
+            {
+              "name": "UNITCODE",
+              "//": "关联展示的字段",
+              "relShowField": "PARAMETERNAME",
+              "//": "计量单位"
+            },
+            {
+              "name": "BATREADYCODE",
+              "relShowField": "PARAMETERNAME",
+              "//": "战备状态"
+            },
+            {
+              "name": "RESCUEID",
+              "relShowField": {
+                "//": "第一联系人",
+                "LEADER": "C1",
+                "//": "第一联系人电话",
+                "LEADERMTEL": "T1"
+              }
+            }
+          ]
+        },
+        {
+          "name": "EQUIP_EQU_FIELDTENT",
+          "label": "装备",
+          "list": [
+            {
+              "name": "RESCUEID",
+              "relShowField": {
+                "//": "救援队伍名称",
+                "RESCUENAME": "RESCUENAME",
+                "//": "第一联系人",
+                "LEADER": "C1",
+                "//": "第一联系人电话",
+                "LEADERMTEL": "T1",
+                "//": "第二联系人",
+                "COMMISSAR": "C2",
+                "//": "第二联系人电话",
+                "COMMISSARMTEL": "T2",
+                "//": "第三联系人",
+                "ENGINEER": "C3",
+                "//": "第三联系人电话",
+                "ENGINEERMTEL": "T3",
+                "//": "第四联系人电话",
+                "DUTYTEL": "T4",
+                "match": true
+              }
+            },
+            {
+              "name": "TYPECODE",
+              "//": "关联展示的字段",
+              "relShowField": "PARAMETERNAME",
+              "//": "类型",
+              "match": true
+            },
+            {
+              "//": "显示的中文，可不配，自动读取数据库字段描述",
+              "name": "SPMODEL",
+              "//": "品牌型号",
+              "match": true
+            },
+            {
+              "name": "ADDRESS",
+              "match": true
+            }
+          ],
+          "detail": [
+            {
+              "//": "显示的中文，可不配，自动读取数据库字段描述",
+              "name": "SPMODEL",
+              "//": "品牌型号",
+              "match": true
+            },
+            {
+              "name": "EQUIPNUM",
+              "//": "数量"
+            },
+            {
+              "name": "TYPECODE",
+              "//": "关联展示的字段",
+              "relShowField": "PARAMETERNAME",
+              "//": "类型",
+              "match": true
+            },
+            {
+              "name": "UNITCODE",
+              "//": "关联展示的字段",
+              "relShowField": "PARAMETERNAME",
+              "//": "计量单位"
+            },
+            {
+              "name": "BATREADYCODE",
+              "relShowField": "PARAMETERNAME",
+              "//": "战备状态"
+            },
+            {
+              "name": "RESCUEID",
+              "relShowField": {
+                "//": "第一联系人",
+                "LEADER": "C1",
+                "//": "第一联系人电话",
+                "LEADERMTEL": "T1"
+              }
+            }
+          ]
+        },
+        {
+          "name": "EQUIP_EQU_FIREBOAT",
+          "label": "装备",
+          "list": [
+            {
+              "name": "RESCUEID",
+              "relShowField": {
+                "//": "救援队伍名称",
+                "RESCUENAME": "RESCUENAME",
+                "//": "第一联系人",
+                "LEADER": "C1",
+                "//": "第一联系人电话",
+                "LEADERMTEL": "T1",
+                "//": "第二联系人",
+                "COMMISSAR": "C2",
+                "//": "第二联系人电话",
+                "COMMISSARMTEL": "T2",
+                "//": "第三联系人",
+                "ENGINEER": "C3",
+                "//": "第三联系人电话",
+                "ENGINEERMTEL": "T3",
+                "//": "第四联系人电话",
+                "DUTYTEL": "T4",
+                "match": true
+              }
+            },
+            {
+              "name": "CHASSIS",
+              "//": "规格型号",
+              "match": true
+            },
+            {
+              "name": "ADDRESS",
+              "match": true
+            }
+          ],
+          "detail": [
+            {
+              "name": "EQUIPNUM",
+              "//": "数量"
+            },
+            {
+              "name": "CHASSIS",
+              "//": "规格型号",
+              "match": true
+            },
+            {
+              "name": "UNITCODE",
+              "//": "关联展示的字段",
+              "relShowField": "PARAMETERNAME",
+              "//": "计量单位"
+            },
+            {
+              "name": "BATREADYCODE",
+              "relShowField": "PARAMETERNAME",
+              "//": "战备状态"
+            },
+            {
+              "name": "RESCUEID",
+              "relShowField": {
+                "//": "第一联系人",
+                "LEADER": "C1",
+                "//": "第一联系人电话",
+                "LEADERMTEL": "T1"
+              }
+            }
+          ]
+        },
+        {
+          "name": "EQUIP_EQU_FORBRASHARE",
+          "label": "装备",
+          "list": [
+            {
+              "name": "RESCUEID",
+              "relShowField": {
+                "//": "救援队伍名称",
+                "RESCUENAME": "RESCUENAME",
+                "//": "第一联系人",
+                "LEADER": "C1",
+                "//": "第一联系人电话",
+                "LEADERMTEL": "T1",
+                "//": "第二联系人",
+                "COMMISSAR": "C2",
+                "//": "第二联系人电话",
+                "COMMISSARMTEL": "T2",
+                "//": "第三联系人",
+                "ENGINEER": "C3",
+                "//": "第三联系人电话",
+                "ENGINEERMTEL": "T3",
+                "//": "第四联系人电话",
+                "DUTYTEL": "T4",
+                "match": true
+              }
+            },
+            {
+              "name": "EQUIPNAME",
+              "//": "装备名称",
+              "match": true
+            },
+            {
+              "name": "EQUIPTYPECODE",
+              "//": "关联展示的字段",
+              "relShowField": "EQUIPTYPENAME",
+              "//": "类型",
+              "match": true
+            },
+            {
+              "//": "显示的中文，可不配，自动读取数据库字段描述",
+              "name": "SPMODEL",
+              "//": "品牌型号",
+              "match": true
+            },
+            {
+              "name": "ADDRESS",
+              "match": true
+            }
+          ],
+          "detail": [
+            {
+              "name": "EQUIPNAME",
+              "//": "装备名称",
+              "match": true
+            },
+            {
+              "name": "EQUIPTYPECODE",
+              "//": "关联展示的字段",
+              "relShowField": "EQUIPTYPENAME",
+              "//": "类型",
+              "match": true
+            },
+            {
+              "//": "显示的中文，可不配，自动读取数据库字段描述",
+              "name": "SPMODEL",
+              "//": "品牌型号",
+              "match": true
+            },
+            {
+              "name": "EQUIPNUM",
+              "//": "数量"
+            },
+            {
+              "name": "UNITCODE",
+              "//": "关联展示的字段",
+              "relShowField": "PARAMETERNAME",
+              "//": "计量单位"
+            },
+            {
+              "name": "BATREADYCODE",
+              "relShowField": "PARAMETERNAME",
+              "//": "战备状态"
+            },
+            {
+              "name": "RESCUEID",
+              "relShowField": {
+                "//": "第一联系人",
+                "LEADER": "C1",
+                "//": "第一联系人电话",
+                "LEADERMTEL": "T1"
+              }
+            }
+          ]
+        },
+        {
+          "name": "EQUIP_EQU_GASCAR",
+          "label": "装备",
+          "list": [
+            {
+              "name": "RESCUEID",
+              "relShowField": {
+                "//": "救援队伍名称",
+                "RESCUENAME": "RESCUENAME",
+                "//": "第一联系人",
+                "LEADER": "C1",
+                "//": "第一联系人电话",
+                "LEADERMTEL": "T1",
+                "//": "第二联系人",
+                "COMMISSAR": "C2",
+                "//": "第二联系人电话",
+                "COMMISSARMTEL": "T2",
+                "//": "第三联系人",
+                "ENGINEER": "C3",
+                "//": "第三联系人电话",
+                "ENGINEERMTEL": "T3",
+                "//": "第四联系人电话",
+                "DUTYTEL": "T4",
+                "match": true
+              }
+            },
+            {
+              "//": "显示的中文，可不配，自动读取数据库字段描述",
+              "name": "CHASSIS",
+              "//": "规格型号(底盘)",
+              "match": true
+            },
+            {
+              "name": "ADDRESS",
+              "match": true
+            }
+          ],
+          "detail": [
+            {
+              "//": "显示的中文，可不配，自动读取数据库字段描述",
+              "name": "CHASSIS",
+              "//": "规格型号(底盘)",
+              "match": true
+            },
+            {
+              "name": "EQUIPNUM",
+              "//": "数量"
+            },
+            {
+              "name": "UNITCODE",
+              "//": "关联展示的字段",
+              "relShowField": "PARAMETERNAME",
+              "//": "计量单位"
+            },
+            {
+              "name": "BATREADYCODE",
+              "relShowField": "PARAMETERNAME",
+              "//": "战备状态"
+            },
+            {
+              "name": "RESCUEID",
+              "relShowField": {
+                "//": "第一联系人",
+                "LEADER": "C1",
+                "//": "第一联系人电话",
+                "LEADERMTEL": "T1"
+              }
+            }
+          ]
+        },
+        {
+          "name": "EQUIP_EQU_HELICOPTER",
+          "label": "装备",
+          "list": [
+            {
+              "name": "RESCUEID",
+              "relShowField": {
+                "//": "救援队伍名称",
+                "RESCUENAME": "RESCUENAME",
+                "//": "第一联系人",
+                "LEADER": "C1",
+                "//": "第一联系人电话",
+                "LEADERMTEL": "T1",
+                "//": "第二联系人",
+                "COMMISSAR": "C2",
+                "//": "第二联系人电话",
+                "COMMISSARMTEL": "T2",
+                "//": "第三联系人",
+                "ENGINEER": "C3",
+                "//": "第三联系人电话",
+                "ENGINEERMTEL": "T3",
+                "//": "第四联系人电话",
+                "DUTYTEL": "T4",
+                "match": true
+              }
+            },
+            {
+              "//": "显示的中文，可不配，自动读取数据库字段描述",
+              "name": "SPMODEL",
+              "//": "品牌型号",
+              "match": true
+            },
+            {
+              "name": "FORESTTYPE",
+              "//": "直升机类型",
+              "match": true
+            },
+            {
+              "name": "ADDRESS",
+              "match": true
+            }
+          ],
+          "detail": [
+            {
+              "//": "显示的中文，可不配，自动读取数据库字段描述",
+              "name": "SPMODEL",
+              "//": "品牌型号",
+              "match": true
+            },
+            {
+              "name": "FORESTTYPE",
+              "//": "直升机类型",
+              "match": true
+            },
+            {
+              "name": "EQUIPNUM",
+              "//": "数量"
+            },
+            {
+              "name": "UNITCODE",
+              "//": "关联展示的字段",
+              "relShowField": "PARAMETERNAME",
+              "//": "计量单位"
+            },
+            {
+              "name": "BATREADYCODE",
+              "relShowField": "PARAMETERNAME",
+              "//": "战备状态"
+            },
+            {
+              "name": "RESCUEID",
+              "relShowField": {
+                "//": "第一联系人",
+                "LEADER": "C1",
+                "//": "第一联系人电话",
+                "LEADERMTEL": "T1"
+              }
+            }
+          ]
+        },
+        {
+          "name": "EQUIP_EQU_LIFTUPCAR",
+          "label": "装备",
+          "list": [
+            {
+              "name": "RESCUEID",
+              "relShowField": {
+                "//": "救援队伍名称",
+                "RESCUENAME": "RESCUENAME",
+                "//": "第一联系人",
+                "LEADER": "C1",
+                "//": "第一联系人电话",
+                "LEADERMTEL": "T1",
+                "//": "第二联系人",
+                "COMMISSAR": "C2",
+                "//": "第二联系人电话",
+                "COMMISSARMTEL": "T2",
+                "//": "第三联系人",
+                "ENGINEER": "C3",
+                "//": "第三联系人电话",
+                "ENGINEERMTEL": "T3",
+                "//": "第四联系人电话",
+                "DUTYTEL": "T4",
+                "match": true
+              }
+            },
+            {
+              "//": "显示的中文，可不配，自动读取数据库字段描述",
+              "name": "CHASSIS",
+              "//": "规格型号(底盘)",
+              "match": true
+            },
+            {
+              "name": "ADDRESS",
+              "match": true
+            }
+          ],
+          "detail": [
+            {
+              "//": "显示的中文，可不配，自动读取数据库字段描述",
+              "name": "CHASSIS",
+              "//": "规格型号(底盘)",
+              "match": true
+            },
+            {
+              "name": "EQUIPNUM",
+              "//": "数量"
+            },
+            {
+              "name": "UNITCODE",
+              "//": "关联展示的字段",
+              "relShowField": "PARAMETERNAME",
+              "//": "计量单位"
+            },
+            {
+              "name": "BATREADYCODE",
+              "relShowField": "PARAMETERNAME",
+              "//": "战备状态"
+            },
+            {
+              "name": "RESCUEID",
+              "relShowField": {
+                "//": "第一联系人",
+                "LEADER": "C1",
+                "//": "第一联系人电话",
+                "LEADERMTEL": "T1"
+              }
+            }
+          ]
+        },
+        {
+          "name": "EQUIP_EQU_WATERTANKCAR",
+          "label": "装备",
+          "list": [
+            {
+              "name": "RESCUEID",
+              "relShowField": {
+                "//": "救援队伍名称",
+                "RESCUENAME": "RESCUENAME",
+                "//": "第一联系人",
+                "LEADER": "C1",
+                "//": "第一联系人电话",
+                "LEADERMTEL": "T1",
+                "//": "第二联系人",
+                "COMMISSAR": "C2",
+                "//": "第二联系人电话",
+                "COMMISSARMTEL": "T2",
+                "//": "第三联系人",
+                "ENGINEER": "C3",
+                "//": "第三联系人电话",
+                "ENGINEERMTEL": "T3",
+                "//": "第四联系人电话",
+                "DUTYTEL": "T4",
+                "match": true
+              }
+            },
+            {
+              "//": "底盘(规格型号)",
+              "name": "CHASSIS",
+              "match": true
+            },
+            {
+              "name": "ADDRESS",
+              "match": true
+            }
+          ],
+          "detail": [
+            {
+              "//": "底盘(规格型号)",
+              "name": "CHASSIS",
+              "match": true
+            },
+            {
+              "//": "数量",
+              "name": "EQUIPNUM"
+            },
+            {
+              "name": "UNITCODE",
+              "//": "关联展示的字段",
+              "relShowField": "PARAMETERNAME",
+              "//": "计量单位"
+            },
+            {
+              "name": "BATREADYCODE",
+              "relShowField": "PARAMETERNAME",
+              "//": "战备状态"
+            },
+            {
+              "name": "RESCUEID",
+              "relShowField": {
+                "//": "第一联系人",
+                "LEADER": "C1",
+                "//": "第一联系人电话",
+                "LEADERMTEL": "T1"
+              }
+            }
+          ],
+          "relateTables": []
+        },
+        {
+          "name": "EQUIP_EQU_UAV",
+          "label": "装备",
+          "list": [
+            {
+              "name": "RESCUEID",
+              "relShowField": {
+                "//": "救援队伍名称",
+                "RESCUENAME": "RESCUENAME",
+                "//": "第一联系人",
+                "LEADER": "C1",
+                "//": "第一联系人电话",
+                "LEADERMTEL": "T1",
+                "//": "第二联系人",
+                "COMMISSAR": "C2",
+                "//": "第二联系人电话",
+                "COMMISSARMTEL": "T2",
+                "//": "第三联系人",
+                "ENGINEER": "C3",
+                "//": "第三联系人电话",
+                "ENGINEERMTEL": "T3",
+                "//": "第四联系人电话",
+                "DUTYTEL": "T4",
+                "match": true
+              }
+            },
+            {
+              "//": "规格型号",
+              "name": "SPMODEL",
+              "match": true
+            },
+            {
+              "name": "ADDRESS",
+              "match": true
+            }
+          ],
+          "detail": [
+            {
+              "//": "规格型号",
+              "name": "SPMODEL",
+              "match": true
+            },
+            {
+              "//": "数量",
+              "name": "EQUIPNUM"
+            },
+            {
+              "name": "UNITCODE",
+              "//": "关联展示的字段",
+              "relShowField": "PARAMETERNAME",
+              "//": "计量单位"
+            },
+            {
+              "name": "BATREADYCODE",
+              "relShowField": "PARAMETERNAME",
+              "//": "战备状态"
+            },
+            {
+              "name": "RESCUEID",
+              "relShowField": {
+                "//": "第一联系人",
+                "LEADER": "C1",
+                "//": "第一联系人电话",
+                "LEADERMTEL": "T1"
+              }
+            }
+          ],
+          "relateTables": []
+        },
+        {
+          "name": "EQUIP_EQU_TURBOJETBRA",
+          "label": "装备",
+          "list": [
+            {
+              "name": "RESCUEID",
+              "relShowField": {
+                "//": "救援队伍名称",
+                "RESCUENAME": "RESCUENAME",
+                "//": "第一联系人",
+                "LEADER": "C1",
+                "//": "第一联系人电话",
+                "LEADERMTEL": "T1",
+                "//": "第二联系人",
+                "COMMISSAR": "C2",
+                "//": "第二联系人电话",
+                "COMMISSARMTEL": "T2",
+                "//": "第三联系人",
+                "ENGINEER": "C3",
+                "//": "第三联系人电话",
+                "ENGINEERMTEL": "T3",
+                "//": "第四联系人电话",
+                "DUTYTEL": "T4",
+                "match": true
+              }
+            },
+            {
+              "//": "底盘(规格型号)",
+              "name": "CHASSIS",
+              "match": true
+            },
+            {
+              "name": "ADDRESS",
+              "match": true
+            }
+          ],
+          "detail": [
+            {
+              "//": "底盘(规格型号)",
+              "name": "CHASSIS",
+              "match": true
+            },
+            {
+              "//": "数量",
+              "name": "EQUIPNUM"
+            },
+            {
+              "name": "UNITCODE",
+              "//": "关联展示的字段",
+              "relShowField": "PARAMETERNAME",
+              "//": "计量单位"
+            },
+            {
+              "name": "BATREADYCODE",
+              "relShowField": "PARAMETERNAME",
+              "//": "战备状态"
+            },
+            {
+              "name": "RESCUEID",
+              "relShowField": {
+                "//": "第一联系人",
+                "LEADER": "C1",
+                "//": "第一联系人电话",
+                "LEADERMTEL": "T1"
+              }
+            }
+          ],
+          "relateTables": []
+        },
+        {
+          "name": "EQUIP_EQU_THREEJET",
+          "label": "装备",
+          "list": [
+            {
+              "name": "RESCUEID",
+              "relShowField": {
+                "//": "救援队伍名称",
+                "RESCUENAME": "RESCUENAME",
+                "//": "第一联系人",
+                "LEADER": "C1",
+                "//": "第一联系人电话",
+                "LEADERMTEL": "T1",
+                "//": "第二联系人",
+                "COMMISSAR": "C2",
+                "//": "第二联系人电话",
+                "COMMISSARMTEL": "T2",
+                "//": "第三联系人",
+                "ENGINEER": "C3",
+                "//": "第三联系人电话",
+                "ENGINEERMTEL": "T3",
+                "//": "第四联系人电话",
+                "DUTYTEL": "T4",
+                "match": true
+              }
+            },
+            {
+              "//": "规格型号",
+              "name": "SPMODEL",
+              "match": true
+            },
+            {
+              "name": "ADDRESS",
+              "match": true
+            }
+          ],
+          "detail": [
+            {
+              "//": "规格型号",
+              "name": "SPMODEL",
+              "match": true
+            },
+            {
+              "//": "数量",
+              "name": "EQUIPNUM"
+            },
+            {
+              "name": "UNITCODE",
+              "//": "关联展示的字段",
+              "relShowField": "PARAMETERNAME",
+              "//": "计量单位"
+            },
+            {
+              "name": "BATREADYCODE",
+              "relShowField": "PARAMETERNAME",
+              "//": "战备状态"
+            },
+            {
+              "name": "RESCUEID",
+              "relShowField": {
+                "//": "第一联系人",
+                "LEADER": "C1",
+                "//": "第一联系人电话",
+                "LEADERMTEL": "T1"
+              }
+            }
+          ],
+          "relateTables": []
+        },
+        {
+          "name": "EQUIP_EQU_SUPWARTERBRA",
+          "label": "装备",
+          "list": [
+            {
+              "name": "RESCUEID",
+              "relShowField": {
+                "//": "救援队伍名称",
+                "RESCUENAME": "RESCUENAME",
+                "//": "第一联系人",
+                "RESPPER": "RESPPER",
+                "//": "第一联系人电话",
+                "RESPMTEL": "RESPMTEL",
+                "//": "第二联系人",
+                "COMMISSAR": "C2",
+                "//": "第二联系人电话",
+                "COMMISSARMTEL": "T2",
+                "//": "第三联系人",
+                "ENGINEER": "C3",
+                "//": "第三联系人电话",
+                "ENGINEERMTEL": "T3",
+                "//": "第四联系人电话",
+                "DUTYTEL": "T4",
+                "match": true
+              }
+            },
+            {
+              "//": "底盘(规格型号)",
+              "name": "CHASSIS",
+              "match": true
+            },
+            {
+              "name": "ADDRESS",
+              "match": true
+            }
+          ],
+          "detail": [
+            {
+              "//": "底盘(规格型号)",
+              "name": "CHASSIS",
+              "match": true
+            },
+            {
+              "//": "数量",
+              "name": "EQUIPNUM"
+            },
+            {
+              "name": "UNITCODE",
+              "//": "关联展示的字段",
+              "relShowField": "PARAMETERNAME",
+              "//": "计量单位"
+            },
+            {
+              "name": "BATREADYCODE",
+              "relShowField": "PARAMETERNAME",
+              "//": "战备状态"
+            },
+            {
+              "name": "RESCUEID",
+              "relShowField": {
+                "//": "第四联系人电话",
+                "RESPPER": "",
+                "RESPMTEL": ""
+              }
+            }
+          ],
+          "relateTables": []
+        },
+        {
+          "name": "EQUIP_EQU_SUPPORT",
+          "label": "装备",
+          "list": [
+            {
+              "name": "RESCUEID",
+              "relShowField": {
+                "//": "救援队伍名称",
+                "RESCUENAME": "RESCUENAME",
+                "//": "第一联系人",
+                "LEADER": "C1",
+                "//": "第一联系人电话",
+                "LEADERMTEL": "T1",
+                "//": "第二联系人",
+                "COMMISSAR": "C2",
+                "//": "第二联系人电话",
+                "COMMISSARMTEL": "T2",
+                "//": "第三联系人",
+                "ENGINEER": "C3",
+                "//": "第三联系人电话",
+                "ENGINEERMTEL": "T3",
+                "//": "第四联系人电话",
+                "DUTYTEL": "T4",
+                "match": true
+              }
+            },
+            {
+              "//": "规格型号",
+              "name": "SPMODEL",
+              "match": true
+            },
+            {
+              "name": "ADDRESS",
+              "match": true
+            }
+          ],
+          "detail": [
+            {
+              "//": "规格型号",
+              "name": "SPMODEL",
+              "match": true
+            },
+            {
+              "//": "数量",
+              "name": "EQUIPNUM"
+            },
+            {
+              "name": "UNITCODE",
+              "//": "关联展示的字段",
+              "relShowField": "PARAMETERNAME",
+              "//": "计量单位"
+            },
+            {
+              "name": "BATREADYCODE",
+              "relShowField": "PARAMETERNAME",
+              "//": "战备状态"
+            },
+            {
+              "name": "RESCUEID",
+              "relShowField": {
+                "//": "第四联系人电话",
+                "CHARGER": "C1",
+                "CHARGERMTEL": "T1"
+              }
+            }
+          ],
+          "relateTables": []
+        },
+        {
+          "name": "EQUIP_EQU_SUPPLYCAR",
+          "label": "装备",
+          "list": [
+            {
+              "name": "RESCUEID",
+              "relShowField": {
+                "//": "救援队伍名称",
+                "RESCUENAME": "RESCUENAME",
+                "//": "第一联系人",
+                "LEADER": "C1",
+                "//": "第一联系人电话",
+                "LEADERMTEL": "T1",
+                "//": "第二联系人",
+                "COMMISSAR": "C2",
+                "//": "第二联系人电话",
+                "COMMISSARMTEL": "T2",
+                "//": "第三联系人",
+                "ENGINEER": "C3",
+                "//": "第三联系人电话",
+                "ENGINEERMTEL": "T3",
+                "//": "第四联系人电话",
+                "DUTYTEL": "T4",
+                "match": true
+              }
+            },
+            {
+              "//": "规格型号",
+              "name": "SPMODEL",
+              "match": true
+            },
+            {
+              "name": "ADDRESS",
+              "match": true
+            }
+          ],
+          "detail": [
+            {
+              "//": "规格型号",
+              "name": "SPMODEL",
+              "match": true
+            },
+            {
+              "//": "数量",
+              "name": "EQUIPNUM"
+            },
+            {
+              "name": "UNITCODE",
+              "//": "关联展示的字段",
+              "relShowField": "PARAMETERNAME",
+              "//": "计量单位"
+            },
+            {
+              "name": "BATREADYCODE",
+              "relShowField": "PARAMETERNAME",
+              "//": "战备状态"
+            },
+            {
+              "name": "RESCUEID",
+              "relShowField": {
+                "//": "第一联系人",
+                "LEADER": "C1",
+                "//": "第一联系人电话",
+                "LEADERMTEL": "T1"
+              }
+            }
+          ],
+          "relateTables": []
+        },
+        {
+          "name": "EQUIP_EQU_SHARE",
+          "label": "装备",
+          "list": [
+            {
+              "name": "RESCUEID",
+              "relShowField": {
+                "//": "救援队伍名称",
+                "RESCUENAME": "RESCUENAME",
+                "//": "第一联系人",
+                "LEADER": "C1",
+                "//": "第一联系人电话",
+                "LEADERMTEL": "T1",
+                "//": "第二联系人",
+                "COMMISSAR": "C2",
+                "//": "第二联系人电话",
+                "COMMISSARMTEL": "T2",
+                "//": "第三联系人",
+                "ENGINEER": "C3",
+                "//": "第三联系人电话",
+                "ENGINEERMTEL": "T3",
+                "//": "第四联系人电话",
+                "DUTYTEL": "T4",
+                "match": true
+              }
+            },
+            {
+              "//": "装备类型",
+              "name": "EQUIPTYPECODE",
+              "match": true
+            },
+            {
+              "//": "规格型号",
+              "name": "SPMODEL",
+              "match": true
+            },
+            {
+              "name": "ADDRESS",
+              "match": true
+            }
+          ],
+          "detail": [
+            {
+              "//": "规格型号",
+              "name": "SPMODEL",
+              "match": true
+            },
+            {
+              "//": "数量",
+              "name": "EQUIPNUM"
+            },
+            {
+              "name": "UNITCODE",
+              "//": "关联展示的字段",
+              "relShowField": "PARAMETERNAME",
+              "//": "计量单位"
+            },
+            {
+              "name": "BATREADYCODE",
+              "relShowField": "PARAMETERNAME",
+              "//": "战备状态"
+            },
+            {
+              "//": "装备类型",
+              "name": "EQUIPTYPECODE",
+              "match": true
+            },
+            {
+              "name": "RESCUEID",
+              "relShowField": {
+                "//": "第一联系人",
+                "LEADER": "C1",
+                "//": "第一联系人电话",
+                "LEADERMTEL": "T1"
+              }
+            }
+          ],
+          "relateTables": []
+        },
+        {
+          "name": "EQUIP_EQU_SATELLITECAR",
+          "label": "装备",
+          "list": [
+            {
+              "name": "RESCUEID",
+              "relShowField": {
+                "//": "救援队伍名称",
+                "RESCUENAME": "RESCUENAME",
+                "//": "第一联系人",
+                "LEADER": "C1",
+                "//": "第一联系人电话",
+                "LEADERMTEL": "T1",
+                "//": "第二联系人",
+                "COMMISSAR": "C2",
+                "//": "第二联系人电话",
+                "COMMISSARMTEL": "T2",
+                "//": "第三联系人",
+                "ENGINEER": "C3",
+                "//": "第三联系人电话",
+                "ENGINEERMTEL": "T3",
+                "//": "第四联系人电话",
+                "DUTYTEL": "T4",
+                "match": true
+              }
+            },
+            {
+              "//": "装备类型",
+              "name": "EQUIPTYPECODE",
+              "match": true
+            },
+            {
+              "//": "规格型号",
+              "name": "SPMODEL",
+              "match": true
+            },
+            {
+              "name": "ADDRESS",
+              "match": true
+            }
+          ],
+          "detail": [
+            {
+              "//": "规格型号",
+              "name": "SPMODEL",
+              "match": true
+            },
+            {
+              "//": "数量",
+              "name": "EQUIPNUM"
+            },
+            {
+              "name": "UNITCODE",
+              "//": "关联展示的字段",
+              "relShowField": "PARAMETERNAME",
+              "//": "计量单位"
+            },
+            {
+              "name": "BATREADYCODE",
+              "relShowField": "PARAMETERNAME",
+              "//": "战备状态"
+            },
+            {
+              "//": "装备类型",
+              "name": "EQUIPTYPECODE",
+              "match": true
+            },
+            {
+              "name": "RESCUEID",
+              "relShowField": {
+                "//": "第一联系人",
+                "LEADER": "C1",
+                "//": "第一联系人电话",
+                "LEADERMTEL": "T1"
+              }
+            }
+          ],
+          "relateTables": []
+        },
+        {
+          "name": "EQUIP_EQU_RESCUEFIRECAR",
+          "label": "装备",
+          "list": [
+            {
+              "name": "RESCUEID",
+              "relShowField": {
+                "//": "救援队伍名称",
+                "RESCUENAME": "RESCUENAME",
+                "//": "第一联系人",
+                "LEADER": "C1",
+                "//": "第一联系人电话",
+                "LEADERMTEL": "T1",
+                "//": "第二联系人",
+                "COMMISSAR": "C2",
+                "//": "第二联系人电话",
+                "COMMISSARMTEL": "T2",
+                "//": "第三联系人",
+                "ENGINEER": "C3",
+                "//": "第三联系人电话",
+                "ENGINEERMTEL": "T3",
+                "//": "第四联系人电话",
+                "DUTYTEL": "T4",
+                "match": true
+              }
+            },
+            {
+              "//": "底盘(规格型号)",
+              "name": "CHASSIS",
+              "match": true
+            },
+            {
+              "name": "ADDRESS",
+              "match": true
+            }
+          ],
+          "detail": [
+            {
+              "//": "底盘(规格型号)",
+              "name": "CHASSIS",
+              "match": true
+            },
+            {
+              "//": "数量",
+              "name": "EQUIPNUM"
+            },
+            {
+              "name": "UNITCODE",
+              "//": "关联展示的字段",
+              "relShowField": "PARAMETERNAME",
+              "//": "计量单位"
+            },
+            {
+              "name": "BATREADYCODE",
+              "relShowField": "PARAMETERNAME",
+              "//": "战备状态"
+            },
+            {
+              "name": "RESCUEID",
+              "relShowField": {
+                "//": "第一联系人",
+                "LEADER": "C1",
+                "//": "第一联系人电话",
+                "LEADERMTEL": "T1"
+              }
+            }
+          ],
+          "relateTables": []
+        },
+        {
+          "name": "EQUIP_EQU_OFFRODELIFT",
+          "label": "装备",
+          "list": [
+            {
+              "name": "RESCUEID",
+              "relShowField": {
+                "//": "救援队伍名称",
+                "RESCUENAME": "RESCUENAME",
+                "//": "第一联系人",
+                "LEADER": "C1",
+                "//": "第一联系人电话",
+                "LEADERMTEL": "T1",
+                "//": "第二联系人",
+                "COMMISSAR": "C2",
+                "//": "第二联系人电话",
+                "COMMISSARMTEL": "T2",
+                "//": "第三联系人",
+                "ENGINEER": "C3",
+                "//": "第三联系人电话",
+                "ENGINEERMTEL": "T3",
+                "//": "第四联系人电话",
+                "DUTYTEL": "T4",
+                "match": true
+              }
+            },
+            {
+              "//": "规格型号",
+              "name": "SPMODEL",
+              "match": true
+            },
+            {
+              "name": "ADDRESS",
+              "match": true
+            }
+          ],
+          "detail": [
+            {
+              "//": "规格型号",
+              "name": "SPMODEL",
+              "match": true
+            },
+            {
+              "//": "数量",
+              "name": "EQUIPNUM"
+            },
+            {
+              "name": "UNITCODE",
+              "//": "关联展示的字段",
+              "relShowField": "PARAMETERNAME",
+              "//": "计量单位"
+            },
+            {
+              "name": "BATREADYCODE",
+              "relShowField": "PARAMETERNAME",
+              "//": "战备状态"
+            },
+            {
+              "name": "RESCUEID",
+              "relShowField": {
+                "//": "第一联系人",
+                "LEADER": "C1",
+                "//": "第一联系人电话",
+                "LEADERMTEL": "T1"
+              }
+            }
+          ],
+          "relateTables": []
+        },
+        {
+          "name": "EQUIP_EQU_RESCUEFIRECAR",
+          "label": "装备",
+          "list": [
+            {
+              "name": "RESCUEID",
+              "relShowField": {
+                "//": "救援队伍名称",
+                "RESCUENAME": "RESCUENAME",
+                "//": "第一联系人",
+                "LEADER": "C1",
+                "//": "第一联系人电话",
+                "LEADERMTEL": "T1",
+                "//": "第二联系人",
+                "COMMISSAR": "C2",
+                "//": "第二联系人电话",
+                "COMMISSARMTEL": "T2",
+                "//": "第三联系人",
+                "ENGINEER": "C3",
+                "//": "第三联系人电话",
+                "ENGINEERMTEL": "T3",
+                "//": "第四联系人电话",
+                "DUTYTEL": "T4",
+                "match": true
+              }
+            },
+            {
+              "//": "底盘(规格型号)",
+              "name": "CHASSIS",
+              "match": true
+            },
+            {
+              "name": "ADDRESS",
+              "match": true
+            }
+          ],
+          "detail": [
+            {
+              "//": "底盘(规格型号)",
+              "name": "CHASSIS",
+              "match": true
+            },
+            {
+              "//": "数量",
+              "name": "EQUIPNUM"
+            },
+            {
+              "name": "UNITCODE",
+              "//": "关联展示的字段",
+              "relShowField": "PARAMETERNAME",
+              "//": "计量单位"
+            },
+            {
+              "name": "BATREADYCODE",
+              "relShowField": "PARAMETERNAME",
+              "//": "战备状态"
+            },
+            {
+              "name": "RESCUEID",
+              "relShowField": {
+                "//": "第一联系人",
+                "LEADER": "C1",
+                "//": "第一联系人电话",
+                "LEADERMTEL": "T1"
+              }
+            }
+          ],
+          "relateTables": []
+        },
+        {
+          "name": "EQUIP_EQU_LIGHTFOAMCAR",
+          "label": "装备",
+          "list": [
+            {
+              "name": "RESCUEID",
+              "relShowField": {
+                "//": "救援队伍名称",
+                "RESCUENAME": "RESCUENAME",
+                "//": "第一联系人",
+                "LEADER": "C1",
+                "//": "第一联系人电话",
+                "LEADERMTEL": "T1",
+                "//": "第二联系人",
+                "COMMISSAR": "C2",
+                "//": "第二联系人电话",
+                "COMMISSARMTEL": "T2",
+                "//": "第三联系人",
+                "ENGINEER": "C3",
+                "//": "第三联系人电话",
+                "ENGINEERMTEL": "T3",
+                "//": "第四联系人电话",
+                "DUTYTEL": "T4",
+                "match": true
+              }
+            },
+            {
+              "//": "底盘(规格型号)",
+              "name": "CHASSIS",
+              "match": true
+            },
+            {
+              "name": "ADDRESS",
+              "match": true
+            }
+          ],
+          "detail": [
+            {
+              "//": "底盘(规格型号)",
+              "name": "CHASSIS",
+              "match": true
+            },
+            {
+              "//": "数量",
+              "name": "EQUIPNUM"
+            },
+            {
+              "name": "UNITCODE",
+              "//": "关联展示的字段",
+              "relShowField": "PARAMETERNAME",
+              "//": "计量单位"
+            },
+            {
+              "name": "BATREADYCODE",
+              "relShowField": "PARAMETERNAME",
+              "//": "战备状态"
+            },
+            {
+              "name": "RESCUEID",
+              "relShowField": {
+                "//": "第一联系人",
+                "LEADER": "C1",
+                "//": "第一联系人电话",
+                "LEADERMTEL": "T1"
+              }
+            }
+          ],
+          "relateTables": []
+        }
+      ]
+    },
+    {
+      "name": "灾情",
+      "label": "灾情信息员",
+      "tables": [
+        {
+          "name": "JC_DISINFOPER",
+          "//": "详情关联表",
+          "list": [
+            {
+              "//": "是否进行关键字过滤",
+              "name": "DISINFOPERNAME",
+              "mapName": "NAME",
+              "match": true
+            },
+            {
+              "name": "MOBPHONE"
+            },
+            {
+              "name": "DISTRICTNAME",
+              "match": true
+            }
+          ],
+          "detail": [
+            {
+              "//": "显示的中文，可不配，自动读取数据库字段描述",
+              "name": "DISINFOPERNAME",
+              "//": "姓名"
+            },
+            {
+              "name": "DISTRICTNAME",
+              "//": "行政区划"
+            },
+            {
+              "name": "POST",
+              "//": "职务"
+            },
+            {
+              "name": "MOBPHONE",
+              "//": "手机号"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "储备库",
+      "label": "储备库",
+      "tables": [
+        {
+          "name": "JC_REPERTORY",
+          "//": "详情关联表",
+          "list": [
+            {
+              "//": "是否进行关键字过滤",
+              "name": "REPERTORYNAME",
+              "mapName": "NAME",
+              "match": true
+            },
+            {
+              "name": "ADDRESS",
+              "match": true
+            },
+            {
+              "name": "CONCATEPER"
+            },
+            {
+              "name": "CONCATEMOBTEL"
+            },
+            {
+              "name": "DISTRICTCODE",
+              "//": "关联展示的字段",
+              "relShowField": "DISTRICTNAME"
+            }
+          ],
+          "detail": [
+            {
+              "//": "显示的中文，可不配，自动读取数据库字段描述",
+              "name": "REPERTORYNAME",
+              "//": "储备库名称"
+            },
+            {
+              "name": "REPERTORYTYPECODE",
+              "//": "关联展示的字段",
+              "//": "类型"
+            },
+            {
+              "name": "LEVELCODE",
+              "//": "关联展示的字段",
+
+              "//": "级别"
+            },
+            {
+              "name": "DISTRICTCODE",
+              "//": "关联展示的字段",
+              "relShowField": "DISTRICTNAME",
+              "//": "行政区划"
+            },
+            {
+              "name": "AREA",
+              "//": "面积"
+            },
+            {
+              "name": "CAPACITY",
+              "//": "库容"
+            },
+            {
+              "name": "RESTOCK",
+              "//": "储备物资"
+            },
+            {
+              "name": "TRANFORCE",
+              "//": "交通运输力量"
+            },
+            {
+              "name": "CONCATEPER",
+              "//": "联系人"
+            },
+            {
+              "name": "CONCATEMOBTEL",
+              "//": "联系电话"
+            }
+          ],
+          "relateTables": [
+            {
+              "//": "结果中返回时的属性名",
+              "table": "JC_MATERIAL_INFO",
+              "relField": "REPERTORYID",
+              "fields": [
+                {
+                  "name": "MATERIALDES",
+                  "//": "物资描述"
+                },
+                {
+                  "name": "MATERIALNAME",
+                  "//": "物资名称"
+                },
+                {
+                  "name": "MATERIALNUM",
+                  "//": "物资数量"
+                },
+                {
+                  "name": "RELEASEDATE",
+                  "//": "保质期"
+                }
+              ],
+              "as": "应急物资"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "避难场所",
+      "label": "避难场所",
+      "tables": [
+        {
+          "name": "BAS_SHELTER",
+          "//": "详情关联表",
+          "list": [
+            {
+              "//": "是否进行关键字过滤",
+              "name": "SHELTERNAME",
+              "mapName": "NAME",
+              "match": true
+            },
+            {
+              "name": "ADDRESS",
+              "match": true
+            },
+            {
+              "name": "CONCATEPER"
+            },
+            {
+              "name": "CONCATEMOBTEL"
+            },
+            {
+              "name": "DISTRICTCODE",
+              "//": "关联展示的字段",
+              "relShowField": "DISTRICTNAME"
+            }
+          ],
+          "detail": [
+            {
+              "//": "显示的中文，可不配，自动读取数据库字段描述",
+              "name": "SHELTERNAME",
+              "//": "储备库名称"
+            },
+            {
+              "name": "SHELTERTYPECODE",
+              "//": "关联展示的字段",
+              "//": "类型"
+            },
+            {
+              "name": "DISTRICTCODE",
+              "//": "关联展示的字段",
+              "relShowField": "DISTRICTNAME",
+              "//": "行政区划"
+            },
+            {
+              "name": "ABACUSAREA",
+              "//": "蓬宿区面积"
+            },
+            {
+              "name": "LEVELCODE",
+              "//": "等级"
+            },
+            {
+              "name": "ADDRESS",
+              "//": "地址"
+            },
+            {
+              "name": "CHARGEDEPT",
+              "//": "主管单位"
+            },
+            {
+              "name": "RESPPER",
+              "//": "负责人"
+            },
+            {
+              "name": "RESPOTEL",
+              "//": "负责人办公电话"
+            },
+            {
+              "name": "MAXPERSONNUM",
+              "//": "可容纳人数"
+            },
+            {
+              "name": "OPENTIME",
+              "//": "开放时间"
+            },
+            {
+              "name": "DUTYTEL",
+              "//": "值班电话"
+            }
+          ],
+          "relateTables": [
+          ]
+        }
+      ]
+    }
+  ]
+}

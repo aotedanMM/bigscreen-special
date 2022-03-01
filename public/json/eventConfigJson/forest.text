@@ -1,0 +1,19 @@
+        // 
+// {
+        //     "name": "防护目标",
+        //     "alias": "防护目标",
+        //     "//key": "唯一关键字",
+        //     "key": "EntrenchTarget",
+        //     "//componetName": "需要引入的组件的名称",
+        //     "componetName": "EntrenchTarget",
+        //     "//checked": "是否显示在小窗(选中)",
+        //     "checked": false,
+        //     "//icon": "按钮图标",
+        //     "icon": "fhmb",
+        //     "//enlarge": "判断是否可以放大（放大按钮不存在）",
+        //     "enlarge": false,
+        //     "//pushNum": "推送数据是否显示消息提醒",
+        //     "pushNum": false,
+        //     "//unreadNum": "未读数量",
+        //     "unreadNum": "0"
+        // },

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+    <title>草原火灾@4x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="28" height="28" rx="14"></rect>
+        <filter x="-10.7%" y="-10.7%" width="121.4%" height="121.4%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.26 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="其他图标" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="突发事件" transform="translate(-40.000000, -300.000000)">
+            <g id="草原火灾" transform="translate(42.000000, 302.000000)">
+                <g id="矩形-copy-5" transform="translate(14.000000, 14.000000) scale(-1, 1) translate(-14.000000, -14.000000) ">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <rect stroke="#FFFFFF" stroke-width="1" stroke-linejoin="square" fill="#D90C0C" fill-rule="evenodd" x="0.5" y="0.5" width="27" height="27" rx="13.5"></rect>
+                </g>
+                <path d="M10.8965517,14.5625 C10.2041379,15.42875 9.22103448,16.571375 9,18.6875 C8.59310345,18.009125 8.13172414,17.8025 8.13793103,16.25 C8.14413793,14.6975 9.45758621,13.1705 9.86206897,12.3125 C10.2665517,11.4545 11.8837931,9.401375 11.9310345,8 C12.2017241,8.59925 12.1389655,10.547375 12.1034483,11.375 C12.067931,12.202625 11.5889655,13.69625 10.8965517,14.5625 L10.8965517,14.5625 Z M17.2758621,19.0625 C17.6231034,17.877875 19.4531034,14.74625 23.6551724,15.5 C21.7434483,16.543625 20.3268966,17.787875 20.2168966,19.0625 L23.3965517,19.0625 C23.6344828,19.0625 23.8275862,19.2725 23.8275862,19.53125 C23.8275862,19.79 23.6344828,20 23.3965517,20 L4.43103448,20 C4.19310345,20 4,19.79 4,19.53125 C4,19.2725 4.19310345,19.0625 4.43103448,19.0625 L4.68965517,19.0625 C4.50896552,17.423 5.83241379,12.252125 8.65517241,10.8125 C8.50931034,11.5145 6.14793103,15.636125 7.37965517,19.0625 L10.4027586,19.0625 C10.7162069,16.7915 12.6906897,11.620625 18.8275862,10.8125 C18.0696552,11.67875 14.3048276,14.747375 13.352069,19.0625 L17.2758621,19.0625 Z M15.8965517,17.9375 C16.3113793,11.2805 19.8237931,14.070875 24,9.125 C23.2517241,14.51375 18.7768966,15.36425 15.8965517,17.9375 L15.8965517,17.9375 Z" id="Fill-1" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>

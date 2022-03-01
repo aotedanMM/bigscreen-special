@@ -1,0 +1,1366 @@
+/*-----只只只只存放-----*/
+/*------对elementUI组件的样式重置*/
+@import './variable.less';
+
+/* 滚动条样式 start*/
+// .cmp-scrollbar-y .el-scrollbar__wrap {
+//   overflow-x: hidden;
+
+//   .el-scrollbar__view {
+//     height: 100%;
+//   }
+// }
+
+/* 滚动条样式 end*/
+/* 表格样式 start*/
+.customMyElTable {
+  width: 100%;
+  background-color: transparent;
+  border: rgba(0, 246, 255, .26) 1px solid;
+
+  &.el-table::before {
+    background-color: transparent;
+  }
+
+  & .cell {
+    line-height: auto;
+  }
+
+  .el-table__header {
+    background-color: transparent;
+    width: 100% !important;
+
+    tr {
+      background: url(@tableHead) repeat-x 0 0;
+      background-size: 100% 100%;
+      color: #00e8fd;
+      font-size: 26px;
+
+      th {
+        padding: 6px 0;
+        background: none;
+        border-color: transparent;
+      }
+    }
+  }
+
+  .el-table__body {
+    width: 100% !important;
+  }
+
+  .el-table__body-wrapper {
+
+    &::-webkit-scrollbar {
+      width: 10px;
+      height: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #a1a3a9;
+      border-radius: 3px;
+    }
+
+    .el-table__row {
+      color: #ffffff;
+      background-color: rgba(44, 70, 97, 0.4);
+
+      td {
+        padding: 6px 0;
+        border-color: transparent;
+        font-size: 26px;
+
+        &:nth-child(2) {
+          cursor: pointer;
+        }
+      }
+
+      &:nth-child(2n) {
+        background-color: rgba(44, 79, 97, 0.2);
+
+        &:hover {
+          background: #13344d;
+        }
+      }
+
+      &:hover {
+        color: #ffffff;
+        background: #103048;
+
+        td {
+          background: none;
+        }
+      }
+    }
+  }
+
+  .el-table--enable-row-hover .el-table__body tr:hover,
+  .el-table__body tr.current-row {
+    background: url(@tableTdHover);
+    background-size: 100% 40px;
+
+    td {
+      background: transparent;
+      color: #fff000;
+    }
+  }
+
+  .el-table--enable-row-hover .el-table__body tr:active {
+    background: url(@tableTdHover);
+    background-size: 100% 40px;
+
+    td {
+      background: transparent;
+    }
+  }
+
+  .sort-caret {
+    border-width: 10px !important;
+    cursor: pointer;
+
+    &.ascending {
+      top: -4px !important;
+    }
+
+    &.descending {
+      bottom: -4px !important;
+    }
+  }
+
+}
+
+.duty-box {
+  .el-table {
+    background-color: transparent;
+    font-size: 20px;
+    border: 2px solid #10456c !important;
+    border-bottom: 2px solid #10456c !important;
+
+    th {
+      background-color: transparent !important;
+      color: #b6d1dd;
+      border-bottom: 1px solid #10456c;
+      border-left: 1px solid #10456c !important;
+      color: #00e4ff !important;
+
+    }
+
+    tr {
+      background-color: transparent !important;
+      color: #b6d1dd;
+      border-bottom: 1px solid #10456c;
+
+      &:hover {
+        color: #fff000 !important
+      }
+    }
+
+    td {
+      background-color: transparent !important;
+      border-bottom: 1px solid #10456c;
+      border-left: 1px solid #10456c !important;
+
+    }
+  }
+
+  .el-table::before {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0px;
+  }
+
+  .el-table th.is-leaf {
+    border-bottom: 1px solid #10456c !important;
+  }
+
+  .el-table__body-wrapper {
+    &::-webkit-scrollbar {
+      width: 10px;
+      height: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #0e2a42;
+      border-radius: 3px;
+    }
+
+  }
+}
+
+/* 表格样式 end*/
+/*修改工作组————通讯录树样式 start*/
+.search_slide {
+  .el-tree-node__expand-icon{
+    color: #669eb4;
+    font-size: 32px !important;
+    //border:1px solid red
+  }
+  .el-tree-node__expand-icon.expanded{
+    color: #81882b;
+    font-size: 32px !important;
+   //border:1px solid 
+  }
+  .el-tree.address-list {
+    width: 360px;
+    height: 593px;
+    border-radius: 4px;
+    padding: 5px 0;
+    background: linear-gradient(0deg, rgba(97, 126, 157, 0.5294117647058824) 0%, rgba(93, 116, 150, 0.5411764705882353) 100%) !important;
+    border: 1px solid rgba(109, 236, 233, 0.26);
+  }
+
+  .el-tree.address-list>.el-tree-node {
+    margin-bottom: 1px;
+  }
+
+  .el-tree.address-list>.el-tree-node>.el-tree-node__content {
+    margin: 1px;
+    width: 360px;
+    height: 62px;
+    border-radius: 2px;
+    background-color: rgba(118, 242, 251, 0.17);
+  }
+
+  .el-tree.address-list>.el-tree-node>.el-tree-node__content:hover {
+   //background-color: rgba(32, 27, 9, 0);
+   background-color: #354042;
+   color: #f8feff;
+  }
+
+  .el-tree.address-list .el-tree-node__label {
+    font-family: "Microsoft Ya Hei";
+    font-size: 26px;
+    color: #f8feff;
+  }
+
+  .el-tree.address-list>.el-tree-node>.el-tree-node__children {
+    display: block;
+  }
+
+  .el-tree.address-list>.el-tree-node>.el-tree-node__children>.el-tree-node>.el-tree-node__content {
+    height: 56px;
+  }
+
+  .el-tree.address-list>.el-tree-node>.el-tree-node__children>.el-tree-node>.el-tree-node__content:hover {
+    background-color: inherit;
+
+  }
+
+  .el-tree.address-list>.el-tree-node>.el-tree-node__children>.el-tree-node:focus>.el-tree-node__content {
+    background-color: inherit;
+  }
+
+  .el-tree.address-list>.el-tree-node>.el-tree-node__content:hover>.el-tree-node__label {
+    color: #f8feff;
+  }
+
+  .el-tree.address-list>.el-tree-node>.el-tree-node__children>.el-tree-node>.el-tree-node__content:hover>.el-tree-node__label {
+    color: #fbee50;
+  }
+
+  .el-tree.address-list>.el-tree-node>.el-tree-node__children>.el-tree-node:focus>.el-tree-node__content>.el-tree-node__label {
+    color: #fbee50;
+  }
+
+  .el-tree.address-list>.el-tree-node>.el-tree-node__children>.el-tree-node>.el-tree-node__content>.el-tree-node__label {
+    color: #92edf6;
+  }
+
+  .el-tree.address-list>.el-tree-node>.el-tree-node__children>.el-tree-node>.el-tree-node__children {
+    margin-left: 60px;
+    width: 529px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 1px solid #92edf6;
+    display: flex;
+    // justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 8px 0;
+    margin-bottom: 10px;
+  }
+
+  .el-tree.address-list>.el-tree-node>.el-tree-node__children>.el-tree-node>.el-tree-node__children>.el-tree-node {
+    width: 168px;
+    height: 62px;
+    line-height: 62px;
+    background: url(@treeCheckedBg);
+    // border: 1px solid #41c1ff;
+    // margin: 10px;
+  }
+
+  .el-tree.address-list>.el-tree-node>.el-tree-node__children>.el-tree-node>.el-tree-node__children>.el-tree-node>.el-tree-node__content {
+    display: block;
+    padding-left: 0 !important;
+    text-align: center;
+    height: inherit;
+    position: relative;
+  }
+
+  .el-tree.address-list>.el-tree-node>.el-tree-node__children>.el-tree-node>.el-tree-node__children>.el-tree-node>.el-tree-node__content:hover {
+    background-color: inherit;
+  }
+
+  .el-tree.address-list>.el-tree-node>.el-tree-node__children>.el-tree-node>.el-tree-node__children>.el-tree-node>.el-tree-node__content:hover>.el-tree-node__label {
+    display: inline-block;
+    width:100%;
+    height:30px;
+    color: #fbee50;
+    background: #103048;
+  }
+
+  .el-tree.address-list>.el-tree-node>.el-tree-node__children>.el-tree-node>.el-tree-node__children>.el-tree-node>.el-tree-node__content>.el-icon-caret-right {
+    display: none;
+  }
+
+  // 一级菜单选择后的样式
+  .el-tree.address-list>.el-tree-node.is-expanded>.el-tree-node__content {
+    background-color:#354042;
+    border: 1px solid #fef551;
+    color: #f8feff;
+  }
+
+  // 二级菜单选择后的样式
+  .el-tree-node__children .el-tree-node.is-current.is-focusable {
+    background-color:#112942!important
+
+  }
+  .el-tree.address-list>.el-tree-node.is-expanded>.el-tree-node__children>.el-tree-node.is-expanded>.el-tree-node__content>.el-tree-node__label {
+    color: #fbee50;
+  
+  }
+
+  .el-tree.address-list>.el-tree-node>.el-tree-node__content>.el-checkbox {
+    display: none;
+  }
+
+  .el-tree.address-list>.el-tree-node>.el-tree-node__children>.el-tree-node>.el-tree-node__content>.el-checkbox {
+    display: none;
+  }
+
+  .el-tree.address-list>.el-tree-node>.el-tree-node__children>.el-tree-node>.el-tree-node__children>.el-tree-node>.el-tree-node__content>.el-checkbox {
+    position: absolute;
+    width: 100%;
+    left: 0;
+  }
+
+  .el-tree.address-list .el-checkbox__input.is-checked .el-checkbox__inner,
+  .el-tree.address-list .el-checkbox__input.is-indeterminate .el-checkbox__inner {
+    background-color: transparent;
+    border-color: transparent;
+  }
+
+  .el-tree.address-list .el-checkbox__inner {
+    border: 1px solid transparent;
+    background-color: transparent;
+  }
+
+  .el-tree.address-list>.el-tree-node>.el-tree-node__children>.el-tree-node>.el-tree-node__children>.el-tree-node>.el-tree-node__content>.el-checkbox.is-checked+.el-tree-node__label {
+    color: #fbee50;
+  }
+
+  .el-tree.address-list .el-checkbox__inner {
+    outline: none;
+    display: none;
+  }
+
+  .el-tree.address-list>.el-checkbox__input.is-checked .el-checkbox__inner::after {
+    border: transparent;
+  }
+
+}
+  .search_slide_searchKey .el-input .el-input__inner {
+    width: 365px;
+    height: 53px;
+    background: transparent !important;
+    border: none;
+    padding-left: 19px;
+    line-height: 53px;
+    color: #a2b9bd;
+    font-size: 20px;
+  }
+
+/*修改工作组————通讯录树样式 end*/
+
+
+/* 切换面板内容的select框- start*/
+.constom-select-input.el-select {
+  position: absolute;
+  z-index: 6;
+  width: 180px;
+  margin-left: 38px;
+
+  .el-input__suffix {
+    right: auto;
+    left: -15px;
+    margin-top: 3px;
+
+    i.el-select__caret {
+      font-size: 0;
+      background: url(@selectArrow) no-repeat 50% 50%;
+    }
+  }
+
+  .el-input.is-focus .el-input__inner {
+    border-color: transparent;
+  }
+
+  .el-input__inner {
+    background-color: transparent;
+    border: none;
+    font-size: 26px;
+    color: transparent;
+  }
+
+  .el-input__inner:focus,
+  .el-input__inner:hover {
+    border-color: transparent;
+    color: transparent;
+    outline: none;
+  }
+}
+
+/* 切换面板内容的select框- end*/
+
+/* 自动完成 start*/
+/*这个样式是需要写在body里的。*/
+.constom-select {
+
+  .el-popper {
+    margin-top: 0;
+  }
+
+  .el-select-dropdown {
+    // background-color: rgba(3, 33, 69, 0.9)!important;
+    // border-color:rgba(0,0,0,.8)!important;
+    background: url('../img/halfScreen/eventAndTopics/select_bg.png') no-repeat 0 0;
+    background-size: 100% 100%;
+  }
+
+  .el-popper .popper__arrow {
+    border-bottom-color: rgba(22, 34, 61, 0.8) !important;
+  }
+
+  .el-popper[x-placement^=bottom] .popper__arrow::after {
+    content: none;
+  }
+
+  .el-select-dropdown__item {
+    color: #fff !important;
+    font-size: 26px !important;
+    padding: 5px 20px !important;
+    height: 44px !important;
+    border: 1px solid transparent;
+  }
+
+  .el-select-dropdown__item.hover,
+  .el-select-dropdown__item:hover {
+    // background-color:rgb(0, 26, 58)!important;
+    // outline:1px solid #ffd870;
+    box-shadow: inset 0 0 20px 5px rgba(227, 255, 95, .32), 0px -1px 0 0px #ffd870, 0px 1px 0 0px #ffd870;
+    border-left: 1px solid #ffd870 !important;
+    border-right: 1px solid #ffd870 !important;
+    color: #f0bc54 !important;
+
+    .eventTypeSelecticon {
+      background-image: url('../img/halfScreen/eventAndTopics/select_icon_h.png');
+    }
+
+  }
+
+  .el-select-dropdown__item.selected {
+    color: #f0bc54 !important;
+  }
+
+  .el-textarea__inner {
+    background-color: transparent !important;
+    border-color: #46d7f6 !important;
+  }
+
+  .el-select-dropdown__wrap {
+    margin-bottom: 0 !important;
+  }
+}
+
+/* 自动完成 end*/
+
+/* 重置页码*/
+.constomMyElPage.el-pagination {
+  vertical-align: top !important; // 为了对齐不可改
+  text-align: center;
+  margin-top: 5px;
+  .btn-prev {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    background: url("../img/halfScreen/halflist/pageLeft.png") 50% 0px no-repeat !important;
+    background-size: 100% 100% !important;
+    color: #ffffff;
+    vertical-align: top !important;
+    margin-right: 3px;
+
+    .el-icon-arrow-left:before {
+      content: none;
+    }
+  }
+
+  .btn-next {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    background: url("../img/halfScreen/halflist/pageRight.png") 50% 0px no-repeat !important;
+    background-size: 100% 100% !important;
+    padding-left: 7px;
+    color: #ffffff;
+    vertical-align: top !important;
+
+    &:hover {
+      // background: url("../img/halfScreen/halflist/rightHover.png") 50%  0px no-repeat!important;
+      box-shadow: none;
+    }
+
+    .el-icon-arrow-right:before {
+      content: none;
+    }
+  }
+
+  .el-pager {
+    vertical-align: top !important; // 为了对齐不可改
+
+    li {
+      width: auto !important;
+      height: 28px !important;
+      // max-width: 54px;
+      // overflow: hidden;white-space: nowrap;text-overflow: ellipsis;
+      background-color: #2c5562 !important;
+      border-radius: 6px;
+      border: solid 1px #2c5562 !important;
+      line-height: 28px;
+      margin-right: 3px;
+      color: #c3cad9;
+      font-weight: initial;
+      font-size: 26px !important;
+      // vertical-align: top!important;
+    }
+
+    li:last-child {
+      height: 28px !important;
+      line-height: 28px !important;
+      font-size: 26px !important;
+    }
+
+    .active {
+      background-image: linear-gradient(180deg,
+          rgba(249, 216, 72, 0.54) 0%,
+          rgba(243, 177, 61, 0.54) 100%),
+        linear-gradient(#2c5562,
+          #2c5562) !important;
+      background-blend-mode: normal,
+        normal;
+      max-width: 80px;
+      box-shadow: 0px 9px 9px 0px rgba(95, 59, 16, 0.45) !important;
+      border-radius: 6px;
+      border: solid 1px #fbe663 !important;
+      opacity: 0.8;
+      color: #ffffff;
+    }
+  }
+
+  .el-pagination__jump {
+    margin-left: 6px;
+    margin-top: 3px;
+  }
+
+  .el-pagination__total {
+    padding: 0px 10px;
+    font-size: 18px;
+    color: #d7e0f1;
+    vertical-align: top !important; // 为了对齐不可改
+    line-height: 28px !important;
+  }
+
+  .el-icon-more {
+    width: 28px !important;
+    height: 28px !important;
+    line-height: 28px !important;
+  }
+}
+.constomMyElPageNew.el-pagination {
+  vertical-align: top !important; // 为了对齐不可改
+  text-align: center;
+  margin-top: 5px;
+  margin-left: -15px;
+  .btn-prev {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    background: url("../img/halfScreen/halflist/pageLeft.png") 50% 0px no-repeat !important;
+    background-size: 100% 100% !important;
+    color: #ffffff;
+    vertical-align: top !important;
+    margin-right: 3px;
+
+    .el-icon-arrow-left:before {
+      content: none;
+    }
+  }
+
+  .btn-next {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    background: url("../img/halfScreen/halflist/pageRight.png") 50% 0px no-repeat !important;
+    background-size: 100% 100% !important;
+    padding-left: 7px;
+    color: #ffffff;
+    vertical-align: top !important;
+
+    &:hover {
+      // background: url("../img/halfScreen/halflist/rightHover.png") 50%  0px no-repeat!important;
+      box-shadow: none;
+    }
+
+    .el-icon-arrow-right:before {
+      content: none;
+    }
+  }
+
+  .el-pager {
+    vertical-align: top !important; // 为了对齐不可改
+
+    li {
+      width: auto !important;
+      height: 28px !important;
+      max-width: 45px;
+      overflow: hidden;white-space: nowrap;text-overflow: ellipsis;
+      background-color: #2c5562 !important;
+      border-radius: 6px;
+      border: solid 1px #2c5562 !important;
+      line-height: 28px;
+      margin-right: 3px;
+      color: #c3cad9;
+      font-weight: initial;
+      font-size: 26px !important;
+      // vertical-align: top!important;
+    }
+
+    li:last-child {
+      height: 28px !important;
+      line-height: 28px !important;
+      font-size: 26px !important;
+    }
+
+    .active {
+      background-image: linear-gradient(180deg,
+          rgba(249, 216, 72, 0.54) 0%,
+          rgba(243, 177, 61, 0.54) 100%),
+        linear-gradient(#2c5562,
+          #2c5562) !important;
+      background-blend-mode: normal,
+        normal;
+      max-width: 80px;
+      box-shadow: 0px 9px 9px 0px rgba(95, 59, 16, 0.45) !important;
+      border-radius: 6px;
+      border: solid 1px #fbe663 !important;
+      opacity: 0.8;
+      color: #ffffff;
+    }
+  }
+
+  .el-pagination__jump {
+    margin-left: 6px;
+    margin-top: 3px;
+  }
+
+  .el-pagination__total {
+    padding: 0px 10px;
+    font-size: 18px;
+    color: #d7e0f1;
+    vertical-align: top !important; // 为了对齐不可改
+    line-height: 28px !important;
+  }
+
+  .el-icon-more {
+    width: 28px !important;
+    height: 28px !important;
+    line-height: 28px !important;
+  }
+}
+/*el-date-picker  时间选择器*/
+.csmMyInput.el-input__inner {
+  background-color: rgba(43, 246, 254, .2);
+  border-color: rgba(43, 246, 254, .5);
+  color: #eefeff;
+  font-size: 26px;
+
+  input {
+    background: transparent;
+    color: #eefeff;
+    font-size: 26px;
+  }
+
+  .el-range-separator {
+    color: #eefeff;
+    font-size: 26px;
+  }
+
+  &.csmMyInput-cur {
+    .el-input__inner {
+      background-color: rgba(221, 185, 16, .2);
+      border-color: #fff600;
+    }
+  }
+}
+.constom-select .el-date-editor .el-range__close-icon {
+  display: none;
+}
+.constom-select .el-date-editor .el-range-input {
+  width: 45%;
+}
+/* 预案步骤条的样式 */
+
+.plan_box  {
+  .plan-menu{
+    padding-top:6px;
+  }
+    ::-webkit-scrollbar-thumb {
+      background: #ededed !important;
+      border-radius: 3px;
+    }
+    .el-step.is-vertical .el-step__title{
+
+    }
+    .el-step__description.is-wait,
+    .el-step__title.is-wait {
+      color: #666666 !important;
+      ;
+    }
+    .el-step.is-vertical .el-step__head {
+      min-height: 60px;
+    }
+    .el-step__description{
+          padding-right: 10%;
+          margin-top: -13px;
+          font-size: 26px;
+          line-height: 33px;
+          font-weight: 400;
+          margin-bottom: 16px;
+
+
+    }
+     
+}
+
+/* 多选框的样式 */
+.constomMyCheckbox.el-checkbox {
+  width: 100%;
+  line-height: 30px;
+
+  .el-checkbox__label {
+    color: #f7fdff;
+    font-size: 26px !important;
+    line-height: 1 !important;
+    width: 97%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  .el-checkbox__inner {
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    border: solid 1px #cee6ea;
+    background: none;
+    vertical-align: 4px;
+  }
+
+  .el-checkbox__inner:hover {
+    border: solid 1px #cee6ea !important;
+  }
+
+  .el-checkbox__input {
+    vertical-align: inherit !important;
+  }
+
+  .el-checkbox__input.is-checked+.el-checkbox__label {
+    color: #fffabe !important;
+    font-size: 26px;
+    width: 97%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  .el-checkbox__inner::after {
+    left: 6px !important;
+  }
+
+  .el-checkbox__input.is-checked .el-checkbox__inner {
+    background-image: linear-gradient(rgba(215, 185, 64, 0.17),
+        rgba(215, 185, 64, 0.17)),
+      linear-gradient(#69690d,
+        #69690d);
+    background-blend-mode: normal,
+      normal;
+    border-radius: 4px;
+    border: solid 1px #fef551 !important;
+  }
+
+  .el-checkbox__input.is-indeterminate .el-checkbox__inner {
+    background-image: linear-gradient(rgba(215, 185, 64, 0.17),
+        rgba(215, 185, 64, 0.17)),
+      linear-gradient(#69690d,
+        #69690d);
+    background-blend-mode: normal,
+      normal;
+    border-radius: 4px;
+    border: solid 1px #fef551 !important;
+  }
+}
+
+/*常用select框*/
+.constomMySelect.el-select {
+  .el-input__inner {
+    background-color: rgba(118, 242, 251, .1);
+    border-color: rgba(118, 242, 251, 1);
+    color: #eefeff;
+    font-size: 26px !important;
+    outline: none;
+  }
+
+  .el-input__suffix {
+    font-size: 0;
+
+    .el-icon-arrow-up:before {
+      content: '';
+      background: url('../img/gisModule/districtDialog/arrow_down.png') no-repeat 50% 50%;
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      transform: scale(1, -1);
+    }
+  }
+
+  .el-input__inner:hover,
+  .el-input__inner:focus {
+    border-color: rgba(118, 242, 251, .1);
+  }
+
+  .el-input.is-focus .el-input__inner {
+    background-color: rgba(221, 185, 16, .2);
+    border-color: #fff600
+  }
+}
+
+/* 无背景的select框*/
+.csmMySelect-noBg.el-select {
+
+  .el-input.is-disabled .el-input__inner,
+  .el-input__inner {
+    background: transparent;
+    border: none;
+    color: #00e4ff;
+    font-size: 26px;
+    cursor: default;
+    text-align: center;
+  }
+}
+
+/* tabs选项卡的样式——事件列表 */
+.csmMyTabs {
+  .el-tabs__header {
+    padding: 22px 10px 0;
+  }
+
+
+  .el-tabs__nav-wrap::after {
+    background-color: rgba(0, 252, 255, 0);
+  }
+
+  .el-tabs__item {
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px !important;
+    font-size: 30px;
+    line-height: 32px;
+    width: 50%;
+    // width:190px;
+    background-image: -webkit-linear-gradient(top, #ffffff 10%, #7bfaff);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-weight: bold;
+
+    &::after {
+      content: '';
+      background: url('../img/halfScreen/eventAndTopics/selected.png') no-repeat 50% 10px;
+      background-size: 100% 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+  }
+
+  .el-tabs__active-bar {
+    display: none;
+  }
+
+  .el-tabs__item.is-active {
+    background-image: -webkit-linear-gradient(top, #ffffff 10%, #ffd43d);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+
+    &::after {
+      content: '';
+      background: url('../img/halfScreen/eventAndTopics/selected_h.png') no-repeat 50% 10px;
+      background-size: 100% 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+  }
+}
+
+.csmMyTabs.rescueTaemModule{
+  .el-tabs__content{
+    // height:calc(100% - 60px)
+    height: 100%;
+  }
+  .el-tab-pane{
+    height:100%;
+  }
+  .el-tabs__item{
+    margin-left:10px!important;
+  }
+}
+/* tabs选项卡的样式——事件列表 ---山洪风险*/
+.csmMyTabs-flood{
+  height:100%;
+  .el-tabs__header {
+    // padding: 15px 10px 0;
+    margin: 0 0 10px;
+
+  }
+ .el-tabs__content{
+   height:calc(100% - 60px);
+   .el-tab-pane{
+     height:100%;
+   }
+ }
+  .el-tabs__nav-wrap::after {
+    background-color: rgba(0, 252, 255, 0);
+  }
+
+  .el-tabs__item {
+    position: relative;
+    margin: 10px 5px 0 0;
+    font-size: calc(20px * 1.4);
+    line-height: 50px;
+    height:50px;
+    width: 60%;
+    // width:190px;
+    background-image: -webkit-linear-gradient(top, #ffffff 10%, #7bfaff);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    // font-weight: bold;
+
+    &::after {
+      content: '';
+      background: url('../img/defensivePreparation/title-bg.png') no-repeat;
+      background-size: 100% 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+  }
+
+  .el-tabs__active-bar {
+    display: none;
+  }
+
+  .el-tabs__item.is-active {
+    background-image: -webkit-linear-gradient(top, #ffffff 10%, #ffd43d);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+
+    &::after {
+      content: '';
+      background: url('../img/defensivePreparation/title-bg-h.png') no-repeat;
+      background-size: 100% 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+  }
+}
+.iconSelf_search {
+  display: inline-block;
+  width: 38px;
+  height: 38px;
+  background: url('../img/gisModule/districtDialog/search.png') no-repeat 50% 50%;
+  cursor: pointer;
+}
+
+/*input框 */
+.csmMyInput-noBg.el-input {
+  .el-input__inner {
+    border: none;
+    font-size: 26px;
+    background: transparent;
+    color: #eefeff;
+  }
+}
+
+.csmMyInput-noBg.el-input--suffix {
+  .el-input__inner {
+    padding-right: 45px;
+  }
+}
+
+.csmMyInput.el-input {
+  .el-input__inner {
+    background-color: rgba(43, 246, 254, .2);
+    border-color: rgba(43, 246, 254, .5);
+    color: #eefeff;
+    font-size: 26px;
+  }
+
+  &.csmMyInput-cur {
+    .el-input__inner {
+      background-color: rgba(221, 185, 16, .2);
+      border-color: #fff600
+    }
+  }
+}
+
+/*button按钮*/
+.csmMySlider.el-button {
+  background: url("../img/areaSelect/button_active.png") no-repeat;
+  background-size: 100% 100%;
+  border: 0;
+  font-size: 24px;
+  color: #84F7FF;
+
+  &:hover {
+    background: url("../img/areaSelect/button_hover.png") no-repeat;
+    background-size: 100% 100%;
+    border: 0;
+    color: #ffffff;
+    text-shadow: 2px 2px 2px rgba(23, 55, 95, 0.53);
+  }
+
+  &:focus {
+    color: #ffffff;
+    background: url("../img/areaSelect/button_hover.png") no-repeat;
+    background-size: 100% 100%;
+  }
+}
+
+.csmMySlider.el-button.is-disabled {
+  background: url("../img/areaSelect/button_forbidden.png") no-repeat 100% 100%;
+  background-size: 100% 100%;
+  border: 0;
+  font-size: 24px;
+  color: #ccc;
+
+  &:hover {
+    color: #ccc;
+    background: url("../img/areaSelect/button_forbidden.png") no-repeat 100% 100%;
+    background-size: 100% 100%;
+  }
+}
+
+/*!*按钮-激活*!
+.btn-active {
+  background: url("../img/areaSelect/button_active.png") no-repeat 100% 100%;
+  background-size: 100% 100%;
+  font-size: 24px;
+  color: #84F7FF;
+  display: inline-block;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 56px;
+  text-align: center;
+  line-height: 56px;
+  cursor: pointer;
+}
+
+!*按钮-禁止*!
+.btn-forbidden {
+  background: url("../img/areaSelect/button_forbidden.png") no-repeat 100% 100%;
+  background-size: 100% 100%;
+  font-size: 24px;
+  color: #ccc;
+  display: inline-block;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 56px;
+  text-align: center;
+  line-height: 56px;
+  cursor: pointer;
+}*/
+
+/*slider滑块*/
+.csmMySlider.el-slider {
+  .el-slider__runway {
+    background: url("../img/areaSelect/elSlider-line.png") no-repeat;
+    background-size: 100% 100%;
+
+    .el-slider__bar {
+      background-color: transparent;
+    }
+
+    .el-slider__button-wrapper {
+      .el-slider__button {
+        width: 25px;
+        height: 25px;
+        border: 0;
+        background: url("../img/areaSelect/elSlider-point.png") no-repeat;
+        background-size: 100% 100%;
+      }
+    }
+  }
+}
+
+/*color-picker颜色选择器*/
+.csmMyColorPicker.el-color-picker {
+  position: absolute;
+  top: -11px;
+  height: 130%;
+  width: 90%;
+  background: url("../img/areaSelect/elColorPicker-bg.png") no-repeat;
+  background-size: 100% 118%;
+
+  .el-color-picker__trigger {
+    border: 0 !important;
+    border-radius: 0;
+    top: 14px;
+    left: 20px;
+    width: 35px;
+    height: 35px;
+
+    .el-color-picker__color {
+      border: 0;
+    }
+
+    .el-color-picker__icon {
+      top: 18px;
+      left: 50px;
+    }
+
+    .el-icon-arrow-down:before {
+      content: url("../img/areaSelect/elColorPicker-icon.png");
+    }
+  }
+}
+
+
+/** 重置时间控件样式，增加属性：
+popper-class="ytDateTimePicker"
+class="ytDateTimePicker" 
+**/
+.ytDateTimePicker.el-picker-panel {
+  color: #fff;
+  background: #002450;
+  border: 1px solid #1384b4;
+
+  .el-input__inner {
+    background-color: #061943;
+    color: #d1f8ff;
+    font-size: 20px;
+    border: 1px solid #449cc2;
+  }
+
+  .el-date-range-picker__content {
+    padding: 0px 0 15px 0;
+  }
+
+  .el-date-range-picker__time-header {
+    border-bottom: 0;
+    padding: 10px 5px;
+  }
+
+  .el-date-range-picker__content.is-left {
+    border-right: 1px solid #1384b4;
+  }
+
+  .el-date-table td.next-month,
+  .el-date-table td.prev-month {
+    color: #6e6e6e;
+  }
+
+  .el-date-table td.disabled div {
+    background-color: transparent;
+    color: #555;
+  }
+
+  .el-date-table td.end-date span,
+  .el-date-table td.start-date span {
+    width: 28px;
+    height: 26px;
+    border-radius: 5px;
+    color: #f9f5c0;
+    border: 1px solid #fef551;
+    background-color: #203a4e;
+  }
+
+  .el-date-table td.in-range div,
+  .el-date-table td.in-range div:hover,
+  .el-date-table.is-week-mode .el-date-table__row.current div,
+  .el-date-table.is-week-mode .el-date-table__row:hover div {
+    background-color: transparent;
+    color: #f9f5c0;
+  }
+
+  .el-date-range-picker__header {
+    height: 40px;
+    line-height: 40px;
+    background: #063863;
+    border-top: 1px solid #425d7d;
+    border-bottom: 1px solid #425d7d;
+    padding: 0 15px;
+  }
+  .el-range__icon {
+    font-size: 24px;
+    line-height: 27px;
+  }
+  .el-picker-panel__icon-btn {
+    color: #fff;
+  }
+
+  .el-date-range-picker__header div {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .el-date-table th {
+    color: #fff;
+
+    border-bottom: 0;
+  }
+
+  .el-date-table td span {
+    font-size: 20px;
+  }
+
+  .el-time-panel {
+    color: #fff;
+    background: #002450;
+    border: 1px solid #1384b4;
+  }
+
+  .el-time-spinner__item {
+    color: #fff;
+
+    &:hover {
+      color: #409eff;
+      background: transparent !important;
+    }
+  }
+
+  .el-time-spinner__item.active:not(.disabled) {
+    color: #f9f5c0;
+  }
+  .el-time-panel__content::after,
+  .el-time-panel__content::before {
+    top: 50%;
+    border-top: 1px solid #449cc2;
+    border-bottom: 1px solid #449cc2;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+
+  .el-time-panel__footer {
+    border-top: 1px solid #1384b4;
+
+    .cancel {
+      color: #d1f8ff !important;
+    }
+
+    .confirm {
+      color: #a0f4fd !important;
+    }
+  }
+
+  .el-picker-panel__footer {
+    background: #002450;
+    border-top: 1px solid #1384b4;
+
+    .el-button--default {
+      width: 80px;
+      height: 44px;
+      color: #a0f4fd;
+      font-size: 20px;
+      background-image: url('../img/monitorWarning/btn_confirm.png');
+      background-size: 100% 100%;
+      background-color: transparent;
+      border: none;
+
+      &:hover {
+        background-color: transparent;
+        border: none;
+      }
+    }
+
+    .el-button--text {
+      color: #d1f8ff !important;
+      font-size: 20px;
+    }
+  }
+
+  .popper__arrow::after {
+    border-bottom-color: #002450 !important;
+  }
+}
+
+.ytDateTimePicker.el-input__inner {
+  background-color: #061943;
+  color: #d1f8ff;
+  font-size: 20px;
+  border: 1px solid #449cc2;
+
+  &:hover {
+    border: 1px solid #fef551;
+  }
+
+  .el-input__icon {
+    color: #d1f8ff;
+    font-size: 24px;
+  }
+  .el-range-separator {
+    color: #d1f8ff;
+    width: 30px;
+    font-size: 24px;
+  }
+
+  .el-range-input {
+    background-color: transparent;
+    color: #d1f8ff;
+    font-size: 26px;
+  }
+}
+
+.ytDateTimePicker {
+  .el-input.is-disabled .el-input__inner {
+    background-color: #061943;
+    border-color: #449cc2;
+    color: #c0c4cc;
+    cursor: not-allowed;
+  }
+}
+
+/**重置时间控件样式结束**/

@@ -1,0 +1,267 @@
+/* 右侧弹出框列表样式 start */ 
+@path: '../../../assets/img/gisModule/districtDialog'; // 定义路径
+@commonPath: '../../../assets/img/gisModule/common'; // 定义路径
+@closeWidth: 80px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.closed-container-box {  
+  height: 66px;
+  
+  margin-bottom: 10px;
+  &:after{
+    content: '';
+    background: url("../../img/halfScreen/halflist/titlexian.png") 50% 0 no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 23px;
+    top: 54px;
+  }
+}
+.closed-container {
+  position: absolute;
+  cursor: pointer;
+  font-size: 22px;
+  white-space: nowrap;
+  vertical-align: top;
+  height: 45px;
+  width: 119px;
+  padding-left: 26px;
+  margin-top: -3px;
+  box-sizing: border-box;
+  padding-top: 5px;
+  right: -9px;
+  background: none;
+}
+.classList {
+  background: url('@{path}/panelLiActive.png') !important;
+}
+.tooltip:nth-of-type(1){
+  word-break: normal;
+}
+.tooltip {
+  position: relative;
+  word-break: break-word;
+}
+.PopulationFeverBox+div .tooltip{
+  word-break: break-all;
+}
+/deep/ .el-pagination__editor.el-input {
+  width: 80px;
+}
+.nodata {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  padding-top:20%;
+  text-align: center;
+}
+
+.listDistrict-flex-box {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.listDistrict-input-content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  :hover{
+    cursor: pointer;
+  }
+}
+.listDistrict-icon {
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  cursor: pointer;
+  &:hover {
+    color: #00e8fd;
+  }
+}
+
+.listDistrict_hd {
+  margin: 0 @closeWidth 0 25px;
+  height: 55px;
+}
+.listDistrict_title {
+  // padding-left:20px;
+  color: #67e1fb;
+  letter-spacing: 1px;
+  font-weight: normal;
+  line-height: 60px;
+}
+.listDistrict_close {
+  float: right;
+  width: @closeWidth;
+  margin-right: -@closeWidth;
+  height: 55px;
+  line-height: 100%;
+  display: block;
+  background: url('@{path}/infolistclose.png') no-repeat 0 0;
+  font-size: 0;
+}
+.listDistrict-input {
+  height: 40px;
+  color: #3cc0ec;
+}
+.listDistrict-input + .lestDistrict-select{
+  margin-top:10px;
+}
+input::-webkit-input-placeholder {
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+}
+.listDistrict-input-content input {
+  width: 100%;
+  height: 40px;
+  // text-align: 40px;
+  background: none;
+  border: none;
+  color: #fff;
+  text-indent: 20px;
+  outline: none;
+  font-size: 22px;
+  margin: 3px 0;
+}
+.listDistrict {
+  color: #fff;
+  width:100%;
+  box-sizing: border-box;
+  padding:0;
+  height:100%;
+
+  .headBox {
+    background: url("../../../assets/img/halfScreen/halflist/headerBg.png") no-repeat;
+    background-size: 100% 100%;
+    margin-top: 10px;
+    span {
+      width: calc(100% / 5);
+      display: inline-block;
+      text-align: center;
+      line-height: 50px;
+      color: rgb(0, 232, 253);
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      vertical-align: top;
+    }
+  }  
+}
+.felx_box_statistics {
+  height: auto;
+  color: #8cafd0;
+}
+/* 右侧弹出框列表样式 end */ 
+.PopulationFeverBox + div {
+   .listBox li{
+    background: url("../../../assets/img/halfScreen/halflist/boxListBgIcon.png") no-repeat 50% bottom;
+    background-size: 100% 100%;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    p{
+      margin-bottom:5px;
+    }
+   }
+}
+.listBox {
+  padding-top:10px;
+  &_li {
+    background: url("../../../assets/img/halfScreen/halflist/boxListBgIcon.png") no-repeat 50% bottom;
+    background-size: 100% 100%;
+    margin-bottom: 5px;
+    padding-bottom: 10px;
+    padding-top:10px;
+    cursor: pointer;
+    align-items: center;
+    // justify-content: space-between;
+    
+    span{
+      padding-top:10px;
+      display:block;
+      .typeTitles{
+        color: rgb(128, 173, 207);
+        font-style: normal;
+      }
+      &.name{
+        font-family: MicrosoftYaHei;
+        color: #e8f4fe;
+        display: inline;
+      }
+      &._distance{
+        color: #27e8ff;
+      }
+      &.location{
+        color: #27e8ff;
+      }
+      &.typecodeName{
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+    }
+    /*序号*/
+    >span:first-child{
+      background:rgba(71,215,162,0.2);
+      border:1px #47d7a2 solid;
+      border-radius:5px;
+      color:#fff;
+      font-size:24px;
+      padding:0 5px;
+      display: inline-block;
+      font-style: normal;
+      margin-right:10px;
+    }
+    .teamName {
+      font-family: MicrosoftYaHei;
+      font-weight: normal;
+      font-stretch: normal;
+      color: #e8f4fe;
+      padding-bottom: 10px;
+    }
+    
+    .indexSpan {
+      width:45px!important;
+      background: url('@{path}/panelliIndex.png') 50% 50% no-repeat;
+      background-size: 80% 100%;
+      display: inline-block;
+      margin: 0;
+    }
+
+    .teamDistance {
+      font-weight: normal;
+      color: #e8f4fe;
+      font {
+        font-family: Impact;
+        font-weight: normal;
+        font-stretch: normal;
+        color: #27e8ff;
+        padding-right: 10px;
+      }
+    }
+    .teamType {
+      font-weight: normal;
+      letter-spacing: 0px;
+      color: #f7fdff;
+      font {
+        font-family: MicrosoftYaHei;
+        font-weight: normal;
+        font-stretch: normal;
+        line-height: 36px;
+        letter-spacing: 0px;
+        color: #8cafd0;
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+    <title>医疗机构类危险源</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M14,28 C10.2604653,28 6.74475408,26.5437515 4.10050675,23.8994937 C1.4562489,21.2552459 0,17.7395347 0,14 C0,10.2604653 1.4562489,6.74475408 4.10050675,4.10050675 C6.74475408,1.4562489 10.2604653,0 14,0 C17.7395347,0 21.2552459,1.4562489 23.8994937,4.10050675 C26.5437515,6.74475408 28,10.2604653 28,14 C28,17.7395347 26.5437515,21.2552459 23.8994937,23.8994937 C21.2552459,26.5437515 17.7395347,28 14,28 Z" id="path-1"></path>
+        <filter x="-10.7%" y="-10.7%" width="121.4%" height="121.4%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.26 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="其他图标" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="玉董" transform="translate(-133.000000, -605.000000)">
+            <g id="医疗机构类危险源" transform="translate(135.000000, 607.000000)">
+                <g id="路径">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <path stroke="#FFFFFF" stroke-width="1" d="M14,27.5 C17.6069329,27.5 20.9954649,26.0964254 23.545941,23.5459397 C26.0964254,20.9954649 27.5,17.6069329 27.5,14 C27.5,10.393067 26.0964253,7.0045351 23.5459397,4.45405947 C20.9954647,1.90357486 17.6069327,0.5 14,0.5 C10.3930672,0.5 7.00453524,1.9035749 4.45405944,4.45406084 C1.9035749,7.00453524 0.5,10.3930672 0.5,14 C0.5,17.6069327 1.90357486,20.9954647 4.45406083,23.5459411 C7.0045351,26.0964253 10.393067,27.5 14,27.5 Z" stroke-linejoin="square" fill="#BFB60A" fill-rule="evenodd"></path>
+                </g>
+                <path d="M23.0906667,12.962963 L23.0906667,22.5773333 L5.908,22.5773333 L5.908,12.962963 L3.84844444,12.962963 L3.84844444,10.9044444 L14.841037,3.34651852 L25.1502222,10.9044444 L25.1502222,12.962963 L23.0906667,12.962963 Z M14.4988148,8.148 C12.1337231,8.14296912 9.99854068,9.56329561 9.08909981,11.7465504 C8.17965895,13.9298052 8.67510308,16.4459265 10.344361,18.1214152 C12.0136189,19.7969039 14.5278768,20.3017189 16.7145048,19.4004185 C18.9011327,18.4991181 20.3294044,16.3692422 20.3331852,14.0041481 C20.3381447,12.4532591 19.7257435,10.9641452 18.6311385,9.86545444 C17.5365335,8.76676364 16.0497116,8.14881863 14.4988148,8.148 L14.4988148,8.148 Z M15.5358519,17.7820741 L13.4617778,17.7820741 L13.4617778,15.0235556 L10.725037,15.0235556 L10.725037,12.964 L13.4794074,12.964 L13.4794074,10.2085926 L15.54,10.2085926 L15.54,12.964 L18.2954074,12.964 L18.2954074,15.0225185 L15.54,15.0225185 L15.5358519,17.7820741 Z" id="路径_7" fill="#FFFFFF" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>

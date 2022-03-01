@@ -1,0 +1,124 @@
+[{
+    "label": "严重霾",
+    "value": "en_0"
+}, {
+    "label": "中到大雨",
+    "value": "en_1"
+}, {
+    "label": "中到大雪",
+    "value": "en_2"
+}, {
+    "label": "中度霾",
+    "value": "en_3"
+}, {
+    "label": "中雨",
+    "value": "en_4"
+}, {
+    "label": "中雪",
+    "value": "en_5"
+}, {
+    "label": "农雾",
+    "value": "en_6"
+}, {
+    "label": "冻雨",
+    "value": "en_7"
+}, {
+    "label": "多云",
+    "value": "en_8"
+}, {
+    "label": "大到暴雨",
+    "value": "en_9"
+}, {
+    "label": "大到暴雪",
+    "value": "en_10"
+}, {
+    "label": "大暴雨",
+    "value": "en_11"
+}, {
+    "label": "大暴雨到特大暴雨",
+    "value": "en_12"
+}, {
+    "label": "大雨",
+    "value": "en_13"
+}, {
+    "label": "大雪",
+    "value": "en_14"
+}, {
+    "label": "大雾",
+    "value": "en_15"
+}, {
+    "label": "小到中雨",
+    "value": "en_16"
+}, {
+    "label": "小到中雪",
+    "value": "en_17"
+}, {
+    "label": "小雨",
+    "value": "en_18"
+}, {
+    "label": "小雪",
+    "value": "en_19"
+}, {
+    "label": "强沙尘暴",
+    "value": "en_20"
+}, {
+    "label": "强浓雾",
+    "value": "en_21"
+}, {
+    "label": "扬沙",
+    "value": "en_22"
+}, {
+    "label": "晴",
+    "value": "en_23"
+}, {
+    "label": "暴雨",
+    "value": "en_24"
+}, {
+    "label": "暴雨到大暴雨",
+    "value": "en_25"
+}, {
+    "label": "暴雪",
+    "value": "en_26"
+}, {
+    "label": "沙尘暴",
+    "value": "en_27"
+}, {
+    "label": "浮尘",
+    "value": "en_28"
+}, {
+    "label": "特大暴雨",
+    "value": "en_29"
+}, {
+    "label": "特强浓雾",
+    "value": "en_30"
+}, {
+    "label": "重度霾",
+    "value": "en_31"
+}, {
+    "label": "阴",
+    "value": "en_32"
+}, {
+    "label": "阵雨",
+    "value": "en_33"
+}, {
+    "label": "阵雪",
+    "value": "en_34"
+}, {
+    "label": "雨夹雪",
+    "value": "en_35"
+}, {
+    "label": "雪",
+    "value": "en_36"
+}, {
+    "label": "雷阵雨",
+    "value": "en_37"
+}, {
+    "label": "雷阵雨伴有冰雹",
+    "value": "en_38"
+}, {
+    "label": "雾",
+    "value": "en_39"
+}, {
+    "label": "霾",
+    "value": "en_40"
+}]

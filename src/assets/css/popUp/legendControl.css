@@ -1,0 +1,146 @@
+#legend_all_id{
+    position: absolute;
+    bottom: 5px;
+    /*因烈度圈人口文字被遮挡不能点击修改宽度*/
+    /*width: 340px;*/
+    width: 240px;
+    color: #000;
+    border: 1px solid #00ffff;
+    border-radius: 8px;
+    right: 0;
+    overflow: visible !important;
+    z-index: 10;
+}
+.legendControl_topTitleBox{
+    position: absolute;
+    top: -14px;
+    left: 20px;
+    background: url(../../img/backBg.png) no-repeat;
+    background-size: 100% 100%;
+    color: #011515;
+    width: 110px;
+    height: 28px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 28px;
+}
+#legend_all_id span{
+    font-weight: 600;
+}
+.legendControl_content{
+    width: 100%;
+    cursor: pointer;
+    padding-top:10px;
+
+}
+.legendControl_box{
+    width: 100%;
+    background:-webkit-linear-gradient(to right, #071829, #19315b);
+    background:-o-linear-gradient(to right, #071829, #19315b);
+    background:-moz-linear-gradient(to right, #071829, #19315b);
+    background:linear-gradient(to right, #071829, #19315b);
+    max-height: 185px;
+    border-radius: 8px;
+    overflow-x: hidden!important;
+}
+#legend_all_id  #ascrail2002-hr{
+    display: none !important;
+}
+
+.img_class{
+    width: 38px;
+    display: inline-block;
+    text-align: center;
+    overflow: hidden;
+    vertical-align: middle;
+}
+.img_class>img{
+    margin-top: 10px;
+}
+.ele_legend_class{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: #ccc;
+    margin-right: 0px;
+    margin-left: 8px;
+}
+.legend_sign_class{
+    display: flex;
+    align-items: center;
+    color: #ccc;
+    margin-right: 0px;
+    margin-left: 8px;
+}
+.legend_sign_class span{
+    display: inline-block;
+}
+.ele_legend_class span{
+    font-size: 18px;
+    color: rgba(255,255,255,.5);
+}
+.ele_legend_class span:nth-of-type(2){
+    width:100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.legend_sign_class span{
+    color: #fff;
+}
+
+/*.legendControl_box::-webkit-scrollbar{*/
+    /*width: 0;*/
+/*}*/
+.legendControl_box .legendControl_head{
+    /*width: 100%;*/
+    /*background:url("../../img/tuli-drop.png") no-repeat;*/
+     /*opacity: 0.1;*/
+    /*background:url("../../img/tuli-drop.png") no-repeat;*/
+    /*border-top-left-radius: 3px;*/
+    /*border-top-right-radius: 3px;*/
+    /*text-align: center;*/
+    /*height: 40px;*/
+    /*line-height: 40px;*/
+}
+.popup-content{
+  /*  background: red;*/
+    color: #fff;
+    font-size: 20px;
+}
+.tucengdiv{
+    margin-top: 10px;
+}
+/*16:9分辨率适配样式代码*/
+@media screen and (max-width: 1950px){
+    #legend_all_id{
+        width: 179px;
+        right: 15px;
+    }
+    .legendControl_topTitleBox{
+        display: none;
+        top: -10px;
+        width: 70px;
+        height: 20px;
+        font-size: 12px;
+        text-align: center;
+        line-height: 20px;
+    }
+
+}
+
+
+.g2-tooltip-self {
+    display: none;
+    position: absolute;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.2));
+    padding: 24px 10px 10px 10px;
+    border-radius: 0;
+    bottom: 10px;
+    left: -46px;
+    background:url('../../img/new_popu.png') no-repeat ;
+    background-size: 100% 100%;
+    width: 431px;
+    height: 286px;
+}

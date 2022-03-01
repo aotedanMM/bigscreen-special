@@ -1,0 +1,266 @@
+/*
+   contentModule公共样式    王姣
+*/
+.QH-defendContent-left .modulePanel-item{
+    float: left;
+
+}
+/*面板*/
+.modulePanel-item{
+    width: 540px;
+    height:330px;
+    background: url(../../../../src/modules/ContentModule/ModulePanel/commonImg/panelbg.png) no-repeat left center;
+    background-size: 100% auto;
+    margin-left:-35px;
+    position: relative;
+
+}
+.modulePanel-style{
+    padding-left:65px;
+}
+.modulePanel-head {
+    padding-top: 12px;
+}
+.modulePanel-title{
+    line-height: 40px;
+    margin-left: 40px;
+    font-size:24px;
+    font-weight:normal;
+    font-style:italic;
+    color:rgba(0,227,255,1);
+    font-family: 'HanYi';
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    z-index: 4;
+}
+.modulePanel-cont{
+    padding: 5px 10px;
+    height: 270px;
+}
+
+/*panel动画*/
+.shine1 {
+    width: 50px;
+    height: 1px;
+    position: absolute;
+    top: 31px;
+    left: 240px;
+    background: linear-gradient(to right, rgba(0, 228, 255, 0.2), rgba(0, 228, 255, 0.8), rgba(0, 228, 255, 0.2));
+}
+
+.shine2 {
+    width: 1px;
+    height: 70px;
+    position: absolute;
+    top: 55px;
+    right: 10px;
+    background: linear-gradient(to bottom, rgba(0, 228, 255, 0.2), rgba(0, 228, 255, 0.8), rgba(0, 228, 255, 0.2));
+    opacity: 0;
+}
+
+.shine3 {
+    width: 70px;
+    height: 1px;
+    position: absolute;
+    bottom:12px;
+    right: 10px;
+    background: linear-gradient(to right, rgba(0, 228, 255, 0.2), rgba(0, 228, 255, 0.8), rgba(0, 228, 255, 0.2));
+    opacity: 0;
+}
+.shine4 {
+    width: 1px;
+    height: 70px;
+    position: absolute;
+    bottom: 15px;
+    left: 62px;
+    background: linear-gradient(to bottom, rgba(0, 228, 255, 0.2), rgba(0, 228, 255, 0.8), rgba(0, 228, 255, 0.2));
+    opacity: 0;
+}
+/*发光的光点动画*/
+.spot{
+    position: absolute;
+    background: #1ad5fc;
+    display: inline-block;
+    width: 11px;
+    height: 2px;
+    box-shadow: 0 0 50px 10px #01fcf3;
+    -webkit-animation-name: spot;
+    animation-name: spot;
+}
+@-webkit-keyframes spot {
+    from {
+        opacity: 0;
+        -webkit-transform: scale3d(0.3, 0.3, 0.3);
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+
+    50% {
+        opacity: 1;
+        -webkit-transform: scale3d(1.3, 1.3, 1.3);
+        transform: scale3d(1.3, 1.3, 1.3);
+    }
+    to{
+        opacity: 0;
+        -webkit-transform: scale3d(0.3, 0.3, 0.3);
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+}
+
+@keyframes spot {
+    from {
+        opacity: 0;
+        -webkit-transform: scale3d(0.3, 0.3, 0.3);
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+
+    50% {
+        opacity: 1;
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+    to{
+        opacity: 0;
+        -webkit-transform: scale3d(0.3, 0.3, 0.3);
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+}
+
+.spot1{
+    top: 22px;
+    left: 1310px;
+}
+.spot2{
+    top: 19px;
+    left: 1430px;
+}
+.spot3{
+    top: 18px;
+    right: 1426px;
+}
+.spot4{
+    top: 21px;
+    right: 1307px;
+}
+
+/*
+   二级弹窗样式  高志军
+*/
+
+.QH-defendContent-left{
+    position: relative;
+}
+.dialong_s{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background:#041126;
+    z-index:10;
+    top: 0;
+}
+.dialong_s_title{
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    position: absolute;
+    left: 105px;
+    font-style: italic;
+    color: #13fae2;
+    font-family: 'HanYi';
+    font-weight: normal;
+    font-size: 24px;
+}
+.dialong_s_right .dialong_s_title{
+    left: 45px;
+}
+.close_dialong_s{
+    position: absolute;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+}
+.close_dialong_s_left{
+    right: 45px;
+}
+.close_dialong_s_right{
+    right: 145px;
+}
+.dialong_s_left{
+    left: -1200px;
+}
+.dialong_s_right{
+    right: -1200px;
+}
+.dialong_s_contont{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.dialong_s_contont .dialong_s_list_contont{
+    width: 90%;
+    height: 100%;
+    border: 1px solid #000;
+    background: url("commonImg/er_bg.png") no-repeat;
+    background-size: 100% 100%;
+}
+.dialong_s_contont .dialong_s_list_btn{}
+
+.dialong_s_list_btn .Secondary_content{
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.dialong_s_list_btn .Secondary_btn_list{
+    margin-bottom: 15px;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 15px;
+    cursor: pointer;
+    color: #a9abaf;
+    width:93px;
+    height:136px;
+    display: flex;
+    align-items: center;
+}
+
+
+.dialong_left_uls_list .Secondary_btn_list{
+    background:url(commonImg/left_btn_notActive.png) no-repeat;
+}
+.dialong_left_uls_list .Secondary_btn_list:hover{
+    background:url(commonImg/left_btn_active.png) no-repeat;
+    color: #fcff00;
+}
+.dialong_left_uls_list .Secondary_btn_list.activeBtn{
+    background:url(commonImg/left_btn_active.png) no-repeat;
+    color: #fcff00;
+}
+.dialong_left_uls_list  .Secondary_btn_list span{
+    width: 20px;
+    display: inline-block;
+    padding-left: 22px;
+    line-height: 20px;
+    font-size:20px;
+}
+
+.dialong_right_uls_list .Secondary_btn_list{
+    background:url(commonImg/right_btn_notActive.png) no-repeat;
+}
+.dialong_right_uls_list .Secondary_btn_list:hover{
+    background:url(commonImg/right_btn_active.png) no-repeat;
+    color: #fcff00;
+}
+.dialong_right_uls_list .Secondary_btn_list.activeBtn{
+    background:url(commonImg/right_btn_active.png) no-repeat;
+    color: #fcff00;
+}
+.dialong_right_uls_list  .Secondary_btn_list span{
+    width: 20px;
+    display: inline-block;
+    padding-left: 50px;
+    line-height: 20px;
+    font-size:20px;
+}

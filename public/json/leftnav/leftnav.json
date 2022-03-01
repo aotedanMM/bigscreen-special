@@ -1,0 +1,82 @@
+{
+    "navList": [{
+            "label": "通用组件",
+            "id": "dicisionSupport",
+            "class": "icon-dicisionSupport",
+            "path": "/LayoutConent",
+            "childClass": "menuWrap_0"
+        },
+        {
+            "label": "地震业务组件",
+            "id": "citySafeRun",
+            "class": "icon-citySafeRun",
+            "path": "/erthquake",
+            "childClass": "menuWrap_1"
+        },
+        {
+            "label": "台风业务组件",
+            "id": "riskAssessment",
+            "class": "icon-riskAssessment",
+            "path": "/flood",
+            "childClass": "menuWrap_2"
+        }
+    ],
+    "defaultList0": [{
+            "id": "01000001",
+            "title": "风险概况"
+        },
+        {
+            "id": "01000002",
+            "title": "风险分析"
+        },
+        {
+            "id": "01000003",
+            "title": "风险管控"
+        },
+        {
+            "id": "01000004",
+            "title": "风险详情"
+        }
+    ],
+    "defaultList1": [{
+            "id": "02010001",
+            "title": "监测报警"
+        },
+        {
+            "id": "02010002",
+            "title": "报警趋势"
+        },
+        {
+            "id": "02010003",
+            "title": "报警处置"
+        },
+        {
+            "id": "02010004",
+            "title": "监控视频"
+        }
+    ],
+    "menus": [{
+            "name": "台风灾害",
+            "path": "/typhoon",
+            "isDisabled": false,
+            "query": {
+                "key": "1"
+            }
+        },
+        {
+            "name": "森林防火",
+            "path": "",
+            "isDisabled": true
+        },
+        {
+            "name": "地质灾害",
+            "path": "",
+            "isDisabled": true
+        },
+        {
+            "name": "施工安全",
+            "path": "",
+            "isDisabled": true
+        }
+    ]
+}

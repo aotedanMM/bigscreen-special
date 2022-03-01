@@ -1,0 +1,2756 @@
+:root {
+    /*DemoCtrl模块换肤变量
+      --------------------------*/
+    /*GeneralLegendCtrl图例模块换肤变量
+      --------------------------*/
+    /*PlotManagerCtrl模块换肤变量
+      --------------------------*/
+    /*ui下的MenuManager菜单模块换肤变量*/
+    /*PathAnalysisCtrl路径规划模块换肤变量*/
+    /*PoiCtrl路径规划模块换肤变量*/
+    /*TimeBar时间轴模块换肤变量*/
+    /*StepEditor日期模块换肤变量*/
+    /*DrawerPanel日期模块换肤变量*/
+    /*LinePopup连线弹框模块换肤变量*/
+}
+
+.emap-detail-popup {
+    position: absolute;
+    top: 400px;
+    left: 600px;
+    width: 200px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #364d66;
+    border-radius: 4px;
+}
+
+.emap-democtrl-panel {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    width: 300px;
+    background-color: #fff;
+    border: 1px solid #364d66;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .12);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .12);
+}
+
+.emap-democtrl-panel>span {
+    margin: 10px auto;
+    display: block;
+    width: 90%;
+    height: 30px;
+}
+
+.emap-democtrl-panel>span>select {
+    float: left;
+    width: 80%;
+    height: 30px;
+    line-height: 30px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.emap-democtrl-panel>span>input {
+    float: right;
+    width: 20%;
+    height: 30px;
+    line-height: 30px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.emap-democtrl-list {
+    width: 100%;
+    color: rgb(31, 42, 61);
+    border-top: 1px solid #364d66;
+}
+
+.emap-democtrl-list>span {
+    display: block;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    text-indent: 1em;
+}
+
+.emap-democtrl-list ul li {
+    padding-left: 20px;
+    height: 30px;
+    line-height: 30px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.emap-democtrl-list ul li:nth-child(odd) {
+    background-color: #eee;
+}
+
+.emap-democtrl-list ul li img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+
+/**主面板*/
+
+.eMap-LayerManagerCtrl-panel {
+    height: 550px;
+    width: 300px;
+    position: absolute;
+    top: 100px;
+    right: 60px;
+}
+
+.eMap-LayerManagerCtrl-list {
+    margin: 0 auto;
+    width: 95%;
+    height: 100%;
+}
+
+.eMap-LayerManagerCtrl-list .eMap-list {
+    min-width: 282px;
+    height: 470px;
+}
+
+.eMap-LayerManagerCtrl-list .eMap-list_item_con {
+    width: 100%;
+}
+
+.eMap-LayerManagerCtrl-list .eMap-list_item_icon {
+    float: left;
+    width: 20%;
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+}
+
+.eMap-LayerManagerCtrl-list .eMap-list_item_right {
+    width: 80%;
+    margin-left: 20%;
+}
+
+.eMap-LayerManagerCtrl-list .eMap-list_item_right span {
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+}
+
+.eMap-LayerManagerCtrl-list .eMap-list_item_right span:first-child {
+    width: 60%;
+}
+
+.eMap-LayerManagerCtrl-list .eMap-list_item {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.eMap-LayerManagerCtrl-dialogapp {
+    position: absolute;
+    width: 360px;
+    height: 300px;
+    left: 50%;
+    top: 50%;
+}
+
+#eMap-LayerManagerCtrl-dialogapp-selectFile {
+    height: 34px;
+    width: 100%;
+}
+
+
+/*添加图层弹框页面样式*/
+
+.emap-layerAdd-radioBox {
+    height: 45px;
+    line-height: 45px;
+}
+
+.emap-layerAdd-changeWmsUrl .gs-el-textarea textarea {
+    resize: none;
+}
+
+.emap-layerAdd-radioBox .gs-el-radio__label {
+    font-weight: bolder;
+}
+
+.emap-layerAdd-formatSpan>span:first-child {
+    float: left;
+    width: 100px;
+    display: inline-block;
+    text-align: center;
+}
+
+.emap-layerAdd-changeFile,
+.emap-layerAdd-changeName,
+.emap-layerAdd-changeWms,
+.emap-layerAdd-changeWmsUrl,
+.emap-layerAdd-changeWmsName {
+    margin-top: 5px;
+}
+
+.emap-layerAdd-radioBox .emap-layerAdd-radio {
+    display: inline-block;
+}
+
+.emap-layerAdd-changeName .gs-el-input,
+.emap-layerAdd-changeWmsUrl .gs-el-textarea,
+.emap-layerAdd-changeWmsName .gs-el-input {
+    width: 217px;
+}
+
+.emap-layerAdd-button {
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 60%;
+    height: 50px;
+    text-align: center;
+}
+
+.emap-layerAdd-button>span {
+    float: left;
+    width: 50%;
+}
+
+
+/* 路径规划容器样式*/
+
+.leaflet-router {
+    width: 300px;
+    background: white;
+    border: 1px solid #364d66;
+    border-radius: 0px;
+    position: absolute;
+    top: 138px;
+    left: 13px;
+    z-index: 7;
+}
+
+
+/*路径规划标题*/
+
+.leaflet-router-title {
+    border-bottom: 1px solid #364d66;
+    height: 30px;
+    line-height: 30px;
+}
+
+
+/*路径规划标题*/
+
+.leaflet-router-title-text {
+    height: 30px;
+    display: inline-block;
+    color: #333333;
+    font-size: 14px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+
+/*路径规划关闭按钮*/
+
+.leaflet-router-title-close {
+    background: url("../../../../deps/tsemap/controls/PathAnalysisCtrl/img/searchbox.png") no-repeat -5px -43px;
+    display: inline-block;
+    float: right;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+
+/*路径规划搜索按钮*/
+
+.leaflet-router-search {
+    width: 40px;
+    height: 30px;
+    float: right;
+    background: url("../../../../deps/tsemap/controls/PathAnalysisCtrl/img/searchbox.png") no-repeat -10px -80px #364d66;
+    cursor: pointer;
+}
+
+
+/*路径规划搜索条件正文*/
+
+.leaflet-router-content {
+    position: relative;
+    width: 100%;
+}
+
+
+/*路径规划起始点互换div*/
+
+.leaflet-router-reverse {
+    width: 39px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+}
+
+
+/*互换icon*/
+
+.leaflet-router-reverse-icon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 18px;
+    height: 14px;
+    margin-left: -9px;
+    background: url("../../../../deps/tsemap/controls/PathAnalysisCtrl/img/revert.png") no-repeat 0 0;
+}
+
+
+/*搜索条件父div*/
+
+.leaflet-router-inputs {
+    margin-left: 39px;
+}
+
+
+/*单个搜索条件外div*/
+
+.leaflet-router-input-div {
+    height: 40px;
+    border-bottom: 1px solid #eaebed;
+    position: relative;
+}
+
+
+/*起始点icon*/
+
+.start-icon {
+    width: 10px;
+    height: 12px;
+    position: absolute;
+    top: 15px;
+    left: 0;
+    background: url("../../../../deps/tsemap/controls/PathAnalysisCtrl/img/start2.png") no-repeat;
+    cursor: pointer;
+}
+
+
+/*结束点icon*/
+
+.end-icon {
+    width: 10px;
+    height: 12px;
+    position: absolute;
+    top: 15px;
+    left: 0;
+    background: url("../../../../deps/tsemap/controls/PathAnalysisCtrl/img/end2.png") no-repeat;
+    cursor: pointer;
+}
+
+
+/*途经点icon*/
+
+.stop-icon {
+    width: 10px;
+    height: 12px;
+    position: absolute;
+    top: 15px;
+    left: 0;
+    background: url("../../../../deps/tsemap/controls/PathAnalysisCtrl/img/stop2.png") no-repeat;
+    cursor: pointer;
+}
+
+
+/*删除条件icon*/
+
+.del-input {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 12px;
+    right: 5px;
+    cursor: pointer;
+    background: url("../../../../deps/tsemap/controls/PathAnalysisCtrl/img/banner.png") no-repeat -19px -223px;
+}
+
+
+/*单个搜索条件input样式*/
+
+.leaflet-router .leaflet-router-input {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 0;
+    height: 100%;
+    width: 215px;
+    padding: 10px 0;
+    border-left: 20px solid transparent;
+    line-height: 20px;
+    outline: 0;
+}
+
+
+/*清空input icon*/
+
+.input-clear {
+    cursor: pointer;
+    position: absolute;
+    width: 27px;
+    height: 38px;
+    background: url("../../../../deps/tsemap/controls/PathAnalysisCtrl/img/searchbox.png") no-repeat 0 -114px #fff;
+    top: 1px;
+    left: auto;
+    display: none;
+    right: 18px;
+}
+
+
+/*添加搜索条件*/
+
+.add-input {
+    cursor: pointer;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: url("../../../../deps/tsemap/controls/PathAnalysisCtrl/img/banner.png") no-repeat -1px -223px #fff;
+    top: 12px;
+    right: 5px;
+}
+
+
+/*搜索结果展示容器*/
+
+.leaflet-router-result {
+    width: 300px;
+    background: white;
+    border: 1px solid #364d66;
+    /*border-radius: 5px;*/
+    position: absolute;
+    z-index: 7;
+}
+
+
+/*搜索策略div*/
+
+.leaflet-router-result-tabDiv {
+    margin-bottom: 5px;
+    /*display: none;*/
+}
+
+
+/*搜索策略ul*/
+
+.leaflet-router-strategy {
+    border: 1px solid #e4e6e7;
+    color: #666;
+    overflow: hidden;
+    margin: 20px 10px 0;
+}
+
+
+/*搜索策略li*/
+
+.strategy-item {
+    float: left;
+    border-right: 1px solid #e4e6e7;
+    line-height: 32px;
+    width: 33.3%;
+    text-align: center;
+    cursor: pointer;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 13px;
+    font-weight: 400;
+    color: #666;
+    font-family: Arial, Helvetica, "Microsoft YaHei", scan-serif;
+}
+
+.strategyOn {
+    background: #f5f7f7;
+}
+
+li.strategy-item:hover {
+    background: #f0f0f0;
+}
+
+
+/*搜索策略active*/
+
+.strategy-active-item {
+    color: #333;
+    background: #f5f7f7;
+}
+
+
+/*道路信息父div*/
+
+.leaflet-router-roadInfo {
+    overflow-y: auto;
+    max-height: 280px;
+    color: #666;
+    line-height: 20px;
+    margin: 0 10px;
+}
+
+
+/*道路总长*/
+
+.leaflet-router-result-length {
+    margin: 10px;
+    display: block;
+    padding: 8px;
+    color: #666;
+    background: #EBF1FB;
+    cursor: default;
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+.leaflet-router-roadInfo-li:hover,
+.li-active {
+    color: #333;
+    background: #EBF1FB;
+}
+
+
+/*转向图片*/
+
+.leaflet-router-direct {
+    padding: 0 5px;
+}
+
+
+/*道路信息li样式*/
+
+.leaflet-router-roadInfo-li {
+    margin: 5px 0;
+    cursor: pointer;
+    border-bottom: 1px solid #e4e6e7;
+    padding: 10px 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+/*.leaflet-router-suggest {
+    display: none;
+    background-color: darkgrey;
+}*/
+
+.leaflet-router-suggest {
+    display: none;
+    padding: 0px;
+    border: 1px solid #b0cacd;
+    background-color: white;
+    overflow: hidden;
+    z-index: 200001;
+}
+
+.leaflet-router-suggest ul {
+    width: 100%;
+    list-style-position: outside;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.leaflet-router-suggest li {
+    margin: 0px;
+    padding: 2px 5px;
+    cursor: default;
+    display: block;
+    /*
+      if width will be 100% horizontal scrollbar will apear
+      when scroll mode will be used
+      */
+    /*width: 100%;*/
+    font: menu;
+    font-size: 12px;
+    /*
+      it is very important, if line-height not setted or setted
+      in relative units scroll will be broken in firefox
+      */
+    line-height: 16px;
+    overflow: hidden;
+}
+
+.ac_loading {
+    /*background: white url('indicator.gif') right center no-repeat;*/
+}
+
+.ac_odd {
+    background-color: #eee;
+}
+
+.leaflet-router-suggest_over {
+    background-color: #69a1b5;
+    color: white;
+}
+
+.emap-PlotManagerCtrl-btn {
+    line-height: 36px;
+}
+
+.emap-PlotManagerCtrl-manageBtn {
+    text-align: right;
+}
+
+.emap-PlotManagerCtrl-container .gs-el-tabs--vertical>.gs-el-tabs__content {
+    padding: 5px;
+}
+
+.emap-PlotManagerCtrl-container .gs-el-button {
+    padding: 5px 10px;
+}
+
+
+/*常用标绘样式*/
+
+.emap-PlotManagerCtrl-plotLists {
+    height: 480px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin-top: 20px;
+}
+
+.emap-PlotManagerCtrl-plotLists .eMap-list--modeMulti_item_icon {
+    margin-top: 0px;
+}
+
+.emap-PlotManagerCtrl-plotLists .eMap-list--modeMulti_item_icon img {
+    width: 40px;
+    height: 40px;
+}
+
+
+/*标绘工具箱样式*/
+
+.emap-PlotManagerCtrl-plotTools .eMap-list--modeMulti_item_icon,
+.emap-PlotManagerCtrl-plotLists .eMap-list--modeMulti_item_icon {
+    margin-top: 5px;
+}
+
+.emap-PlotManagerCtrl-plotTools .eMap-list--modeMulti_item_icon img {
+    width: 40px;
+    height: 40px;
+}
+
+.emap-PlotManagerCtrl-plotTools .eMap-list--modeMulti_item_txt,
+.emap-PlotManagerCtrl-plotLists .eMap-list--modeMulti_item_txt {
+    position: absolute;
+    bottom: 1px;
+    margin-top: 0px;
+    line-height: 14px;
+    max-height: 28px;
+    overflow-y: hidden;
+}
+
+.emap-PlotManagerCtrl-container .gs-el-collapse {
+    border: 0px;
+}
+
+.emap-PlotManagerCtrl-plotTools .toolbox-picList-item {
+    float: left;
+    width: 90px;
+    margin-right: 8px;
+}
+
+.emap-PlotManagerCtrl-plotTools .toolbox-onlyAdd {
+    width: 90px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.emap-PlotManagerCtrl-plotTools .file-warp {
+    position: relative;
+}
+
+.emap-PlotManagerCtrl-plotTools .file-sub {
+    position: absolute;
+}
+
+.emap-PlotManagerCtrl-plotTools .toolbox-add-btn {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 56px;
+    line-height: 56px;
+    font-size: 22px;
+    text-align: center;
+    background-color: #ececec;
+    color: #cbcbcb;
+}
+
+.emap-PlotManagerCtrl-plotTools .toolbox-add-txt {
+    bottom: 0;
+    color: #333;
+    height: 22px;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+}
+
+input[type="file"] {
+    display: block;
+}
+
+.emap-PlotManagerCtrl-plotTools .file-self {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    cursor: pointer;
+}
+
+.emap-PlotManagerCtrl-plotTools .toolbox-picList-pic {
+    position: relative;
+    width: 90px;
+}
+
+.emap-PlotManagerCtrl-plotTools .toolbox-picList-item-img {
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 80px;
+    height: 65px;
+    border: 2px solid transparent;
+}
+
+.emap-PlotManagerCtrl-plotTools .toolbox-picList-item-img:hover {
+    border: 2px solid #364d66;
+}
+
+
+/*管理标绘样式*/
+
+.emap-PlotManagerCtrl-plotManage .gs-el-table__body-wrapper {
+    height: 305px;
+}
+
+.emap-PlotManagerCtrl-plotManage .custom-class-pink .cell {
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: center;
+}
+
+.emap-PlotManagerCtrl-plotManage .gs-el-collapse-item__wrap {
+    border-bottom: 0px;
+}
+
+.emap-PlotManagerCtrl-plotManage .gs-el-collapse-item__content {
+    padding: 10px 5px;
+}
+
+.emap-PlotManagerCtrl-plotManage .gs_table_block {
+    position: absolute;
+    bottom: 15px;
+    left: -5px;
+    padding: 6px 0px;
+}
+
+.emap-PlotManagerCtrl-container .gs-el-dialog--small {
+    width: auto;
+}
+
+.emap-PlotManagerCtrl-container .gs-el-dialog__header {
+    padding: 0px 10px;
+    text-align: center;
+    background-color: #364d66;
+    line-height: 38px;
+}
+
+
+/*常用标绘弹框样式*/
+
+.emap-PlotManagerCtrl-alertBox ul li {
+    padding-top: 6px;
+}
+
+.emap-PlotManagerCtrl-alertBox ul>li>div {
+    display: inline-block;
+}
+
+.emap-PlotManagerCtrl-alertBox ul li>div:first-child {
+    width: 35%;
+    height: 36px;
+    line-height: 36px;
+    color: #fff;
+}
+
+.emap-PlotManagerCtrl-alertBox ul li>div:last-child {
+    width: 65%;
+    vertical-align: top;
+}
+
+.emap-PlotManagerCtrl-alertBox .gs-el-textarea textarea {
+    resize: none;
+}
+
+.gs-el-color-dropdown__link-btn {
+    display: none !important;
+}
+
+.emap-ThematicCtrl-container {
+    position: absolute;
+    width: 1024px;
+    height: 666px;
+    left: 50%;
+    top: 50%;
+    margin-left: -512px;
+    margin-top: -330px;
+    -webkit-box-shadow: 0 0 0 999999px rgba(0, 0, 0, 0.75);
+    box-shadow: 0 0 0 999999px rgba(0, 0, 0, 0.75);
+    z-index: 108;
+    border-radius: 6px;
+}
+
+.emap-thematic-container {
+    width: 100%;
+    height: 608px;
+    background-color: #fff;
+}
+
+.emap-thematic-container-map {
+    left: 50%;
+    top: 50%;
+}
+
+.emap-thematic-content {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 1000px;
+    height: 606px;
+    background-color: #ffffe3;
+    border: 1px solid #000000;
+}
+
+.emap-thematic-title input.gs-el-input__inner {
+    text-align: center;
+    border: none;
+    background-color: transparent;
+}
+
+.emap-thematic-user input.gs-el-input__inner {
+    text-align: center;
+    border: none;
+}
+
+.emap-thematic-bottom input.gs-el-input__inner {
+    background-color: transparent;
+}
+
+.emap-thematic-bottom {
+    position: absolute;
+    bottom: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    height: 42px;
+    padding: 0 20px;
+}
+
+.emap-thematic-bottom>div {
+    display: inline-block;
+    width: 33%;
+    height: 36px;
+    line-height: 36px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-top: 7px;
+}
+
+.emap-thematic_time>span {
+    display: inline-block;
+}
+
+.emap-thematic-time-title {
+    margin-right: 8px;
+}
+
+.emap-thematic-bottom>div:last-child {
+    text-align: right;
+}
+
+.emap-thematic_scale_width {
+    display: inline-block;
+    margin-left: 10px;
+    width: 120px;
+    height: 5px;
+    background: #000;
+}
+
+.emap-thematic_compass_bounce {
+    position: absolute;
+    top: 0px;
+    left: 40px;
+    width: 55px;
+    height: 70px;
+    background: url("../../../../deps/tsemap/controls/ThematicMapCtrl/img/compass.png") no-repeat;
+    background-size: 100%;
+}
+
+.emap-GeneralLegendCtrl-box {
+    position: absolute;
+    bottom: 200px;
+    right: 50px;
+    padding: 10px;
+    background-color: #364d66;
+    border-radius: 3px;
+}
+
+.mode-phasor-img,
+.mode-video-img {
+    width: 48px;
+    height: 18px;
+}
+
+.mode-video-img {
+    background-image: url("../../../../deps/tsemap/controls/SwitchMapCtrl/img/earth.png");
+}
+
+.mode-phasor-img {
+    background-image: url("../../../../deps/tsemap/controls/SwitchMapCtrl/img/vector.png");
+}
+
+
+/* 半透明的遮罩层 */
+
+.overlay {
+    /*background: #000;*/
+    /*!*filter: alpha(opacity=70); !* IE的透明度 *!*!*/
+    /*!*opacity: 0.7; !* 透明度 *!*!*/
+    /*z-index: 100; !* 此处的图层要大于页面 *!*/
+}
+
+.overlay_close {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border: 2px solid #fff;
+    border-radius: 50px !important;
+    color: #fff;
+    font-size: 50px;
+    z-index: 101;
+}
+
+.overlay_bg {
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    top: 0%;
+    background: #000;
+    filter: alpha(opacity=70);
+    /* IE的透明度 */
+    opacity: 0.7;
+    /* 透明度 */
+    z-index: 100;
+    /* 此处的图层要大于页面 */
+}
+
+.overlay_close span {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 7px;
+    top: -13px;
+    cursor: pointer;
+}
+
+.overlay_content {
+    border-radius: 6px;
+    border: 8px solid rgb(202, 202, 202);
+    /*outline: 10px solid #000;*/
+    filter: alpha(opacity=100);
+    /* IE的透明度 */
+    opacity: 1;
+    /* 透明度 */
+    background: #FFF;
+    z-index: 101;
+    /* 此处的图层要大于页面 */
+    width: 80%;
+    height: 80%;
+    left: 10%;
+    top: 10%;
+    position: absolute;
+}
+
+.overlay_content .omap1 {
+    /*outline: 10px solid #000;*/
+    /*box-shadow: 10px 10px 5px #888888;*/
+    z-index: 102;
+    /* 此处的图层要大于页面 */
+    width: 50%;
+    height: 100%;
+    left: 0%;
+    top: 0%;
+    position: absolute;
+}
+
+.overlay_content .omap1 .ol-scale-line-inner {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.overlay_content .omap2 {
+    /*outline: 1px solid rgba(136, 136, 136, 0.34);*/
+    /*box-shadow: 10px 10px 5px #888888;*/
+    z-index: 102;
+    /* 此处的图层要大于页面 */
+    width: 50%;
+    height: 100%;
+    left: 50%;
+    top: 0%;
+    position: absolute;
+}
+
+.overlay_content .omap2 .ol-scale-line-inner {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.emap-control-mouseposition {
+    width: 300px;
+    height: 16px;
+    line-height: 17px;
+    text-align: center;
+    border-radius: 2px !important;
+    background: #fefefe;
+    position: absolute;
+    bottom: -33px;
+    left: 82px;
+    z-index: 1;
+    opacity: 2;
+    font-size: 12px;
+}
+
+
+/*图比例尺*/
+
+.eMap-legend-box {
+    position: absolute;
+    bottom: -25px;
+    left: 8px;
+    width: 300px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.eMap-legend {
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    text-align: center;
+    color: inherit;
+    margin-right: 20px;
+}
+
+.eMap-legend:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 5px;
+    border-bottom: 3px solid #0d223b;
+    border-left: 2px solid #0d223b;
+    border-right: 2px solid #0d223b;
+    left: 0;
+    bottom: 0;
+}
+
+.eMap-legend-txt {
+    text-align: center;
+    display: inline-block;
+    color: inherit;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: rgba(255, 255, 255, .9);
+}
+
+#containerBox {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 280px;
+    height: 800px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.emap-styleEditorBox {
+    color: #FFF;
+    background: #242728;
+    width: 100%;
+}
+
+.emap-styleEditor-container {
+    margin-bottom: 20px;
+    width: 100%;
+    min-width: 265px;
+    font-size: 14px;
+}
+
+.emap-styleEditor-container h4 {
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    text-indent: 1em;
+}
+
+.emap-styleEditor-container ul {
+    padding: 0px 10px;
+}
+
+.emap-styleEditor-container ul li {
+    width: 100%;
+    margin-top: 5px;
+    list-style: none;
+}
+
+.emap-styleEditor-container ul>li>div {
+    display: inline-block;
+}
+
+.emap-styleEditor-container ul>li>div:first-child {
+    width: 35%;
+    height: 36px;
+    line-height: 36px;
+}
+
+.emap-styleEditor-container ul>li>div:last-child {
+    width: 65%;
+    vertical-align: top;
+}
+
+.emap-styleEditor-container ul>li>span {
+    display: inline-block;
+    width: 47%;
+    margin-right: 3%;
+}
+
+.emap-styleEditor-container .gs-el-input-number {
+    width: 100%;
+}
+
+.emap-styleEditor-zIndexMin,
+.emap-styleEditor-zIndexMax {
+    float: left;
+}
+
+
+/*数据元素样式代码*/
+
+.emap-collapse-container {
+    margin-top: 10px;
+    padding: 5px;
+    background-color: #35383a;
+}
+
+.emap-collapse-top {
+    height: 30px;
+    line-height: 30px;
+}
+
+.emap-collapse-top .emap-collapse-title {
+    float: left;
+}
+
+.emap-collapse-top .emap-collapse-switchOff {
+    float: right;
+}
+
+.emap-collapse-content {
+    clear: both;
+}
+
+.emap-collapse-content img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.emap-styleEditor-cluster>div {
+    margin-top: 10px;
+}
+
+.emap-styleEditor-cluster>div>span {
+    display: inline-block;
+}
+
+.emap-styleEditor-cluster>div>span:first-child {
+    width: 40%;
+    text-align: center;
+}
+
+.emap-styleEditor-cluster>div>span:last-child {
+    width: 60%;
+}
+
+.emap-styleEditor-clusterClassifyBox>li>span {
+    width: 30.33% !important;
+    height: 36px;
+    line-height: 36px;
+}
+
+.emap-styleEditor-clusterClassifyBox>li>span:last-child {
+    position: relative;
+    top: 8px;
+}
+
+.emap-styleEditor-defaultSymbolSelectBox span {
+    display: inline-block;
+    width: 50%;
+}
+
+
+/*分级样式代码*/
+
+.emap-render-changeRender span {
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+}
+
+.emap-render-container {
+    position: relative;
+    margin: 0 auto;
+    width: 97%;
+    min-height: 100px;
+    max-height: 420px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.emap-render-addBtn,
+.emap-render-syncBtn {
+    margin: 0 auto;
+    width: 90%;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+}
+
+.emap-render-addBtn span,
+.emap-render-syncBtn span {
+    display: inline-block;
+    margin-left: 10px;
+    width: 60px;
+    height: 25px;
+    line-height: 25px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #2892E2;
+    border-radius: 3px;
+}
+
+.emap-render-zoomBox {
+    margin: 20px 5px;
+    border: 1px solid #fff;
+}
+
+.emap-render-topBox {
+    position: relative;
+    width: 100%;
+}
+
+.emap-render-topBox span:first-child {
+    width: 30%;
+    position: absolute;
+    left: 0px;
+    top: -15px;
+}
+
+.emap-render-topBox span:last-child {
+    width: 45px;
+    height: 25px;
+    position: absolute;
+    right: -7px;
+    top: 5px;
+    text-align: center;
+    color: red;
+    font-size: 15px;
+}
+
+.emap-render-topBox .gs-el-input__inner {
+    height: 25px;
+}
+
+.emap-render-addLevelBox>ul>li {
+    margin-top: 10px;
+    width: 90%;
+    height: 30px;
+    line-height: 30px;
+}
+
+.emap-render-addLevelBox>ul>li>span {
+    float: left;
+    display: inline-block;
+    width: 50%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.emap-render-addLevelBox>ul>li>span>input {
+    width: 100%;
+    height: 30px;
+}
+
+.emap-render-addLevelSure {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+
+/*分类样式*/
+
+.emap-classify-container {
+    width: 100%;
+    height: 300px;
+}
+
+.emap-classifyField-topBox {
+    margin-top: 5px;
+}
+
+.emap-classifyField-topBox span {
+    float: left;
+    width: 50%;
+    height: 30px;
+    line-height: 30px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.emap-classifyField-topBox span:last-child {
+    border: 1px solid #fff;
+}
+
+.emap-classifyField-treeContainer {
+    width: 100%;
+    height: 250px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: #fff;
+}
+
+
+/*分类设置弹框样式*/
+
+.emap-ClassifyData-content {
+    margin-top: 10px;
+    width: 97%;
+    height: 80%;
+}
+
+.emap-ClassifyData-contentLeft,
+.emap-ClassifyData-contentRight {
+    position: relative;
+    padding: 10px;
+    width: 47%;
+    height: 100%;
+    float: left;
+    border: 1px solid #ccc;
+    margin-left: 3%;
+    border-radius: 5px;
+    overflow: auto;
+}
+
+.emap-ClassifyData-selectAll,
+.emap-ClassifyData-selectData ul li {
+    cursor: pointer;
+}
+
+.emap-ClassifyData-selectData ul li span,
+.emap-ClassifyData-selectAll span {
+    margin-left: 10px;
+}
+
+.emap-ClassifyData-sureBtn {
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.emap-ClassifyData-removeBtn {
+    position: absolute;
+    right: 10px;
+    top: 95px;
+}
+
+.emap-ClassifyData-removeBtn span {
+    display: block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.emap-ClassifyData-newAdd {
+    width: 100%;
+    text-align: right;
+}
+
+.emap-ClassifyData-newAdd .gs-el-button {
+    padding: 5px 10px;
+}
+
+.emap-ClassifyData-detailDatas {
+    height: 225px;
+    width: 100%;
+    overflow-x: auto;
+}
+
+.emap-ClassifyData-detailDatas ul li {
+    position: relative;
+    width: 100%;
+    height: 25px;
+    line-height: 25px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.emap-ClassifyData-detailDatas ul li span:nth-child(1) {
+    margin-left: 5px;
+}
+
+.emap-ClassifyData-detailDatas ul li span:nth-child(2) {
+    position: absolute;
+    top: 2.5px;
+    right: 10px;
+    font-size: 20px;
+    color: red;
+}
+
+.poi-search-container-temp {
+    float: left;
+    width: 250px;
+    height: 50px;
+    margin-left: 10px;
+    border-radius: 3px;
+    background-color: rgb(255, 255, 255);
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+
+/**æœç´¢æ ***/
+
+.poi-search-container {
+    width: 250px;
+    height: 50px;
+    line-height: 28px;
+    text-align: left;
+    vertical-align: middle;
+    margin-top: 18px;
+    background: #f4f4f4;
+    float: right;
+    border-radius: 7px;
+    position: absolute;
+    right: 0px;
+    top: -18px;
+}
+
+.poi-search-container>input[type=text] {
+    width: 82%;
+    height: 100%;
+    margin-left: 10px;
+    border: none;
+    font-size: 14px;
+    background: #f4f4f4;
+    padding-left: 5px;
+}
+
+.poi-search-container>input {
+    display: inline-block;
+}
+
+.poi-search-container>a {
+    color: #333333;
+    margin-top: 6px;
+    margin-right: 12px;
+    font-size: 18px;
+    vertical-align: -3px;
+}
+
+
+/**è¾“å…¥åŒ¹é…**/
+
+.poi-search-match {
+    position: absolute;
+    /*display: none;*/
+    min-height: 50px;
+    background: #fff;
+    z-index: 10;
+    font-size: 14px;
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.poi-search-match>ul {
+    margin: 0;
+    padding: 0;
+}
+
+.poi-search-match>ul>li {
+    height: 28px;
+    line-height: 28px;
+    padding-left: 15px;
+    display: block;
+    color: #000;
+    border-bottom: 1px solid #f1f0ed;
+    cursor: pointer;
+}
+
+.poi-search-match-text {
+    display: inline-block;
+    /*width: 220px;*/
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.poi-search-match>ul>li[data-odd] {
+    background: #D2E6EF;
+}
+
+.poi-search-match>ul>li.poi-search-match-hover {
+    background: #f2f2f2;
+}
+
+
+/**ç»“æžœåˆ—è¡¨**/
+
+.poi-result-statistics {
+    padding-left: 20px;
+    line-height: 30px;
+    height: 30px;
+    background: #EFF2EF;
+    text-align: left;
+    margin-bottom: 8px;
+    display: block;
+    color: #333333;
+}
+
+.poi-result-statistics>span {
+    font-weight: bold;
+    color: #E8633B;
+}
+
+.poi-result-list {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.poi-result-list ul.gis-list {
+    height: 350px;
+}
+
+.poi-result-list>.row {
+    margin: 5px 5px;
+}
+
+.poi-result-list table td {
+    /*	font-size:12px;
+           padding:5px 0px;
+          text-align:left;*/
+}
+
+.poi-record-icondiv {
+    margin-top: 0px;
+}
+
+.poi-record-icon {
+    display: inline-block;
+    height: 32px;
+    width: 25px;
+    font-size: 12px;
+}
+
+
+/**å¸¦æ•°å­—çš„marker**/
+
+.poi-marker-icon {
+    background: url("../../../../deps/tsemap/controls/PoiCtrl/img/poi.png") no-repeat center 0px;
+    line-height: 24px;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+}
+
+.poi-marker-icon:hover {
+    background: url("../../../../deps/tsemap/controls/PoiCtrl/img/highlight.png") no-repeat center 0px;
+    color: #fff;
+}
+
+.poi-record-title {
+    color: #333333;
+    /* 	float: left; */
+}
+
+
+/***å¼¹å‡ºçš„ä¿¡æ¯æ¡†*/
+
+.poi-popup-div {
+    padding: 5px;
+}
+
+.poi-popup-div table th {
+    font-size: 14px;
+    text-align: right;
+}
+
+.poi-popup-div table td {
+    text-align: left;
+}
+
+.poi-template-popbtn {
+    display: inline-block;
+    vertical-align: baseline;
+    margin: 0 2px;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font: 14px/100% Arial, Helvetica, sans-serif;
+    padding: .5em;
+    border-radius: .5em;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+    color: #fff !important;
+    border: solid 1px #b7b7b7;
+    background: #097cd1 !important;
+}
+
+.poi-template-poplabel {
+    text-align: center;
+    padding-top: 5px;
+    display: block;
+    white-space: nowrap;
+    line-height: 20px;
+    min-width: 180px;
+}
+
+.poi-template-popdiv {
+    text-align: center;
+    margin: 0 auto;
+}
+
+#closePoiPopBtn {
+    float: right;
+    cursor: pointer;
+}
+
+.collapsible-content-nooverflow {
+    background-color: white;
+}
+
+.emap-linePopup-content-class .g2-tooltip {
+    position: relative;
+    bottom: 16px;
+    left: -19px;
+}
+
+.emap-linePopup-container {
+    z-index: 99;
+    background-color: transparent!important;
+}
+
+.g2-tooltip {
+    display: none;
+    position: absolute;
+    /*background-color: #fff;*/
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.2));
+    /*padding: 15px 10px 10px 10px;*/
+    border-radius: 0;
+    /*border: 1px solid #b6b6b6;*/
+    bottom: 10px;
+    left: -46px;
+}
+
+
+/*.g2-tooltip:after, .g2-tooltip:before {*/
+
+
+/*top: 100%;*/
+
+
+/*border: solid transparent;*/
+
+
+/*content: " ";*/
+
+
+/*height: 0;*/
+
+
+/*width: 0;*/
+
+
+/*position: absolute;*/
+
+
+/*pointer-events: none;*/
+
+
+/*}*/
+
+.g2-tooltip:after {
+    border-top-color: white;
+    border-width: 10px;
+    left: 45px;
+    margin-left: -10px;
+}
+
+.g2-tooltip:before {
+    border-top-color: #b6b6b6;
+    border-width: 11px;
+    left: 45px;
+    margin-left: -11px;
+}
+
+
+/*datalistçš„æ¨¡æ¿æ ·å¼*/
+
+#poiSearch {
+    right: 90px;
+    top: 150px;
+    width: 300px;
+}
+
+.gis-szxf-dataList-row {
+    font-size: 14px;
+    text-align: left;
+    cursor: pointer;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 1px;
+    padding: 5px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.gis-szxf-dataList-box {
+    width: 100%;
+    height: 45px;
+}
+
+.gis-szxf-dataList-icondiv {
+    float: left;
+    width: 15%;
+}
+
+.gis-szxf-dataList-addressdiv {
+    float: left;
+    width: 85%;
+}
+
+.gis-szxf-dataList-addressdiv p {
+    font-size: 13px;
+    height: 20px !important;
+    line-height: 20px !important;
+    margin: 0px !important;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
+/*!*å¼¹å‡ºæ¡†ç¡®è®¤æŒ‰é’®*!
+.eMap-piece-position-tl{
+    position: absolute;
+    top: 85px;
+    left: 40px;
+    bottom: 20px;
+}
+.eMap-piece-position-tr {
+    position: absolute;
+    top: 150px;
+    right: 85px;
+}
+.eMap-piece {
+    z-index: 8;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+    -moz-box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+    box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+}
+
+.eMap-piece-hd {
+    height: 36px;
+    line-height: 36px;
+    padding-left: 11px;
+    padding-right: 11px;
+}
+
+.eMap-piece-ft {
+    position: absolute;
+    background-color: #fff;
+    margin: 38px 2px 2px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    !*border-radius-bottomleft: 3px;
+    border-radius-bottomright: 3px;*!
+}
+
+.eMap-piece-hd-title {
+    float: left;
+    margin-top: 0;
+    margin-left: 0;
+    font-size: 16px;
+    font-weight: normal;
+    color: #fff;
+}
+.eMap-piece-hd-other{
+    float: right;
+}
+.eMap-piece-close{
+    margin-left: 5px;
+    font-size: 16px;
+    vertical-align: middle;
+    color: #fff;
+}
+.eMap-piece-size{
+    font-size: 14px;
+}
+.eMap-piece-ft-m{
+    margin: 10px 15px 0px 10px;
+}
+.eMap-header-bg, .eMap-affixNav-box:after {
+    background: #454d74;
+    background: -moz-linear-gradient(top, #464f77, #2f3652);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#464f77), to(#2f3652));
+    background: -o-linear-gradient(top, #464f77, #2f3652);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#464f77', endColorstr='#2f3652', GradientType=0);
+    background: -ms-linear-gradient(top, #464f77, #042946);
+}
+.eMap-PlotModuleEdit-resize{
+    width: 350px;
+    height: 240px;
+}
+
+.eMap-PlotModuleSave-resize{
+    width: 200px;
+    height: 100px;
+}
+
+!* å¼¹å‡ºçª—å£*!
+.iconSZXF-close{
+    font-family: 'iconMap' !important;
+}
+.iconSZXF-close:before{
+    font-size: 16px;
+    content: "\e92a";
+}*/
+
+.gis-pagination {
+    width: 100%;
+    font-size: 12px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.gis-pagination::before,
+.gis-pagination::after {
+    content: " ";
+    display: block;
+}
+
+.gis-pagination::after {
+    clear: both;
+}
+
+.gis-pagination__total {
+    float: left;
+    line-height: 28px;
+    height: 28px;
+    font-size: 14px;
+}
+
+.gis-pagination__jump {
+    display: inline-block;
+    line-height: 28px;
+    height: 28px;
+    min-width: 28px;
+    font-size: 14px;
+    vertical-align: top;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-left: 8px;
+}
+
+.gis-pagination__editor {
+    border: 1px solid #d9d9d9;
+    border-radius: 2px;
+    line-height: 18px;
+    padding: 4px 2px;
+    width: 30px;
+    text-align: center;
+    margin: 0 6px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: border .3s;
+    transition: border .3s;
+}
+
+.gis-pagination__editor:focus {
+    outline: none;
+    border-color: #108ee9;
+}
+
+input.gis-pagination__editor::-webkit-outer-spin-button,
+input.gis-pagination__editor::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input.gis-pagination__editor {
+    -moz-appearance: textfield;
+}
+
+.gis-pagination__box {
+    list-style: none;
+    float: right;
+    margin-bottom: 0;
+}
+
+.gis-pagination__total>span {
+    color: #ff6800;
+    padding: 0 3px;
+}
+
+.gis-pagination__box>li {
+    display: inline-block;
+    font-family: Arial;
+    color: rgba(0, 0, 0, .65);
+    border: 1px solid #d9d9d9;
+    background-color: #fff;
+    border-radius: 2px;
+    min-width: 20px;
+    height: 24px;
+    line-height: 24px;
+    margin-right: 3px;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    cursor: pointer;
+    outline: 0;
+}
+
+.gis-pagination__box>li:hover,
+.gis-pagination__box>li:focus {
+    border-color: #364d66;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+
+.gis-pagination__box>li a {
+    color: rgba(0, 0, 0, .65);
+    text-decoration: none;
+    -webkit-transition: none;
+    transition: none;
+    margin: 0 4px;
+}
+
+.gis-pagination__box>li:hover a,
+.gis-pagination__box>li:focus a {
+    color: #364d66;
+}
+
+.gis-pagination__box>li.gis-pagination-active {
+    background-color: #364d66;
+    border-color: #364d66;
+}
+
+.gis-pagination__box>li.gis-pagination-active a {
+    color: #fff;
+}
+
+.gis-pagination__box>li.gis-pagination-disabled,
+.gis-pagination__box>li.gis-pagination-disabled a {
+    cursor: not-allowed;
+    color: rgba(0, 0, 0, .25);
+    border-color: #d9d9d9;
+}
+
+
+/*.gis-panel {*/
+
+
+/*box-sizing: border-box;*/
+
+
+/*width: 100%;*/
+
+
+/*height: 100%;*/
+
+
+/*background-color: #ffffff;*/
+
+
+/*box-shadow: 0 0 8px rgba(0, 0, 0, .5);*/
+
+
+/*border: 2px solid #2d5a9b;*/
+
+
+/*-webkit-border-radius: 5px;*/
+
+
+/*-moz-border-radius: 5px;*/
+
+
+/*-o-border-radius: 5px;*/
+
+
+/*border-radius: 5px;*/
+
+
+/*}*/
+
+
+/*.gis-panel__title {*/
+
+
+/*box-sizing: border-box;*/
+
+
+/*width: 100%;*/
+
+
+/*height: 36px;*/
+
+
+/*background-color: #2d5a9b;*/
+
+
+/*line-height: 36px;*/
+
+
+/*position: relative;*/
+
+
+/*z-index: 2;*/
+
+
+/*}*/
+
+
+/*.gis-panel__title_name {*/
+
+
+/*font-size: 14px;*/
+
+
+/*color: #fff;*/
+
+
+/*float: left;*/
+
+
+/*margin-left: 10px;*/
+
+
+/*}*/
+
+
+/*.gis-panel__title_btns {*/
+
+
+/*float: right;*/
+
+
+/*}*/
+
+
+/*.gis-panel__title_btns > a {*/
+
+
+/*font-size: 14px;*/
+
+
+/*color: #fff;*/
+
+
+/*margin-right: 10px;*/
+
+
+/*}*/
+
+
+/*.gis-panel__title_btns > a:hover,*/
+
+
+/*.gis-panel__title_btns > a.active {*/
+
+
+/*color: #f00;*/
+
+
+/*}*/
+
+
+/*.gis-panel__title_btns > a:hover {*/
+
+
+/*cursor: pointer;*/
+
+
+/*}*/
+
+
+/*.gis-panel__content {*/
+
+
+/*position: relative;*/
+
+
+/*top: -36px;*/
+
+
+/*overflow: hidden;*/
+
+
+/*box-sizing: border-box;*/
+
+
+/*width: 100%;*/
+
+
+/*height: 100%;*/
+
+
+/*padding: 44px 8px 8px;*/
+
+
+/*}*/
+
+.gis-list {
+    margin-top: 9px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+
+
+/*ʱ����*/
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.gis-timer-shaft {
+    padding: 10px;
+    background-color: #364d66;
+    border-radius: 4px;
+}
+
+.timer-shaft-modul {
+    position: relative;
+    display: inline-block;
+    width: 560px;
+    height: 35px;
+    overflow: hidden;
+}
+
+.timer-shaft-ul {
+    position: absolute;
+    top: 20px;
+    font-size: 0;
+    list-style-type: none;
+}
+
+.timer-shaft-item {
+    float: left;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+/*���� or ����*/
+
+.timer-shaft-week .timer-shaft-item+.timer-shaft-item {
+    margin-left: 25px;
+}
+
+
+/*��*/
+
+.timer-shaft-month .timer-shaft-item {
+    width: 80px;
+}
+
+.timer-shaft-month .timer-shaft-item+.timer-shaft-item {
+    margin-left: 0;
+}
+
+.timer-shaft-month .timer-slider-dot {
+    top: -12px;
+    left: 36px;
+    width: 8px;
+    height: 8px;
+}
+
+.timer-shaft-month .timer-shaft-item:before {
+    left: -4px;
+    width: 100%;
+}
+
+.timer-shaft-month .timer-shaft-item .timer-shaft-text {
+    letter-spacing: 0;
+}
+
+
+/*��*/
+
+.timer-shaft-date .timer-shaft-item {
+    width: 30px;
+}
+
+.timer-shaft-date .timer-shaft-item+.timer-shaft-item {
+    margin-left: 21px;
+}
+
+.timer-shaft-date .timer-slider-dot {
+    left: 10px;
+}
+
+.timer-shaft-date .timer-shaft-item:before {
+    left: -11px;
+}
+
+.timer-shaft-date .timer-shaft-item:last-of-type:before {
+    width: 52px;
+}
+
+
+/*�� end*/
+
+.timer-shaft-item:before,
+.timer-shaft-item:after {
+    content: '';
+    position: absolute;
+    background-color: rgba(255, 255, 255, .4);
+}
+
+.timer-shaft-item:before {
+    left: -13px;
+    top: -8px;
+    width: 51px;
+    height: 1px;
+}
+
+.timer-shaft-item:after {
+    left: 50%;
+    top: -16px;
+    width: 2px;
+    height: 8px;
+    margin-left: -1px;
+}
+
+.timer-shaft-item .timer-shaft-text {
+    font-size: 12px;
+    color: #fff;
+    font-family: "Microsoft Yahei";
+    letter-spacing: 1px;
+}
+
+.timer-slider-dot {
+    position: absolute;
+    top: -13px;
+    left: 8px;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.timer-shaft-ul li.is-active:after,
+.timer-shaft-item:hover:after {
+    background-color: #fff;
+}
+
+.timer-shaft-ul li.is-active .timer-slider-dot,
+.timer-shaft-item:hover .timer-slider-dot {
+    background-color: #fff;
+}
+
+.timer-slider-btn {
+    display: inline-block;
+}
+
+.timer-slider-single {
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    color: #8799cb;
+    font-size: 12px;
+    text-align: center;
+    line-height: 20px;
+    background-color: #d4dfff;
+    border-radius: 50%;
+    vertical-align: 7px;
+    cursor: pointer;
+}
+
+.timer-slider-single+.timer-slider-single {
+    margin-left: 6px;
+}
+
+
+/*ʱ���� end*/
+
+a {
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+.gisMenu-right-container {
+    display: none;
+    position: absolute;
+    z-index: 999;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.gisMenu-right-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.gisMenu-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    height: 64px;
+    padding-top: 10px;
+    padding-right: 45px;
+    background-color: rgb(5, 105, 204);
+    background-image: url("../../../../deps/tsemap/ui/MenuManage/img/header-bg.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.is-right {
+    float: right;
+}
+
+.gisMenu-header-content {
+    float: right;
+    font-size: 0;
+    padding-top: 13px;
+    margin-right: 70px;
+    display: inline-block;
+}
+
+.gisMenu-header-content .lvton-menu-item {
+    position: relative;
+    padding: 9px 22px 8px 34px;
+    color: #fff;
+    font-size: 14px;
+    border: 1px solid #364d66;
+    border-right: 0;
+}
+
+.lvton-menu-item,
+.lvton-user b:last-child,
+.lvton-tab-btn {
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.lvton-menu-item b {
+    font-size: 20px;
+    padding-right: 10px;
+    vertical-align: -2px;
+}
+
+.gisMenu-header-content .lvton-menu-item:last-child {
+    border-right: 1px solid #364d66;
+    border-bottom-right-radius: 2px;
+    border-top-right-radius: 2px;
+}
+
+.gisMenu-header-content .lvton-menu-item:first-child {
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+
+.gisMenu-header-content .is-active,
+.lvton-menu-item:hover {
+    background-color: #364d66;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.gisMenu-left-container {
+    position: absolute;
+    top: 64px;
+    left: 0;
+    bottom: 0;
+    width: 76px;
+}
+
+.gisMenu-left-container .lvton-tab-item {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    width: 76px;
+    padding-top: 20px;
+    z-index: 100;
+    background-color: #364d66;
+}
+
+.lvton-tab-item a.is-active,
+.lvton-tab-btn:hover {
+    background-color: #fff;
+    color: #364d66;
+}
+
+.lvton-tab-btn {
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 12px;
+    color: #fff;
+}
+
+.lvton-tab-btn [class^='iconMap-'],
+.lvton-tab-btn [class*='iconMap-'] {
+    display: block;
+    font-size: 26px;
+    margin-bottom: 5px;
+}
+
+.lvton-tab-btn span {
+    display: block;
+}
+
+.gisDrawerPanel-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.gisDrawerPanel-left {
+    height: 100%;
+    overflow: hidden;
+    z-index: 999;
+}
+
+.gisDrawerPanel-button {
+    position: absolute;
+    top: 9px;
+    padding: 7.5px;
+    cursor: pointer;
+    background-color: #364d66;
+    border-radius: 3px;
+    color: #fff;
+    text-align: center;
+    z-index: 100;
+}
+
+.gisDrawerPanel-button i {
+    font-size: 22px;
+}
+
+.gis-layout-main {
+    clear: both;
+    width: 100%;
+    height: 45px;
+    min-width: 380px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.gis-timebar {
+    position: relative;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    height: 45px;
+    background-color: #364d66;
+    border-radius: 3px;
+}
+
+.gis-timebar .gs-el-slider__bar {
+    background-color: #fff;
+}
+
+.gis-timebar .gs-el-slider__button {
+    background-color: #fff;
+}
+
+.gis-timebar .gs-el-slider__runway {
+    background-color: #758090;
+}
+
+.gis-timebar span {
+    float: left;
+    color: #fff;
+    cursor: pointer;
+    width: 10%;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+}
+
+.gis-timebar .gs-el-slider__button-wrapper {
+    top: -22px;
+}
+
+.gis-timebar .gs-el-slider {
+    margin-top: 10px;
+}
+
+.gis-timebar span:nth-child(2) {
+    margin: 0 2%;
+    width: 66%;
+}
+
+.gis-layout-main .gs-el-slider__runway {
+    margin: 8px 0;
+}
+
+
+/*日期选择容器样式代码*/
+
+.emap-date-container {
+    position: absolute;
+    top: 140px;
+    right: 100px;
+    width: 330px;
+    height: 300px;
+}
+
+.emap-date-container .eMap-panel_ft>ul>li {
+    margin-top: 15px;
+    text-indent: 5px;
+}
+
+.emap-date-container .eMap-panel_ft>ul>li:last-child {
+    text-align: center;
+}
+
+.emap-date-container .eMap-panel_ft>ul>li>span {
+    display: inline-block;
+}
+
+#datepickerApp>div>div:first-child {
+    margin-bottom: 15px;
+}
+
+.emap-date-container .gs-el-date-editor.gs-el-input {
+    width: 135px;
+}
+
+.emap-date-container .gs-el-date-editor.gs-el-input {
+    width: 135px;
+}
+
+.emap-date-container .emap-select-start>div,
+.emap-date-container .emap-select-end>div {
+    display: inline-block;
+}
+
+.emap-select-start .gs-el-select,
+.emap-select-end .gs-el-select,
+.emap-select-interval .gs-el-select {
+    width: 100px;
+}
+
+.emap-linePopup-dragTitle {
+    height: 30px;
+    line-height: 30px;
+    background-color: #364d66;
+}
+
+.newemap-linePopup-dragTitle {
+    top: 34px;
+    z-index: 9;
+    background-color: transparent!important;
+    position: relative;
+}
+
+.newemap-linePopup-dragTitle .drag-title-close {
+    color: #00f0ff!important;
+}
+
+.emap-linePopup-dragTitle>a {
+    position: absolute;
+}
+
+.drag-title-close {
+    top: -8px;
+    right: 3px;
+    width: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.drag-title-zoom {
+    top: 0px;
+    right: 30px;
+    width: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.drag-title-h2 {
+    top: 0px;
+    left: 10px;
+    width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.emap-linePopup-content {
+    padding: 5px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 14px;
+    line-height: 25px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.emap-linePopup-container>.emap-linePopup-content-class {
+    max-height: 800px !important;
+    border-radius: 10px;
+    width: 100%;
+    min-height: 190px;
+    border: 1px solid rgba(161, 180, 176, 0.01)!important;
+}
+
+.ol-unselectable .ol-scale-line-inner {
+    /* width: 117px; */
+    /*position: fixed;*/
+    bottom: 52px;
+    color: #dfdfdf;
+    border: 1px solid #eee;
+    border-top: none;
+    background: rgba(0, 60, 136, .5);
+    font-size: 26px;
+    text-align: center;
+    margin: 1px;
+    will-change: contents, width;
+    left: 20px;
+    line-height: 1;
+    min-width: 110px !important;
+}
+
+
+/*ts-gis*/
+
+.ol-zoom.ol-unselectable.ol-control {
+    display: none;
+    position: absolute;
+    top: 300px;
+    right: 20px;
+    left: inherit;
+    display: none;
+}
+
+
+/**容器**/
+
+.gs-container-topleft {
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    pointer-events: auto;
+}
+
+.gs-container-topright {
+    position: absolute;
+    top: 30px;
+    right: -18px;
+    pointer-events: auto;
+}
+
+.gs-container-bottomleft {
+    position: absolute;
+    bottom: 2%;
+    left: 20px;
+    pointer-events: auto;
+    z-index: 10;
+}
+
+.gs-container-bottomright {
+    position: absolute;
+    bottom: 1%;
+    right: 20px;
+    pointer-events: auto;
+}
+
+.gs-container-drift {
+    position: relative;
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+}
+
+.gs-container-drift #ToolBarCtrl {
+    z-index: 5;
+    right: 55px !important;
+}
+
+gs-container-subdrift {
+    position: absolute;
+    pointer-events: auto;
+}
+
+.Corners {
+    position: absolute;
+    pointer-events: none;
+}
+
+.mode-wrap {
+    outline: none;
+}

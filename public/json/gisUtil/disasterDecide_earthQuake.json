@@ -1,0 +1,312 @@
+[{
+        "title": "行政区划",
+        "key": "_district",
+        "iconName": "YJ-navIcon-rowA1",
+        "isOpen": false,
+        "mutexkey": [
+            "disasterDecide._reserve,_popluheat,_PersonnelIntensive-school,_PersonnelIntensive-hospital,_PersonnelIntensive-airport,_PersonnelIntensive-railwaystation,_company-hazardous,_company-coalMine,_company-mine,_company-explosive,_ImportantFacilities-reservoir,_ImportantFacilities-portwharf,_ImportantFacilities-nuclear,disinfoper,emergencypart",
+            "ToolIconEventOverview.greenChannel,trafficControl,roadDamage"
+        ],
+        "typeConfig": {
+            "title": "行政区划",
+            "name": "区县",
+            "num": 0,
+            "danwei": "个",
+            "key": "countyCount",
+            "clickKey": "countyCount"
+        }
+    },
+    {
+        "title": "人口分布",
+        "key": "_popluheat",
+        "iconName": "YJ-navIcon-rowA3",
+        "isOpen": false,
+        "mutexkey": [
+            "ToolIconEventOverview.greenChannel,trafficControl,roadDamage",
+            "disasterDecide._reserve,_district,_PersonnelIntensive-school,_PersonnelIntensive-hospital,_PersonnelIntensive-airport,_PersonnelIntensive-railwaystation,_company-hazardous,_company-coalMine,_company-mine,_company-explosive,_ImportantFacilities-reservoir,_ImportantFacilities-portwharf,_ImportantFacilities-nuclear,disinfoper,emergencypart"
+        ],
+        "typeConfig": {
+            "title": "人口",
+            "name": "人口",
+            "num": 0,
+            "danwei": "万人",
+            "key": "population",
+            "clickKey": "population"
+        }
+    },
+    {
+        "title": "人员密集场所",
+        "iconName": "YJ-navIcon-Proget",
+        "key": "_PersonnelIntensive",
+        "list": [{
+                "title": "学校",
+                "key": "school",
+                "iconName": "schoolspan",
+                "isOpen": false,
+                "mutexkey": [
+                    "ToolIconEventOverview.greenChannel,trafficControl,roadDamage",
+                    "disasterDecide._reserve,_district,_popluheat,_PersonnelIntensive-hospital,_PersonnelIntensive-airport,_PersonnelIntensive-railwaystation,_company-hazardous,_company-coalMine,_company-mine,_company-explosive,_ImportantFacilities-reservoir,_ImportantFacilities-portwharf,_ImportantFacilities-nuclear,disinfoper,emergencypart"
+                ],
+                "typeConfig": {
+                    "title": "学校",
+                    "name": "学校",
+                    "bg": "schoolbg",
+                    "num": 0,
+                    "danwei": "所",
+                    "key": "school",
+                    "clickKey": "school",
+                    "active": false
+                }
+            },
+            {
+                "title": "医院",
+                "key": "hospital",
+                "iconName": "hospitalspan",
+                "isOpen": false,
+                "mutexkey": [
+                    "ToolIconEventOverview.greenChannel,trafficControl,roadDamage",
+                    "disasterDecide._reserve,_district,_popluheat,_PersonnelIntensive-school,_PersonnelIntensive-airport,_PersonnelIntensive-railwaystation,_company-hazardous,_company-coalMine,_company-mine,_company-explosive,_ImportantFacilities-reservoir,_ImportantFacilities-portwharf,_ImportantFacilities-nuclear,disinfoper,emergencypart"
+                ],
+                "typeConfig": {
+                    "title": "医院",
+                    "name": "医院",
+                    "bg": "hospitalbg",
+                    "num": 0,
+                    "danwei": "家",
+                    "key": "hospital",
+                    "clickKey": "hospital",
+                    "active": false
+                }
+            },
+            {
+                "title": "机场",
+                "key": "airport",
+                "iconName": "airportspan",
+                "isOpen": false,
+                "mutexkey": [
+                    "ToolIconEventOverview.greenChannel,trafficControl,roadDamage",
+                    "disasterDecide._reserve,_district,_popluheat,_PersonnelIntensive-school,_PersonnelIntensive-hospital,_PersonnelIntensive-railwaystation,_company-hazardous,_company-coalMine,_company-mine,_company-explosive,_ImportantFacilities-reservoir,_ImportantFacilities-portwharf,_ImportantFacilities-nuclear,disinfoper,emergencypart"
+                ],
+                "typeConfig": {
+                    "title": "机场",
+                    "name": "机场",
+                    "bg": "airportbg",
+                    "num": 0,
+                    "danwei": "个",
+                    "key": "airport",
+                    "clickKey": "airport",
+                    "active": false
+                }
+            },
+            {
+                "title": "火车站",
+                "key": "railwaystation",
+                "iconName": "railwaystationspan",
+                "isOpen": false,
+                "mutexkey": [
+                    "ToolIconEventOverview.greenChannel,trafficControl,roadDamage",
+                    "disasterDecide._reserve,_district,_popluheat,_PersonnelIntensive-school,_PersonnelIntensive-hospital,_PersonnelIntensive-airport,_company-hazardous,_company-coalMine,_company-mine,_company-explosive,_ImportantFacilities-reservoir,_ImportantFacilities-portwharf,_ImportantFacilities-nuclear,disinfoper,emergencypart"
+                ],
+                "typeConfig": {
+                    "title": "火车站",
+                    "name": "火车站",
+                    "bg": "railwaystationbg",
+                    "num": 0,
+                    "danwei": "个",
+                    "key": "railwaystation",
+                    "clickKey": "railwaystation",
+                    "active": false
+                }
+            }
+        ]
+    },
+    {
+        "title": "企业",
+        "key": "_company",
+        "iconName": "YJ-navIcon-rowA10",
+        "list": [{
+                "title": "危化企业",
+                "key": "hazardous",
+                "iconName": "hazardousspan",
+                "isOpen": false,
+                "mutexkey": [
+                    "ToolIconEventOverview.greenChannel,trafficControl,roadDamage",
+                    "disasterDecide._reserve,_district,_popluheat,_PersonnelIntensive-school,_PersonnelIntensive-hospital,_PersonnelIntensive-airport,_PersonnelIntensive-railwaystation,_company-coalMine,_company-mine,_company-explosive,_ImportantFacilities-reservoir,_ImportantFacilities-portwharf,_ImportantFacilities-nuclear,disinfoper,emergencypart"
+                ],
+                "typeConfig": {
+                    "title": "危化企业",
+                    "name": "危化企业",
+                    "bg": "hazardousbg",
+                    "num": 0,
+                    "danwei": "家",
+                    "key": "hazardous",
+                    "clickKey": "hazardous",
+                    "active": false
+                }
+            },
+            {
+                "title": "煤矿企业",
+                "key": "coalMine",
+                "iconName": "coalMinespan",
+                "isOpen": false,
+                "mutexkey": [
+                    "ToolIconEventOverview.greenChannel,trafficControl,roadDamage",
+                    "disasterDecide._reserve,_district,_popluheat,_PersonnelIntensive-school,_PersonnelIntensive-hospital,_PersonnelIntensive-airport,_PersonnelIntensive-railwaystation,_company-hazardous,_company-mine,_company-explosive,_ImportantFacilities-reservoir,_ImportantFacilities-portwharf,_ImportantFacilities-nuclear,disinfoper,emergencypart"
+                ],
+                "typeConfig": {
+                    "title": "煤矿企业",
+                    "name": "煤矿企业",
+                    "bg": "coalMinebg",
+                    "num": 0,
+                    "danwei": "家",
+                    "key": "coalMine",
+                    "clickKey": "coalMine",
+                    "active": false
+                }
+            },
+            {
+                "title": "尾矿库企业",
+                "key": "mine",
+                "iconName": "minespan",
+                "mutexkey": [
+                    "ToolIconEventOverview.greenChannel,trafficControl,roadDamage",
+                    "disasterDecide._reserve,_district,_popluheat,_PersonnelIntensive-school,_PersonnelIntensive-hospital,_PersonnelIntensive-airport,_PersonnelIntensive-railwaystation,_company-hazardous,_company-coalMine,_company-explosive,_ImportantFacilities-reservoir,_ImportantFacilities-portwharf,_ImportantFacilities-nuclear,disinfoper,emergencypart"
+                ],
+                "typeConfig": {
+                    "title": "尾矿库企业",
+                    "name": "尾矿库",
+                    "bg": "minebg",
+                    "num": 0,
+                    "danwei": "座",
+                    "key": "mine",
+                    "clickKey": "mine",
+                    "active": false
+                }
+            },
+            {
+                "title": "烟花爆竹企业",
+                "key": "firework",
+                "iconName": "explosivespan",
+                "isOpen": false,
+                "mutexkey": [
+                    "ToolIconEventOverview.greenChannel,trafficControl,roadDamage",
+                    "disasterDecide._reserve,_district,_popluheat,_PersonnelIntensive-school,_PersonnelIntensive-hospital,_PersonnelIntensive-airport,_PersonnelIntensive-railwaystation,_company-hazardous,_company-coalMine,_company-mine,_ImportantFacilities-reservoir,_ImportantFacilities-portwharf,-nuclear,disinfoper,emergencypart"
+                ],
+                "typeConfig": {
+                    "title": "烟花爆竹企业",
+                    "name": "烟花爆竹企业",
+                    "bg": "explosivebg",
+                    "num": 0,
+                    "danwei": "家",
+                    "key": "firework",
+                    "clickKey": "firework",
+                    "active": false
+                }
+            }
+        ]
+    },
+    {
+        "title": "重要设施",
+        "iconName": "YJ-navIcon-Facility",
+        "key": "_ImportantFacilities",
+        "list": [{
+                "title": "水库大坝",
+                "key": "reservoir",
+                "iconName": "reservoirspan",
+                "isOpen": false,
+                "mutexkey": [
+                    "ToolIconEventOverview.greenChannel,trafficControl,roadDamage",
+                    "disasterDecide._reserve,_district,_popluheat,_PersonnelIntensive-school,_PersonnelIntensive-hospital,_PersonnelIntensive-airport,_PersonnelIntensive-railwaystation,_company-hazardous,_company-coalMine,_company-mine,_company-explosive,_ImportantFacilities-portwharf,_ImportantFacilities-nuclear,disinfoper,emergencypart"
+                ],
+                "typeConfig": {
+                    "title": "水库大坝",
+                    "name": "水库大坝",
+                    "bg": "reservoirbg",
+                    "num": 0,
+                    "danwei": "个",
+                    "key": "reservoir",
+                    "clickKey": "reservoir",
+                    "active": false
+                }
+            },
+            {
+                "title": "码头",
+                "key": "portwharf",
+                "iconName": "portwharfspan",
+                "isOpen": false,
+                "mutexkey": [
+                    "ToolIconEventOverview.greenChannel,trafficControl,roadDamage",
+                    "disasterDecide._reserve,_district,_popluheat,_PersonnelIntensive-school,_PersonnelIntensive-hospital,_PersonnelIntensive-airport,_PersonnelIntensive-railwaystation,_company-hazardous,_company-coalMine,_company-mine,_company-explosive,_ImportantFacilities-reservoir,_ImportantFacilities-nuclear,disinfoper,emergencypart"
+                ],
+                "typeConfig": {
+                    "title": "码头",
+                    "name": "码头",
+                    "bg": "portwharfbg",
+                    "num": 0,
+                    "danwei": "个",
+                    "key": "portwharf",
+                    "clickKey": "portwharf",
+                    "active": false
+                }
+            },
+            {
+                "title": "核设施",
+                "key": "nuclear",
+                "iconName": "nuclearspan",
+                "isOpen": false,
+                "mutexkey": [
+                    "ToolIconEventOverview.greenChannel,trafficControl,roadDamage",
+                    "disasterDecide._reserve,_district,_popluheat,_PersonnelIntensive-school,_PersonnelIntensive-hospital,_PersonnelIntensive-airport,_PersonnelIntensive-railwaystation,_company-hazardous,_company-coalMine,_company-mine,_company-explosive,_ImportantFacilities-reservoir,_ImportantFacilities-portwharf,disinfoper,emergencypart"
+                ],
+                "typeConfig": {
+                    "title": "核设施",
+                    "name": "核设施",
+                    "bg": "nuclearbg",
+                    "num": 0,
+                    "danwei": "个",
+                    "key": "nuclear",
+                    "clickKey": "nuclear",
+                    "active": false
+                }
+            }
+        ]
+    },
+    {
+        "title": "灾情信息员",
+        "key": "disinfoper",
+        "iconName": "YJ-navIcon-rowB3",
+        "isOpen": false,
+        "mutexkey": [
+            "ToolIconEventOverview.greenChannel,trafficControl,roadDamage",
+            "disasterDecide._reserve,_district,_popluheat,_PersonnelIntensive-school,_PersonnelIntensive-hospital,_PersonnelIntensive-airport,_PersonnelIntensive-railwaystation,_company-hazardous,_company-coalMine,_company-mine,_company-explosive,_ImportantFacilities-reservoir,_ImportantFacilities-portwharf,_ImportantFacilities-nuclear,emergencypart"
+        ],
+        "typeConfig": {
+            "title": "灾情信息员",
+            "sum": 0,
+            "danwei": "人",
+            "key": "disinfoper",
+            "clickKey": "disinfoper",
+            "name": "灾情信息员",
+            "active": false
+        }
+    },
+    {
+        "title": "应急管理机构",
+        "key": "emergencypart",
+        "iconName": "YJ-navIcon-emergencypart",
+        "isOpen": false,
+        "mutexkey": [
+            "ToolIconEventOverview.greenChannel,trafficControl,roadDamage",
+            "disasterDecide._reserve,_district,_popluheat,_PersonnelIntensive-school,_PersonnelIntensive-hospital,_PersonnelIntensive-airport,_PersonnelIntensive-railwaystation,_company-hazardous,_company-coalMine,_company-mine,_company-explosive,_ImportantFacilities-reservoir,_ImportantFacilities-portwharf,_ImportantFacilities-nuclear,disinfoper"
+        ],
+        "typeConfig": {
+            "title": "应急管理机构",
+            "sum": 0,
+            "danwei": "个",
+            "key": "emergencypart",
+            "clickKey": "emergencypart",
+            "name": "应急管理机构",
+            "active": false
+        }
+    }
+]

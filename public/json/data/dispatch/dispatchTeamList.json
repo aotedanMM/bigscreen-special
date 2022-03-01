@@ -1,0 +1,132 @@
+{
+    "$type": "Result,http://www.dv.com",
+    "status": 200,
+    "msg": "查询成功",
+    "data": {
+        "$type": "PageResult,http://www.dv.com",
+        "nowPage": 0,
+        "pageSize": 1000000,
+        "pages": 1,
+        "total": 3,
+        "list": [
+			{
+				"dispatchcaseId": "ff80808172a2b6ba0172ad5d59d00016",
+				"userId": "ff8080817292da610172935a2eee0058",
+				"orgCode": "ff808081720df0e601721170861e0001",
+				"eventId": "ff808081729d9fc00172a1f94d820030",
+				"orgName": "烟台市防汛抢险应急救援大队",
+				"leaderName": "于福永",
+				"conactTel": "0535-6798123 13185658277",
+				"dispatchNum": 8,
+				"longitude": "121.381",
+				"latitude": "37.484",
+				"address": "山东省烟台市芝罘区通世南路14-1号附近",
+				"fillTime": "2020-06-13 19:07:56",
+				"deleteFlag": "0",
+				"backState": "0",
+				"arrivalState": "0",
+				"leadings": "1",
+				"equipliststr": [{"equipName": "双吸式强自吸泵1套", "equipNum": "1"},{"equipName": "便携式潜水泵2台", "equipNum": "2"}],
+				"carNum": 2,
+				"dispatchTaskid": "ff808081729d9fc00172a20e82880034",
+				"dispatchType": "1",
+				"track": [{
+					"longitude": 121.45,
+					"latitude": 37.45
+				},{
+					"longitude": 121.45,
+					"latitude": 37.467
+				},{
+					"longitude": 121.4155,
+					"latitude": 37.467
+				},{
+					"longitude": 121.4155,
+					"latitude": 37.484
+				},{
+					"longitude": 121.381,
+					"latitude": 37.484
+				}],
+				"storage": null
+			},
+			{
+				"dispatchcaseId": "ff80808172a2b6ba0172ad5d59d00017",
+				"userId": "ff8080817292da610172935a2eee0058",
+				"orgCode": "ff808081720df0e601721170861e0002",
+				"eventId": "ff808081729d9fc00172a1f94d820030",
+				"orgName": "蓬莱市应急管理局",
+				"leaderName": "宫海峰",
+				"conactTel": "13185658256",
+				"dispatchNum": 23,
+				"longitude": "120.792",
+				"latitude": "37.794",
+				"address": "山东省烟台市蓬莱市富民路79号南河路",
+				"fillTime": "2020-06-13 19:07:56",
+				"deleteFlag": "0",
+				"backState": "0",
+				"arrivalState": "0",
+				"leadings": "1",
+				"equipliststr": [{"equipName": "帐篷", "equipNum": "125"}],
+				"carNum": 8,
+				"dispatchTaskid": "ff808081729d9fc00172a20e82880034",
+				"dispatchType": "1",
+				"track": [{
+					"longitude": 120.586,
+					"latitude": 37.744
+				},{
+					"longitude": 120.648812,
+					"latitude": 37.769
+				},{
+					"longitude": 120.689,
+					"latitude": 37.769
+				},{
+					"longitude": 120.689,
+					"latitude": 37.794
+				},{
+					"longitude": 120.792,
+					"latitude": 37.794
+				}],
+				"storage": null
+			},
+			{
+				"dispatchcaseId": "ff80808172a2b6ba0172ad5d59d00018",
+				"userId": "ff8080817292da610172935a2eee0058",
+				"orgCode": "ff808081720df0e601721170861e0003",
+				"eventId": "ff808081729d9fc00172a1f94d820030",
+				"orgName": "烟台市防汛抢险应急救援大队",
+				"leaderName": "于福永",
+				"conactTel": "13185658256",
+				"dispatchNum": 23,
+				"longitude": "120.418",
+				"latitude": "37.354",
+				"address": "山东省烟台市招远市泉山路",
+				"fillTime": "2020-06-13 19:07:56",
+				"deleteFlag": "0",
+				"backState": "0",
+				"arrivalState": "0",
+				"leadings": "1",
+				"equipliststr": [{"equipName": "双吸式强自吸泵1套", "equipNum": "1"},{"equipName": "便携式潜水泵2台", "equipNum": "2"}],
+				"carNum": 8,
+				"dispatchTaskid": "ff808081729d9fc00172a20e82880034",
+				"dispatchType": "1",
+				"track": [{
+					"longitude": 120.3896,
+					"latitude": 37.4206
+				},{
+					"longitude": 120.3896,
+					"latitude": 37.3873
+				},{
+					"longitude": 120.4038,
+					"latitude": 37.383
+				},{
+					"longitude": 120.4038,
+					"latitude": 37.354
+				},{
+					"longitude": 120.418,
+					"latitude": 37.354
+				}],
+				"storage": null
+			}		
+        ],
+        "unReadTotalCount": 0
+    }
+}

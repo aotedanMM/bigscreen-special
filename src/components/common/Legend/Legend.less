@@ -1,0 +1,46 @@
+
+.legend-layout{
+  //position: absolute;
+  //right: 23px;
+  //top: -14px;
+  //width: 33px;
+  //height: 33px;
+  //cursor: pointer;
+  .img {
+      margin: 0 20px;
+      width: 26px;
+      height: 26px;
+    }
+
+  .text {
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+   .legend_sign_class {
+    color: #fff;
+    position: relative;
+  }
+
+  .DayNightShow,
+  .DayNightHide{
+    width:200px;
+  }
+  .DayNightShow::after{
+    content: "";
+    width: 18px;
+    height: 18px;
+    background:url('@{imgPath}/Day.png') no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    right: 5px;
+  }
+  .DayNightHide::after{
+    content: "";
+    width: 18px;
+    height: 18px;
+    background:url('@{imgPath}/Night.png') no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    right: 5px;
+  }
+}

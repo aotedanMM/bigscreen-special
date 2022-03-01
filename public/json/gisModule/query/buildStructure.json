@@ -1,0 +1,1232 @@
+[
+  {
+    "tag": {
+      "PROVINCENAME": "云南省",
+      "HOUSESTAID": "HOUSESTA001",
+      "FRAMEPER": 5,
+      "DISTCODE": "532531",
+      "COUNTRYNAME": "绿春县",
+      "CIVILPER": 30,
+      "CITYNAME": "红河哈尼族彝族自治州",
+      "CAVEOTHERPER": 0,
+      "BRICKWOODPER": 1,
+      "BRICKPER": 64
+    },
+    "id": "HOUSESTA001"
+  },
+  {
+    "tag": {
+      "PROVINCENAME": "云南省",
+      "HOUSESTAID": "HOUSESTA002",
+      "FRAMEPER": 8,
+      "DISTCODE": "532528",
+      "COUNTRYNAME": "元阳县",
+      "CIVILPER": 28,
+      "CITYNAME": "红河哈尼族彝族自治州",
+      "CAVEOTHERPER": 0,
+      "BRICKWOODPER": 8,
+      "BRICKPER": 56
+    },
+    "id": "HOUSESTA002"
+  },
+  {
+    "tag": {
+      "PROVINCENAME": "云南省",
+      "HOUSESTAID": "HOUSESTA003",
+      "FRAMEPER": 1,
+      "DISTCODE": "532529",
+      "COUNTRYNAME": "红河县",
+      "CIVILPER": 32,
+      "CITYNAME": "红河哈尼族彝族自治州",
+      "CAVEOTHERPER": 0,
+      "BRICKWOODPER": 28,
+      "BRICKPER": 39
+    },
+    "id": "HOUSESTA003"
+  },
+  {
+    "tag": {
+      "PROVINCENAME": "云南省",
+      "HOUSESTAID": "HOUSESTA004",
+      "FRAMEPER": 5.73,
+      "DISTCODE": "532501",
+      "COUNTRYNAME": "个旧市",
+      "CIVILPER": 13.67,
+      "CITYNAME": "红河哈尼族彝族自治州",
+      "CAVEOTHERPER": 24.09,
+      "BRICKWOODPER": 14.97,
+      "BRICKPER": 41.54
+    },
+    "id": "HOUSESTA004"
+  },
+  {
+    "tag": {
+      "PROVINCENAME": "云南省",
+      "HOUSESTAID": "HOUSESTA005",
+      "FRAMEPER": 3.61,
+      "DISTCODE": "532502",
+      "COUNTRYNAME": "开远市",
+      "CIVILPER": 15.11,
+      "CITYNAME": "红河哈尼族彝族自治州",
+      "CAVEOTHERPER": 3.18,
+      "BRICKWOODPER": 57.33,
+      "BRICKPER": 20.77
+    },
+    "id": "HOUSESTA005"
+  },
+  {
+    "tag": {
+      "PROVINCENAME": "云南省",
+      "HOUSESTAID": "HOUSESTA006",
+      "FRAMEPER": 27,
+      "DISTCODE": "532525",
+      "COUNTRYNAME": "石屏县",
+      "CIVILPER": 42,
+      "CITYNAME": "红河哈尼族彝族自治州",
+      "CAVEOTHERPER": 0,
+      "BRICKWOODPER": 11,
+      "BRICKPER": 20
+    },
+    "id": "HOUSESTA006"
+  },
+  {
+    "tag": {
+      "PROVINCENAME": "云南省",
+      "HOUSESTAID": "HOUSESTA007",
+      "FRAMEPER": 44.99,
+      "DISTCODE": "532524",
+      "COUNTRYNAME": "建水县",
+      "CIVILPER": 13.01,
+      "CITYNAME": "红河哈尼族彝族自治州",
+      "CAVEOTHERPER": 5,
+      "BRICKWOODPER": 17,
+      "BRICKPER": 20
+    },
+    "id": "HOUSESTA007"
+  },
+  {
+    "tag": {
+      "PROVINCENAME": "云南省",
+      "HOUSESTAID": "HOUSESTA008",
+      "FRAMEPER": 8,
+      "DISTCODE": "532504",
+      "COUNTRYNAME": "弥勒市",
+      "CIVILPER": 10,
+      "CITYNAME": "红河哈尼族彝族自治州",
+      "CAVEOTHERPER": 0,
+      "BRICKWOODPER": 21,
+      "BRICKPER": 61
+    },
+    "id": "HOUSESTA008"
+  },
+  {
+    "tag": {
+      "PROVINCENAME": "云南省",
+      "HOUSESTAID": "HOUSESTA009",
+      "FRAMEPER": 20,
+      "DISTCODE": "530115",
+      "COUNTRYNAME": "晋宁区",
+      "CIVILPER": 10,
+      "CITYNAME": "昆明市",
+      "CAVEOTHERPER": 3,
+      "BRICKWOODPER": 7,
+      "BRICKPER": 60
+    },
+    "id": "HOUSESTA009"
+  },
+  {
+    "tag": {
+      "PROVINCENAME": "云南省",
+      "HOUSESTAID": "HOUSESTA010",
+      "FRAMEPER": 0.93,
+      "DISTCODE": "530126",
+      "COUNTRYNAME": "石林彝族自治县",
+      "CIVILPER": 20.04,
+      "CITYNAME": "昆明市",
+      "CAVEOTHERPER": 33.76,
+      "BRICKWOODPER": 16.71,
+      "BRICKPER": 28.560000000000002
+    },
+    "id": "HOUSESTA010"
+  },
+  {
+    "tag": {
+      "PROVINCENAME": "云南省",
+      "HOUSESTAID": "HOUSESTA011",
+      "FRAMEPER": 6.83,
+      "DISTCODE": "530125",
+      "COUNTRYNAME": "宜良县",
+      "CIVILPER": 38.300000000000004,
+      "CITYNAME": "昆明市",
+      "CAVEOTHERPER": 2.2,
+      "BRICKWOODPER": 9.61,
+      "BRICKPER": 43.06
+    },
+    "id": "HOUSESTA011"
+  },
+  {
+    "tag": {
+      "PROVINCENAME": "云南省",
+      "HOUSESTAID": "HOUSESTA012",
+      "FRAMEPER": 6,
+      "DISTCODE": "530826",
+      "COUNTRYNAME": "江城哈尼族彝族自治县",
+      "CIVILPER": 10,
+      "CITYNAME": "普洱市",
+      "CAVEOTHERPER": 0,
+      "BRICKWOODPER": 9,
+      "BRICKPER": 75
+    },
+    "id": "HOUSESTA012"
+  },
+  {
+    "tag": {
+      "PROVINCENAME": "云南省",
+      "HOUSESTAID": "HOUSESTA013",
+      "FRAMEPER": 5.5,
+      "DISTCODE": "530802",
+      "COUNTRYNAME": "思茅区",
+      "CIVILPER": 24.68,
+      "CITYNAME": "普洱市",
+      "CAVEOTHERPER": 4.51,
+      "BRICKWOODPER": 12.34,
+      "BRICKPER": 52.97
+    },
+    "id": "HOUSESTA013"
+  },
+  {
+    "tag": {
+      "PROVINCENAME": "云南省",
+      "HOUSESTAID": "HOUSESTA014",
+      "FRAMEPER": 3,
+      "DISTCODE": "530828",
+      "COUNTRYNAME": "澜沧拉祜族自治县",
+      "CIVILPER": 16,
+      "CITYNAME": "普洱市",
+      "CAVEOTHERPER": 3,
+      "BRICKWOODPER": 54,
+      "BRICKPER": 24
+    },
+    "id": "HOUSESTA014"
+  },
+  {
+    "tag": {
+      "PROVINCENAME": "云南省",
+      "HOUSESTAID": "HOUSESTA015",
+      "FRAMEPER": 1,
+      "DISTCODE": "530821",
+      "COUNTRYNAME": "宁洱哈尼族彝族自治县",
+      "CIVILPER": 36,
+      "CITYNAME": "普洱市",
+      "CAVEOTHERPER": 0,
+      "BRICKWOODPER": 22,
+      "BRICKPER": 41
+    },
+    "id": "HOUSESTA015"
+  },
+  {
+    "tag": {
+      "PROVINCENAME": "云南省",
+      "HOUSESTAID": "HOUSESTA016",
+      "FRAMEPER": 10.950000000000001,
+      "DISTCODE": "530824",
+      "COUNTRYNAME": "景谷傣族彝族自治县",
+      "CIVILPER": 25.77,
+      "CITYNAME": "普洱市",
+      "CAVEOTHERPER": 3.87,
+      "BRICKWOODPER": 16.37,
+      "BRICKPER": 43.04
+    },
+    "id": "HOUSESTA016"
+  },
+  {
+    "tag": {
+      "PROVINCENAME": "云南省",
+      "HOUSESTAID": "HOUSESTA017",
+      "FRAMEPER": 11,
+      "DISTCODE": "530822",
+      "COUNTRYNAME": "墨江哈尼族自治县",
+      "CIVILPER": 41,
+      "CITYNAME": "普洱市",
+      "CAVEOTHERPER": 2,
+      "BRICKWOODPER": 16,
+      "BRICKPER": 3
+    },
+    "id": "HOUSESTA017"
+  },
+  {
+    "tag": {
+      "PROVINCENAME": "云南省",
+      "HOUSESTAID": "HOUSESTA018",
+      "FRAMEPER": 2.06,
+      "DISTCODE": "530825",
+      "COUNTRYNAME": "镇沅彝族哈尼族拉祜族自治县",
+      "CIVILPER": 56.2,
+      "CITYNAME": "普洱市",
+      "CAVEOTHERPER": 0.26,
+      "BRICKWOODPER": 20.59,
+      "BRICKPER": 20.89
+    },
+    "id": "HOUSESTA018"
+  },
+  {
+    "tag": {
+      "PROVINCENAME": "云南省",
+      "HOUSESTAID": "HOUSESTA019",
+      "FRAMEPER": 0.5,
+      "DISTCODE": "532823",
+      "COUNTRYNAME": "勐腊县",
+      "CIVILPER": 62.52,
+      "CITYNAME": "西双版纳傣族自治州",
+      "CAVEOTHERPER": 24.88,
+      "BRICKWOODPER": 4.54,
+      "BRICKPER": 7.5600000000000005
+    },
+    "id": "HOUSESTA019"
+  },
+  {
+    "tag": {
+      "PROVINCENAME": "云南省",
+      "HOUSESTAID": "HOUSESTA020",
+      "FRAMEPER": 0.8,
+      "DISTCODE": "532822",
+      "COUNTRYNAME": "勐海县",
+      "CIVILPER": 59.410000000000004,
+      "CITYNAME": "西双版纳傣族自治州",
+      "CAVEOTHERPER": 25.43,
+      "BRICKWOODPER": 7.75,
+      "BRICKPER": 6.61
+    },
+    "id": "HOUSESTA020"
+  },
+  {
+    "tag": {
+      "PROVINCENAME": "云南省",
+      "HOUSESTAID": "HOUSESTA021",
+      "FRAMEPER": 3.83,
+      "DISTCODE": "532801",
+      "COUNTRYNAME": "景洪市",
+      "CIVILPER": 52.18,
+      "CITYNAME": "西双版纳傣族自治州",
+      "CAVEOTHERPER": 21.67,
+      "BRICKWOODPER": 10.700000000000001,
+      "BRICKPER": 11.620000000000001
+    },
+    "id": "HOUSESTA021"
+  },
+  {
+    "tag": {
+      "PROVINCENAME": "云南省",
+      "HOUSESTAID": "HOUSESTA022",
+      "FRAMEPER": 2.5500000000000003,
+      "DISTCODE": "530428",
+      "COUNTRYNAME": "元江哈尼族彝族傣族自治县",
+      "CIVILPER": 28.94,
+      "CITYNAME": "玉溪市",
+      "CAVEOTHERPER": 12.030000000000001,
+      "BRICKWOODPER": 17.82,
+      "BRICKPER": 38.660000000000004
+    },
+    "id": "HOUSESTA022"
+  },
+  {
+    "tag": {
+      "PROVINCENAME": "云南省",
+      "HOUSESTAID": "HOUSESTA023",
+      "FRAMEPER": 15,
+      "DISTCODE": "530423",
+      "COUNTRYNAME": "通海县",
+      "CIVILPER": 3,
+      "CITYNAME": "玉溪市",
+      "CAVEOTHERPER": 4.4,
+      "BRICKWOODPER": 3,
+      "BRICKPER": 79
+    },
+    "id": "HOUSESTA023"
+  },
+  {
+    "tag": {
+      "PROVINCENAME": "云南省",
+      "HOUSESTAID": "HOUSESTA024",
+      "FRAMEPER": 13.88,
+      "DISTCODE": "530427",
+      "COUNTRYNAME": "新平彝族傣族自治县",
+      "CIVILPER": 21.72,
+      "CITYNAME": "玉溪市",
+      "CAVEOTHERPER": 3.35,
+      "BRICKWOODPER": 14.65,
+      "BRICKPER": 46.4
+    },
+    "id": "HOUSESTA024"
+  },
+  {
+    "tag": {
+      "PROVINCENAME": "云南省",
+      "HOUSESTAID": "HOUSESTA025",
+      "FRAMEPER": 8.290000000000001,
+      "DISTCODE": "530403",
+      "COUNTRYNAME": "江川区",
+      "CIVILPER": 23.41,
+      "CITYNAME": "玉溪市",
+      "CAVEOTHERPER": 3.6,
+      "BRICKWOODPER": 5.3,
+      "BRICKPER": 59.4
+    },
+    "id": "HOUSESTA025"
+  },
+  {
+    "tag": {
+      "PROVINCENAME": "云南省",
+      "HOUSESTAID": "HOUSESTA026",
+      "FRAMEPER": 13,
+      "DISTCODE": "530426",
+      "COUNTRYNAME": "峨山彝族自治县",
+      "CIVILPER": 7,
+      "CITYNAME": "玉溪市",
+      "CAVEOTHERPER": 2.21,
+      "BRICKWOODPER": 6,
+      "BRICKPER": 74
+    },
+    "id": "HOUSESTA026"
+  },
+  {
+    "tag": {
+      "PROVINCENAME": "云南省",
+      "HOUSESTAID": "HOUSESTA027",
+      "FRAMEPER": 12.27,
+      "DISTCODE": "530402",
+      "COUNTRYNAME": "红塔区",
+      "CIVILPER": 6.13,
+      "CITYNAME": "玉溪市",
+      "CAVEOTHERPER": 0.64,
+      "BRICKWOODPER": 14.24,
+      "BRICKPER": 66.72
+    },
+    "id": "HOUSESTA027"
+  },
+  {
+    "tag": {
+      "PROVINCENAME": "云南省",
+      "HOUSESTAID": "HOUSESTA028",
+      "FRAMEPER": 12,
+      "DISTCODE": "530424",
+      "COUNTRYNAME": "华宁县",
+      "CIVILPER": 8,
+      "CITYNAME": "玉溪市",
+      "CAVEOTHERPER": 0,
+      "BRICKWOODPER": 7,
+      "BRICKPER": 73
+    },
+    "id": "HOUSESTA028"
+  },
+  {
+    "tag": {
+      "PROVINCENAME": "云南省",
+      "HOUSESTAID": "HOUSESTA029",
+      "FRAMEPER": 10.78,
+      "DISTCODE": "530422",
+      "COUNTRYNAME": "澄江县",
+      "CIVILPER": 14.16,
+      "CITYNAME": "玉溪市",
+      "CAVEOTHERPER": 3.0500000000000003,
+      "BRICKWOODPER": 4.67,
+      "BRICKPER": 67.34
+    },
+    "id": "HOUSESTA029"
+  },
+  {
+    "tag": {
+      "PROVINCENAME": "云南省",
+      "HOUSESTAID": "HOUSESTA030",
+      "FRAMEPER": 3.65,
+      "DISTCODE": "530425",
+      "COUNTRYNAME": "易门县",
+      "CIVILPER": 34.82,
+      "CITYNAME": "玉溪市",
+      "CAVEOTHERPER": 39.29,
+      "BRICKWOODPER": 7.390000000000001,
+      "BRICKPER": 14.85
+    },
+    "id": "HOUSESTA030"
+  },
+  {
+    "tag": {
+      "PROVINCENAME": "云南省",
+      "HOUSESTAID": "HOUSESTA031",
+      "FRAMEPER": 11.46,
+      "DISTCODE": "532322",
+      "COUNTRYNAME": "双柏县",
+      "CIVILPER": 11.370000000000001,
+      "CITYNAME": "楚雄彝族自治州",
+      "CAVEOTHERPER": 0.01,
+      "BRICKWOODPER": 34.39,
+      "BRICKPER": 42.77
+    },
+    "id": "HOUSESTA031"
+  },
+  {
+    "tag": {
+      "PROVINCENAME": "云南省",
+      "HOUSESTAID": "HOUSESTA032",
+      "FRAMEPER": 8.03,
+      "DISTCODE": "532925",
+      "COUNTRYNAME": "弥渡县",
+      "CIVILPER": 10.83,
+      "CITYNAME": "大理白族自治州",
+      "CAVEOTHERPER": 1.19,
+      "BRICKWOODPER": 11.59,
+      "BRICKPER": 68.36
+    },
+    "id": "HOUSESTA032"
+  },
+  {
+    "tag": {
+      "PROVINCENAME": "云南省",
+      "HOUSESTAID": "HOUSESTA033",
+      "FRAMEPER": 8.15,
+      "DISTCODE": "532927",
+      "COUNTRYNAME": "巍山彝族回族自治县",
+      "CIVILPER": 48.620000000000005,
+      "CITYNAME": "大理白族自治州",
+      "CAVEOTHERPER": 4.73,
+      "BRICKWOODPER": 22.59,
+      "BRICKPER": 15.91
+    },
+    "id": "HOUSESTA033"
+  },
+  {
+    "tag": {
+      "PROVINCENAME": "云南省",
+      "HOUSESTAID": "HOUSESTA034",
+      "FRAMEPER": 3.39,
+      "DISTCODE": "532928",
+      "COUNTRYNAME": "永平县",
+      "CIVILPER": 46.550000000000004,
+      "CITYNAME": "大理白族自治州",
+      "CAVEOTHERPER": 0.97,
+      "BRICKWOODPER": 27.03,
+      "BRICKPER": 22.06
+    },
+    "id": "HOUSESTA034"
+  },
+  {
+    "tag": {
+      "PROVINCENAME": "云南省",
+      "HOUSESTAID": "HOUSESTA035",
+      "FRAMEPER": 7.42,
+      "DISTCODE": "532923",
+      "COUNTRYNAME": "祥云县",
+      "CIVILPER": 41.25,
+      "CITYNAME": "大理白族自治州",
+      "CAVEOTHERPER": 1.93,
+      "BRICKWOODPER": 16.77,
+      "BRICKPER": 32.63
+    },
+    "id": "HOUSESTA035"
+  },
+  {
+    "tag": {
+      "PROVINCENAME": "云南省",
+      "HOUSESTAID": "HOUSESTA036",
+      "FRAMEPER": 0.24,
+      "DISTCODE": "532922",
+      "COUNTRYNAME": "漾濞彝族自治县",
+      "CIVILPER": 11.22,
+      "CITYNAME": "大理白族自治州",
+      "CAVEOTHERPER": 85.98,
+      "BRICKWOODPER": 0.9,
+      "BRICKPER": 1.6600000000000001
+    },
+    "id": "HOUSESTA036"
+  },
+  {
+    "tag": {
+      "PROVINCENAME": "云南省",
+      "HOUSESTAID": "HOUSESTA037",
+      "FRAMEPER": 1.4000000000000001,
+      "DISTCODE": "532901",
+      "COUNTRYNAME": "大理市",
+      "CIVILPER": 46.050000000000004,
+      "CITYNAME": "大理白族自治州",
+      "CAVEOTHERPER": 24.1,
+      "BRICKWOODPER": 17.44,
+      "BRICKPER": 11.01
+    },
+    "id": "HOUSESTA037"
+  },
+  {
+    "tag": {
+      "PROVINCENAME": "云南省",
+      "HOUSESTAID": "HOUSESTA038",
+      "FRAMEPER": 5.9,
+      "DISTCODE": "532924",
+      "COUNTRYNAME": "宾川县",
+      "CIVILPER": 28.19,
+      "CITYNAME": "大理白族自治州",
+      "CAVEOTHERPER": 5.89,
+      "BRICKWOODPER": 48.34,
+      "BRICKPER": 11.68
+    },
+    "id": "HOUSESTA038"
+  },
+  {
+    "tag": {
+      "PROVINCENAME": "云南省",
+      "HOUSESTAID": "HOUSESTA039",
+      "FRAMEPER": 11.700000000000001,
+      "DISTCODE": "532929",
+      "COUNTRYNAME": "云龙县",
+      "CIVILPER": 30.68,
+      "CITYNAME": "大理白族自治州",
+      "CAVEOTHERPER": 6.4,
+      "BRICKWOODPER": 27.98,
+      "BRICKPER": 23.240000000000002
+    },
+    "id": "HOUSESTA039"
+  },
+  {
+    "tag": {
+      "PROVINCENAME": "云南省",
+      "HOUSESTAID": "HOUSESTA040",
+      "FRAMEPER": 10.16,
+      "DISTCODE": "532930",
+      "COUNTRYNAME": "洱源县",
+      "CIVILPER": 8.59,
+      "CITYNAME": "大理白族自治州",
+      "CAVEOTHERPER": 3.25,
+      "BRICKWOODPER": 27.21,
+      "BRICKPER": 50.79
+    },
+    "id": "HOUSESTA040"
+  },
+  {
+    "tag": {
+      "PROVINCENAME": "云南省",
+      "HOUSESTAID": "HOUSESTA041",
+      "FRAMEPER": 0.7000000000000001,
+      "DISTCODE": "532931",
+      "COUNTRYNAME": "剑川县",
+      "CIVILPER": 75.15,
+      "CITYNAME": "大理白族自治州",
+      "CAVEOTHERPER": 1.52,
+      "BRICKWOODPER": 14.19,
+      "BRICKPER": 8.44
+    },
+    "id": "HOUSESTA041"
+  },
+  {
+    "tag": {
+      "PROVINCENAME": "云南省",
+      "HOUSESTAID": "HOUSESTA042",
+      "FRAMEPER": 3.73,
+      "DISTCODE": "532932",
+      "COUNTRYNAME": "鹤庆县",
+      "CIVILPER": 15.530000000000001,
+      "CITYNAME": "大理白族自治州",
+      "CAVEOTHERPER": 3.1,
+      "BRICKWOODPER": 51.76,
+      "BRICKPER": 25.88
+    },
+    "id": "HOUSESTA042"
+  },
+  {
+    "tag": {
+      "PROVINCENAME": "云南省",
+      "HOUSESTAID": "HOUSESTA043",
+      "FRAMEPER": 9.22,
+      "DISTCODE": "530723",
+      "COUNTRYNAME": "华坪县",
+      "CIVILPER": 25.080000000000002,
+      "CITYNAME": "丽江市",
+      "CAVEOTHERPER": 23.95,
+      "BRICKWOODPER": 26.7,
+      "BRICKPER": 15.05
+    },
+    "id": "HOUSESTA043"
+  },
+  {
+    "tag": {
+      "PROVINCENAME": "云南省",
+      "HOUSESTAID": "HOUSESTA044",
+      "FRAMEPER": 1.97,
+      "DISTCODE": "530722",
+      "COUNTRYNAME": "永胜县",
+      "CIVILPER": 75,
+      "CITYNAME": "丽江市",
+      "CAVEOTHERPER": 1.05,
+      "BRICKWOODPER": 5.13,
+      "BRICKPER": 16.85
+    },
+    "id": "HOUSESTA044"
+  },
+  {
+    "tag": {
+      "PROVINCENAME": "云南省",
+      "HOUSESTAID": "HOUSESTA045",
+      "FRAMEPER": 9.83,
+      "DISTCODE": "530702",
+      "COUNTRYNAME": "古城区",
+      "CIVILPER": 9.1,
+      "CITYNAME": "丽江市",
+      "CAVEOTHERPER": 19.92,
+      "BRICKWOODPER": 56.46,
+      "BRICKPER": 4.69
+    },
+    "id": "HOUSESTA045"
+  },
+  {
+    "tag": {
+      "PROVINCENAME": "云南省",
+      "HOUSESTAID": "HOUSESTA046",
+      "FRAMEPER": 9.07,
+      "DISTCODE": "530721",
+      "COUNTRYNAME": "玉龙纳西族自治县",
+      "CIVILPER": 58.44,
+      "CITYNAME": "丽江市",
+      "CAVEOTHERPER": 0.23,
+      "BRICKWOODPER": 28.77,
+      "BRICKPER": 3.49
+    },
+    "id": "HOUSESTA046"
+  },
+  {
+    "tag": {
+      "PROVINCENAME": "云南省",
+      "HOUSESTAID": "HOUSESTA047",
+      "FRAMEPER": 2.08,
+      "DISTCODE": "530724",
+      "COUNTRYNAME": "宁蒗彝族自治县",
+      "CIVILPER": 90.27,
+      "CITYNAME": "丽江市",
+      "CAVEOTHERPER": 0.01,
+      "BRICKWOODPER": 5.83,
+      "BRICKPER": 1.81
+    },
+    "id": "HOUSESTA047"
+  },
+  {
+    "tag": {
+      "PROVINCENAME": "云南省",
+      "HOUSESTAID": "HOUSESTA048",
+      "FRAMEPER": 7.5,
+      "DISTCODE": "533325",
+      "COUNTRYNAME": "兰坪白族普米族自治县",
+      "CIVILPER": 10.94,
+      "CITYNAME": "怒江傈僳族自治州",
+      "CAVEOTHERPER": 1.16,
+      "BRICKWOODPER": 11.21,
+      "BRICKPER": 69.19
+    },
+    "id": "HOUSESTA048"
+  },
+  {
+    "tag": {
+      "PROVINCENAME": "云南省",
+      "HOUSESTAID": "HOUSESTA049",
+      "FRAMEPER": 0,
+      "DISTCODE": "533323",
+      "COUNTRYNAME": "福贡县",
+      "CIVILPER": 68.46000000000001,
+      "CITYNAME": "怒江傈僳族自治州",
+      "CAVEOTHERPER": 7.51,
+      "BRICKWOODPER": 0.67,
+      "BRICKPER": 23.36
+    },
+    "id": "HOUSESTA049"
+  },
+  {
+    "tag": {
+      "PROVINCENAME": "云南省",
+      "HOUSESTAID": "HOUSESTA050",
+      "FRAMEPER": 1.62,
+      "DISTCODE": "533324",
+      "COUNTRYNAME": "贡山独龙族怒族自治县",
+      "CIVILPER": 9.6,
+      "CITYNAME": "怒江傈僳族自治州",
+      "CAVEOTHERPER": 54.39,
+      "BRICKWOODPER": 13.39,
+      "BRICKPER": 21
+    },
+    "id": "HOUSESTA050"
+  },
+  {
+    "tag": {
+      "PROVINCENAME": "云南省",
+      "HOUSESTAID": "HOUSESTA051",
+      "FRAMEPER": 16.69,
+      "DISTCODE": "533423",
+      "COUNTRYNAME": "维西傈僳族自治县",
+      "CIVILPER": 32.13,
+      "CITYNAME": "迪庆藏族自治州",
+      "CAVEOTHERPER": 9.450000000000001,
+      "BRICKWOODPER": 26.93,
+      "BRICKPER": 14.8
+    },
+    "id": "HOUSESTA051"
+  },
+  {
+    "tag": {
+      "PROVINCENAME": "云南省",
+      "HOUSESTAID": "HOUSESTA052",
+      "FRAMEPER": 2.14,
+      "DISTCODE": "533401",
+      "COUNTRYNAME": "香格里拉市",
+      "CIVILPER": 16.88,
+      "CITYNAME": "迪庆藏族自治州",
+      "CAVEOTHERPER": 0,
+      "BRICKWOODPER": 74.12,
+      "BRICKPER": 6.86
+    },
+    "id": "HOUSESTA052"
+  },
+  {
+    "tag": {
+      "PROVINCENAME": "云南省",
+      "HOUSESTAID": "HOUSESTA053",
+      "FRAMEPER": 0,
+      "DISTCODE": "533422",
+      "COUNTRYNAME": "德钦县",
+      "CIVILPER": 46.84,
+      "CITYNAME": "迪庆藏族自治州",
+      "CAVEOTHERPER": 0,
+      "BRICKWOODPER": 18.22,
+      "BRICKPER": 34.94
+    },
+    "id": "HOUSESTA053"
+  },
+  {
+    "tag": {
+      "PROVINCENAME": "甘肃省",
+      "HOUSESTAID": "HOUSESTA054",
+      "FRAMEPER": 25,
+      "DISTCODE": "621125",
+      "COUNTRYNAME": "漳县",
+      "CIVILPER": 12,
+      "CITYNAME": "定西市",
+      "CAVEOTHERPER": 0,
+      "BRICKWOODPER": 25.5,
+      "BRICKPER": 37.5
+    },
+    "id": "HOUSESTA054"
+  },
+  {
+    "tag": {
+      "PROVINCENAME": "甘肃省",
+      "HOUSESTAID": "HOUSESTA055",
+      "FRAMEPER": 5.14,
+      "DISTCODE": "621126",
+      "COUNTRYNAME": "岷县",
+      "CIVILPER": 18.7,
+      "CITYNAME": "定西市",
+      "CAVEOTHERPER": 0,
+      "BRICKWOODPER": 37.660000000000004,
+      "BRICKPER": 38.5
+    },
+    "id": "HOUSESTA055"
+  },
+  {
+    "tag": {
+      "PROVINCENAME": "甘肃省",
+      "HOUSESTAID": "HOUSESTA056",
+      "FRAMEPER": 6.03,
+      "DISTCODE": "621123",
+      "COUNTRYNAME": "渭源县",
+      "CIVILPER": 26.23,
+      "CITYNAME": "定西市",
+      "CAVEOTHERPER": 0,
+      "BRICKWOODPER": 59.27,
+      "BRICKPER": 8.47
+    },
+    "id": "HOUSESTA056"
+  },
+  {
+    "tag": {
+      "PROVINCENAME": "甘肃省",
+      "HOUSESTAID": "HOUSESTA057",
+      "FRAMEPER": 10,
+      "DISTCODE": "621124",
+      "COUNTRYNAME": "临洮县",
+      "CIVILPER": 30,
+      "CITYNAME": "定西市",
+      "CAVEOTHERPER": 0,
+      "BRICKWOODPER": 40,
+      "BRICKPER": 20
+    },
+    "id": "HOUSESTA057"
+  },
+  {
+    "tag": {
+      "PROVINCENAME": "甘肃省",
+      "HOUSESTAID": "HOUSESTA058",
+      "FRAMEPER": 3,
+      "DISTCODE": "622925",
+      "COUNTRYNAME": "和政县",
+      "CIVILPER": 29,
+      "CITYNAME": "临夏回族自治州",
+      "CAVEOTHERPER": 0,
+      "BRICKWOODPER": 35,
+      "BRICKPER": 33
+    },
+    "id": "HOUSESTA058"
+  },
+  {
+    "tag": {
+      "PROVINCENAME": "甘肃省",
+      "HOUSESTAID": "HOUSESTA059",
+      "FRAMEPER": 27.18,
+      "DISTCODE": "622922",
+      "COUNTRYNAME": "康乐县",
+      "CIVILPER": 20.1,
+      "CITYNAME": "临夏回族自治州",
+      "CAVEOTHERPER": 0,
+      "BRICKWOODPER": 23.3,
+      "BRICKPER": 29.42
+    },
+    "id": "HOUSESTA059"
+  },
+  {
+    "tag": {
+      "PROVINCENAME": "甘肃省",
+      "HOUSESTAID": "HOUSESTA060",
+      "FRAMEPER": 26.5,
+      "DISTCODE": "623001",
+      "COUNTRYNAME": "合作市",
+      "CIVILPER": 14.5,
+      "CITYNAME": "甘南藏族自治州",
+      "CAVEOTHERPER": 0,
+      "BRICKWOODPER": 25.5,
+      "BRICKPER": 33.5
+    },
+    "id": "HOUSESTA060"
+  },
+  {
+    "tag": {
+      "PROVINCENAME": "甘肃省",
+      "HOUSESTAID": "HOUSESTA061",
+      "FRAMEPER": 25,
+      "DISTCODE": "623024",
+      "COUNTRYNAME": "迭部县",
+      "CIVILPER": 35,
+      "CITYNAME": "甘南藏族自治州",
+      "CAVEOTHERPER": 0,
+      "BRICKWOODPER": 10,
+      "BRICKPER": 30
+    },
+    "id": "HOUSESTA061"
+  },
+  {
+    "tag": {
+      "PROVINCENAME": "甘肃省",
+      "HOUSESTAID": "HOUSESTA062",
+      "FRAMEPER": 15,
+      "DISTCODE": "623021",
+      "COUNTRYNAME": "临潭县",
+      "CIVILPER": 25,
+      "CITYNAME": "甘南藏族自治州",
+      "CAVEOTHERPER": 0,
+      "BRICKWOODPER": 40,
+      "BRICKPER": 20
+    },
+    "id": "HOUSESTA062"
+  },
+  {
+    "tag": {
+      "PROVINCENAME": "甘肃省",
+      "HOUSESTAID": "HOUSESTA063",
+      "FRAMEPER": 22.6,
+      "DISTCODE": "623026",
+      "COUNTRYNAME": "碌曲县",
+      "CIVILPER": 27.900000000000002,
+      "CITYNAME": "甘南藏族自治州",
+      "CAVEOTHERPER": 0,
+      "BRICKWOODPER": 23.5,
+      "BRICKPER": 26
+    },
+    "id": "HOUSESTA063"
+  },
+  {
+    "tag": {
+      "PROVINCENAME": "甘肃省",
+      "HOUSESTAID": "HOUSESTA064",
+      "FRAMEPER": 27.5,
+      "DISTCODE": "623025",
+      "COUNTRYNAME": "玛曲县",
+      "CIVILPER": 7.5,
+      "CITYNAME": "甘南藏族自治州",
+      "CAVEOTHERPER": 0,
+      "BRICKWOODPER": 37.5,
+      "BRICKPER": 27.5
+    },
+    "id": "HOUSESTA064"
+  },
+  {
+    "tag": {
+      "PROVINCENAME": "甘肃省",
+      "HOUSESTAID": "HOUSESTA065",
+      "FRAMEPER": 20,
+      "DISTCODE": "623023",
+      "COUNTRYNAME": "舟曲县",
+      "CIVILPER": 20,
+      "CITYNAME": "甘南藏族自治州",
+      "CAVEOTHERPER": 0,
+      "BRICKWOODPER": 40,
+      "BRICKPER": 20
+    },
+    "id": "HOUSESTA065"
+  },
+  {
+    "tag": {
+      "PROVINCENAME": "甘肃省",
+      "HOUSESTAID": "HOUSESTA066",
+      "FRAMEPER": 30,
+      "DISTCODE": "623027",
+      "COUNTRYNAME": "夏河县",
+      "CIVILPER": 18,
+      "CITYNAME": "甘南藏族自治州",
+      "CAVEOTHERPER": 0,
+      "BRICKWOODPER": 27.5,
+      "BRICKPER": 24.5
+    },
+    "id": "HOUSESTA066"
+  },
+  {
+    "tag": {
+      "PROVINCENAME": "甘肃省",
+      "HOUSESTAID": "HOUSESTA067",
+      "FRAMEPER": 10,
+      "DISTCODE": "623022",
+      "COUNTRYNAME": "卓尼县",
+      "CIVILPER": 41,
+      "CITYNAME": "甘南藏族自治州",
+      "CAVEOTHERPER": 0,
+      "BRICKWOODPER": 24,
+      "BRICKPER": 25
+    },
+    "id": "HOUSESTA067"
+  },
+  {
+    "tag": {
+      "PROVINCENAME": "甘肃省",
+      "HOUSESTAID": "HOUSESTA068",
+      "FRAMEPER": 33.39,
+      "DISTCODE": "620902",
+      "COUNTRYNAME": "肃州区",
+      "CIVILPER": 13.65,
+      "CITYNAME": "酒泉市",
+      "CAVEOTHERPER": 0,
+      "BRICKWOODPER": 25.35,
+      "BRICKPER": 27.61
+    },
+    "id": "HOUSESTA068"
+  },
+  {
+    "tag": {
+      "PROVINCENAME": "甘肃省",
+      "HOUSESTAID": "HOUSESTA069",
+      "FRAMEPER": 11.75,
+      "DISTCODE": "620722",
+      "COUNTRYNAME": "民乐县",
+      "CIVILPER": 17.27,
+      "CITYNAME": "张掖市",
+      "CAVEOTHERPER": 0,
+      "BRICKWOODPER": 36.02,
+      "BRICKPER": 34.96
+    },
+    "id": "HOUSESTA069"
+  },
+  {
+    "tag": {
+      "PROVINCENAME": "甘肃省",
+      "HOUSESTAID": "HOUSESTA070",
+      "FRAMEPER": 24.09,
+      "DISTCODE": "620702",
+      "COUNTRYNAME": "甘州区",
+      "CIVILPER": 14.05,
+      "CITYNAME": "张掖市",
+      "CAVEOTHERPER": 0,
+      "BRICKWOODPER": 28.64,
+      "BRICKPER": 33.22
+    },
+    "id": "HOUSESTA070"
+  },
+  {
+    "tag": {
+      "PROVINCENAME": "甘肃省",
+      "HOUSESTAID": "HOUSESTA071",
+      "FRAMEPER": 18.240000000000002,
+      "DISTCODE": "620721",
+      "COUNTRYNAME": "肃南裕固族自治县",
+      "CIVILPER": 14.71,
+      "CITYNAME": "张掖市",
+      "CAVEOTHERPER": 0,
+      "BRICKWOODPER": 40.04,
+      "BRICKPER": 27.01
+    },
+    "id": "HOUSESTA071"
+  },
+  {
+    "tag": {
+      "PROVINCENAME": "甘肃省",
+      "HOUSESTAID": "HOUSESTA072",
+      "FRAMEPER": 10.97,
+      "DISTCODE": "620723",
+      "COUNTRYNAME": "临泽县",
+      "CIVILPER": 23.79,
+      "CITYNAME": "张掖市",
+      "CAVEOTHERPER": 0,
+      "BRICKWOODPER": 49.51,
+      "BRICKPER": 15.73
+    },
+    "id": "HOUSESTA072"
+  },
+  {
+    "tag": {
+      "PROVINCENAME": "甘肃省",
+      "HOUSESTAID": "HOUSESTA073",
+      "FRAMEPER": 17.29,
+      "DISTCODE": "620724",
+      "COUNTRYNAME": "高台县",
+      "CIVILPER": 18.490000000000002,
+      "CITYNAME": "张掖市",
+      "CAVEOTHERPER": 0,
+      "BRICKWOODPER": 34.02,
+      "BRICKPER": 30.2
+    },
+    "id": "HOUSESTA073"
+  },
+  {
+    "tag": {
+      "PROVINCENAME": "甘肃省",
+      "HOUSESTAID": "HOUSESTA074",
+      "FRAMEPER": 15.93,
+      "DISTCODE": "620725",
+      "COUNTRYNAME": "山丹县",
+      "CIVILPER": 13.02,
+      "CITYNAME": "张掖市",
+      "CAVEOTHERPER": 0,
+      "BRICKWOODPER": 49.75,
+      "BRICKPER": 21.3
+    },
+    "id": "HOUSESTA074"
+  },
+  {
+    "tag": {
+      "PROVINCENAME": "甘肃省",
+      "HOUSESTAID": "HOUSESTA075",
+      "FRAMEPER": 16.26,
+      "DISTCODE": "620602",
+      "COUNTRYNAME": "凉州区",
+      "CIVILPER": 18.69,
+      "CITYNAME": "武威市",
+      "CAVEOTHERPER": 0,
+      "BRICKWOODPER": 47.85,
+      "BRICKPER": 17.19
+    },
+    "id": "HOUSESTA075"
+  },
+  {
+    "tag": {
+      "PROVINCENAME": "甘肃省",
+      "HOUSESTAID": "HOUSESTA076",
+      "FRAMEPER": 4.69,
+      "DISTCODE": "620622",
+      "COUNTRYNAME": "古浪县",
+      "CIVILPER": 33.5,
+      "CITYNAME": "武威市",
+      "CAVEOTHERPER": 0,
+      "BRICKWOODPER": 51.9,
+      "BRICKPER": 9.9
+    },
+    "id": "HOUSESTA076"
+  },
+  {
+    "tag": {
+      "PROVINCENAME": "甘肃省",
+      "HOUSESTAID": "HOUSESTA077",
+      "FRAMEPER": 6.71,
+      "DISTCODE": "620621",
+      "COUNTRYNAME": "民勤县",
+      "CIVILPER": 50.34,
+      "CITYNAME": "武威市",
+      "CAVEOTHERPER": 0,
+      "BRICKWOODPER": 29.14,
+      "BRICKPER": 13.82
+    },
+    "id": "HOUSESTA077"
+  },
+  {
+    "tag": {
+      "PROVINCENAME": "甘肃省",
+      "HOUSESTAID": "HOUSESTA078",
+      "FRAMEPER": 13.290000000000001,
+      "DISTCODE": "620623",
+      "COUNTRYNAME": "天祝藏族自治县",
+      "CIVILPER": 31.59,
+      "CITYNAME": "武威市",
+      "CAVEOTHERPER": 0,
+      "BRICKWOODPER": 40.5,
+      "BRICKPER": 14.620000000000001
+    },
+    "id": "HOUSESTA078"
+  },
+  {
+    "tag": {
+      "PROVINCENAME": "甘肃省",
+      "HOUSESTAID": "HOUSESTA079",
+      "FRAMEPER": 8.76,
+      "DISTCODE": "620423",
+      "COUNTRYNAME": "景泰县",
+      "CIVILPER": 16.15,
+      "CITYNAME": "白银市",
+      "CAVEOTHERPER": 0,
+      "BRICKWOODPER": 47.81,
+      "BRICKPER": 27.28
+    },
+    "id": "HOUSESTA079"
+  },
+  {
+    "tag": {
+      "PROVINCENAME": "青海省",
+      "HOUSESTAID": "HOUSESTA080",
+      "FRAMEPER": 21.5,
+      "DISTCODE": "632222",
+      "COUNTRYNAME": "祁连县",
+      "CIVILPER": 10.5,
+      "CITYNAME": "海北藏族自治州",
+      "CAVEOTHERPER": 0,
+      "BRICKWOODPER": 18.400000000000002,
+      "BRICKPER": 49.6
+    },
+    "id": "HOUSESTA080"
+  },
+  {
+    "tag": {
+      "PROVINCENAME": "青海省",
+      "HOUSESTAID": "HOUSESTA081",
+      "FRAMEPER": 25,
+      "DISTCODE": "632224",
+      "COUNTRYNAME": "刚察县",
+      "CIVILPER": 0,
+      "CITYNAME": "海北藏族自治州",
+      "CAVEOTHERPER": 0,
+      "BRICKWOODPER": 13,
+      "BRICKPER": 62
+    },
+    "id": "HOUSESTA081"
+  },
+  {
+    "tag": {
+      "PROVINCENAME": "青海省",
+      "HOUSESTAID": "HOUSESTA082",
+      "FRAMEPER": 38,
+      "DISTCODE": "632823",
+      "COUNTRYNAME": "天峻县",
+      "CIVILPER": 0,
+      "CITYNAME": "海西蒙古族藏族自治州",
+      "CAVEOTHERPER": 0,
+      "BRICKWOODPER": 3,
+      "BRICKPER": 59
+    },
+    "id": "HOUSESTA082"
+  }
+]

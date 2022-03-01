@@ -1,0 +1,218 @@
+[
+    {
+        "id": 4,
+        "pId": 0,
+        "name": "车辆实时位置",
+        "icon": "imgs/resources/firecar.png",
+        "nocheck": true,
+        "code": "fireCar"
+    },
+    {
+        "id": 1,
+        "pId": 0,
+        "name": "救援队伍",
+        "icon": "imgs/resources/jiuyuandui.png",
+        "nocheck": true,
+        "open": true
+    },
+    {
+        "id": 1002,
+        "pId": 1,
+        "name": "消防救援队",
+        "code": "transportationteam"
+    },
+    {
+        "id": 1000,
+        "pId": 1,
+        "name": "矿山隧道救援队",
+        "code": "floodteam"
+    },
+    {
+        "id": 1001,
+        "pId": 1,
+        "name": "危险化学品救援队",
+        "code": "fireteam"
+    },
+    {
+        "id": 1003,
+        "pId": 1,
+        "name": "森林消防救援队",
+        "code": "forestfireteam"
+    },
+    {
+        "id": 1004,
+        "pId": 1,
+        "name": "地震灾害救援队",
+        "code": "hazardousteam"
+    },
+    {
+        "id": 1005,
+        "pId": 1,
+        "name": "医疗防疫救援队",
+        "code": "mineteam"
+    },
+    {
+        "id": 1006,
+        "pId": 1,
+        "name": "安全水上救援队",
+        "code": "nonmineteam"
+    },
+    {
+        "id": 1007,
+        "pId": 1,
+        "name": "社会救援队",
+        "code": "corecompetenceteam"
+    },
+    {
+        "id": 2,
+        "pId": 0,
+        "name": "救援装备",
+        "icon": "imgs/resources/zhuangbei.png",
+        "nocheck": true
+    },
+    {
+        "id": 2002,
+        "pId": 2,
+        "name": "矿山装备",
+        "code": "equipment"
+    },
+    {
+        "id": 2003,
+        "pId": 2,
+        "name": "危化装备",
+        "code": "equipment"
+    },
+    {
+        "id": 2005,
+        "pId": 2,
+        "name": "森林消防装备",
+        "code": "1001002"
+    },
+    {
+        "id": 2006,
+        "pId": 2,
+        "name": "制造企业",
+        "code": "1002"
+    },
+    {
+        "id": 2007,
+        "pId": 2,
+        "name": "地震装备",
+        "code": "1002001"
+    },
+    {
+        "id": 2008,
+        "pId": 2,
+        "name": "卫生防疫装备",
+        "code": "1002002"
+    },
+    {
+        "id": 2009,
+        "pId": 2,
+        "name": "水上装备",
+        "code": "1002003"
+    },
+    {
+        "id": 2010,
+        "pId": 2,
+        "name": "铁路装备",
+        "code": "1002004"
+    },
+    {
+        "id": 2011,
+        "pId": 2,
+        "name": "电力装备",
+        "code": "1002005"
+    },
+    {
+        "id": 2012,
+        "pId": 2,
+        "name": "通信装备",
+        "code": "1002006"
+    },
+    {
+        "id": 2013,
+        "pId": 2,
+        "name": "安全水上装备",
+        "code": "1002009"
+    },
+    {
+        "id": 2014,
+        "pId": 2,
+        "name": "社会组织装备",
+        "code": "1002010"
+    },
+    {
+        "id": 2015,
+        "pId": 2,
+        "name": "施工企业装备",
+        "code": "v_equipment※16"
+    },
+    {
+        "id": 2016,
+        "pId": 2,
+        "name": "运输企业装备",
+        "code": "v_equipment※17"
+    },
+    {
+        "id": 2017,
+        "pId": 2,
+        "name": "应急勘测装备",
+        "code": "v_equipment※18"
+    },
+    {
+        "id": 2018,
+        "pId": 2,
+        "name": "医疗装备",
+        "code": "v_equipment※19"
+    },
+    {
+        "id": 2019,
+        "pId": 2,
+        "name": "技指中心装备",
+        "code": "v_equipment※20"
+    },
+    {
+        "id": 2004,
+        "pId": 2,
+        "name": "消防装备",
+        "code": "1001001"
+    },
+    {
+        "id": 3,
+        "pId": 0,
+        "name": "救援保障",
+        "icon": "imgs/resources/baozhang.png",
+        "nocheck": true
+    },
+    {
+        "id": 3001,
+        "pId": 3,
+        "name": "储备库",
+        "code": "ANJIAN_REPERTORY※01"
+    },
+    {
+        "id": 3002,
+        "pId": 3,
+        "name": "战保基地",
+        "code": "JC_WARBASE※01"
+    },
+    {
+        "id": 3003,
+        "pId": 3,
+        "name": "避难场所",
+        "code": "shelter"
+    },
+    {
+        "id": 3004,
+        "pId": 3,
+        "name": "灾情信息员",
+        "code": "DisasterPer※01"
+    },
+    {
+        "id": 3005,
+        "pId": 3,
+        "name": "专家",
+        "code": "Expert※01"
+    }
+]

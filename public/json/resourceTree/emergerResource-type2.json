@@ -1,0 +1,81 @@
+[
+    {
+        "id": 1001,
+        "pId": 1,
+        "name": "危险化学品救援队",
+        "code": "fireteam"
+    },
+    {
+        "id": 1003,
+        "pId": 1,
+        "name": "森林消防救援队",
+        "code": "forestfireteam"
+    },
+    {
+        "id": 1004,
+        "pId": 1,
+        "name": "地震灾害救援队",
+        "code": "hazardousteam"
+    },
+    {
+        "id": 1005,
+        "pId": 1,
+        "name": "医疗防疫救援队",
+        "code": "mineteam"
+    },
+    {
+        "id": 1006,
+        "pId": 1,
+        "name": "安全水上救援队",
+        "code": "nonmineteam"
+    },
+    {
+        "id": 1007,
+        "pId": 1,
+        "name": "社会救援队",
+        "code": "corecompetenceteam"
+    },
+    {
+        "id": 2,
+        "pId": 0,
+        "name": "救援装备",
+        "icon": "imgs/resources/zhuangbei.png",
+        "nocheck": true
+    },
+    {
+        "id": 2002,
+        "pId": 2,
+        "name": "矿山装备",
+        "code": "equipment"
+    },
+    {
+        "id": 2003,
+        "pId": 2,
+        "name": "危化装备",
+        "code": "equipment"
+    },
+    {
+        "id": 2005,
+        "pId": 2,
+        "name": "森林消防装备",
+        "code": "1001002"
+    },
+    {
+        "id": 2006,
+        "pId": 2,
+        "name": "制造企业",
+        "code": "1002"
+    },
+    {
+        "id": 2007,
+        "pId": 2,
+        "name": "地震装备",
+        "code": "1002001"
+    },
+    {
+        "id": 2008,
+        "pId": 2,
+        "name": "卫生防疫装备",
+        "code": "1002002"
+    }
+]

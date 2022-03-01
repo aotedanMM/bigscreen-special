@@ -1,0 +1,37 @@
+[{
+        "iconName": "gisMapTool-tianqjiaot",
+        "title": "天气交通",
+        "key": "toolBox"
+    },
+    {
+        "iconName": "gisMapTool-zhoubiantianqi",
+        "title": "当地天气",
+        "key": "surroundingWeather",
+        "isOpen": false,
+        "isShow": true
+    },
+    {
+        "iconName": "gisMapTool-BaiduStreetView",
+        "title": "百度街景",
+        "key": "BaiduStreetView",
+        "isOpen": false,
+        "mutexkey": [
+          "ToolIconEventOverview.tencentStreetView"
+        ]
+    },
+    {
+        "iconName": "gisMapTool-tencentStreetView",
+        "title": "腾讯街景",
+        "key": "tencentStreetView",
+        "isOpen": false,
+        "mutexkey": [
+          "ToolIconEventOverview.BaiduStreetView"
+        ]
+    },
+    {
+        "iconName": "gisMapTool-realTimeTraffic",
+        "title": "实时路况",
+        "key": "realTimeTraffic",
+        "isOpen": false
+    }
+]

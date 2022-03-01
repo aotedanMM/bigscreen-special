@@ -1,0 +1,1 @@
+declare let g2:any;

@@ -1,0 +1,74 @@
+{
+    "key": "casualties",
+    "data": {
+      "static":{
+        "injured": "4",
+        "damage": "15",
+        "death": "12"
+      },
+      "detail":[
+        {
+          "parentName": "西城区",
+          "death": 12,
+          "injured": 4,
+          "miss": 4,
+          "damage": 6,
+          "lost": 14,
+          "x": 116.35581226,
+          "y": 39.87521582,
+          "id": "110102",
+          "child": [
+            {
+              "town": "西城区",
+              "village": "白纸坊街道",
+              "id": "11010201995737",
+              "death": 5,
+              "injured": 1,
+              "miss": 4,
+              "damage": 6,
+              "lost": 5,
+              "x": 116.35581226,
+              "y": 39.87521582
+            },
+            {
+              "town": "西城区",
+              "village": "牛街街道",
+              "id": "11010201851877",
+              "death": 7,
+              "injured": 3,
+              "miss": 0,
+              "damage": 0,
+              "lost": 9,
+              "x": 116.35574273,
+              "y": 39.8849606
+            }
+          ]
+        },
+        {
+          "parentName": "丰台区",
+          "death": 0,
+          "injured": 0,
+          "miss": 8,
+          "damage": 9,
+          "lost": 6,
+          "x": 116.35984272,
+          "y": 39.86261546,
+          "id": "110106",
+          "child": [
+            {
+              "town": "丰台区",
+              "village": "右安门街道",
+              "id": "11010600183936",
+              "death": 0,
+              "injured": 0,
+              "miss": 8,
+              "damage": 9,
+              "lost": 6,
+              "x": 116.35984272,
+              "y": 39.86261546
+            }
+          ]
+        }
+      ]
+    }
+  }

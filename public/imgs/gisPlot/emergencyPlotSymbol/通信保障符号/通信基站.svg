@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+    <title>通信基站</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="28" height="28" rx="14"></rect>
+        <filter x="-10.7%" y="-10.7%" width="121.4%" height="121.4%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.26 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="其他图标" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="应急保障资源" transform="translate(-972.000000, -418.000000)">
+            <g id="通信基站" transform="translate(974.000000, 420.000000)">
+                <g id="矩形">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <rect stroke="#FFFFFF" stroke-width="1" stroke-linejoin="square" fill="#0E9D99" fill-rule="evenodd" x="0.5" y="0.5" width="27" height="27" rx="13.5"></rect>
+                </g>
+                <path d="M14.15625,5 C9.6675,5.00225 6,8.5955 6,13.0218125 C6,15.562625 7.2358125,17.9571875 9.3305625,19.479875 L9.7051875,18.61025 C7.909125,17.2315625 6.8994375,15.1998125 6.8994375,12.98525 C6.8994375,9.0291875 10.154625,5.8015625 14.1585,5.8015625 C18.1629375,5.8015625 21.418125,8.9954375 21.418125,12.9486875 C21.415875,15.161 20.403375,17.22875 18.6073125,18.608 L18.9819375,19.477625 C21.039,17.9526875 22.3125,15.558125 22.3125,13.0195625 C22.3125,8.59325 18.645,5 14.15625,5 L14.15625,5 Z M14.9116875,14.570375 C15.5675625,14.2885625 16.0276875,13.6540625 16.0276875,12.912125 C16.0276875,11.910875 15.19125,11.0975 14.15625,11.0975 C13.1240625,11.0975 12.2848125,11.910875 12.2848125,12.912125 C12.2848125,13.629875 12.7185,14.2458125 13.342875,14.54 L10.0415625,21.911 C9.8908125,22.20125 9.9285,22.4909375 10.0415625,22.67375 C10.1923125,22.8903125 10.4161875,23 10.7525625,23 L17.4868125,23 C17.82375,23 18.0470625,22.8903125 18.1978125,22.67375 C18.3485625,22.456625 18.3485625,22.20125 18.1978125,21.911 L14.9116875,14.570375 Z M17.858625,16.8321875 C18.94425,15.8163125 19.541625,14.473625 19.541625,13.0218125 C19.50675,10.1181875 17.11275,7.7601875 14.15625,7.7601875 C11.19975,7.7601875 8.80575,10.1181875 8.80575,13.0218125 C8.80575,14.473625 9.4036875,15.8163125 10.48875,16.8321875 L10.863375,15.9963125 C10.07925,15.161 9.6675,14.1108125 9.6675,12.98525 C9.6675,10.5175625 11.686875,8.5589375 14.15625,8.5589375 C16.625625,8.5589375 18.6826875,10.554125 18.6826875,12.98525 C18.6826875,14.1108125 18.2709375,15.16325 17.4845625,15.9963125 L17.858625,16.8321875 Z" id="Fill-1" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>

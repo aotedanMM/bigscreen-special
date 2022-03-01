@@ -1,0 +1,260 @@
+
+@statisticHalfImgUrl: '../../img/halfScreen/halflist';
+@panelProgressBg: '../../img/default/panel/panel_progress.png';
+@toBack: '../../img/default/panel/toBack.png';
+@toBack_h: '../../img/default/panel/toBack_h.png';
+// 统计面板列表
+*{margin:0;padding:0;}
+/* 标题与总的统计数 start */ 
+.tempRight-title{
+  color: rgb(0, 227, 255);
+  display:flex;
+  text-align: center;
+  line-height: 45px;
+  height: 45px;
+  // font-family: 黑体;
+  // padding-left:25px;
+  position: relative;
+  cursor: pointer;
+  &:after{
+    content: '';
+    display: inline-block;
+    background: url('@{statisticHalfImgUrl}/titleline.png') no-repeat;
+    position: absolute;
+    bottom: -26px;
+    left: 0px;
+    width: 100%;
+    height: 26px;
+  }
+  .itemName-active{
+    color:yellow;
+  }
+}
+.slsItemUnit{
+  float: none!important;
+}
+.slsItemName{
+  right: 86px!important;
+}
+.instake_cont {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  vertical-align: middle;
+  background: url('../../../assets/img/discuss/icon_cont.png') 0 50% no-repeat;
+}
+.instake_cont:hover {
+  background: url('../../../assets/img/discuss/icon_cont_hover.png') 0 50% no-repeat;
+}
+.tempRight-total{
+    height: 45px;
+    line-height: 45px;
+    margin-left: 20px;
+    font-weight: normal;
+    font-style: italic;
+    position: absolute;
+    right: 70px;
+    color: rgb(255, 240, 0);
+  }
+.tempRight-unit{
+  position: absolute;
+  right:30px;
+  color: rgb(218, 242, 255);
+
+}
+.tempRight-switch{
+  width: 34px;
+  height:29px;
+  background-size: 100% 100%;
+  position: absolute;
+  right: 0px;
+  top: 8px;
+  cursor: pointer;
+  background: url("@{statisticHalfImgUrl}/open.png") 50% 50% no-repeat;
+  transition: transform .3s;
+}
+.tempRight-switch-reverse{
+  transform: scale(1,-1);
+}
+/* 标题与总的统计数 end*/
+
+
+/* 统计面板下面的列表样式 start */ 
+.team-ul {
+  width:100%;
+ 
+  .tempRight-itemTitle {
+      margin:15px 0;
+      display: flex;
+      width:100%;
+      align-items: center; 
+      justify-content: space-between;    
+      text-align: center;
+
+      .tempRight-icon_bg {
+          width: 48px;
+          height: 48px;
+      }
+      .icon_bg_normal {
+          border-radius: 8px;
+          background:linear-gradient(to bottom, #22fc89, #043576);
+          border:1px solid #3be2f9;
+      }
+
+      .icon_bg_qt {
+          border-radius: 8px;
+          background:linear-gradient(to bottom, #fc7922, #2f7604);
+          border:1px solid #f3a241;
+      }
+
+      .tempRight-icon {
+          display: inline-block;
+          width: 34px;
+          height: 34px;
+          background-size: 100% 100%;
+          margin-top: 6px;
+      }                          
+
+      .tempRight-itemName {
+          margin-left:5px;
+          width: 195px;
+              cursor:pointer;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          white-space: nowrap;
+          color: rgb(218, 242, 255);
+          height: 53px;
+          line-height: 53px;
+          padding-left: 15px;
+          background: url('@{statisticHalfImgUrl}/listbg.png') 0 50% no-repeat;
+          background-size:100% 100%;
+          text-align: left;;
+      }
+       
+      .tempRight-itemName.itemName-active {
+        color: yellow !important;
+        background-image: url('@{statisticHalfImgUrl}/listbghover.png');
+      } 
+  }
+  .tempRight-itemNum {
+      position:relative;
+      color: rgb(182, 208, 222);
+      width:98px;
+      white-space: nowrap;
+      
+      .text-unit {
+          color: #bacfdc;
+          padding-right:5px;
+          float:right;
+          font-style: normal;
+      }
+      .text-number-primary,
+      .text-number {
+          display: inline-block;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden;
+          font-family: 'Impact';
+          position:absolute;
+          right:40px;
+          font-style: normal;
+          cursor:pointer;
+      }
+      .text-number-primary{
+        color:#3fe7fe;
+      }
+      .text-number {
+        color: #fbee06;
+      }
+  }
+}
+/* 统计面板下面的列表样式 end */ 
+
+/* 力量调度和物资保障面板的结构样式 start */ 
+.rescueTeamsHome {
+  width:100%;
+  height: 100%;
+  box-sizing: border-box;
+  &_hd{
+      line-height: 35px;
+      text-align: left;
+      white-space: nowrap;
+      font-style: italic;
+      padding-left: 10px;
+  } 
+  &_cnt{
+      width: 100%;
+      height: calc(100% - 585px);
+      padding:0 10px;
+      box-sizing:border-box;
+  }     
+  .loading{
+    color: #fff;
+    font-size: 36px;
+    background: url('@{statisticHalfImgUrl}/loading.gif') no-repeat 33px 255px;
+    color: #d2e1ec;
+    height: 800px;
+    width: 390px;
+}
+}
+/* 力量调度和物资保障面板的结构样式 end*/ 
+
+/* 航空站部分结构样式 start*/ 
+.AirStation{
+    margin-top: 70px;
+    .AirStation_title{
+        width:389px;
+        height:36px;
+        background: url('@{statisticHalfImgUrl}/airstation_title.png') -18px no-repeat;
+        position: relative;
+        h2{
+            position: absolute;
+            font-weight: normal;
+            top: -25px;
+            color: #00e3ff;
+            left: 5px;
+        }
+    }
+}
+/* 航空站部分结构样式 end*/ 
+
+/* 左侧面板的公共样式 start*/ 
+.panelPublicDefault {  
+  width:100%;
+  height: 100%;
+  box-sizing: border-box;
+  // background:url('@{panelProgressBg}') no-repeat 0 0;
+  // background-size: 100% 100%;
+  &_hd{
+    line-height: 35px;
+    text-align: left;
+    white-space: nowrap;
+    font-style: italic;
+    padding-left: 20px;
+    box-sizing: border-box;
+    .title-panel {
+      position: relative;
+      top: 2px;
+    }
+  }
+  &_bd{
+    padding:0 10px;
+    box-sizing: border-box;
+    height: calc(100% - 35px); 
+  }
+  &_toBack{
+    position: absolute;
+    right:0;
+    top:10px;
+    width:61px;
+    height:25px;
+    background: url('@{toBack}') no-repeat 0 0;
+    z-index: 10;
+    &:hover{
+      background-image: url('@{toBack_h}') ;
+    }
+  }
+ 
+}
+/* 左侧面板的公共样式 end*/ 

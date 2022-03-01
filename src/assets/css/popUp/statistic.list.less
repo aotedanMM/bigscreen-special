@@ -1,0 +1,41 @@
+.listBoxSingle {
+  padding-right: 10px;
+  &_li {
+    cursor: pointer;
+    color: #ffffff;
+    padding: 10px 0px;
+    margin: 10px 0 0 0;
+    background: url('../../img/halfScreen/halflist/boxListBgIcon.png') no-repeat
+      0 0;
+    background-size: 100% 100%;
+    &:hover,
+    &.checkSty {
+      background-image: url('../../img/halfScreen/halflist/boxListBgIcon_h.png');
+    }
+    .teamName {
+      font-family: MicrosoftYaHei;
+      font-weight: normal;
+      font-stretch: normal;
+      color: #e8f4fe;
+      padding-bottom: 10px;
+    }
+    .teamDistance {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: normal;
+      color: #e8f4fe;
+      .title {
+        color: #80adcf;
+        padding-right: 10px;
+      }
+      .level {
+        margin-right: 5px;
+        white-space: nowrap;
+      }
+    }
+  }
+}
+.riverSelect > div {
+  width: 45%;
+}

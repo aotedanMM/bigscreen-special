@@ -1,0 +1,233 @@
+/*布局样式- start*/
+.layout-grid-3cols {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+.cols3_1,
+.cols3_2,
+.cols3_3 {
+  z-index: 2;
+  height: 100%;
+}
+.cols3_1 {
+  /* width:1035px;*/
+  width: 27%;
+  box-sizing: border-box;
+  z-index: 3;
+}
+.cols3_2 {
+  position: relative;
+  width: 46%;
+  box-sizing: border-box;
+  margin-top: -30px;
+  height: calc(100% + 30px);
+}
+.cols3_3 {
+  width: 27%;
+  box-sizing: border-box;
+}
+/*布局样式- end*/
+/*地图外框样式及背景 start  */
+.main-map-box {
+  padding: 3.8% 2.9% 4.8% 2.9%;
+  height: 100%;
+  box-sizing: border-box;
+}
+.main-map-box-bg {
+  position: absolute;
+  pointer-events: none;
+  z-index: 1;
+  left: -4.4%;
+  right: -4.4%;
+  top: 0%;
+  bottom: 0;
+  user-select: none;
+}
+.main-map-box-bg2 {
+  position: absolute;
+  pointer-events: none;
+  z-index: 3;
+  left: 53px;
+  top: 9px;
+  right: 51px;
+  bottom: 84px;
+}
+/*地图外框样式及背景 end  */
+/*换肤按钮 start*/
+.skinSwitch-btn {
+  position: absolute;
+  z-index: 4;
+  left: 50%;
+  top: 20px;
+  width: 88px;
+  height: 88px;
+  background: url('../../img/decisionSupport/head/skin-btn.png') no-repeat 50% 50%;
+  margin-left: 400px;
+  cursor: pointer;
+}
+.skinSwitch-btn:hover .skinSwitch-btn-img {
+  transform: rotate(360deg);
+  transition: transform 3s;
+}
+.nav-box {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-55%);
+  z-index: 1;
+}
+/*换肤按钮 end*/
+/*head上的全屏缩放按钮 -start*/
+.gisScreenBtn-box {
+  position: absolute;
+  z-index: 2;
+  left: calc(4% - 130px);
+  text-align: right;
+  top: 21px;
+  width: 120px;
+}
+.gisScreenBtn-box_btnFull,
+.gisScreenBtn-box_btn,
+.gisScreenBtn-box_btn--2rd,
+.gisScreenBtn-box_btn--3rd,
+.gisScreenBtn-box_btn--back {
+  cursor: pointer;
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: -62px;
+}
+.gisScreenBtn-box_btnFull {
+  background-image: url('../../img/decisionSupport/head/fullScreen.png');
+}
+.gisScreenBtn-box_btnFull:hover {
+  background-image: url('../../img/decisionSupport/head/fullScreen-hover.png');
+}
+.gisScreenBtn-box_btn {
+  background-image: url('../../img/decisionSupport/head/exitFull.png');
+}
+.gisScreenBtn-box_btn:hover {
+  background-image: url('../../img/decisionSupport/head/exitFull-hover.png');
+}
+.gisScreenBtn-box_btn--2rd {
+  margin-right: 10px;
+  background-image: url('../../img/decisionSupport/head/halfSize.png');
+}
+.gisScreenBtn-box_btn--2rd:hover {
+  background-image: url('../../img/decisionSupport/head/halfSize-hover.png');
+}
+.gisScreenBtn-box_btn--3rd {
+  background-image: url('../../img/decisionSupport/head/oneThird.png');
+}
+.gisScreenBtn-box_btn--3rd:hover {
+  background-image: url('../../img/decisionSupport/head/oneThird-hover.png');
+}
+.gisScreenBtn-box_btn--back {
+  background-image: url('../../img/decisionSupport/head/return_btn.png');
+}
+/*head上的全屏缩放按钮  -start*/
+/*普通屏布局样式-start*/
+.gisScreen-default {
+  position: relative;
+  width: 3840px;
+  height: 1080px;
+}
+/*普通屏布局样式-end*/
+/*全屏布局样式-start*/
+.gisScreen-full {
+  width: 100vw;
+  height: 100vh;
+}
+.gisScreen-full .cols3_1,
+.gisScreen-full .cols3_3 {
+  display: none;
+}
+.gisScreen-full .main-map-box-bg2 {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-position: 50% 50%;
+}
+.gisScreen-full .main-map-box {
+  padding: 3.8% 2.9% 4.8% 2.9%;
+}
+.gisScreen-full .main-map-box .animate-map-door {
+  display: none;
+}
+.gisScreen-full .cols3_2 {
+  z-index: 3;
+  width: 3840px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 1s;
+  height: 100% ;
+}
+/*全屏布局样式-end*/
+/*半屏样式-start*/
+.gisScreen-2rd {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.gisScreen-2rd /deep/ .GisMapContainer {
+  top: 96px;
+  right: 458px;
+  z-index: 3;
+}
+.gisScreen-2rd /deep/ .GisMapContainer.GisMapContainer_reset {
+  right: 65px;
+}
+.gisScreen-2rd /deep/ .EventInfoDetail .dialong_bg_pao {
+  top: -20px;
+  left: 188px;
+}
+.gisScreen-2rd /deep/ .menu-search {
+  top: 26px;
+}
+.gisScreen-2rd .layout-header-animate {
+  display: none;
+}
+.gisScreen-2rd .cols3_1,
+.gisScreen-2rd .cols3_3 {
+  display: none;
+}
+.gisScreen-2rd .main-map-box-bg {
+  left: 0;
+  right: 0;
+  pointer-events: none;
+}
+.gisScreen-2rd .main-map-box-bg2 {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-position: 50% 50%;
+}
+.gisScreen-2rd .main-map-box {
+  padding: 0% 0 0 0;
+}
+.gisScreen-2rd .main-map-box .animate-map-door {
+  display: none;
+}
+.gisScreen-2rd .cols3_2 {
+  z-index: 3;
+  width: 100%;
+  transition: all 1s;
+  height: calc(100% + 30px);
+}
+.gisScreen-2rd /deep/ .minimize-position {
+  position: absolute;
+  z-index: 9999;
+  width: 110px;
+  height: 36px;
+  cursor: pointer;
+  left: 50%;
+}
+/*半屏样式-end*/

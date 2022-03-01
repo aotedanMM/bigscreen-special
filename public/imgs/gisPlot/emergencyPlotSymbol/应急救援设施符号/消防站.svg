@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+    <title>消防站</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="28" height="28" rx="14"></rect>
+        <filter x="-10.7%" y="-10.7%" width="121.4%" height="121.4%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.26 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="其他图标" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="玉董" transform="translate(-118.000000, -73.000000)">
+            <g id="消防站" transform="translate(120.000000, 75.000000)">
+                <g id="矩形">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <rect stroke="#FFFFFF" stroke-width="1" stroke-linejoin="square" fill="#68AE05" fill-rule="evenodd" x="0.5" y="0.5" width="27" height="27" rx="13.5"></rect>
+                </g>
+                <path d="M22.6537906,10.6986966 L14.4495362,5.13710997 C14.1793788,4.95429668 13.8239085,4.95429668 13.5537511,5.13710997 L5.351528,10.6986966 C4.70152517,11.1394798 5.01230777,12.1571404 5.79840493,12.1571404 L7.24262995,12.1571404 C7.46606842,12.1571404 7.64888172,12.3399537 7.64888172,12.5633922 L7.64888172,21.6999944 C7.64888172,22.4170287 8.231853,23 8.94888736,23 L19.0544,23 C19.7714343,23 20.3544056,22.4170287 20.3544056,21.6999944 L20.3544056,12.5633922 C20.3544056,12.3399537 20.5372189,12.1571404 20.7606574,12.1571404 L22.2048824,12.1571404 C22.9909796,12.1571404 23.3037934,11.1394798 22.6537906,10.6986966 Z M17.5797061,18.2976358 C17.1795481,20.3593635 15.0771952,20.9159285 15.0771952,20.9159285 C15.0771952,20.9159285 16.6697021,18.6876375 14.16516,16.3476274 C14.16516,16.3476274 14.5632867,17.0159115 13.482657,18.4093551 C13.482657,18.4093551 13.5964075,17.5745077 13.255156,17.2962252 C13.255156,17.2962252 13.482657,17.7979462 12.4020273,18.856232 C11.5488986,19.6362354 12.5157778,20.9159285 12.5157778,20.9159285 C12.5157778,20.9159285 8.30497831,19.9693618 11.6626491,15.2344975 C11.6626491,15.2344975 11.4920234,15.9027817 11.7763996,16.9062236 C11.7763996,16.9062236 14.2240665,15.2344975 13.1982808,13.1179259 C13.1982808,13.1179259 15.0182887,13.4530836 15.9851679,16.2379394 C15.9851679,16.2379394 16.3832946,15.8479377 15.8714174,14.5113694 C15.8714174,14.5093381 18.034708,15.9576257 17.5797061,18.2976358 L17.5797061,18.2976358 Z" id="形状" fill="#FFFFFF" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>

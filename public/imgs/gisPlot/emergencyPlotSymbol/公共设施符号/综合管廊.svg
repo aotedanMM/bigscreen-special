@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+    <title>综合管廊</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="28" height="28" rx="14"></rect>
+        <filter x="-10.7%" y="-10.7%" width="121.4%" height="121.4%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.26 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="其他图标" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="应急保障资源" transform="translate(-972.000000, -810.000000)">
+            <g id="综合管廊" transform="translate(974.000000, 812.000000)">
+                <g id="矩形">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <rect stroke="#FFFFFF" stroke-width="1" stroke-linejoin="square" fill="#0E9D99" fill-rule="evenodd" x="0.5" y="0.5" width="27" height="27" rx="13.5"></rect>
+                </g>
+                <path d="M7.62407216,16.5319206 L5,16.5319206 L5,15.3146534 L7.62407216,15.3146534 L7.62407216,13.9692447 L5,13.9692447 L5,12.7519775 L7.62407216,12.7519775 L7.62407216,11.4066348 L5,11.4066348 L5,10.1893895 L7.62407216,10.1893895 L7.62407216,7.6266785 L20.3732819,7.6266785 L20.3732819,20.3759103 L7.62407216,20.3759103 L7.62407216,16.5319206 Z M18.5153732,18.5180016 L18.4513355,18.5180016 L18.4513355,9.4845872 L9.48198086,9.4845872 L9.48198086,18.5180016 L18.5153732,18.5180016 Z M16.5933433,7.62669169 L16.5933433,5 L17.8106105,5 L17.8106105,7.62669169 L16.5933433,7.62669169 Z M13.9666296,7.62669169 L13.9666296,5 L15.1838968,5 L15.1838968,7.62669169 L13.9666296,7.62669169 Z M11.4040196,7.62669169 L11.4040196,5 L12.6212868,5 L12.6212868,7.62669169 L11.4040196,7.62669169 Z M11.4040196,16.5319206 L11.4040196,11.4066348 L16.5293055,11.4066348 L16.5293055,16.5319206 L11.4040196,16.5319206 Z M13.2619283,14.7380277 L14.7354346,14.7380277 L14.7354346,13.2645435 L13.2619283,13.2645435 L13.2619283,14.7380277 Z M20.3732863,12.6879397 L20.3732863,11.4706725 L23,11.4706725 L23,12.6879397 L20.3732863,12.6879397 Z M20.3732863,15.2506156 L20.3732863,14.0333484 L23,14.0333484 L23,15.2506156 L20.3732863,15.2506156 Z M20.3732863,17.8132256 L20.3732863,16.5959804 L23,16.5959804 L23,17.8132256 L20.3732863,17.8132256 Z M15.3120383,23.0025932 L15.3120383,20.3759015 L16.5293055,20.3759015 L16.5293055,23.0025932 L15.3120383,23.0025932 Z M12.6853246,23.0025932 L12.6853246,20.3759015 L13.9025918,20.3759015 L13.9025918,23.0025932 L12.6853246,23.0025932 Z M10.1226487,23.0025932 L10.1226487,20.3759015 L11.3399159,20.3759015 L11.3399159,23.0025932 L10.1226487,23.0025932 Z" id="合并形状" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Access-Control-Allow-Origin" content="*" />
+    <script type="text/javascript" src="../deps/jquery-1.11.2.js"></script>
+    <script>
+        $(function(){
+            var url = "symbol.json";
+            var request=new XMLHttpRequest();
+            request.open("get",url);
+            request.send(null);
+            request.onload = function(){
+                if(request.status==200){
+                    var json=JSON.parse(request.responseText);
+                    init(json);
+                }
+            };
+        });
+        function init(cfg) {
+            var picArr = cfg.icons ;
+            var picTpl = '<span>{idx}</span>                            \
+                    <img class="markerPic" src="{source}" id="{id}"/>    \
+                    <input type="text" value="" size="100"/>     \
+                    <br /><br />';
+            for (var property in picArr){
+                var values = [];
+                var html = picTpl;
+                html = html.replace('{idx}', property);
+                html = html.replace('{id}', property);
+                html = html.replace('{source}', picArr[property]);
+                $('#picList').append(html);
+            }
+            setTimeout(function(){
+                var imgs = $('.markerPic');
+                for (var i = 0; i < imgs.length; i++) {
+                    var item = imgs[i];
+
+                    var txt = $(item).next();
+                    var info = "width:{width}, height:{height}";
+                    info = info.replace('{width}', item.naturalWidth);
+                    info = info.replace('{height}', item.naturalHeight);
+
+                    txt.attr('value', info);
+                }
+            },300)
+        }
+
+    </script>
+</head>
+<body>
+    <span>图片配置</span>
+    <br />
+    <div id="picList">
+    </div>
+</body>
+</html>

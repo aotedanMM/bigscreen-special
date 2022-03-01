@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+    <title>火车站</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="28" height="28" rx="14"></rect>
+        <filter x="-10.7%" y="-10.7%" width="121.4%" height="121.4%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.26 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="其他图标" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="应急保障资源" transform="translate(-664.000000, -535.000000)">
+            <g id="火车站" transform="translate(666.000000, 537.000000)">
+                <g id="矩形">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <rect stroke="#FFFFFF" stroke-width="1" stroke-linejoin="square" fill="#0E9D99" fill-rule="evenodd" x="0.5" y="0.5" width="27" height="27" rx="13.5"></rect>
+                </g>
+                <path d="M11.93,21.29 C12.92,21.02 12.83,20.21 12.83,20.21 L12.83,16.34 C12.83,16.07 12.47,15.71 12.11,15.62 C11.93,15.53 11.03,15.35 10.49,15.26 L10.49,13.28 C10.58,12.65 11.12,12.2 11.66,12.2 L15.35,12.2 C15.98,12.2 16.43,12.65 16.43,13.28 L16.43,15.44 C15.89,15.53 14.99,15.71 14.81,15.8 C14.54,15.89 14.09,16.25 14.09,16.52 L14.09,20.3 C14.18,21.2 15.35,21.56 15.35,21.56 L19.4,22.28 L19.4,23 L7.61,23 L7.61,22.19 L11.93,21.29 Z M17.69,20.39 L16.34,18.95 C18.5,17.96 20.03,15.89 20.03,13.55 C20.03,10.22 17.15,7.52 13.55,7.52 C9.95,7.52 7.07,10.22 7.07,13.55 C7.07,15.89 8.51,17.96 10.67,18.95 L9.32,20.39 C6.8,19.13 5,16.52 5,13.55 C5,9.77 7.88,6.53 11.75,5.81 L11.75,5.72 C11.75,5.27 12.02,5 12.47,5 L14.63,5 C14.99,5 15.35,5.27 15.35,5.72 L15.35,5.81 C19.22,6.62 22.1,9.77 22.1,13.55 C22.01,16.52 20.3,19.04 17.69,20.39 L17.69,20.39 Z" id="Fill-1" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "esnext",
+    "strict": true,
+    "jsx": "preserve",
+    "importHelpers": true,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "types": [
+      "webpack-env",
+      "jest",
+      "reflect-metadata"
+       ],
+    "paths": {
+      "@/*": [
+        "src/*"
+      ],
+      "//": ["毕东方 2021.11.9 解决在TypeScript工程中使用node模块需要进行require操作，require操作会导致编译的时候报如下错误“This syntax requires an imported helper but module 'tslib' cannot be found.的问题”"],
+      "tslib":["node_modules/tslib/tslib.d.ts"]
+    },
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable",
+      "scripthost"
+    ]
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "tests/**/*.ts",
+    "tests/**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

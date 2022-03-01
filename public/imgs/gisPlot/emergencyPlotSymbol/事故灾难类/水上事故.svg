@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+    <title>水上事故 @4x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="28" height="28" rx="14"></rect>
+        <filter x="-10.7%" y="-10.7%" width="121.4%" height="121.4%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.26 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="其他图标" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="突发事件" transform="translate(-249.000000, -397.000000)">
+            <g id="水上事故-" transform="translate(251.000000, 399.000000)">
+                <g id="矩形-copy-5" transform="translate(14.000000, 14.000000) scale(-1, 1) translate(-14.000000, -14.000000) ">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <rect stroke="#FFFFFF" stroke-width="1" stroke-linejoin="square" fill="#D90C0C" fill-rule="evenodd" x="0.5" y="0.5" width="27" height="27" rx="13.5"></rect>
+                </g>
+                <path d="M8.15832754,20.558609 L6.45031621,14.6689147 C6.36074377,14.3989704 6.36074377,14.2639983 6.45031621,13.9940539 C6.49571593,13.8590818 6.6748608,13.6787099 6.85523269,13.5891375 L8.20372727,13.0946486 L8.20372727,9.00253806 C8.20372727,8.05773294 8.87858807,7.20372727 9.73259374,7.20372727 L11.935094,7.20372727 L12.5191553,5 L15.8468326,5 L16.3413215,7.20372727 L18.5475028,7.20372727 C19.4015085,7.20372727 20.0763693,7.9681605 20.0763693,9.00253806 L20.0763693,13.0946486 L21.4248639,13.6787099 C21.559836,13.7241096 21.7402079,13.8136821 21.8297804,14.0836264 C21.8297804,14.2639983 21.9193528,14.4885429 21.8297804,14.7584872 L20.0309696,20.558609 C18.8616198,20.558609 17.8272423,19.7941758 17.0628091,18.7597982 C16.2983758,19.7941758 15.308171,20.558609 14.0946486,20.558609 C12.9252988,20.558609 11.8909213,19.7941758 11.126488,18.7597982 C10.4516272,19.7941758 9.37184997,20.558609 8.15832754,20.558609 Z M9.64179429,9.00253806 L9.64179429,12.5093602 L14.0934215,10.8013488 L18.5450488,12.5093602 L18.5450488,9.00253806 L9.64179429,9.00253806 Z M22.367215,22.9900746 L22.1745729,22.9900746 C22.2396049,23.0033085 22.304637,23.0033085 22.367215,22.9900746 Z M11.125261,20.4678096 C13.1044437,21.996676 15.2173715,22.0874755 17.1965542,20.557382 C17.1965542,20.557382 20.3033679,22.8654059 22.1757999,22.9402541 L21.5132093,22.9402541 C20.3892593,22.9402541 18.4554763,22.4003655 17.4210988,21.8163041 C15.3977434,23.0298266 12.9694715,23.0298266 10.9461162,21.8163041 C9.91173861,22.4457652 7.97795566,22.9402541 6.85400567,22.9402541 L6,22.9402541 C7.88838322,22.9402541 11.125261,20.4678096 11.125261,20.4678096 Z" id="合并形状" fill="#FFFFFF" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,849 @@
+{
+  "//type": "事件类型,这是防汛专题常态",
+  "type": "flood",
+  "//funcPanel": "功能性按钮，右侧那部分",
+  "funcPanel": [
+    {
+      "name": "气象预警",
+      "alias": "气象预警",
+      "//key": "唯一关键字",
+      "key": "EarlywarningInfo",
+      "//componetName": "需要引入的组件的名称",
+      "componetName": "EarlywarningInfo",
+      "//checked": "是否显示在小窗(选中)",
+      "checked": true,
+      "//icon": "按钮图标",
+      "icon": "yjxx",
+      "componentParam": {
+        "typeCodes": ["11B01", "11B03", "11B06", "11B14", "11B37"],
+        "districtCode": "370600"
+      }
+    },
+    {
+      "name": "应急资源",
+      "alias": "应急资源",
+      "//key": "唯一关键字",
+      "key": "emergencyResource",
+      "//componetName": "需要引入的组件的名称",
+      "componetName": "EmergencyResource",
+      "//checked": "是否显示在小窗(选中)",
+      "checked": false,
+      "//icon": "按钮图标",
+      "icon": "yjzz"
+    },
+    {
+      "name": "森防图层",
+      "alias": "森防图层",
+      "//key": "唯一关键字",
+      "key": "senResistantLayer",
+      "//componetName": "需要引入的组件的名称",
+      "componetName": "SenResistantLayer",
+      "//checked": "是否显示在小窗(选中)",
+      "checked": false,
+      "//icon": "按钮图标",
+      "icon": "yjzz"
+    }
+  ],
+  "//": "结果按钮，左侧那部分",
+  "researchPanel": [
+    {
+      "name": "监测预警",
+      "alias": "监测预警",
+      "//key": "唯一关键字",
+      "key": "monitorWarningForestFire",
+      "//componetName": "需要引入的组件的名称",
+      "componetName": "MonitorWarningForestFire",
+      "//checked": "是否显示在小窗(选中)",
+      "checked": true,
+      "//icon": "按钮图标",
+      "icon": "cbyp"
+    },
+    {
+      "name": "防御准备",
+      "alias": "防御准备",
+      "//key": "唯一关键字",
+      "key": "defensivePreparation",
+      "//componetName": "需要引入的组件的名称",
+      "componetName": "DefensivePreparation",
+      "//checked": "是否显示在小窗(选中)",
+      "checked": false,
+      "//icon": "按钮图标",
+      "icon": "cbyp"
+    }
+  ],
+  "toolConfig": {
+    "mapToolIconEventOverview": "mapToolIconEventOverview_common.json",
+    "mapToolCompared": "mapToolCompared_common.json",
+    "mapCommonTools": "commonTools_common.json",
+    "disasterDecide": "disasterDecide_common.json",
+    "gisToolList": [
+      {
+        "component": "GisSwitchMap",
+        "options": {
+          "mapId": "map",
+          "baseLayers": [],
+          "//defaultLayerIndex": "默认展示底图",
+          "defaultLayerIndex": 0
+        }
+      },
+      {
+        "component": "CommonTools"
+      },
+      {
+        "component": "GisVideoSurveillance",
+        "name": "视频监控"
+      },
+      {
+        "component": "GisOnlineTerminal",
+        "name": "在线会商终端"
+      },
+      {
+        "component": "GisOnlinePawn",
+        "name": "在线单兵"
+      },
+      {
+        "component": "GisPlotControlBtn",
+        "name": "标绘"
+      },
+      {
+        "component": "GisPlotAroundBtn",
+        "name": "周边查询"
+      }
+    ]
+  },
+  "// EmergencyResponse": "应急响应",
+  "EmergencyResponse": {
+      "isShow": false
+  },
+  "legend": [
+    {
+      "clickFn": "openIntensity",
+      "title": "烈度圈",
+      "checked": false,
+      "iconName": "InfluenceCircle",
+      "isShow": false,
+      "mapCircleQueryType": 1
+    },
+    {
+      "clickFn": "openInfluence",
+      "title": "经验圈",
+      "checked": false,
+      "iconName": "intensityCircle",
+      "isShow": false,
+      "mapCircleQueryType": 0
+    },
+    {
+      "clickFn": "openThermodynamiTc",
+      "title": "人口热力",
+      "checked": false,
+      "iconName": "populationFever",
+      "isShow": false,
+      "mapCircleQueryType": 2,
+      "DayNightShow": true,
+      "DayNightHide": false,
+      "DayBtnclick": true
+    },
+    {
+      "clickFn": "openRiverSystem",
+      "title": "水系",
+      "checked": false,
+      "iconName": "riverSystem",
+      "isShow": false,
+      "mapCircleQueryType": 3
+    },
+    {
+      "clickFn": "openHistoricalEarthquake",
+      "title": "历史地震",
+      "checked": false,
+      "iconName": "historicalEarthquake",
+      "isShow": false,
+      "mapCircleQueryType": 4
+    },
+    {
+      "key": "Rainfall",
+      "title": "降雨量",
+      "iconName": "riverSystem",
+      "isShow": false,
+      "index": 5,
+      "mutex": [
+        {
+          "key": "RainStation"
+        },
+        {
+          "key": "WindMonitoring"
+        },
+        {
+          "key": "Reservoir"
+        },
+        {
+          "key": "Riverway"
+        },
+        {
+          "key": "Wind"
+        },
+        {
+          "key": "WindThwartwise"
+        },
+        {
+          "key": "LiftMonitoring"
+        }
+      ],
+      "componentName": "Rainfall",
+      "componentParam": {
+        "title": "降雨量(mm)",
+        "content": [
+          {
+            "text": "0~10",
+            "color": "rgba(165,243,142,1)"
+          },
+          {
+            "text": "10~25",
+            "color": "rgba(56,171,0,1)"
+          },
+          {
+            "text": "25~50",
+            "color": "rgba(99,186,255,1)"
+          },
+          {
+            "text": "50~100",
+            "color": "rgba(1,0,251,1)"
+          }
+        ]
+      }
+    },
+    {
+      "key": "RainStation",
+      "title": "雨量站",
+      "iconName": "riverSystem",
+      "isShow": false,
+      "index": 6,
+      "mutex": [
+        {
+          "key": "Rainfall"
+        },
+        {
+          "key": "WindMonitoring"
+        },
+        {
+          "key": "Reservoir"
+        },
+        {
+          "key": "Riverway"
+        },
+        {
+          "key": "Wind"
+        },
+        {
+          "key": "WindThwartwise"
+        },
+        {
+          "key": "RainfallThwartwise"
+        },
+        {
+          "key": "LiftMonitoring"
+        }
+      ],
+      "componentName": "RainStation",
+      "componentParam": {
+        "title": "雨量站",
+        "content": [
+          {
+            "text": "无预警",
+            "iconName": "rainstation"
+          },
+          {
+            "text": "暴雨",
+            "iconName": "rain"
+          },
+          {
+            "text": "大暴雨",
+            "iconName": "heavyRain"
+          },
+          {
+            "text": "特大暴雨",
+            "iconName": "superRain"
+          }
+        ]
+      }
+    },
+    {
+      "key": "Wind",
+      "title": "风力",
+      "isShow": false,
+      "index": 7,
+      "mutex": [
+        {
+          "key": "RainStation"
+        },
+        {
+          "key": "Rainfall"
+        },
+        {
+          "key": "WindMonitoring"
+        },
+        {
+          "key": "Reservoir"
+        },
+        {
+          "key": "Riverway"
+        },
+        {
+          "key": "WindThwartwise"
+        },
+        {
+          "key": "RainfallThwartwise"
+        },
+        {
+          "key": "LiftMonitoring"
+        }
+      ],
+      "componentName": "Wind",
+      "componentParam": {
+        "title": "风力",
+        "content": [
+          {
+            "text": "软风",
+            "iconName": "windField"
+          },
+          {
+            "text": "轻风",
+            "iconName": "windField"
+          },
+          {
+            "text": "微风",
+            "iconName": "windField"
+          },
+          {
+            "text": "和风",
+            "iconName": "windField"
+          },
+          {
+            "text": "清劲风",
+            "iconName": "windField"
+          },
+          {
+            "text": "强风",
+            "iconName": "windField"
+          },
+          {
+            "text": "疾风",
+            "iconName": "windField"
+          },
+          {
+            "text": "大风",
+            "iconName": "windField"
+          },
+          {
+            "text": "烈风",
+            "iconName": "windField"
+          },
+          {
+            "text": "狂风",
+            "iconName": "windField"
+          },
+          {
+            "text": "暴风",
+            "iconName": "windField"
+          }
+        ]
+      }
+    },
+    {
+      "key": "WindMonitoring",
+      "title": "风力监测站",
+      "isShow": false,
+      "index": 8,
+      "mutex": [
+        {
+          "key": "Rainfall"
+        },
+        {
+          "key": "RainStation"
+        },
+        {
+          "key": "Reservoir"
+        },
+        {
+          "key": "Riverway"
+        },
+        {
+          "key": "Wind"
+        },
+        {
+          "key": "WindThwartwise"
+        },
+        {
+          "key": "RainfallThwartwise"
+        },
+        {
+          "key": "LiftMonitoring"
+        }
+      ],
+      "componentName": "WindMonitoring",
+      "componentParam": {
+        "title": "风力监测站",
+        "content": [
+          {
+            "text": "风力监测站",
+            "iconName": "wind"
+          },
+          {
+            "text": "超阈值监测站",
+            "iconName": "windOver"
+          }
+        ]
+      }
+    },
+    {
+      "key": "Reservoir",
+      "title": "水库测站",
+      "isShow": false,
+      "index": 9,
+      "mutex": [
+        {
+          "key": "Rainfall"
+        },
+        {
+          "key": "RainStation"
+        },
+        {
+          "key": "WindMonitoring"
+        },
+        {
+          "key": "Wind"
+        },
+        {
+          "key": "WindThwartwise"
+        },
+        {
+          "key": "RainfallThwartwise"
+        },
+        {
+          "key": "LiftMonitoring"
+        }
+      ],
+      "componentName": "Reservoir",
+      "componentParam": {
+        "title": "水库测站",
+        "content": [
+          {
+            "text": "无预警",
+            "iconName": "reservoirwyj"
+          },
+          {
+            "text": "超汛限",
+            "iconName": "reservoircxx"
+          },
+          {
+            "text": "超正常",
+            "iconName": "reservoirczc"
+          },
+          {
+            "text": "超设计",
+            "iconName": "reservoircsj"
+          },
+          {
+            "text": "超历史最高",
+            "iconName": "reservoircls"
+          }
+        ]
+      }
+    },
+    {
+      "key": "Riverway",
+      "title": "河道站",
+      "isShow": false,
+      "index": 10,
+      "mutex": [
+        {
+          "key": "Rainfall"
+        },
+        {
+          "key": "RainStation"
+        },
+        {
+          "key": "WindMonitoring"
+        },
+        {
+          "key": "Wind"
+        },
+        {
+          "key": "WindThwartwise"
+        },
+        {
+          "key": "RainfallThwartwise"
+        },
+        {
+          "key": "LiftMonitoring"
+        }
+      ],
+      "componentName": "Riverway",
+      "componentParam": {
+        "title": "河道站",
+        "content": [
+          {
+            "text": "无预警",
+            "iconName": "riverwyj"
+          },
+          {
+            "text": "超警戒",
+            "iconName": "rivercjj"
+          },
+          {
+            "text": "超保证",
+            "iconName": "rivercbz"
+          },
+          {
+            "text": "超历史最高",
+            "iconName": "rivercls"
+          }
+        ]
+      }
+    },
+    {
+      "key": "LiftMonitoring",
+      "title": "工情监测站",
+      "isShow": false,
+      "index": 11,
+      "mutex": [
+        {
+          "key": "Rainfall"
+        },
+        {
+          "key": "RainStation"
+        },
+        {
+          "key": "WindMonitoring"
+        },
+        {
+          "key": "Wind"
+        },
+        {
+          "key": "WindThwartwise"
+        },
+        {
+          "key": "RainfallThwartwise"
+        },
+        {
+          "key": "Riverway"
+        }
+      ],
+      "componentName": "LiftMonitoring",
+      "componentParam": {
+        "title": "工情监测站",
+        "content": [
+          {
+            "text": "堤防",
+            "iconName": "bundpitch"
+          },
+          {
+            "text": "电排站",
+            "iconName": "dianpaizhan"
+          },
+          {
+            "text": "船闸",
+            "iconName": "chuanzha"
+          },
+          {
+            "text": "水电站",
+            "iconName": "shuidianzhan"
+          },
+          {
+            "text": "水闸",
+            "iconName": "shuizha"
+          }
+        ]
+      }
+    },
+    {
+      "key": "RainfallThwartwise",
+      "horizontal": true,
+      "isShow": false,
+      "index": 12,
+      "mutex": [
+        {
+          "key": "RainStation"
+        },
+        {
+          "key": "WindMonitoring"
+        },
+        {
+          "key": "Reservoir"
+        },
+        {
+          "key": "Wind"
+        },
+        {
+          "key": "Riverway"
+        },
+        {
+          "key": "WindThwartwise"
+        },
+        {
+          "key": "LiftMonitoring"
+        }
+      ],
+      "componentName": "RainfallThwartwise",
+      "componentParam": {
+        "title": "",
+        "content": ["小雨", "中雨", "大雨", "暴雨", "大暴雨", "特大暴雨"]
+      }
+    },
+    {
+      "key": "WindThwartwise",
+      "horizontal": true,
+      "isShow": false,
+      "index": 13,
+      "mutex": [
+        {
+          "key": "Rainfall"
+        },
+        {
+          "key": "RainStation"
+        },
+        {
+          "key": "WindMonitoring"
+        },
+        {
+          "key": "Reservoir"
+        },
+        {
+          "key": "Wind"
+        },
+        {
+          "key": "Riverway"
+        },
+        {
+          "key": "RainfallThwartwise"
+        },
+        {
+          "key": "LiftMonitoring"
+        }
+      ],
+      "componentName": "WindThwartwise",
+      "componentParam": {
+        "title": "风力",
+        "content": [
+          "软风",
+          "轻风",
+          "微风",
+          "和风",
+          "清劲风",
+          "强风",
+          "疾风",
+          "大风",
+          "烈风",
+          "狂风",
+          "暴风"
+        ]
+      }
+    }
+  ],
+  "LayerPanelConfig": {
+    "title": "图层",
+    "showTitle": false,
+    "newLayerList": [
+      {
+        "id": "WindLayer",
+        "name": "风速风向",
+        "checked": false,
+        "gray": false,
+        "isHasPaly": true,
+        "icon": "fsfx",
+        "legend": {
+          "component": "WindDirect"
+        }
+      },
+      {
+        "id": "rainForecast",
+        "name": "降水",
+        "checked": false,
+        "gray": false,
+        "isHasPaly": true,
+        "icon": "js",
+        "legend": {
+          "component": "RainForest"
+        }
+      },
+      {
+        "id": "radarMap",
+        "name": "雷达回波",
+        "checked": false,
+        "gray": false,
+        "isHasPaly": true,
+        "icon": "ldt",
+        "legend": {
+          "component": "radarMap"
+        }
+      },
+      {
+        "id": "satilliteCloud",
+        "name": "卫星云图",
+        "checked": false,
+        "gray": false,
+        "isHasPaly": true,
+        "icon": "wxyt",
+        "legend": {
+          "//component": "satilliteCloud",
+          "component": ""
+        }
+      },
+      {
+        "id": "WatershedLayer",
+        "name": "流域界",
+        "checked": false,
+        "gray": false,
+        "isHasPaly": false,
+        "icon": "lyj",
+        "legend": {
+          "component": ""
+        }
+      },
+      {
+        "id": "RiverLayer",
+        "name": "河网水系",
+        "checked": false,
+        "gray": false,
+        "isHasPaly": false,
+        "icon": "hwsx",
+        "legend": {
+          "component": ""
+        }
+      },
+      {
+        "id": "ReservoirLakeLayer",
+        "name": "库湖水面",
+        "checked": false,
+        "gray": false,
+        "isHasPaly": false,
+        "icon": "khsx",
+        "legend": {
+          "component": ""
+        }
+      },
+      {
+        "id": "populationHeat",
+        "name": "人口热力",
+        "checked": false,
+        "gray": false,
+        "isHasPaly": false,
+        "icon": "rkrl",
+        "legend": {
+          "component": "Population"
+        }
+      },
+      {
+        "id": "realtimeTraffic",
+        "name": "交通路况",
+        "checked": false,
+        "gray": false,
+        "isHasPaly": false,
+        "icon": "jtlk",
+        "legend": {
+          "component": "Traffic"
+        }
+      }
+    ],
+    "gisComponentConfig": {
+      "rainForecast": {
+        "module": "commonFactory",
+        "component": "mapserviceIn",
+        "add": {
+          "method": "addLayer",
+          "arguments": ["RainForest"]
+        },
+        "remove": {
+          "method": "removeLayer",
+          "arguments": ["RainForest"]
+        }
+      },
+      "satilliteCloud": {
+        "module": "commonFactory",
+        "component": "mapserviceIn",
+        "add": {
+          "method": "addLayer",
+          "arguments": ["SatelliteCloud"]
+        },
+        "remove": {
+          "method": "removeLayer",
+          "arguments": ["SatelliteCloud"]
+        }
+      },
+      "radarMap": {
+        "module": "commonFactory",
+        "component": "mapserviceIn",
+        "add": {
+          "method": "addLayer",
+          "arguments": ["RadarMap"]
+        },
+        "remove": {
+          "method": "removeLayer",
+          "arguments": ["RadarMap"]
+        }
+      },
+      "WindLayer": {
+        "module": "commonFactory",
+        "component": "mapserviceIn",
+        "add": {
+          "method": "addLayer",
+          "arguments": ["WindDirect"]
+        },
+        "remove": {
+          "method": "removeLayer",
+          "arguments": ["WindDirect"]
+        }
+      },
+      "WatershedLayer": {
+        "module": "commonFactory",
+        "component": "mapserviceIn",
+        "add": {
+          "method": "addLayer",
+          "arguments": ["WatershedLayer"]
+        },
+        "remove": {
+          "method": "removeLayer",
+          "arguments": ["WatershedLayer"]
+        }
+      },
+      "RiverLayer": {
+        "module": "commonFactory",
+        "component": "mapserviceIn",
+        "add": {
+          "method": "addLayer",
+          "arguments": [
+            "RiverLayer",
+            {
+              "clickEventName": "riverClick"
+            }
+          ]
+        },
+        "remove": {
+          "method": "removeLayer",
+          "arguments": ["RiverLayer"]
+        }
+      },
+      "ReservoirLakeLayer": {
+        "module": "commonFactory",
+        "component": "mapserviceIn",
+        "add": {
+          "method": "addLayer",
+          "arguments": ["ReservoirLakeLayer"]
+        },
+        "remove": {
+          "method": "removeLayer",
+          "arguments": ["ReservoirLakeLayer"]
+        }
+      },
+      "realtimeTraffic": {
+        "module": "commonFactory",
+        "component": "gisToolComp",
+        "add": {
+          "method": "addTafficLayer"
+        },
+        "remove": {
+          "method": "removeTrfficLayer"
+        }
+      }
+    }
+  }
+}

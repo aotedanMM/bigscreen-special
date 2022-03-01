@@ -1,0 +1,166 @@
+[
+    {
+        "id": 7,
+        "pId": 0,
+        "name": "人口分布",
+        "open": false,
+        "icon": "deps/lib/jquery/ztree/css/zTreeStyle/guoqing-icon/ren.png",
+        "nocheck": true
+    },
+    {
+        "id": 8,
+        "pId": 0,
+        "name": "房屋情况",
+        "open": false,
+        "icon": "deps/lib/jquery/ztree/css/zTreeStyle/guoqing-icon/fangwu.png",
+        "nocheck": true
+    },
+    {
+        "id": 8001,
+        "pId": 8,
+        "name": "房屋分布",
+        "code": "HousingDist"
+    },
+    {
+        "id": 8002,
+        "pId": 8,
+        "name": "房屋结构",
+        "code": "HousingStruct"
+    },
+    {
+        "id": 5,
+        "pId": 0,
+        "name": "防护目标",
+        "icon": "deps/lib/jquery/ztree/css/zTreeStyle/img/fanghu.png",
+        "nocheck": true,
+        "open": true
+    },
+    {
+        "id": 5005,
+        "pId": 5,
+        "name": "应急部门",
+        "code": "emergencypart※01"
+    },
+    {
+        "id": 5001,
+        "pId": 5,
+        "name": "学校",
+        "code": "bas_school"
+    },
+    {
+        "id": 5002,
+        "pId": 5,
+        "name": "医院",
+        "code": "hospital"
+    },
+    {
+        "id": 5003,
+        "pId": 5,
+        "name": "政府机关",
+        "code": "government"
+    },
+    {
+        "id": 5004,
+        "pId": 5,
+        "name": "住宅区",
+        "code": "development※01"
+    },
+    {
+        "id": 4,
+        "pId": 0,
+        "name": "重点设施",
+        "icon": "deps/lib/jquery/ztree/css/zTreeStyle/img/zhongdiansheshi.png",
+        "nocheck": true
+    },
+    {
+        "id": 4001,
+        "pId": 4,
+        "name": "重点桥梁",
+        "code": "tunnel※01"
+    },
+    {
+        "id": 4002,
+        "pId": 4,
+        "name": "机场",
+        "code": "airport"
+    },
+    {
+        "id": 4003,
+        "pId": 4,
+        "name": "港口码头",
+        "code": "portwharf"
+    },
+    {
+        "id": 4004,
+        "pId": 4,
+        "name": "水库大坝",
+        "code": "Resrrvoir※01"
+    },
+    {
+        "id": 4005,
+        "pId": 4,
+        "name": "核设施",
+        "code": "Nuclearinfo※01"
+    },
+    {
+        "id": 4006,
+        "pId": 4,
+        "name": "发电站",
+        "code": "powerplant※01"
+    },
+    {
+        "id": 4007,
+        "pId": 4,
+        "name": "火车站",
+        "code": "railwaystation"
+    },
+    {
+        "id": 6,
+        "pId": 0,
+        "name": "风险隐患",
+        "icon": "deps/lib/jquery/ztree/css/zTreeStyle/img/gh_qiye.png",
+        "nocheck": true
+    },
+    {
+        "id": 6001,
+        "pId": 6,
+        "name": "危化品企业",
+        "code": "productionindustry"
+    },
+    {
+        "id": 6002,
+        "pId": 6,
+        "name": "煤矿企业",
+        "code": "coal"
+    },
+    {
+        "id": 6003,
+        "pId": 6,
+        "name": "尾矿库",
+        "code": "tailingpond"
+    },
+    {
+        "id": 6004,
+        "pId": 6,
+        "name": "烟花爆竹企业",
+        "code": "ANJIAN_FIREWORKENT※01"
+    },
+    {
+        "id": 6005,
+        "pId": 6,
+        "name": "工贸企业",
+        "code": "ANJIAN_ENT_WHSMYHBZ※01"
+    },
+    {
+        "id": 6006,
+        "pId": 6,
+        "name": "重大危险源",
+        "code": "majordanger"
+    },
+    {
+        "id": 6007,
+        "pId": 6,
+        "name": "地质隐患点",
+        "code": "BAS_GEOLOGICHAZARD※01"
+    }
+]

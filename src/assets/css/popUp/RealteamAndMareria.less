@@ -1,0 +1,944 @@
+@realtimeTeam: '../../img/realtimeTeam';
+@url:'../../img/default/panel';
+.newDetailsProtrusion{
+    position: absolute;
+    width: 410px;
+    height: 855px;
+    // background: url("@{realtimeTeam}/half_bg.png") no-repeat;
+    background-size: 100% 100%;
+    font-size: 20px;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top:-20px;
+    .newDetailsProtrusion-header-closebtn{
+        position: absolute;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        right: 0px;
+        top: 4px;
+        // opacity: 0;
+        cursor: pointer;
+    }
+    .detail-container-close{
+      width: 75px;
+      height: 30px;
+      background:url("@{realtimeTeam}/close_team1.png") no-repeat;
+      background-size: 100% 100%;
+    }
+    .detail-container_fan{
+      width: 61px;
+      height: 25px;
+      background:url("@{url}/toBack.png") no-repeat;
+      background-size: 100% 100%;
+      top: 14px;
+    }
+    .detail-container_fan:hover{
+        background: url('@{url}/toBack_h.png')no-repeat;
+    }
+
+    .newDetailsProtrusion_title-panel{
+      margin-top: -8px;
+      font-style: italic;
+      font-weight: 600;
+      font-family: 'myHeiti';
+      font-size: calc(20px * 1.5);
+      color: 00e4ff;
+      background-image: -webkit-linear-gradient(top, #f5f7c3 10%, #00e4ff);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      letter-spacing: -1px;
+    }
+    .newDetailsProtrusion_title{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 134px;
+      background: url("@{realtimeTeam}/title_bg.png") no-repeat;
+      background-size: 100% 100%;
+      display: flex;
+      align-items: center;
+      span{
+        display: block;
+        font-size: 24px;
+      }
+      b{
+        width: 331px;
+        height: 88px;
+        font-family: MicrosoftYaHei;
+        font-size: 26px;
+        font-weight: bold;
+        font-stretch: normal;
+        line-height: 24px;
+        letter-spacing: 1px;
+        color: #fbee50;
+      }
+    }
+
+    .TriptrajectoryInfo{
+      div{
+        padding-left: 5px;
+        font-family: MicrosoftYaHei;
+        font-size: 22px;
+        font-weight: normal;
+        font-stretch: normal;
+        line-height: 36px;
+        letter-spacing: 0px;
+        color: #f7fdff;
+      }
+      .fei_qiantu{
+        height: 22px;
+        font-family: MicrosoftYaHei;
+        font-size: 22px;
+        font-weight: normal;
+        font-stretch: normal;
+        line-height: 36px;
+        letter-spacing: 0px;
+        color: #8cafd0;
+      }
+      .TriptrajectoryInfo_title{
+        font-size: 28px;
+        color: #67e1fb;
+      }
+      .TriptrajectoryInfo_title::after{
+          content: "";
+          display: block;
+          width: 398px;
+          height: 27px;
+          background: url('@{realtimeTeam}/title_bottom_bg.png') no-repeat;
+          background-size: 100% 100%;
+      }
+      .Destination_num{
+          width: 81px;
+          height: 22px;
+          font-family: Impact;
+          font-size: 22px;
+          font-weight: normal;
+          font-stretch: normal;
+          line-height: 36px;
+          letter-spacing: 0px;
+          color: #fbee50;
+        }
+      .TriptrajectoryInfo_title_btn{
+        width: 390px;
+        height: 156px;
+        background: url('@{realtimeTeam}/list_bg.png') no-repeat;
+        background-size: 100% 100%;
+        position:relative;
+        margin-top: 10px;
+        p{
+          color: #f7fdff;
+          padding-left: 20px;
+          font-size: 22px;
+          line-height: 45px;
+        }
+        p:nth-of-type(1){
+          padding-top: 7px;
+        }
+        .Destination_num{
+          width: 81px;
+          height: 22px;
+          font-family: Impact;
+          font-size: 22px;
+          font-weight: normal;
+          font-stretch: normal;
+          line-height: 36px;
+          letter-spacing: 0px;
+          color: #fbee50;
+        }
+        .RequiredTime span{
+         	font-family: MicrosoftYaHei-Bold;
+          font-size: 22px;
+          font-weight: normal;
+          letter-spacing: 0px;
+          color: #00fffc;
+        }
+       
+      }
+      b{
+        display: block;
+        padding-left: 5px;
+        height: 38px;
+        font-family: MicrosoftYaHei;
+        font-size: 22px;
+        font-weight: normal;
+        font-stretch: normal;
+        line-height: 38px;
+        letter-spacing: 0px;
+        color: #8cafd0;
+      }
+      span{
+        color: #f7fdff;
+      }
+    }
+     .PathPlanning_btn{
+          width: 379px !important;
+          height: 72px;
+          background: url('@{realtimeTeam}/btn_s.png') no-repeat;
+          background-size: 100% 100%;
+          cursor: pointer;
+          margin-top:5px;
+        }
+      .PathPlanning_btn_roadlan{
+        width: 358px !important;
+        height: 72px;
+        background: url('@{realtimeTeam}/roldlanbg.png') no-repeat;
+        background-size: 100% 100%;
+        cursor: pointer;
+        margin-top:5px;
+      }
+    .newDetailsProtrusion-baseinfo-content-bottom{
+        width: 100%;
+        margin-top: 10px;
+        .tongxunzbbg{
+          font-size: 28px;
+          color: #67e1fb;
+          position: relative;
+        }
+        .tongxunzbbg::after{
+          content: "";
+          display: block;
+          width: 398px;
+          height: 27px;
+          background: url('@{realtimeTeam}/title_bottom_bg.png') no-repeat;
+          background-size: 100% 100%;
+          margin-top: 10px;
+        }
+
+        .tongxunzbbg .list_lens_cont{
+          font-family: Square721BT-Roman;
+          font-size: 28px;
+          font-weight: bold;
+          font-style: italic;
+          font-stretch: normal;
+          line-height: 36px;
+          letter-spacing: 1px;
+          color: #fff000;
+          position: absolute;
+          right: 80px;
+          top: 4px;
+        }
+        .tongxunzbbg .list_lens_btn{
+          display: block;
+          width: 34px;
+          height: 36px;
+          background: url('@{realtimeTeam}/hide.png') no-repeat;
+          background-size: 100% 100%;
+          position: absolute;
+          right: 10px;
+          top: 10px;
+          cursor: pointer;
+        }
+        .tongxunzbbg .list_lens_btnopen{
+          display: block;
+          width: 34px;
+          height: 36px;
+          background: url('@{realtimeTeam}/open.png') no-repeat;
+          background-size: 100% 100%;
+          position: absolute;
+          right: 10px;
+          top: 10px;
+          cursor: pointer;
+
+        }
+        .xiedaizbbg{
+          font-size: 28px;
+          color: #67e1fb;
+          position: relative;
+          margin-top: 10px;
+        }
+        .xiedaizbbg::after{
+          content: "";
+          display: block;
+          width: 398px;
+          height: 27px;
+          background: url('@{realtimeTeam}/title_bottom_bg.png') no-repeat;
+          background-size: 100% 100%;
+          margin-top: 10px;
+        }
+        .xiedaizbbg .list_lens_cont{
+          font-family: Square721BT-Roman;
+          font-size: 28px;
+          font-weight: bold;
+          font-style: italic;
+          font-stretch: normal;
+          line-height: 36px;
+          letter-spacing: 1px;
+          color: #fff000;
+          position: absolute;
+          right: 80px;
+          top: 4px;
+        }
+        .xiedaizbbg .list_lens_btn{
+          display: block;
+          width: 34px;
+          height: 36px;
+          background: url('@{realtimeTeam}/hide.png') no-repeat;
+          background-size: 100% 100%;
+          position: absolute;
+          right: 10px;
+          top: 10px;
+          cursor: pointer;
+        }
+            .xiedaizbbg .list_lens_btnopen{
+          display: block;
+          width: 34px;
+          height: 36px;
+          background: url('@{realtimeTeam}/open.png') no-repeat;
+          background-size: 100% 100%;
+          position: absolute;
+          right: 10px;
+          top: 10px;
+          cursor: pointer;
+
+        }
+        .newDetailsProtrusion-baseinfo-content-bottom-bottom{
+            width: 100%;
+            overflow: hidden;
+            text-align: center;
+            line-height: 80px;
+            margin-top: 22px;
+        }
+        .newDetailsProtrusion-baseinfo-content-bottom-bottom-title{
+            width: 100%;
+            height: 60px;
+            display: flex;
+            background: url('@{realtimeTeam}/zhuangbei_list.png') no-repeat;
+            background-size: 100% 100%;
+            line-height: 60px;
+            font-size: 24px;
+        }
+        .newDetailsProtrusion-baseinfo-content-bottom-bottom-title div{
+            // flex: 1;
+            text-align: center;
+            color: #00f8fe;
+            margin: 0;
+        }
+        .newDetailsProtrusion-baseinfo-content-bottom-bottom-title div:nth-child(1){
+            width: 20%;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+        .newDetailsProtrusion-baseinfo-content-bottom-bottom-title div:nth-child(2){
+            width: 55%;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+        .newDetailsProtrusion-baseinfo-content-bottom-bottom-title div:nth-child(3){
+            width: 25%;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+
+        .newDetailsProtrusion-baseinfo-content-bottom-bottom-list{
+            width: 100%;
+            height: 80%;
+            overflow: hidden;
+            overflow-y: auto;
+        }
+        .newDetailsProtrusion-baseinfo-content-bottom-bottom-list li{
+            width: 100%;
+            display: flex;
+            height: 50px;
+            line-height: 50px;
+            font-size: 24px;
+            margin: 0;
+            background: url('@{realtimeTeam}/list_active.png') no-repeat;
+            background-size: 100% 100%;
+            border-bottom: 1px solid #0f3854;
+        }
+        .list_icon{
+          padding-top: 12px;
+        }
+        .list_icon span{
+          display: block;
+          width: 45px;
+          height: 27px;
+          background:url('@{realtimeTeam}/icon_bg.png') no-repeat;
+          background-size: 100% 100%;
+          margin-left: 10px;
+          text-align: center;
+          line-height: 27px;
+        }
+        .list_mun_Company span{
+          width: 41px;
+          height: 27px;
+          font-family: Impact;
+          font-size: 28px;
+          font-weight: normal;
+          font-stretch: normal;
+          line-height: 22px;
+          letter-spacing: 0px;
+          color: #ffe615;
+        }
+        .newDetailsProtrusion-baseinfo-content-bottom-bottom-list li div{
+            // flex: 1;
+            text-align: center;
+        }
+        .newDetailsProtrusion-baseinfo-content-bottom-bottom-list li div:nth-child(1){
+          width: 20%;
+        }
+        .newDetailsProtrusion-baseinfo-content-bottom-bottom-list li div:nth-child(2){
+          width: 55%;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
+        .newDetailsProtrusion-baseinfo-content-bottom-bottom-list li div:nth-child(3){
+            width: 25%;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+
+    }
+    .newBackMessage-box{
+      width: 100%;
+        margin-bottom: 20px;
+      .newBackMessage{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        .newBackMessage-title{
+          margin: 0;
+          flex: 1;
+          float: left;
+          color: #67e1fb;
+          font-size: 28px;
+        }
+        .newBackMessage-title::after{
+          content: "";
+          display: block;
+          width: 398px;
+          height: 27px;
+          background: url('@{realtimeTeam}/title_bottom_bg.png') no-repeat;
+          background-size: 100% 100%;
+        }
+        .newBackMessage-title-num{
+            width: 59px;
+            height: 22px;
+            font-family: Square721BT-Roman;
+            font-size: 28px;
+            font-weight: bold;
+            font-style: italic;
+            font-stretch: normal;
+            line-height: 36px;
+            letter-spacing: 1px;
+            color: #fff000;
+            margin-right: 10px;
+          }
+        .newBackMessage-morebtn{
+          margin: 0;
+          float: right;
+          margin-right: 40px;
+          cursor: pointer;
+          position: relative;
+          font-family: MicrosoftYaHei;
+          font-size: 20px;
+          font-weight: normal;
+          font-stretch: normal;
+          line-height: 35px;
+          letter-spacing: 0px;
+          color: #74fbfd;
+        }
+        .newBackMessage-morebtn::after{
+          content: "";
+          width: 16px;
+          height: 15px;
+          display: block;
+          background:url('@{realtimeTeam}/chakan_icon.png') no-repeat;
+          background-size: 100% 100%;
+          position: absolute;
+          top: 15px;
+          right: -20px;
+        
+        }
+      }
+      .newBackMessage-container{
+        width: 100%;
+        margin: 15px 0;
+        .duanbaowenbg{
+            display: inline-block;
+            width: 100px;
+            height: 36px;
+            background: url("@{realtimeTeam}/duanbao_bg.png") no-repeat;
+            background-size: 100% 100%;
+            vertical-align: middle;
+            text-align: center;
+            line-height: 36px;
+            margin-right: 70px;
+        }
+        li{
+          line-height: 50px;
+          font-size: 26px;
+          padding-left: 8px;
+        }
+        li:nth-of-type(2){
+          text-indent:44px;
+          font-family: MicrosoftYaHei;
+          font-size: 26px;
+          font-weight: normal;
+          letter-spacing: 0px;
+          color: #fff000;
+          word-break: break-all;
+        }
+      }
+    }
+    .TriptrajectoryInfo-bootom{
+      position: relative;
+      width: 390px;
+      font-size: 22px;
+      line-height: 40px;
+      height: 126px;
+      background: url('@{realtimeTeam}/xingdong_bg.png') no-repeat;
+      background-size: 100% 100%;
+      margin-top: 10px;
+      .TriptrajectoryInfo-bootom-left{
+        padding-left: 20px;
+        line-height: 60px;
+        font-size: 22px;
+        span{
+          width: 100%;
+          display: block;
+        }
+      }
+      .TriptrajectoryInfo-bootom-right{
+        position: absolute;
+        text-align: center;
+        font-size: 22px;
+        width: 134px;
+        height: 55px;
+        background: url('@{realtimeTeam}/btn_s.png') no-repeat;
+        background-size: 100% 100%;
+        padding: 0px;
+        line-height: 55px;
+        color: #a0f4fd;
+        cursor: pointer;
+        bottom: 10px;
+        right: 0;
+      }
+    }
+
+    .newDetailsProtrusion-baseinfo-content-top{
+      width: 100%;
+      height: 636px;
+      overflow: hidden;
+      overflow-y: auto;
+      p{
+        width: 96%; // 防止缩放引起图标不换行
+        line-height: 50px;
+        font-size: 24px;
+        padding-left: 5px;
+        margin: 0;
+      }
+      .newDetailsProtrusion-dataprow p{
+        margin: 0;
+        background: none;
+      }
+      .staticfont{
+          color: #92edf6;
+          font-size: 24px;
+          display: inline-block;
+          vertical-align: top;
+      }
+    }
+
+}
+.newDetailsProtrusion-header{
+    position: relative;
+    width: 100%;
+    height: 80px;
+}
+.newDetailsProtrusion-header-title{
+    display: inline-block;
+    width: 380px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    height: 30px;
+    font-family: MicrosoftYaHei;
+    font-size: 28px;
+    font-weight: bold;
+    font-stretch: normal;
+    line-height: 30px;
+    letter-spacing: 1px;
+    color: #ffde00;
+    margin-top: 20px;
+    margin-left: 36px;
+}
+
+.newDetailsProtrusion-selectbtn{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    padding-left: 20px;
+}
+.newDetailsProtrusion-selectbtn p{
+  margin: 0px;
+}
+.newDetailsProtrusion-selectbtn p:nth-of-type(1){
+  margin-right: 10px;
+}
+.baseinfobtn{
+    width: 148px;
+    height: 42px;
+    text-align: center;
+    line-height: 42px;
+    background: url("@{realtimeTeam}/selecttitlebg.png") no-repeat;
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+.huichuaninfobtn{
+    position: relative;
+    width: 148px;
+    height: 42px;
+    text-align: center;
+    line-height: 42px;
+    background: url("@{realtimeTeam}/selecttitlebg.png") no-repeat;
+    background-size: 100% 100%;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.infobgnewDetailsProtrusion{
+    background: url("@{realtimeTeam}/infobgnewDetailsProtrusion.png") no-repeat;
+    background-size: 100% 100%;
+}
+.newDetailsProtrusion-baseinfo-content{
+    width: 100%;
+    height: 770px;
+}
+
+
+
+.newDetailsProtrusion-baseinfo-content-bottom-top{
+    width: 100%;
+    height: 40px;
+}
+
+
+.newDetailsProtrusion-huichuaninfo-content{
+    width: 100%;
+    height: 770px;
+    overflow: hidden;
+    overflow-y: auto;
+    .duanbaowenbg{
+       display: inline-block;
+      width: 249px;
+      height: 38px;
+      background: url("@{realtimeTeam}/huihuan.png") no-repeat;
+      background-size: 100% 100%;
+      vertical-align: middle;
+      font-family: MicrosoftYaHei;
+      font-size: 28px;
+      font-weight: normal;
+      font-stretch: normal;
+      line-height: 36px;
+      letter-spacing: 0px;
+      color: #67e1fb;
+      padding-left: 10px;
+    }
+    .huichuandatatime{
+      margin-left: -140px;
+      width: 218px;
+      height: 18px;
+      font-family: MicrosoftYaHei;
+      font-size: 22px;
+      font-weight: normal;
+      font-stretch: normal;
+      line-height: 36px;
+      letter-spacing: 0px;
+      color: #67e1fb;
+    }
+    .paddingleftbg{
+      padding-left: 40px;
+      line-height: 40px;
+      margin-top: 10px;
+      .datatime{
+        color: #92edf6;
+        margin: 10px 0;
+        font-size: 24px;
+      }
+      span{
+        width: 320px;
+        height: 206px;
+        font-family: MicrosoftYaHei;
+        font-size: 26px;
+        font-stretch: normal;
+        line-height: 36px;
+        letter-spacing: 0px;
+        color: #8cafd0;
+      }
+      p{
+        font-family: MicrosoftYaHei;
+        font-size: 28px;
+        font-weight: normal;
+        letter-spacing: 0px;
+        line-height: 42px;
+        color: #e5f4ff;
+        margin: 0;
+      }
+      .longlat{
+        color: #00fffc;
+        font-weight:bold;
+      }
+    }
+}
+
+.newDetailsProtrusion-footer{
+    width: 100%;
+    // height: 50px;
+    position: relative;
+    top: 16px;
+}
+.newDetailsProtrusion-footer-pagenations{
+    // width: 65%;
+    height: 100%;
+    // margin-left: 6%;
+}
+.newDetailsProtrusion-footer-pagenationshuichuaninfo{
+    width: 65%;
+    height: 100%;
+    margin-left: 6%;
+    display: none;
+}
+.roadguihua{
+    position: absolute;
+    right: 5px;
+    top: 8px;
+    width: 118px;
+    height: 40px;
+    background: url("@{realtimeTeam}/roadguihuabg.png") no-repeat;
+    background-size: 100% 100%;
+    margin-left: 3%;
+    cursor: pointer;
+}
+.stopset{
+    display: inline-block;
+    width: 41px;
+    height: 40px;
+    background: url("@{realtimeTeam}/stopbg.png") no-repeat;
+    background-size: 100% 100%;
+    cursor: pointer;
+    vertical-align: middle;
+}
+.causeteambg{
+    display: inline-block;
+    width: 41px;
+    height: 40px;
+    background: url("@{realtimeTeam}/causeteambg.png") no-repeat;
+    background-size: 100% 100%;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.causebg{
+    display: inline-block;
+    width: 41px;
+    height: 40px;
+    background: url("@{realtimeTeam}/carplaybg.png") no-repeat;
+    background-size: 100% 100%;
+    cursor: pointer;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+b.playset{
+    display: inline-block;
+    width: 41px;
+    height: 40px;
+    background: url("@{realtimeTeam}/causebg.png") no-repeat;
+    background-size: 100% 100%;
+    vertical-align: middle;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.callphonebgimg{
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background: url("@{realtimeTeam}/phone.png") no-repeat;
+    background-size: 100% 100%;
+    vertical-align: middle;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.historylinebg{
+    width: 400px;
+    height: 43px;
+    background: url("@{realtimeTeam}/historylinebg.png") no-repeat;
+    background-size: 100% 100%;
+}
+.infoshuleftline{
+    position: absolute;
+    left: 30px;
+    top: 70px;
+    width: 2px;
+    height: 740px;
+    background: url("@{realtimeTeam}/shutiaobgimg.png") no-repeat;
+    background-size: 100% 100%;
+}
+.huichuaninfo-contentbox{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.dottedbgicon{
+    display: inline-block;
+    width: 40px;
+    height: 36px;
+    background: url("@{realtimeTeam}/teandottedbg.png") no-repeat;
+    background-size: 100% 100%;
+    vertical-align: middle;
+}
+
+.videohuichuanbg{
+    display: inline-block;
+    width: 187px;
+    height: 38px;
+    background: url("@{realtimeTeam}/videohuichuanbg.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+
+.newDetailsProtrusion-huichuaninfo-content-datali>p{
+    line-height: 40px;
+    margin: 0;
+    margin-top: 20px;
+}
+.nocontentbox{
+    position: absolute;
+    left: 30%;
+    top: 30%;
+    width: 200px;
+    height: 198px;
+    text-align: center;
+    background: url("@{realtimeTeam}/nocontentbg.png") no-repeat;
+    background-size: 100% 100%;
+}
+.huichuandatatime{
+    vertical-align: middle;
+    color:#98b1be;
+    margin-left: 15px;
+}
+.huichuancontent-box{
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 22px;
+    flex: 1;
+    word-break: break-all;
+    margin: 0;
+}
+
+.equiomentname{
+    position: relative;
+}
+.reddotted{
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background: #ff2303;
+    border-radius: 100%;
+    display: inline-block;
+    top: 0px;
+    right: 0px;
+}
+.equiomentname .reddotted{
+  right: 45px;
+}
+.newDetailsProtrusion .title-title-title{
+    background: none;
+    margin-left: 0;
+    padding-left: 25px;
+}
+.TeamName{
+    margin-left: 10px;
+    vertical-align: middle;
+}
+.TeamLeix{
+    display: inline-block;
+    max-width: 260px;
+    // margin-left: 10px;
+}
+.NumberTroops{
+    width: 240px;
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+.CaptainName{
+    max-width: 250px;
+    display: inline-block;
+    vertical-align: middle;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-left: 10px;
+}
+.currentLocation{
+    margin-left: 10px;
+    display: inline-block;
+    max-width: 250px;
+}
+.teamtimebox{
+    vertical-align: middle;
+}
+.progress-bar-out {
+    width: 470px;
+    height: 10px;
+    background: #286d9e;
+    border-radius:5px;
+    border:1px solid #104e80;
+    float:left;
+}
+.progress-bar-in {
+    // display: inline-block;
+    width: 0px;
+    height: 9px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    position: relative;
+    background: linear-gradient(to right,#0bb2ff,#98e5f6);
+    transition: all 0.03s;
+    float:left;
+    left:-1px;
+}
+.progress-bar-ball {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border-radius:50%;
+    position: absolute;
+    right: -14px;
+    top: -2px;
+    background: #fde020;
+    box-shadow: 0 0 15px #fde020;
+    cursor: pointer;
+}
+.list_ div{
+    margin: 0;
+}
+.reddotted{
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background: #ff2303;
+    border-radius: 100%;
+    display: inline-block;
+    top: 0px;
+    right: 0px;
+}
+
+  .newDetailsProtrusion-baseinfo-content .el-scrollbar .is-vertical> div{
+    width: 4px;
+    height: 417px;
+    background-image: linear-gradient(0deg, 
+      #0a7ccc 0%, 
+      #06b4d1 52%, 
+      #02ebd5 100%);
+    border-radius: 2px;
+  }

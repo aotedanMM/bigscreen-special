@@ -1,0 +1,71 @@
+{
+    "key": "power",
+    "data":{
+        "static":{
+            "lineCount":334,
+            "substationCount":453
+        },
+        "detail":[
+            {
+                "parentName": "西城区",
+                "lineCount": 1,
+                "substationCount": 3,
+                "staticLine":34,
+                "staticSubstation":25,
+                "x": 116.35581226,
+                "y": 39.87521582,
+                "id": "110102",
+                "child": [
+                    {
+                        "town": "西城区",
+                        "village": "白纸坊街道",
+                        "id": "11010201995737",
+                        "x": 116.35581226,
+                        "y": 39.87521582,
+                        "substationCount": 3,
+                        "lineCount": 1
+                    },
+                    {
+                        "town": "西城区",
+                        "village": "牛街街道",
+                        "id": "11010201851877",
+                        "x": 116.35574273,
+                        "y": 39.8849606,
+                        "substationCount": 4,
+                        "lineCount": 3
+                    }
+                ]
+            },
+            {
+                "parentName": "丰台区",
+                "lineCount": 1,
+                "substationCount": 1,
+                "staticLine":34,
+                "staticSubstation":25,
+                "x": 116.35984272,
+                "y": 39.86261546,
+                "id": "110106",
+                "child": [
+                    {
+                        "town": "丰台区",
+                        "village": "右安门街道",
+                        "id": "11010600183936",
+                        "x": 116.35984272,
+                        "y": 39.86261546,
+                        "substationCount": 1,
+                        "lineCount": 1
+                    },
+                    {
+                        "town": "丰台区",
+                        "village": "西罗园街道",
+                        "id": "11010600383430",
+                        "x": 116.37862754,
+                        "y": 39.85462306,
+                        "substationCount": 4,
+                        "lineCount": 4
+                    }
+                ]
+            }
+        ]
+    }
+}

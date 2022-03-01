@@ -1,0 +1,85 @@
+[{
+        "iconName": "gisMapTool-tianqjiaot",
+        "title": "天气交通",
+        "key": "toolBox"
+    },
+    {
+        "iconName": "gisMapTool-zhoubiantianqi",
+        "title": "当地天气",
+        "key": "surroundingWeather",
+        "isOpen": false,
+        "isShow": true
+    },
+    {
+        "iconName": "gisMapTool-BaiduStreetView",
+        "title": "百度街景",
+        "key": "BaiduStreetView",
+        "isOpen": false,
+        "mutexkey": [
+          "ToolIconEventOverview.tencentStreetView"
+        ]
+    },
+    {
+        "iconName": "gisMapTool-tencentStreetView",
+        "title": "腾讯街景",
+        "key": "tencentStreetView",
+        "isOpen": false,
+        "mutexkey": [
+          "ToolIconEventOverview.BaiduStreetView"
+        ]
+    },
+    {
+        "iconName": "gisMapTool-realTimeTraffic",
+        "title": "实时路况",
+        "key": "realTimeTraffic",
+        "isOpen": false
+    },
+    {
+        "iconName": "gisMapTool-shortCut",
+        "title": "绿色通道",
+        "key": "greenChannel",
+        "leftComponentName": "GreenRoadGis",
+        "rightComponentName": "GreenRoadRight",
+        "//": "GreenRoadRight",
+        "isOpen": false,
+        "disabled": true,
+        "mutexkey": [
+            "rescueHelp.ForceDeployment,RescueNeeds,MaterialDemand,ShleterLeft,Deployment,_MaterialAllot,DispatchAdvice",
+            "disasterStatistics._casualties,_housedamage,_lostarea,_electricdamage",
+            "ToolIconEventOverview.trafficControl,roadDamage",
+            "disasterDecide._reserve,_district,_disasterstyle,_popluheat,_PersonnelIntensive,_PersonnelIntensive-school,_PersonnelIntensive-hospital,_PersonnelIntensive-airport,_PersonnelIntensive-railwaystation,_company,_company-hazardous,_company-coalMine,_company-mine,_company-explosive,_ImportantFacilities,_ImportantFacilities-reservoir,_ImportantFacilities-portwharf,_ImportantFacilities-nuclear,rescueTeams,disinfoper,_DisasterJudge,emergencypart,_CommandDispatch"
+        ]
+    },
+    {
+        "iconName": "gisMapTool-jiaotongguanzhi",
+        "title": "交通管制",
+        "key": "trafficControl",
+        "leftComponentName": "TraffivControlGis",
+        "rightComponentName": "TraffivControlRight",
+        "//": "TraffivControlRight",
+        "isOpen": false,
+        "disabled": true,
+        "mutexkey": [
+            "rescueHelp.ForceDeployment,RescueNeeds,MaterialDemand,ShleterLeft,Deployment,_MaterialAllot,DispatchAdvice",
+            "disasterStatistics._casualties,_housedamage,_lostarea,_electricdamage",
+            "ToolIconEventOverview.greenChannel,roadDamage",
+            "disasterDecide._reserve,_district,_disasterstyle,_popluheat,_PersonnelIntensive,_PersonnelIntensive-school,_PersonnelIntensive-hospital,_PersonnelIntensive-airport,_PersonnelIntensive-railwaystation,_company,_company-hazardous,_company-coalMine,_company-mine,_company-explosive,_ImportantFacilities,_ImportantFacilities-reservoir,_ImportantFacilities-portwharf,_ImportantFacilities-nuclear,rescueTeams,disinfoper,_DisasterJudge,emergencypart,_CommandDispatch"
+        ]
+    },
+    {
+        "iconName": "gisMapTool-daolusunhui",
+        "title": "道路损毁",
+        "key": "roadDamage",
+        "leftComponentName": "RoadDamageGis",
+        "rightComponentName": "RoadDamageRight",
+        "//": "RoadDamageRight",
+        "isOpen": false,
+        "disabled": true,
+        "mutexkey": [
+            "rescueHelp.ForceDeployment,RescueNeeds,MaterialDemand,ShleterLeft,Deployment,_MaterialAllot,DispatchAdvice",
+            "disasterStatistics._casualties,_housedamage,_lostarea,_electricdamage",
+            "ToolIconEventOverview.greenChannel,trafficControl",
+            "disasterDecide._reserve,_district,_disasterstyle,_popluheat,_PersonnelIntensive,_PersonnelIntensive-school,_PersonnelIntensive-hospital,_PersonnelIntensive-airport,_PersonnelIntensive-railwaystation,_company,_company-hazardous,_company-coalMine,_company-mine,_company-explosive,_ImportantFacilities,_ImportantFacilities-reservoir,_ImportantFacilities-portwharf,_ImportantFacilities-nuclear,rescueTeams,disinfoper,_DisasterJudge,emergencypart,_CommandDispatch"
+        ]
+    }
+]

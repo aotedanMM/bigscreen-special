@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+    <title>金属矿山@1x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="28" height="28" rx="14"></rect>
+        <filter x="-10.7%" y="-10.7%" width="121.4%" height="121.4%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.26 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="其他图标" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="突发事件" transform="translate(-248.000000, -112.000000)">
+            <g id="金属矿山" transform="translate(250.000000, 108.000000)">
+                <g id="分组-8" transform="translate(0.000000, 6.000000)">
+                    <g id="矩形-copy-5" transform="translate(14.000000, 14.000000) scale(-1, 1) translate(-14.000000, -14.000000) ">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <rect stroke="#FFFFFF" stroke-width="1" stroke-linejoin="square" fill="#D90C0C" fill-rule="evenodd" x="0.5" y="0.5" width="27" height="27" rx="13.5"></rect>
+                    </g>
+                    <path d="M13.1562141,18.0000094 L13.1562141,17.1428269 L12.5936424,16.0000141 L12.0312141,16.0000141 L10.625,16.5714205 L10.625,18.8571919 L11.1874283,18.8571919 L13.1562141,18.0000094 Z M14.2812141,16.5714205 L14.8436424,16.5714205 L14.8436424,14.5714252 L14,14.2857949 L13.1562141,14.8572013 L14.2812141,16.5714205 Z M22.4374283,8.285809 C20.2275813,9.83679004 17.9374283,10.8572107 17.9374283,10.8572107 C17.7768164,13.3877664 17.3834608,14.5100103 16.5312141,15.714238 C13.9880975,19.3081026 11.1874283,22 11.1874283,22 L23,22 L23,8.285809 L22.4374283,8.285809 Z M16.0929732,14.4434897 C16.0929732,14.4434897 16.625,13.110743 16.8302103,12.413881 C16.9027725,12.1670544 16.8124283,12.0000235 16.8124283,12.0000235 C15.8481836,10.2449583 14.8436424,10.0000282 14.8436424,10.0000282 C14.8287285,10.0153454 15.5969407,9.40644824 14.9022945,8.69995828 C14.1633365,7.94853773 13.7186424,8.57143926 13.7186424,8.57143926 C11.1071224,5.95919156 7.8124283,6.00003756 7.8124283,6.00003756 C11.9509082,8.81636939 12.3124283,9.71425204 12.3124283,9.71425204 L5,17.1428269 C5,17.1428269 5.09077438,18.0291851 5.48542065,18.3633929 C5.93126195,18.7407808 6.6874283,18.5714158 6.6874283,18.5714158 L13.6859465,11.1441539 L16.0929732,14.4434897 Z" id="Fill-1" fill="#FFFFFF"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

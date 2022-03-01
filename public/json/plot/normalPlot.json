@@ -1,0 +1,1143 @@
+[
+  {
+    "boxName": "textIt",
+    "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.textIt}",
+    "key" :"text",
+    "data":[
+      {
+        "tit":"text_1",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.text_1}",
+        "icons":"eMap-plot/eMap-plot92.png",
+        "base":"Polyline",
+	      "type":"Text",
+        "key":"text",
+        "checked":false,
+        "symbol":{
+          "type": "TextSymbol",
+          "//":"options为自定义配置内容",
+          "options": {
+            "fontFamilyName":"黑体",
+            "fontSize":26,
+            "text":"自定义文本",
+            "foreground": {"alpha": 255, "r": 255, "g": 0, "b": 0},
+            "offsetX": 0,
+            "offsetY": 0
+          }
+        }
+      },
+      {
+        "tit":"text_2",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.text_2}",
+        "icons":"eMap-plot/eMap-plot92.png",
+        "base":"Polyline",
+        "type":"TAILEDTEXT",
+        "key":"tailedtext",
+        "checked":false,
+        "tailedtext_symbol": {
+          "fontSize": 24,
+          "fontFamilyName": "宋体",
+          "foregroundColor":{ "r": 255, "b": 255, "g": 255, "a": 255 },
+          "backgroundColor":{ "r": 205, "b": 85, "g": 85, "a": 255 },
+          "textBackgroundBorderColor":{ "r": 220, "b": 0, "g": 0, "a": 255 },
+          "textBackgroundBorderThickness": 2,
+          "leadLength": 100,
+          "angle": 45,
+          "lineColor":{"r": 205, "b": 85, "g": 85, "a": 255 },
+          "lineWidth": 1,
+          "size": 6,
+          "textAlign": "center",
+          "padding": [10, 10, 10, 10]
+        }
+      }
+    ]
+  },
+  {
+    "boxName": "lineIt",
+    "content": "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.lineIt}",
+    "key" :"line",
+    "data": [
+      {
+        "tit":"line_1",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.line_1}",
+        "icons":"eMap-plot/eMap-plot14.png",
+        "base":"Polyline",
+	    "type":"Polyline",
+        "key":"line",
+        "checked":false,
+        "symbol":{
+          "type": "SimpleLineSymbol",
+          "//":"options为自定义配置内容",
+          "options": {
+            "color":{"alpha": 179, "r": 255, "g": 0, "b": 0},
+            "width": 2
+          }
+        }
+      }, {
+        "tit":"line_2",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.line_2}",
+        "icons":"eMap-plot/eMap-plot15.png",
+        "base":"Polyline",
+        "type":"Curve",
+        "key":"line",
+        "checked":false,
+        "symbol":{
+          "type": "SimpleLineSymbol",
+          "//":"options为自定义配置内容",
+          "options": {
+            "color":{"alpha": 179, "r": 255, "g": 0, "b": 0},
+            "width": 2
+          }
+        }
+      },{
+        "tit":"line_3",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.line_3}",
+        "icons":"eMap-plot/eMap-plot16.png",
+        "base":"Polyline",
+        "type":"Camber",
+        "key":"line",
+        "checked":false,
+        "symbol":{
+          "type": "SimpleLineSymbol",
+          "//":"options为自定义配置内容",
+          "options": {
+            "color":{"alpha": 179, "r": 255, "g": 0, "b": 0},
+            "width": 2
+          }
+        }
+      },{
+        "tit":"line_4",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.line_4}",
+        "icons":"eMap-plot/eMap-plot16.png",
+        "base":"Polyline",
+        "type":"FreePolyline",
+        "key":"line",
+        "checked":false,
+        "symbol":{
+          "type": "SimpleLineSymbol",
+          "//":"options为自定义配置内容",
+          "options": {
+            "color":{"alpha": 179, "r": 255, "g": 0, "b": 0},
+            "width": 2,
+            "style": 5
+          }
+        }
+      }
+    ]
+  },
+  {
+    "boxName": "faceIt",
+    "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.faceIt}",
+    "key" :"polygon",
+    "data":[
+      {
+        "tit":"polygon_1",
+        "content" : "123",
+        "icons":"eMap-plot/eMap-plot17.png",
+        "base":"Polyline",
+	      "type":"Polygon",
+        "key":"polygon",
+        "checked":false,
+        "symbol":{
+          "type": "SimpleFillSymbol",
+          "//":"options为自定义配置内容",
+          "options": {
+            "borderColor":{"alpha": 179, "r": 255, "g": 0, "b": 0},
+            "fillColor":{"alpha": 179, "r": 255, "g": 0, "b": 0},
+            "borderThickness": 2
+          }
+        }
+      },{
+        "tit":"polygon_2",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.polygon_2}",
+        "icons":"eMap-plot/eMap-plot18.png",
+        "base":"Polyline",
+        "type":"Circle",
+        "key":"polygon",
+        "checked":false,
+        "symbol":{
+          "type": "SimpleFillSymbol",
+          "//":"options为自定义配置内容",
+          "options": {
+            "borderColor":{"alpha": 179, "r": 255, "g": 0, "b": 0},
+            "fillColor":{"alpha": 179, "r": 255, "g": 0, "b": 0},
+            "borderThickness": 2
+          }
+        }
+      },{
+        "tit":"polygon_3",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.polygon_3}",
+        "icons":"eMap-plot/eMap-plot19.png",
+        "base":"Polyline",
+        "type":"Rectangle",
+        "key":"polygon",
+        "checked":false,
+        "symbol":{
+          "type": "SimpleFillSymbol",
+          "//":"options为自定义配置内容",
+          "options": {
+            "borderColor":{"alpha": 179, "r": 255, "g": 0, "b": 0},
+            "fillColor":{"alpha": 179, "r": 255, "g": 0, "b": 0},
+            "borderThickness": 2
+          }
+        }
+      },{
+        "tit":"polygon_4",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.polygon_4}",
+        "icons":"eMap-plot/eMap-plot20.png",
+        "base":"Polyline",
+        "type":"Ellipse",
+        "key":"polygon",
+        "checked":false,
+        "symbol":{
+          "type": "SimpleFillSymbol",
+          "//":"options为自定义配置内容",
+          "options": {
+            "borderColor":{"alpha": 179, "r": 255, "g": 0, "b": 0},
+            "fillColor":{"alpha": 179, "r": 255, "g": 0, "b": 0},
+            "borderThickness": 2
+          }
+        }
+      }, {
+        "tit":"polygon_5",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.polygon_5}",
+        "icons":"eMap-plot/eMap-plot21.png",
+        "base":"Polyline",
+        "type":"Sector",
+        "key":"polygon",
+        "checked":false,
+        "symbol":{
+          "type": "SimpleFillSymbol",
+          "//":"options为自定义配置内容",
+          "options": {
+            "borderColor":{"alpha": 179, "r": 255, "g": 0, "b": 0},
+            "fillColor":{"alpha": 179, "r": 255, "g": 0, "b": 0},
+            "borderThickness": 2
+          }
+        }
+      },{
+        "tit":"polygon_6",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.polygon_6}",
+        "icons":"eMap-plot/eMap-plot22.png",
+        "base":"Polyline",
+        "type":"Arc",
+        "key":"polygon",
+        "checked":false,
+        "symbol":{
+          "type": "SimpleFillSymbol",
+          "//":"options为自定义配置内容",
+          "options": {
+            "borderColor":{"alpha": 179, "r": 255, "g": 0, "b": 0},
+            "fillColor":{"alpha": 179, "r": 255, "g": 0, "b": 0},
+            "borderThickness": 2
+          }
+        }
+      },{
+        "tit":"polygon_7",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.polygon_7}",
+        "icons":"eMap-plot/eMap-plot23.png",
+        "base":"Polyline",
+        "type":"CloseCurve",
+        "key":"polygon",
+        "checked":false,
+        "symbol":{
+          "type": "SimpleFillSymbol",
+          "//":"options为自定义配置内容",
+          "options": {
+            "borderColor":{"alpha": 179, "r": 255, "g": 0, "b": 0},
+            "fillColor":{"alpha": 179, "r": 255, "g": 0, "b": 0},
+            "borderThickness": 2
+          }
+        }
+      },{
+        "tit":"polygon_8",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.polygon_8}",
+        "icons":"eMap-plot/eMap-plot23.png",
+        "base":"Polyline",
+        "type":"FreePolygon",
+        "key":"polygon",
+        "checked":false,
+        "symbol":{
+          "type": "SimpleFillSymbol",
+          "//":"options为自定义配置内容",
+          "options": {
+            "borderColor":{"alpha": 179, "r": 255, "g": 0, "b": 0},
+            "fillColor":{"alpha": 179, "r": 255, "g": 0, "b": 0},
+            "borderThickness": 2
+          }
+        }
+      }
+    ]
+  },
+  {
+    "boxName": "arrorIt",
+    "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.arrorIt}",
+    "key" :"arrow",
+    "data":[
+      {
+        "tit":"arrow_1",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.arrow_1}",
+        "icons":"eMap-plot/eMap-plot24.png",
+        "base":"Polyline",
+	    "type":"DoubleArrow",
+        "key":"polygon",
+        "size":30,
+        "checked":false,
+        "symbol":{
+          "type": "SimpleFillSymbol",
+          "//":"options为自定义配置内容",
+          "options": {
+            "borderColor":{"alpha": 170, "r": 250, "g": 30, "b": 30},
+            "fillColor":{"alpha": 90, "r": 250, "g": 30, "b": 30},
+            "borderThickness": 4
+          }
+        }
+      },{
+        "tit":"arrow_2",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.arrow_2}",
+        "icons":"eMap-plot/eMap-plot25.png",
+        "base":"Polyline",
+        "type":"SwallowTailArrow",
+        "key":"polygon",
+        "size":30,
+        "checked":false,
+        "symbol":{
+          "type": "SimpleFillSymbol",
+          "//":"options为自定义配置内容",
+          "options": {
+            "borderColor":{"alpha": 170, "r": 250, "g": 30, "b": 30},
+            "fillColor":{"alpha": 90, "r": 250, "g": 30, "b": 30},
+            "borderThickness": 4
+          }
+        }
+      },{
+        "tit":"arrow_3",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.arrow_3}",
+        "icons":"eMap-plot/eMap-plot26.png",
+        "base":"Polyline",
+        "type":"MultiArrow",
+        "key":"polygon",
+        "size":30,
+        "checked":false,
+        "symbol":{
+          "type": "SimpleFillSymbol",
+          "//":"options为自定义配置内容",
+          "options": {
+            "borderColor":{"alpha": 170, "r": 250, "g": 30, "b": 30},
+            "fillColor":{"alpha": 90, "r": 250, "g": 30, "b": 30},
+            "borderThickness": 4
+          }
+        }
+      },{
+        "tit":"arrow_4",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.arrow_4}",
+        "icons":"eMap-plot/eMap-plot27.png",
+        "base":"Polyline",
+        "type":"BeelineArrow",
+        "key":"composite",
+        "size":30,
+        "checked":false,
+        "symbol":{
+          "type": "SimpleFillSymbol",
+          "//":"options为自定义配置内容",
+          "options": {
+            "borderColor":{"alpha": 170, "r": 250, "g": 30, "b": 30},
+            "fillColor":{"alpha": 90, "r": 250, "g": 30, "b": 30},
+            "borderThickness": 4
+          }
+        }
+      },{
+        "tit":"arrow_5",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.arrow_5}",
+        "icons":"eMap-plot/eMap-plot28.png",
+        "base":"Polyline",
+        "type":"CurveArrow",
+        "key":"composite",
+        "size":30,
+        "checked":false,
+        "symbol":{
+          "type": "SimpleFillSymbol",
+          "//":"options为自定义配置内容",
+          "options": {
+            "borderColor":{"alpha": 170, "r": 250, "g": 30, "b": 30},
+            "fillColor":{"alpha": 90, "r": 250, "g": 30, "b": 30},
+            "borderThickness": 4
+          }
+        }
+      },{
+        "tit":"arrow_6",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.arrow_6}",
+        "icons":"eMap-plot/eMap-plot29.png",
+        "base":"Polyline",
+        "type":"SimpleArrow",
+        "key":"polygon",
+        "size":30,
+        "checked":false,
+        "symbol":{
+          "type": "SimpleFillSymbol",
+          "//":"options为自定义配置内容",
+          "options": {
+            "borderColor":{"alpha": 170, "r": 250, "g": 30, "b": 30},
+            "fillColor":{"alpha": 90, "r": 250, "g": 30, "b": 30},
+            "borderThickness": 4
+          }
+        }
+      },{
+        "tit":"arrow_7",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.arrow_7}",
+        "icons":"eMap-plot/eMap-plot30.png",
+        "base":"Polyline",
+        "type":"SlightnessArrow",
+        "key":"polygon",
+        "size":30,
+        "checked":false,
+        "symbol":{
+          "type": "SimpleFillSymbol",
+          "//":"options为自定义配置内容",
+          "options": {
+            "borderColor":{"alpha": 170, "r": 250, "g": 30, "b": 30},
+            "fillColor":{"alpha": 90, "r": 250, "g": 30, "b": 30},
+            "borderThickness": 4
+          }
+        }
+      },{
+        "tit":"arrow_8",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.arrow_8}",
+        "icons":"eMap-plot/eMap-plot31.png",
+        "base":"Polyline",
+        "type":"ShockWay",
+        "key":"polygon",
+        "size":30,
+        "checked":false,
+        "symbol":{
+          "type": "SimpleFillSymbol",
+          "//":"options为自定义配置内容",
+          "options": {
+            "borderColor":{"alpha": 170, "r": 250, "g": 30, "b": 30},
+            "fillColor":{"alpha": 90, "r": 250, "g": 30, "b": 30},
+            "borderThickness": 4
+          }
+        }
+      }
+    ]
+  },
+  {
+    "boxName": "roadIt",
+    "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.roadIt}",
+    "key" :"route",
+    "data":[
+      {
+        "tit":"route_1",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.route_1}",
+        "icons":"eMap-plot/eMap-plot32.png",
+        "base":"Polyline",
+	    "type":"Arsenal",
+        "key":"composite",
+        "size":30,
+        "checked":false
+      },{
+        "tit":"route_2",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.route_2}",
+        "icons":"eMap-plot/eMap-plot33.png",
+        "base":"Polyline",
+        "type":"ExpertProtect",
+        "key":"composite",
+        "size":30,
+        "checked":false
+      },{
+        "tit":"route_3",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.route_3}",
+        "icons":"eMap-plot/eMap-plot34.png",
+        "base":"Polyline",
+        "type":"PowerRepair",
+        "key":"composite",
+        "size":30,
+        "checked":false
+      },{
+        "tit":"route_4",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.route_4}",
+        "icons":"eMap-plot/eMap-plot35.png",
+        "base":"Polyline",
+        "type":"Army",
+        "key":"composite",
+        "size":30,
+        "checked":false
+      },{
+        "tit":"route_5",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.route_5}",
+        "icons":"eMap-plot/eMap-plot36.png",
+        "base":"Polyline",
+        "type":"FireProtect",
+        "key":"composite",
+        "size":30,
+        "checked":false
+      },{
+        "tit":"route_6",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.route_6}",
+        "icons":"eMap-plot/eMap-plot37.png",
+        "base":"Polyline",
+        "type":"MedicalCure",
+        "key":"composite",
+        "size":30,
+        "checked":false
+      },{
+        "tit":"route_7",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.route_7}",
+        "icons":"eMap-plot/eMap-plot38.png",
+        "base":"Polyline",
+        "type":"PowerRepair",
+        "key":"composite",
+        "size":30,
+        "checked":false
+      },{
+        "tit":"route_8",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.route_8}",
+        "icons":"eMap-plot/eMap-plot39.png",
+        "base":"Polyline",
+        "type":"ProChymic",
+        "key":"composite",
+        "size":30,
+        "checked":false
+      },{
+        "tit":"route_9",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.route_9}",
+        "icons":"eMap-plot/eMap-plot40.png",
+        "base":"Polyline",
+        "type":"ProSuccor",
+        "key":"composite",
+        "size":30,
+        "checked":false
+      }
+    ]
+  },
+  {
+    "boxName": "noteasyIt",
+    "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.noteasyIt}",
+    "key" :"composite",
+    "data":[
+      {
+        "tit":"composite_1",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.composite_1}",
+        "icons":"eMap-plot/eMap-plot41.png",
+        "base":"Polyline",
+	    "type":"AirWay",
+        "key":"composite",
+        "size":30,
+        "checked":false
+      },{
+        "tit":"composite_2",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.composite_2}",
+        "icons":"eMap-plot/eMap-plot42.png",
+        "base":"Polyline",
+        "type":"Cannon",
+        "key":"line",
+        "size":30,
+        "checked":false
+      },{
+        "tit":"composite_3",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.composite_3}",
+        "icons":"eMap-plot/eMap-plot43.png",
+        "base":"Polyline",
+        "type":"AirMobile",
+        "key":"composite",
+        "size":30,
+        "checked":false
+      },{
+        "tit":"composite_4",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.composite_4}",
+        "icons":"eMap-plot/eMap-plot44.png",
+        "base":"Polyline",
+        "type":"ArtilleryManenCampment",
+        "key":"composite",
+        "size":30,
+        "checked":false
+      },{
+        "tit":"composite_5",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.composite_5}",
+        "icons":"eMap-plot/eMap-plot45.png",
+        "base":"Polyline",
+        "type":"MotorbikeTeam",
+        "key":"composite",
+        "size":30,
+        "checked":false
+      },{
+        "tit":"composite_6",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.composite_6}",
+        "icons":"eMap-plot/eMap-plot46.png",
+        "base":"Polyline",
+        "type":"AntiairCraftForces",
+        "key":"composite",
+        "size":30,
+        "checked":false
+      },{
+        "tit":"composite_7",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.composite_7}",
+        "icons":"eMap-plot/eMap-plot47.png",
+        "base":"Polyline",
+        "type":"TankAndMusketer",
+        "key":"composite",
+        "size":30,
+        "checked":false
+      },{
+        "tit":"composite_8",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.composite_8}",
+        "icons":"eMap-plot/eMap-plot48.png",
+        "base":"Polyline",
+        "type":"AttackOrder",
+        "key":"composite",
+        "size":30,
+        "checked":false
+      },{
+        "tit":"composite_9",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.composite_9}",
+        "icons":"eMap-plot/eMap-plot49.png",
+        "base":"Polyline",
+        "type":"AttackTurnDefend2",
+        "key":"line",
+        "size":30,
+        "checked":false
+      },{
+        "tit":"composite_10",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.composite_10}",
+        "icons":"eMap-plot/eMap-plot50.png",
+        "base":"Polyline",
+        "type":"AttackTurnDefend1",
+        "key":"line",
+        "size":30,
+        "checked":false
+      },{
+        "tit":"composite_11",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.composite_11}",
+        "icons":"eMap-plot/eMap-plot51.png",
+        "base":"Polyline",
+        "type":"Artillery",
+        "key":"composite",
+        "size":30,
+        "checked":false
+      },{
+        "tit":"composite_12",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.composite_12}",
+        "icons":"eMap-plot/eMap-plot52.png",
+        "base":"Polyline",
+        "type":"RecceSearch",
+        "key":"line",
+        "size":30,
+        "checked":false
+      },{
+        "tit":"composite_13",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.composite_13}",
+        "icons":"eMap-plot/eMap-plot53.png",
+        "base":"Polyline",
+        "type":"Patroller",
+        "key":"line",
+        "size":30,
+        "checked":false
+      },{
+        "tit":"composite_14",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.composite_14}",
+        "icons":"eMap-plot/eMap-plot54.png",
+        "base":"Polyline",
+        "type":"TankAttack",
+        "key":"composite",
+        "size":30,
+        "checked":false
+      },{
+        "tit":"composite_15",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.composite_15}",
+        "icons":"eMap-plot/eMap-plot55.png",
+        "base":"Polyline",
+        "type":"Musketry",
+        "key":"line",
+        "size":30,
+        "checked":false
+      },{
+        "tit":"composite_16",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.composite_16}",
+        "icons":"eMap-plot/eMap-plot56.png",
+        "base":"Polyline",
+        "type":"NavalShips",
+        "key":"composite",
+        "size":30,
+        "checked":false
+      },{
+        "tit":"composite_17",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.composite_17}",
+        "icons":"eMap-plot/eMap-plot57.png",
+        "base":"Polyline",
+        "type":"PedrailColumn",
+        "key":"composite",
+        "size":30,
+        "checked":false
+      },{
+        "tit":"composite_18",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.composite_18}",
+        "icons":"eMap-plot/eMap-plot58.png",
+        "base":"Polyline",
+        "type":"PipeLaying",
+        "key":"line",
+        "size":30,
+        "checked":false
+      },{
+        "tit":"composite_19",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.composite_19}",
+        "icons":"eMap-plot/eMap-plot59.png",
+        "base":"Polyline",
+        "type":"PolygonText",
+        "key":"composite",
+        "size":30,
+        "checked":false
+      },{
+        "tit":"composite_20",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.composite_20}",
+        "icons":"eMap-plot/eMap-plot60.png",
+        "base":"Polyline",
+        "type":"Railage",
+        "key":"composite",
+        "size":30,
+        "checked":false
+      },{
+        "tit":"composite_21",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.composite_21}",
+        "icons":"eMap-plot/eMap-plot61.png",
+        "base":"Polyline",
+        "type":"RoundsLine",
+        "key":"line",
+        "size":30,
+        "checked":false
+      },{
+        "tit":"composite_22",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.composite_22}",
+        "icons":"eMap-plot/eMap-plot62.png",
+        "base":"Polyline",
+        "type":"CommunicateLine",
+        "key":"composite",
+        "size":30,
+        "checked":false
+      },{
+        "tit":"composite_23",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.composite_23}",
+        "icons":"eMap-plot/eMap-plot63.png",
+        "base":"Polyline",
+        "type":"PatrolLine",
+        "key":"line",
+        "size":30,
+        "checked":false
+      },{
+        "tit":"composite_24",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.composite_24}",
+        "icons":"eMap-plot/eMap-plot64.png",
+        "base":"Polyline",
+        "type":"WarBoundary",
+        "key":"line",
+        "size":30,
+        "checked":false
+      },{
+        "tit":"composite_25",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.composite_25}",
+        "icons":"eMap-plot/eMap-plot65.png",
+        "base":"Polyline",
+        "type":"FinderLine",
+        "key":"line",
+        "size":30,
+        "checked":false
+      },{
+        "tit":"composite_26",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.composite_26}",
+        "icons":"eMap-plot/eMap-plot66.png",
+        "base":"Polyline",
+        "type":"FixedPipeLaying",
+        "key":"composite",
+        "size":30,
+        "checked":false
+      },{
+        "tit":"composite_27",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.composite_27}",
+        "icons":"eMap-plot/eMap-plot67.png",
+        "base":"Polyline",
+        "type":"LandMobile",
+        "key":"composite",
+        "size":30,
+        "checked":false
+      },{
+        "tit":"composite_28",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.composite_28}",
+        "icons":"eMap-plot/eMap-plot68.png",
+        "base":"Polyline",
+        "type":"ForbidFlyLine",
+        "key":"composite",
+        "size":30,
+        "checked":false
+      },{
+        "tit":"composite_29",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.composite_29}",
+        "icons":"eMap-plot/eMap-plot69.png",
+        "base":"Polyline",
+        "type":"LineAbatis3",
+        "key":"line",
+        "size":30,
+        "checked":false
+      },{
+        "tit":"composite_30",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.composite_30}",
+        "icons":"eMap-plot/eMap-plot70.png",
+        "base":"Polyline",
+        "type":"LineAbatis2",
+        "key":"line",
+        "size":30,
+        "checked":false
+      },{
+        "tit":"composite_31",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.composite_31}",
+        "icons":"eMap-plot/eMap-plot71.png",
+        "base":"Polyline",
+        "type":"LineAbatis1",
+        "key":"line",
+        "size":30,
+        "checked":false
+      },{
+        "tit":"composite_32",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.composite_32}",
+        "icons":"eMap-plot/eMap-plot72.png",
+        "base":"Polyline",
+        "type":"LaighStake",
+        "key":"line",
+        "size":30,
+        "checked":false
+      },{
+        "tit":"composite_33",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.composite_33}",
+        "icons":"eMap-plot/eMap-plot73.png",
+        "base":"Polyline",
+        "type":"HelicopterTransport",
+        "key":"composite",
+        "size":30,
+        "checked":false
+      },{
+        "tit":"composite_34",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.composite_34}",
+        "icons":"eMap-plot/eMap-plot74.png",
+        "base":"Polyline",
+        "type":"MissileMarch",
+        "key":"composite",
+        "size":30,
+        "checked":false
+      },{
+        "tit":"composite_35",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.composite_35}",
+        "icons":"eMap-plot/eMap-plot75.png",
+        "base":"Polyline",
+        "type":"HighWay",
+        "key":"composite",
+        "size":30,
+        "checked":false
+      },{
+        "tit":"composite_36",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.composite_36}",
+        "icons":"eMap-plot/eMap-plot76.png",
+        "base":"Polyline",
+        "type":"MusketerByTank",
+        "key":"composite",
+        "size":30,
+        "checked":false
+      },{
+        "tit":"composite_37",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.composite_37}",
+        "icons":"eMap-plot/eMap-plot77.png",
+        "base":"Polyline",
+        "type":"TankMusColumn",
+        "key":"composite",
+        "size":30,
+        "checked":false
+      },{
+        "tit":"composite_38",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.composite_38}",
+        "icons":"eMap-plot/eMap-plot78.png",
+        "base":"Polyline",
+        "type":"Trench",
+        "key":"line",
+        "size":30,
+        "checked":false
+      },{
+        "tit":"composite_39",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.composite_39}",
+        "icons":"eMap-plot/eMap-plot79.png",
+        "base":"Polyline",
+        "type":"Waterage",
+        "key":"composite",
+        "size":30,
+        "checked":false
+      },{
+        "tit":"composite_40",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.composite_40}",
+        "icons":"eMap-plot/eMap-plot80.png",
+        "base":"Polyline",
+        "type":"RendezvousArea1",
+        "key":"line",
+        "size":30,
+        "checked":false
+      },{
+        "tit":"composite_41",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.composite_41}",
+        "icons":"eMap-plot/eMap-plot81.png",
+        "base":"Polyline",
+        "type":"RendezvousArea2",
+        "key":"line",
+        "size":30,
+        "checked":false
+      },{
+        "tit":"composite_42",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.composite_42}",
+        "icons":"eMap-plot/eMap-plot82.png",
+        "base":"Polyline",
+        "type":"RendezvousArea3",
+        "key":"line",
+        "size":30,
+        "checked":false
+      },{
+        "tit":"composite_43",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.composite_43}",
+        "icons":"eMap-plot/eMap-plot83.png",
+        "base":"Polyline",
+        "type":"RendezvousArea4",
+        "key":"line",
+        "size":30,
+        "checked":false
+      },{
+        "tit":"composite_44",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.composite_44}",
+        "icons":"eMap-plot/eMap-plot84.png",
+        "base":"Polyline",
+        "type":"OriginalBirth",
+        "key":"line",
+        "size":30,
+        "checked":false
+      },{
+        "tit":"composite_45",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.composite_45}",
+        "icons":"eMap-plot/eMap-plot85.png",
+        "base":"Polyline",
+        "type":"SeaMobile",
+        "key":"composite",
+        "size":30,
+        "checked":false
+      },{
+        "tit":"composite_46",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.composite_46}",
+        "icons":"eMap-plot/eMap-plot86.png",
+        "base":"Polyline",
+        "type":"Stake",
+        "key":"line",
+        "size":30,
+        "checked":false
+      },{
+        "tit":"composite_47",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.composite_47}",
+        "icons":"eMap-plot/eMap-plot87.png",
+        "base":"Polyline",
+        "type":"UnderProp2",
+        "key":"line",
+        "size":30,
+        "checked":false
+      },{
+        "tit":"composite_48",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.composite_48}",
+        "icons":"eMap-plot/eMap-plot88.png",
+        "base":"Polyline",
+        "type":"UnderProp3",
+        "key":"line",
+        "size":30,
+        "checked":false
+      },{
+        "tit":"composite_49",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.composite_49}",
+        "icons":"eMap-plot/eMap-plot89.png",
+        "base":"Polyline",
+        "type":"ImportantPlace",
+        "key":"composite",
+        "size":30,
+        "checked":false
+      },{
+        "tit":"composite_50",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.composite_50}",
+        "icons":"eMap-plot/eMap-plot90.png",
+        "base":"Polyline",
+        "type":"CurrentTaskLine",
+        "key":"line",
+        "size":30,
+        "checked":false
+      },{
+        "tit":"composite_51",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.composite_51}",
+        "icons":"eMap-plot/eMap-plot91.png",
+        "base":"Polyline",
+        "type":"LatterTaskLine",
+        "key":"line",
+        "size":30,
+        "checked":false
+      }
+    ]
+  },
+  {
+    "boxName": "ForestFireRescue",
+    "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.ForestFireRescue}",
+    "key" :"point",
+    "data":[
+      {
+        "tit":"ForestFireRescue_1",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.ForestFireRescue_1}",
+        "icons":"emergencyPlotSymbol/森林火灾救援/旗帜.svg",
+        "base":"Polyline",
+        "type":"Point",
+        "height": 55,
+        "width": 55,
+        "scale": 0.4,
+        "key":"point",
+        "checked":false
+      },
+      {
+        "tit":"ForestFireRescue_2",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.ForestFireRescue_2}",
+        "icons":"emergencyPlotSymbol/森林火灾救援/救援力量.svg",
+        "base":"Polyline",
+        "type":"Point",
+        "height": 55,
+        "width": 55,
+        "scale": 0.4,
+        "key":"point",
+        "checked":false
+      },
+      {
+        "tit":"ForestFireRescue_3",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.ForestFireRescue_3}",
+        "icons":"emergencyPlotSymbol/森林火灾救援/扑火队.svg",
+        "base":"Polyline",
+        "type":"Point",
+        "height": 55,
+        "width": 55,
+        "scale": 0.4,
+        "key":"point",
+        "checked":false
+      },
+      {
+        "tit":"ForestFireRescue_4",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.ForestFireRescue_4}",
+        "icons":"emergencyPlotSymbol/森林火灾救援/火点.png",
+        "base":"Polyline",
+        "type":"Overlay",
+        "overlayOpt":{
+          "source": "./imgs/gisPlot/emergencyPlotSymbol/森林火灾救援/火点.html",
+          "type": "iframe",
+          "width": 60,
+          "height": 60,
+          "base64":"data:image/png;base64,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"
+        },
+        "key":"point",
+        "checked":false
+      },
+      {
+        "tit":"ForestFireRescue_5",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.ForestFireRescue_5}",
+        "icons":"emergencyPlotSymbol/森林火灾救援/隔离保障.svg",
+        "base":"Polyline",
+        "type":"Point",
+        "height": 55,
+        "width": 55,
+        "scale": 0.4,
+        "key":"point",
+        "checked":false
+      },
+      {
+        "tit":"ForestFireRescue_6",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.ForestFireRescue_6}",
+        "icons":"emergencyPlotSymbol/森林火灾救援/风向.svg",
+        "base":"Polyline",
+        "type":"Point",
+        "height": 55,
+        "width": 55,
+        "scale": 0.4,
+        "key":"point",
+        "checked":false
+      },
+      {
+        "tit":"ForestFireRescue_7",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.ForestFireRescue_7}",
+        "icons":"emergencyPlotSymbol/森林火灾救援/指挥部.svg",
+        "base":"Polyline",
+        "type":"Point",
+        "height": 55,
+        "width": 55,
+        "scale": 0.4,
+        "key":"point",
+        "checked":false
+      },
+      {
+        "tit":"ForestFireRescue_8",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.ForestFireRescue_8}",
+        "icons":"emergencyPlotSymbol/森林火灾救援/消防车.svg",
+        "base":"Polyline",
+        "type":"Point",
+        "height": 55,
+        "width": 55,
+        "scale": 0.4,
+        "key":"point",
+        "checked":false
+      },
+      {
+        "tit":"ForestFireRescue_9",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.ForestFireRescue_9}",
+        "icons":"emergencyPlotSymbol/森林火灾救援/扑火行动.svg",
+        "base":"Polyline",
+        "type":"Point",
+        "height": 55,
+        "width": 55,
+        "scale": 0.4,
+        "key":"point",
+        "checked":false
+      },
+      {
+        "tit":"ForestFireRescue_10",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.ForestFireRescue_10}",
+        "icons":"emergencyPlotSymbol/森林火灾救援/森林火.svg",
+        "base":"Polyline",
+        "type":"Point",
+        "height": 55,
+        "width": 55,
+        "scale": 0.4,
+        "key":"point",
+        "checked":false
+      },
+      {
+        "tit":"ForestFireRescue_11",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.ForestFireRescue_11}",
+        "icons":"emergencyPlotSymbol/森林火灾救援/现场指挥所.svg",
+        "base":"Polyline",
+        "type":"Point",
+        "height": 55,
+        "width": 55,
+        "scale": 0.4,
+        "key":"point",
+        "checked":false
+      }
+    ]
+  },
+  {
+    "boxName": "LocalPic",
+    "//visible":"默认为true，设置为false则不显示",
+    "visible": true,
+    "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.LocalPic}",
+    "key" :"point",
+    "data":[
+      {
+        "tit":"ForestFireRescue_1",
+        "content" : "${baseLocal.tsemap_local.PlotManagerCtrl.normalPlot.ForestFireRescue_1}",
+        "icons":"emergencyPlotSymbol/森林火灾救援/旗帜.svg",
+        "base":"Polyline",
+        "type":"Point",
+        "height": 55,
+        "width": 55,
+        "scale": 0.4,
+        "key":"point",
+        "checked":false
+      }
+    ]
+  }
+]

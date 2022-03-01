@@ -1,0 +1,13 @@
+{
+  "data": {
+    "death": 20,
+    "hurt": 10,
+    "damage": 5,
+    "resuce": 74,
+    "transfer": 69
+  },
+  "estimates": {
+    "death": 14,
+    "damage": 5
+  }
+}

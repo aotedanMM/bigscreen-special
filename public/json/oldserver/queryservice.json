@@ -1,0 +1,2091 @@
+{
+    "majorDanger": {
+        "table": "ANJIAN_DANGER",
+        "//": "重大危险源",
+        "keyWordFields": ["DANGERNAME"],
+        "fieldMap": {
+            "DISTRICT": "COUNTY",
+            "name": "DANGERNAME",
+            "phone": "DUTYTEL",
+            "dangertype": "DANGERTYPECODE",
+            "dangerlevel": "HAZARDLEVELCODE",
+            "address": "ADDRESS",
+            "parentunit": "FIRMNAME",
+            "district": "COUNTY",
+            "districtname": "COUNTY.tag.FULLNAME",
+            "dangertypename": "DANGERTYPECODE.tag.DANGERTYPENAME",
+            "dangerlevelname": "HAZARDLEVELCODE.tag.HAZARDLEVELNAME",
+            "respper": "CONTACTPER"
+        },
+        "relations": [{
+            "table": "CODE_BAS_DISTRICT",
+            "localField": "COUNTY",
+            "foreignField": "DISTRICTCODE"
+        }, {
+            "table": "CODE_BAS_DANGERTYPE",
+            "localField": "DANGERTYPECODE",
+            "foreignField": "DANGERTYPECODE"
+        }, {
+            "table": "CODE_BAS_HAZARDLEVEL",
+            "localField": "HAZARDLEVELCODE",
+            "foreignField": "HAZARDLEVELCODE"
+        }]
+    },
+    "geologichazard": {
+        "table": "V_NAH_GEO_GEOLOGICHAZ",
+        "//": "地质灾害风险区",
+        "keyWordFields": ["NAME"],
+        "districtField": "PAC",
+        "fieldMap": {
+            "//name": "//名称",
+            "name": "NAME",
+            "ID": "ID",
+            "//ADDRESS": "//地址",
+            "ADDRESS": "ADDRESS",
+            "//DISTRICTCODE": "//行政区划代码",
+            "DISTRICTCODE": "PAC",
+            "//HAZARDLEVELCODE": "//危险等级代码(1-特别危险 2-重大危险 3-较大危险 4-一般危险 5-其他)",
+            "HAZARDLEVELCODE": "ID.tag.HAZARDLEVELCODE",
+            "//MAXPERSONNUM": "//威胁人数",
+            "MAXPERSONNUM": "ID.tag.RISKNUM",
+            "//THREATOBJ": "//威胁对象",
+            "THREATOBJ": "ID.tag.THROBJECTS",
+            "//THREATWEALTH": "//威胁财产（万元）",
+            "THREATWEALTH": "ID.tag.THRPROPERTY",
+            "//DISTRICTNAME": "//区域名称",
+            "DISTRICTNAME": "PAC.tag.FULLNAME"
+        },
+        "relations": [{
+            "table": "CODE_BAS_DISTRICT",
+            "localField": "PAC",
+            "foreignField": "DISTRICTCODE"
+        }, {
+            "table": "NAH_GEO_GEOLOGICHAZ_P_BU",
+            "localField": "ID",
+            "foreignField": "GID"
+        }]
+    },
+    "landslide": {
+        "table": "V_NAH_GEO_GEOLOGICHAZ",
+        "//": "滑坡",
+        "keyWordFields": ["NAME"],
+        "districtField": "PAC",
+        "fieldMap": {
+            "name": "NAME",
+            "address": "ADDRESS",
+            "feature": "FEATURECODE",
+            "FEATURECODE": "FEATURECODE.tag.FEATURENAME",
+            "district": "PAC",
+            "PAC": "PAC.tag.FULLNAME",
+            "DISASTERSCALE": "DISASTERSCALE",
+            "disasterlevel": "DISASTERLEVELCODE",
+            "DISASTERLEVELCODE": "DISASTERLEVELCODE.tag.HAZARDLEVELNAME",
+            "RISKNUM": "RISKNUM",
+            "THRPROPERTY": "THRPROPERTY",
+            "INDUCINGFACTORS": "INDUCINGFACTORS",
+            "CONTACTPER": "CONTACTPER",
+            "CHARGEDEPT": "CHARGEDEPT",
+            "PROTECTION": "PROTECTION",
+            "PERSONINFO": "PERSONINFO",
+            "harzardtype": "GEOHAZARDTYPECODE",
+            "GEOHAZARDTYPECODE": "GEOHAZARDTYPECODE.tag.GEOHAZARDTYPENAME"
+        },
+        "relations": [{
+            "table": "CODE_BAS_DISTRICT",
+            "localField": "PAC",
+            "foreignField": "DISTRICTCODE"
+        }, {
+            "table": "CODE_FEATURE",
+            "localField": "FEATURECODE",
+            "foreignField": "FEATURECODE"
+        }, {
+            "table": "CODE_HAZARD_LEVEL",
+            "localField": "DISASTERLEVELCODE",
+            "foreignField": "HAZARDLEVELCODE"
+        }, {
+            "table": "CODE_GEOLOGICHAZARD_TYPE",
+            "localField": "GEOHAZARDTYPECODE",
+            "foreignField": "GEOHAZARDTYPECODE"
+        }],
+        "query": {
+            "tag.FEATURECODE": "100103010000"
+        }
+    },
+    "debrisflow": {
+        "table": "V_NAH_GEO_GEOLOGICHAZ",
+        "//": "泥石流",
+        "keyWordFields": ["NAME"],
+        "districtField": "PAC",
+        "fieldMap": {
+            "name": "NAME",
+            "address": "ADDRESS",
+            "feature": "FEATURECODE",
+            "FEATURECODE": "FEATURECODE.tag.FEATURENAME",
+            "district": "PAC",
+            "PAC": "PAC.tag.FULLNAME",
+            "DISASTERSCALE": "DISASTERSCALE",
+            "disasterlevel": "DISASTERLEVELCODE",
+            "DISASTERLEVELCODE": "DISASTERLEVELCODE.tag.HAZARDLEVELNAME",
+            "RISKNUM": "RISKNUM",
+            "THRPROPERTY": "THRPROPERTY",
+            "INDUCINGFACTORS": "INDUCINGFACTORS",
+            "CONTACTPER": "CONTACTPER",
+            "CHARGEDEPT": "CHARGEDEPT",
+            "PROTECTION": "PROTECTION",
+            "PERSONINFO": "PERSONINFO",
+            "harzardtype": "GEOHAZARDTYPECODE",
+            "GEOHAZARDTYPECODE": "GEOHAZARDTYPECODE.tag.GEOHAZARDTYPENAME"
+        },
+        "relations": [{
+            "table": "CODE_BAS_DISTRICT",
+            "localField": "PAC",
+            "foreignField": "DISTRICTCODE"
+        }, {
+            "table": "CODE_FEATURE",
+            "localField": "FEATURECODE",
+            "foreignField": "FEATURECODE"
+        }, {
+            "table": "CODE_HAZARD_LEVEL",
+            "localField": "DISASTERLEVELCODE",
+            "foreignField": "HAZARDLEVELCODE"
+        }, {
+            "table": "CODE_GEOLOGICHAZARD_TYPE",
+            "localField": "GEOHAZARDTYPECODE",
+            "foreignField": "GEOHAZARDTYPECODE"
+        }],
+        "query": {
+            "tag.FEATURECODE": "100103020000"
+        }
+    },
+    "mountaincollapse": {
+        "table": "V_NAH_GEO_GEOLOGICHAZ",
+        "//": "山体崩塌",
+        "keyWordFields": ["NAME"],
+        "districtField": "PAC",
+        "fieldMap": {
+            "name": "NAME",
+            "address": "ADDRESS",
+            "feature": "FEATURECODE",
+            "FEATURECODE": "FEATURECODE.tag.FEATURENAME",
+            "district": "PAC",
+            "PAC": "PAC.tag.FULLNAME",
+            "DISASTERSCALE": "DISASTERSCALE",
+            "disasterlevel": "DISASTERLEVELCODE",
+            "DISASTERLEVELCODE": "DISASTERLEVELCODE.tag.HAZARDLEVELNAME",
+            "RISKNUM": "RISKNUM",
+            "THRPROPERTY": "THRPROPERTY",
+            "INDUCINGFACTORS": "INDUCINGFACTORS",
+            "CONTACTPER": "CONTACTPER",
+            "CHARGEDEPT": "CHARGEDEPT",
+            "PROTECTION": "PROTECTION",
+            "PERSONINFO": "PERSONINFO",
+            "harzardtype": "GEOHAZARDTYPECODE",
+            "GEOHAZARDTYPECODE": "GEOHAZARDTYPECODE.tag.GEOHAZARDTYPENAME"
+        },
+        "relations": [{
+            "table": "CODE_BAS_DISTRICT",
+            "localField": "PAC",
+            "foreignField": "DISTRICTCODE"
+        }, {
+            "table": "CODE_FEATURE",
+            "localField": "FEATURECODE",
+            "foreignField": "FEATURECODE"
+        }, {
+            "table": "CODE_HAZARD_LEVEL",
+            "localField": "DISASTERLEVELCODE",
+            "foreignField": "HAZARDLEVELCODE"
+        }, {
+            "table": "CODE_GEOLOGICHAZARD_TYPE",
+            "localField": "GEOHAZARDTYPECODE",
+            "foreignField": "GEOHAZARDTYPECODE"
+        }],
+        "query": {
+            "tag.FEATURECODE": "100103030000"
+        }
+    },
+    "bottomcollapse": {
+        "table": "V_NAH_GEO_GEOLOGICHAZ",
+        "//": "地面塌陷",
+        "keyWordFields": ["NAME"],
+        "districtField": "PAC",
+        "fieldMap": {
+            "name": "NAME",
+            "address": "ADDRESS",
+            "feature": "FEATURECODE",
+            "FEATURECODE": "FEATURECODE.tag.FEATURENAME",
+            "district": "PAC",
+            "PAC": "PAC.tag.FULLNAME",
+            "DISASTERSCALE": "DISASTERSCALE",
+            "disasterlevel": "DISASTERLEVELCODE",
+            "DISASTERLEVELCODE": "DISASTERLEVELCODE.tag.HAZARDLEVELNAME",
+            "RISKNUM": "RISKNUM",
+            "THRPROPERTY": "THRPROPERTY",
+            "INDUCINGFACTORS": "INDUCINGFACTORS",
+            "CONTACTPER": "CONTACTPER",
+            "CHARGEDEPT": "CHARGEDEPT",
+            "PROTECTION": "PROTECTION",
+            "PERSONINFO": "PERSONINFO",
+            "harzardtype": "GEOHAZARDTYPECODE",
+            "GEOHAZARDTYPECODE": "GEOHAZARDTYPECODE.tag.GEOHAZARDTYPENAME"
+        },
+        "relations": [{
+            "table": "CODE_BAS_DISTRICT",
+            "localField": "PAC",
+            "foreignField": "DISTRICTCODE"
+        }, {
+            "table": "CODE_FEATURE",
+            "localField": "FEATURECODE",
+            "foreignField": "FEATURECODE"
+        }, {
+            "table": "CODE_HAZARD_LEVEL",
+            "localField": "DISASTERLEVELCODE",
+            "foreignField": "HAZARDLEVELCODE"
+        }, {
+            "table": "CODE_GEOLOGICHAZARD_TYPE",
+            "localField": "GEOHAZARDTYPECODE",
+            "foreignField": "GEOHAZARDTYPECODE"
+        }],
+        "query": {
+            "tag.FEATURECODE": "100103050000"
+        }
+    },
+    "emptysubside": {
+        "table": "V_NAH_GEO_GEOLOGICHAZ",
+        "//": "采空塌陷",
+        "keyWordFields": ["NAME"],
+        "districtField": "PAC",
+        "fieldMap": {
+            "name": "NAME",
+            "address": "ADDRESS",
+            "feature": "FEATURECODE",
+            "FEATURECODE": "FEATURECODE.tag.FEATURENAME",
+            "district": "PAC",
+            "PAC": "PAC.tag.FULLNAME",
+            "DISASTERSCALE": "DISASTERSCALE",
+            "disasterlevel": "DISASTERLEVELCODE",
+            "DISASTERLEVELCODE": "DISASTERLEVELCODE.tag.HAZARDLEVELNAME",
+            "RISKNUM": "RISKNUM",
+            "THRPROPERTY": "THRPROPERTY",
+            "INDUCINGFACTORS": "INDUCINGFACTORS",
+            "CONTACTPER": "CONTACTPER",
+            "CHARGEDEPT": "CHARGEDEPT",
+            "PROTECTION": "PROTECTION",
+            "PERSONINFO": "PERSONINFO",
+            "harzardtype": "GEOHAZARDTYPECODE",
+            "GEOHAZARDTYPECODE": "GEOHAZARDTYPECODE.tag.GEOHAZARDTYPENAME"
+        },
+        "relations": [{
+            "table": "CODE_BAS_DISTRICT",
+            "localField": "PAC",
+            "foreignField": "DISTRICTCODE"
+        }, {
+            "table": "CODE_FEATURE",
+            "localField": "FEATURECODE",
+            "foreignField": "FEATURECODE"
+        }, {
+            "table": "CODE_HAZARD_LEVEL",
+            "localField": "DISASTERLEVELCODE",
+            "foreignField": "HAZARDLEVELCODE"
+        }, {
+            "table": "CODE_GEOLOGICHAZARD_TYPE",
+            "localField": "GEOHAZARDTYPECODE",
+            "foreignField": "GEOHAZARDTYPECODE"
+        }],
+        "query": {
+            "tag.FEATURECODE": "100103090000"
+        }
+    },
+    "groundfissure": {
+        "table": "V_NAH_GEO_GEOLOGICHAZ",
+        "//": "地裂缝",
+        "keyWordFields": ["NAME"],
+        "districtField": "PAC",
+        "fieldMap": {
+            "name": "NAME",
+            "address": "ADDRESS",
+            "feature": "FEATURECODE",
+            "FEATURECODE": "FEATURECODE.tag.FEATURENAME",
+            "district": "PAC",
+            "PAC": "PAC.tag.FULLNAME",
+            "DISASTERSCALE": "DISASTERSCALE",
+            "disasterlevel": "DISASTERLEVELCODE",
+            "DISASTERLEVELCODE": "DISASTERLEVELCODE.tag.HAZARDLEVELNAME",
+            "RISKNUM": "RISKNUM",
+            "THRPROPERTY": "THRPROPERTY",
+            "INDUCINGFACTORS": "INDUCINGFACTORS",
+            "CONTACTPER": "CONTACTPER",
+            "CHARGEDEPT": "CHARGEDEPT",
+            "PROTECTION": "PROTECTION",
+            "PERSONINFO": "PERSONINFO",
+            "harzardtype": "GEOHAZARDTYPECODE",
+            "GEOHAZARDTYPECODE": "GEOHAZARDTYPECODE.tag.GEOHAZARDTYPENAME"
+        },
+        "relations": [{
+            "table": "CODE_BAS_DISTRICT",
+            "localField": "PAC",
+            "foreignField": "DISTRICTCODE"
+        }, {
+            "table": "CODE_FEATURE",
+            "localField": "FEATURECODE",
+            "foreignField": "FEATURECODE"
+        }, {
+            "table": "CODE_HAZARD_LEVEL",
+            "localField": "DISASTERLEVELCODE",
+            "foreignField": "HAZARDLEVELCODE"
+        }, {
+            "table": "CODE_GEOLOGICHAZARD_TYPE",
+            "localField": "GEOHAZARDTYPECODE",
+            "foreignField": "GEOHAZARDTYPECODE"
+        }],
+        "query": {
+            "tag.FEATURECODE": "100103060000"
+        }
+    },
+    "landsubsidence": {
+        "table": "V_NAH_GEO_GEOLOGICHAZ",
+        "//": "地面沉降",
+        "keyWordFields": ["NAME"],
+        "districtField": "PAC",
+        "fieldMap": {
+            "name": "NAME",
+            "address": "ADDRESS",
+            "feature": "FEATURECODE",
+            "FEATURECODE": "FEATURECODE.tag.FEATURENAME",
+            "district": "PAC",
+            "PAC": "PAC.tag.FULLNAME",
+            "DISASTERSCALE": "DISASTERSCALE",
+            "disasterlevel": "DISASTERLEVELCODE",
+            "DISASTERLEVELCODE": "DISASTERLEVELCODE.tag.HAZARDLEVELNAME",
+            "RISKNUM": "RISKNUM",
+            "THRPROPERTY": "THRPROPERTY",
+            "INDUCINGFACTORS": "INDUCINGFACTORS",
+            "CONTACTPER": "CONTACTPER",
+            "CHARGEDEPT": "CHARGEDEPT",
+            "PROTECTION": "PROTECTION",
+            "PERSONINFO": "PERSONINFO",
+            "harzardtype": "GEOHAZARDTYPECODE",
+            "GEOHAZARDTYPECODE": "GEOHAZARDTYPECODE.tag.GEOHAZARDTYPENAME"
+        },
+        "relations": [{
+            "table": "CODE_BAS_DISTRICT",
+            "localField": "PAC",
+            "foreignField": "DISTRICTCODE"
+        }, {
+            "table": "CODE_FEATURE",
+            "localField": "FEATURECODE",
+            "foreignField": "FEATURECODE"
+        }, {
+            "table": "CODE_HAZARD_LEVEL",
+            "localField": "DISASTERLEVELCODE",
+            "foreignField": "HAZARDLEVELCODE"
+        }, {
+            "table": "CODE_GEOLOGICHAZARD_TYPE",
+            "localField": "GEOHAZARDTYPECODE",
+            "foreignField": "GEOHAZARDTYPECODE"
+        }],
+        "query": {
+            "tag.FEATURECODE": "100103070000"
+        }
+    },
+    "unstableslopes": {
+        "table": "V_NAH_GEO_GEOLOGICHAZ",
+        "//": "不稳定斜坡",
+        "keyWordFields": ["NAME"],
+        "districtField": "PAC",
+        "fieldMap": {
+            "name": "NAME",
+            "address": "ADDRESS",
+            "feature": "FEATURECODE",
+            "FEATURECODE": "FEATURECODE.tag.FEATURENAME",
+            "district": "PAC",
+            "PAC": "PAC.tag.FULLNAME",
+            "DISASTERSCALE": "DISASTERSCALE",
+            "disasterlevel": "DISASTERLEVELCODE",
+            "DISASTERLEVELCODE": "DISASTERLEVELCODE.tag.HAZARDLEVELNAME",
+            "RISKNUM": "RISKNUM",
+            "THRPROPERTY": "THRPROPERTY",
+            "INDUCINGFACTORS": "INDUCINGFACTORS",
+            "CONTACTPER": "CONTACTPER",
+            "CHARGEDEPT": "CHARGEDEPT",
+            "PROTECTION": "PROTECTION",
+            "PERSONINFO": "PERSONINFO",
+            "harzardtype": "GEOHAZARDTYPECODE",
+            "GEOHAZARDTYPECODE": "GEOHAZARDTYPECODE.tag.GEOHAZARDTYPENAME"
+        },
+        "relations": [{
+            "table": "CODE_BAS_DISTRICT",
+            "localField": "PAC",
+            "foreignField": "DISTRICTCODE"
+        }, {
+            "table": "CODE_FEATURE",
+            "localField": "FEATURECODE",
+            "foreignField": "FEATURECODE"
+        }, {
+            "table": "CODE_HAZARD_LEVEL",
+            "localField": "DISASTERLEVELCODE",
+            "foreignField": "HAZARDLEVELCODE"
+        }, {
+            "table": "CODE_GEOLOGICHAZARD_TYPE",
+            "localField": "GEOHAZARDTYPECODE",
+            "foreignField": "GEOHAZARDTYPECODE"
+        }],
+        "query": {
+            "tag.FEATURECODE": "100103040000"
+        }
+    },
+    "repository": {
+        "table": "JC_REPERTORY",
+        "//": "物资储备库",
+        "keyWordFields": ["REPERTORYNAME"],
+        "fieldMap": {
+            "name": "REPERTORYNAME",
+            "CAPACITY": "CAPACITY",
+            "address": "ADDRESS",
+            "ORGNAME": "ORGNAME",
+            "CONCATEPER": "CONCATEPER",
+            "CONCATEMOBTEL": "CONCATEMOBTEL",
+            "DISTRICT": "DISTRICTCODE",
+            "TEL": "CONCATEOFFTEL",
+            "districtname": "DISTRICTCODE.tag.FULLNAME",
+            "LEVELCODE": "LEVELCODE",
+            "LEVELNAME": "LEVELCODE.tag.LEVELNAME",
+            "REPERTORYTYPECODE": "REPERTORYTYPECODE",
+            "REPERTORYTYPENAME": "REPERTORYTYPECODE.tag.REPERTORYTYPENAME",
+            "SOURCEDEPT": "SOURCEDEPT",
+            "CHARGEDEPT": "CHARGEDEPT"
+        },
+        "relations": [{
+            "table": "CODE_BAS_DISTRICT",
+            "localField": "DISTRICTCODE",
+            "foreignField": "DISTRICTCODE"
+        }, {
+            "table": "CODE_REP_TYPE",
+            "localField": "REPERTORYTYPECODE",
+            "foreignField": "REPERTORYTYPECODE"
+        }, {
+            "table": "CODE_REP_LEVEL",
+            "localField": "LEVELCODE",
+            "foreignField": "LEVELCODE"
+        }]
+    },
+    "development": {
+        "table": "BAS_DEVELOPMENT",
+        "//": "住宅小区",
+        "keyWordFields": ["DEFOBJNAME"],
+        "fieldMap": {
+            "name": "DEFOBJNAME",
+            "phone": "RESPOTEL",
+            "address": "ADDRESS",
+            "respper": "RESPPER",
+            "districtname": "DISTRICTCODE.tag.FULLNAME"
+        },
+        "relations": [{
+            "table": "CODE_BAS_DISTRICT",
+            "localField": "DISTRICTCODE",
+            "foreignField": "DISTRICTCODE"
+        }]
+    },
+    "school": {
+        "table": "BAS_SCHOOL",
+        "//": "学校",
+        "keyWordFields": ["SCHOOLNAME"],
+        "fieldMap": {
+            "name": "SCHOOLNAME",
+            "address": "ADDRESS",
+            "CONTACTPER": "RESPPER",
+            "CONTACTMTEL": "RESPMTEL",
+            "STUDENTNUM": "STUDENTNUM",
+            "FACULTYNUM": "FACULTYNUM",
+            "BUILDAREA": "BUILDAREA",
+            "district": "DISTRICTCODE",
+            "districtname": "DISTRICTCODE.tag.FULLNAME",
+            "objecttype": "DEFOBJTYPECODE",
+            "DEFOBJTYPECODE": "DEFOBJTYPECODE.tag.SCHOOLTYPENAME"
+        },
+        "relations": [{
+                "table": "CODE_BAS_DISTRICT",
+                "localField": "DISTRICTCODE",
+                "foreignField": "DISTRICTCODE"
+            },
+            {
+                "table": "CODE_SCHOOL_TYPE",
+                "localField": "DEFOBJTYPECODE",
+                "foreignField": "SCHOOLTYPECODE"
+            }
+        ]
+    },
+    "hospital": {
+        "table": "BAS_HEALTHORG",
+        "//": "综合医院",
+        "keyWordFields": ["ORGNAME"],
+        "fieldMap": {
+            "name": "ORGNAME",
+            "address": "ADDRESS",
+            "CONTACTPER": "RESPPER",
+            "CONTACTMTEL": "DUTYTEL",
+            "BEDNUM": "BEDNUM",
+            "NURSENUM": "NURSENUM",
+            "district": "DISTRICTCODE",
+            "districtname": "DISTRICTCODE.tag.FULLNAME",
+            "ORGGRADECODE": "ORGGRADECODE",
+            "ORGGRADENAME": "ORGGRADECODE.tag.ORGGRADENAME",
+            "typecode": "ORGTYPECODE",
+            "ORGTYPENAME": "ORGTYPECODE.tag.ORGTYPENAME"
+        },
+        "relations": [{
+            "table": "CODE_BAS_DISTRICT",
+            "localField": "DISTRICTCODE",
+            "foreignField": "DISTRICTCODE"
+        }, {
+            "table": "CODE_HOSPITAL_GRADE",
+            "localField": "ORGGRADECODE",
+            "foreignField": "ORGGRADECODE"
+        }, {
+            "table": "CODE_HEALTHORG_TYPE",
+            "localField": "ORGTYPECODE",
+            "foreignField": "ORGTYPECODE"
+        }]
+    },
+    "government": {
+        "table": "BAS_PARTYGOVT",
+        "//": "政府机关",
+        "keyWordFields": ["PARTYGOVTNAME"],
+        "fieldMap": {
+            "name": "PARTYGOVTNAME",
+            "phone": "RESPOTEL",
+            "address": "ADDRESS",
+            "respper": "RESPPER"
+        },
+        "query": {
+            "tag.PARTYGOVTNAME": {
+                "$regex": "^((?!村委会|居民委员会|居委会|村民委员会|委员会|办事处|工作站|管理处).)*$"
+            }
+        }
+    },
+    "airport": {
+        "table": "BAS_AIRPORT",
+        "//": "飞机场",
+        "keyWordFields": ["AIRPORTNAME"],
+        "fieldMap": {
+            "name": "AIRPORTNAME",
+            "address": "ADDRESS",
+            "CONTACTPER": "RESPPER",
+            "CONTACTMTEL": "RESPOTEL",
+            "district": "DISTRICTCODE",
+            "COUNTY": "DISTRICTCODE.tag.FULLNAME"
+        },
+        "relations": [{
+            "table": "CODE_BAS_DISTRICT",
+            "localField": "DISTRICTCODE",
+            "foreignField": "DISTRICTCODE"
+        }]
+    },
+    "fireworkhouse": {
+        "table": "FOR_FIREWORKWAREHOUSE",
+        "//": "烟花爆竹仓库",
+        "keyWordFields": ["WAREHOUSENAME"],
+        "fieldMap": {
+            "name":"WAREHOUSENAME",
+            "address":"ADDRESS",
+            "CONTACTPER":"RESPPER",
+            "CONTACTMTEL":"RESPPERMTEL",
+            "LONGITUDE":"LONGITUDE",
+            "LATITUDE":"LATITUDE",
+            "COUNTY": "DISTRICTCODE.tag.FULLNAME",
+            "FIREWORKENTNAME":"FIREWORKENTID.tag.FIREWORKENTNAME"
+        },
+        "relations": [{
+            "table": "CODE_BAS_DISTRICT",
+            "localField": "DISTRICTCODE",
+            "foreignField": "DISTRICTCODE"
+        },{
+            "table": "ANJIAN_FIREWORKENT",
+            "localField": "FIREWORKENTID",
+            "foreignField": "FIREWORKENTID"
+        }]
+    },
+    "portwharf": {
+        "table": "BAS_PORTWHARF",
+        "//": "港口码头",
+        "keyWordFields": ["PORTWHARFNAME"],
+        "fieldMap": {
+            "name": "PORTWHARFNAME",
+            "address": "ADDRESS",
+            "RESPPER": "CONTACTPER",
+            "RESPMTEL": "CONTACTMTEL",
+            "defobjtype": "DEFOBJTYPECODE",
+            "DEFOBJTYPECODE": "DEFOBJTYPECODE.tag.DEFOBJTYPENAME",
+            "GROSSAREA": "GROSSAREA",
+            "BERTHNUM": "BERTHNUM",
+            "INUSEDATE": "INUSEDATE",
+            "USEYEARNUM": "USEYEARNUM",
+            "district": "DISTRICTCODE",
+            "DISTRICTCODE": "DISTRICTCODE.tag.FULLNAME"
+        },
+        "relations": [{
+            "table": "OBJ_DEFOBJ_TYPE",
+            "localField": "DEFOBJTYPECODE",
+            "foreignField": "DEFOBJTYPECODE"
+        }, {
+            "table": "CODE_BAS_DISTRICT",
+            "localField": "DISTRICTCODE",
+            "foreignField": "DISTRICTCODE"
+        }]
+    },
+    "railwaystation": {
+        "table": "BAS_RAILWAYSTATION",
+        "//": "火车站",
+        "keyWordFields": ["STATIONNAME"],
+        "fieldMap": {
+            "name": "STATIONNAME",
+            "address": "ADDRESS",
+            "CONTACTPER": "RESPPER",
+            "CONTACTMTEL": "RESPMTEL",
+            "district": "DISTRICTCODE",
+            "districtname": "DISTRICTCODE.tag.FULLNAME"
+        },
+        "relations": [{
+            "table": "CODE_BAS_DISTRICT",
+            "localField": "DISTRICTCODE",
+            "foreignField": "DISTRICTCODE"
+        }]
+    },
+    "enterprise": {
+        "coalMine": {
+            "table": "ANJIAN_COAL",
+            "//": "煤矿企业",
+            "keyWordFields": ["COALNAME"],
+            "fieldMap": {
+                "name": "COALNAME",
+                "phone": "CONTROLCENTERTEL",
+                "address": "ADDRESS",
+                "longitude": "LONGITUDE",
+                "latitude": "LATITUDE",
+                "respper": "LEGAL_NAME",
+                "minestatus": "COALSTATECODE.tag.COALSTATENAME",
+                "gaslevel": "WS_GRADE.tag.WS_GRADENAME",
+                "miningtype": "MINESTYLE.tag.MINESTYLENAME"
+            },
+            "relations": [{
+                    "table": "CODE_COAL_STATE",
+                    "localField": "COALSTATECODE",
+                    "foreignField": "COALSTATECODE"
+                },
+                {
+                    "table": "CODE_COAL_WSGRADE",
+                    "localField": "WS_GRADE",
+                    "foreignField": "WS_GRADE"
+                },
+                {
+                    "table": "CODE_COAL_MINESTYLE",
+                    "localField": "MINESTYLE",
+                    "foreignField": "MINESTYLE"
+                }
+            ]
+        },
+        "hazardous": {
+            "table": "ANJIAN_DAGCHEMENT",
+            "//": "危化品企业",
+            "keyWordFields": ["DAGCHEMENTNAME"],
+            "fieldMap": {
+                "name": "DAGCHEMENTNAME",
+                "phone": "PRINCIPALTEL",
+                "address": "ADDRESS",
+                "longitude": "LONGITUDE",
+                "latitude": "LATITUDE",
+                "safetylevel": "HAZARDLEVELCODE",
+                "chargeperson": "PRINCIPAL",
+                "economictype": "ECONOMICTYPES1NAME",
+                "establishedtime": "CREATEDATE",
+                "issuetime": "CERTIFICATIME",
+                "representative": "ARTIFICIALPER",
+                "safetyperson": "SAFETYMAGER",
+                "safetyofficephone": "SAFETYMAGERTEL",
+                "chargepersonphone": "PRINCIPALTEL",
+                "dutyphone": "SAFEDUTYTEL",
+                "emergencyphone": "EMERASKTEL",
+                "industrycode": "INDUSTRYCODE",
+                "saleincome": "SALESINCOME",
+                "updatetime": "UPDATETIME",
+                "unittype": "PROPERTYCODE.tag.PROPERTYNAME",
+                "industry": "DAGINDCODE.tag.DAGINDNAME",
+                "enterpricescale": "ENTSCALECODE.tag.ENTSCALENAME",
+                "companycode": "COMPANYCODE",
+                "creditcode": "CREDITCODE"
+            },
+            "relations": [{
+                    "table": "CODE_DAGCHEM_ENTSCALE",
+                    "localField": "ENTSCALECODE",
+                    "foreignField": "ENTSCALECODE"
+                },
+                {
+                    "table": "CODE_DAGCHEM_PROPERTY",
+                    "localField": "PROPERTYCODE",
+                    "foreignField": "PROPERTYCODE"
+                },
+                {
+                    "table": "ANJIAN_CODE_DAGIND",
+                    "localField": "DAGINDCODE",
+                    "foreignField": "DAGINDCODE"
+                }
+            ],
+            "query": {
+                "tag.PROPERTYCODE": {
+                    "$regex": "1|2|3|4|5"
+                },
+                "tag.ISCANCEL": "0",
+                "tag.ISTACKSTOFAC": {
+                    "$regex": "1|2"
+                }
+            }
+        },
+        "firework": {
+            "table": "ANJIAN_FIREWORKENT",
+            "//": "烟花爆竹企业",
+            "keyWordFields": ["FIREWORKENTNAME"],
+            "fieldMap": {
+                "name": "FIREWORKENTNAME",
+                "phone": "TEL",
+                "address": "ADDRESS",
+                "longitude": "LONGITUDE",
+                "latitude": "LATITUDE",
+                "respper": "ARTIFICIALPER",
+                "orgcode": "ORGNO",
+                "filingauthority": "FILINGORGAN",
+                "legalpersonid": "ARTIFICIALPERCERNO",
+                "licensenumber": "BUSILICNUM",
+                "licenseexpiration": "BUSILICVALIDDATE",
+                "registercapital": "REGISTFUNDS",
+                "inprovince": "INPROVINCE",
+                "updatetime": "UPDATETIME",
+                "unitstatus": "DEPTSTATECODE.tag.DEPTSTATENAME"
+            },
+            "relations": [{
+                "table": "ANJIAN_FIRENT_DEPTSTATE",
+                "localField": "DEPTSTATECODE",
+                "foreignField": "DEPTSTATECODE"
+            }],
+            "query": {
+                "tag.ISCANCEL": {
+                    "$regex": "0"
+                }
+            }
+        },
+        "mine": {
+            "table": "ANJIAN_TAILINGPOND",
+            "//": "尾矿库",
+            "keyWordFields": ["WKKMC"],
+            "fieldMap": {
+                "name": "WKKMC",
+                "phone": "WKKFZRYDDH",
+                "address": "WKKDZMC",
+                "longitude": "LONGITUDE",
+                "latitude": "LATITUDE",
+                "chargeperson": "WKKFZR"
+            }
+        },
+        "industry": {
+            "table": "ANJIAN_ENT_WHSMYHBZ",
+            "//": "工贸企业",
+            "keyWordFields": ["WHSMYHBZNAME"],
+            "fieldMap": {
+                "name": "WHSMYHBZNAME",
+                "phone": "CONTACTPERTEL",
+                "address": "ADDRESS",
+                "longitude": "LONGITUDE",
+                "latitude": "LATITUDE",
+                "respper": "CONTACTPER"
+            }
+        }
+    },
+    "coalMine": {
+        "table": "ANJIAN_COAL",
+        "//": "煤矿企业",
+        "keyWordFields": ["COALNAME"],
+        "districtField": "COUNTY",
+        "fieldMap": {
+            "name": "COALNAME",
+            "CHARGEDEPT": "CHARGEDEPT",
+            "address": "ADDRESS",
+            "MINEAREA": "MINEAREA",
+            "WORERNUM": "WORERNUM",
+            "LEGAL_NAME": "LEGAL_NAME",
+            "CONTROLCENTERTEL": "CONTROLCENTERTEL",
+            "APPROVED_MINE_DEPTH": "APPROVED_MINE_DEPTH",
+            "PRODUCT_DATE": "PRODUCT_DATE",
+            "HYDROGEOLOGICAL": "HYDROGEOLOGICAL",
+            "WS_GRADE": "WS_GRADE",
+            "A_MINE_FIREDESCRIP": "A_MINE_FIREDESCRIP",
+            "A_GRIME_EXPLOSIVEDESCRIP": "A_GRIME_EXPLOSIVEDESCRIP",
+            "ROCKBURST": "ROCKBURST",
+            "PRINCIPAL": "PRINCIPAL",
+            "PRINCIPAL_CELL": "PRINCIPAL_CELL",
+            "SERVICE_YEARS": "SERVICE_YEARS",
+            "DESIGN_OUTPUT": "DESIGN_OUTPUT",
+            "PROVED_OUTPUT": "PROVED_OUTPUT"
+        },
+        "relations": [{
+                "table": "CODE_COAL_STATE",
+                "localField": "COALSTATECODE",
+                "foreignField": "COALSTATECODE"
+            },
+            {
+                "table": "CODE_COAL_WSGRADE",
+                "localField": "WS_GRADE",
+                "foreignField": "WS_GRADE"
+            },
+            {
+                "table": "CODE_COAL_MINESTYLE",
+                "localField": "MINESTYLE",
+                "foreignField": "MINESTYLE"
+            },
+            {
+                "table": "CODE_COAL_STANDARDCLASS",
+                "localField": "STANDARDCLASS",
+                "foreignField": "STANDARDCLASS"
+            },
+            {
+                "table": "CODE_COAL_TYPE",
+                "localField": "COALTYPECODE",
+                "foreignField": "COALTYPECODE"
+            },
+            {
+                "table": "CODE_COAL_TRANSMITSTYLE",
+                "localField": "TRANSMITSTYLE",
+                "foreignField": "TRANSMITSTYLE"
+            },
+            {
+                "table": "CODE_COAL_POWERSTYLE",
+                "localField": "OWERSTYLE",
+                "foreignField": "OWERSTYLE"
+            },
+            {
+                "table": "CODE_COAL_VENTILATESTYLE",
+                "localField": "VENTILATESTYLE",
+                "foreignField": "VENTILATESTYLE"
+            },
+            {
+                "table": "CODE_COAL_HYDROGEOLOGICAL",
+                "localField": "HYDROGEOLOGICAL",
+                "foreignField": "HYDROGEOLOGICAL"
+            },
+            {
+                "table": "CODE_COAL_MINEFIRE",
+                "localField": "MINE_FIRE",
+                "foreignField": "MINE_FIRE"
+            },
+            {
+                "table": "CODE_COAL_GRIMEEXPLOSIVE",
+                "localField": "GRIME_EXPLOSIVE",
+                "foreignField": "GRIME_EXPLOSIVE"
+            },
+            {
+                "table": "CODE_COAL_DEPTCLASS",
+                "localField": "DEPTCLASS",
+                "foreignField": "DEPTCLASS"
+            }
+        ]
+    },
+    "hazardous": {
+        "table": "ANJIAN_DAGCHEMENT",
+        "//": "危化品企业",
+        "keyWordFields": ["DAGCHEMENTNAME"],
+        "districtField": "COUNTY",
+        "fieldMap": {
+            "name": "DAGCHEMENTNAME",
+            "address": "ADDRESS",
+            "PRINCIPAL": "PRINCIPAL",
+            "ARTIFICIALPER": "ARTIFICIALPER",
+            "JYFW": "JYFW",
+            "CONTACTPER": "CONTACTPER",
+            "CONTACTPERTEL": "CONTACTPERTEL",
+            "XZXKYXQXKSRQ": "XZXKYXQXKSRQ",
+            "XZXKYXQXJSRQ": "XZXKYXQXJSRQ",
+            "REGSTARTDATE": "REGSTARTDATE",
+            "REGENDDATE": "REGENDDATE",
+            "CHANGEINFO": "CHANGEINFO",
+            "PRODUCTSTATUS": "PRODUCTSTATUS",
+            "HIGHLYTOXICCHEMICALS": "HIGHLYTOXICCHEMICALS",
+            "EXPLOSIVECHEMICALS": "EXPLOSIVECHEMICALS",
+            "OPERATIONMODE": "OPERATIONMODE",
+            "XZXKZBH": "XZXKZBH",
+            "district": "COUNTY",
+            "COUNTY": "COUNTY.tag.FULLNAME",
+            "MAINPROTANDSCALESTR": "MAINPROTANDSCALESTR",
+            "TOTALSTORCAP": "TOTALSTORCAP",
+            "SUMOUTPUT": "SUMOUTPUT",
+            "EMPNUM": "EMPNUM",
+            "HAZARDLEVELCODE": "HAZARDLEVELCODE",
+            "ECONOMICTYPES1NAME": "ECONOMICTYPES1NAME",
+            "CREATEDATE": "CREATEDATE",
+            "CERTIFICATIME": "CERTIFICATIME",
+            "SAFETYMAGER": "SAFETYMAGER",
+            "SAFETYMAGERTEL": "SAFETYMAGERTEL",
+            "PRINCIPALTEL": "PRINCIPALTEL",
+            "SAFEDUTYTEL": "SAFEDUTYTEL",
+            "EMERASKTEL": "EMERASKTEL",
+            "DANGERLEVEL": "DANGERLEVEL",
+            "PRECURSORCHEMICALS": "PRECURSORCHEMICALS",
+            "SALESINCOME": "SALESINCOME",
+            "UPDATETIME": "UPDATETIME",
+            "COMPANYCODE": "COMPANYCODE",
+            "CREDITCODE": "CREDITCODE",
+            "propertype": "PROPERTYCODE",
+            "PROPERTYNAME": "PROPERTYCODE.tag.PROPERTYNAME",
+            "dagind": "DAGINDCODE",
+            "DAGINDNAME": "DAGINDCODE.tag.DAGINDNAME",
+            "entscale": "ENTSCALECODE",
+            "ENTSCALENAME": "ENTSCALECODE.tag.ENTSCALENAME",
+            "industry": "INDUSTRYCODE",
+            "INDUSTRYNAME": "INDUSTRYCODE.tag.INDUSTRYNAME"
+        },
+        "relations": [{
+                "table": "CODE_DAGCHEM_PROPERTY",
+                "localField": "PROPERTYCODE",
+                "foreignField": "PROPERTYCODE"
+            },
+            {
+                "table": "ANJIAN_CODE_DAGIND",
+                "localField": "DAGINDCODE",
+                "foreignField": "DAGINDCODE"
+            },
+            {
+                "table": "CODE_DAGCHEM_ENTSCALE",
+                "localField": "ENTSCALECODE",
+                "foreignField": "ENTSCALECODE"
+            },
+            {
+                "table": "CODE_DAGCHEM_INDUSTRY",
+                "localField": "INDUSTRYCODE",
+                "foreignField": "INDUSTRYCODE"
+            },
+            {
+                "table": "CODE_BAS_DISTRICT",
+                "localField": "COUNTY",
+                "foreignField": "DISTRICTCODE"
+            }
+        ],
+        "query": {
+            "tag.PROPERTYCODE": {
+                "$regex": "1|2|3|4|5"
+            },
+            "tag.ISCANCEL": "0",
+            "tag.ISTACKSTOFAC": {
+                "$regex": "1|2"
+            }
+        }
+    },
+    "firework": {
+        "table": "ANJIAN_FIREWORKENT",
+        "//": "烟花爆竹企业",
+        "keyWordFields": ["FIREWORKENTNAME"],
+        "districtField": "COUNTY",
+        "fieldMap": {
+            "name": "FIREWORKENTNAME",
+            "BUSILICVALIDDATE": "BUSILICVALIDDATE",
+            "BUSSCOPE": "BUSSCOPE",
+            "address": "ADDRESS",
+            "WARADDRESS": "WARADDRESS",
+            "WARNUM": "WARNUM",
+            "WARAREA": "WARAREA",
+            "SHOWLOC": "SHOWLOC",
+            "DESIGNSTOCK": "DESIGNSTOCK",
+            "PEAKSTOCK": "PEAKSTOCK",
+            "SHOWLOG": "SHOWLOG",
+            "ARTIFICIALPER": "ARTIFICIALPER",
+            "TEL": "TEL",
+            "WORKERNUM": "WORKERNUM",
+            "TRANCAR": "TRANCAR"
+        },
+        "relations": [{
+            "table": "CODE_FIRENT_DEPTTYPE",
+            "localField": "DEPTTYPECODE",
+            "foreignField": "DEPTTYPECODE"
+        }],
+        "query": {
+            "tag.ISCANCEL": {
+                "$regex": "0"
+            }
+        }
+    },
+    "mine": {
+        "table": "ANJIAN_TAILINGPOND",
+        "//": "尾矿库",
+        "keyWordFields": ["WKKMC"],
+        "districtField": "COUNTY",
+        "fieldMap": {
+            "name": "WKKMC",
+            "address": "WKKDZMC",
+            "runstatus": "RUNSTATUSCODE",
+            "RUNSTATUSCODE": "RUNSTATUSCODE.tag.RUNSTATUSNAME",
+            "wkkaqd": "WKKAQDCODE",
+            "WKKAQDCODE": "WKKAQDCODE.tag.WKKAQDNAME",
+            "wkkdb": "WKKDBCODE",
+            "WKKDBCODE": "WKKDBCODE.tag.WKKDBNAME",
+            "ISOVERLIBRARY": "ISOVERLIBRARY",
+            "AFFECTNUM": "AFFECTNUM",
+            "MINERALSPE": "MINERALSPE",
+            "DESIGNSERVLIFE": "DESIGNSERVLIFE",
+            "SERVLIFE": "SERVLIFE",
+            "ISDILATATION": "ISDILATATION",
+            "SFAZZXJCXT": "SFAZZXJCXT",
+            "DESIGNDAMHT": "DESIGNDAMHT",
+            "MQDJBGD": "MQDJBGD",
+            "DESIGNCAPA": "DESIGNCAPA",
+            "XZQKR": "XZQKR",
+            "DAMMETHOD": "DAMMETHOD",
+            "noncoal": "NONCOALENTID",
+            "NONCOALENTID": "NONCOALENTID.tag.NONCOALENTNAME",
+            "WKKFZR": "WKKFZR",
+            "WKKFZRYDDH": "WKKFZRYDDH",
+            "SFAQSCXKZ": "SFAQSCXKZ",
+            "AQSCXKZJZRQ": "AQSCXKZJZRQ",
+            "COUNTYRESPPER": "COUNTYRESPPER",
+            "COUNTYRESPPERDUTY": "COUNTYRESPPERDUTY"
+        },
+        "relations": [{
+                "table": "CODE_TAILINGPOND_RUNSTATUS",
+                "localField": "RUNSTATUSCODE",
+                "foreignField": "RUNSTATUSCODE"
+            },
+            {
+                "table": "CODE_TAILINGPOND_TYPE",
+                "localField": "TAILINGPONDTYPE",
+                "foreignField": "TAILINGPONDTYPE"
+            },
+            {
+                "table": "CODE_METAL_STANDARDGRADE",
+                "localField": "STANDARDGRADE",
+                "foreignField": "STANDARDGRADE"
+            },
+            {
+                "table": "CODE_TAILINGPOND_SAFETY",
+                "localField": "WKKAQDCODE",
+                "foreignField": "WKKAQDCODE"
+            },
+            {
+                "table": "CODE_TAILINGPOND_INDUSTRY",
+                "localField": "WKKSSHYCODE",
+                "foreignField": "WKKSSHYCODE"
+            },
+            {
+                "table": "CODE_TAILINGPOND_GRADE",
+                "localField": "WKKDBCODE",
+                "foreignField": "WKKDBCODE"
+            },
+            {
+                "table": "ANJIAN_NONCOALENT",
+                "localField": "NONCOALENTID",
+                "foreignField": "NONCOALENTID"
+            }
+        ]
+    },
+    "monitorstation": {
+        "table": "monitorstation",
+        "//": "地震监测站点",
+        "keyWordFields": ["ADDRESS"],
+        "districtField": "DISTRICTCODE",
+        "fieldMap": {
+            "name":"ADDRESS",
+            "address": "ADDRESS",
+            "EARTHQUAKETIME": "EARTHQUAKETIME",
+            "MAGNITUDE": "MAGNITUDE",
+            "DEPTH":"DEPTH",
+            "FULLNAME": "DISTRICTCODE.tag.FULLNAME"
+        },
+        "relations": [{
+            "table": "CODE_BAS_DISTRICT",
+            "localField": "DISTRICTCODE",
+            "foreignField": "DISTRICTCODE"
+        }]
+    },
+    "hotel": {
+        "table": "BAS_HOTEL",
+        "//": "宾馆饭店",
+        "keyWordFields": ["HOTELNAME"],
+        "districtField": "DISTRICTCODE",
+        "fieldMap": {
+            "name":"HOTELNAME",
+            "address":"ADDRESS",
+            "CONTACTPER":"RESPPER",
+            "CONTACTMTEL":"RESPOTEL", 
+            "RESPMTEL": "RESPMTEL",
+            "RESTLEVELCODE": "RESTLEVELCODE",
+            "SERVECAP": "SERVECAP",
+            "FIREFACILITIES": "FIREFACILITIES",
+            "EXITDESC": "EXITDESC",
+            "DISTRICTCODE": "DISTRICTCODE.tag.FULLNAME"
+        },
+        "relations": [{
+            "table": "CODE_BAS_DISTRICT",
+            "localField": "DISTRICTCODE",
+            "foreignField": "DISTRICTCODE"
+        }]
+    },
+    "market": {
+        "table": "BAS_MARKET",
+        "//": "大型商贸",
+        "keyWordFields": ["MARKETNAME"],
+        "districtField": "DISTRICTCODE",
+        "fieldMap": {
+            "name":"MARKETNAME",
+            "address":"ADDRESS",
+            "ADDRESS": "address",
+            "CONTACTPER":"RESPPER",
+            "CONTACTMTEL":"RESPOTEL", 
+            "DISTRICTCODE": "DISTRICTCODE.tag.FULLNAME"
+        },
+        "relations": [{
+            "table": "CODE_BAS_DISTRICT",
+            "localField": "DISTRICTCODE",
+            "foreignField": "DISTRICTCODE"
+        }]
+    },
+    "bazaar": {
+        "table": "BAS_BAZAAR",
+        "//": "集贸市场",
+        "keyWordFields": ["BAZAARNAME"],
+        "districtField": "DISTRICTCODE",
+        "fieldMap": {
+            "name":"BAZAARNAME",
+            "address":"ADDRESS",
+            "CONTACTPER":"RESPPER",
+            "CONTACTMTEL":"RESPOTEL", 
+            "BUSINESSAREA": "BUSINESSAREA",
+            "MATERIAL": "MATERIAL",
+            "EXITDESC": "EXITDESC",
+            "DEFOBJTYPENAME": "DEFOBJTYPECODE.tag.DEFOBJTYPENAME",
+            "DISTRICTCODE": "DISTRICTCODE.tag.FULLNAME"
+        },
+        "relations": [{
+            "table": "CODE_BAS_DISTRICT",
+            "localField": "DISTRICTCODE",
+            "foreignField": "DISTRICTCODE"
+        },{
+            "table": "OBJ_DEFOBJ_TYPE",
+            "localField": "DEFOBJTYPECODE",
+            "foreignField": "DEFOBJTYPECODE"
+        }]
+    },
+    "Gymnasium": {
+        "table": "BAS_GYMNASIUM",
+        "//": "集贸市场",
+        "keyWordFields": ["GYMNAME"],
+        "districtField": "DISTRICTCODE",
+        "fieldMap": {
+            "name":"GYMNAME",
+            "address":"ADDRESS",
+            "CONTACTPER":"RESPPER",
+            "CONTACTMTEL":"RESPOTEL", 
+            "DISTRICTCODE": "DISTRICTCODE.tag.FULLNAME"
+        },
+        "relations": [{
+            "table": "CODE_BAS_DISTRICT",
+            "localField": "DISTRICTCODE",
+            "foreignField": "DISTRICTCODE"
+        }]
+    },
+    "culturalvenues": {
+        "table": "V_GAT_GATHINGPLACE",
+        "//": "文化场馆",
+        "keyWordFields": ["NAME"],
+        "districtField": "PAC",
+        "fieldMap": {
+            "name":"NAME",
+            "address":"ADDRESS",
+            "PERSONINFO": "PERSONINFO",
+            "LEVELCODE": "LEVELCODE",
+            "AREA": "AREA",
+            "EXITDESC": "EXITDESC",
+            "DISTRICTCODE": "DISTRICTCODE.tag.FULLNAME"
+        },
+        "relations": [{
+            "table": "CODE_BAS_DISTRICT",
+            "localField": "DISTRICTCODE",
+            "foreignField": "DISTRICTCODE"
+        }],
+        "query": {
+            "tag.FEATURECODE": {
+                "$regex": "110209060000"
+            }
+        }
+    },
+    "metallurgical": {
+        "table": "ANJIAN_ENT_WHSMYHBZ",
+        "//": "工贸企业",
+        "keyWordFields": ["WHSMYHBZNAME"],
+        "districtField": "COUNTY",
+        "fieldMap": {
+            "name":"WHSMYHBZNAME",
+            "address":"ADDRESS",
+            "CONTACTPER": "CONTACTPER",
+            "CONTACTPERTEL": "CONTACTPERTEL",
+            "INDUSTRYNAME": "INDUSTRYCODE.tag.INDUSTRYNAME",
+            "BUSINSCOPE": "BUSINSCOPE",
+            "MIANPRD": "MIANPRD",
+            "CAPAPRD": "CAPAPRD",
+            "ISHAVTEMEQU": "ISHAVTEMEQU",
+            "OUTVALUE": "OUTVALUE",
+            "INVFLOURNUM": "INVFLOURNUM",
+            "LIQUIDRESE": "LIQUIDRESE",
+            "SINGLEFREEZER": "SINGLEFREEZER",
+            "ISAMREFAIRCOND": "ISAMREFAIRCOND",
+            "RUNTYPE": "RUNTYPE",
+            "ISSEPWORKSHOP": "ISSEPWORKSHOP",
+            "QUICKFREEZER": "QUICKFREEZER",
+            "INDSMALLTYPE": "INDSMALLTYPE",
+            "COUNTY": "COUNTY.tag.FULLNAME"
+        },
+        "relations": [{
+            "table": "CODE_BAS_DISTRICT",
+            "localField": "COUNTY",
+            "foreignField": "DISTRICTCODE"
+        },{
+            "table": "CODE_WHSMYHBZ_INDUSTRY",
+            "localField": "INDUSTRYCODE",
+            "foreignField": "INDUSTRYCODE"
+        }],
+        "query": {
+            "tag.INDUSTRYCODE": {
+                "$regex": "01|02|03|04|05"
+            }
+        }
+    },
+    "shelter": {
+        "table": "BAS_SHELTER",
+        "//": "避难场所",
+        "keyWordFields": ["SHELTERNAME"],
+        "districtField": "DISTRICTCODE",
+        "fieldMap": {
+            "name":"SHELTERNAME",
+            "address":"ADDRESS",
+            "CONTACTPER":"RESPPER",
+            "CONTACTMTEL":"RESPOTEL", 
+            "CHARGEDEPT": "CHARGEDEPT",
+            "LEVELNAME":"LEVELCODE.tag.LEVELNAME",
+            "DISTRICTCODE": "DISTRICTCODE.tag.FULLNAME"
+        },
+        "relations": [{
+            "table": "CODE_BAS_DISTRICT",
+            "localField": "DISTRICTCODE",
+            "foreignField": "DISTRICTCODE"
+        },{
+            "table": "CODE_BAS_LEVEL",
+            "localField": "LEVELCODE",
+            "foreignField": "LEVELCODE"
+        }]
+    },
+    "gasstation": {
+        "table": "BAS_GASSTATION",
+        "//": "加油站",
+        "keyWordFields": ["NAME"],
+        "districtField": "DISTRICTCODE",
+        "fieldMap": {
+            "name":"NAME",
+            "address":"ADDRESS",
+            "RESPPER": "RESPPER",
+            "RESPMTEL": "RESPMTEL",
+            "DISTRICTCODE": "DISTRICTCODE.tag.FULLNAME"
+        },
+        "relations": [{
+            "table": "CODE_BAS_DISTRICT",
+            "localField": "DISTRICTCODE",
+            "foreignField": "DISTRICTCODE"
+        }]
+    },
+    "sluice": {
+        "table": "PUF_WCF_SLUICE",
+        "//": "水闸工程",
+        "keyWordFields": ["NAME"],
+        "districtField": "PAC",
+        "fieldMap": {
+            "name":"NAME",
+            "address":"ADDRESS",
+            "ZHZH": "ZHZH",
+            "LXDH": "LXDH",
+            "USESTATUS": "USESTATUS",
+            "GLDWBH": "GLDWBH",
+            "SLUICENO": "SLUICENO",
+            "SLUICETYPE": "SLUICETYPE",
+            "FACTORY": "FACTORY",
+            "GATEMODEL": "GATEMODEL",
+            "GATEHEIGHT": "GATEHEIGHT",
+            "CLEARHEIGHT": "CLEARHEIGHT",
+            "CLEARWIDE": "CLEARWIDE",
+            "GATENUM": "GATENUM",
+            "GATELIMIT": "GATELIMIT",
+            "GATEMATERIAL": "GATEMATERIAL",
+            "OPENCLOFORM": "OPENCLOFORM",
+            "COVERAREA": "COVERAREA",
+            "FULLNAME": "PAC.tag.FULLNAME"
+        },
+        "relations": [{
+            "table": "CODE_BAS_DISTRICT",
+            "localField": "PAC",
+            "foreignField": "DISTRICTCODE"
+        }]
+    },
+    "powerfacilities": {
+        "table": "V_PUF_POWERFACILITIES",
+        "//": "供电设施",
+        "keyWordFields": ["NAME"],
+        "districtField": "PAC",
+        "fieldMap": {
+            "name":"NAME",
+            "address":"ADDRESS",
+            "PERSONINFO": "PERSONINFO",
+            "FULLNAME": "PAC.tag.FULLNAME"
+        },
+        "relations": [{
+            "table": "CODE_BAS_DISTRICT",
+            "localField": "PAC",
+            "foreignField": "DISTRICTCODE"
+        }]
+    },
+    "supwatfacil": {
+        "table": "V_PUF_SUPWATFACIL",
+        "//": "供电设施",
+        "keyWordFields": ["NAME"],
+        "districtField": "PAC",
+        "fieldMap": {
+            "name":"NAME",
+            "address":"ADDRESS",
+            "PERSONINFO": "PERSONINFO",
+            "FULLNAME": "PAC.tag.FULLNAME"
+        },
+        "relations": [{
+            "table": "CODE_BAS_DISTRICT",
+            "localField": "PAC",
+            "foreignField": "DISTRICTCODE"
+        }]
+    },
+    "gasfacil": {
+        "table": "V_PUF_GASFACIL",
+        "//": "燃气供应设施",
+        "keyWordFields": ["NAME"],
+        "districtField": "PAC",
+        "fieldMap": {
+            "name":"NAME",
+            "address":"ADDRESS",
+            "PERSONINFO": "PERSONINFO",
+            "FULLNAME": "PAC.tag.FULLNAME"
+        },
+        "relations": [{
+            "table": "CODE_BAS_DISTRICT",
+            "localField": "PAC",
+            "foreignField": "DISTRICTCODE"
+        }],
+        "query": {
+            "tag.TYPECODE": {
+                "$regex": "42D00|42D01|42D02|42D03|42D04|42D05|42D06|42D07|42D08|42D09"
+            }
+        }
+    },
+    "powerfacil": {
+        "table": "V_PUF_GASFACIL",
+        "//": "大型能源供应设施",
+        "keyWordFields": ["NAME"],
+        "districtField": "PAC",
+        "fieldMap": {
+            "name":"NAME",
+            "address":"ADDRESS",
+            "PERSONINFO": "PERSONINFO",
+            "FULLNAME": "PAC.tag.FULLNAME"
+        },
+        "relations": [{
+            "table": "CODE_BAS_DISTRICT",
+            "localField": "PAC",
+            "foreignField": "DISTRICTCODE"
+        }],
+        "query": {
+            "tag.TYPECODE": {
+                "$regex": "42D10"
+            }
+        }
+    },
+    "emergenceexpert": {
+        "table": "JC_EXPERT",
+        "//": "应急专家",
+        "keyWordFields": ["EXPERTNAME"],
+        "districtField": "DISTRICT",
+        "fieldMap": {
+            "name":"EXPERTNAME",
+            "SEXCODE": "SEXCODE",
+            "DEPTNAME": "DEPTNAME",
+            "GOODATIND": "GOODATIND",
+            "TEL": "TEL",
+            "CURRENTMAJOR": "CURRENTMAJOR",
+            "GROUPNAME":"EXPERTGROUP.tag.GROUPNAME",
+            "LEVELNAME":"LEVELCODE.tag.LEVELNAME",
+            "DUTIES": "DUTIES",
+            "PROTITLE": "PROTITLE",
+            "ADDRESS": "address",
+            "ACHIHONOR": "ACHIHONOR",
+            "HARVEST": "HARVEST"
+        },
+        "relations": [{
+            "table": "RES_EXPERT_GROUP",
+            "localField": "EXPERTGROUP",
+            "foreignField": "GROUPID"
+        },{
+            "table": "CODE_BAS_LEVEL",
+            "localField": "LEVELCODE",
+            "foreignField": "LEVELCODE"
+        }],
+        "query": {
+            "tag.EXPERTGROUP": {
+                "$regex": "3c9282c76d719afb016d71c90e580000|3c9282c76d719afb016d71c90e580001|3c9282c76d719afb016d71c90e580002|3c9282c76d719afb016d71c90e580003|3c9282c76d719afb016d71c90e580004|3c9282c76d719afb016d71c90e580005|3c9282c76d719afb016d71c90e580006|3c9282c76d719afb016d71c90e580007|3c9282c76d719afb016d71c90e580008|3c9282c76d719afb016d71c90e580009"
+            }
+        }
+    },
+    "generalrepository": {
+        "table": "JC_REPERTORY",
+        "//": "物资储备库",
+        "keyWordFields": ["REPERTORYNAME"],
+        "districtField": "DISTRICTCODE",
+        "fieldMap": {
+            "name":"REPERTORYNAME",
+            "address":"ADDRESS",
+            "CHARGEDEPT": "CHARGEDEPT",
+            "CONCATEPER": "CONCATEPER",
+            "CONCATEMOBTEL": "CONCATEMOBTEL",
+            "DISTRICTCODE": "DISTRICTCODE.tag.FULLNAME",
+            "REPERTORYTYPENAME": "REPERTORYTYPECODE.tag.REPERTORYTYPENAME",
+            "LEVELCODE":"LEVELCODE",
+            "LEVELNAME":"LEVELCODE.tag.LEVELNAME"
+        },
+        "relations": [{
+            "table": "CODE_BAS_DISTRICT",
+            "localField": "DISTRICTCODE",
+            "foreignField": "DISTRICTCODE"
+        },{
+            "table": "CODE_REP_TYPE",
+            "localField": "REPERTORYTYPECODE",
+            "foreignField": "REPERTORYTYPECODE"
+        },{
+            "table": "CODE_REP_LEVEL",
+            "localField": "LEVELCODE",
+            "foreignField": "LEVELCODE"
+        }],
+        "query": {
+            "tag.REPERTORYTYPECODE": {
+                "$regex": "01|02|03|04|05|06|07|08|09|10|11|12"
+            }
+        }
+    },
+    "equipment": {
+        "table": "V_EQUIPMENT",
+        "//": "物资储备库",
+        "keyWordFields": ["EQUIPNAME"],
+        "districtField": "RESCOUNTY",
+        "fieldMap": {
+            "name":"EQUIPNAME",
+            "address":"ADDRESS",
+            "CONTACTPER":"LEADER",
+            "DUTYTEL":"LEADERMTEL",
+            "EQUIPNUM": "EQUIPNUM",
+            "EQUIPTYPECODE":"EQUIPTYPECODE",
+            "EQUIPTYPENAME":"EQUIPTYPECODE.tag.EQUIPTYPENAME"
+        },
+        "relations": [{
+            "table": "EQUIP_EQU_TYPE",
+            "localField": "EQUIPTYPECODE",
+            "foreignField": "EQUIPTYPECODE"
+        }],
+        "sumField": "EQUIPNUM",
+        "query": {
+            "tag.EQUIPTYPECODE": {
+                "$regex": "1001.*$|1002.*$|1003.*$|1004.*$|1005.*$|1006.*$|1007.*$|1008.*$"
+            }
+        }
+    },
+    "industry": {
+        "table": "ANJIAN_ENT_WHSMYHBZ",
+        "//": "工贸企业",
+        "keyWordFields": ["WHSMYHBZNAME"],
+        "districtField": "COUNTY",
+        "fieldMap": {
+            "name": "WHSMYHBZNAME",
+            "phone": "CONTACTPERTEL",
+            "address": "ADDRESS",
+            "longitude": "LONGITUDE",
+            "latitude": "LATITUDE",
+            "respper": "CONTACTPER",
+            "districtname": "COUNTY.tag.FULLNAME",
+            "legalperson": "ARTIFICIALPER",
+            "staffnum": "EMPNUM",
+            "specialstaffnum": "SPECIALNUM",
+            "industry": "INDUSTRYCODE.tag.INDUSTRYNAME",
+            "enterpriseprop": "ENTNATURECODE.tag.ENTNATURENAME"
+        },
+        "relations": [{
+                "table": "CODE_BAS_DISTRICT",
+                "localField": "COUNTY",
+                "foreignField": "DISTRICTCODE"
+            },
+            {
+                "table": "CODE_ENTERPRISE_INDUSTRY",
+                "localField": "INDUSTRYCODE",
+                "foreignField": "INDUSTRYCODE"
+            },
+            {
+                "table": "CODE_ENTERPRISE_NATURE",
+                "localField": "ENTNATURECODE",
+                "foreignField": "ENTNATURECODE"
+            }
+        ]
+    },
+    "derivativerisk": {
+        "collapse": {
+            "table": "V_NAH_GEO_GEOLOGICHAZ",
+            "query": {
+                "tag.FEATURECODE": "100103030000"
+            },
+            "//": "崩塌",
+            "fieldMap": {
+                "name": "NAME",
+                "address": "ADDRESS",
+                "feature": "FEATURECODE",
+                "FEATURECODE": "FEATURECODE.tag.FEATURENAME",
+                "district": "PAC",
+                "PAC": "PAC.tag.FULLNAME",
+                "DISASTERSCALE": "DISASTERSCALE",
+                "disasterlevel": "DISASTERLEVELCODE",
+                "DISASTERLEVELCODE": "DISASTERLEVELCODE.tag.HAZARDLEVELNAME",
+                "RISKNUM": "RISKNUM",
+                "THRPROPERTY": "THRPROPERTY",
+                "INDUCINGFACTORS": "INDUCINGFACTORS",
+                "CONTACTPER": "CONTACTPER",
+                "CHARGEDEPT": "CHARGEDEPT",
+                "PROTECTION": "PROTECTION",
+                "PERSONINFO": "PERSONINFO"
+            },
+            "relations": [{
+                "table": "CODE_BAS_DISTRICT",
+                "localField": "PAC",
+                "foreignField": "DISTRICTCODE"
+            }, {
+                "table": "CODE_FEATURE",
+                "localField": "FEATURECODE",
+                "foreignField": "FEATURECODE"
+            }, {
+                "table": "CODE_HAZARD_LEVEL",
+                "localField": "DISASTERLEVELCODE",
+                "foreignField": "HAZARDLEVELCODE"
+            }]
+        },
+        "mudslide": {
+            "table": "V_NAH_GEO_GEOLOGICHAZ",
+            "query": {
+                "tag.FEATURECODE": "100103020000"
+            },
+            "//": "泥石流",
+            "fieldMap": {
+                "name": "NAME",
+                "address": "ADDRESS",
+                "feature": "FEATURECODE",
+                "FEATURECODE": "FEATURECODE.tag.FEATURENAME",
+                "district": "PAC",
+                "PAC": "PAC.tag.FULLNAME",
+                "DISASTERSCALE": "DISASTERSCALE",
+                "disasterlevel": "DISASTERLEVELCODE",
+                "DISASTERLEVELCODE": "DISASTERLEVELCODE.tag.HAZARDLEVELNAME",
+                "RISKNUM": "RISKNUM",
+                "THRPROPERTY": "THRPROPERTY",
+                "INDUCINGFACTORS": "INDUCINGFACTORS",
+                "CONTACTPER": "CONTACTPER",
+                "CHARGEDEPT": "CHARGEDEPT",
+                "PROTECTION": "PROTECTION",
+                "PERSONINFO": "PERSONINFO"
+            },
+            "relations": [{
+                "table": "CODE_BAS_DISTRICT",
+                "localField": "PAC",
+                "foreignField": "DISTRICTCODE"
+            }, {
+                "table": "CODE_FEATURE",
+                "localField": "FEATURECODE",
+                "foreignField": "FEATURECODE"
+            }, {
+                "table": "CODE_HAZARD_LEVEL",
+                "localField": "DISASTERLEVELCODE",
+                "foreignField": "HAZARDLEVELCODE"
+            }]
+        },
+        "falldown": {
+            "table": "V_NAH_GEO_GEOLOGICHAZ",
+            "query": {
+                "tag.FEATURECODE": "100103050000"
+            },
+            "//": "地面坍塌",
+            "fieldMap": {
+                "name": "NAME",
+                "address": "ADDRESS",
+                "feature": "FEATURECODE",
+                "FEATURECODE": "FEATURECODE.tag.FEATURENAME",
+                "district": "PAC",
+                "PAC": "PAC.tag.FULLNAME",
+                "DISASTERSCALE": "DISASTERSCALE",
+                "disasterlevel": "DISASTERLEVELCODE",
+                "DISASTERLEVELCODE": "DISASTERLEVELCODE.tag.HAZARDLEVELNAME",
+                "RISKNUM": "RISKNUM",
+                "THRPROPERTY": "THRPROPERTY",
+                "INDUCINGFACTORS": "INDUCINGFACTORS",
+                "CONTACTPER": "CONTACTPER",
+                "CHARGEDEPT": "CHARGEDEPT",
+                "PROTECTION": "PROTECTION",
+                "PERSONINFO": "PERSONINFO"
+            },
+            "relations": [{
+                "table": "CODE_BAS_DISTRICT",
+                "localField": "PAC",
+                "foreignField": "DISTRICTCODE"
+            }, {
+                "table": "CODE_FEATURE",
+                "localField": "FEATURECODE",
+                "foreignField": "FEATURECODE"
+            }, {
+                "table": "CODE_HAZARD_LEVEL",
+                "localField": "DISASTERLEVELCODE",
+                "foreignField": "HAZARDLEVELCODE"
+            }]
+        },
+        "emptysubside": {
+            "table": "V_NAH_GEO_GEOLOGICHAZ",
+            "query": {
+                "tag.FEATURECODE": "100103090000"
+            },
+            "//": "采空坍塌",
+            "fieldMap": {
+                "name": "NAME",
+                "address": "ADDRESS",
+                "feature": "FEATURECODE",
+                "FEATURECODE": "FEATURECODE.tag.FEATURENAME",
+                "district": "PAC",
+                "PAC": "PAC.tag.FULLNAME",
+                "DISASTERSCALE": "DISASTERSCALE",
+                "disasterlevel": "DISASTERLEVELCODE",
+                "DISASTERLEVELCODE": "DISASTERLEVELCODE.tag.HAZARDLEVELNAME",
+                "RISKNUM": "RISKNUM",
+                "THRPROPERTY": "THRPROPERTY",
+                "INDUCINGFACTORS": "INDUCINGFACTORS",
+                "CONTACTPER": "CONTACTPER",
+                "CHARGEDEPT": "CHARGEDEPT",
+                "PROTECTION": "PROTECTION",
+                "PERSONINFO": "PERSONINFO"
+            },
+            "relations": [{
+                "table": "CODE_BAS_DISTRICT",
+                "localField": "PAC",
+                "foreignField": "DISTRICTCODE"
+            }, {
+                "table": "CODE_FEATURE",
+                "localField": "FEATURECODE",
+                "foreignField": "FEATURECODE"
+            }, {
+                "table": "CODE_HAZARD_LEVEL",
+                "localField": "DISASTERLEVELCODE",
+                "foreignField": "HAZARDLEVELCODE"
+            }]
+        },
+        "landslide": {
+            "table": "V_NAH_GEO_GEOLOGICHAZ",
+            "query": {
+                "tag.FEATURECODE": "100103010000"
+            },
+            "//": "滑坡",
+            "fieldMap": {
+                "name": "NAME",
+                "address": "ADDRESS",
+                "feature": "FEATURECODE",
+                "FEATURECODE": "FEATURECODE.tag.FEATURENAME",
+                "district": "PAC",
+                "PAC": "PAC.tag.FULLNAME",
+                "DISASTERSCALE": "DISASTERSCALE",
+                "disasterlevel": "DISASTERLEVELCODE",
+                "DISASTERLEVELCODE": "DISASTERLEVELCODE.tag.HAZARDLEVELNAME",
+                "RISKNUM": "RISKNUM",
+                "THRPROPERTY": "THRPROPERTY",
+                "INDUCINGFACTORS": "INDUCINGFACTORS",
+                "CONTACTPER": "CONTACTPER",
+                "CHARGEDEPT": "CHARGEDEPT",
+                "PROTECTION": "PROTECTION",
+                "PERSONINFO": "PERSONINFO"
+            },
+            "relations": [{
+                "table": "CODE_BAS_DISTRICT",
+                "localField": "PAC",
+                "foreignField": "DISTRICTCODE"
+            }, {
+                "table": "CODE_FEATURE",
+                "localField": "FEATURECODE",
+                "foreignField": "FEATURECODE"
+            }, {
+                "table": "CODE_HAZARD_LEVEL",
+                "localField": "DISASTERLEVELCODE",
+                "foreignField": "HAZARDLEVELCODE"
+            }]
+        }
+    },
+    "reservoir": {
+        "table": "BAS_RESERVOIR",
+        "//": "水库大坝",
+        "keyWordFields": ["NAME"],
+        "districtField": "CODE",
+        "fieldMap": {
+            "name": "NAME",
+            "phone": "TELEPHONE",
+            "address": "ADDRESS",
+            "respper": "TELEPHONE",
+            "districtname": "CODE.tag.FULLNAME"
+        },
+        "relations": [{
+            "table": "CODE_BAS_DISTRICT",
+            "localField": "CODE",
+            "foreignField": "DISTRICTCODE"
+        }]
+    },
+    "nuclear": {
+        "table": "BAS_NUCLEARINFO",
+        "//": "核电站",
+        "keyWordFields": ["NUCLEARNAME"],
+        "fieldMap": {
+            "name": "NUCLEARNAME",
+            "phone": "RESPOTEL",
+            "address": "DISTRICTNAME",
+            "respper": "RESPPER",
+            "districtname": "DISTRICTCODE.tag.FULLNAME"
+        },
+        "relations": [{
+            "table": "CODE_BAS_DISTRICT",
+            "localField": "DISTRICTCODE",
+            "foreignField": "DISTRICTCODE"
+        }]
+    },
+    "disinfoper": {
+        "table": "JC_DISINFOPER",
+        "//": "灾情信息员",
+        "keyWordFields": ["DISINFOPERNAME"],
+        "fieldMap": {
+            "name": "DISINFOPERNAME",
+            "phone": "MOBPHONE",
+            "districtname": "DISTRICTNAME",
+            "duty": "POST"
+        }
+    },
+    "RescueTeam※03": {
+        "table": "JYXX_TEA_RESCUE",
+        "//": "救援队伍",
+        "keyWordFields": ["RESCUENAME"],
+        "districtField": "RESCOUNTY",
+        "fieldMap": {
+            "id": "RESCUEID",
+            "name": "RESCUENAME",
+            "phone": "LEADERMTEL",
+            "address": "ADDRESS",
+            "captain": "LEADER",
+            "rescuetypecode": "RESCUETYPECODE",
+            "districtname": "RESCOUNTY.tag.FULLNAME",
+            "type": "RESCUETYPECODE.tag.RESCUETYPENAME",
+            "peoplenum": "TOTALPERNUM",
+            "RESCUEORGNAME": "RESCUEORGNAME",
+            "DUTYTEL": "DUTYTEL",
+            "CHARGEDEPT": "CHARGEDEPT"
+        },
+        "relations": [{
+                "table": "CODE_BAS_DISTRICT",
+                "localField": "RESCOUNTY",
+                "foreignField": "DISTRICTCODE"
+            },
+            {
+                "table": "EQUIP_RESCUETYPE",
+                "localField": "RESCUETYPECODE",
+                "foreignField": "RESCUETYPECODE"
+            }
+        ]
+    },
+    "emergencypart": {
+        "table": "JC_HUAW_VDT",
+        "//": "应急部门",
+        "keyWordFields": ["UNITNAME"],
+        "fieldMap": {
+            "name": "UNITNAME",
+            "address": "UNITADDRESS"
+        }
+    },
+    "metalnonmetal": {
+        "table": "ANJIAN_METALNONMETAL",
+        "//": "金属非金属矿山",
+        "keyWordFields": ["KSMC"],
+        "districtField": "COUNTY",
+        "fieldMap": {
+            "name": "KSMC",
+            "address": "KSDZMC",
+            "minetype": "SCKZ",
+            "SCKZ": "SCKZ.tag.INDUSTRYMINENAME",
+            "DESPROSCALE": "DESPROSCALE",
+            "NOWTAILPOND": "NOWTAILPOND",
+            "chargent": "CHARGENATURE",
+            "CHARGENATURE": "CHARGENATURE.tag.ECONOMYTYPENAME",
+            "KSFZR": "KSFZR",
+            "AQFZR": "AQFZR",
+            "KSFZRYDDH": "KSFZRYDDH",
+            "AQFZRYDDH": "AQFZRYDDH"
+        },
+        "relations": [{
+                "table": "CODE_METAL_INDUSTRY_MINETYPE",
+                "localField": "SCKZ",
+                "foreignField": "INDUSTRYMINECODE"
+            },
+            {
+                "table": "CODE_METAL_INDUSTRY_MINETYPE",
+                "localField": "SCKZ",
+                "foreignField": "INDUSTRYMINECODE"
+            },
+            {
+                "table": "CODE_METAL_KCFS",
+                "localField": "KCFS",
+                "foreignField": "KCFS"
+            },
+            {
+                "table": "CODE_METAL_STANDARDGRADE",
+                "localField": "STANDARDGRADE",
+                "foreignField": "STANDARDGRADE"
+            },
+            {
+                "table": "CODE_COAL_ECONOMYTYPE",
+                "localField": "CHARGENATURE",
+                "foreignField": "ECONOMYTYPECODE"
+            }
+        ]
+    },
+    "ANJIAN_METALNONMETAL": {
+        "table": "ANJIAN_METALNONMETAL",
+        "//": "金属非金属矿山",
+        "keyWordFields": ["KSMC"],
+        "districtField": "COUNTY",
+        "fieldMap": {
+            "name": "KSMC",
+            "address": "KSDZMC",
+            "DISTRICT": "COUNTY",
+            "longitude": "LONGITUDE",
+            "latitude": "LATITUDE",
+            "KSFZR": "KSFZR",
+            "KSFZRBGSDH": "KSFZRBGSDH",
+            "KSFZRYDDH": "KSFZRYDDH",
+            "TZZYRYSL": "TZZYRYSL",
+            "AQSCXKZ": "AQSCXKZ",
+            "INDUSTRYNAME": "SSHY.tag.INDUSTRYMINECODE",
+            "MINENAME": "SCKZ.tag.INDUSTRYMINECODE",
+            "KCFSMC": "KCFS.tag.KCFSMC",
+            "STGRADENAME": "STANDARDGRADE.tag.STGRADENAME"
+        },
+        "relations": [{
+                "table": "CODE_METAL_INDUSTRY_MINETYPE",
+                "localField": "SSHY",
+                "foreignField": "INDUSTRYMINECODE"
+            },
+            {
+                "table": "CODE_METAL_INDUSTRY_MINETYPE",
+                "localField": "SCKZ",
+                "foreignField": "INDUSTRYMINECODE"
+            },
+            {
+                "table": "CODE_METAL_KCFS",
+                "localField": "KCFS",
+                "foreignField": "KCFS"
+            },
+            {
+                "table": "CODE_METAL_STANDARDGRADE",
+                "localField": "STANDARDGRADE",
+                "foreignField": "STANDARDGRADE"
+            }
+        ]
+    },
+    "ANJIAN_OILGASFIELD": {
+        "table": "ANJIAN_OILGASFIELD",
+        "//": "油气田",
+        "keyWordFields": ["SYDWMC"],
+        "districtField": "COUNTY",
+        "fieldMap": {
+            "name": "SYDWMC",
+            "address": "ADDRESS",
+            "DISTRICT": "COUNTY",
+            "longitude": "LONGITUDE",
+            "latitude": "LATITUDE",
+            "SYFL": "SYFL",
+            "ZYFZR": "ZYFZR",
+            "ZYFZRBGDH": "ZYFZRBGDH",
+            "ZYFZRYDDH": "ZYFZRYDDH",
+            "CYRYS": "CYRYS",
+            "TZZYRYSL": "TZZYRYSL",
+            "AQSCXKZBH": "AQSCXKZBH",
+            "SYFLMC": "SYFL.tag.SYFLMC",
+            "SEAAREANAME": "SEAAREACODE.tag.SEAAREANAME",
+            "KCJZMC": "KCJZCODE.tag.KCJZMC"
+        },
+        "relations": [{
+                "table": "CODE_OILGASFIELD_SYFL",
+                "localField": "SYFL",
+                "foreignField": "SYFL"
+            },
+            {
+                "table": "CODE_OILGASFIELD_SEAAREA",
+                "localField": "SEAAREACODE",
+                "foreignField": "SEAAREACODE"
+            },
+            {
+                "table": "CODE_OILGASFIELD_MININGMEDIUM",
+                "localField": "KCJZCODE",
+                "foreignField": "KCJZCODE"
+            }
+        ]
+    },
+    "majordanger": {
+        "table": "ANJIAN_DANGER",
+        "//": "重大危险源",
+        "keyWordFields": ["DANGERNAME"],
+        "districtField": "COUNTY",
+        "fieldMap": {
+            "DISTRICT": "COUNTY",
+            "name": "DANGERNAME",
+            "phone": "DUTYTEL",
+            "dangertype": "DANGERTYPECODE",
+            "dangerlevel": "HAZARDLEVELCODE",
+            "address": "ADDRESS",
+            "parentunit": "FIRMNAME",
+            "district": "COUNTY",
+            "districtname": "COUNTY.tag.FULLNAME",
+            "dangertypename": "DANGERTYPECODE.tag.DANGERTYPENAME",
+            "dangerlevelname": "HAZARDLEVELCODE.tag.HAZARDLEVELNAME",
+            "respper": "CONTACTPER"
+        },
+        "relations": [{
+            "table": "CODE_BAS_DISTRICT",
+            "localField": "COUNTY",
+            "foreignField": "DISTRICTCODE"
+        }, {
+            "table": "CODE_BAS_DANGERTYPE",
+            "localField": "DANGERTYPECODE",
+            "foreignField": "DANGERTYPECODE"
+        }, {
+            "table": "CODE_BAS_HAZARDLEVEL",
+            "localField": "HAZARDLEVELCODE",
+            "foreignField": "HAZARDLEVELCODE"
+        }]
+    },
+    "for_waterport": {
+        "table": "FOR_WATERSOURCE",
+        "//": "取水码头",
+        "keyWordFields": ["WATERSOURCENAME"],
+        "fieldMap": {
+            "FID": "FID",
+            "WATERSOURCEID": "WATERSOURCEID",
+            "name": "WATERSOURCENAME",
+            "WATERSOURCETYPECODE": "WATERSOURCETYPECODE",
+            "address": "ADDRESS",
+            "LONGITUDE": "LONGITUDE",
+            "LATITUDE": "LATITUDE",
+            "CAPACITY": "CAPACITY",
+            "SOURCEDEPT": "SOURCEDEPT",
+            "GEOSOURCEDEPT": "GEOSOURCEDEPT",
+            "NOTES": "NOTES",
+            "district": "DISTRICTCODE",
+            "FULLNAME": "DISTRICTCODE.tag.FULLNAME",
+            "objecttype": "DEFOBJTYPECODE",
+            "DEFOBJTYPECODE": "DEFOBJTYPECODE.tag.SCHOOLTYPENAME"
+        },
+        "relations": [{
+            "table": "CODE_BAS_DISTRICT",
+            "localField": "DISTRICTCODE",
+            "foreignField": "DISTRICTCODE"
+        }],
+        "query": {
+            "tag.WATERSOURCETYPECODE": "1"
+        }
+    },
+    "for_watersource": {
+        "table": "FOR_WATERSOURCE",
+        "//": "取水码头",
+        "keyWordFields": ["WATERSOURCENAME"],
+        "fieldMap": {
+            "FID": "FID",
+            "WATERSOURCEID": "WATERSOURCEID",
+            "name": "WATERSOURCENAME",
+            "WATERSOURCETYPECODE": "WATERSOURCETYPECODE",
+            "address": "ADDRESS",
+            "LONGITUDE": "LONGITUDE",
+            "LATITUDE": "LATITUDE",
+            "CAPACITY": "CAPACITY",
+            "SOURCEDEPT": "SOURCEDEPT",
+            "GEOSOURCEDEPT": "GEOSOURCEDEPT",
+            "NOTES": "NOTES",
+            "district": "DISTRICTCODE",
+            "FULLNAME": "DISTRICTCODE.tag.FULLNAME",
+            "objecttype": "DEFOBJTYPECODE",
+            "DEFOBJTYPECODE": "DEFOBJTYPECODE.tag.SCHOOLTYPENAME"
+        },
+        "relations": [{
+            "table": "CODE_BAS_DISTRICT",
+            "localField": "DISTRICTCODE",
+            "foreignField": "DISTRICTCODE"
+        }],
+        "query": {
+            "tag.WATERSOURCETYPECODE": "2"
+        }
+    },
+    "for_watersourceport": {
+        "table": "FOR_WATERSOURCE",
+        "//": "取水码头",
+        "keyWordFields": ["WATERSOURCENAME"],
+        "fieldMap": {
+            "FID": "FID",
+            "WATERSOURCEID": "WATERSOURCEID",
+            "name": "WATERSOURCENAME",
+            "WATERSOURCETYPECODE": "WATERSOURCETYPECODE",
+            "address": "ADDRESS",
+            "LONGITUDE": "LONGITUDE",
+            "LATITUDE": "LATITUDE",
+            "CAPACITY": "CAPACITY",
+            "SOURCEDEPT": "SOURCEDEPT",
+            "GEOSOURCEDEPT": "GEOSOURCEDEPT",
+            "NOTES": "NOTES",
+            "district": "DISTRICTCODE",
+            "FULLNAME": "DISTRICTCODE.tag.FULLNAME",
+            "objecttype": "DEFOBJTYPECODE",
+            "DEFOBJTYPECODE": "DEFOBJTYPECODE.tag.SCHOOLTYPENAME"
+        },
+        "relations": [{
+            "table": "CODE_BAS_DISTRICT",
+            "localField": "DISTRICTCODE",
+            "foreignField": "DISTRICTCODE"
+        }],
+        "query": {
+            "tag.WATERSOURCETYPECODE": "3"
+        }
+    },
+    "for_heliport": {
+        "table": "FOR_HELIPORT",
+        "//": "直升机起降点",
+        "keyWordFields": ["HELIPORTNAME"],
+        "fieldMap": {
+            "FID": "FID",
+            "heliport1": "HELIPORTID",
+            "name": "HELIPORTNAME",
+            "address": "ADDRESS",
+            "LONGITUDE": "LONGITUDE",
+            "LATITUDE": "LATITUDE",
+            "SOURCEDEPT": "SOURCEDEPT",
+            "GEOSOURCEDEPT": "GEOSOURCEDEPT",
+            "district": "DISTRICTCODE",
+            "FULLNAME": "DISTRICTCODE.tag.FULLNAME",
+            "objecttype": "DEFOBJTYPECODE",
+            "DEFOBJTYPECODE": "DEFOBJTYPECODE.tag.SCHOOLTYPENAME"
+        },
+        "relations": [{
+            "table": "CODE_BAS_DISTRICT",
+            "localField": "DISTRICTCODE",
+            "foreignField": "DISTRICTCODE"
+        }]
+    }
+}

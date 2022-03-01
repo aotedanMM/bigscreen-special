@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+    <title>专业应急救援中心</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="14" cy="14" r="14"></circle>
+        <filter x="-10.7%" y="-10.7%" width="121.4%" height="121.4%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.28 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="其他图标" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="应急保障资源" transform="translate(-94.000000, -45.000000)">
+            <g id="专业应急救援中心" transform="translate(96.000000, 47.000000)">
+                <g id="Oval-Copy-11">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <circle stroke="#FFFFFF" stroke-width="1" stroke-linejoin="square" fill="#C7045A" fill-rule="evenodd" cx="14" cy="14" r="13.5"></circle>
+                </g>
+                <path d="M7.6024784,12.2017914 L5,12.2017914 L14.0220948,4 L22.421756,12.0488469 L20.1338753,12.0488469 L20.1338753,22 L7.74253338,22 L7.6024784,12.2017914 Z M14.0220948,19.4206038 C16.4546145,19.4206038 18.4265613,17.3480414 18.4265613,14.7914062 C18.4265613,12.234771 16.4546145,10.1622086 14.0220948,10.1622086 C11.5895751,10.1622086 9.61762825,12.234771 9.61762825,14.7914062 C9.61762825,17.3480414 11.5895751,19.4206038 14.0220948,19.4206038 Z M10.1805841,13.7408375 L13.0066534,13.3658115 L14.1034752,10.4757301 L15.3456248,13.3658115 L17.9835865,13.7408375 L16.0495427,15.0735192 L16.5895143,17.8507455 L14.0820853,16.134266 L11.6876331,17.8507455 L12.2769596,15.0735192 L10.1805841,13.7408375 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>
